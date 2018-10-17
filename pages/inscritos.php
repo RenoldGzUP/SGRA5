@@ -18,6 +18,11 @@ exit;
 }
 ?>
 
+<?php
+    include 'config.php';
+	$link = Conectarse(); 
+?>
+
 <head>
 
     <meta charset="utf-8">
@@ -120,55 +125,29 @@ exit;
     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Inscritos</a></div>
     <div class="panel-heading"style="height: 80px">Filtro local:   
 
-<select name="sedes">
-<optgroup label="C.Regionales">
-       <option value="1">01-Campus</option> 
-       <option value="2">02-Chiriqui</option> 
-       <option value="3">03-Azuero</option> 
-       <option value="4">04-Veraguas</option>
-       <option value="5">05-Colón</option>
-       <option value="6">06-Cocle</option>
-       <option value="7">07-Los Santos</option>
-       <option value="8">08-Bocas del Toro</option>
-       <option value="9">09-Pma.Oeste</option>
-       <option value="11">11-San Miguelito</option>
-</optgroup>
-       
+<?php
+$sqlL1 ="SELECT id_sede,codigo_sede,nombre_sede from sedes";	
+$result = mysqli_query($link,$sqlL1);
+echo'<select name="Sedes">';
+echo"<option >Seleccione</option>";
+		while($row = mysqli_fetch_array($result)){
+			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
+		}
+echo"</select>";
+?>
 
-   <optgroup label="Ext.Univ">
-         <option value="12">12-Darien</option>
-         <option value="13">13-Aguadulce</option>
-         <option value="14">14-Pma.Este</option>
-         <option value="16">16-Soná</option>
-
-    </optgroup>
-    
-   <optgroup label="Programa Anexo"> 
-       <option value="17">17-Arraijan</option> 
-       <option value="18">20-Chiriquí Grande</option> 
-       <option value="19">21-Kankintu</option> 
-       <option value="20">22-Churuquita Grande</option>
-       <option value="21">23-Isla Colón</option>
-       <option value="22">24-Las Tablas</option>
-       <option value="23">25-Ola</option>
-   </optgroup> 
-</select>
 
 donde : 
-<select name="Area">
-   <option selected value="0"> Área </option>
-       <optgroup label="Microsoft"> 
-       <option value="1">01-Adm.Empresas</option> 
-       <option value="2">02-Adm.Pública y Economía</option> 
-       <option value="3">03-Arquitectura</option> 
-       <option value="4">04-Cientifica</option>
-       <option value="5">05-Humanistica</option>
-       <option value="6">06-Policia</option>
-       <option value="7">07-Derecho</option>
-       <option value="8">08-Informática</option>
-       <option value="9">09-Asist.Odontologico</option>
-   </optgroup>  
-</select>
+<?php
+$sqlL2 ="SELECT id_farea,codigo_farea,descripcion from filtro_area";	
+$resultL2 = mysqli_query($link,$sqlL2);
+echo'<select name="Areas">';
+echo"<option >Seleccione</option>";
+		while($row = mysqli_fetch_array($resultL2)){
+			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
+		}
+echo"</select>";
+?>
 
 en: 
 <select name="OS">
@@ -225,325 +204,66 @@ registros
 
     </div>
 
+	
 
-<div class="panel-body">         
-  <table class="table table-bordered table-hover table-editable">
-    <thead style="width: : 10px;background: #225ddb" >
-      <tr style="font-size: 10px; color: #ffffff">
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input  " id="exampleCheck1" ></th>
-        <th style="text-align: center;">#</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Cédula</th>
-        <th>Sede</th>
-        <th>Área</th>
-        <th>Facultad</th>
-        <th>Inscripción</th>
-        <th >Fac-1A</th>
-        <th>Esc-1A</th>
-        <th>Car-1A</th>
-        <th>Fac-2A</th>
-        <th>Esc-2A</th>
-        <th>Car-2A</th>
-        <th>Fac-3A</th>
-        <th>Esc-3A</th>
-        <th>Car-3A</th>
-        <th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">1</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-      </tr>
-          <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">2</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-      </tr>
-          <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">3</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-      </tr>
-
-        <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-         <tr>
-        <th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>
-        <td style="text-align: center;">4</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>
-        </tr>
-        
-   
-    </tbody>
-  </table>
+<?php
+$sql="SELECT indice_bus,nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM dgeneral";
+if($result = mysqli_query($link,$sql)){
+	if(mysqli_num_rows($result)>0){
+		echo'<div class="panel-body">';         
+		echo'<table class="table table-bordered table-hover table-editable">';
+		echo'<thead style="text-align:center;width: : 10px;background: #225ddb" >';
+		echo'<tr style="font-size: 12px;text-align:center; color: #ffffff">';
+			echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input  " id="exampleCheck1" ></th>';
+			echo'<th style="text-align: center;">#</th>';
+			echo'<th>Nombre</th>';
+			echo'<th>Apellido</th>';
+			echo'<th>Cédula</th>';
+			echo'<th>Inscripción</th>';
+			echo'<th>Sede</th>';
+			echo'<th>Fac-1A</th>';
+			echo'<th>Esc-1A</th>';
+			echo'<th>Car-1A</th>';
+			echo'<th>Fac-2A</th>';
+			echo'<th>Esc-2A</th>';
+			echo'<th>Car-2A</th>';
+			echo'<th>Fac-3A</th>';
+			echo'<th>Esc-3A</th>';
+			echo'<th>Car-3A</th>';
+			echo'<th>Acciones</th>';
+        echo'</tr>';
+		echo'</thead>';
+	
+		echo'<tbody>';
+		while ($row = mysqli_fetch_array($result)){   
+		 echo'<tr style="font-size: 12px;text-align:center">';
+         echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>';
+         //<td style="text-align: center;">1</td>
+		 echo "<td>".$row[0]."</td>";  
+		 echo "<td>".$row[1]."</td>";  
+		 echo "<td>".$row[2]."</td>";
+		 echo "<td>".$row[3]."</td>";  
+         echo "<td>".$row[4]."</td>";  
+         echo "<td>".$row[5]."</td>";
+		 echo "<td>".$row[6]."</td>";  
+		 echo "<td>".$row[7]."</td>";  
+		 echo "<td>".$row[8]."</td>";
+		 echo "<td>".$row[9]."</td>";  
+         echo "<td>".$row[10]."</td>";  
+         echo "<td>".$row[11]."</td>";
+		 echo "<td>".$row[12]."</td>";  
+         echo "<td>".$row[13]."</td>";  
+         echo "<td>".$row[14]."</td>";
+        echo '<td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>';
+        echo '<a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>';
+		echo"</tr>";
+	  }
+		echo"</tbody>"; 
+		echo"</table>";
+	}else{echo"No hay registros a mostrar";}
+}else{echo"Ocurrio un error al ejecutar $sql.".mysql_error($link);
+}
+?>
 
 
   <div class="row">
