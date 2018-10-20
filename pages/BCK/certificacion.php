@@ -13,14 +13,9 @@ exit;
 $now = time();
 if($now > $_SESSION['expire']) {
 session_destroy();
-echo "Sesion  terminada,<a href='../index.html'>Necesita Hacer Login</a>";
+echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
 exit;
 }
-?>
-
-<?php
-    include'config.php';
-	$link = Conectarse(); 
 ?>
 
 <head>
@@ -35,8 +30,6 @@ exit;
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="../vendor/bootstrap/css/styletables.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -59,8 +52,6 @@ exit;
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<!--<script type="text/javascript" src="../JS/cantidadRegistros.js"></script>-->
 
     <style>
     #vertical-bar {
@@ -112,10 +103,10 @@ exit;
 <!--<div class="container-fluid " >-->
   <nav class="navbar" align="center" style="background: #d6d5d5;min-height: 25px;;margin-top: -1px" >
     <a href="dashboard.php" style="width: 145px" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-home"></span> Inicio</a>
-    <a   style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm disabled">Inscritos</a>
-    <a href="certificacion.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Certificación</a>
+    <a href="inscritos.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Inscritos</a>
+    <a   style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm disabled">Certificación</a>
     <a href="validacion.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Validación</a>
-    <a href="reportes.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Reportes</a>
+    <a href="reportes.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Reportes</a>    
 </nav>
  <!--   </div>-->
         
@@ -124,118 +115,137 @@ exit;
 <div class="container col-lg-12" style="margin-top: -15px">
   <h2></h2>
   <div class="panel panel-default " >
-    <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Inscritos</a></div>
-    <div class="panel-heading"style="height: 100px">Filtro local:   
-	
-<?php
-$sqlL1 ="SELECT id_sede,codigo_sede,nombre_sede from sedes";	
-$result = mysqli_query($link,$sqlL1);
-echo'<select name="Sedes">';
-echo"<option >Seleccione Sede</option>";
-		while($row = mysqli_fetch_array($result)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
- donde :
- 
-<?php
-$sqlL2 ="SELECT id_farea,codigo_farea,descripcion from filtro_area";	
-$resultL2 = mysqli_query($link,$sqlL2);
-echo'<select name="Areas">';
-echo"<option >Seleccione Area</option>";
-		while($row = mysqli_fetch_array($resultL2)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
- en: 
-<?php
-$sqlL1 ="SELECT id_facultad,codigo_facultad,nombre_facultad from facultades";	
-$result = mysqli_query($link,$sqlL1);
-echo'<select name="Facultades">';
-echo"<option >Seleccione Facultad</option>";
-		while($row = mysqli_fetch_array($result)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
+    <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Certificación</a></div>
+    <div class="panel-heading"style="height: 90px">Filtro local:   
 
+<select name="sedes">
+<optgroup label="C.Regionales">
+       <option value="1">01-Campus</option> 
+       <option value="2">02-Chiriqui</option> 
+       <option value="3">03-Azuero</option> 
+       <option value="4">04-Veraguas</option>
+       <option value="5">05-Colón</option>
+       <option value="6">06-Cocle</option>
+       <option value="7">07-Los Santos</option>
+       <option value="8">08-Bocas del Toro</option>
+       <option value="9">09-Pma.Oeste</option>
+       <option value="11">11-San Miguelito</option>
+</optgroup>
+       
+
+   <optgroup label="Ext.Univ">
+         <option value="12">12-Darien</option>
+         <option value="13">13-Aguadulce</option>
+         <option value="14">14-Pma.Este</option>
+         <option value="16">16-Soná</option>
+
+    </optgroup>
+    
+   <optgroup label="Programa Anexo"> 
+       <option value="17">17-Arraijan</option> 
+       <option value="18">20-Chiriquí Grande</option> 
+       <option value="19">21-Kankintu</option> 
+       <option value="20">22-Churuquita Grande</option>
+       <option value="21">23-Isla Colón</option>
+       <option value="22">24-Las Tablas</option>
+       <option value="23">25-Ola</option>
+   </optgroup> 
+</select>
+
+donde : 
+<select name="Area">
+   <option selected value="0"> Área </option>
+       <optgroup label="Microsoft"> 
+       <option value="1">01-Adm.Empresas</option> 
+       <option value="2">02-Adm.Pública y Economía</option> 
+       <option value="3">03-Arquitectura</option> 
+       <option value="4">04-Cientifica</option>
+       <option value="5">05-Humanistica</option>
+       <option value="6">06-Policia</option>
+       <option value="7">07-Derecho</option>
+       <option value="8">08-Informática</option>
+       <option value="9">09-Asist.Odontologico</option>
+   </optgroup>  
+</select>
+
+en: 
+<select name="OS">
+   <option selected value="0"> Facultad </option>
+       <optgroup label="Microsoft"> 
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+   </optgroup> 
+   <optgroup label="Linux"> 
+       <option value="10">Fedora</option> 
+       <option value="11">Debian</option> 
+       <option value="12">Suse</option> 
+   </optgroup> 
+</select>
+en:
+<select name="OS">
+   <option selected value="0">Carrera</option>
+       <optgroup label="Microsoft"> 
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+   </optgroup> 
+   <optgroup label="Linux"> 
+       <option value="10">Fedora</option> 
+       <option value="11">Debian</option> 
+       <option value="12">Suse</option> 
+   </optgroup> 
+</select>
 
 <button type="button" class="btn btn-default btn-xs pull-right" style="width: 200px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
 
-<div style="margin-top: 12px">
-Filtros Academicos:
+<!--<div style="margin-top: 8px">
+  Ordenar por :&nbsp&nbsp&nbsp&nbsp  
 <select name="OS">
-   <option selected value="0">Seleccione Escuela</option>
-       <optgroup label="Microsoft"> 
-       <option value="1">Windows Vista</option> 
-       <option value="2">Windows 7</option> 
-       <option value="3">Windows XP</option> 
-   </optgroup> 
-   <optgroup label="Linux"> 
-       <option value="10">Fedora</option> 
-       <option value="11">Debian</option> 
-       <option value="12">Suse</option> 
-   </optgroup> 
-</select>
- 
- <select name="OS">
-   <option selected value="0">Seleccione Carrera</option>
-       <optgroup label="Microsoft"> 
-       <option value="1">Windows Vista</option> 
-       <option value="2">Windows 7</option> 
-       <option value="3">Windows XP</option> 
-   </optgroup> 
-   <optgroup label="Linux"> 
-       <option value="10">Fedora</option> 
-       <option value="11">Debian</option> 
-       <option value="12">Suse</option> 
-   </optgroup> 
-</select>
+   <option selected value="0">-------</option>
+       <option value="1">Sede</option> 
+       <option value="2">Area</option> 
+       <option value="3">Facultad</option> 
+       <option value="10">Escuela</option> 
+       <option value="11">Nombre</option> 
+       <option value="12">Apellido</option>
+       <option value="13">Inscripcion</option>
+       <option value="14">Cedula</option> 
+</select> 
+</div>-->
 
 
-</div>
-
-<div style="margin-top: 12px">
-
-<form>
+<div style="margin-top: 15px">
 Mostrar:&nbsp&nbsp&nbsp&nbsp  
-<select name="sCantidadRegistros" onchange="cantidadRegistros(this.value)">
-       <option value="1">20</option> 
+<select name="OS">
+   <option selected value="0">10 </option>
+       <option value="1">25</option> 
        <option value="2">50</option> 
        <option value="3">100</option> 
-	   <option value="4">300</option>
-	   <option value="5">500</option>
-</select>
- registros
- </form> 
+       <option value="10">200</option> 
+       <option value="11">500</option> 
+       <option value="12">1000</option> 
+</select> 
+registros
 </div>
-
 
     </div>
 
-	
-<!--Llamado a clase paginador de Inscritos -->
-<?php
-include'TablaDatosInscritos.php';
-?>
+
+    <div class="panel-body">
 
 
-   
-</div>
+                            
+
+
+                            <!-- /.table-responsive -->                      
+    </div>
                         <!-- /.panel-body -->
-
-
   </div>
-  
-  
 </div>
         <!-- /#page-wrapper -->
-		
-		
-</div>
 
+    </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -246,6 +256,23 @@ include'TablaDatosInscritos.php';
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
 
 </body>
 

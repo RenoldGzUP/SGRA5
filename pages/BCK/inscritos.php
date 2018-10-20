@@ -13,13 +13,13 @@ exit;
 $now = time();
 if($now > $_SESSION['expire']) {
 session_destroy();
-echo "Sesion  terminada,<a href='../index.html'>Necesita Hacer Login</a>";
+echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
 exit;
 }
 ?>
 
 <?php
-    include'config.php';
+    include 'config.php';
 	$link = Conectarse(); 
 ?>
 
@@ -59,8 +59,6 @@ exit;
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<!--<script type="text/javascript" src="../JS/cantidadRegistros.js"></script>-->
 
     <style>
     #vertical-bar {
@@ -125,102 +123,166 @@ exit;
   <h2></h2>
   <div class="panel panel-default " >
     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Inscritos</a></div>
-    <div class="panel-heading"style="height: 100px">Filtro local:   
-	
+    <div class="panel-heading"style="height: 80px">Filtro local:   
+
 <?php
 $sqlL1 ="SELECT id_sede,codigo_sede,nombre_sede from sedes";	
 $result = mysqli_query($link,$sqlL1);
 echo'<select name="Sedes">';
-echo"<option >Seleccione Sede</option>";
+echo"<option >Seleccione</option>";
 		while($row = mysqli_fetch_array($result)){
 			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
 		}
 echo"</select>";
 ?>
- donde :
- 
+
+
+donde : 
 <?php
 $sqlL2 ="SELECT id_farea,codigo_farea,descripcion from filtro_area";	
 $resultL2 = mysqli_query($link,$sqlL2);
 echo'<select name="Areas">';
-echo"<option >Seleccione Area</option>";
+echo"<option >Seleccione</option>";
 		while($row = mysqli_fetch_array($resultL2)){
 			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
 		}
 echo"</select>";
 ?>
- en: 
-<?php
-$sqlL1 ="SELECT id_facultad,codigo_facultad,nombre_facultad from facultades";	
-$result = mysqli_query($link,$sqlL1);
-echo'<select name="Facultades">';
-echo"<option >Seleccione Facultad</option>";
-		while($row = mysqli_fetch_array($result)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
 
+en: 
+<select name="OS">
+   <option selected value="0"> Facultad </option>
+       <optgroup label="Microsoft"> 
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+   </optgroup> 
+   <optgroup label="Linux"> 
+       <option value="10">Fedora</option> 
+       <option value="11">Debian</option> 
+       <option value="12">Suse</option> 
+   </optgroup> 
+</select>
+en:
+<select name="OS">
+   <option selected value="0">Carrera</option>
+       <optgroup label="Microsoft"> 
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+   </optgroup> 
+   <optgroup label="Linux"> 
+       <option value="10">Fedora</option> 
+       <option value="11">Debian</option> 
+       <option value="12">Suse</option> 
+   </optgroup> 
+</select>
 
 <button type="button" class="btn btn-default btn-xs pull-right" style="width: 200px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
 
-<div style="margin-top: 12px">
-Filtros Academicos:
-<select name="OS">
-   <option selected value="0">Seleccione Escuela</option>
-       <optgroup label="Microsoft"> 
-       <option value="1">Windows Vista</option> 
-       <option value="2">Windows 7</option> 
-       <option value="3">Windows XP</option> 
-   </optgroup> 
-   <optgroup label="Linux"> 
-       <option value="10">Fedora</option> 
-       <option value="11">Debian</option> 
-       <option value="12">Suse</option> 
-   </optgroup> 
-</select>
- 
- <select name="OS">
-   <option selected value="0">Seleccione Carrera</option>
-       <optgroup label="Microsoft"> 
-       <option value="1">Windows Vista</option> 
-       <option value="2">Windows 7</option> 
-       <option value="3">Windows XP</option> 
-   </optgroup> 
-   <optgroup label="Linux"> 
-       <option value="10">Fedora</option> 
-       <option value="11">Debian</option> 
-       <option value="12">Suse</option> 
-   </optgroup> 
-</select>
 
-
-</div>
-
-<div style="margin-top: 12px">
-
-<form>
+<div style="margin-top: 20px">
 Mostrar:&nbsp&nbsp&nbsp&nbsp  
-<select name="sCantidadRegistros" onchange="cantidadRegistros(this.value)">
-       <option value="1">20</option> 
-       <option value="2">50</option> 
-       <option value="3">100</option> 
-	   <option value="4">300</option>
-	   <option value="5">500</option>
-</select>
- registros
- </form> 
-</div>
+<select name="OS">
+   <option selected value="0"> Área </option>
+       <optgroup label="Microsoft"> 
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+   </optgroup> 
+   <optgroup label="Linux"> 
+       <option value="10">Fedora</option> 
+       <option value="11">Debian</option> 
+       <option value="12">Suse</option> 
+   </optgroup> 
+</select> 
+registros
 
+
+
+</div>
 
     </div>
 
 	
-<!--Llamado a clase paginador de Inscritos -->
+
 <?php
-include'TablaDatosInscritos.php';
+$sql="SELECT indice_bus,nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM dgeneral";
+if($result = mysqli_query($link,$sql)){
+	if(mysqli_num_rows($result)>0){
+		echo'<div class="panel-body">';         
+		echo'<table class="table table-bordered table-hover table-editable">';
+		echo'<thead style="text-align:center;width: : 10px;background: #225ddb" >';
+		echo'<tr style="font-size: 12px;text-align:center; color: #ffffff">';
+			echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input  " id="exampleCheck1" ></th>';
+			echo'<th style="text-align: center;">#</th>';
+			echo'<th>Nombre</th>';
+			echo'<th>Apellido</th>';
+			echo'<th>Cédula</th>';
+			echo'<th>Inscripción</th>';
+			echo'<th>Sede</th>';
+			echo'<th>Fac-1A</th>';
+			echo'<th>Esc-1A</th>';
+			echo'<th>Car-1A</th>';
+			echo'<th>Fac-2A</th>';
+			echo'<th>Esc-2A</th>';
+			echo'<th>Car-2A</th>';
+			echo'<th>Fac-3A</th>';
+			echo'<th>Esc-3A</th>';
+			echo'<th>Car-3A</th>';
+			echo'<th>Acciones</th>';
+        echo'</tr>';
+		echo'</thead>';
+	
+		echo'<tbody>';
+		while ($row = mysqli_fetch_array($result)){   
+		 echo'<tr style="font-size: 12px;text-align:center">';
+         echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>';
+         //<td style="text-align: center;">1</td>
+		 echo "<td>".$row[0]."</td>";  
+		 echo "<td>".$row[1]."</td>";  
+		 echo "<td>".$row[2]."</td>";
+		 echo "<td>".$row[3]."</td>";  
+         echo "<td>".$row[4]."</td>";  
+         echo "<td>".$row[5]."</td>";
+		 echo "<td>".$row[6]."</td>";  
+		 echo "<td>".$row[7]."</td>";  
+		 echo "<td>".$row[8]."</td>";
+		 echo "<td>".$row[9]."</td>";  
+         echo "<td>".$row[10]."</td>";  
+         echo "<td>".$row[11]."</td>";
+		 echo "<td>".$row[12]."</td>";  
+         echo "<td>".$row[13]."</td>";  
+         echo "<td>".$row[14]."</td>";
+        echo '<td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>';
+        echo '<a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>';
+		echo"</tr>";
+	  }
+		echo"</tbody>"; 
+		echo"</table>";
+	}else{echo"No hay registros a mostrar";}
+}else{echo"Ocurrio un error al ejecutar $sql.".mysql_error($link);
+}
 ?>
 
+
+  <div class="row">
+    <div class="col-lg-6">
+     <h5 style="text-align: left;">Mostrando x a y de z registros</h5>
+   </div>
+   <div class="col-lg-6" style="margin-top: -22px">
+    <ul class="pagination pull-right" >
+      <li class="disabled"><a href="#">Anterior</a></li>
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">Siguiente</a></li>
+    </ul>
+  </div>
+
+</div>
+  
 
    
 </div>
@@ -228,14 +290,10 @@ include'TablaDatosInscritos.php';
 
 
   </div>
-  
-  
 </div>
         <!-- /#page-wrapper -->
-		
-		
-</div>
 
+    </div>
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -246,6 +304,23 @@ include'TablaDatosInscritos.php';
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
 
 </body>
 
