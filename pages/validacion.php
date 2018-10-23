@@ -18,6 +18,12 @@ exit;
 }
 ?>
 
+<?php
+    include'config.php';
+	$link = Conectarse(); 
+?>
+
+
 <head>
 
     <meta charset="utf-8">
@@ -114,30 +120,70 @@ exit;
 
 <div class="container col-lg-12" style="margin-top: -15px">
   <h2></h2>
+  
+  <div class="panel panel-default">
+  <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Validación</a></div>
+  <div class="panel-heading " ><h4 style="color: #000000"> Validación de estudiantes </h5>
+  <div class="row">
+	    <div class="col-md-6">
+	   <form class="form-inline" >
+	  
+	   <div class ="form-group" style="margin-top: 12px">
+	   Seleccione Tabla Inscritos:    
+	   <select name="OS" style="width:200px;margin-left:45px">
+	   <option selected value="0">Seleccione Escuela</option>
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+	   </select>
+      </div>
+	  
+	  <div class ="form-group" style="margin-top: 12px">
+	   Seleccione Tabla Resultados:    
+	   <select name="OS" style="width:200px;margin-left:25px">
+	   <option selected value="0">Seleccione Escuela</option>
+       <option value="1">Windows Vista</option> 
+       <option value="2">Windows 7</option> 
+       <option value="3">Windows XP</option> 
+	   </select>
+      </div>
+	  </form>
+	  
+	  
+	  </div>
+	  
+	    <div class="col-md-6" align="right">
+	   <form class="form-inline" >
+	  
+	  
+	  <div class="form-group" style="margin-top: 12px">
+	   Buscar:  
+       <input type="email" class="form-control" id="exampleInputEmail1" 
+	   aria-describedby="emailHelp" placeholder="Nombre,Apellido,N°Inscrito">
+	  </div>
+	  
+	  <div class="form-group" style="margin-top: 12px">
+	 
+	  	  <button type="button" class="btn btn-success">
+		  <span class="glyphicon glyphicon-ok"></span> Validar</button>
 
-  <div class="panel-group">
+	  </div>
+	  
 
-    <div class="panel panel-default ">
-    <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Validación</a></div>
-    </div>
-
-    <div class="panel panel-info">
-    <div class="panel-heading " ><h4 style="color: #000000"> Validación de estudiantes </h5></div>
-       <div class="panel-heading " style="background: #f5f5f5"><h4>---------------------</h5></div>
-      <div class="panel-body">                 
-        </div>
-    </div>
-
-    <div class="panel panel-info ">
-    <div class="panel-heading"><h4 style="color: #000000"> Resultados de Validación </h5></div>
-       <div class="panel-heading" style="background: #f5f5f5"><h4> ------------------------------------------
-        </h5></div>
-      <div class="panel-body">                 
-        </div>
-    </div>
-
-
+	  
+	  </form>
+	  
+	  
+	  </div>
+	  
+	  </div>
+	  
+  
   </div>
+   <?php
+	  include'TablaDatosInscritos.php';
+	  ?>
+  
   
 
 

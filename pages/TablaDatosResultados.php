@@ -5,28 +5,29 @@
     $compag=(int)(!isset($_GET['pag'])) ? 1 : $_GET['pag'];
 	
 //CONSULTA PARA OBTNER LA CANTIDAD DE REGISTROS EN LA DB
-	$consultaDB1 ="SELECT * FROM dgeneral"; 
+	$consultaDB1 ="SELECT * FROM resultados"; 
 
 	$consulta = mysqli_query($link,$consultaDB1);
 	$TotalRegistrosDB= mysqli_num_rows($consulta);
 	
 //Se divide la cantidad de registro de la BD con la cantidad a mostrar 
 	$TotalPaginas  =ceil($TotalRegistrosDB/$CantidadRegistrosMostrar);
-//	echo "<b>La cantidad de registro se dividio a: </b>".$TotalPaginas." paginas para mostrar ".$CantidadRegistrosMostrar." de ".$TotalRegistrosDB. " registros<br>"; 
+	echo "<b>La cantidad de registro se dividio a: </b>".$TotalPaginas." paginas para mostrar ".$CantidadRegistrosMostrar." de ".$TotalRegistrosDB. " registros<br>"; 
 
 //CONSULTA PARA OBTENER LA DATA CON LOS RANGOS DE LA DB
-	$consultavistas ="SELECT indice_bus,nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM dgeneral ORDER BY indice_bus LIMIT ".(($compag-1)*$CantidadRegistrosMostrar)." , ".$CantidadRegistrosMostrar;
- 
+	//$consultavistas ="SELECT indice_bus,nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM dgeneral ORDER BY indice_bus LIMIT ".(($compag-1)*$CantidadRegistrosMostrar)." , ".$CantidadRegistrosMostrar;
+    $consultavistas ="SELECT nombre,apellido,n_ins,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,col_proc,nbachiller,sede,areap,facultad,carrera,ps,pca,pcg,gatb,indice  FROM resultados ORDER BY n_ins LIMIT ".(($compag-1)*$CantidadRegistrosMostrar)." , ".$CantidadRegistrosMostrar;
+	
 //INSTRUCCION PARA OBTENER TODOS LOS REGISTROS DE LA BASE DE DATOS
 	/*$sql="SELECT indice_bus,nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM dgeneral ORDER BY indice_bus LIMIT ".(($compag-1)*$CantidadRegistrosMostrar)." , ".$CantidadRegistrosMostrar;*/
 	
 //$result = mysqli_query($sql);
 
 //CONEXION & CONSULTA A LA BASE DE DATOS
-	$result = mysqli_query($link,$consultavistas) or die(mysqli_error());  
+	$result = mysqli_query($link,$consultavistas);  
 
  //ESTABLECIMIENTO DE LA TABLA DE DATOS
- echo'<div class="panel-body">';         
+echo'<div class="panel-body">';         
 	echo'<table class="table table-bordered table-hover table-editable">';
 	echo'<thead style="text-align:center;width: : 10px;background: #225ddb" >';
 	echo'<tr style="font-size: 12px;text-align:center; color: #ffffff">';
@@ -34,18 +35,19 @@
         echo'<th style="text-align: center;">#</th>';
         echo'<th>Nombre</th>';
         echo'<th>Apellido</th>';
+        echo'<th>N°Inscrito</th>';
         echo'<th>Cédula</th>';
-        echo'<th>Inscripción</th>';
+		echo'<th>Colegio</th>';
+		echo'<th>Bachiller</th>';
 		echo'<th>Sede</th>';
-        echo'<th>Fac-1A</th>';
-        echo'<th>Esc-1A</th>';
-        echo'<th>Car-1A</th>';
-        echo'<th>Fac-2A</th>';
-        echo'<th>Esc-2A</th>';
-        echo'<th>Car-2A</th>';
-        echo'<th>Fac-3A</th>';
-        echo'<th>Esc-3A</th>';
-        echo'<th>Car-3A</th>';
+        echo'<th>Área</th>';
+		echo'<th>Facultad</th>';
+		echo'<th>Carrera</th>';
+        echo'<th>Pro.Sec</th>';
+        echo'<th>PCA</th>';
+        echo'<th>PCG</th>';
+		echo'<th>GATB</th>';
+        echo'<th>Indice Predictivo</th>';
         echo'<th>Acciones</th>';
        echo'</tr>';
     echo'</thead>';
@@ -53,8 +55,8 @@
     echo'<tbody>';
 	while ($row = mysqli_fetch_array($result)){   
      echo'<tr style="font-size: 12px;text-align:center">';
-     echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>';
-         //<td style="text-align: center;">1</td>
+         echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>';
+         echo'<td style="text-align: center;">1</td>';
 		 echo "<td>".$row[0]."</td>";  
 		 echo "<td>".$row[1]."</td>";  
 		 echo "<td>".$row[2]."</td>";
@@ -70,7 +72,7 @@
 		 echo "<td>".$row[12]."</td>";  
          echo "<td>".$row[13]."</td>";  
          echo "<td>".$row[14]."</td>";
-        echo '<td><a href="#" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal" ><span class="glyphicon glyphicon-pencil"></span> </a>';
+        echo '<td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>';
         echo '<a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>';
 	echo"</tr>";
 	}

@@ -20,7 +20,7 @@ exit;
 
 
 <?php
-    include 'configC.php';
+    include 'config.php';
 	$link = Conectarse(); 
 ?>
 
@@ -239,61 +239,7 @@ registros
 
 
 <?php
-$sql="SELECT indice_bus,nombre,apellido,cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM dgeneral";
-//$result = mysqli_query($sql);
-$result = mysql_query($sql, $link);  
-	
-echo'<div class="panel-body">';         
-	echo'<table class="table table-bordered table-hover table-editable">';
-	echo'<thead style="text-align:center;width: : 10px;background: #225ddb" >';
-	echo'<tr style="font-size: 12px;text-align:center; color: #ffffff">';
-      echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input  " id="exampleCheck1" ></th>';
-        echo'<th style="text-align: center;">#</th>';
-        echo'<th>Nombre</th>';
-        echo'<th>Apellido</th>';
-        echo'<th>Cédula</th>';
-        echo'<th>Inscripción</th>';
-		echo'<th>Sede</th>';
-        echo'<th>Fac-1A</th>';
-        echo'<th>Esc-1A</th>';
-        echo'<th>Car-1A</th>';
-        echo'<th>Fac-2A</th>';
-        echo'<th>Esc-2A</th>';
-        echo'<th>Car-2A</th>';
-        echo'<th>Fac-3A</th>';
-        echo'<th>Esc-3A</th>';
-        echo'<th>Car-3A</th>';
-        echo'<th>Acciones</th>';
-       echo'</tr>';
-    echo'</thead>';
-	
-    echo'<tbody>';
-	while ($row = mysql_fetch_row($result)){   
-     echo'<tr style="font-size: 12px;text-align:center">';
-         echo'<th style="text-align: center;"><input type="checkbox" class="form-check-input " id="exampleCheck1" ></th>';
-         //<td style="text-align: center;">1</td>
-		 echo "<td>".$row[0]."</td>";  
-		 echo "<td>".$row[1]."</td>";  
-		 echo "<td>".$row[2]."</td>";
-		 echo "<td>".$row[3]."</td>";  
-         echo "<td>".$row[4]."</td>";  
-         echo "<td>".$row[5]."</td>";
-		 echo "<td>".$row[6]."</td>";  
-		 echo "<td>".$row[7]."</td>";  
-		 echo "<td>".$row[8]."</td>";
-		 echo "<td>".$row[9]."</td>";  
-         echo "<td>".$row[10]."</td>";  
-         echo "<td>".$row[11]."</td>";
-		 echo "<td>".$row[12]."</td>";  
-         echo "<td>".$row[13]."</td>";  
-         echo "<td>".$row[14]."</td>";
-        echo '<td><a href="#" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-pencil"></span> </a>';
-        echo '<a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> </a></td>';
-	echo"</tr>";
-	}
-	 
-   echo"</tbody>"; 
-   echo"</table>";
+include'TablaDatosResultados.php';
 
 ?>
                         <!-- /.panel-body -->
