@@ -33,10 +33,10 @@ exit;
 
     <title>Sistema de gestión de resultados academicos</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS  <link href="../vendor/bootstrap/css/styletables.css" rel="stylesheet">-->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="../vendor/bootstrap/css/styletables.css" rel="stylesheet">
+   
 
     <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -52,16 +52,14 @@ exit;
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<script type="text/javascript" src="../jquery/jquery-2.1.4.js"></script>
+	<script src="../JS/Filtros.js"></script>
 	
-	<!--<script type="text/javascript" src="../JS/cantidadRegistros.js"></script>-->
+	
 
+   
+	
+	
     <style>
     #vertical-bar {
         border-left: 2px solid #ffffff;
@@ -127,40 +125,28 @@ exit;
     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Inscritos</a></div>
     <div class="panel-heading"style="height: 100px">Filtro local:   
 	
-<?php
-$sqlL1 ="SELECT id_sede,codigo_sede,nombre_sede from sedes";	
-$result = mysqli_query($link,$sqlL1);
-echo'<select name="Sedes">';
-echo"<option >Seleccione Sede</option>";
-		while($row = mysqli_fetch_array($result)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
+	<select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
+	<option >Seleccione Sede</option>
+	<?php
+	include '../Consultas/Sedes.php';
+	$listaSedes = getPHPSedes(); 
+     foreach( $listaSedes as $item){
+	 echo "<option value='$item->id_sede'>".$item->codigo_sede."-".$item->nombre_sede."</option> ";
+	}	
+	?>
+	</select>
+
  donde :
  
-<?php
-$sqlL2 ="SELECT id_farea,codigo_farea,descripcion from filtro_area";	
-$resultL2 = mysqli_query($link,$sqlL2);
-echo'<select name="Areas">';
-echo"<option >Seleccione Area</option>";
-		while($row = mysqli_fetch_array($resultL2)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
+    <select name="areas"  id="lista_areas" onChange='obtenerFacultades(this.value)'>
+	<option >Seleccione Area</option>
+	
+	</select>
  en: 
-<?php
-$sqlL1 ="SELECT id_facultad,codigo_facultad,nombre_facultad from facultades";	
-$result = mysqli_query($link,$sqlL1);
-echo'<select name="Facultades">';
-echo"<option >Seleccione Facultad</option>";
-		while($row = mysqli_fetch_array($result)){
-			   echo"<option value='.$row[0].'>".$row[1]."-".$row[2]."</option> ";
-		}
-echo"</select>";
-?>
-
+    <select name="facultades" id="lista_facultades" >
+	<option >Seleccione Area</option>
+	
+	</select>
 
 <button type="button" class="btn btn-default btn-xs pull-right" style="width: 200px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
 
@@ -246,6 +232,8 @@ include'TablaDatosInscritos.php';
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    
+	
 
 </body>
 
