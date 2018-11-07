@@ -51,6 +51,22 @@ public function getresults($parametros = null){//Analizador de consultas prepara
 }
 
 }
+
+function getUsers($userName){
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT * FROM usuarios WHERE nombre_usuario = ?");
+	$parametros = array("s",&$userName);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;	
+	
+}
+
+
+
 function getSedes(){
 	global $mysqli;
 	$query = new Query($mysqli,"SELECT id_sede,codigo_sede,nombre_sede from sedes");

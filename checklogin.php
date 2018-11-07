@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
    $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
-   $_SESSION['expire'] = $_SESSION['start'] + (20 * 60);
+   $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
        //echo "Acceso";
        header("Location:./pages/dashboard.php"); //Si la consulta de usuario y clave es correcta
 

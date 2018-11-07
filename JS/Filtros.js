@@ -15,7 +15,7 @@ function obtenerAreas(val)
 
 function obtenerFacultades(val) 
 { 
-			alert("Valor ->"+val);
+		
 				 $.ajax
 				 ({
 					type: "POST",
