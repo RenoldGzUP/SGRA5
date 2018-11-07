@@ -6,7 +6,7 @@ session_start();
 $host_db = "localhost";
 $user_db = "root";
 $pass_db = "";
-$db_name = "sgraadmin";
+$db_name = "sgra";
 $tbl_name = "usuarios";
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 if ($conexion->connect_error) {
@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
    $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
-   $_SESSION['expire'] = $_SESSION['start'] + (20 * 60);
+   $_SESSION['expire'] = $_SESSION['start'] + (7200 * 60);
        //echo "Acceso";
        header("Location:./pages/dashboard.php"); //Si la consulta de usuario y clave es correcta
 

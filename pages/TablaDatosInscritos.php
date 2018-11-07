@@ -6,7 +6,6 @@
 	
 //CONSULTA PARA OBTNER LA CANTIDAD DE REGISTROS EN LA DB
 	$consultaDB1 ="SELECT * FROM dgeneral"; 
-
 	$consulta = mysqli_query($link,$consultaDB1);
 	$TotalRegistrosDB= mysqli_num_rows($consulta);
 	
@@ -26,7 +25,7 @@
 	$result = mysqli_query($link,$consultavistas) or die(mysqli_error());  
 
  //ESTABLECIMIENTO DE LA TABLA DE DATOS
- echo'<div class="panel-body">';         
+ echo'<div id="lista_inscritos" class="panel-body">';         
 	echo'<table class="table table-bordered table-hover table-editable">';
 	echo'<thead style="text-align:center;width: : 10px;background: #225ddb" >';
 	echo'<tr style="font-size: 12px;text-align:center; color: #ffffff">';
