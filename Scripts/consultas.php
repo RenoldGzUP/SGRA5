@@ -81,7 +81,14 @@ function getSedes(){
 
 function getAreas($idSedes){
 	global $mysqli;
-	$query = new Query($mysqli,"SELECT codigo_area,nombre_area FROM areas WHERE codigo_relacion= ?");
+	//$query = new Query($mysqli,"SELECT codigo_area,nombre_area FROM areas WHERE codigo_relacion= ?");
+	
+	$query = new Query($mysqli,"SELECT DISTINCT(B.nombre_area) AS nombre_area,A.id_area AS id_area, A.id_sede AS id_sede
+from `sede-area` A, `area` B
+WHERE A.id_sede=?
+AND B.id_area=A.id_area
+ORDER BY 2,1");
+	
 	$parametros = array("i",&$idSedes);
 	
 	$data = $query->getresults($parametros);
@@ -91,10 +98,17 @@ function getAreas($idSedes){
 	else
 	    return null;	
 }
-function getFacultades($idAreas){
+function getFacultades($idSede,$idAreas){
 	global $mysqli;
-	$query = new Query($mysqli,"SELECT id_facultad,codigo_facultad,nombre_facultad  from facultades  where codigo_relacion = ?");
-	$parametros = array("i",&$idAreas);
+	//$query = new Query($mysqli,"SELECT id_facultad,codigo_facultad,nombre_facultad  from facultades  where codigo_relacion = ?");
+	$query = new Query($mysqli,"SELECT A.id_facultad AS id_facultad, A.id_area AS id_area, B.codigo_facultad AS codigo_facultad, B.nombre_facultad AS nombre_facultad
+from `sede-area` A, `facultades` B
+WHERE A.id_sede=?
+AND A.id_area=?
+AND B.id_facultad=A.id_facultad
+ORDER BY 3");	
+	
+	$parametros = array("ii",&$idSede,&$idAreas);
 	
 	$data = $query->getresults($parametros);
 

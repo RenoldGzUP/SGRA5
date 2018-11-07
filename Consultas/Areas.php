@@ -10,7 +10,7 @@ $listaAreas=getAreas($id_sede);
 echo'<select name="areas" id="lista_areas" onChange="obtenerFacultades(this.value)">' ;
 echo"<option >Seleccione Area</option>";
 foreach( $listaAreas as $item){
-	echo "<option value='$item->codigo_area'>".$item->codigo_area."-".$item->nombre_area."</option> ";
+	echo "<option value='$item->id_area"."-"."$item->id_sede'>".$item->id_area."-".$item->nombre_area."</option> ";
 }
 echo"</select>";
 

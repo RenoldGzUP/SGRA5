@@ -1,5 +1,5 @@
 function obtenerAreas(val) 
-{ 
+{  
 				 $.ajax
 				 ({
 					type: "POST",
@@ -14,15 +14,12 @@ function obtenerAreas(val)
 }
 
 function obtenerFacultades(val) 
-{ 
-<<<<<<< HEAD
-		
-=======
-				 $.ajax
+{ 	var valores = val.split('-');
+			 $.ajax
 				 ({
 					type: "POST",
 					url: "../Consultas/Facultades.php",
-					data:'id_areas='+val,
+					data:'id_areas='+valores[0]+'&id_sede='+valores[1],
 					success: function(data)
 					{
 					   $("#lista_facultades").html(data);
@@ -31,18 +28,3 @@ function obtenerFacultades(val)
 				
 }
 
-function obtenerDataInscritos(val) 
-{ 
->>>>>>> dcfcbe16ffa932f26ae84adbb5a7deda4f39008f
-				 $.ajax
-				 ({
-					type: "POST",
-					url: "../Consultas/Facultades.php",
-					data:'id_areas='+val,
-					success: function(data)
-					{
-					   $("#lista_facultades").html(data);
-					}
-				 });
-				
-}

@@ -144,7 +144,7 @@ exit;
 	</select>
  en: 
     <select name="facultades" id="lista_facultades" >
-	<option >Seleccione Area</option>
+	<option >Seleccione Facultad</option>
 	
 	</select>
 

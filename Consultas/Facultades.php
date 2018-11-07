@@ -4,8 +4,10 @@ openConnection();
 include_once('../Scripts/consultas.php');
 
 //Capturando ID de SEde
+
 $id_area=$_POST["id_areas"];
-$listaFacultades=getFacultades($id_area);
+$id_sede=$_POST["id_sede"];
+$listaFacultades=getFacultades($id_sede,$id_area);
 
 echo'<select name="Facultad" id="lista_facultad" >';
 echo"<option >Seleccione Facultad</option>";
