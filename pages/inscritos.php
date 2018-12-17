@@ -120,6 +120,7 @@ exit;
 
 
 <div class="container col-lg-12" style="margin-top: -15px">
+  <script src="../JS/Filtros.js"></script>
   <h2></h2>
   <div class="panel panel-default " >
     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Inscritos</a></div>

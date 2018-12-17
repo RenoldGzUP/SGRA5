@@ -27,4 +27,41 @@ function obtenerFacultades(val)
 				 });
 				
 }
+function obtenerFacultadesComun(val) 
+{
+	alert(val);
+				 $.ajax
+				 ({
+					type: "POST",
+					url: "../Consultas/FacultadesComun.php",
+					data:'id_areacomun='+val,
+					success: function(data)
+					{
+					   $("#lista_facultades_comunes").html(data);
+					}
+				 });
+				
+}
+
+function generarCertificacion(val)
+{
+				 $.ajax
+				 ({
+					type: "POST",
+					url: "../Consultas/Areas.php",
+					data:'id_sedes='+val,
+					success: function(data)
+					{
+					   $("#lista_areas").html(data);
+					}
+				 });
+}
+
+function obtenerAreasCertificacion(val){
+	var opcionArea = document.getElementById('areasCertificacion');
+	alert(val);
+	
+
+}
+
 

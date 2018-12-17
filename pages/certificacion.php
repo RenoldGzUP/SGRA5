@@ -1,4 +1,8 @@
 <?php
+include_once('../Scripts/classConexionDB.php');
+openConnection();
+include_once('../Scripts/library_db_sql.php');
+
 session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 } 
@@ -13,7 +17,8 @@ exit;
 $now = time();
 if($now > $_SESSION['expire']) {
 session_destroy();
-echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+//echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+echo "<script>location.href='../noAccess.html'</script>";
 exit;
 }
 ?>
@@ -40,24 +45,17 @@ exit;
     <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
-    <!-- DataTables CSS -->
-    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
+     <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+     <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+    <script src="../JS/Filtros.js"></script>
+     <script src="../JS/getCheckedRow.js"></script>
 
     <style>
     #vertical-bar {
@@ -67,7 +65,19 @@ exit;
         margin-left: 265px;
       
     }
-</style>
+  </style>
+
+  <script >
+$(document).ready(function() {
+$('#checkboxlist').DataTable( {
+order: [],
+autoWidth: true,
+columnDefs: [ { orderable: false, targets: [0,16] },
+{"width": "65px", "targets":[16] } ]
+});
+
+} );
+</script>
 
 
 
@@ -118,163 +128,229 @@ exit;
         
 
 
-<div class="container col-lg-12" style="margin-top: -15px">
+<div class="container col-lg-12" style="margin-top: -30px">
   <h2></h2>
   <div class="panel panel-default " >
-    <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Certificación</a></div>
-    <div class="panel-heading"style="height: 90px">Filtro local:   
+<!--     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Certificación</a></div> -->
+    <div class="panel-heading"style="height: 70px">Filtro local:   
 
-<select name="sedes">
-<optgroup label="C.Regionales">
-       <option value="1">01-Campus</option> 
-       <option value="2">02-Chiriqui</option> 
-       <option value="3">03-Azuero</option> 
-       <option value="4">04-Veraguas</option>
-       <option value="5">05-Colón</option>
-       <option value="6">06-Cocle</option>
-       <option value="7">07-Los Santos</option>
-       <option value="8">08-Bocas del Toro</option>
-       <option value="9">09-Pma.Oeste</option>
-       <option value="11">11-San Miguelito</option>
-</optgroup>
-       
+<select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
+  <option >Seleccione Sede</option>
+  <?php
+  include '../Consultas/Sedes.php';
+  $listaSedes = getPHPSedes(); 
+     foreach( $listaSedes as $item){
+   echo "<option value='$item->id_sede'>".$item->codigo_sede."-".$item->nombre_sede."</option> ";
+  } 
+  ?>
+  </select>
 
-   <optgroup label="Ext.Univ">
-         <option value="12">12-Darien</option>
-         <option value="13">13-Aguadulce</option>
-         <option value="14">14-Pma.Este</option>
-         <option value="16">16-Soná</option>
+ donde :
+ 
+    <select name="areas"  id="lista_areas" onChange='obtenerFacultades(this.value)'>
+  <option >Seleccione Area</option>
+  
+  </select>
+ en: 
+    <select name="facultades" id="lista_facultades" >
+  <option >Seleccione Facultad</option>
+  
+  </select>
 
-    </optgroup>
-    
-   <optgroup label="Programa Anexo"> 
-       <option value="17">17-Arraijan</option> 
-       <option value="18">20-Chiriquí Grande</option> 
-       <option value="19">21-Kankintu</option> 
-       <option value="20">22-Churuquita Grande</option>
-       <option value="21">23-Isla Colón</option>
-       <option value="22">24-Las Tablas</option>
-       <option value="23">25-Ola</option>
-   </optgroup> 
-</select>
-
-donde : 
-<select name="Area">
-   <option selected value="0"> Área </option>
-       <optgroup label="Microsoft"> 
-       <option value="1">01-Adm.Empresas</option> 
-       <option value="2">02-Adm.Pública y Economía</option> 
-       <option value="3">03-Arquitectura</option> 
-       <option value="4">04-Cientifica</option>
-       <option value="5">05-Humanistica</option>
-       <option value="6">06-Policia</option>
-       <option value="7">07-Derecho</option>
-       <option value="8">08-Informática</option>
-       <option value="9">09-Asist.Odontologico</option>
-   </optgroup>  
-</select>
-
-en: 
-<select name="OS">
-   <option selected value="0"> Facultad </option>
-       <optgroup label="Microsoft"> 
-       <option value="1">Windows Vista</option> 
-       <option value="2">Windows 7</option> 
-       <option value="3">Windows XP</option> 
-   </optgroup> 
-   <optgroup label="Linux"> 
-       <option value="10">Fedora</option> 
-       <option value="11">Debian</option> 
-       <option value="12">Suse</option> 
-   </optgroup> 
-</select>
-en:
-<select name="OS">
-   <option selected value="0">Carrera</option>
-       <optgroup label="Microsoft"> 
-       <option value="1">Windows Vista</option> 
-       <option value="2">Windows 7</option> 
-       <option value="3">Windows XP</option> 
-   </optgroup> 
-   <optgroup label="Linux"> 
-       <option value="10">Fedora</option> 
-       <option value="11">Debian</option> 
-       <option value="12">Suse</option> 
-   </optgroup> 
-</select>
-
-<button type="button" class="btn btn-default btn-xs pull-right" style="width: 200px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
-
-<!--<div style="margin-top: 8px">
-  Ordenar por :&nbsp&nbsp&nbsp&nbsp  
-<select name="OS">
-   <option selected value="0">-------</option>
-       <option value="1">Sede</option> 
-       <option value="2">Area</option> 
-       <option value="3">Facultad</option> 
-       <option value="10">Escuela</option> 
-       <option value="11">Nombre</option> 
-       <option value="12">Apellido</option>
-       <option value="13">Inscripcion</option>
-       <option value="14">Cedula</option> 
-</select> 
-</div>-->
+<button type="button" class="btn btn-default btn-xs pull-right" style="width: 150px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
 
 
-<div style="margin-top: 15px">
-Mostrar:&nbsp&nbsp&nbsp&nbsp  
-<select name="OS">
-   <option selected value="0">10 </option>
-       <option value="1">25</option> 
-       <option value="2">50</option> 
-       <option value="3">100</option> 
-       <option value="10">200</option> 
-       <option value="11">500</option> 
-       <option value="12">1000</option> 
-</select> 
-registros
+<div style="margin-top: 10px">
+<button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 150px"  ><span class="glyphicon glyphicon-filter"></span>Generar Certificaciones</button>
 </div>
 
-    </div>
 
+    </div>
+   <div class="panel panel-default" style="margin-top: 5px">
+    <div class="panel-body">       
+ <table id="checkboxlist" class="table table-bordered table-hover table-editable">
+ <thead style="text-align:center;width: : 10px;background: #225ddb" >
+  <tr style="font-size: 11px;text-align:center; color: #ffffff">
+     <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
+        <th style="text-align: center;">#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th style="width:70px;" >Cédula</th>
+        <th>Inscripción</th>
+        <th>Sede</th>
+        <th>Fac1A</th>
+        <th>Esc1A</th>
+        <th>Car1A</th>
+        <th>Fac2A</th>
+        <th>Esc2A</th>
+        <th>Car2A</th>
+        <th>Fac3A</th>
+        <th>Esc3A</th>
+        <th>Car3A</th>
+        <th>Acciones</th>
+       </tr>
+    </thead>
+      <tbody>
 
 <?php
-include'TablaDatosResultados.php';
+         $estResultado = showDataResultado();
+         if($estResultado){
+          foreach ($estResultado as $item) {
+          echo'<tr style="font-size: 11px;text-align:center">';
+          echo'<td style="text-align: center;"><input type="checkbox" class="checkthis" value='.$item->n_ins.'></td>';
+          echo "<td></td>";
+          echo "<td>".$item->nombre."</td>";  
+          echo "<td>".$item->apellido."</td>";  
+          echo "<td>".$item->cedula."</td>";
+          echo "<td>".$item->n_ins."</td>";  
+          echo "<td>".$item->sede."</td>";  
+          echo "<td>".$item->fac_ia."</td>";
+          echo "<td>".$item->esc_ia."</td>";  
+          echo "<td>".$item->car_ia."</td>";  
+          echo "<td>".$item->fac_iia."</td>";
+          echo "<td>".$item->esc_iia."</td>";  
+          echo "<td>".$item->car_iia."</td>";  
+          echo "<td>".$item->fac_iiia."</td>";
+          echo "<td>".$item->esc_iiia."</td>";  
+          echo "<td>".$item->car_iiia."</td>";  
+          echo '<td><a  id="edit" href="#" class="btn btn-info btn-xs" ><span class="glyphicon glyphicon-pencil"></span> </a>
+          <a  id="remove" href="#" class="btn btn-success btn-xs" data-toggle="modal" data-target="#save"><span class="glyphicon glyphicon-floppy-saved" ></span> </a>
 
+            <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span> </a>
+
+          </td>';
+
+          echo"</tr>";       
+          }
+         }else { 
+             echo'<tr><td colspan="4">No hay datos a mostrar en esta Pantalla</td></tr>';
+         }     
 ?>
-                        <!-- /.panel-body -->
+
+      </tbody>
+ </table>
+
+    </div>
   </div>
+
+  </div>
+
+
+   <!-- Modal Certificaciones Individuales -->
+   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Administrador de Certificaciones</h4>
+        </div>
+        <div class="modal-body">
+         <div class="panel-group">
+
+    <!--       <div class="panel panel-primary">
+            <div class="panel-heading">Modelo de certificaciones</div>
+            <div class="panel-body">	  
+
+              <form></form>
+
+            <select name="Area" id="lista_areas_comunes" onChange='obtenerFacultadesComun(this.value)'>
+             <option selected value="0"> Área </option>
+             <?php
+             $listaSedes = getAreasComun(); 
+             foreach( $listaSedes as $item){
+               echo "<option value='$item->codigo_area'>".$item->codigo_area."-".$item->nombre_area."</option> ";
+             } 
+             ?> 
+           </select>
+          <select name="FacultadModal" id="lista_facultades_comunes">
+             <option selected value="">Facultad</option>
+           </select> 
+
+           <button type="button" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-list-alt"></span> Aplicar</button>
+
+         </div>
+       </div> -->
+
+
+       <div class="panel panel-primary">
+        <div class="panel-heading">Previsualizacion</div>
+        <div class="panel-body">
+
+        </div>
+      </div>
+
+    </div>
+    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-arrow-down"></span> PDF</button>
+    <button type="button" class="btn btn-default "><span class="glyphicon glyphicon-arrow-down"></span> Word</button>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+</div>
+</div>  <!-- /#FIN MODAL Indivual de certificaciones-->
+
+
+<!-- /.modal- para eliminar registro     -->
+  <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+          <h4 class="modal-title custom_align" id="Heading">Borrar Registro</h4>
+        </div>
+
+        <div class="modal-body">
+         <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span>  ¿Desea borrar el registro seleccionado?</div>
+       </div>
+
+       <div class="modal-footer ">
+        <button type="button" id ="del" class="btn btn-default" ><span class="glyphicon glyphicon-ok-sign"></span> SI</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> NO</button>
+      </div>
+
+    </div><!-- /.modal-content --> 
+   </div><!-- /.modal-dialog --> 
+  </div>
+<!-- /.modal. para eliminar registro Fin -->
+
+<!-- /.modal- para guardar registro     -->
+  <div class="modal fade" id="save" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+          <h4 class="modal-title custom_align" id="Heading">Guardar Registro</h4>
+        </div>
+
+        <div class="modal-body">
+         <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span>  ¿Desea guardar el registro seleccionado?</div>
+       </div>
+
+       <div class="modal-footer ">
+        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> SI</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> NO</button>
+      </div>
+
+    </div><!-- /.modal-content --> 
+   </div><!-- /.modal-dialog --> 
+  </div>
+<!-- /.modal. para eliminar registro Fin -->
+
 </div>
         <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
+   
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- DataTables JavaScript -->
-    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="/dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
-    </script>
+    
 
 </body>
 

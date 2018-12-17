@@ -1,11 +1,14 @@
 <?php
-include_once('../Scripts/ClassConexionDB.php');
+include_once('../Scripts/classConexionDB.php');
 openConnection();
-include_once('../Scripts/consultas.php');
+include_once('../Scripts/library_db_sql.php');
 
 //Capturando ID de SEde
-$id_sede= $_POST["id_sedes"] ;
+// $id_sede= $_POST["id_sedes"] ;
+$id_sede = 4;
+var_dump($id_sede);
 $listaAreas=getAreas($id_sede);
+var_dump($listaAreas);
 
 echo'<select name="areas" id="lista_areas" onChange="obtenerFacultades(this.value)">' ;
 echo"<option >Seleccione Area</option>";

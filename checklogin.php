@@ -8,6 +8,7 @@ $user_db = "root";
 $pass_db = "";
 $db_name = "sgra";
 $tbl_name = "usuarios";
+
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 if ($conexion->connect_error) {
  die("La conexion falló: " . $conexion->connect_error);
@@ -30,13 +31,13 @@ if ($result->num_rows > 0) {
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (7200 * 60);
+    $_SESSION['expire'] = $_SESSION['start'] + (10 * 120);
        //echo "Acceso";
        header("Location:./pages/dashboard.php"); //Si la consulta de usuario y clave es correcta
 
  } else { 
-   echo "Username o Password estan incorrectos.";
-   echo "<br><a href='index.html'>Volver a Intentarlo</a>";
+   echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
+   echo "<script>location.href='index.html'</script>";
  }
  mysqli_close($conexion);
  ?>

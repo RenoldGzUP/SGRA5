@@ -1,7 +1,7 @@
 <?php
-include_once('../Scripts/ClassConexionDB.php');
+include_once('../Scripts/classConexionDB.php');
 openConnection();
-include_once('../Scripts/consultas.php');
+include_once('../Scripts/library_db_sql.php');;
 
 //Capturando ID de SEde
 $listaSedes=getSedes();
