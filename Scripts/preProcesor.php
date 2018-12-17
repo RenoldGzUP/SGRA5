@@ -10,7 +10,7 @@ use PhpOffice\PhpWord\TemplateProcessor;
 $templateWord = new TemplateProcessor('Certificacion_Area_Arquitectura.docx');
 
 $numInscrito= $_POST["idInscrito"] ;
-echo "Valor PHP  -> ";
+echo "Valor PHP  ->   ";
 var_dump($numInscrito);
 $consulta=getDataIndividual($numInscrito);
 
