@@ -1,5 +1,9 @@
 <?php
+include_once('../Scripts/classConexionDB.php');
+openConnection();
+include_once('../Scripts/library_db_sql.php');
 session_start();
+saveLogs($_SESSION['name'],"Usuario accedió a página principal");
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 } 
 else {
@@ -16,6 +20,8 @@ session_destroy();
 echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
 exit;
 }
+
+
 ?>
 <head>
 
@@ -90,7 +96,7 @@ exit;
           <!-- /.navbar-header -->
 
           <ul class="nav navbar-top-links navbar-right" style="margin-top: 42px">
-           <p style="color: #ffffff;margin-right: 30px;margin-top: 10px" >Bienvenido <?php echo $_SESSION['username']; ?> &nbsp     | &nbsp
+           <p style="color: #ffffff;margin-right: 30px;margin-top: 10px" >Bienvenido <?php echo $_SESSION['name']; ?> &nbsp     | &nbsp
             <?php echo date('l, F jS, Y'); ?>
             &nbsp|&nbsp <b><a href="../logout/logout.php" style="color:#ffff00";>Salir</a></b></p>
           </ul> 

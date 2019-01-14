@@ -54,7 +54,7 @@ public function getresults($parametros = null){//Analizador de consultas prepara
 
 function getUsers($userName){
 	global $mysqli;
-	$query = new Query($mysqli,"SELECT * FROM usuarios WHERE nombre_usuario = ?");
+	$query = new Query($mysqli,"SELECT nombre_usuario,password FROM usuarios WHERE nombre_usuario = ?");
 	$parametros = array("s",&$userName);
 	$data = $query->getresults($parametros);
 
@@ -213,30 +213,104 @@ function deleteRowDB($numInscrito){
 	    return null;
 }
 
-function showLog(){
+
+
+function showRegistersUsers(){
 	global $mysqli;
-	$query = new Query($mysqli,"SELECT id_log,username,date_log,log from logs order by id_log desc");
+	$query = new Query($mysqli,"SELECT name,lastname,nombre_usuario,email,type from usuarios");
     $parametros = array();
     $data = $query->getresults();
-		
 	if(isset($data[0]))
 	    return $data;
 	else
 	    return null;
 }
 
-function saveLogs($username,$logReport) 
-{	global $mysqli;
-    date_default_timezone_set("America/Argentina/Buenos_Aires");//ZONA HORARIA ARG
-    $datetime = date("d-m-Y h:i:s A");
-	$query = new Query($mysqli,"INSERT INTO logs(username,date_log,log) VALUES (?,?,?)");
-    $parametros = array("sss",&$username,&$datetime,&$logReport);
-	
-		$data = $query->getresults($parametros);
-		  
-		$result = "Registro insertado";  
-		return $result;
+
+function showLogsUsers(){
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT * from LOGSYSTEM ORDER BY ID_LOG DESC");
+    $parametros = array();
+    $data = $query->getresults();
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
 }
+
+function saveLogs($USERNAME,$LOGREPORT) {	
+	global $mysqli;
+    date_default_timezone_set("America/Panama");//ZONA HORARIA ARG
+    $datetime = date("d-m-Y h:i:s A");
+	$query = new Query($mysqli,"INSERT INTO LOGSYSTEM(USERNAME,DATE_LOG,ACCION) VALUES (?,?,?)");
+    $parametros = array("sss",&$USERNAME,&$datetime,&$LOGREPORT);
+	$data = $query->getresults($parametros);
+	//$result = "Registro insertado";  
+	//return $result;
+}
+
+function insertNewRegister($NAME,$LASTNAME,$USERNAME,$EMAIL,$ROL,$PASSWORD){
+    global $mysqli;
+    $query = new Query($mysqli,"INSERT INTO usuarios(name,lastname,nombre_usuario,email,type,password) VALUES (?,?,?,?,?,?)");
+    $parametros = array("ssssss",&$NAME,&$LASTNAME,&$USERNAME,&$EMAIL,&$ROL,&$PASSWORD);
+    $data = $query->getresults($parametros);
+    return true;
+}
+
+function deleteRegister($USERNAME){
+    global $mysqli;
+    $query = new Query($mysqli,"DELETE FROM usuarios where nombre_usuario = ?");
+    $parametros = array("s",&$USERNAME);
+    $data = $query->getresults($parametros);
+    return true;
+}
+
+
+function getUser($USERNAME,$PASSWORD)
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT nombre_usuario,password,type FROM usuarios WHERE nombre_usuario=? AND password=?");
+    $parametros = array('ss', &$USERNAME,&$PASSWORD);
+    $data = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];
+    } else {
+        return null;
+    }
+}
+
+function getAllDataUser($USERNAME){
+	global $mysqli;
+    $query = new Query($mysqli, "SELECT name,lastname,nombre_usuario,email,type FROM usuarios WHERE nombre_usuario=?");
+    $parametros = array('s', &$USERNAME);
+    $data = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];}
+        else {return null;}
+}
+
+function updateDataUser(){
+	global $mysqli;
+    $query = new Query($mysqli, "SELECT nombre_usuario,password,type FROM usuarios WHERE nombre_usuario=?");
+    $parametros = array('s', &$USERNAME);
+    $data = $query->getresults($parametros);
+
+}
+
+
+function getTablesList(){
+	global $mysqli;
+    $query = new Query($mysqli, "SHOW TABLES FROM sgra");
+    $parametros = array();
+    $data = $query->getresults();
+ if (isset($data)) {
+        return $data;}
+        else {return null;}
+}
+
+
 
 
 ?>

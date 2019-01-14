@@ -71,6 +71,8 @@ function sendID(id){
 	})
 	.done(function( data, textStatus, jqXHR ) {
 		console.log("data retornada:"+data);
+        window.location = data;
+
 	})
 	.fail(function( jqXHR, textStatus, errorThrown ) {
 		console.log( "La solicitud a fallado: " +  textStatus);

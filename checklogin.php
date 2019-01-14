@@ -1,43 +1,44 @@
 <?php
+include_once ('./Scripts/classConexionDB.php');
+openConnection();
+include_once ('./Scripts/library_db_sql.php');
 session_start();
+	
+	// data sent from form login.html 
+	$user = $_POST['username']; 
+	$password = md5($_POST['password']);
+	// Query sent to database
+	$result = getUser($user,$password);
+	//var_dump($result)
+	// Variable $hash hold the password hash on database
+	$location= $result->type;
+
+	
+	/* 
+	password_Verify() function verify if the password entered by the user
+	match the password hash on the database. If everything is ok the session
+	is created for one minute. Change 1 on $_SESSION[start] to 5 for a 5 minutes session.
+	*/
+	if ($result) {	
+
+		if ($location == 1) {
+		saveLogs($result->nombre_usuario,"Usuario inicio session"); 
+		$_SESSION['loggedin'] = true;
+		$_SESSION['name'] = $result->nombre_usuario;
+		$_SESSION['start'] = time();
+		$_SESSION['expire'] = $_SESSION['start'] + (100 * 60) ;						
+		header("Location:./pages/dashboard.php");}
+
+		elseif ($location == 2) {
+		saveLogs($result->nombre_usuario,"Usuario inicio session"); 
+		$_SESSION['loggedin'] = true;
+		$_SESSION['name'] = $result->nombre_usuario;
+		$_SESSION['start'] = time();
+		$_SESSION['expire'] = $_SESSION['start'] + (100 * 60) ;						
+		header("Location:./pagesAdm/dashboard.php");}
+
+	} else {
+		echo "<div class='alert alert-danger' role='alert'>Email or Password are incorrects!
+		<p><a href='index.html'><strong>Please try again!</strong></a></p></div>";			
+	}	
 ?>
-
-<?php
-$host_db = "localhost";
-$user_db = "root";
-$pass_db = "";
-$db_name = "sgra";
-$tbl_name = "usuarios";
-
-$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
-if ($conexion->connect_error) {
- die("La conexion falló: " . $conexion->connect_error);
-}
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$sql = "SELECT * FROM $tbl_name WHERE nombre_usuario = '$username'";
-
-$result = $conexion->query($sql);
-
-if ($result->num_rows > 0) {     
- }
-
- $row = $result->fetch_array(MYSQLI_ASSOC);
-
- if (password_verify($password, $row['password'])) { 
- 	 //Si la consulta de usuario y clave es correcta
- 	session_start();
-    $_SESSION['loggedin'] = true;
-    $_SESSION['username'] = $username;
-    $_SESSION['start'] = time();
-    $_SESSION['expire'] = $_SESSION['start'] + (10 * 120);
-       //echo "Acceso";
-       header("Location:./pages/dashboard.php"); //Si la consulta de usuario y clave es correcta
-
- } else { 
-   echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
-   echo "<script>location.href='index.html'</script>";
- }
- mysqli_close($conexion);
- ?>

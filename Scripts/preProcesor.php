@@ -10,11 +10,11 @@ use PhpOffice\PhpWord\TemplateProcessor;
 $templateWord = new TemplateProcessor('Certificacion_Area_Arquitectura.docx');
 
 $numInscrito= $_POST["idInscrito"] ;
-echo "Valor PHP  ->   ";
-var_dump($numInscrito);
+//echo "Valor PHP  ->   ";
+//var_dump($numInscrito);
 $consulta=getDataIndividual($numInscrito);
 
-var_dump($consulta);
+//var_dump($consulta);
 
 foreach( $consulta as $item){
 	// --- Asignamos valores a la plantilla
@@ -22,7 +22,7 @@ foreach( $consulta as $item){
 		$templateWord->setValue('nombre_completo',$item->nombre_completo);
 		$templateWord->setValue('numero_cedula',$item->cedula);
 		$templateWord->setValue('nombre_sede',ucwords(strtolower($item->nsede)));
-		$templateWord->setValue('nombre_area',$item->area_i);
+		//$templateWord->setValue('nombre_area',$item->area_i);
 		$templateWord->setValue('nombre_facultad',ucwords(strtolower($item->nfacultad)));
 		$templateWord->setValue('nombre_carrera',ucwords(strtolower($item->ncarrera)));
 		$templateWord->setValue('colegio_procedencia',ucwords(strtolower($item->col_proc)));
@@ -41,12 +41,25 @@ foreach( $consulta as $item){
 		$templateWord->setValue('pca2',$item->pca);
 }
 
+//$phpWord = new \PhpOffice\PhpWord\PhpWord();
 
 // --- Guardamos el documento
-$templateWord->saveAs('Documento02.docx');
+$pathDocument  = "../Scripts/tmp/Certificacion".$numInscrito.".docx"; 
+echo "$pathDocument";
+$templateWord->saveAs('tmp/Certificacion'.$numInscrito.'.docx');
 
-header("Content-Disposition: attachment; filename=Documento02.docx; charset=iso-8859-1");
-echo file_get_contents('Documento02.docx');
+/*//Load temp file
+$phpWord = \PhpOffice\PhpWord\IOFactory::load('tmp/Certificacion'.$numInscrito.'.docx'); 
+
+//Save it
+$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord , 'PDF');
+$xmlWriter->save('tmp/Certificacion'.$numInscrito.'.pdf');  */
+
+//header("Content-Disposition: attachment; filename=Documento02.docx; charset=iso-8859-1");
+//echo file_get_contents('Documento02.docx');
+
+//$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($templateWord, 'Word2007');
+//$xmlWriter->save("php://output");
         
 
 

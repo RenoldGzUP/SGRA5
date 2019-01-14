@@ -1,3 +1,28 @@
+<?php
+include_once('../Scripts/classConexionDB.php');
+openConnection();
+include_once('../Scripts/library_db_sql.php');
+session_start();
+saveLogs($_SESSION['name'],"Usuario accedió a página reportes");
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+} 
+else {
+  header('Location:../index.html');
+ //  echo "Esta pagina es solo para usuarios registrados.<br>";
+  // echo "<br><a href='login.html'>Login</a>";
+   //echo "<br><br><a href='index.html'>Registrarme</a>";//
+exit;
+}
+
+$now = time();
+if($now > $_SESSION['expire']) {
+session_destroy();
+echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+exit;
+}
+?>
+
 <head>
 
     <meta charset="utf-8">
@@ -71,9 +96,9 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right" style="margin-top: 42px">
-                 <p style="color: #ffffff;margin-right: 30px;margin-top: 10px" >Bienvenido Nombre+Apellido &nbsp     | &nbsp
+                 <p style="color: #ffffff;margin-right: 30px;margin-top: 10px" >Bienvenido <?php echo $_SESSION['username']; ?> &nbsp     | &nbsp
                     <?php echo date('l, F jS, Y'); ?>
-                  &nbsp|&nbsp <b><a href="../login/logout.php" style="color:#ffff00";>Salir</a></b></p>
+                  &nbsp|&nbsp <b><a href="../logout/logout.php" style="color:#ffff00";>Salir</a></b></p>
             </ul> 
 
 
@@ -84,8 +109,8 @@
   <nav class="navbar" align="center" style="background: #d6d5d5;min-height: 25px;;margin-top: -1px" >
     <a href="dashboard.php" style="width: 145px" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-home"></span> Inicio</a>
     <a href="inscritos.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Inscritos</a>
-    <a href="certificación.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Certificación</a>
-    <a href="validación.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Validación</a>
+    <a href="certificacion.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Certificación</a>
+    <a href="validacion.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Validación</a>
     <a  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm disabled">Reportes</a>
 </nav>
  <!--   </div>-->
