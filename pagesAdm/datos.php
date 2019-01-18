@@ -112,7 +112,7 @@ if($now > $_SESSION['expire']) {
         <h4>Administrador de registros para las Base de Datos</h4>
         <div class="panel-group">
           <div class="panel panel-default">
-            <div class="panel-heading" style="font-size: 14px;">Importar Registros A Base de Datos - <b>Inscritos</b></div>
+            <div class="panel-heading" style="font-size: 14px;">Importar Registros A BD - <b>Inscritos</b></div>
             <div class="panel-body">
              <div class="container col-lg-12">   
               <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
@@ -131,8 +131,13 @@ if($now > $_SESSION['expire']) {
                         <select name="listaBD">
                        <?php
                        $listasDB = getTablesList(); 
-                       foreach( $listasDB as $item){
-                         echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";}  
+
+                       foreach($listasDB as $item){
+                        if (preg_match("/inscritos/",$item->Tables_in_sgra)) {
+                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
+                        }
+                        
+                      }  
                          ?>
                        </select>
                         </td>   
@@ -146,19 +151,9 @@ if($now > $_SESSION['expire']) {
                         </div>
                       </td> 
                     </tr>
-
                   </tbody>
                 </table>
-
               </form>
-
-              <div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-    40%
-  </div>
-</div>
-
             </div>
 
 
@@ -170,44 +165,62 @@ if($now > $_SESSION['expire']) {
 
         <h2></h2>
         <div class="panel panel-default">
-          <div class="panel-heading" style="font-size: 18px;">Exportar los Registros </div>
+          <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <b>Inscritos</b></div>
           <div class="panel-body">
-           <div class="container col-lg-12">   
-            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+            <div class="container col-lg-12">   
+              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
-              <table class="table table-bordered">
+                <table class="table table-borderless" style="font-size: 13px;" >
 
-                <tbody>
-                  <tr>
-                    <td class ="text-right" width="250">Nombre del Archivo : </td>
-                    <td width="380"><input class="form-control" type="text" name="name" value="download" /></td>
-                    <td class ="text-right">Tabla Origen : </td>
-                    <td>
-                      <select name="listaOrigen">
-                      <?php
+                  <tbody>
+                    <tr>
+                      <td class ="text-left col-sm-3" >Nombre del archivo: </td>
+                      <td  width="100"><input class="form-control " type="text" name="name" value="download"></td>
+                    </tr>
+
+                    <tr>
+                      <td class ="text-left">Tabla Origen:</td>
+                       <td>
+                        <select name="listaBD">
+                       <?php
                        $listasDB = getTablesList(); 
-                       foreach( $listasDB as $item){
-                         echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";}  
-                      ?>
-                      </select>
-                    </td>
-                    <td class ="text-right">Formato : </td>
-                    <td><select name="transporte"><option>PDF</option><option>Excel</option><option>SQL</option></select></td>
-                    <td width="130">
-                      <div class = "pull-right">
-                        <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar</button>
-                      </div>
-                    </td>
-                  </tr>
 
-                </tbody>
-              </table>
+                       foreach($listasDB as $item){
+                        if (preg_match("/inscritos/",$item->Tables_in_sgra)) {
+                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
+                        }
+                        
+                      }  
+                         ?>
+                       </select>
+                        </td>   
+                    </tr>
 
-            </form>
+                     <tr>
+                      <td class ="text-left">Formato :</td>
+                       <td>
+                        <select name="listaBD">
+                    <option>PDF</option><option>Excel</option><option>SQL</option>
+                       </select>
+                        </td>   
+                    </tr>
 
-          </div>
+                    <tr>
+                      <td></td>
+                        <td width="100">
+                        <div class = "pull-right">
+                          <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar</button>
+                        </div>
+                      </td> 
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </form>
 
 
+            </div>
 
         </div>
       </div>
@@ -218,10 +231,10 @@ if($now > $_SESSION['expire']) {
         <h4></h4>
         <div class="panel-group">
           <div class="panel panel-default">
-            <div class="panel-heading" style="font-size: 14px;">Importar Registros  Base de Datos - <b>Resultados</b></div>
+            <div class="panel-heading" style="font-size: 14px;">Importar Registros  BD- <b>Resultados</b></div>
             <div class="panel-body">
              <div class="container col-lg-12">   
-              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+              <form action="../Scripts/uploadCSVResultados.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
                         <table class="table table-borderless" style="font-size: 13px;" >
 
@@ -237,8 +250,13 @@ if($now > $_SESSION['expire']) {
                         <select name="listaBD">
                        <?php
                        $listasDB = getTablesList(); 
-                       foreach( $listasDB as $item){
-                         echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";}  
+                      
+                      foreach($listasDB as $item){
+                        if (preg_match("/resultados/",$item->Tables_in_sgra)) {
+                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";}
+                        }  
+
+
                          ?>
                        </select>
                         </td>   
@@ -252,19 +270,9 @@ if($now > $_SESSION['expire']) {
                         </div>
                       </td> 
                     </tr>
-
                   </tbody>
                 </table>
-
               </form>
-
-              <div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-    40%
-  </div>
-</div>
-
             </div>
 
 
@@ -276,42 +284,62 @@ if($now > $_SESSION['expire']) {
 
         <h2></h2>
         <div class="panel panel-default">
-          <div class="panel-heading" style="font-size: 18px;">Exportar los Registros</div>
+          <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <B>Resultados</B></div>
           <div class="panel-body">
            <div class="container col-lg-12">   
-            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
-              <table class="table table-bordered ">
+                <table class="table table-borderless" style="font-size: 13px;" >
 
-                <tbody>
-                  <tr>
-                    <td class ="text-right" width="250">Nombre del Archivo : </td>
-                    <td width="380"><input class="form-control" type="text" name="name" value="download" /></td>
-                    <td class ="text-right">Tabla Origen : </td>
-                    <td>
-                      <select name="listaOrigen">
-                      <?php
+                  <tbody>
+                    <tr>
+                      <td class ="text-left col-sm-3" >Nombre del archivo: </td>
+                      <td  width="100"><input class="form-control " type="text" name="name" value="download"></td>
+                    </tr>
+
+                    <tr>
+                      <td class ="text-left">Tabla Origen:</td>
+                       <td>
+                        <select name="listaBD">
+                       <?php
                        $listasDB = getTablesList(); 
-                       foreach( $listasDB as $item){
-                         echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";}  
-                      ?>
-                      </select>
-                    </td>
-                    <td class ="text-right">Formato : </td>
-                    <td><select name="transporte"><option>PDF</option><option>Excel</option><option>SQL</option></select></td>
-                    <td width="130">
-                      <div class = "pull-right">
-                        <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar</button>
-                      </div>
-                    </td>
-                  </tr>
 
-                </tbody>
-              </table>
+                       foreach($listasDB as $item){
+                        if (preg_match("/resultados/",$item->Tables_in_sgra)) {
+                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
+                        }
+                        
+                      }  
+                         ?>
+                       </select>
+                        </td>   
+                    </tr>
 
-            </form>
+                     <tr>
+                      <td class ="text-left">Formato :</td>
+                       <td>
+                        <select name="listaBD">
+                    <option>PDF</option><option>Excel</option><option>SQL</option>
+                       </select>
+                        </td>   
+                    </tr>
 
-          </div>
+                    <tr>
+                      <td></td>
+                        <td width="100">
+                        <div class = "pull-right">
+                          <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar</button>
+                        </div>
+                      </td> 
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </form>
+
+
+            </div>
 
 
 

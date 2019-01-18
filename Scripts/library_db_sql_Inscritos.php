@@ -53,18 +53,8 @@ public function getresults($parametros = null){//Analizador de consultas prepara
 }
 
 
-function getTablesListInscritos(){
-	global $mysqli;
-    $Query = new Query($mysqli, "SHOW TABLES FROM sgrainscritos");
-    $parametros = array();
-    $data = $Query->getresults();
- if (isset($data)) {
-        return $data;}
-        else {return null;}
-}
 
-
-function getTablesListResultados(){
+function getTablesList(){
 	global $mysqli;
     $Query = new Query($mysqli, "SHOW TABLES FROM sgra");
     $parametros = array();
@@ -74,9 +64,20 @@ function getTablesListResultados(){
         else {return null;}
 }
 
-function checkRegisterExist($NUMINSCRITO){
+function checkRegisterExistInscritos($NUMINSCRITO){
 	global $mysqli;
     $Query = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM inscritos2017 WHERE n_ins=?");
+    $parametros = array('s', &$NUMINSCRITO);
+    $data = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];}
+        else {return null;}
+}
+
+function checkRegisterExistResultados($NUMINSCRITO){
+	global $mysqli;
+    $Query = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM resultados2017 WHERE n_ins=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data = $Query->getresults($parametros);
 
@@ -105,8 +106,6 @@ $MATRICULA,$SEFAESCA,$RED2,$NO1,$NO2)
     $data = $Query->getresults($parametros);
     return true;
 }
-
-
 
 
 
