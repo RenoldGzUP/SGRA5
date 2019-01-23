@@ -158,7 +158,7 @@ if($now > $_SESSION['expire']) {
 
                     <th>
                       <button type="button" onClick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
-                      <button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok"></span> Validar</button>
+                      <button type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok"></span> Validar</button>
                       <button type="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
                     </th>
 

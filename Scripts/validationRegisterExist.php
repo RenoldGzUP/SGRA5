@@ -14,11 +14,12 @@ $tableResultados = $_POST["table2"];
 
 
 $minusYear = date("Y") -1;
-if (preg_match("/2017/",$tableInscritos) && preg_match("/2017/",$tableInscritos) ){
-//	$vInscrito = validationLastYearInscrito($idSearch,$tableInscritos);
+//Colocar el nombre de la tabla correcta usando la varible
+if (preg_match("/2017/",$tableInscritos) && preg_match("/2017/",$tableResultados) ){
+	$vInscrito = validationLastYearInscrito($idSearch);
 	$vResultado = validationLastYearResultado($idSearch);
 
-	if (is_object($vResultado)) {
+	if (is_object($vInscrito) && is_object($vResultado)) {
 		echo'<tr style="font-size: 11px;text-align:center">';
 		echo'<td style="text-align: center;"><input type="checkbox" class="checkthis" value='.$vResultado->n_ins.'></td>';
 		echo "<td></td>";
@@ -40,26 +41,19 @@ if (preg_match("/2017/",$tableInscritos) && preg_match("/2017/",$tableInscritos)
 		<a  id="remove" href="#" class="btn btn-success btn-xs" data-toggle="modal" data-target="#save"><span class="glyphicon glyphicon-floppy-saved" ></span> </a>
 
 		<a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span> </a>
-
 		</td>';
-
 		echo"</tr>"; 
-
 
 		//PASAR EL ID DE BUSQEUDAD A LA FUNCION QUE BUSCARA OTRa vez al usuario y pasara todos los datos de consulta
 		//a 
-			insertValidateStudentInscritos($idSearch);
-			insertValidateStudentResultados($idSearch);
+			//insertValidateStudentInscritos($idSearch);
+			//insertValidateStudentResultados($idSearch);
 	}
-
 	else{
 		echo'<tr ><td colspan="17" class="">No hay datos a mostrar de '.$idSearch.'</td></tr>';}
 	}
-
 	else{
-		echo'<tr ><td colspan="17" class="">No hay congruencia con las tablas y el a?o de ValidaciOn</td></tr>';}
-
-
+		echo'<tr ><td colspan="17" class="">No hay congruencia con las tablas y el año de Validación</td></tr>';}
 
 
 		function utf8_converter($array)
