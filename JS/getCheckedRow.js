@@ -30,7 +30,7 @@ $("#checkboxlist #checkall").click(function () {
         }
     });
     
-    $("[data-toggle=tooltip]").tooltip();
+  //  $("[data-toggle=tooltip]").tooltip();
 });
 
 
@@ -61,17 +61,17 @@ function getValueUsingParentTag(){
 }
 
 function sendID(id){
-	
+	alert("Mensaje de prueba ");
 	var idInscrito = id;
 	$.ajax({
 		data: {"idInscrito": idInscrito},
 		type: "POST",
 		dataType: "text",
-		url: "../Scripts/preProcesor.php",
+		url: "../Scripts/PHPCertificationsWord/PHPWord-master/samples/procesor.php",
 	})
 	.done(function( data, textStatus, jqXHR ) {
 		console.log("data retornada:"+data);
-        window.location = data;
+      window.location = data;
 
 	})
 	.fail(function( jqXHR, textStatus, errorThrown ) {

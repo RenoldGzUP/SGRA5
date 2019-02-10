@@ -54,6 +54,34 @@ function sendIDValidate(){
 }
 
 
+function exportDataR(){
+    var idInscrito = $("#idSearch").val();
+    var table1 = $("#tablaInscritos").val();
+    var table2 = $("#tablaResultados").val();
+    alert("hola  "+idInscrito);
+  $.ajax({
+        data: {"idInscrito": idInscrito,"table1":table1,"table2":table2},
+        type: "POST",
+        dataType: "text",
+        url: "../Scripts/saveValidationDB.php",
+    })
+    .done(function( data, textStatus, jqXHR ) {
+        console.log("data retornada:"+data);
+          alert("Proceso completado"+data);
+        //window.location = data;
+          //$("#taInscritosResultado").val(data);
+         // document.getElementById('taInscritosInscritos').innerHTML = data;
+         // document.getElementById('taInscritosResultado').innerHTML = data;
+       
+
+    })
+
+    .fail(function( jqXHR, textStatus, errorThrown ) {
+        console.log( "La solicitud a fallado: " +  textStatus);
+    });
+}
+
+
 
 
 

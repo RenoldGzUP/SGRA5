@@ -2,8 +2,13 @@
 include_once('classConexionDB.php');
 openConnection();
 include_once('library_db_sql.php');
+session_start();
 
-require_once dirname(__FILE__).'/PHPWord-master/src/PhpWord/Autoloader.php';
+$numInscrito= $_POST["idInscrito"] ;
+//echo "Valor PHP  ->   ";
+var_dump($numInscrito);
+
+/*require_once dirname(__FILE__).'/PHPWord-master/src/PhpWord/Autoloader.php';
 \PhpOffice\PhpWord\Autoloader::register();
 
 use PhpOffice\PhpWord\TemplateProcessor;
@@ -39,15 +44,15 @@ foreach( $consulta as $item){
 		$templateWord->setValue('valor_razon',$item->razonamiento);
 		$templateWord->setValue('subtot_num',$item->subtotalnumerico);
 		$templateWord->setValue('pca2',$item->pca);
-}
+}*/
 
 //$phpWord = new \PhpOffice\PhpWord\PhpWord();
 
-// --- Guardamos el documento
+/*// --- Guardamos el documento
 $pathDocument  = "../Scripts/tmp/Certificacion".$numInscrito.".docx"; 
 echo "$pathDocument";
 $templateWord->saveAs('tmp/Certificacion'.$numInscrito.'.docx');
-
+*/
 /*//Load temp file
 $phpWord = \PhpOffice\PhpWord\IOFactory::load('tmp/Certificacion'.$numInscrito.'.docx'); 
 

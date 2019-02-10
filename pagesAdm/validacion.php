@@ -78,44 +78,10 @@ if($now > $_SESSION['expire']) {
 
     <div id="wrapper">
 
-      <!-- Navigation -->
-      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;background: #003366">
-
-        <div class="navbar-header"> 
-         <img src="../images/LogoUp.png" align="left" alt="logo" style="width:60px;margin-top: 5px;margin-left: 20px;margin-bottom: 5px">
-
-         <div style="margin-top: 13px;margin-left: 85px">
-          <p style="color: #ffffff;font-size: 18px;font-family: Calisto MT">UNIVERSIDAD DE</p>
-          <p style="color: #ffffff;font-size:36px;margin: -3.2% 0;font-family: Calisto MT">PANAMÁ</p>
-          <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;margin-top: -69px">Vicerrectoría Academica</p>
-          <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;">Dirección General de Admisión</p>
-          <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;">Sistema de gestión de resultados academicos</p>
-        </div> 
-
-        <div id="vertical-bar" style="margin-top:-65px;"></div>
-
-      </div>
-      <!-- /.navbar-header -->
-
-      <ul class="nav navbar-top-links navbar-right" style="margin-top: 42px">
-       <p style="color: #ffffff;margin-right: 30px;margin-top: 10px" >Bienvenido <?php echo $_SESSION['name']; ?> &nbsp     | &nbsp
-        <?php echo date('l, F jS, Y'); ?>
-        &nbsp|&nbsp <b><a href="../logout/logout.php" style="color:#ffff00";>Salir</a></b></p>
-      </ul> 
-
-
-    </nav>
-
-
-    <!--<div class="container-fluid " >-->
-      <nav class="navbar" align="center" style="background: #d6d5d5;min-height: 25px;;margin-top: -1px" >
-        <a href="dashboard.php" style="width: 145px" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-home"></span> Inicio</a>
-        <a href="inscritos.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Inscritos</a>
-        <a href="certificacion.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Certificación</a>
-        <a style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm disabled">Validación</a>
-        <a href="reportes.php"  style="margin-left: 18px;width: 145px" class="btn btn-warning btn-sm">Reportes</a>
-      </nav>
-      <!--   </div>-->
+      <?php
+  include '../modulos/header.php';
+  ?>
+       
 
       <div class="container col-lg-12">
         <div class="panel-group">
@@ -133,7 +99,7 @@ if($now > $_SESSION['expire']) {
                       <?php
                       $listasDB = getTablesList(); 
                       foreach($listasDB as $item){
-                        if (preg_match("/inscritos/",$item->Tables_in_sgra)){
+                        if (preg_match("/inscritos2/",$item->Tables_in_sgra)){
                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
                         }
                       }  
@@ -146,7 +112,7 @@ if($now > $_SESSION['expire']) {
                       <?php
                       $listasDB = getTablesList(); 
                       foreach($listasDB as $item){
-                        if (preg_match("/resultados/",$item->Tables_in_sgra)){
+                        if (preg_match("/resultados2/",$item->Tables_in_sgra)){
                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
                         }
                       }  

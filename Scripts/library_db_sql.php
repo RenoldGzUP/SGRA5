@@ -240,7 +240,7 @@ function showLogsUsers(){
 
 function saveLogs($USERNAME,$LOGREPORT) {	
 	global $mysqli;
-    date_default_timezone_set("America/Panama");//ZONA HORARIA ARG
+    date_default_timezone_set("America/Panama");//ZONA HORARIA PAN
     $datetime = date("d-m-Y h:i:s A");
 	$query = new Query($mysqli,"INSERT INTO LOGSYSTEM(USERNAME,DATE_LOG,ACCION) VALUES (?,?,?)");
     $parametros = array("sss",&$USERNAME,&$datetime,&$LOGREPORT);
@@ -308,6 +308,22 @@ function getTablesList(){
  if (isset($data)) {
         return $data;}
         else {return null;}
+}
+
+
+
+//Cambiar ruta para exportar datos
+function exportDataResultados($FILENAME){
+	global $mysqli;
+	$datetime = date("d-m-Y_h:i:s_A");
+	$newFileName = $FILENAME."_".$datetime;
+	$pathDocument  = "../BD/export/".$newFileName.".csv"; 
+    $Query = new Query($mysqli, "SELECT * FROM resultados2017 INTO OUTFILE 'C:/xampp/htdocs/SGRA/BD/export/".$newFileName.".csv' FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
+    $parametros = array();
+    $data = $Query->getresults();
+
+	// --- Guardamos el documento
+	return $pathDocument;
 }
 
 function validationLastYearInscrito($NUMINSCRITO){

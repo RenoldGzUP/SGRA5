@@ -3,7 +3,11 @@ include_once ('./Scripts/classConexionDB.php');
 openConnection();
 include_once ('./Scripts/library_db_sql.php');
 session_start();
-	
+
+
+// Notificar solamente errores de ejecución
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
 	// data sent from form login.html 
 	$user = $_POST['username']; 
 	$password = md5($_POST['password']);
@@ -26,7 +30,7 @@ session_start();
 		$_SESSION['loggedin'] = true;
 		$_SESSION['name'] = $result->nombre_usuario;
 		$_SESSION['start'] = time();
-		$_SESSION['expire'] = $_SESSION['start'] + (100 * 60) ;						
+		$_SESSION['expire'] = $_SESSION['start'] + (1 * 60) ;						
 		header("Location:./pages/dashboard.php");}
 
 		elseif ($location == 2) {
@@ -39,6 +43,8 @@ session_start();
 
 	} else {
 		echo "<div class='alert alert-danger' role='alert'>Email or Password are incorrects!
-		<p><a href='index.html'><strong>Please try again!</strong></a></p></div>";			
+		<p><a href='index.html'><strong>Please try again!</strong></a></p></div>";	
+
+		header("Location:error.html");		
 	}	
 ?>
