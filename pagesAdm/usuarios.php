@@ -17,7 +17,9 @@ else {
 $now = time();
 if($now > $_SESSION['expire']) {
   session_destroy();
-  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+  echo "<script>location.href='../noAccess.html'</script>";
+
+//  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
   exit;
 }
 
@@ -119,6 +121,7 @@ if($now > $_SESSION['expire']) {
                   </thead>
                   <tbody>
                     <?php
+                    countRow();
                     $logs = showRegistersUsers();
                     $record = 0;
                     if($logs){
@@ -190,10 +193,10 @@ if($now > $_SESSION['expire']) {
                     if($logs){
                       foreach($logs as $item){
                         echo'<tr style="font-size: 12px;text-align:center;">'; 
-                        echo" <td>".$item->ID_LOG."</td>";
-                        echo "<td>".$item->USERNAME."</td>";
-                        echo "<td>".$item->DATE_LOG."</td>";
-                        echo "<td>".$item->ACCION."</td>";
+                        echo" <td>".$item->id_log."</td>";
+                        echo "<td>".$item->username."</td>";
+                        echo "<td>".$item->datelog."</td>";
+                        echo "<td>".$item->accion."</td>";
                         echo"</tr>";
                       }
                     }else{ 
@@ -272,12 +275,28 @@ if($now > $_SESSION['expire']) {
           </div>
 
 
-          <!-- /.col-lg-4 (nested) -->
-          <div class="col-lg-8">
-            <div id="morris-bar-chart"></div>
-          </div>
-          <!-- /.col-lg-8 (nested) -->
+          <div class="col-lg-6">
+            <center>
+              <h4>Seleccione Permisos :</h4>
+            </center>
+          
+             <div id="certType" >
+
+              <center>          
+               <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Todos</label>
+              </center>
+
+                        
+            <center>
+              <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Inscritos</label>
+              <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();">Certificacion</label>
+              <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Validacion</label>
+             <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Reportes</label>
+          </center>
+         
         </div>
+          </div>
+
 
 
 
@@ -298,8 +317,11 @@ if($now > $_SESSION['expire']) {
           <h4 class="modal-title">Editar un registro </h4>
         </div>
         <div class="modal-body">
+
           <div class="row">
-            <div class="col-lg-6">
+
+            <d--.63
+            iv class="col-lg-6">
               <form action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
 
                 <table class="table table-bordered table-responsive" align="center">
@@ -312,7 +334,7 @@ if($now > $_SESSION['expire']) {
 
                   <tr>
                     <td><label class="control-label">Nombre</label></td>
-                    <td><input class="form-control" type="text" name="name" value="<?php $dataResult->name ?>" /></td>
+                    <td><input class="form-control" type="text" name="name" value="<?php  $dataResult->name ?>" /></td>
                   </tr>
 
                   <tr>
@@ -349,16 +371,9 @@ if($now > $_SESSION['expire']) {
           </div>
 
 
-          <!-- /.col-lg-4 (nested) -->
-          <div class="col-lg-8">
-            <div id="morris-bar-chart"></div>
-          </div>
-          <!-- /.col-lg-8 (nested) -->
-        </div>
-
-
-
       </div>
+
+
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>

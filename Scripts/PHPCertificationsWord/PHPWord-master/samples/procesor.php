@@ -15,10 +15,14 @@ $numInscrito = explode(",", $_POST["idInscrito"])  ;
 
 //Files inside Array
 $countInscritos = count($numInscrito);
-//$consulta=getDataIndividual($numInscrito);
+//
+//print_r($countInscritos);
 
 //Replay control CERTIFICATIONS
-for ($i=0; $i <$countInscritos; $i++) { 
+for ($i=0; $i < $countInscritos; $i++) { 
+	$dataStudentCert=getDataIndividual($numInscrito[$i]);
+	//print_r($dataStudentCert);
+	//echo "   ---|-|-|-|-||-|-|--|-|-||--|--";
 	include 'Certificacion General_M1.php';
 }
 

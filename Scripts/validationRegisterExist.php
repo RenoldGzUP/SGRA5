@@ -15,10 +15,18 @@ $tableResultados = $_POST["table2"];
 
 $minusYear = date("Y") -1;
 //Colocar el nombre de la tabla correcta usando la varible
+//VALIDACION DE LAS TABLAS
 if (preg_match("/2017/",$tableInscritos) && preg_match("/2017/",$tableResultados) ){
 	$vInscrito = validationLastYearInscrito($idSearch);
 	$vResultado = validationLastYearResultado($idSearch);
+	$exist =  validationExist($idSearch);
 
+	//BUSCAR SI YA HA SIDO VALIDADO EL USUARIO
+	if (is_object($exist)) {
+		echo'<tr ><td colspan="17" class="">Ya ha sido validado el Inscrito ->'.$idSearch.'</td></tr>';
+	}
+	else{
+		//VALIDACION DEL ID A BUSCAR
 	if (is_object($vInscrito) && is_object($vResultado)) {
 		echo'<tr style="font-size: 11px;text-align:center">';
 		echo'<td style="text-align: center;"><input type="checkbox" class="checkthis" value='.$vResultado->n_ins.'></td>';
@@ -51,25 +59,27 @@ if (preg_match("/2017/",$tableInscritos) && preg_match("/2017/",$tableResultados
 	}
 	else{
 		echo'<tr ><td colspan="17" class="">No hay datos a mostrar de '.$idSearch.'</td></tr>';}
-	}
+	}//FIN DE LA VALIDACION ANTERIOR
+
+}//FIN DE LA VALIDACION DE LAS TABLAS
 	else{
 		echo'<tr ><td colspan="17" class="">No hay congruencia con las tablas y el año de Validación</td></tr>';}
 
 
-		function utf8_converter($array)
-		{
-			array_walk_recursive($array, function(&$item, $key){
-				if(!mb_detect_encoding($item, 'utf-8', true)){
-					$item = utf8_encode($item);
-				}
-			});
+//FUNCIONES
 
-			return $array;
-		} 
+function utf8_converter($array){
+	array_walk_recursive($array, function(&$item, $key){
+	if(!mb_detect_encoding($item, 'utf-8', true)){
+		$item = utf8_encode($item);
+			}
+		});
 
-		function cvf_convert_object_to_array($data) {
+		return $array;
+} 
 
-			if (is_object($data)) {
+function cvf_convert_object_to_array($data) {
+if (is_object($data)) {
 				$data = get_object_vars($data);
 			}
 
@@ -79,6 +89,6 @@ if (preg_match("/2017/",$tableInscritos) && preg_match("/2017/",$tableResultados
 			else {
 				return $data;
 			}
-		}
+}
 
 		?>

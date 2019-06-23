@@ -16,7 +16,8 @@ function sendIDSearch(id){
           //$("#taInscritosResultado").val(data);
           document.getElementById('taInscritosInscritos').innerHTML = data;
           document.getElementById('taInscritosResultado').innerHTML = data;
-       
+         // document.getElementById("ValidateBtt").disabled = false;
+          document.getElementById("ValidateBtt").style.display="inline";
 
     })
 
@@ -30,7 +31,6 @@ function sendIDValidate(){
     var idInscrito = $("#idSearch").val();
     var table1 = $("#tablaInscritos").val();
     var table2 = $("#tablaResultados").val();
-    alert("hola  "+idInscrito);
   $.ajax({
         data: {"idInscrito": idInscrito,"table1":table1,"table2":table2},
         type: "POST",
@@ -39,12 +39,12 @@ function sendIDValidate(){
     })
     .done(function( data, textStatus, jqXHR ) {
         console.log("data retornada:"+data);
-          alert("Proceso completado"+data);
+          alert("Proceso completado  "+data);
         //window.location = data;
           //$("#taInscritosResultado").val(data);
          // document.getElementById('taInscritosInscritos').innerHTML = data;
          // document.getElementById('taInscritosResultado').innerHTML = data;
-       
+       document.getElementById("TalliesBtt").style.display="inline";
 
     })
 
@@ -80,10 +80,6 @@ function exportDataR(){
         console.log( "La solicitud a fallado: " +  textStatus);
     });
 }
-
-
-
-
 
 
 function Cargar()

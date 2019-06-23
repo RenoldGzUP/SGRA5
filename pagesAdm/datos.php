@@ -17,7 +17,9 @@ else {
 $now = time();
 if($now > $_SESSION['expire']) {
   session_destroy();
-  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+  echo "<script>location.href='../noAccess.html'</script>";
+
+//  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
   exit;
 }
 
@@ -36,19 +38,19 @@ if($now > $_SESSION['expire']) {
    <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
   <!-- MetisMenu CSS -->
-    <link href="../Style/bootstrap borderless table css.css" rel="stylesheet">
+  <link href="../Style/bootstrap borderless table css.css" rel="stylesheet">
   <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
-   <script type="text/javascript" src="../JS/bootstrap.js"></script>
+  <script type="text/javascript" src="../JS/bootstrap.js"></script>
   <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
   <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="../JS/validationUser.js"></script>
-
+  <script type="text/javascript" src="../JS/validationUser.js"></script>
+  <script type="text/javascript" src="../JS/progressbar.js"></script>
 
 
       <style>
@@ -79,11 +81,11 @@ if($now > $_SESSION['expire']) {
         <div class="panel-group">
           <div class="panel panel-default">
             <div class="panel-heading" style="font-size: 14px;">Importar Registros A BD - <b>Inscritos</b></div>
-            <div class="panel-body">
-             <div class="container col-lg-12">   
+            <div class="panel-body" style="height: 130px">
+             <div class="container col-lg-12" style="margin-top: -10px">   
               <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
-                <table class="table table-borderless" style="font-size: 13px;" >
+                <table class="table table-borderless" style="font-size: 12px;" >
 
                   <tbody>
                     <tr>
@@ -112,7 +114,7 @@ if($now > $_SESSION['expire']) {
                     <tr>
                       <td></td>
                         <td width="100">
-                        <div class = "pull-right">
+                        <div class = "pull-right" style="margin-top: -20px">
                           <button style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
                         </div>
                       </td> 
@@ -120,6 +122,9 @@ if($now > $_SESSION['expire']) {
                   </tbody>
                 </table>
               </form>
+               <div id="bar1"  class="progress" style="margin-top: -15px; display: none;" >
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
             </div>
 
 
@@ -132,7 +137,7 @@ if($now > $_SESSION['expire']) {
         <h2></h2>
         <div class="panel panel-default">
           <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <b>Inscritos</b></div>
-          <div class="panel-body">
+          <div class="panel-body" style="height: 200px">
             <div class="container col-lg-12">   
               <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
@@ -174,8 +179,8 @@ if($now > $_SESSION['expire']) {
                     <tr>
                       <td></td>
                         <td width="100">
-                        <div class = "pull-right">
-                          <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar</button>
+                        <div class = "pull-right" style="margin-top: -20px">
+                          <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
                         </div>
                       </td> 
                     </tr>
@@ -184,6 +189,9 @@ if($now > $_SESSION['expire']) {
                 </table>
 
               </form>
+              <div class="progress" style="margin-top: -15px">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
 
 
             </div>
@@ -195,14 +203,15 @@ if($now > $_SESSION['expire']) {
 
         <div class="container col-lg-6" style="margin-top: 20px">
         <h4></h4>
+
         <div class="panel-group">
           <div class="panel panel-default">
             <div class="panel-heading" style="font-size: 14px;">Importar Registros  BD- <b>Resultados</b></div>
-            <div class="panel-body">
-             <div class="container col-lg-12">   
+            <div class="panel-body" style="height: 130px">
+             <div class="container col-lg-12"  style="margin-top: -10px">   
               <form action="../Scripts/uploadCSVResultados.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
-                        <table class="table table-borderless" style="font-size: 13px;" >
+                        <table class="table table-borderless" style="font-size: 12px;" >
 
                   <tbody>
                     <tr>
@@ -231,7 +240,7 @@ if($now > $_SESSION['expire']) {
                     <tr>
                       <td></td>
                         <td width="100">
-                        <div class = "pull-right">
+                        <div class = "pull-right" style="margin-top: -20px">
                           <button style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
                         </div>
                       </td> 
@@ -239,20 +248,18 @@ if($now > $_SESSION['expire']) {
                   </tbody>
                 </table>
               </form>
+              <div class="progress" style="margin-top: -15px">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
             </div>
-
-
-
-
-
           </div>
         </div>
 
         <h2></h2>
         <div class="panel panel-default">
           <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <B>Resultados</B></div>
-          <div class="panel-body">
-           <div class="container col-lg-12">   
+          <div class="panel-body" style="height: 200px">
+           <div class="container col-lg-12" >   
               <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
 
                 <table class="table table-borderless" style="font-size: 13px;" >
@@ -293,8 +300,9 @@ if($now > $_SESSION['expire']) {
                     <tr>
                       <td></td>
                         <td width="100">
-                        <div class = "pull-right">
-                          <button style="width: 130px;" type="button" onClick=" exportDataR()" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar</button>
+                        <div class = "pull-right" style="margin-top: -20px">
+                          <!--onClick=" exportDataR()" -->
+                          <button style="width: 130px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExport"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
                         </div>
                       </td> 
                     </tr>
@@ -303,16 +311,63 @@ if($now > $_SESSION['expire']) {
                 </table>
 
               </form>
-
-
+              <div class="progress" style="margin-top: -15px">
+                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
             </div>
-
-
-
         </div>
       </div>
+
     </div>
+
+
   </div>
+
+
+ <!-- Modal -->
+  <div class="modal fade" id="opcionesExportInscritos" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> <!-- Fin Modal --> 
+
+   <!-- Modal -->
+  <div class="modal fade" id="opcionesExportResultados" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> <!-- Fin Modal --> 
+
+
+
 </div>
 <!-- /#page-wrapper -->
 

@@ -1,0 +1,1390 @@
+1	renold.gonzalez	10-02-2019 05:55:50 PM	Usuario accedió a página inscritos
+2	renold.gonzalez	10-02-2019 05:55:51 PM	Usuario accedió a página certificaciones
+3	renold.gonzalez	10-02-2019 05:55:52 PM	Usuario accedió a página validación
+4	renold.gonzalez	10-02-2019 05:55:53 PM	Usuario accedió a página reportes
+5	renold.gonzalez	10-02-2019 05:55:54 PM	Usuario accedió a página de administrtacion de datos
+6	renold.gonzalez	10-02-2019 05:55:54 PM	Usuario accedió a página de usuarios
+7	renold.gonzalez	10-02-2019 05:56:44 PM	Usuario salió del sistema
+8	renold.gonzalez	16-02-2019 04:55:01 PM	Usuario inicio session
+9	renold.gonzalez	16-02-2019 04:55:01 PM	Usuario accedió a página principal
+10	renold.gonzalez	16-02-2019 04:55:03 PM	Usuario accedió a página de usuarios
+11	renold.gonzalez	16-02-2019 04:55:22 PM	Usuario accedió a página certificaciones
+12	renold.gonzalez	16-02-2019 04:55:34 PM	Usuario accedió a página certificaciones
+13	renold.gonzalez	16-02-2019 04:55:38 PM	Usuario generó Certificaciones desde el procesador
+14	renold.gonzalez	16-02-2019 05:05:35 PM	Usuario accedió a página certificaciones
+15	renold.gonzalez	16-02-2019 05:19:38 PM	Usuario accedió a página certificaciones
+16	renold.gonzalez	16-02-2019 05:22:22 PM	Usuario accedió a página certificaciones
+17	renold.gonzalez	16-02-2019 05:22:26 PM	Usuario accedió a página certificaciones
+18	renold.gonzalez	16-02-2019 05:22:28 PM	Usuario accedió a página certificaciones
+19	renold.gonzalez	16-02-2019 05:22:32 PM	Usuario accedió a página certificaciones
+20	renold.gonzalez	16-02-2019 05:24:16 PM	Usuario accedió a página certificaciones
+21	renold.gonzalez	16-02-2019 05:24:39 PM	Usuario accedió a página certificaciones
+22	renold.gonzalez	16-02-2019 05:25:00 PM	Usuario accedió a página certificaciones
+23	renold.gonzalez	16-02-2019 05:30:35 PM	Usuario accedió a página certificaciones
+24	renold.gonzalez	16-02-2019 05:30:51 PM	Usuario accedió a página certificaciones
+25	renold.gonzalez	16-02-2019 05:49:16 PM	Usuario accedió a página certificaciones
+26	renold.gonzalez	16-02-2019 05:49:20 PM	Usuario accedió a página certificaciones
+27	renold.gonzalez	16-02-2019 05:49:26 PM	Usuario generó Certificaciones desde el procesador
+28	renold.gonzalez	16-02-2019 05:49:49 PM	Usuario accedió a página inscritos
+29	renold.gonzalez	16-02-2019 05:49:50 PM	Usuario accedió a página certificaciones
+30	renold.gonzalez	16-02-2019 05:49:51 PM	Usuario accedió a página validación
+31	renold.gonzalez	16-02-2019 05:49:53 PM	Usuario accedió a página validación
+32	renold.gonzalez	16-02-2019 05:49:55 PM	Usuario accedió a página certificaciones
+33	renold.gonzalez	16-02-2019 05:49:58 PM	Usuario accedió a página inscritos
+34	renold.gonzalez	16-02-2019 05:50:00 PM	Usuario accedió a página certificaciones
+35	renold.gonzalez	16-02-2019 05:50:04 PM	Usuario accedió a página inscritos
+36	renold.gonzalez	16-02-2019 05:50:04 PM	Usuario accedió a página certificaciones
+37	renold.gonzalez	16-02-2019 05:50:10 PM	Usuario accedió a página validación
+38	renold.gonzalez	16-02-2019 05:50:22 PM	Administrador validó a Mickey en BD´s
+39	renold.gonzalez	16-02-2019 05:51:00 PM	Usuario accedió a página certificaciones
+40	renold.gonzalez	16-02-2019 05:51:02 PM	Usuario accedió a página validación
+41	renold.gonzalez	16-02-2019 05:51:05 PM	Usuario accedió a página certificaciones
+42	renold.gonzalez	16-02-2019 05:51:08 PM	Usuario accedió a página reportes
+43	renold.gonzalez	16-02-2019 05:51:09 PM	Usuario accedió a página de administrtacion de datos
+44	renold.gonzalez	16-02-2019 05:51:11 PM	Usuario accedió a página de usuarios
+45	renold.gonzalez	16-02-2019 05:51:13 PM	Usuario accedió a página certificaciones
+46	renold.gonzalez	16-02-2019 05:52:03 PM	Usuario accedió a página certificaciones
+47	renold.gonzalez	16-02-2019 05:52:29 PM	Usuario accedió a página reportes
+48	renold.gonzalez	16-02-2019 05:52:30 PM	Usuario accedió a página validación
+49	renold.gonzalez	16-02-2019 05:53:00 PM	Usuario accedió a página de administrtacion de datos
+50	renold.gonzalez	16-02-2019 05:53:01 PM	Usuario accedió a página de usuarios
+51	renold.gonzalez	16-02-2019 05:53:27 PM	Usuario accedió a página certificaciones
+52	renold.gonzalez	16-02-2019 05:57:58 PM	Usuario accedió a página certificaciones
+53	renold.gonzalez	16-02-2019 05:58:42 PM	Usuario accedió a página certificaciones
+54	renold.gonzalez	17-02-2019 07:56:03 AM	Usuario accedió a página certificaciones
+55	renold.gonzalez	17-02-2019 07:56:37 AM	Usuario inicio session
+56	renold.gonzalez	17-02-2019 07:56:37 AM	Usuario accedió a página principal
+57	renold.gonzalez	17-02-2019 07:56:39 AM	Usuario accedió a página certificaciones
+58	renold.gonzalez	17-02-2019 08:07:54 AM	Usuario accedió a página certificaciones
+59	renold.gonzalez	17-02-2019 08:20:57 AM	Usuario accedió a página certificaciones
+60	renold.gonzalez	17-02-2019 08:21:24 AM	Usuario accedió a página certificaciones
+61	renold.gonzalez	17-02-2019 08:21:26 AM	Usuario accedió a página certificaciones
+62	renold.gonzalez	17-02-2019 08:21:28 AM	Usuario accedió a página certificaciones
+63	renold.gonzalez	17-02-2019 08:21:29 AM	Usuario accedió a página certificaciones
+64	renold.gonzalez	17-02-2019 08:21:32 AM	Usuario accedió a página certificaciones
+65	renold.gonzalez	17-02-2019 08:38:03 AM	Usuario accedió a página certificaciones
+66	renold.gonzalez	17-02-2019 11:04:48 AM	Usuario accedió a página certificaciones
+67	renold.gonzalez	17-02-2019 11:05:10 AM	Usuario inicio session
+68	renold.gonzalez	17-02-2019 11:05:11 AM	Usuario accedió a página principal
+69	renold.gonzalez	17-02-2019 11:05:12 AM	Usuario accedió a página certificaciones
+70	renold.gonzalez	17-02-2019 11:05:20 AM	Usuario accedió a página certificaciones
+71	renold.gonzalez	17-02-2019 11:05:24 AM	Usuario accedió a página certificaciones
+72	renold.gonzalez	17-02-2019 11:05:27 AM	Usuario accedió a página certificaciones
+73	renold.gonzalez	17-02-2019 11:05:32 AM	Usuario accedió a página certificaciones
+74	renold.gonzalez	17-02-2019 11:08:30 AM	Usuario accedió a página certificaciones
+75	renold.gonzalez	17-02-2019 11:08:35 AM	Usuario accedió a página certificaciones
+76	renold.gonzalez	17-02-2019 11:09:00 AM	Usuario accedió a página certificaciones
+77	renold.gonzalez	17-02-2019 11:09:29 AM	Usuario accedió a página certificaciones
+78	renold.gonzalez	17-02-2019 11:09:33 AM	Usuario accedió a página certificaciones
+79	renold.gonzalez	17-02-2019 11:10:25 AM	Usuario accedió a página certificaciones
+80	renold.gonzalez	17-02-2019 11:16:25 AM	Usuario accedió a página certificaciones
+81	renold.gonzalez	17-02-2019 11:16:29 AM	Usuario accedió a página certificaciones
+82	renold.gonzalez	17-02-2019 11:22:21 AM	Usuario accedió a página certificaciones
+83	renold.gonzalez	17-02-2019 11:31:16 AM	Usuario accedió a página certificaciones
+84	renold.gonzalez	17-02-2019 11:31:41 AM	Usuario accedió a página certificaciones
+85	renold.gonzalez	17-02-2019 11:36:42 AM	Usuario accedió a página certificaciones
+86	renold.gonzalez	17-02-2019 11:41:14 AM	Usuario accedió a página certificaciones
+87	renold.gonzalez	17-02-2019 11:42:52 AM	Usuario accedió a página certificaciones
+88	renold.gonzalez	17-02-2019 11:43:48 AM	Usuario accedió a página certificaciones
+89	renold.gonzalez	17-02-2019 11:44:53 AM	Usuario accedió a página certificaciones
+90	renold.gonzalez	17-02-2019 11:45:14 AM	Usuario accedió a página certificaciones
+91	renold.gonzalez	17-02-2019 11:45:18 AM	Usuario accedió a página certificaciones
+92	renold.gonzalez	17-02-2019 12:03:52 PM	Usuario accedió a página certificaciones
+93	renold.gonzalez	17-02-2019 12:06:28 PM	Usuario accedió a página certificaciones
+94	renold.gonzalez	17-02-2019 12:07:41 PM	Usuario accedió a página certificaciones
+95	renold.gonzalez	17-02-2019 12:10:04 PM	Usuario accedió a página certificaciones
+96	renold.gonzalez	17-02-2019 12:10:42 PM	Usuario accedió a página certificaciones
+97	renold.gonzalez	17-02-2019 12:10:52 PM	Usuario accedió a página certificaciones
+98	renold.gonzalez	17-02-2019 12:11:37 PM	Usuario accedió a página certificaciones
+99	renold.gonzalez	17-02-2019 12:12:00 PM	Usuario accedió a página certificaciones
+100	renold.gonzalez	17-02-2019 12:12:32 PM	Usuario accedió a página certificaciones
+101	renold.gonzalez	17-02-2019 12:18:34 PM	Usuario accedió a página certificaciones
+102	renold.gonzalez	17-02-2019 12:25:01 PM	Usuario accedió a página certificaciones
+103	renold.gonzalez	17-02-2019 12:26:12 PM	Usuario accedió a página certificaciones
+104	renold.gonzalez	17-02-2019 12:26:23 PM	Usuario accedió a página certificaciones
+105	renold.gonzalez	17-02-2019 12:29:30 PM	Usuario accedió a página certificaciones
+106	renold.gonzalez	17-02-2019 12:29:37 PM	Usuario accedió a página certificaciones
+107	renold.gonzalez	17-02-2019 12:30:11 PM	Usuario accedió a página certificaciones
+108	renold.gonzalez	17-02-2019 12:30:17 PM	Usuario accedió a página certificaciones
+109	renold.gonzalez	17-02-2019 12:30:27 PM	Usuario accedió a página principal
+110	renold.gonzalez	17-02-2019 12:30:30 PM	Usuario accedió a página certificaciones
+111	renold.gonzalez	17-02-2019 12:32:35 PM	Usuario accedió a página certificaciones
+112	renold.gonzalez	17-02-2019 12:32:39 PM	Usuario accedió a página certificaciones
+113	renold.gonzalez	17-02-2019 12:32:44 PM	Usuario accedió a página certificaciones
+114	renold.gonzalez	17-02-2019 12:32:47 PM	Usuario accedió a página certificaciones
+115	renold.gonzalez	17-02-2019 12:32:55 PM	Usuario accedió a página validación
+116	renold.gonzalez	17-02-2019 12:32:55 PM	Usuario accedió a página certificaciones
+117	renold.gonzalez	17-02-2019 12:33:15 PM	Usuario accedió a página certificaciones
+118	renold.gonzalez	17-02-2019 12:34:54 PM	Usuario accedió a página certificaciones
+119	renold.gonzalez	17-02-2019 12:36:50 PM	Usuario accedió a página certificaciones
+120	renold.gonzalez	17-02-2019 12:43:33 PM	Usuario accedió a página certificaciones
+121	renold.gonzalez	17-02-2019 12:43:55 PM	Usuario accedió a página certificaciones
+122	renold.gonzalez	17-02-2019 12:44:03 PM	Usuario accedió a página de usuarios
+123	renold.gonzalez	17-02-2019 12:44:20 PM	Usuario accedió a página de administrtacion de datos
+124	renold.gonzalez	17-02-2019 12:44:21 PM	Usuario accedió a página reportes
+125	renold.gonzalez	17-02-2019 12:44:24 PM	Usuario accedió a página validación
+126	renold.gonzalez	17-02-2019 12:44:26 PM	Usuario accedió a página certificaciones
+127	renold.gonzalez	17-02-2019 12:44:28 PM	Usuario accedió a página validación
+128	renold.gonzalez	17-02-2019 12:45:18 PM	Usuario accedió a página validación
+129	renold.gonzalez	17-02-2019 12:45:24 PM	Usuario inicio session
+130	renold.gonzalez	17-02-2019 12:45:25 PM	Usuario accedió a página principal
+131	renold.gonzalez	17-02-2019 12:45:27 PM	Usuario accedió a página validación
+132	renold.gonzalez	17-02-2019 12:45:45 PM	Usuario accedió a página validación
+133	renold.gonzalez	17-02-2019 12:46:03 PM	Usuario accedió a página inscritos
+134	renold.gonzalez	17-02-2019 12:46:04 PM	Usuario accedió a página certificaciones
+135	renold.gonzalez	17-02-2019 12:46:09 PM	Usuario accedió a página inscritos
+136	renold.gonzalez	17-02-2019 12:46:12 PM	Usuario accedió a página certificaciones
+137	renold.gonzalez	17-02-2019 12:46:13 PM	Usuario accedió a página inscritos
+138	renold.gonzalez	17-02-2019 12:46:14 PM	Usuario accedió a página certificaciones
+139	renold.gonzalez	17-02-2019 12:46:14 PM	Usuario accedió a página validación
+140	renold.gonzalez	17-02-2019 12:46:15 PM	Usuario accedió a página certificaciones
+141	renold.gonzalez	17-02-2019 12:46:16 PM	Usuario accedió a página principal
+142	renold.gonzalez	17-02-2019 12:46:19 PM	Usuario accedió a página reportes
+143	renold.gonzalez	17-02-2019 12:46:20 PM	Usuario accedió a página validación
+144	renold.gonzalez	17-02-2019 12:46:22 PM	Usuario accedió a página certificaciones
+145	renold.gonzalez	17-02-2019 01:03:00 PM	Usuario accedió a página certificaciones
+146	renold.gonzalez	17-02-2019 01:03:11 PM	Usuario accedió a página certificaciones
+147	renold.gonzalez	17-02-2019 01:03:35 PM	Usuario accedió a página certificaciones
+148	renold.gonzalez	17-02-2019 01:03:36 PM	Usuario accedió a página certificaciones
+149	renold.gonzalez	17-02-2019 01:04:49 PM	Usuario accedió a página certificaciones
+150	renold.gonzalez	17-02-2019 01:06:07 PM	Usuario accedió a página certificaciones
+151	renold.gonzalez	17-02-2019 01:06:15 PM	Usuario accedió a página certificaciones
+152	renold.gonzalez	17-02-2019 01:06:24 PM	Usuario accedió a página certificaciones
+153	renold.gonzalez	17-02-2019 01:08:35 PM	Usuario accedió a página certificaciones
+154	renold.gonzalez	17-02-2019 01:09:16 PM	Usuario accedió a página certificaciones
+155	renold.gonzalez	17-02-2019 01:10:16 PM	Usuario accedió a página certificaciones
+156	renold.gonzalez	17-02-2019 01:21:48 PM	Usuario accedió a página certificaciones
+157	renold.gonzalez	17-02-2019 01:25:52 PM	Usuario accedió a página certificaciones
+158	renold.gonzalez	17-02-2019 01:28:53 PM	Usuario accedió a página certificaciones
+159	renold.gonzalez	17-02-2019 01:30:52 PM	Usuario accedió a página certificaciones
+160	renold.gonzalez	17-02-2019 01:30:56 PM	Usuario accedió a página certificaciones
+161	renold.gonzalez	17-02-2019 01:32:46 PM	Usuario accedió a página certificaciones
+162	renold.gonzalez	17-02-2019 01:34:27 PM	Usuario accedió a página certificaciones
+163	renold.gonzalez	17-02-2019 01:34:31 PM	Usuario accedió a página certificaciones
+164	renold.gonzalez	17-02-2019 01:49:05 PM	Usuario accedió a página certificaciones
+165	renold.gonzalez	17-02-2019 01:49:31 PM	Usuario accedió a página certificaciones
+166	renold.gonzalez	17-02-2019 01:50:54 PM	Usuario accedió a página certificaciones
+167	renold.gonzalez	17-02-2019 01:51:29 PM	Usuario accedió a página certificaciones
+168	renold.gonzalez	17-02-2019 01:52:25 PM	Usuario accedió a página certificaciones
+169	renold.gonzalez	17-02-2019 01:52:42 PM	Usuario accedió a página certificaciones
+170	renold.gonzalez	17-02-2019 01:53:17 PM	Usuario accedió a página certificaciones
+171	renold.gonzalez	17-02-2019 01:54:29 PM	Usuario accedió a página certificaciones
+172	renold.gonzalez	17-02-2019 01:54:32 PM	Usuario accedió a página certificaciones
+173	renold.gonzalez	17-02-2019 01:57:48 PM	Usuario accedió a página certificaciones
+174	renold.gonzalez	17-02-2019 01:57:50 PM	Usuario accedió a página certificaciones
+175	renold.gonzalez	17-02-2019 01:58:47 PM	Usuario accedió a página certificaciones
+176	renold.gonzalez	17-02-2019 01:59:45 PM	Usuario accedió a página certificaciones
+177	renold.gonzalez	17-02-2019 02:00:39 PM	Usuario accedió a página certificaciones
+178	renold.gonzalez	17-02-2019 02:01:17 PM	Usuario accedió a página certificaciones
+179	renold.gonzalez	17-02-2019 02:02:20 PM	Usuario accedió a página certificaciones
+180	renold.gonzalez	17-02-2019 02:06:51 PM	Usuario accedió a página certificaciones
+181	renold.gonzalez	17-02-2019 02:09:25 PM	Usuario accedió a página certificaciones
+182	renold.gonzalez	17-02-2019 02:11:47 PM	Usuario accedió a página certificaciones
+183	renold.gonzalez	17-02-2019 02:12:27 PM	Usuario accedió a página certificaciones
+184	renold.gonzalez	17-02-2019 02:14:27 PM	Usuario accedió a página certificaciones
+185	renold.gonzalez	17-02-2019 02:16:25 PM	Usuario accedió a página certificaciones
+186	renold.gonzalez	17-02-2019 02:21:22 PM	Usuario accedió a página certificaciones
+187	renold.gonzalez	17-02-2019 02:22:12 PM	Usuario accedió a página certificaciones
+188	renold.gonzalez	17-02-2019 02:22:22 PM	Usuario accedió a página certificaciones
+189	renold.gonzalez	17-02-2019 02:22:33 PM	Usuario accedió a página certificaciones
+190	renold.gonzalez	17-02-2019 02:22:34 PM	Usuario accedió a página certificaciones
+191	renold.gonzalez	17-02-2019 02:24:11 PM	Usuario accedió a página certificaciones
+192	renold.gonzalez	17-02-2019 02:24:13 PM	Usuario accedió a página certificaciones
+193	renold.gonzalez	17-02-2019 02:24:58 PM	Usuario accedió a página certificaciones
+194	renold.gonzalez	17-02-2019 02:28:27 PM	Usuario accedió a página certificaciones
+195	renold.gonzalez	17-02-2019 02:28:39 PM	Usuario inicio session
+196	renold.gonzalez	17-02-2019 02:28:39 PM	Usuario accedió a página principal
+197	renold.gonzalez	17-02-2019 02:28:42 PM	Usuario accedió a página certificaciones
+198	renold.gonzalez	17-02-2019 02:30:08 PM	Usuario accedió a página certificaciones
+199	renold.gonzalez	17-02-2019 02:31:32 PM	Usuario accedió a página certificaciones
+200	renold.gonzalez	17-02-2019 02:32:18 PM	Usuario accedió a página certificaciones
+201	renold.gonzalez	17-02-2019 02:37:55 PM	Usuario accedió a página certificaciones
+202	renold.gonzalez	17-02-2019 02:38:56 PM	Usuario accedió a página certificaciones
+203	renold.gonzalez	17-02-2019 02:39:07 PM	Usuario accedió a página certificaciones
+204	renold.gonzalez	17-02-2019 02:39:39 PM	Usuario accedió a página certificaciones
+205	renold.gonzalez	17-02-2019 02:43:17 PM	Usuario accedió a página certificaciones
+206	renold.gonzalez	17-02-2019 02:44:36 PM	Usuario accedió a página certificaciones
+207	renold.gonzalez	17-02-2019 02:45:04 PM	Usuario accedió a página certificaciones
+208	renold.gonzalez	17-02-2019 02:45:26 PM	Usuario accedió a página certificaciones
+209	renold.gonzalez	17-02-2019 02:48:08 PM	Usuario accedió a página certificaciones
+210	renold.gonzalez	17-02-2019 02:48:31 PM	Usuario accedió a página certificaciones
+211	renold.gonzalez	17-02-2019 02:53:00 PM	Usuario accedió a página certificaciones
+212	renold.gonzalez	17-02-2019 02:54:00 PM	Usuario accedió a página certificaciones
+213	renold.gonzalez	17-02-2019 03:00:16 PM	Usuario accedió a página certificaciones
+214	renold.gonzalez	17-02-2019 03:00:19 PM	Usuario generó Certificaciones desde el procesador
+215	renold.gonzalez	17-02-2019 03:00:23 PM	Usuario accedió a página certificaciones
+216	renold.gonzalez	17-02-2019 03:00:26 PM	Usuario generó Certificaciones desde el procesador
+217	renold.gonzalez	17-02-2019 03:00:30 PM	Usuario accedió a página certificaciones
+218	renold.gonzalez	17-02-2019 03:01:17 PM	Usuario accedió a página certificaciones
+219	renold.gonzalez	17-02-2019 03:01:22 PM	Usuario generó Certificaciones desde el procesador
+220	renold.gonzalez	17-02-2019 03:01:24 PM	Usuario accedió a página certificaciones
+221	renold.gonzalez	17-02-2019 03:03:42 PM	Usuario accedió a página certificaciones
+222	renold.gonzalez	17-02-2019 03:03:45 PM	Usuario accedió a página certificaciones
+223	renold.gonzalez	17-02-2019 03:03:48 PM	Usuario accedió a página certificaciones
+224	renold.gonzalez	17-02-2019 03:04:46 PM	Usuario accedió a página certificaciones
+225	renold.gonzalez	17-02-2019 03:05:04 PM	Usuario generó Certificaciones desde el procesador
+226	renold.gonzalez	17-02-2019 03:06:19 PM	Usuario accedió a página certificaciones
+227	renold.gonzalez	17-02-2019 03:06:21 PM	Usuario accedió a página certificaciones
+228	renold.gonzalez	17-02-2019 03:06:24 PM	Usuario generó Certificaciones desde el procesador
+229	renold.gonzalez	17-02-2019 03:06:28 PM	Usuario accedió a página certificaciones
+230	renold.gonzalez	17-02-2019 03:07:54 PM	Usuario accedió a página certificaciones
+231	renold.gonzalez	17-02-2019 03:08:33 PM	Usuario accedió a página certificaciones
+232	renold.gonzalez	17-02-2019 03:08:34 PM	Usuario accedió a página de usuarios
+233	renold.gonzalez	17-02-2019 03:08:50 PM	Usuario accedió a página inscritos
+234	renold.gonzalez	17-02-2019 03:08:51 PM	Usuario accedió a página certificaciones
+235	renold.gonzalez	17-02-2019 03:09:09 PM	Usuario accedió a página reportes
+236	renold.gonzalez	17-02-2019 03:09:12 PM	Usuario accedió a página de administrtacion de datos
+237	renold.gonzalez	17-02-2019 03:09:16 PM	Usuario accedió a página de usuarios
+238	renold.gonzalez	17-02-2019 03:09:21 PM	Usuario accedió a página de usuarios
+239	renold.gonzalez	17-02-2019 03:14:54 PM	Usuario accedió a página de administrtacion de datos
+240	renold.gonzalez	17-02-2019 03:14:55 PM	Usuario accedió a página de usuarios
+241	renold.gonzalez	17-02-2019 03:14:56 PM	Usuario accedió a página reportes
+242	renold.gonzalez	17-02-2019 03:14:57 PM	Usuario accedió a página validación
+243	renold.gonzalez	17-02-2019 03:24:22 PM	Usuario accedió a página certificaciones
+244	renold.gonzalez	17-02-2019 03:24:27 PM	Administrador eliminó el registro  V00017
+245	renold.gonzalez	17-02-2019 03:24:29 PM	Administrador eliminó el registro  V00019
+246	renold.gonzalez	17-02-2019 03:24:38 PM	Usuario accedió a página certificaciones
+247	renold.gonzalez	17-02-2019 03:24:58 PM	Usuario accedió a página validación
+248	renold.gonzalez	17-02-2019 03:31:07 PM	Usuario accedió a página validación
+249	renold.gonzalez	17-02-2019 03:36:34 PM	Usuario accedió a página validación
+250	renold.gonzalez	17-02-2019 03:36:47 PM	Administrador validó a Mickey en BD´s
+251	renold.gonzalez	17-02-2019 03:36:54 PM	Administrador validó a Mickey en BD´s
+252	renold.gonzalez	17-02-2019 03:37:40 PM	Administrador validó a Mickey en BD´s
+253	renold.gonzalez	17-02-2019 03:39:19 PM	Administrador validó a Mickey en BD´s
+254	renold.gonzalez	17-02-2019 03:41:56 PM	Usuario accedió a página validación
+255	renold.gonzalez	17-02-2019 03:41:59 PM	Usuario accedió a página validación
+256	renold.gonzalez	17-02-2019 03:42:00 PM	Usuario accedió a página validación
+257	renold.gonzalez	17-02-2019 03:43:26 PM	Usuario accedió a página validación
+258	renold.gonzalez	17-02-2019 03:43:40 PM	Usuario accedió a página validación
+259	renold.gonzalez	17-02-2019 03:44:19 PM	Administrador validó a 002255 en BD´s
+260	renold.gonzalez	17-02-2019 03:44:41 PM	Usuario accedió a página certificaciones
+261	renold.gonzalez	17-02-2019 03:45:00 PM	Usuario accedió a página reportes
+262	renold.gonzalez	17-02-2019 03:45:01 PM	Usuario accedió a página de administrtacion de datos
+263	renold.gonzalez	17-02-2019 03:45:03 PM	Usuario accedió a página de usuarios
+264	renold.gonzalez	17-02-2019 03:45:04 PM	Usuario accedió a página principal
+265	renold.gonzalez	17-02-2019 03:45:05 PM	Usuario accedió a página inscritos
+266	renold.gonzalez	17-02-2019 03:45:06 PM	Usuario accedió a página certificaciones
+267	renold.gonzalez	17-02-2019 03:45:07 PM	Usuario accedió a página validación
+268	renold.gonzalez	17-02-2019 03:45:09 PM	Usuario accedió a página reportes
+269	renold.gonzalez	17-02-2019 03:45:10 PM	Usuario accedió a página certificaciones
+270	renold.gonzalez	17-02-2019 03:45:19 PM	Usuario accedió a página de usuarios
+271	renold.gonzalez	17-02-2019 03:45:24 PM	Usuario salió del sistema
+272	renold.gonzalez	17-02-2019 04:10:40 PM	Usuario inicio session
+273	renold.gonzalez	17-02-2019 04:10:40 PM	Usuario accedió a página principal
+274	renold.gonzalez	17-02-2019 04:10:41 PM	Usuario accedió a página certificaciones
+275	renold.gonzalez	17-02-2019 04:10:53 PM	Usuario generó Certificaciones desde el procesador
+276	renold.gonzalez	17-02-2019 04:11:45 PM	Usuario accedió a página certificaciones
+277	renold.gonzalez	17-02-2019 04:11:51 PM	Usuario generó Certificaciones desde el procesador
+278	renold.gonzalez	17-02-2019 04:11:52 PM	Usuario accedió a página certificaciones
+279	renold.gonzalez	17-02-2019 04:12:07 PM	Usuario generó Certificaciones desde el procesador
+280	renold.gonzalez	17-02-2019 04:12:07 PM	Usuario accedió a página certificaciones
+281	renold.gonzalez	17-02-2019 04:13:22 PM	Usuario accedió a página certificaciones
+282	renold.gonzalez	17-02-2019 04:13:28 PM	Usuario generó Certificaciones desde el procesador
+283	renold.gonzalez	17-02-2019 04:14:25 PM	Usuario accedió a página certificaciones
+284	renold.gonzalez	17-02-2019 04:14:28 PM	Usuario accedió a página certificaciones
+285	renold.gonzalez	17-02-2019 04:14:33 PM	Usuario generó Certificaciones desde el procesador
+286	renold.gonzalez	17-02-2019 04:15:12 PM	Usuario accedió a página certificaciones
+287	renold.gonzalez	17-02-2019 04:15:17 PM	Usuario generó Certificaciones desde el procesador
+288	renold.gonzalez	17-02-2019 04:16:21 PM	Usuario accedió a página certificaciones
+289	renold.gonzalez	17-02-2019 04:16:31 PM	Usuario generó Certificaciones desde el procesador
+290	renold.gonzalez	17-02-2019 04:17:03 PM	Usuario accedió a página certificaciones
+291	renold.gonzalez	17-02-2019 04:17:09 PM	Usuario generó Certificaciones desde el procesador
+292	renold.gonzalez	17-02-2019 04:18:09 PM	Usuario accedió a página certificaciones
+293	renold.gonzalez	17-02-2019 04:18:14 PM	Usuario generó Certificaciones desde el procesador
+294	renold.gonzalez	17-02-2019 04:18:44 PM	Usuario accedió a página certificaciones
+295	renold.gonzalez	17-02-2019 04:18:49 PM	Usuario generó Certificaciones desde el procesador
+296	renold.gonzalez	17-02-2019 04:26:04 PM	Usuario accedió a página certificaciones
+297	renold.gonzalez	17-02-2019 04:26:10 PM	Usuario generó Certificaciones desde el procesador
+298	renold.gonzalez	17-02-2019 04:26:54 PM	Usuario accedió a página certificaciones
+299	renold.gonzalez	17-02-2019 04:26:58 PM	Usuario accedió a página certificaciones
+300	renold.gonzalez	17-02-2019 04:27:05 PM	Usuario generó Certificaciones desde el procesador
+301	renold.gonzalez	17-02-2019 04:28:09 PM	Usuario accedió a página certificaciones
+302	renold.gonzalez	17-02-2019 04:28:22 PM	Usuario generó Certificaciones desde el procesador
+303	renold.gonzalez	17-02-2019 04:29:18 PM	Usuario accedió a página certificaciones
+304	renold.gonzalez	17-02-2019 04:29:24 PM	Usuario generó Certificaciones desde el procesador
+305	renold.gonzalez	17-02-2019 04:29:45 PM	Usuario generó Certificaciones desde el procesador
+306	renold.gonzalez	17-02-2019 04:56:20 PM	Usuario accedió a página certificaciones
+307	renold.gonzalez	17-02-2019 04:56:24 PM	Usuario generó Certificaciones desde el procesador
+308	renold.gonzalez	17-02-2019 04:56:50 PM	Usuario accedió a página certificaciones
+309	renold.gonzalez	17-02-2019 04:56:54 PM	Usuario generó Certificaciones desde el procesador
+310	renold.gonzalez	17-02-2019 04:57:44 PM	Usuario accedió a página certificaciones
+311	renold.gonzalez	17-02-2019 04:57:48 PM	Usuario generó Certificaciones desde el procesador
+312	renold.gonzalez	17-02-2019 04:58:08 PM	Usuario accedió a página certificaciones
+313	renold.gonzalez	17-02-2019 04:58:12 PM	Usuario generó Certificaciones desde el procesador
+314	renold.gonzalez	17-02-2019 04:58:50 PM	Usuario accedió a página de usuarios
+315	renold.gonzalez	17-02-2019 04:59:15 PM	Usuario salió del sistema
+316	renold.gonzalez	18-02-2019 10:25:54 PM	Usuario inicio session
+317	renold.gonzalez	18-02-2019 10:25:54 PM	Usuario accedió a página principal
+318	renold.gonzalez	18-02-2019 10:25:56 PM	Usuario accedió a página validación
+319	renold.gonzalez	18-02-2019 10:26:03 PM	Usuario accedió a página de administrtacion de datos
+320	renold.gonzalez	18-02-2019 10:26:08 PM	Usuario accedió a página certificaciones
+321	renold.gonzalez	18-02-2019 10:26:09 PM	Usuario accedió a página validación
+322	renold.gonzalez	18-02-2019 10:26:10 PM	Usuario accedió a página reportes
+323	renold.gonzalez	18-02-2019 10:26:12 PM	Usuario accedió a página inscritos
+324	renold.gonzalez	18-02-2019 10:26:12 PM	Usuario accedió a página certificaciones
+325	renold.gonzalez	18-02-2019 10:26:35 PM	Usuario accedió a página de usuarios
+326	renold.gonzalez	18-02-2019 10:26:48 PM	Usuario salió del sistema
+327	renold.gonzalez	18-02-2019 10:29:25 PM	Usuario inicio session
+328	renold.gonzalez	18-02-2019 10:29:26 PM	Usuario accedió a página principal
+329	renold.gonzalez	18-02-2019 10:29:27 PM	Usuario accedió a página certificaciones
+330	renold.gonzalez	18-02-2019 10:29:34 PM	Usuario accedió a página certificaciones
+331	renold.gonzalez	18-02-2019 10:29:35 PM	Usuario accedió a página inscritos
+332	renold.gonzalez	18-02-2019 10:29:39 PM	Usuario accedió a página validación
+333	renold.gonzalez	18-02-2019 10:29:40 PM	Usuario accedió a página certificaciones
+334	renold.gonzalez	18-02-2019 10:30:37 PM	Usuario generó Certificaciones desde el procesador
+335	renold.gonzalez	18-02-2019 10:31:01 PM	Usuario salió del sistema
+336	renold.gonzalez	18-02-2019 10:33:45 PM	Usuario inicio session
+337	renold.gonzalez	18-02-2019 10:33:45 PM	Usuario accedió a página principal
+338	renold.gonzalez	18-02-2019 10:33:46 PM	Usuario accedió a página certificaciones
+339	renold.gonzalez	18-02-2019 10:34:59 PM	Usuario accedió a página certificaciones
+340	renold.gonzalez	18-02-2019 10:35:09 PM	Usuario accedió a página inscritos
+341	renold.gonzalez	18-02-2019 10:35:10 PM	Usuario accedió a página certificaciones
+342	renold.gonzalez	18-02-2019 10:35:12 PM	Usuario accedió a página inscritos
+343	renold.gonzalez	18-02-2019 10:35:13 PM	Usuario accedió a página certificaciones
+344	renold.gonzalez	18-02-2019 10:35:52 PM	Usuario accedió a página certificaciones
+345	renold.gonzalez	18-02-2019 10:36:31 PM	Usuario accedió a página certificaciones
+346	renold.gonzalez	18-02-2019 10:37:11 PM	Usuario accedió a página certificaciones
+347	renold.gonzalez	18-02-2019 10:37:32 PM	Usuario accedió a página certificaciones
+348	renold.gonzalez	18-02-2019 10:37:53 PM	Usuario accedió a página certificaciones
+349	renold.gonzalez	18-02-2019 10:38:00 PM	Usuario accedió a página certificaciones
+350	renold.gonzalez	18-02-2019 10:38:15 PM	Usuario accedió a página certificaciones
+351	renold.gonzalez	18-02-2019 10:40:14 PM	Usuario accedió a página certificaciones
+352	renold.gonzalez	18-02-2019 10:40:22 PM	Usuario accedió a página certificaciones
+353	renold.gonzalez	18-02-2019 10:40:23 PM	Usuario accedió a página validación
+354	renold.gonzalez	18-02-2019 10:40:24 PM	Usuario accedió a página certificaciones
+355	renold.gonzalez	18-02-2019 10:40:39 PM	Usuario accedió a página certificaciones
+356	renold.gonzalez	18-02-2019 10:43:28 PM	Usuario accedió a página certificaciones
+357	renold.gonzalez	18-02-2019 10:43:31 PM	Usuario accedió a página certificaciones
+358	renold.gonzalez	18-02-2019 10:43:43 PM	Usuario accedió a página certificaciones
+359	renold.gonzalez	18-02-2019 10:44:29 PM	Usuario accedió a página certificaciones
+360	renold.gonzalez	18-02-2019 10:44:32 PM	Usuario accedió a página certificaciones
+361	renold.gonzalez	18-02-2019 10:44:34 PM	Usuario accedió a página certificaciones
+362	renold.gonzalez	18-02-2019 10:45:21 PM	Usuario accedió a página certificaciones
+363	renold.gonzalez	18-02-2019 10:47:30 PM	Usuario accedió a página certificaciones
+364	renold.gonzalez	18-02-2019 10:48:01 PM	Usuario accedió a página certificaciones
+365	renold.gonzalez	18-02-2019 10:50:50 PM	Usuario accedió a página certificaciones
+366	renold.gonzalez	18-02-2019 10:55:17 PM	Usuario accedió a página certificaciones
+367	renold.gonzalez	18-02-2019 10:56:30 PM	Usuario accedió a página certificaciones
+368	renold.gonzalez	18-02-2019 10:56:49 PM	Usuario accedió a página certificaciones
+369	renold.gonzalez	19-02-2019 05:51:00 AM	Usuario accedió a página certificaciones
+370	renold.gonzalez	19-02-2019 05:51:20 AM	Usuario inicio session
+371	renold.gonzalez	19-02-2019 05:51:20 AM	Usuario accedió a página principal
+372	renold.gonzalez	19-02-2019 05:51:21 AM	Usuario accedió a página validación
+373	renold.gonzalez	19-02-2019 05:51:24 AM	Usuario accedió a página certificaciones
+374	renold.gonzalez	19-02-2019 05:51:26 AM	Usuario accedió a página validación
+375	renold.gonzalez	19-02-2019 05:51:27 AM	Usuario accedió a página certificaciones
+376	renold.gonzalez	19-02-2019 06:16:20 AM	Usuario accedió a página certificaciones
+377	renold.gonzalez	19-02-2019 06:23:07 AM	Usuario accedió a página certificaciones
+378	renold.gonzalez	19-02-2019 06:24:05 AM	Usuario accedió a página certificaciones
+379	renold.gonzalez	19-02-2019 06:27:12 AM	Usuario accedió a página certificaciones
+380	renold.gonzalez	19-02-2019 06:27:17 AM	Usuario accedió a página certificaciones
+381	renold.gonzalez	19-02-2019 06:28:07 AM	Usuario accedió a página certificaciones
+382	renold.gonzalez	19-02-2019 06:29:00 AM	Usuario generó Certificaciones desde el procesador
+383	renold.gonzalez	19-02-2019 06:30:08 AM	Usuario accedió a página certificaciones
+384	renold.gonzalez	19-02-2019 06:30:39 AM	Usuario accedió a página certificaciones
+385	renold.gonzalez	19-02-2019 06:31:10 AM	Usuario accedió a página certificaciones
+386	renold.gonzalez	19-02-2019 06:31:15 AM	Usuario accedió a página certificaciones
+387	renold.gonzalez	19-02-2019 06:31:53 AM	Usuario accedió a página certificaciones
+388	renold.gonzalez	19-02-2019 06:33:11 AM	Usuario accedió a página certificaciones
+389	renold.gonzalez	19-02-2019 06:35:18 AM	Usuario accedió a página certificaciones
+390	renold.gonzalez	19-02-2019 06:35:27 AM	Usuario accedió a página inscritos
+391	renold.gonzalez	19-02-2019 06:35:27 AM	Usuario accedió a página certificaciones
+392	renold.gonzalez	19-02-2019 06:35:28 AM	Usuario accedió a página validación
+393	renold.gonzalez	19-02-2019 06:35:30 AM	Usuario accedió a página certificaciones
+394	renold.gonzalez	19-02-2019 06:35:40 AM	Usuario accedió a página de administrtacion de datos
+395	renold.gonzalez	19-02-2019 06:35:44 AM	Usuario accedió a página validación
+396	renold.gonzalez	19-02-2019 06:35:46 AM	Usuario accedió a página de administrtacion de datos
+397	renold.gonzalez	19-02-2019 06:35:48 AM	Usuario accedió a página certificaciones
+398	renold.gonzalez	19-02-2019 06:35:50 AM	Usuario accedió a página de administrtacion de datos
+399	renold.gonzalez	19-02-2019 06:35:55 AM	Usuario accedió a página inscritos
+400	renold.gonzalez	19-02-2019 06:35:57 AM	Usuario accedió a página certificaciones
+401	renold.gonzalez	19-02-2019 06:35:58 AM	Usuario accedió a página validación
+402	renold.gonzalez	19-02-2019 06:35:59 AM	Usuario accedió a página reportes
+403	renold.gonzalez	19-02-2019 06:36:06 AM	Usuario accedió a página certificaciones
+404	renold.gonzalez	19-02-2019 06:36:45 AM	Usuario salió del sistema
+405	renold.gonzalez	19-02-2019 06:37:08 AM	Usuario inicio session
+406	renold.gonzalez	19-02-2019 06:37:08 AM	Usuario accedió a página principal
+407	renold.gonzalez	19-02-2019 06:37:10 AM	Usuario accedió a página certificaciones
+408	renold.gonzalez	19-02-2019 06:37:59 AM	Usuario accedió a página certificaciones
+409	renold.gonzalez	19-02-2019 06:38:09 AM	Usuario accedió a página certificaciones
+410	renold.gonzalez	19-02-2019 06:38:24 AM	Usuario accedió a página certificaciones
+411	renold.gonzalez	19-02-2019 06:38:37 AM	Usuario accedió a página certificaciones
+412	renold.gonzalez	19-02-2019 06:38:52 AM	Usuario accedió a página certificaciones
+413	renold.gonzalez	19-02-2019 06:39:11 AM	Usuario accedió a página certificaciones
+414	renold.gonzalez	19-02-2019 06:39:27 AM	Usuario accedió a página certificaciones
+415	renold.gonzalez	19-02-2019 06:40:39 AM	Usuario accedió a página validación
+416	renold.gonzalez	19-02-2019 06:40:40 AM	Usuario accedió a página certificaciones
+417	renold.gonzalez	19-02-2019 06:40:41 AM	Usuario accedió a página validación
+418	renold.gonzalez	19-02-2019 06:40:42 AM	Usuario accedió a página certificaciones
+419	renold.gonzalez	19-02-2019 06:40:43 AM	Usuario accedió a página validación
+420	renold.gonzalez	19-02-2019 06:41:05 AM	Usuario salió del sistema
+421	renold.gonzalez	20-02-2019 06:35:44 AM	Usuario inicio session
+422	renold.gonzalez	20-02-2019 06:35:45 AM	Usuario accedió a página principal
+423	renold.gonzalez	20-02-2019 06:35:48 AM	Usuario accedió a página certificaciones
+424	renold.gonzalez	20-02-2019 06:35:52 AM	Usuario accedió a página inscritos
+425	renold.gonzalez	20-02-2019 06:36:08 AM	Usuario accedió a página certificaciones
+426	renold.gonzalez	20-02-2019 06:36:43 AM	Usuario accedió a página validación
+427	renold.gonzalez	20-02-2019 06:36:45 AM	Usuario accedió a página reportes
+428	renold.gonzalez	20-02-2019 06:36:48 AM	Usuario accedió a página de administrtacion de datos
+429	renold.gonzalez	20-02-2019 06:36:49 AM	Usuario accedió a página de administrtacion de datos
+430	renold.gonzalez	20-02-2019 06:37:00 AM	Usuario accedió a página de administrtacion de datos
+431	renold.gonzalez	20-02-2019 06:37:01 AM	Usuario accedió a página de usuarios
+432	renold.gonzalez	20-02-2019 06:37:34 AM	Usuario accedió a página validación
+433	renold.gonzalez	20-02-2019 06:37:39 AM	Usuario accedió a página certificaciones
+434	renold.gonzalez	20-02-2019 06:37:41 AM	Usuario accedió a página validación
+435	renold.gonzalez	20-02-2019 06:37:43 AM	Usuario accedió a página certificaciones
+436	renold.gonzalez	20-02-2019 06:37:44 AM	Usuario accedió a página validación
+437	renold.gonzalez	20-02-2019 06:37:47 AM	Usuario accedió a página certificaciones
+438	renold.gonzalez	20-02-2019 06:37:48 AM	Usuario accedió a página validación
+439	renold.gonzalez	20-02-2019 06:38:16 AM	Usuario accedió a página certificaciones
+440	renold.gonzalez	20-02-2019 06:38:17 AM	Usuario accedió a página validación
+441	renold.gonzalez	20-02-2019 06:38:18 AM	Usuario accedió a página reportes
+442	renold.gonzalez	20-02-2019 06:38:21 AM	Usuario accedió a página de administrtacion de datos
+443	renold.gonzalez	20-02-2019 06:38:32 AM	Usuario salió del sistema
+444	renold.gonzalez	27-02-2019 06:23:36 AM	Usuario inicio session
+445	renold.gonzalez	27-02-2019 06:23:36 AM	Usuario accedió a página principal
+446	renold.gonzalez	27-02-2019 06:23:38 AM	Usuario accedió a página certificaciones
+447	renold.gonzalez	27-02-2019 06:23:46 AM	Usuario generó Certificaciones desde el procesador
+448	renold.gonzalez	27-02-2019 06:24:52 AM	Usuario accedió a página certificaciones
+449	renold.gonzalez	27-02-2019 06:24:55 AM	Usuario accedió a página certificaciones
+450	renold.gonzalez	27-02-2019 06:25:11 AM	Usuario generó Certificaciones desde el procesador
+451	renold.gonzalez	27-02-2019 06:25:30 AM	Usuario generó Certificaciones desde el procesador
+452	renold.gonzalez	27-02-2019 06:26:09 AM	Usuario accedió a página certificaciones
+453	renold.gonzalez	27-02-2019 06:26:16 AM	Usuario generó Certificaciones desde el procesador
+454	renold.gonzalez	27-02-2019 06:26:40 AM	Usuario accedió a página certificaciones
+455	renold.gonzalez	27-02-2019 06:26:44 AM	Usuario generó Certificaciones desde el procesador
+456	renold.gonzalez	27-02-2019 06:27:07 AM	Usuario accedió a página certificaciones
+457	renold.gonzalez	27-02-2019 06:28:21 AM	Usuario accedió a página certificaciones
+458	renold.gonzalez	27-02-2019 06:28:24 AM	Usuario accedió a página certificaciones
+459	renold.gonzalez	27-02-2019 06:28:29 AM	Usuario generó Certificaciones desde el procesador
+460	renold.gonzalez	27-02-2019 06:28:43 AM	Usuario accedió a página certificaciones
+461	renold.gonzalez	27-02-2019 06:28:50 AM	Usuario generó Certificaciones desde el procesador
+462	renold.gonzalez	27-02-2019 06:30:04 AM	Usuario accedió a página certificaciones
+463	renold.gonzalez	27-02-2019 06:30:08 AM	Usuario accedió a página certificaciones
+464	renold.gonzalez	27-02-2019 06:30:12 AM	Usuario generó Certificaciones desde el procesador
+465	renold.gonzalez	27-02-2019 06:31:31 AM	Usuario accedió a página certificaciones
+466	renold.gonzalez	27-02-2019 06:31:35 AM	Usuario accedió a página certificaciones
+467	renold.gonzalez	27-02-2019 06:31:50 AM	Usuario accedió a página certificaciones
+468	renold.gonzalez	27-02-2019 06:31:52 AM	Usuario accedió a página certificaciones
+469	renold.gonzalez	27-02-2019 06:31:55 AM	Usuario generó Certificaciones desde el procesador
+470	renold.gonzalez	27-02-2019 06:32:38 AM	Usuario accedió a página certificaciones
+471	renold.gonzalez	27-02-2019 06:32:42 AM	Usuario accedió a página certificaciones
+472	renold.gonzalez	27-02-2019 06:32:49 AM	Usuario generó Certificaciones desde el procesador
+473	renold.gonzalez	27-02-2019 06:32:56 AM	Usuario generó Certificaciones desde el procesador
+474	renold.gonzalez	27-02-2019 06:33:36 AM	Usuario accedió a página certificaciones
+475	renold.gonzalez	27-02-2019 06:33:46 AM	Usuario accedió a página certificaciones
+476	renold.gonzalez	27-02-2019 06:34:12 AM	Usuario accedió a página certificaciones
+477	renold.gonzalez	27-02-2019 06:34:17 AM	Usuario accedió a página certificaciones
+478	renold.gonzalez	27-02-2019 06:34:48 AM	Usuario accedió a página certificaciones
+479	renold.gonzalez	27-02-2019 06:35:30 AM	Usuario accedió a página certificaciones
+480	renold.gonzalez	27-02-2019 06:35:50 AM	Usuario generó Certificaciones desde el procesador
+481	renold.gonzalez	27-02-2019 06:35:56 AM	Usuario generó Certificaciones desde el procesador
+482	renold.gonzalez	27-02-2019 06:36:38 AM	Usuario accedió a página certificaciones
+483	renold.gonzalez	27-02-2019 06:36:42 AM	Usuario generó Certificaciones desde el procesador
+484	renold.gonzalez	27-02-2019 06:36:52 AM	Usuario generó Certificaciones desde el procesador
+485	renold.gonzalez	27-02-2019 06:37:06 AM	Usuario generó Certificaciones desde el procesador
+486	renold.gonzalez	27-02-2019 06:39:12 AM	Usuario accedió a página certificaciones
+487	renold.gonzalez	27-02-2019 06:39:23 AM	Usuario generó Certificaciones desde el procesador
+488	renold.gonzalez	27-02-2019 06:39:51 AM	Usuario accedió a página certificaciones
+489	renold.gonzalez	27-02-2019 06:39:55 AM	Usuario generó Certificaciones desde el procesador
+490	renold.gonzalez	27-02-2019 06:42:37 AM	Usuario accedió a página certificaciones
+491	renold.gonzalez	27-02-2019 06:43:22 AM	Usuario accedió a página certificaciones
+492	renold.gonzalez	27-02-2019 06:43:51 AM	Usuario accedió a página certificaciones
+493	renold.gonzalez	27-02-2019 06:46:19 AM	Usuario accedió a página certificaciones
+494	renold.gonzalez	27-02-2019 06:47:12 AM	Usuario accedió a página certificaciones
+495	renold.gonzalez	27-02-2019 06:48:11 AM	Usuario accedió a página certificaciones
+496	renold.gonzalez	27-02-2019 06:48:14 AM	Usuario accedió a página certificaciones
+497	renold.gonzalez	27-02-2019 06:48:17 AM	Usuario accedió a página certificaciones
+498	renold.gonzalez	27-02-2019 06:48:49 AM	Usuario accedió a página certificaciones
+499	renold.gonzalez	27-02-2019 06:49:04 AM	Usuario accedió a página certificaciones
+500	renold.gonzalez	27-02-2019 06:49:07 AM	Usuario accedió a página certificaciones
+501	renold.gonzalez	27-02-2019 06:49:10 AM	Usuario accedió a página certificaciones
+502	renold.gonzalez	28-02-2019 12:19:33 AM	Usuario accedió a página certificaciones
+503	renold.gonzalez	28-02-2019 12:19:38 AM	Usuario inicio session
+504	renold.gonzalez	28-02-2019 12:19:38 AM	Usuario accedió a página principal
+505	renold.gonzalez	28-02-2019 12:19:40 AM	Usuario accedió a página certificaciones
+506	renold.gonzalez	28-02-2019 12:21:12 AM	Usuario accedió a página certificaciones
+507	renold.gonzalez	28-02-2019 12:21:36 AM	Usuario accedió a página certificaciones
+508	renold.gonzalez	28-02-2019 12:21:38 AM	Usuario accedió a página certificaciones
+509	renold.gonzalez	28-02-2019 12:21:40 AM	Usuario accedió a página certificaciones
+510	renold.gonzalez	28-02-2019 12:21:42 AM	Usuario accedió a página certificaciones
+511	renold.gonzalez	28-02-2019 12:21:44 AM	Usuario accedió a página certificaciones
+512	renold.gonzalez	28-02-2019 12:22:42 AM	Usuario accedió a página certificaciones
+513	renold.gonzalez	28-02-2019 12:22:44 AM	Usuario accedió a página certificaciones
+514	renold.gonzalez	28-02-2019 12:22:44 AM	Usuario accedió a página certificaciones
+515	renold.gonzalez	28-02-2019 12:22:45 AM	Usuario accedió a página certificaciones
+516	renold.gonzalez	28-02-2019 12:22:57 AM	Usuario accedió a página certificaciones
+517	renold.gonzalez	28-02-2019 12:23:08 AM	Usuario accedió a página certificaciones
+518	renold.gonzalez	28-02-2019 12:24:38 AM	Usuario accedió a página certificaciones
+519	renold.gonzalez	28-02-2019 12:26:13 AM	Usuario accedió a página certificaciones
+520	renold.gonzalez	28-02-2019 12:28:44 AM	Usuario accedió a página certificaciones
+521	renold.gonzalez	28-02-2019 12:28:48 AM	Usuario accedió a página certificaciones
+522	renold.gonzalez	28-02-2019 12:33:42 AM	Usuario accedió a página certificaciones
+523	renold.gonzalez	28-02-2019 12:33:46 AM	Usuario accedió a página certificaciones
+524	renold.gonzalez	28-02-2019 12:34:23 AM	Usuario accedió a página certificaciones
+525	renold.gonzalez	28-02-2019 12:34:26 AM	Usuario accedió a página certificaciones
+526	renold.gonzalez	28-02-2019 12:34:30 AM	Usuario accedió a página certificaciones
+527	renold.gonzalez	28-02-2019 12:34:52 AM	Usuario accedió a página certificaciones
+528	renold.gonzalez	28-02-2019 12:34:56 AM	Usuario accedió a página certificaciones
+529	renold.gonzalez	28-02-2019 06:06:47 AM	Usuario inicio session
+530	renold.gonzalez	28-02-2019 06:06:47 AM	Usuario accedió a página principal
+531	renold.gonzalez	28-02-2019 06:06:48 AM	Usuario accedió a página certificaciones
+532	renold.gonzalez	28-02-2019 06:07:31 AM	Usuario accedió a página certificaciones
+533	renold.gonzalez	28-02-2019 06:08:08 AM	Usuario accedió a página certificaciones
+534	renold.gonzalez	28-02-2019 06:08:13 AM	Usuario accedió a página certificaciones
+535	renold.gonzalez	28-02-2019 06:08:45 AM	Usuario accedió a página certificaciones
+536	renold.gonzalez	28-02-2019 06:08:53 AM	Usuario accedió a página certificaciones
+537	renold.gonzalez	28-02-2019 06:12:23 AM	Usuario accedió a página certificaciones
+538	renold.gonzalez	28-02-2019 06:16:34 AM	Usuario accedió a página certificaciones
+539	renold.gonzalez	28-02-2019 06:16:40 AM	Usuario generó Certificaciones desde el procesador
+540	renold.gonzalez	28-02-2019 06:17:06 AM	Usuario accedió a página certificaciones
+541	renold.gonzalez	28-02-2019 06:21:48 AM	Usuario generó Certificaciones desde el procesador
+542	renold.gonzalez	28-02-2019 06:22:09 AM	Usuario generó Certificaciones desde el procesador
+543	renold.gonzalez	28-02-2019 06:22:12 AM	Usuario generó Certificaciones desde el procesador
+544	renold.gonzalez	28-02-2019 06:22:17 AM	Usuario generó Certificaciones desde el procesador
+545	renold.gonzalez	28-02-2019 06:22:26 AM	Usuario generó Certificaciones desde el procesador
+546	renold.gonzalez	28-02-2019 06:25:18 AM	Usuario accedió a página certificaciones
+547	renold.gonzalez	28-02-2019 06:25:21 AM	Usuario accedió a página certificaciones
+548	renold.gonzalez	28-02-2019 06:25:43 AM	Usuario accedió a página certificaciones
+549	renold.gonzalez	28-02-2019 06:26:10 AM	Usuario accedió a página certificaciones
+550	renold.gonzalez	28-02-2019 06:27:40 AM	Usuario accedió a página certificaciones
+551	renold.gonzalez	28-02-2019 06:28:18 AM	Usuario accedió a página certificaciones
+552	renold.gonzalez	28-02-2019 06:28:31 AM	Usuario accedió a página certificaciones
+553	renold.gonzalez	28-02-2019 09:08:20 PM	Usuario accedió a página certificaciones
+554	renold.gonzalez	28-02-2019 09:08:32 PM	Usuario inicio session
+555	renold.gonzalez	28-02-2019 09:08:32 PM	Usuario accedió a página principal
+556	renold.gonzalez	28-02-2019 09:08:34 PM	Usuario accedió a página certificaciones
+557	renold.gonzalez	28-02-2019 09:09:39 PM	Usuario accedió a página certificaciones
+558	renold.gonzalez	28-02-2019 09:10:29 PM	Usuario accedió a página certificaciones
+559	renold.gonzalez	28-02-2019 09:10:39 PM	Usuario accedió a página certificaciones
+560	renold.gonzalez	28-02-2019 09:10:40 PM	Usuario accedió a página certificaciones
+561	renold.gonzalez	28-02-2019 09:10:41 PM	Usuario accedió a página certificaciones
+562	renold.gonzalez	28-02-2019 09:10:41 PM	Usuario accedió a página certificaciones
+563	renold.gonzalez	28-02-2019 09:10:41 PM	Usuario accedió a página certificaciones
+564	renold.gonzalez	28-02-2019 09:11:00 PM	Usuario accedió a página certificaciones
+565	renold.gonzalez	28-02-2019 09:11:24 PM	Usuario accedió a página certificaciones
+566	renold.gonzalez	28-02-2019 09:11:36 PM	Usuario accedió a página certificaciones
+567	renold.gonzalez	28-02-2019 09:13:33 PM	Usuario accedió a página certificaciones
+568	renold.gonzalez	28-02-2019 09:13:57 PM	Usuario accedió a página certificaciones
+569	renold.gonzalez	28-02-2019 09:14:08 PM	Usuario accedió a página certificaciones
+570	renold.gonzalez	28-02-2019 09:16:17 PM	Usuario accedió a página certificaciones
+571	renold.gonzalez	28-02-2019 09:16:21 PM	Usuario accedió a página certificaciones
+572	renold.gonzalez	28-02-2019 09:16:24 PM	Usuario accedió a página certificaciones
+573	renold.gonzalez	28-02-2019 09:17:42 PM	Usuario accedió a página certificaciones
+574	renold.gonzalez	28-02-2019 09:18:18 PM	Usuario accedió a página certificaciones
+575	renold.gonzalez	28-02-2019 09:18:23 PM	Usuario accedió a página certificaciones
+576	renold.gonzalez	28-02-2019 09:18:46 PM	Usuario accedió a página certificaciones
+577	renold.gonzalez	28-02-2019 09:19:02 PM	Usuario generó Certificaciones desde el procesador
+578	renold.gonzalez	28-02-2019 09:21:03 PM	Usuario accedió a página certificaciones
+579	renold.gonzalez	28-02-2019 09:22:43 PM	Usuario accedió a página certificaciones
+580	renold.gonzalez	28-02-2019 09:23:41 PM	Usuario accedió a página certificaciones
+581	renold.gonzalez	28-02-2019 09:24:11 PM	Usuario accedió a página certificaciones
+582	renold.gonzalez	28-02-2019 09:26:23 PM	Usuario accedió a página certificaciones
+583	renold.gonzalez	28-02-2019 09:26:35 PM	Usuario generó Certificaciones desde el procesador
+584	renold.gonzalez	28-02-2019 09:28:00 PM	Usuario accedió a página certificaciones
+585	renold.gonzalez	28-02-2019 09:29:04 PM	Usuario accedió a página de administrtacion de datos
+586	renold.gonzalez	28-02-2019 09:29:06 PM	Usuario accedió a página de usuarios
+587	renold.gonzalez	28-02-2019 09:29:08 PM	Usuario accedió a página validación
+588	renold.gonzalez	28-02-2019 09:29:12 PM	Usuario accedió a página inscritos
+589	renold.gonzalez	28-02-2019 09:29:14 PM	Usuario accedió a página certificaciones
+590	renold.gonzalez	28-02-2019 09:29:32 PM	Usuario accedió a página certificaciones
+591	renold.gonzalez	28-02-2019 09:30:06 PM	Usuario accedió a página certificaciones
+592	renold.gonzalez	28-02-2019 09:30:20 PM	Usuario accedió a página certificaciones
+593	renold.gonzalez	28-02-2019 09:30:43 PM	Usuario accedió a página certificaciones
+594	renold.gonzalez	28-02-2019 09:33:18 PM	Usuario accedió a página certificaciones
+595	renold.gonzalez	28-02-2019 09:33:27 PM	Usuario generó Certificaciones desde el procesador
+596	renold.gonzalez	28-02-2019 09:34:13 PM	Usuario accedió a página validación
+597	renold.gonzalez	28-02-2019 09:34:14 PM	Usuario accedió a página reportes
+598	renold.gonzalez	28-02-2019 09:34:15 PM	Usuario accedió a página certificaciones
+599	renold.gonzalez	28-02-2019 09:34:46 PM	Usuario accedió a página certificaciones
+600	renold.gonzalez	28-02-2019 09:35:49 PM	Usuario accedió a página certificaciones
+601	renold.gonzalez	28-02-2019 09:40:08 PM	Usuario accedió a página certificaciones
+602	renold.gonzalez	28-02-2019 09:40:16 PM	Usuario generó Certificaciones desde el procesador
+603	renold.gonzalez	28-02-2019 09:40:36 PM	Usuario accedió a página certificaciones
+604	renold.gonzalez	28-02-2019 09:40:41 PM	Usuario generó Certificaciones desde el procesador
+605	renold.gonzalez	28-02-2019 09:41:09 PM	Usuario accedió a página certificaciones
+606	renold.gonzalez	28-02-2019 09:41:12 PM	Usuario generó Certificaciones desde el procesador
+607	renold.gonzalez	28-02-2019 09:41:20 PM	Usuario generó Certificaciones desde el procesador
+608	renold.gonzalez	28-02-2019 09:42:13 PM	Usuario accedió a página certificaciones
+609	renold.gonzalez	28-02-2019 09:42:16 PM	Usuario generó Certificaciones desde el procesador
+610	renold.gonzalez	28-02-2019 09:43:04 PM	Usuario accedió a página certificaciones
+611	renold.gonzalez	28-02-2019 09:43:11 PM	Usuario generó Certificaciones desde el procesador
+612	renold.gonzalez	28-02-2019 09:48:45 PM	Usuario accedió a página certificaciones
+613	renold.gonzalez	28-02-2019 09:48:47 PM	Usuario accedió a página certificaciones
+614	renold.gonzalez	28-02-2019 09:49:46 PM	Usuario accedió a página certificaciones
+615	renold.gonzalez	28-02-2019 09:49:51 PM	Usuario accedió a página certificaciones
+616	renold.gonzalez	28-02-2019 09:50:00 PM	Usuario generó Certificaciones desde el procesador
+617	renold.gonzalez	28-02-2019 09:50:36 PM	Usuario accedió a página certificaciones
+618	renold.gonzalez	28-02-2019 09:50:40 PM	Usuario generó Certificaciones desde el procesador
+619	renold.gonzalez	28-02-2019 09:51:33 PM	Usuario accedió a página certificaciones
+620	renold.gonzalez	28-02-2019 09:52:33 PM	Usuario accedió a página certificaciones
+621	renold.gonzalez	28-02-2019 09:52:38 PM	Usuario generó Certificaciones desde el procesador
+622	renold.gonzalez	28-02-2019 09:52:53 PM	Usuario generó Certificaciones desde el procesador
+623	renold.gonzalez	28-02-2019 09:53:19 PM	Usuario generó Certificaciones desde el procesador
+624	renold.gonzalez	28-02-2019 09:53:55 PM	Usuario accedió a página certificaciones
+625	renold.gonzalez	28-02-2019 09:54:27 PM	Usuario accedió a página certificaciones
+626	renold.gonzalez	28-02-2019 09:54:32 PM	Usuario generó Certificaciones desde el procesador
+627	renold.gonzalez	28-02-2019 09:54:39 PM	Usuario accedió a página certificaciones
+628	renold.gonzalez	28-02-2019 09:55:00 PM	Usuario generó Certificaciones desde el procesador
+629	renold.gonzalez	28-02-2019 09:55:27 PM	Usuario accedió a página certificaciones
+630	renold.gonzalez	28-02-2019 09:55:30 PM	Usuario generó Certificaciones desde el procesador
+631	renold.gonzalez	28-02-2019 09:56:47 PM	Usuario accedió a página certificaciones
+632	renold.gonzalez	28-02-2019 10:00:27 PM	Usuario accedió a página certificaciones
+633	renold.gonzalez	28-02-2019 10:00:38 PM	Usuario accedió a página certificaciones
+634	renold.gonzalez	28-02-2019 10:01:00 PM	Usuario accedió a página certificaciones
+635	renold.gonzalez	28-02-2019 10:01:19 PM	Usuario accedió a página certificaciones
+636	renold.gonzalez	28-02-2019 10:01:23 PM	Usuario accedió a página certificaciones
+637	renold.gonzalez	28-02-2019 10:04:09 PM	Usuario generó Certificaciones desde el procesador
+638	renold.gonzalez	28-02-2019 10:06:15 PM	Usuario accedió a página certificaciones
+639	renold.gonzalez	28-02-2019 10:09:48 PM	Usuario accedió a página certificaciones
+640	renold.gonzalez	28-02-2019 10:09:53 PM	Usuario generó Certificaciones desde el procesador
+641	renold.gonzalez	28-02-2019 10:10:35 PM	Usuario accedió a página certificaciones
+642	renold.gonzalez	28-02-2019 10:10:39 PM	Usuario accedió a página certificaciones
+643	renold.gonzalez	28-02-2019 10:10:42 PM	Usuario accedió a página certificaciones
+644	renold.gonzalez	28-02-2019 10:10:47 PM	Usuario generó Certificaciones desde el procesador
+645	renold.gonzalez	28-02-2019 10:11:37 PM	Usuario accedió a página certificaciones
+646	renold.gonzalez	28-02-2019 10:11:48 PM	Usuario generó Certificaciones desde el procesador
+647	renold.gonzalez	28-02-2019 10:13:31 PM	Usuario accedió a página certificaciones
+648	renold.gonzalez	28-02-2019 10:13:34 PM	Usuario accedió a página certificaciones
+649	renold.gonzalez	28-02-2019 10:13:37 PM	Usuario generó Certificaciones desde el procesador
+650	renold.gonzalez	28-02-2019 10:14:14 PM	Usuario accedió a página certificaciones
+651	renold.gonzalez	28-02-2019 10:14:19 PM	Usuario accedió a página certificaciones
+652	renold.gonzalez	28-02-2019 10:14:24 PM	Usuario generó Certificaciones desde el procesador
+653	renold.gonzalez	28-02-2019 10:14:36 PM	Usuario generó Certificaciones desde el procesador
+654	renold.gonzalez	28-02-2019 10:18:00 PM	Usuario accedió a página certificaciones
+655	renold.gonzalez	28-02-2019 10:18:07 PM	Usuario generó Certificaciones desde el procesador
+656	renold.gonzalez	28-02-2019 10:22:02 PM	Usuario accedió a página certificaciones
+657	renold.gonzalez	28-02-2019 10:22:14 PM	Usuario generó Certificaciones desde el procesador
+658	renold.gonzalez	28-02-2019 10:22:23 PM	Usuario generó Certificaciones desde el procesador
+659	renold.gonzalez	28-02-2019 10:22:30 PM	Usuario generó Certificaciones desde el procesador
+660	renold.gonzalez	28-02-2019 10:23:53 PM	Usuario accedió a página certificaciones
+661	renold.gonzalez	28-02-2019 10:23:57 PM	Usuario generó Certificaciones desde el procesador
+662	renold.gonzalez	28-02-2019 10:26:15 PM	Usuario generó Certificaciones desde el procesador
+663	renold.gonzalez	28-02-2019 10:27:22 PM	Usuario accedió a página certificaciones
+664	renold.gonzalez	28-02-2019 10:27:24 PM	Usuario generó Certificaciones desde el procesador
+665	renold.gonzalez	28-02-2019 10:27:58 PM	Usuario accedió a página certificaciones
+666	renold.gonzalez	28-02-2019 10:28:02 PM	Usuario generó Certificaciones desde el procesador
+667	renold.gonzalez	28-02-2019 10:28:12 PM	Usuario generó Certificaciones desde el procesador
+668	renold.gonzalez	28-02-2019 10:29:08 PM	Usuario generó Certificaciones desde el procesador
+669	renold.gonzalez	28-02-2019 10:29:19 PM	Usuario generó Certificaciones desde el procesador
+670	renold.gonzalez	28-02-2019 10:31:19 PM	Usuario generó Certificaciones desde el procesador
+671	renold.gonzalez	28-02-2019 10:32:09 PM	Usuario accedió a página inscritos
+672	renold.gonzalez	28-02-2019 10:32:10 PM	Usuario accedió a página validación
+673	renold.gonzalez	28-02-2019 10:32:17 PM	Usuario accedió a página de administrtacion de datos
+674	renold.gonzalez	28-02-2019 10:32:21 PM	Usuario accedió a página de usuarios
+675	renold.gonzalez	28-02-2019 10:32:28 PM	Usuario accedió a página certificaciones
+676	renold.gonzalez	28-02-2019 10:33:31 PM	Usuario salió del sistema
+677	renold.gonzalez	28-02-2019 10:33:37 PM	Usuario inicio session
+678	renold.gonzalez	28-02-2019 10:33:38 PM	Usuario accedió a página principal
+679	renold.gonzalez	28-02-2019 10:34:32 PM	Usuario accedió a página inscritos
+680	renold.gonzalez	28-02-2019 10:34:37 PM	Usuario accedió a página certificaciones
+681	renold.gonzalez	28-02-2019 10:34:41 PM	Usuario accedió a página validación
+682	renold.gonzalez	28-02-2019 10:34:51 PM	Usuario accedió a página certificaciones
+683	renold.gonzalez	28-02-2019 10:34:57 PM	Usuario generó Certificaciones desde el procesador
+684	renold.gonzalez	28-02-2019 10:35:02 PM	Usuario generó Certificaciones desde el procesador
+685	renold.gonzalez	28-02-2019 10:35:04 PM	Usuario generó Certificaciones desde el procesador
+686	renold.gonzalez	28-02-2019 10:35:06 PM	Usuario generó Certificaciones desde el procesador
+687	renold.gonzalez	28-02-2019 10:35:08 PM	Usuario generó Certificaciones desde el procesador
+688	renold.gonzalez	28-02-2019 10:35:10 PM	Usuario generó Certificaciones desde el procesador
+689	renold.gonzalez	28-02-2019 10:35:12 PM	Usuario generó Certificaciones desde el procesador
+690	renold.gonzalez	28-02-2019 10:35:15 PM	Usuario generó Certificaciones desde el procesador
+691	renold.gonzalez	28-02-2019 10:35:17 PM	Usuario generó Certificaciones desde el procesador
+692	renold.gonzalez	28-02-2019 10:35:19 PM	Usuario generó Certificaciones desde el procesador
+693	renold.gonzalez	28-02-2019 10:35:48 PM	Usuario generó Certificaciones desde el procesador
+694	renold.gonzalez	28-02-2019 10:36:10 PM	Usuario accedió a página de usuarios
+695	renold.gonzalez	28-02-2019 10:36:12 PM	Usuario accedió a página de administrtacion de datos
+696	renold.gonzalez	28-02-2019 10:36:13 PM	Usuario accedió a página de usuarios
+697	renold.gonzalez	28-02-2019 10:36:31 PM	Usuario accedió a página de usuarios
+698	renold.gonzalez	28-02-2019 10:36:36 PM	Usuario accedió a página certificaciones
+699	renold.gonzalez	28-02-2019 10:37:20 PM	Usuario accedió a página certificaciones
+700	renold.gonzalez	28-02-2019 10:40:13 PM	Usuario accedió a página validación
+701	renold.gonzalez	28-02-2019 10:40:14 PM	Usuario accedió a página certificaciones
+702	renold.gonzalez	28-02-2019 10:40:40 PM	Usuario accedió a página certificaciones
+703	renold.gonzalez	28-02-2019 10:41:07 PM	Usuario accedió a página certificaciones
+704	renold.gonzalez	28-02-2019 10:41:18 PM	Usuario accedió a página certificaciones
+705	renold.gonzalez	28-02-2019 10:41:38 PM	Usuario accedió a página certificaciones
+706	renold.gonzalez	28-02-2019 10:42:10 PM	Usuario accedió a página certificaciones
+707	renold.gonzalez	28-02-2019 10:42:25 PM	Usuario generó Certificaciones desde el procesador
+708	renold.gonzalez	28-02-2019 10:42:49 PM	Usuario accedió a página certificaciones
+709	renold.gonzalez	28-02-2019 10:43:06 PM	Usuario generó Certificaciones desde el procesador
+710	renold.gonzalez	28-02-2019 10:51:21 PM	Usuario accedió a página inscritos
+711	renold.gonzalez	28-02-2019 10:52:42 PM	Usuario accedió a página inscritos
+712	renold.gonzalez	28-02-2019 10:52:42 PM	Usuario accedió a página certificaciones
+713	renold.gonzalez	28-02-2019 10:53:10 PM	Usuario accedió a página certificaciones
+714	renold.gonzalez	28-02-2019 10:53:26 PM	Usuario accedió a página reportes
+715	renold.gonzalez	28-02-2019 10:53:27 PM	Usuario accedió a página validación
+716	renold.gonzalez	28-02-2019 10:55:21 PM	Usuario accedió a página certificaciones
+717	renold.gonzalez	28-02-2019 10:56:45 PM	Usuario accedió a página inscritos
+718	renold.gonzalez	28-02-2019 10:58:07 PM	Usuario accedió a página inscritos
+719	renold.gonzalez	28-02-2019 11:01:14 PM	Usuario accedió a página inscritos
+720	renold.gonzalez	28-02-2019 11:01:15 PM	Usuario accedió a página inscritos
+721	renold.gonzalez	28-02-2019 11:01:16 PM	Usuario accedió a página inscritos
+722	renold.gonzalez	28-02-2019 11:02:51 PM	Usuario accedió a página inscritos
+723	renold.gonzalez	28-02-2019 11:02:52 PM	Usuario accedió a página inscritos
+724	renold.gonzalez	28-02-2019 11:02:52 PM	Usuario accedió a página inscritos
+725	renold.gonzalez	28-02-2019 11:02:53 PM	Usuario accedió a página inscritos
+726	renold.gonzalez	28-02-2019 11:02:56 PM	Usuario accedió a página inscritos
+727	renold.gonzalez	28-02-2019 11:04:04 PM	Usuario accedió a página inscritos
+728	renold.gonzalez	28-02-2019 11:04:06 PM	Usuario accedió a página inscritos
+729	renold.gonzalez	28-02-2019 11:04:27 PM	Usuario accedió a página inscritos
+730	renold.gonzalez	28-02-2019 11:05:30 PM	Usuario accedió a página certificaciones
+731	renold.gonzalez	28-02-2019 11:05:32 PM	Usuario accedió a página inscritos
+732	renold.gonzalez	28-02-2019 11:07:28 PM	Usuario accedió a página inscritos
+733	renold.gonzalez	28-02-2019 11:07:36 PM	Usuario accedió a página inscritos
+734	renold.gonzalez	28-02-2019 11:09:07 PM	Usuario accedió a página inscritos
+735	renold.gonzalez	28-02-2019 11:09:43 PM	Usuario accedió a página inscritos
+736	renold.gonzalez	28-02-2019 11:09:44 PM	Usuario accedió a página inscritos
+737	renold.gonzalez	28-02-2019 11:09:45 PM	Usuario accedió a página inscritos
+738	renold.gonzalez	28-02-2019 11:09:45 PM	Usuario accedió a página inscritos
+739	renold.gonzalez	28-02-2019 11:09:46 PM	Usuario accedió a página inscritos
+740	renold.gonzalez	28-02-2019 11:09:46 PM	Usuario accedió a página inscritos
+741	renold.gonzalez	28-02-2019 11:09:47 PM	Usuario accedió a página inscritos
+742	renold.gonzalez	28-02-2019 11:09:47 PM	Usuario accedió a página inscritos
+743	renold.gonzalez	28-02-2019 11:09:48 PM	Usuario accedió a página inscritos
+744	renold.gonzalez	28-02-2019 11:12:04 PM	Usuario accedió a página inscritos
+745	renold.gonzalez	28-02-2019 11:12:11 PM	Usuario accedió a página inscritos
+746	renold.gonzalez	28-02-2019 11:12:51 PM	Usuario accedió a página inscritos
+747	renold.gonzalez	28-02-2019 11:15:13 PM	Usuario accedió a página inscritos
+748	renold.gonzalez	28-02-2019 11:15:14 PM	Usuario accedió a página inscritos
+749	renold.gonzalez	28-02-2019 11:16:25 PM	Usuario accedió a página inscritos
+750	renold.gonzalez	28-02-2019 11:17:22 PM	Usuario accedió a página inscritos
+751	renold.gonzalez	28-02-2019 11:17:31 PM	Usuario accedió a página inscritos
+752	renold.gonzalez	28-02-2019 11:17:40 PM	Usuario accedió a página inscritos
+753	renold.gonzalez	28-02-2019 11:18:39 PM	Usuario accedió a página inscritos
+754	renold.gonzalez	28-02-2019 11:18:44 PM	Usuario accedió a página inscritos
+755	renold.gonzalez	28-02-2019 11:20:10 PM	Usuario accedió a página inscritos
+756	renold.gonzalez	28-02-2019 11:22:06 PM	Usuario accedió a página inscritos
+757	renold.gonzalez	28-02-2019 11:22:10 PM	Usuario accedió a página certificaciones
+758	renold.gonzalez	28-02-2019 11:26:23 PM	Usuario accedió a página certificaciones
+759	renold.gonzalez	28-02-2019 11:26:28 PM	Usuario accedió a página inscritos
+760	renold.gonzalez	28-02-2019 11:27:49 PM	Usuario accedió a página inscritos
+761	renold.gonzalez	28-02-2019 11:27:54 PM	Usuario accedió a página validación
+762	renold.gonzalez	28-02-2019 11:27:56 PM	Usuario accedió a página certificaciones
+763	renold.gonzalez	28-02-2019 11:27:59 PM	Usuario accedió a página inscritos
+764	renold.gonzalez	28-02-2019 11:28:11 PM	Usuario accedió a página certificaciones
+765	renold.gonzalez	28-02-2019 11:28:20 PM	Usuario accedió a página inscritos
+766	renold.gonzalez	28-02-2019 11:28:58 PM	Usuario accedió a página principal
+767	renold.gonzalez	28-02-2019 11:28:59 PM	Usuario accedió a página inscritos
+768	renold.gonzalez	28-02-2019 11:29:04 PM	Usuario accedió a página certificaciones
+769	renold.gonzalez	28-02-2019 11:29:09 PM	Usuario accedió a página certificaciones
+770	renold.gonzalez	28-02-2019 11:29:12 PM	Usuario accedió a página validación
+771	renold.gonzalez	28-02-2019 11:29:14 PM	Usuario accedió a página reportes
+772	renold.gonzalez	28-02-2019 11:29:15 PM	Usuario accedió a página reportes
+773	renold.gonzalez	28-02-2019 11:29:21 PM	Usuario accedió a página validación
+774	renold.gonzalez	28-02-2019 11:30:05 PM	Usuario accedió a página de usuarios
+775	renold.gonzalez	28-02-2019 11:30:29 PM	Usuario accedió a página inscritos
+776	renold.gonzalez	28-02-2019 11:31:23 PM	Usuario accedió a página certificaciones
+777	renold.gonzalez	28-02-2019 11:31:38 PM	Usuario accedió a página de administrtacion de datos
+778	renold.gonzalez	28-02-2019 11:31:55 PM	Usuario accedió a página de usuarios
+779	renold.gonzalez	28-02-2019 11:31:57 PM	Usuario accedió a página inscritos
+780	renold.gonzalez	28-02-2019 11:31:59 PM	Usuario accedió a página principal
+781	renold.gonzalez	28-02-2019 11:32:02 PM	Usuario accedió a página certificaciones
+782	renold.gonzalez	28-02-2019 11:32:04 PM	Usuario accedió a página validación
+783	renold.gonzalez	28-02-2019 11:32:10 PM	Usuario accedió a página inscritos
+784	renold.gonzalez	28-02-2019 11:32:11 PM	Usuario accedió a página certificaciones
+785	renold.gonzalez	28-02-2019 11:32:19 PM	Usuario generó Certificaciones desde el procesador
+786	renold.gonzalez	28-02-2019 11:32:27 PM	Usuario accedió a página de usuarios
+787	renold.gonzalez	28-02-2019 11:32:28 PM	Usuario salió del sistema
+788	renold.gonzalez	01-03-2019 06:41:47 AM	Usuario inicio session
+789	renold.gonzalez	01-03-2019 06:41:47 AM	Usuario accedió a página principal
+790	renold.gonzalez	01-03-2019 06:41:48 AM	Usuario accedió a página certificaciones
+791	renold.gonzalez	01-03-2019 06:42:00 AM	Usuario accedió a página certificaciones
+792	renold.gonzalez	01-03-2019 06:44:38 AM	Usuario accedió a página certificaciones
+793	renold.gonzalez	01-03-2019 06:44:44 AM	Usuario accedió a página certificaciones
+794	renold.gonzalez	01-03-2019 06:44:46 AM	Usuario accedió a página inscritos
+795	renold.gonzalez	01-03-2019 06:44:47 AM	Usuario accedió a página validación
+796	renold.gonzalez	01-03-2019 06:44:49 AM	Usuario accedió a página certificaciones
+797	renold.gonzalez	01-03-2019 06:45:10 AM	Usuario accedió a página inscritos
+798	renold.gonzalez	01-03-2019 06:45:16 AM	Usuario accedió a página certificaciones
+799	renold.gonzalez	01-03-2019 06:46:53 AM	Usuario accedió a página certificaciones
+800	renold.gonzalez	01-03-2019 06:51:38 AM	Usuario accedió a página certificaciones
+801	renold.gonzalez	01-03-2019 06:51:42 AM	Usuario accedió a página inscritos
+802	renold.gonzalez	01-03-2019 06:51:46 AM	Usuario accedió a página de usuarios
+803	renold.gonzalez	01-03-2019 06:52:06 AM	Usuario salió del sistema
+804	renold.gonzalez	02-03-2019 03:54:18 PM	Usuario inicio session
+805	renold.gonzalez	02-03-2019 03:54:18 PM	Usuario accedió a página principal
+806	renold.gonzalez	02-03-2019 03:54:20 PM	Usuario accedió a página de administrtacion de datos
+807	renold.gonzalez	02-03-2019 03:54:22 PM	Usuario accedió a página de usuarios
+808	renold.gonzalez	02-03-2019 03:54:29 PM	Usuario accedió a página inscritos
+809	renold.gonzalez	02-03-2019 04:08:16 PM	Usuario accedió a página certificaciones
+810	renold.gonzalez	02-03-2019 04:08:58 PM	Usuario accedió a página certificaciones
+811	renold.gonzalez	02-03-2019 04:10:48 PM	Usuario accedió a página certificaciones
+812	renold.gonzalez	02-03-2019 04:12:16 PM	Usuario generó Certificaciones desde el procesador
+813	renold.gonzalez	02-03-2019 04:12:25 PM	Usuario generó Certificaciones desde el procesador
+814	renold.gonzalez	02-03-2019 04:13:32 PM	Usuario accedió a página de usuarios
+815	renold.gonzalez	02-03-2019 04:22:27 PM	Usuario accedió a página de administrtacion de datos
+816	renold.gonzalez	02-03-2019 04:22:28 PM	Usuario accedió a página de usuarios
+817	renold.gonzalez	02-03-2019 04:22:30 PM	Usuario accedió a página de administrtacion de datos
+818	renold.gonzalez	02-03-2019 04:22:31 PM	Usuario accedió a página de usuarios
+819	renold.gonzalez	02-03-2019 04:22:32 PM	Usuario accedió a página de administrtacion de datos
+820	renold.gonzalez	02-03-2019 04:22:33 PM	Usuario accedió a página de usuarios
+821	renold.gonzalez	02-03-2019 04:22:34 PM	Usuario accedió a página de administrtacion de datos
+822	renold.gonzalez	02-03-2019 04:22:35 PM	Usuario accedió a página de usuarios
+823	renold.gonzalez	02-03-2019 04:22:47 PM	Usuario accedió a página inscritos
+824	renold.gonzalez	02-03-2019 04:22:53 PM	Usuario accedió a página de usuarios
+825	renold.gonzalez	02-03-2019 04:26:32 PM	Usuario accedió a página de usuarios
+826	renold.gonzalez	02-03-2019 04:26:41 PM	Usuario accedió a página certificaciones
+827	renold.gonzalez	02-03-2019 04:26:43 PM	Usuario accedió a página inscritos
+828	renold.gonzalez	02-03-2019 04:26:45 PM	Usuario accedió a página certificaciones
+829	renold.gonzalez	02-03-2019 04:30:11 PM	Usuario accedió a página certificaciones
+830	renold.gonzalez	02-03-2019 04:57:29 PM	Usuario accedió a página certificaciones
+831	renold.gonzalez	02-03-2019 05:05:43 PM	Usuario inicio session
+832	renold.gonzalez	02-03-2019 05:05:43 PM	Usuario accedió a página principal
+833	renold.gonzalez	02-03-2019 05:05:45 PM	Usuario accedió a página certificaciones
+834	renold.gonzalez	02-03-2019 05:08:25 PM	Usuario accedió a página certificaciones
+835	renold.gonzalez	02-03-2019 05:08:26 PM	Usuario accedió a página certificaciones
+836	renold.gonzalez	02-03-2019 05:08:27 PM	Usuario accedió a página certificaciones
+837	renold.gonzalez	02-03-2019 05:09:21 PM	Usuario accedió a página certificaciones
+838	renold.gonzalez	02-03-2019 05:09:31 PM	Usuario accedió a página certificaciones
+839	renold.gonzalez	02-03-2019 05:10:03 PM	Usuario accedió a página certificaciones
+840	renold.gonzalez	02-03-2019 05:10:15 PM	Usuario accedió a página certificaciones
+841	renold.gonzalez	02-03-2019 05:10:27 PM	Usuario accedió a página certificaciones
+842	renold.gonzalez	02-03-2019 05:14:21 PM	Usuario accedió a página certificaciones
+843	renold.gonzalez	02-03-2019 05:14:22 PM	Usuario accedió a página certificaciones
+844	renold.gonzalez	02-03-2019 05:14:22 PM	Usuario accedió a página certificaciones
+845	renold.gonzalez	02-03-2019 05:14:30 PM	Usuario accedió a página certificaciones
+846	renold.gonzalez	02-03-2019 05:22:49 PM	Usuario accedió a página certificaciones
+847	renold.gonzalez	02-03-2019 05:22:50 PM	Usuario accedió a página certificaciones
+848	renold.gonzalez	02-03-2019 05:38:26 PM	Usuario accedió a página certificaciones
+849	renold.gonzalez	02-03-2019 05:39:14 PM	Usuario accedió a página certificaciones
+850	renold.gonzalez	02-03-2019 05:39:36 PM	Usuario accedió a página certificaciones
+851	renold.gonzalez	02-03-2019 05:39:52 PM	Usuario accedió a página certificaciones
+852	renold.gonzalez	02-03-2019 05:42:34 PM	Usuario accedió a página certificaciones
+853	renold.gonzalez	02-03-2019 05:43:04 PM	Usuario accedió a página certificaciones
+854	renold.gonzalez	02-03-2019 05:43:06 PM	Usuario accedió a página certificaciones
+855	renold.gonzalez	02-03-2019 05:43:07 PM	Usuario accedió a página certificaciones
+856	renold.gonzalez	02-03-2019 05:43:07 PM	Usuario accedió a página certificaciones
+857	renold.gonzalez	02-03-2019 05:43:10 PM	Usuario accedió a página certificaciones
+858	renold.gonzalez	02-03-2019 05:46:01 PM	Usuario accedió a página certificaciones
+859	renold.gonzalez	02-03-2019 05:46:04 PM	Usuario accedió a página certificaciones
+860	renold.gonzalez	02-03-2019 05:48:11 PM	Usuario accedió a página certificaciones
+861	renold.gonzalez	02-03-2019 05:48:39 PM	Usuario accedió a página certificaciones
+862	renold.gonzalez	02-03-2019 05:49:46 PM	Usuario accedió a página certificaciones
+863	renold.gonzalez	02-03-2019 05:50:42 PM	Usuario accedió a página certificaciones
+864	renold.gonzalez	02-03-2019 05:50:56 PM	Usuario accedió a página certificaciones
+865	renold.gonzalez	02-03-2019 05:55:52 PM	Usuario accedió a página certificaciones
+866	renold.gonzalez	02-03-2019 05:56:12 PM	Usuario accedió a página certificaciones
+867	renold.gonzalez	02-03-2019 05:59:01 PM	Usuario accedió a página certificaciones
+868	renold.gonzalez	02-03-2019 06:00:08 PM	Usuario accedió a página certificaciones
+869	renold.gonzalez	02-03-2019 06:01:26 PM	Usuario accedió a página certificaciones
+870	renold.gonzalez	02-03-2019 06:01:46 PM	Usuario accedió a página certificaciones
+871	renold.gonzalez	02-03-2019 06:03:33 PM	Usuario accedió a página certificaciones
+872	renold.gonzalez	02-03-2019 06:05:50 PM	Usuario accedió a página certificaciones
+873	renold.gonzalez	02-03-2019 06:05:56 PM	Usuario accedió a página certificaciones
+874	renold.gonzalez	02-03-2019 06:05:57 PM	Usuario accedió a página certificaciones
+875	renold.gonzalez	02-03-2019 06:05:58 PM	Usuario accedió a página certificaciones
+876	renold.gonzalez	02-03-2019 06:05:59 PM	Usuario accedió a página certificaciones
+877	renold.gonzalez	02-03-2019 06:06:00 PM	Usuario accedió a página certificaciones
+878	renold.gonzalez	02-03-2019 06:06:24 PM	Usuario accedió a página certificaciones
+879	renold.gonzalez	02-03-2019 06:06:26 PM	Usuario accedió a página certificaciones
+880	renold.gonzalez	02-03-2019 06:11:22 PM	Usuario accedió a página certificaciones
+881	renold.gonzalez	02-03-2019 06:44:09 PM	Usuario inicio session
+882	renold.gonzalez	02-03-2019 06:44:09 PM	Usuario accedió a página principal
+883	renold.gonzalez	02-03-2019 06:44:10 PM	Usuario accedió a página certificaciones
+884	renold.gonzalez	02-03-2019 06:44:15 PM	Usuario accedió a página certificaciones
+885	renold.gonzalez	02-03-2019 06:44:16 PM	Usuario accedió a página validación
+886	renold.gonzalez	02-03-2019 06:44:19 PM	Usuario accedió a página validación
+887	renold.gonzalez	02-03-2019 06:44:19 PM	Usuario accedió a página certificaciones
+888	renold.gonzalez	02-03-2019 06:44:20 PM	Usuario accedió a página validación
+889	renold.gonzalez	02-03-2019 06:44:22 PM	Usuario accedió a página certificaciones
+890	renold.gonzalez	02-03-2019 06:44:23 PM	Usuario accedió a página validación
+891	renold.gonzalez	02-03-2019 06:44:36 PM	Usuario accedió a página reportes
+892	renold.gonzalez	02-03-2019 06:44:41 PM	Usuario accedió a página de administrtacion de datos
+893	renold.gonzalez	02-03-2019 06:44:54 PM	Usuario accedió a página de administrtacion de datos
+894	renold.gonzalez	02-03-2019 06:44:57 PM	Usuario accedió a página de usuarios
+895	renold.gonzalez	02-03-2019 06:44:58 PM	Usuario accedió a página de administrtacion de datos
+896	renold.gonzalez	02-03-2019 06:44:59 PM	Usuario accedió a página de usuarios
+897	renold.gonzalez	02-03-2019 06:45:03 PM	Usuario accedió a página inscritos
+898	renold.gonzalez	02-03-2019 06:45:05 PM	Usuario accedió a página certificaciones
+899	renold.gonzalez	02-03-2019 06:45:18 PM	Usuario accedió a página inscritos
+900	renold.gonzalez	02-03-2019 06:45:25 PM	Usuario accedió a página inscritos
+901	renold.gonzalez	02-03-2019 06:45:43 PM	Usuario accedió a página inscritos
+902	renold.gonzalez	02-03-2019 06:45:58 PM	Usuario accedió a página certificaciones
+903	renold.gonzalez	02-03-2019 06:46:03 PM	Usuario accedió a página reportes
+904	renold.gonzalez	02-03-2019 06:46:04 PM	Usuario accedió a página de administrtacion de datos
+905	renold.gonzalez	02-03-2019 06:46:05 PM	Usuario accedió a página de usuarios
+906	renold.gonzalez	02-03-2019 06:46:08 PM	Usuario salió del sistema
+907	renold.gonzalez	03-03-2019 11:28:09 AM	Usuario inicio session
+908	renold.gonzalez	03-03-2019 11:28:09 AM	Usuario accedió a página principal
+909	renold.gonzalez	03-03-2019 11:28:11 AM	Usuario accedió a página certificaciones
+910	renold.gonzalez	03-03-2019 11:30:07 AM	Usuario accedió a página certificaciones
+911	renold.gonzalez	03-03-2019 11:30:23 AM	Usuario accedió a página certificaciones
+912	renold.gonzalez	03-03-2019 11:31:01 AM	Usuario accedió a página certificaciones
+913	renold.gonzalez	03-03-2019 11:31:10 AM	Usuario accedió a página certificaciones
+914	renold.gonzalez	03-03-2019 11:31:36 AM	Usuario accedió a página certificaciones
+915	renold.gonzalez	03-03-2019 11:31:37 AM	Usuario accedió a página certificaciones
+916	renold.gonzalez	03-03-2019 11:48:15 AM	Usuario accedió a página certificaciones
+917	renold.gonzalez	03-03-2019 12:13:37 PM	Usuario inicio session
+918	renold.gonzalez	03-03-2019 12:13:37 PM	Usuario accedió a página principal
+919	renold.gonzalez	03-03-2019 12:13:38 PM	Usuario accedió a página certificaciones
+920	renold.gonzalez	03-03-2019 12:15:20 PM	Usuario accedió a página certificaciones
+921	renold.gonzalez	03-03-2019 12:16:27 PM	Usuario accedió a página certificaciones
+922	renold.gonzalez	03-03-2019 02:04:39 PM	Usuario accedió a página certificaciones
+923	renold.gonzalez	03-03-2019 02:08:18 PM	Usuario inicio session
+924	renold.gonzalez	03-03-2019 02:08:19 PM	Usuario accedió a página principal
+925	renold.gonzalez	03-03-2019 02:08:20 PM	Usuario accedió a página certificaciones
+926	renold.gonzalez	03-03-2019 02:08:59 PM	Usuario accedió a página certificaciones
+927	renold.gonzalez	03-03-2019 02:09:22 PM	Usuario accedió a página certificaciones
+928	renold.gonzalez	03-03-2019 02:10:03 PM	Usuario accedió a página certificaciones
+929	renold.gonzalez	03-03-2019 02:10:30 PM	Usuario accedió a página certificaciones
+930	renold.gonzalez	03-03-2019 02:12:12 PM	Usuario accedió a página certificaciones
+931	renold.gonzalez	03-03-2019 02:32:20 PM	Usuario accedió a página certificaciones
+932	renold.gonzalez	03-03-2019 02:32:37 PM	Usuario accedió a página certificaciones
+933	renold.gonzalez	03-03-2019 02:32:50 PM	Usuario accedió a página certificaciones
+934	renold.gonzalez	03-03-2019 02:54:31 PM	Usuario accedió a página certificaciones
+935	renold.gonzalez	03-03-2019 02:54:39 PM	Usuario accedió a página certificaciones
+936	renold.gonzalez	03-03-2019 02:54:50 PM	Usuario accedió a página certificaciones
+937	renold.gonzalez	03-03-2019 02:56:49 PM	Usuario accedió a página certificaciones
+938	renold.gonzalez	03-03-2019 02:57:39 PM	Usuario accedió a página certificaciones
+939	renold.gonzalez	03-03-2019 02:57:44 PM	Usuario accedió a página certificaciones
+940	renold.gonzalez	03-03-2019 02:58:23 PM	Usuario accedió a página certificaciones
+941	renold.gonzalez	03-03-2019 02:59:01 PM	Usuario accedió a página certificaciones
+942	renold.gonzalez	03-03-2019 03:02:41 PM	Usuario inicio session
+943	renold.gonzalez	03-03-2019 03:02:41 PM	Usuario accedió a página principal
+944	renold.gonzalez	03-03-2019 03:02:42 PM	Usuario accedió a página certificaciones
+945	renold.gonzalez	03-03-2019 03:02:46 PM	Usuario accedió a página certificaciones
+946	renold.gonzalez	03-03-2019 03:02:49 PM	Usuario accedió a página certificaciones
+947	renold.gonzalez	03-03-2019 03:02:52 PM	Usuario accedió a página certificaciones
+948	renold.gonzalez	03-03-2019 03:02:54 PM	Usuario accedió a página certificaciones
+949	renold.gonzalez	03-03-2019 03:02:56 PM	Usuario accedió a página certificaciones
+950	renold.gonzalez	03-03-2019 03:02:59 PM	Usuario accedió a página certificaciones
+951	renold.gonzalez	03-03-2019 03:03:00 PM	Usuario accedió a página certificaciones
+952	renold.gonzalez	03-03-2019 03:03:02 PM	Usuario accedió a página certificaciones
+953	renold.gonzalez	03-03-2019 03:03:04 PM	Usuario accedió a página certificaciones
+954	renold.gonzalez	03-03-2019 03:03:06 PM	Usuario accedió a página certificaciones
+955	renold.gonzalez	03-03-2019 03:03:16 PM	Usuario accedió a página certificaciones
+956	renold.gonzalez	03-03-2019 03:03:18 PM	Usuario accedió a página certificaciones
+957	renold.gonzalez	03-03-2019 03:03:23 PM	Usuario accedió a página certificaciones
+958	renold.gonzalez	03-03-2019 03:03:26 PM	Usuario accedió a página certificaciones
+959	renold.gonzalez	03-03-2019 03:04:34 PM	Usuario accedió a página certificaciones
+960	renold.gonzalez	03-03-2019 03:04:37 PM	Usuario accedió a página certificaciones
+961	renold.gonzalez	03-03-2019 03:04:40 PM	Usuario accedió a página certificaciones
+962	renold.gonzalez	03-03-2019 03:04:51 PM	Usuario accedió a página certificaciones
+963	renold.gonzalez	03-03-2019 03:05:32 PM	Usuario accedió a página certificaciones
+964	renold.gonzalez	03-03-2019 03:05:50 PM	Usuario accedió a página certificaciones
+965	renold.gonzalez	03-03-2019 03:05:53 PM	Usuario accedió a página certificaciones
+966	renold.gonzalez	03-03-2019 03:05:56 PM	Usuario accedió a página certificaciones
+967	renold.gonzalez	03-03-2019 03:06:10 PM	Usuario accedió a página certificaciones
+968	renold.gonzalez	03-03-2019 03:09:49 PM	Usuario accedió a página certificaciones
+969	renold.gonzalez	03-03-2019 03:10:01 PM	Usuario accedió a página certificaciones
+970	renold.gonzalez	03-03-2019 03:10:24 PM	Usuario accedió a página certificaciones
+971	renold.gonzalez	03-03-2019 03:10:27 PM	Usuario accedió a página certificaciones
+972	renold.gonzalez	03-03-2019 03:10:30 PM	Usuario accedió a página certificaciones
+973	renold.gonzalez	03-03-2019 03:10:32 PM	Usuario accedió a página certificaciones
+974	renold.gonzalez	03-03-2019 03:10:34 PM	Usuario accedió a página certificaciones
+975	renold.gonzalez	03-03-2019 03:10:38 PM	Usuario accedió a página certificaciones
+976	renold.gonzalez	03-03-2019 03:10:40 PM	Usuario accedió a página certificaciones
+977	renold.gonzalez	03-03-2019 03:10:44 PM	Usuario accedió a página certificaciones
+978	renold.gonzalez	03-03-2019 03:10:46 PM	Usuario accedió a página certificaciones
+979	renold.gonzalez	03-03-2019 03:10:49 PM	Usuario accedió a página certificaciones
+980	renold.gonzalez	03-03-2019 03:10:52 PM	Usuario accedió a página certificaciones
+981	renold.gonzalez	03-03-2019 03:10:55 PM	Usuario accedió a página certificaciones
+982	renold.gonzalez	03-03-2019 03:10:57 PM	Usuario accedió a página certificaciones
+983	renold.gonzalez	03-03-2019 03:11:00 PM	Usuario accedió a página certificaciones
+984	renold.gonzalez	03-03-2019 03:11:02 PM	Usuario accedió a página certificaciones
+985	renold.gonzalez	03-03-2019 03:11:05 PM	Usuario accedió a página certificaciones
+986	renold.gonzalez	03-03-2019 03:11:07 PM	Usuario accedió a página certificaciones
+987	renold.gonzalez	03-03-2019 03:11:09 PM	Usuario accedió a página certificaciones
+988	renold.gonzalez	03-03-2019 03:11:10 PM	Usuario accedió a página certificaciones
+989	renold.gonzalez	03-03-2019 03:11:53 PM	Usuario accedió a página certificaciones
+990	renold.gonzalez	03-03-2019 03:12:58 PM	Usuario accedió a página certificaciones
+991	renold.gonzalez	03-03-2019 03:14:23 PM	Usuario accedió a página certificaciones
+992	renold.gonzalez	03-03-2019 03:14:52 PM	Usuario accedió a página certificaciones
+993	renold.gonzalez	03-03-2019 03:15:34 PM	Usuario accedió a página certificaciones
+994	renold.gonzalez	03-03-2019 03:16:24 PM	Usuario accedió a página certificaciones
+995	renold.gonzalez	03-03-2019 03:17:26 PM	Usuario accedió a página certificaciones
+996	renold.gonzalez	03-03-2019 03:18:48 PM	Usuario accedió a página certificaciones
+997	renold.gonzalez	03-03-2019 03:18:49 PM	Usuario accedió a página inscritos
+998	renold.gonzalez	03-03-2019 03:18:49 PM	Usuario accedió a página inscritos
+999	renold.gonzalez	03-03-2019 03:18:51 PM	Usuario accedió a página certificaciones
+1000	renold.gonzalez	03-03-2019 03:18:55 PM	Usuario accedió a página certificaciones
+1001	renold.gonzalez	03-03-2019 03:18:57 PM	Usuario accedió a página certificaciones
+1002	renold.gonzalez	03-03-2019 03:18:59 PM	Usuario accedió a página certificaciones
+1003	renold.gonzalez	03-03-2019 03:19:01 PM	Usuario accedió a página certificaciones
+1004	renold.gonzalez	03-03-2019 03:19:03 PM	Usuario accedió a página validación
+1005	renold.gonzalez	03-03-2019 03:19:04 PM	Usuario accedió a página certificaciones
+1006	renold.gonzalez	03-03-2019 03:25:26 PM	Usuario accedió a página certificaciones
+1007	renold.gonzalez	03-03-2019 03:25:35 PM	Usuario accedió a página certificaciones
+1008	renold.gonzalez	03-03-2019 03:25:37 PM	Usuario accedió a página certificaciones
+1009	renold.gonzalez	03-03-2019 03:25:39 PM	Usuario accedió a página certificaciones
+1010	renold.gonzalez	03-03-2019 03:27:04 PM	Usuario accedió a página reportes
+1011	renold.gonzalez	03-03-2019 03:27:26 PM	Usuario accedió a página certificaciones
+1012	renold.gonzalez	03-03-2019 03:27:48 PM	Usuario accedió a página certificaciones
+1013	renold.gonzalez	03-03-2019 03:27:51 PM	Usuario accedió a página certificaciones
+1014	renold.gonzalez	03-03-2019 03:27:53 PM	Usuario accedió a página certificaciones
+1015	renold.gonzalez	03-03-2019 03:27:55 PM	Usuario accedió a página certificaciones
+1016	renold.gonzalez	03-03-2019 03:27:57 PM	Usuario accedió a página certificaciones
+1017	renold.gonzalez	03-03-2019 03:27:59 PM	Usuario accedió a página certificaciones
+1018	renold.gonzalez	03-03-2019 03:28:01 PM	Usuario accedió a página certificaciones
+1019	renold.gonzalez	03-03-2019 03:28:26 PM	Usuario accedió a página certificaciones
+1020	renold.gonzalez	03-03-2019 03:28:35 PM	Usuario accedió a página certificaciones
+1021	renold.gonzalez	03-03-2019 03:28:38 PM	Usuario accedió a página certificaciones
+1022	renold.gonzalez	03-03-2019 03:28:59 PM	Usuario accedió a página certificaciones
+1023	renold.gonzalez	03-03-2019 03:29:38 PM	Usuario accedió a página certificaciones
+1024	renold.gonzalez	03-03-2019 03:29:42 PM	Usuario accedió a página certificaciones
+1025	renold.gonzalez	03-03-2019 03:29:45 PM	Usuario accedió a página certificaciones
+1026	renold.gonzalez	03-03-2019 03:29:49 PM	Usuario accedió a página certificaciones
+1027	renold.gonzalez	03-03-2019 03:29:55 PM	Usuario accedió a página certificaciones
+1028	renold.gonzalez	03-03-2019 03:30:02 PM	Usuario accedió a página certificaciones
+1029	renold.gonzalez	03-03-2019 03:30:27 PM	Usuario accedió a página certificaciones
+1030	renold.gonzalez	03-03-2019 03:30:30 PM	Usuario accedió a página certificaciones
+1031	renold.gonzalez	03-03-2019 03:30:36 PM	Usuario accedió a página certificaciones
+1032	renold.gonzalez	03-03-2019 03:30:50 PM	Usuario accedió a página certificaciones
+1033	renold.gonzalez	03-03-2019 03:30:52 PM	Usuario accedió a página certificaciones
+1034	renold.gonzalez	03-03-2019 03:30:56 PM	Usuario accedió a página certificaciones
+1035	renold.gonzalez	03-03-2019 03:31:00 PM	Usuario accedió a página certificaciones
+1036	renold.gonzalez	03-03-2019 03:31:03 PM	Usuario accedió a página certificaciones
+1037	renold.gonzalez	03-03-2019 03:31:08 PM	Usuario accedió a página certificaciones
+1038	renold.gonzalez	03-03-2019 03:31:16 PM	Usuario accedió a página certificaciones
+1039	renold.gonzalez	03-03-2019 03:32:49 PM	Usuario accedió a página certificaciones
+1040	renold.gonzalez	03-03-2019 03:33:51 PM	Usuario accedió a página certificaciones
+1041	renold.gonzalez	03-03-2019 03:34:01 PM	Usuario accedió a página certificaciones
+1042	renold.gonzalez	03-03-2019 03:34:07 PM	Usuario accedió a página certificaciones
+1043	renold.gonzalez	03-03-2019 03:40:46 PM	Usuario accedió a página certificaciones
+1044	renold.gonzalez	03-03-2019 03:40:51 PM	Usuario accedió a página certificaciones
+1045	renold.gonzalez	03-03-2019 03:40:59 PM	Usuario accedió a página certificaciones
+1046	renold.gonzalez	03-03-2019 03:42:27 PM	Usuario accedió a página certificaciones
+1047	renold.gonzalez	03-03-2019 03:42:34 PM	Usuario accedió a página certificaciones
+1048	renold.gonzalez	03-03-2019 03:42:43 PM	Usuario accedió a página certificaciones
+1049	renold.gonzalez	03-03-2019 03:42:49 PM	Usuario accedió a página certificaciones
+1050	renold.gonzalez	03-03-2019 03:42:52 PM	Usuario accedió a página certificaciones
+1051	renold.gonzalez	03-03-2019 03:42:55 PM	Usuario accedió a página certificaciones
+1052	renold.gonzalez	03-03-2019 03:42:59 PM	Usuario accedió a página certificaciones
+1053	renold.gonzalez	03-03-2019 03:43:21 PM	Usuario accedió a página certificaciones
+1054	renold.gonzalez	03-03-2019 03:43:30 PM	Usuario accedió a página certificaciones
+1055	renold.gonzalez	03-03-2019 03:43:37 PM	Usuario accedió a página certificaciones
+1056	renold.gonzalez	03-03-2019 03:43:40 PM	Usuario accedió a página certificaciones
+1057	renold.gonzalez	03-03-2019 03:43:42 PM	Usuario accedió a página certificaciones
+1058	renold.gonzalez	03-03-2019 03:43:51 PM	Usuario accedió a página certificaciones
+1059	renold.gonzalez	03-03-2019 03:44:13 PM	Usuario accedió a página certificaciones
+1060	renold.gonzalez	03-03-2019 03:44:18 PM	Usuario accedió a página certificaciones
+1061	renold.gonzalez	03-03-2019 03:44:21 PM	Usuario accedió a página certificaciones
+1062	renold.gonzalez	03-03-2019 03:44:29 PM	Usuario accedió a página certificaciones
+1063	renold.gonzalez	03-03-2019 03:44:47 PM	Usuario accedió a página certificaciones
+1064	renold.gonzalez	03-03-2019 03:45:25 PM	Usuario accedió a página certificaciones
+1065	renold.gonzalez	03-03-2019 03:45:30 PM	Usuario accedió a página certificaciones
+1066	renold.gonzalez	03-03-2019 03:45:43 PM	Usuario accedió a página certificaciones
+1067	renold.gonzalez	03-03-2019 03:46:41 PM	Usuario accedió a página certificaciones
+1068	renold.gonzalez	03-03-2019 03:46:45 PM	Usuario accedió a página certificaciones
+1069	renold.gonzalez	03-03-2019 03:46:48 PM	Usuario accedió a página certificaciones
+1070	renold.gonzalez	03-03-2019 03:46:51 PM	Usuario accedió a página certificaciones
+1071	renold.gonzalez	03-03-2019 03:46:57 PM	Usuario accedió a página certificaciones
+1072	renold.gonzalez	03-03-2019 03:47:00 PM	Usuario accedió a página certificaciones
+1073	renold.gonzalez	03-03-2019 03:47:02 PM	Usuario accedió a página certificaciones
+1074	renold.gonzalez	03-03-2019 03:49:00 PM	Usuario accedió a página certificaciones
+1075	renold.gonzalez	03-03-2019 03:49:05 PM	Usuario accedió a página certificaciones
+1076	renold.gonzalez	03-03-2019 03:49:07 PM	Usuario accedió a página certificaciones
+1077	renold.gonzalez	03-03-2019 03:52:51 PM	Usuario accedió a página certificaciones
+1078	renold.gonzalez	03-03-2019 03:52:53 PM	Usuario accedió a página certificaciones
+1079	renold.gonzalez	03-03-2019 03:52:54 PM	Usuario accedió a página certificaciones
+1080	renold.gonzalez	03-03-2019 03:52:56 PM	Usuario accedió a página certificaciones
+1081	renold.gonzalez	03-03-2019 03:52:57 PM	Usuario accedió a página certificaciones
+1082	renold.gonzalez	03-03-2019 03:52:59 PM	Usuario accedió a página certificaciones
+1083	renold.gonzalez	03-03-2019 03:53:02 PM	Usuario accedió a página certificaciones
+1084	renold.gonzalez	03-03-2019 03:53:03 PM	Usuario accedió a página certificaciones
+1085	renold.gonzalez	03-03-2019 03:53:06 PM	Usuario accedió a página certificaciones
+1086	renold.gonzalez	03-03-2019 03:53:09 PM	Usuario accedió a página certificaciones
+1087	renold.gonzalez	03-03-2019 03:53:14 PM	Usuario accedió a página certificaciones
+1088	renold.gonzalez	03-03-2019 03:53:18 PM	Usuario accedió a página certificaciones
+1089	renold.gonzalez	03-03-2019 03:53:43 PM	Usuario accedió a página certificaciones
+1090	renold.gonzalez	03-03-2019 03:53:48 PM	Usuario accedió a página certificaciones
+1091	renold.gonzalez	03-03-2019 03:53:51 PM	Usuario accedió a página certificaciones
+1092	renold.gonzalez	03-03-2019 03:53:55 PM	Usuario accedió a página certificaciones
+1093	renold.gonzalez	03-03-2019 03:54:03 PM	Usuario accedió a página certificaciones
+1094	renold.gonzalez	03-03-2019 03:59:15 PM	Usuario accedió a página certificaciones
+1095	renold.gonzalez	03-03-2019 03:59:23 PM	Usuario accedió a página certificaciones
+1096	renold.gonzalez	03-03-2019 03:59:25 PM	Usuario accedió a página certificaciones
+1097	renold.gonzalez	03-03-2019 03:59:29 PM	Usuario accedió a página certificaciones
+1098	renold.gonzalez	03-03-2019 03:59:31 PM	Usuario accedió a página certificaciones
+1099	renold.gonzalez	03-03-2019 03:59:33 PM	Usuario accedió a página certificaciones
+1100	renold.gonzalez	03-03-2019 03:59:35 PM	Usuario accedió a página certificaciones
+1101	renold.gonzalez	03-03-2019 03:59:37 PM	Usuario accedió a página certificaciones
+1102	renold.gonzalez	03-03-2019 03:59:39 PM	Usuario accedió a página certificaciones
+1103	renold.gonzalez	03-03-2019 03:59:43 PM	Usuario accedió a página certificaciones
+1104	renold.gonzalez	03-03-2019 03:59:46 PM	Usuario accedió a página certificaciones
+1105	renold.gonzalez	03-03-2019 03:59:49 PM	Usuario accedió a página certificaciones
+1106	renold.gonzalez	03-03-2019 03:59:57 PM	Usuario accedió a página certificaciones
+1107	renold.gonzalez	03-03-2019 03:59:59 PM	Usuario accedió a página certificaciones
+1108	renold.gonzalez	03-03-2019 04:00:00 PM	Usuario accedió a página certificaciones
+1109	renold.gonzalez	03-03-2019 04:00:02 PM	Usuario accedió a página certificaciones
+1110	renold.gonzalez	03-03-2019 04:00:04 PM	Usuario accedió a página certificaciones
+1111	renold.gonzalez	03-03-2019 04:00:07 PM	Usuario accedió a página certificaciones
+1112	renold.gonzalez	03-03-2019 04:00:10 PM	Usuario accedió a página certificaciones
+1113	renold.gonzalez	03-03-2019 04:00:11 PM	Usuario accedió a página certificaciones
+1114	renold.gonzalez	03-03-2019 04:00:14 PM	Usuario accedió a página certificaciones
+1115	renold.gonzalez	03-03-2019 04:00:18 PM	Usuario accedió a página certificaciones
+1116	renold.gonzalez	03-03-2019 04:00:24 PM	Usuario accedió a página certificaciones
+1117	renold.gonzalez	03-03-2019 04:00:26 PM	Usuario accedió a página certificaciones
+1118	renold.gonzalez	03-03-2019 04:01:10 PM	Usuario accedió a página certificaciones
+1119	renold.gonzalez	03-03-2019 04:01:14 PM	Usuario accedió a página certificaciones
+1120	renold.gonzalez	03-03-2019 04:01:16 PM	Usuario accedió a página certificaciones
+1121	renold.gonzalez	03-03-2019 04:01:18 PM	Usuario accedió a página certificaciones
+1122	renold.gonzalez	03-03-2019 04:01:20 PM	Usuario accedió a página certificaciones
+1123	renold.gonzalez	03-03-2019 04:01:48 PM	Usuario accedió a página certificaciones
+1124	renold.gonzalez	03-03-2019 04:01:52 PM	Usuario accedió a página certificaciones
+1125	renold.gonzalez	03-03-2019 04:02:02 PM	Usuario accedió a página certificaciones
+1126	renold.gonzalez	03-03-2019 04:02:05 PM	Usuario accedió a página certificaciones
+1127	renold.gonzalez	03-03-2019 04:02:08 PM	Usuario accedió a página certificaciones
+1128	renold.gonzalez	03-03-2019 04:02:11 PM	Usuario accedió a página certificaciones
+1129	renold.gonzalez	03-03-2019 04:02:14 PM	Usuario accedió a página certificaciones
+1130	renold.gonzalez	03-03-2019 04:03:25 PM	Usuario accedió a página certificaciones
+1131	renold.gonzalez	03-03-2019 04:03:27 PM	Usuario accedió a página certificaciones
+1132	renold.gonzalez	03-03-2019 04:03:33 PM	Usuario accedió a página certificaciones
+1133	renold.gonzalez	03-03-2019 04:03:35 PM	Usuario accedió a página certificaciones
+1134	renold.gonzalez	03-03-2019 04:03:56 PM	Usuario accedió a página certificaciones
+1135	renold.gonzalez	03-03-2019 04:04:08 PM	Usuario accedió a página certificaciones
+1136	renold.gonzalez	03-03-2019 04:04:11 PM	Usuario accedió a página certificaciones
+1137	renold.gonzalez	03-03-2019 04:10:58 PM	Usuario accedió a página certificaciones
+1138	renold.gonzalez	03-03-2019 04:11:00 PM	Usuario accedió a página certificaciones
+1139	renold.gonzalez	03-03-2019 04:11:04 PM	Usuario accedió a página certificaciones
+1140	renold.gonzalez	03-03-2019 04:11:07 PM	Usuario accedió a página certificaciones
+1141	renold.gonzalez	03-03-2019 04:11:10 PM	Usuario accedió a página certificaciones
+1142	renold.gonzalez	03-03-2019 04:11:11 PM	Usuario accedió a página certificaciones
+1143	renold.gonzalez	03-03-2019 04:11:14 PM	Usuario accedió a página certificaciones
+1144	renold.gonzalez	03-03-2019 04:11:16 PM	Usuario accedió a página certificaciones
+1145	renold.gonzalez	03-03-2019 04:11:24 PM	Usuario accedió a página certificaciones
+1146	renold.gonzalez	03-03-2019 04:11:27 PM	Usuario accedió a página certificaciones
+1147	renold.gonzalez	03-03-2019 04:11:29 PM	Usuario accedió a página certificaciones
+1148	renold.gonzalez	03-03-2019 04:11:31 PM	Usuario accedió a página certificaciones
+1149	renold.gonzalez	03-03-2019 04:11:32 PM	Usuario accedió a página certificaciones
+1150	renold.gonzalez	03-03-2019 04:11:34 PM	Usuario accedió a página certificaciones
+1151	renold.gonzalez	03-03-2019 04:11:35 PM	Usuario accedió a página certificaciones
+1152	renold.gonzalez	03-03-2019 04:11:37 PM	Usuario accedió a página certificaciones
+1153	renold.gonzalez	03-03-2019 04:11:39 PM	Usuario accedió a página certificaciones
+1154	renold.gonzalez	03-03-2019 04:11:40 PM	Usuario accedió a página certificaciones
+1155	renold.gonzalez	03-03-2019 04:11:42 PM	Usuario accedió a página certificaciones
+1156	renold.gonzalez	03-03-2019 04:11:44 PM	Usuario accedió a página certificaciones
+1157	renold.gonzalez	03-03-2019 04:11:45 PM	Usuario accedió a página certificaciones
+1158	renold.gonzalez	03-03-2019 04:11:47 PM	Usuario accedió a página certificaciones
+1159	renold.gonzalez	03-03-2019 04:11:49 PM	Usuario accedió a página certificaciones
+1160	renold.gonzalez	03-03-2019 04:11:54 PM	Usuario accedió a página certificaciones
+1161	renold.gonzalez	03-03-2019 04:15:20 PM	Usuario accedió a página certificaciones
+1162	renold.gonzalez	03-03-2019 04:15:53 PM	Usuario accedió a página certificaciones
+1163	renold.gonzalez	03-03-2019 04:16:40 PM	Usuario accedió a página certificaciones
+1164	renold.gonzalez	03-03-2019 04:16:45 PM	Usuario accedió a página certificaciones
+1165	renold.gonzalez	03-03-2019 04:16:48 PM	Usuario accedió a página certificaciones
+1166	renold.gonzalez	03-03-2019 04:16:49 PM	Usuario accedió a página certificaciones
+1167	renold.gonzalez	03-03-2019 04:16:51 PM	Usuario accedió a página certificaciones
+1168	renold.gonzalez	03-03-2019 04:16:53 PM	Usuario accedió a página certificaciones
+1169	renold.gonzalez	03-03-2019 04:16:57 PM	Usuario accedió a página certificaciones
+1170	renold.gonzalez	03-03-2019 04:17:01 PM	Usuario accedió a página certificaciones
+1171	renold.gonzalez	03-03-2019 04:17:03 PM	Usuario accedió a página certificaciones
+1172	renold.gonzalez	03-03-2019 04:17:06 PM	Usuario accedió a página certificaciones
+1173	renold.gonzalez	03-03-2019 04:17:09 PM	Usuario accedió a página certificaciones
+1174	renold.gonzalez	03-03-2019 04:17:12 PM	Usuario accedió a página certificaciones
+1175	renold.gonzalez	03-03-2019 04:17:15 PM	Usuario accedió a página certificaciones
+1176	renold.gonzalez	03-03-2019 04:17:19 PM	Usuario accedió a página certificaciones
+1177	renold.gonzalez	03-03-2019 04:17:22 PM	Usuario accedió a página certificaciones
+1178	renold.gonzalez	03-03-2019 04:19:19 PM	Usuario accedió a página certificaciones
+1179	renold.gonzalez	03-03-2019 04:19:25 PM	Usuario accedió a página certificaciones
+1180	renold.gonzalez	03-03-2019 04:19:26 PM	Usuario accedió a página certificaciones
+1181	renold.gonzalez	03-03-2019 04:19:31 PM	Usuario accedió a página certificaciones
+1182	renold.gonzalez	03-03-2019 04:19:48 PM	Usuario accedió a página certificaciones
+1183	renold.gonzalez	03-03-2019 04:19:50 PM	Usuario accedió a página certificaciones
+1184	renold.gonzalez	03-03-2019 04:19:52 PM	Usuario accedió a página certificaciones
+1185	renold.gonzalez	03-03-2019 04:19:54 PM	Usuario accedió a página certificaciones
+1186	renold.gonzalez	03-03-2019 04:19:57 PM	Usuario accedió a página certificaciones
+1187	renold.gonzalez	03-03-2019 04:19:58 PM	Usuario accedió a página certificaciones
+1188	renold.gonzalez	03-03-2019 04:20:00 PM	Usuario accedió a página certificaciones
+1189	renold.gonzalez	03-03-2019 04:20:01 PM	Usuario accedió a página certificaciones
+1190	renold.gonzalez	03-03-2019 04:20:02 PM	Usuario accedió a página certificaciones
+1191	renold.gonzalez	03-03-2019 04:20:03 PM	Usuario accedió a página certificaciones
+1192	renold.gonzalez	03-03-2019 04:20:05 PM	Usuario accedió a página certificaciones
+1193	renold.gonzalez	03-03-2019 04:20:06 PM	Usuario accedió a página certificaciones
+1194	renold.gonzalez	03-03-2019 04:20:08 PM	Usuario accedió a página certificaciones
+1195	renold.gonzalez	03-03-2019 04:20:09 PM	Usuario accedió a página certificaciones
+1196	renold.gonzalez	03-03-2019 04:20:10 PM	Usuario accedió a página certificaciones
+1197	renold.gonzalez	03-03-2019 04:20:12 PM	Usuario accedió a página certificaciones
+1198	renold.gonzalez	03-03-2019 04:20:16 PM	Usuario accedió a página certificaciones
+1199	renold.gonzalez	03-03-2019 04:20:18 PM	Usuario accedió a página certificaciones
+1200	renold.gonzalez	03-03-2019 04:20:20 PM	Usuario accedió a página certificaciones
+1201	renold.gonzalez	03-03-2019 04:20:22 PM	Usuario accedió a página certificaciones
+1202	renold.gonzalez	03-03-2019 04:20:24 PM	Usuario accedió a página certificaciones
+1203	renold.gonzalez	03-03-2019 04:20:30 PM	Usuario accedió a página certificaciones
+1204	renold.gonzalez	03-03-2019 04:20:32 PM	Usuario accedió a página certificaciones
+1205	renold.gonzalez	03-03-2019 04:20:33 PM	Usuario accedió a página certificaciones
+1206	renold.gonzalez	03-03-2019 04:20:35 PM	Usuario accedió a página certificaciones
+1207	renold.gonzalez	03-03-2019 04:20:37 PM	Usuario accedió a página certificaciones
+1208	renold.gonzalez	03-03-2019 04:20:38 PM	Usuario accedió a página certificaciones
+1209	renold.gonzalez	03-03-2019 04:20:40 PM	Usuario accedió a página certificaciones
+1210	renold.gonzalez	03-03-2019 04:20:41 PM	Usuario accedió a página certificaciones
+1211	renold.gonzalez	03-03-2019 04:23:19 PM	Usuario accedió a página certificaciones
+1212	renold.gonzalez	03-03-2019 04:23:23 PM	Usuario accedió a página certificaciones
+1213	renold.gonzalez	03-03-2019 04:23:33 PM	Usuario accedió a página certificaciones
+1214	renold.gonzalez	03-03-2019 04:23:37 PM	Usuario accedió a página certificaciones
+1215	renold.gonzalez	03-03-2019 04:23:55 PM	Usuario accedió a página certificaciones
+1216	renold.gonzalez	03-03-2019 04:23:56 PM	Usuario accedió a página certificaciones
+1217	renold.gonzalez	03-03-2019 04:23:58 PM	Usuario accedió a página certificaciones
+1218	renold.gonzalez	03-03-2019 04:24:00 PM	Usuario accedió a página certificaciones
+1219	renold.gonzalez	03-03-2019 04:24:02 PM	Usuario accedió a página certificaciones
+1220	renold.gonzalez	03-03-2019 04:24:03 PM	Usuario accedió a página certificaciones
+1221	renold.gonzalez	03-03-2019 04:24:04 PM	Usuario accedió a página certificaciones
+1222	renold.gonzalez	03-03-2019 04:24:06 PM	Usuario accedió a página certificaciones
+1223	renold.gonzalez	03-03-2019 04:24:07 PM	Usuario accedió a página certificaciones
+1224	renold.gonzalez	03-03-2019 04:24:09 PM	Usuario accedió a página certificaciones
+1225	renold.gonzalez	03-03-2019 04:24:10 PM	Usuario accedió a página certificaciones
+1226	renold.gonzalez	03-03-2019 04:24:12 PM	Usuario accedió a página certificaciones
+1227	renold.gonzalez	03-03-2019 04:24:13 PM	Usuario accedió a página certificaciones
+1228	renold.gonzalez	03-03-2019 04:24:15 PM	Usuario accedió a página certificaciones
+1229	renold.gonzalez	03-03-2019 04:24:17 PM	Usuario accedió a página certificaciones
+1230	renold.gonzalez	03-03-2019 04:26:59 PM	Usuario accedió a página certificaciones
+1231	renold.gonzalez	03-03-2019 04:27:02 PM	Usuario accedió a página certificaciones
+1232	renold.gonzalez	03-03-2019 04:27:04 PM	Usuario accedió a página certificaciones
+1233	renold.gonzalez	03-03-2019 04:27:06 PM	Usuario accedió a página certificaciones
+1234	renold.gonzalez	03-03-2019 04:27:07 PM	Usuario accedió a página certificaciones
+1235	renold.gonzalez	03-03-2019 04:27:09 PM	Usuario accedió a página certificaciones
+1236	renold.gonzalez	03-03-2019 04:27:47 PM	Usuario accedió a página certificaciones
+1237	renold.gonzalez	03-03-2019 04:27:50 PM	Usuario accedió a página certificaciones
+1238	renold.gonzalez	03-03-2019 04:27:51 PM	Usuario accedió a página certificaciones
+1239	renold.gonzalez	03-03-2019 04:27:53 PM	Usuario accedió a página certificaciones
+1240	renold.gonzalez	03-03-2019 04:27:57 PM	Usuario accedió a página certificaciones
+1241	renold.gonzalez	03-03-2019 04:28:26 PM	Usuario accedió a página certificaciones
+1242	renold.gonzalez	03-03-2019 04:28:37 PM	Usuario accedió a página certificaciones
+1243	renold.gonzalez	03-03-2019 04:28:43 PM	Usuario accedió a página certificaciones
+1244	renold.gonzalez	03-03-2019 04:30:03 PM	Usuario accedió a página certificaciones
+1245	renold.gonzalez	03-03-2019 04:30:09 PM	Usuario generó Certificaciones desde el procesador
+1246	renold.gonzalez	03-03-2019 04:31:44 PM	Usuario accedió a página certificaciones
+1247	renold.gonzalez	03-03-2019 04:31:45 PM	Usuario accedió a página certificaciones
+1248	renold.gonzalez	03-03-2019 04:31:47 PM	Usuario accedió a página certificaciones
+1249	renold.gonzalez	03-03-2019 04:31:48 PM	Usuario accedió a página inscritos
+1250	renold.gonzalez	03-03-2019 04:31:52 PM	Usuario accedió a página certificaciones
+1251	renold.gonzalez	03-03-2019 04:31:57 PM	Usuario accedió a página certificaciones
+1252	renold.gonzalez	03-03-2019 04:32:00 PM	Usuario accedió a página validación
+1253	renold.gonzalez	03-03-2019 04:32:01 PM	Usuario accedió a página certificaciones
+1254	renold.gonzalez	03-03-2019 04:32:03 PM	Usuario accedió a página validación
+1255	renold.gonzalez	03-03-2019 04:32:04 PM	Usuario accedió a página certificaciones
+1256	renold.gonzalez	03-03-2019 04:32:07 PM	Usuario accedió a página validación
+1257	renold.gonzalez	03-03-2019 04:32:07 PM	Usuario accedió a página certificaciones
+1258	renold.gonzalez	03-03-2019 04:32:11 PM	Usuario accedió a página validación
+1259	renold.gonzalez	03-03-2019 04:32:12 PM	Usuario accedió a página certificaciones
+1260	renold.gonzalez	03-03-2019 04:32:15 PM	Usuario accedió a página validación
+1261	renold.gonzalez	03-03-2019 04:32:16 PM	Usuario accedió a página certificaciones
+1262	renold.gonzalez	03-03-2019 04:37:50 PM	Usuario accedió a página certificaciones
+1263	renold.gonzalez	03-03-2019 04:37:57 PM	Usuario accedió a página certificaciones
+1264	renold.gonzalez	03-03-2019 04:37:59 PM	Usuario accedió a página certificaciones
+1265	renold.gonzalez	03-03-2019 04:38:01 PM	Usuario accedió a página certificaciones
+1266	renold.gonzalez	03-03-2019 04:38:02 PM	Usuario accedió a página certificaciones
+1267	renold.gonzalez	03-03-2019 04:38:04 PM	Usuario accedió a página certificaciones
+1268	renold.gonzalez	03-03-2019 04:38:05 PM	Usuario accedió a página certificaciones
+1269	renold.gonzalez	03-03-2019 04:38:07 PM	Usuario accedió a página certificaciones
+1270	renold.gonzalez	03-03-2019 04:38:08 PM	Usuario accedió a página certificaciones
+1271	renold.gonzalez	03-03-2019 04:38:10 PM	Usuario accedió a página certificaciones
+1272	renold.gonzalez	03-03-2019 04:38:17 PM	Usuario accedió a página certificaciones
+1273	renold.gonzalez	03-03-2019 04:38:26 PM	Usuario accedió a página certificaciones
+1274	renold.gonzalez	03-03-2019 04:38:32 PM	Usuario accedió a página certificaciones
+1275	renold.gonzalez	03-03-2019 04:38:34 PM	Usuario accedió a página certificaciones
+1276	renold.gonzalez	03-03-2019 04:38:36 PM	Usuario accedió a página certificaciones
+1277	renold.gonzalez	03-03-2019 04:38:40 PM	Usuario accedió a página certificaciones
+1278	renold.gonzalez	03-03-2019 04:38:43 PM	Usuario accedió a página certificaciones
+1279	renold.gonzalez	03-03-2019 04:40:18 PM	Usuario accedió a página certificaciones
+1280	renold.gonzalez	03-03-2019 04:40:23 PM	Usuario accedió a página certificaciones
+1281	renold.gonzalez	03-03-2019 04:40:24 PM	Usuario accedió a página certificaciones
+1282	renold.gonzalez	03-03-2019 04:40:26 PM	Usuario accedió a página certificaciones
+1283	renold.gonzalez	03-03-2019 04:40:28 PM	Usuario accedió a página certificaciones
+1284	renold.gonzalez	03-03-2019 04:40:30 PM	Usuario accedió a página certificaciones
+1285	renold.gonzalez	03-03-2019 04:40:32 PM	Usuario accedió a página certificaciones
+1286	renold.gonzalez	03-03-2019 04:40:34 PM	Usuario accedió a página certificaciones
+1287	renold.gonzalez	03-03-2019 04:40:38 PM	Usuario accedió a página certificaciones
+1288	renold.gonzalez	03-03-2019 04:40:40 PM	Usuario accedió a página certificaciones
+1289	renold.gonzalez	03-03-2019 04:40:42 PM	Usuario accedió a página certificaciones
+1290	renold.gonzalez	03-03-2019 04:40:45 PM	Usuario accedió a página certificaciones
+1291	renold.gonzalez	03-03-2019 04:40:48 PM	Usuario accedió a página certificaciones
+1292	renold.gonzalez	03-03-2019 04:40:50 PM	Usuario accedió a página certificaciones
+1293	renold.gonzalez	03-03-2019 04:40:54 PM	Usuario accedió a página certificaciones
+1294	renold.gonzalez	03-03-2019 04:40:56 PM	Usuario accedió a página certificaciones
+1295	renold.gonzalez	03-03-2019 04:40:59 PM	Usuario accedió a página certificaciones
+1296	renold.gonzalez	03-03-2019 04:41:01 PM	Usuario accedió a página certificaciones
+1297	renold.gonzalez	03-03-2019 04:41:20 PM	Usuario accedió a página certificaciones
+1298	renold.gonzalez	03-03-2019 04:42:18 PM	Usuario accedió a página certificaciones
+1299	renold.gonzalez	03-03-2019 04:45:38 PM	Usuario accedió a página certificaciones
+1300	renold.gonzalez	03-03-2019 04:45:46 PM	Usuario inicio session
+1301	renold.gonzalez	03-03-2019 04:45:46 PM	Usuario accedió a página principal
+1302	renold.gonzalez	03-03-2019 04:45:48 PM	Usuario accedió a página certificaciones
+1303	renold.gonzalez	03-03-2019 04:45:51 PM	Usuario accedió a página certificaciones
+1304	renold.gonzalez	03-03-2019 04:45:54 PM	Usuario accedió a página certificaciones
+1305	renold.gonzalez	03-03-2019 04:49:10 PM	Usuario accedió a página certificaciones
+1306	renold.gonzalez	03-03-2019 04:49:34 PM	Usuario accedió a página certificaciones
+1307	renold.gonzalez	03-03-2019 04:49:38 PM	Usuario accedió a página certificaciones
+1308	renold.gonzalez	03-03-2019 04:49:40 PM	Usuario accedió a página certificaciones
+1309	renold.gonzalez	03-03-2019 04:50:18 PM	Usuario accedió a página certificaciones
+1310	renold.gonzalez	03-03-2019 04:50:20 PM	Usuario accedió a página certificaciones
+1311	renold.gonzalez	03-03-2019 04:50:22 PM	Usuario accedió a página certificaciones
+1312	renold.gonzalez	03-03-2019 04:50:24 PM	Usuario accedió a página certificaciones
+1313	renold.gonzalez	03-03-2019 04:50:54 PM	Usuario accedió a página certificaciones
+1314	renold.gonzalez	03-03-2019 04:50:56 PM	Usuario accedió a página certificaciones
+1315	renold.gonzalez	03-03-2019 04:50:58 PM	Usuario accedió a página certificaciones
+1316	renold.gonzalez	03-03-2019 04:51:00 PM	Usuario accedió a página certificaciones
+1317	renold.gonzalez	03-03-2019 04:51:03 PM	Usuario accedió a página certificaciones
+1318	renold.gonzalez	03-03-2019 04:51:06 PM	Usuario accedió a página certificaciones
+1319	renold.gonzalez	03-03-2019 04:52:15 PM	Usuario accedió a página certificaciones
+1320	renold.gonzalez	03-03-2019 04:52:23 PM	Usuario accedió a página certificaciones
+1321	renold.gonzalez	03-03-2019 04:52:25 PM	Usuario accedió a página certificaciones
+1322	renold.gonzalez	03-03-2019 04:52:38 PM	Usuario accedió a página certificaciones
+1323	renold.gonzalez	03-03-2019 04:52:40 PM	Usuario accedió a página certificaciones
+1324	renold.gonzalez	03-03-2019 04:52:44 PM	Usuario accedió a página certificaciones
+1325	renold.gonzalez	03-03-2019 04:52:45 PM	Usuario accedió a página certificaciones
+1326	renold.gonzalez	03-03-2019 04:52:47 PM	Usuario accedió a página certificaciones
+1327	renold.gonzalez	03-03-2019 04:52:49 PM	Usuario accedió a página certificaciones
+1328	renold.gonzalez	03-03-2019 04:52:51 PM	Usuario accedió a página certificaciones
+1329	renold.gonzalez	03-03-2019 04:52:55 PM	Usuario accedió a página certificaciones
+1330	renold.gonzalez	03-03-2019 04:55:10 PM	Usuario accedió a página certificaciones
+1331	renold.gonzalez	03-03-2019 04:55:14 PM	Usuario accedió a página certificaciones
+1332	renold.gonzalez	03-03-2019 04:55:15 PM	Usuario accedió a página certificaciones
+1333	renold.gonzalez	03-03-2019 04:55:17 PM	Usuario accedió a página certificaciones
+1334	renold.gonzalez	03-03-2019 04:55:19 PM	Usuario accedió a página certificaciones
+1335	renold.gonzalez	03-03-2019 04:55:22 PM	Usuario accedió a página certificaciones
+1336	renold.gonzalez	03-03-2019 04:56:01 PM	Usuario accedió a página certificaciones
+1337	renold.gonzalez	03-03-2019 04:57:46 PM	Usuario accedió a página certificaciones
+1338	renold.gonzalez	03-03-2019 04:59:24 PM	Usuario accedió a página certificaciones
+1339	renold.gonzalez	03-03-2019 04:59:33 PM	Usuario accedió a página certificaciones
+1340	renold.gonzalez	03-03-2019 04:59:49 PM	Usuario accedió a página certificaciones
+1341	renold.gonzalez	03-03-2019 04:59:52 PM	Usuario accedió a página certificaciones
+1342	renold.gonzalez	03-03-2019 04:59:54 PM	Usuario accedió a página certificaciones
+1343	renold.gonzalez	03-03-2019 04:59:56 PM	Usuario accedió a página certificaciones
+1344	renold.gonzalez	03-03-2019 04:59:57 PM	Usuario accedió a página certificaciones
+1345	renold.gonzalez	03-03-2019 04:59:59 PM	Usuario accedió a página certificaciones
+1346	renold.gonzalez	03-03-2019 05:00:01 PM	Usuario accedió a página certificaciones
+1347	renold.gonzalez	03-03-2019 05:00:05 PM	Usuario accedió a página certificaciones
+1348	renold.gonzalez	03-03-2019 05:00:13 PM	Usuario accedió a página certificaciones
+1349	renold.gonzalez	03-03-2019 05:02:11 PM	Usuario accedió a página certificaciones
+1350	renold.gonzalez	03-03-2019 05:02:14 PM	Usuario accedió a página certificaciones
+1351	renold.gonzalez	03-03-2019 05:02:16 PM	Usuario accedió a página certificaciones
+1352	renold.gonzalez	03-03-2019 05:02:18 PM	Usuario accedió a página certificaciones
+1353	renold.gonzalez	03-03-2019 05:02:20 PM	Usuario accedió a página certificaciones
+1354	renold.gonzalez	03-03-2019 05:02:22 PM	Usuario accedió a página certificaciones
+1355	renold.gonzalez	03-03-2019 05:02:31 PM	Usuario accedió a página certificaciones
+1356	renold.gonzalez	03-03-2019 05:02:32 PM	Usuario accedió a página certificaciones
+1357	renold.gonzalez	03-03-2019 05:04:00 PM	Usuario accedió a página certificaciones
+1358	renold.gonzalez	03-03-2019 05:05:09 PM	Usuario accedió a página certificaciones
+1359	renold.gonzalez	03-03-2019 05:05:11 PM	Usuario accedió a página certificaciones
+1360	renold.gonzalez	03-03-2019 05:05:13 PM	Usuario accedió a página certificaciones
+1361	renold.gonzalez	03-03-2019 05:05:14 PM	Usuario accedió a página certificaciones
+1362	renold.gonzalez	03-03-2019 05:05:16 PM	Usuario accedió a página certificaciones
+1363	renold.gonzalez	03-03-2019 05:05:18 PM	Usuario accedió a página certificaciones
+1364	renold.gonzalez	03-03-2019 05:05:20 PM	Usuario accedió a página certificaciones
+1365	renold.gonzalez	03-03-2019 05:05:21 PM	Usuario accedió a página certificaciones
+1366	renold.gonzalez	03-03-2019 05:05:23 PM	Usuario accedió a página certificaciones
+1367	renold.gonzalez	03-03-2019 05:05:24 PM	Usuario accedió a página certificaciones
+1368	renold.gonzalez	03-03-2019 05:05:26 PM	Usuario accedió a página certificaciones
+1369	renold.gonzalez	03-03-2019 05:05:27 PM	Usuario accedió a página certificaciones
+1370	renold.gonzalez	03-03-2019 05:05:33 PM	Usuario accedió a página certificaciones
+1371	renold.gonzalez	03-03-2019 05:06:41 PM	Usuario accedió a página certificaciones
+1372	renold.gonzalez	03-03-2019 05:06:43 PM	Usuario accedió a página certificaciones
+1373	renold.gonzalez	03-03-2019 05:06:45 PM	Usuario accedió a página certificaciones
+1374	renold.gonzalez	03-03-2019 05:06:47 PM	Usuario accedió a página certificaciones
+1375	renold.gonzalez	03-03-2019 05:06:54 PM	Usuario accedió a página certificaciones
+1376	renold.gonzalez	03-03-2019 05:06:56 PM	Usuario accedió a página certificaciones
+1377	renold.gonzalez	03-03-2019 05:06:58 PM	Usuario accedió a página certificaciones
+1378	renold.gonzalez	03-03-2019 05:07:03 PM	Usuario accedió a página certificaciones
+1379	renold.gonzalez	03-03-2019 05:07:05 PM	Usuario accedió a página certificaciones
+1380	renold.gonzalez	03-03-2019 05:07:12 PM	Usuario accedió a página certificaciones
+1381	renold.gonzalez	03-03-2019 05:07:14 PM	Usuario accedió a página certificaciones
+1382	renold.gonzalez	03-03-2019 05:07:16 PM	Usuario accedió a página certificaciones
+1383	renold.gonzalez	03-03-2019 05:07:18 PM	Usuario accedió a página certificaciones
+1384	renold.gonzalez	03-03-2019 05:07:20 PM	Usuario accedió a página certificaciones
+1385	renold.gonzalez	03-03-2019 05:07:22 PM	Usuario accedió a página certificaciones
+1386	renold.gonzalez	03-03-2019 05:07:24 PM	Usuario accedió a página certificaciones
+1387	renold.gonzalez	03-03-2019 05:07:26 PM	Usuario accedió a página certificaciones
+1388	renold.gonzalez	03-03-2019 05:07:28 PM	Usuario accedió a página certificaciones
+1389	renold.gonzalez	03-03-2019 05:07:31 PM	Usuario accedió a página certificaciones
+1390	renold.gonzalez	03-03-2019 05:07:34 PM	Usuario accedió a página de usuarios

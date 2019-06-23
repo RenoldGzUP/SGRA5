@@ -17,7 +17,8 @@ exit;
 $now = time();
 if($now > $_SESSION['expire']) {
 session_destroy();
-echo "Sesion  terminada,<a href='../index.html'>Necesita Hacer Login</a>";
+echo "<script>location.href='../noAccess.html'</script>";
+//echo "Sesion  terminada,<a href='../index.html'>Necesita Hacer Login</a>";
 exit;
 }
 ?>
@@ -30,34 +31,26 @@ exit;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sistema de gestión de resultados academicos</title>
+<title>Sistema de gestión de resultados academicos</title>
 
-    <!-- Bootstrap Core CSS  <link href="../vendor/bootstrap/css/styletables.css" rel="stylesheet">-->
+    <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-   
-
     <!-- MetisMenu CSS -->
     <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- DataTables CSS -->
-    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="../jquery/jquery-2.1.4.js"></script>
-	<script src="../JS/Filtros.js"></script>
-	
-	
+    <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../JS/bootstrap.js"></script>
+     <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+     <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+    <script src="../JS/Filtros.js"></script>
+     <script src="../JS/getCheckedRow.js"></script>
+    <script src="../JS/tableEdit.js"></script>
+   <!--    <script src="../JS/Editable table/custom_table_edit.js"></script>
+ -->
 
-   
-	
 	
     <style>
     #vertical-bar {
@@ -69,7 +62,13 @@ exit;
     }
 </style>
 
+<!--   <script >
+$(document).ready(function() {
+$('#inscritosTable').DataTable( {
+});
 
+} );
+</script> -->
 
 </head>
 
@@ -86,9 +85,10 @@ exit;
 <div class="container col-lg-12" style="margin-top: -15px">
   <script src="../JS/Filtros.js"></script>
   <h2></h2>
+
   <div class="panel panel-default " >
-    <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Inscritos</a></div>
-    <div class="panel-heading"style="height: 100px">Filtro local:   
+
+  <div class="panel-heading"style="height: 100px">Filtro local:   
 	
 	<select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
 	<option >Seleccione Sede</option>
@@ -148,57 +148,109 @@ Filtros Academicos:
 
 </div>
 
-<div style="margin-top: 12px">
-
-<form>
-Mostrar:&nbsp&nbsp&nbsp&nbsp  
-<select name="sCantidadRegistros" onchange="cantidadRegistros(this.value)">
-       <option value="1">20</option> 
-       <option value="2">50</option> 
-       <option value="3">100</option> 
-	   <option value="4">300</option>
-	   <option value="5">500</option>
-</select>
- registros
- </form> 
-</div>
 
 
-    </div>
+    </div> <!--PANEL HEADING-->
 
 	
 <!--Llamado a clase paginador de Inscritos -->
-<?php
-include'TablaDatosInscritos.php';
-?>
-
-
    
 </div>
                         <!-- /.panel-body -->
 
 
+<div  class="col-lg-12">
+  <?php include '../modulos/selectInscrito.php';?>
+ <table id="inscritosTable" class="table table-bordered table-hover table-editable">
+    <thead style="text-align:center;width: : 10px;background: #225ddb" >
+       <tr style="font-size: 11px;text-align:center; color: #ffffff">
+        <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
+        <th style="text-align: center;">#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th style="width:70px;" >Cédula</th>
+        <th>Inscripción</th>
+        <th>Sede</th>
+        <th>Fac1A</th>
+        <th>Esc1A</th>
+        <th>Car1A</th>
+        <th>Fac2A</th>
+        <th>Esc2A</th>
+        <th>Car2A</th>
+        <th>Fac3A</th>
+        <th>Esc3A</th>
+        <th>Car3A</th>
+        <th>Acciones</th>
+       </tr>
+    </thead>
+  <tbody >
+        
+        <!--EMBEDED CODE -->
+        <?php 
+      if (isset($_REQUEST['idSearch'])) {
+      //  echo "res ".$_REQUEST['idSearch'];
+          include '../Scripts/searchInscritos.php';
+          echo "</tbody>";
+          echo "</table>";
+      }
+      else
+      {
+          include '../Scripts/tableDataInscrito.php';
+          echo "</tbody>";
+          echo "</table>";
+          echo '<div align="center">';
+          include '../Scripts/paginatorInscrito.php';
+          echo "</div>";
+      }
+
+     ?>
+
+</div>
+
   </div>
   
   
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="tipoCertificaciones" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Editar Registro</h4>
+        </div>
+        <div class="modal-body"> 
+          <div class="row">
+            <div class="col-lg-12">
+              <table class="table table-bordered table table-hover ">
+
+                <tbody>
+                  <?php
+                   include '../Scripts/getAllDataInscritos.php';
+
+                  ?>
+                </tbody>
+
+              </table>
+            </div>
+
+          </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button id="sendTypeReport" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
-        <!-- /#page-wrapper -->
-		
+        <!-- /#page-wrapper -->	
 		
 </div>
-
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-    
-	
 
 </body>
 

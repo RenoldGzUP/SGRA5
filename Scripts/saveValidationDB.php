@@ -13,7 +13,6 @@ $tableResultados = $_POST["table2"];
 
 //Obtenemos el último código de validación
 //Generamos el nuevo código de Validación a partir del anterior
-
 $lastValidationCode = checkLastValidationCode();
 //print_r($lastValidationCode);
 
@@ -26,6 +25,9 @@ saveLogs($_SESSION['name'],"Administrador validó a ".$idSearch." en BD´s".$yea
 //TEMPORAL DB
 clonTable1toTable2Inscritos($idSearch);
 clonTable1toTable2Resultados($idSearch);
+
+//SAVE N_INSCRITO Y VALIDACION
+insertOldID($idSearch, $newValidationCode);
 
 //UPDATE
 updateInscritosTMP($newValidationCode,$idSearch);
@@ -42,9 +44,13 @@ echo "   Validación Inicializada...   ".$validationCode;
 $year = date("Y");
  saveLogs($_SESSION['name'],"Administrador inició proceso de Validacion ".$year);
 
+//SAVE DATA AND MOVE THE PARAMETER INTO THE NEW DATABASES
  //TEMPORAL DB
 clonTable1toTable2Inscritos($idSearch);
 clonTable1toTable2Resultados($idSearch);
+
+//SAVE N_INSCRITO Y VALIDACION
+insertOldID($idSearch,$validationCode);
 
 //UPDATE
 updateInscritosTMP($validationCode,$idSearch);

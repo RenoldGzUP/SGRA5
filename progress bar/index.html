@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 20px;
+  background-color: #4CAF50;
+  text-align: center;
+  font-size: 10px;
+  line-height: 20px;
+  color: white;
+}
+</style>
+<body>
+
+<h1>JavaScript Progress Bar</h1>
+
+<div id="myProgress">
+  <div id="myBar">0%</div>
+</div>
+
+<br>
+<button onclick="move()">Click Me</button> 
+
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 600);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width = width + 4; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>

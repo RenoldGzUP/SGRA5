@@ -18,7 +18,8 @@ else {
 $now = time();
 if($now > $_SESSION['expire']) {
   session_destroy();
-  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+  echo "<script>location.href='../noAccess.html'</script>";
+//  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
   exit;
 }
 ?>
@@ -120,12 +121,12 @@ if($now > $_SESSION['expire']) {
                     </select>
                   </th>
 
-                    <th>First name: <input id="idSearch" type="text" name="FirstName" value="Mickey"></th>
+                    <th>Núm.Inscrito: <input id="idSearch" type="text" name="FirstName"  value="Mickey"></th>
 
                     <th>
-                      <button type="button" onClick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
-                      <button type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm"><span class="glyphicon glyphicon-ok"></span> Validar</button>
-                      <button type="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
+                      <button id="SearchBtt" type="button" onClick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                      <button id="ValidateBtt"  type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm" style="display:none;"><span class="glyphicon glyphicon-ok"></span> Validar</button>
+                      <button id="TalliesBtt" type="button" class="btn btn-info btn-sm " style="display:none;"><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
                     </th>
 
                     </tr>
@@ -166,7 +167,7 @@ if($now > $_SESSION['expire']) {
        </tr>
     </thead>
                     <tbody id="taInscritosInscritos">
-                         <tr ><td colspan="17" class="">No  se ha iniciado ninguna validacion</td></tr>
+                         <tr ><td colspan="17" class="">No  se ha iniciado ninguna validación</td></tr>
                     </tbody>
                   </table>
                 </div>
@@ -201,7 +202,7 @@ if($now > $_SESSION['expire']) {
        </tr>
     </thead>
                   <tbody id="taInscritosResultado">
-                    <tr ><td colspan="17" class="">No  se ha iniciado ninguna validacion</td></tr>
+                    <tr ><td colspan="17" class="">No  se ha iniciado ninguna validación</td></tr>
                   </tbody>
                 </table>
               </div>

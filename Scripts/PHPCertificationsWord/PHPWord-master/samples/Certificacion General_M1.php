@@ -48,30 +48,33 @@ $phpWord->addTableStyle('Colspan Rowspan', $styleTable);
 $section->addTextBreak();
 $table = $section->addTable();
 
+//insert data to Doc
+foreach ($dataStudentCert as $key) {
+
 $table->addRow();
 $table->addCell(5000)->addText(htmlspecialchars(''),null,$noSpace);;
-$table->addCell(5000)->addText(htmlspecialchars('Número de Inscripción:353535'),$normalText,$noSpaceTitle);
+$table->addCell(5000)->addText(htmlspecialchars('Número de Inscripción:'.$key->n_ins.''),$normalText,$noSpaceTitle);
 
 $table->addRow();
-$table->addCell(5000)->addText(htmlspecialchars('Nombre :'),$normalText,$noSpaceTitle);
-$table->addCell(5000)->addText(htmlspecialchars('Cédula'),$normalText,$noSpaceTitle);
+$table->addCell(5000)->addText(htmlspecialchars('Nombre :'.$key->nombre_completo.''),$normalText,$noSpaceTitle);
+$table->addCell(5000)->addText(htmlspecialchars('Cédula :'.$key->cedula.''),$normalText,$noSpaceTitle);
 
 $table->addRow();
-$table->addCell(5000)->addText(htmlspecialchars('Sede'),$normalText,$noSpaceTitle);
+$table->addCell(5000)->addText(htmlspecialchars('Sede :'.$key->nsede.''),$normalText,$noSpaceTitle);
 //$table->addCell(2000, $cellVCentered)->addText(htmlspecialchars('Sede Here '), null, $cellHCentered);
-$table->addCell(1000)->addText(htmlspecialchars('Área : '),$normalText,$noSpaceTitle);
+$table->addCell(1000)->addText(htmlspecialchars('Área : '.$key->area_i.''),$normalText,$noSpaceTitle);
 //$table->addCell(2000, $cellVCentered)->addText(htmlspecialchars('3'), null, $cellHCentered);
 
 $table->addRow();
-$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Facultad '),$normalText,$noSpaceTitle);
+$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Facultad : '.$key->nfacultad.' '),$normalText,$noSpaceTitle);
 //$table->addCell(2000, $cellVCentered)->addText(htmlspecialchars('Facultad here'), null, $cellHCentered);
-$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Carrera'),$normalText,$noSpaceTitle);
+$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Carrera : '.$key->ncarrera.''),$normalText,$noSpaceTitle);
 //$table->addCell(2000, $cellVCentered)->addText(htmlspecialchars('Carrera Here'), null, $cellHCentered);
 
 $table->addRow();
-$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Colegio'),$normalText,$noSpaceTitle);
+$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Colegio :'.$key->col_proc.''),$normalText,$noSpaceTitle);
 //$table->addCell(2000, $cellVCentered)->addText(htmlspecialchars('Colegio Here'), null, $cellHCentered);
-$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Bachiller '),$normalText,$noSpaceTitle);
+$table->addCell(1000, $cellVCentered)->addText(htmlspecialchars('Bachiller :'.$key->nbachiller.' '),$normalText,$noSpaceTitle);
 //$table->addCell(2000, $cellVCentered)->addText(htmlspecialchars('Bachiller Here'), null, $cellHCentered);
 
 //Tabla 2 INDICES
@@ -90,11 +93,11 @@ $subTitlesProm = array('name' => 'Calibri','size' => 12);
 $subTitlesProm = array('name' => 'Calibri','size' => 12);
 $table->addRow();
 $table->addCell(4400)->addText(htmlspecialchars('INDICE PREDICTIVO :'),$subTitles2,$noSpaceTitleT2);
-$table->addCell(4000)->addText(htmlspecialchars('1.257878'),$subTitles2,$noSpaceTitleT2);
+$table->addCell(4000)->addText(htmlspecialchars(''.$key->indice.''),$subTitles2,$noSpaceTitleT2);
 
 $table->addRow();
 $table->addCell(4400)->addText(htmlspecialchars('Promedio de Secundaria'),$subTitlesProm,$noSpaceTitleT2);
-$table->addCell(4000)->addText(htmlspecialchars('4.256586'),null,$noSpaceTitleT2);
+$table->addCell(4000)->addText(htmlspecialchars(''.$key->ps.''),null,$noSpaceTitleT2);
 
 $table->addRow();
 $table->addCell(4400)->addText(htmlspecialchars('Prueba Psicológica '),$subTitlesProm,$noSpaceTitleT2);
@@ -211,6 +214,11 @@ $table->addCell(4000, $cellNormalC)->addText(htmlspecialchars(' PCA TOTAL'),$sub
 $table->addCell(2000, $cellNormalC)->addText(htmlspecialchars('0'),null,$noSpace);
 $table->addCell(2000, $cellNormalC)->addText(htmlspecialchars('0'),null,$noSpace);
 $table->addCell(2000, $cellNormalC)->addText(htmlspecialchars('0'),null,$noSpace);
+
+
+}//FIN FOREACH
+
+
 $section->addTextBreak(2);
 
 $section->addText(htmlspecialchars(' 			 ______________________________________________'));

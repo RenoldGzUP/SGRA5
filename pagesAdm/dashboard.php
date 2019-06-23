@@ -17,12 +17,13 @@ exit;
 $now = time();
 if($now > $_SESSION['expire']) {
 session_destroy();
-echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
+echo "<script>location.href='../noAccess.html'</script>";
 exit;
 }
 
 
 ?>
+
 <head>
 
     <meta charset="utf-8">
@@ -50,6 +51,7 @@ exit;
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link href="../Style/chat.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,6 +70,24 @@ exit;
     }
 </style>
 
+<script type="text/javascript">
+    function ajax(){
+      var req = new XMLHttpRequest();
+
+      req.onreadystatechange = function(){
+        if (req.readyState == 4 && req.status == 200) {
+          document.getElementById('chat').innerHTML = req.responseText;
+        }
+      }
+
+      req.open('GET', '../modulos/chatDashboard.php', true);
+      req.send();
+    }
+
+    //linea que hace que se refreseque la pagina cada segundo
+    setInterval(function(){ajax();}, 1000);
+  </script>
+
 
 
 </head>
@@ -80,48 +100,93 @@ exit;
   include '../modulos/header.php';
   ?>
        
-          <div class="container col-lg-12" style="margin-top: -15px">
+          <div class="container col-lg-8" style="margin-top: 10px" >
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                </div>
+                <div class="body-chat" onload="ajax();">
+                  <!--Lista de mensajes-->  
+                    <ul id="chat" class="chat">
+
+                    </ul>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="input-group">
+                      <form class="form-inline" method="post" action="dashboard.php">
+                
+                     <div class="form-group mx-sm-3 mb-2">
+                      <input type="text"  name="mensaje"  size="110" class="form-control" id="inputPassword2" placeholder="Mensaje a enviar ">
+                     </div>
+
+                        <button type="submit" name="enviar" class="btn btn-primary mb-2">Enviar</button>
+                     </form>
+
+                      <?php
+                      include '../modulos/sendMessage.php';
+                      ?>
+
+                        
+                    </div>
+                </div>
+            </div>
+              
+          </div>
+
+          <div class="container col-lg-4" style="margin-top: -10px">
             <h2></h2>
             <div class="panel panel-default " >
-              <div class="panel-heading"><a href="">>>Inicio</a></div>
+              <div class="panel-heading">Artículos de Ayuda</div>
               <div class="panel-body">
-                Panel Body
+
+                <ol>
+                  <li><a href="../help/index.html" target="_blank"> Generar Certificaciones</a></li>
+                  <li><a href="">Generar Reportes</a></li>
+                  <li><a href="">Generar Validación Usuarios</a></li>
+                  <li><a href="">Generar Certificacion Director o Coordinador</a></li>
+                  <li><a href="">Como editar o eliminar registros?</a></li>
+                  <li><a href="">Que ocurre con los registros duplicados</a></li>
+                  <li><a href="">Manual General de Ayuda para el Usuario</a></li>
+
+                </ol> 
+                
+             
 
               </div>
 
             </div>
           </div>
+
+           <div class="container col-lg-4" style="margin-top: -15px">
+            <h2></h2>
+            <div class="panel panel-default " >
+              <div class="panel-heading">Sobre el sistema</div>
+              <div class="panel-body">
+            
+
+                <ul style="list-style-type:none;">
+                <li>Sistema de Gestión de Resultados Academicos </li>
+                <li>Version 1.0.25 ST</li>
+                <li>Autor : Renold M . González</li>
+                <li>Todos los derechos reservados</li>
+                <li>2019-2020</li>
+
+                </ul>  
+               
+
+                
+              </div>
+
+            </div>
+          </div>
+
         </div>
         <!-- /#page-wrapper -->
 
       </div>
       <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="./vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="./vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- DataTables JavaScript -->
-    <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="./vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
-    <script src="./vendor/datatables-responsive/dataTables.responsive.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="./dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
-        });
-    });
-    </script>
 
 </body>
 

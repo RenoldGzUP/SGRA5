@@ -101,6 +101,7 @@ ORDER BY 2,1");
 function getFacultades($idSede,$idAreas){
 	global $mysqli;
 	//$query = new Query($mysqli,"SELECT id_facultad,codigo_facultad,nombre_facultad  from facultades  where codigo_relacion = ?");
+
 	$query = new Query($mysqli,"SELECT A.id_facultad AS id_facultad, A.id_area AS id_area, B.codigo_facultad AS codigo_facultad, B.nombre_facultad AS nombre_facultad
 from `sede-area` A, `facultades` B
 WHERE A.id_sede=?
@@ -118,11 +119,11 @@ ORDER BY 3");
 	    return null;	
 }
 
-function showDataResultado(){
-
+//datachat
+function showChat(){
+    $page = '';
 	global $mysqli;
-	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-	 FROM resultados2017 where n_ins is not null  and areap = '3' LIMIT 100");
+	$query = new Query($mysqli,"SELECT * FROM chat ORDER BY id DESC");
 	$parametros = array();
 	$data = $query->getresults();
 
@@ -132,6 +133,259 @@ function showDataResultado(){
 	    return null;
 
 }
+
+//datachat
+function saveChat($NAME,$MENSAJE){
+	global $mysqli;
+	$query = new Query($mysqli,"INSERT into chat(nombre, mensaje) VALUES (?,?)");
+	$parametros = array('ss',&$NAME, &$MENSAJE);
+	$data = $query->getresults($parametros);
+	return true;
+
+}
+
+
+//TableEditIns
+function showResourceInscrito(){
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT * FROM sgra_recursosinscritos");
+	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+}
+
+//GETALLDATA TBLE INS
+function showAllDataInscrito($ID_SEARCH){
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT * FROM inscritos2017 where n_ins = ?");
+	$parametros = array('s',&$ID_SEARCH);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+}
+
+
+
+function showResourceResultados(){
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT * FROM sgra_recursosinscritos");
+	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+
+}
+
+
+
+
+//LIMIT 1000
+function showDataResultado($START,$RECORD){
+   // $record_page = 10;
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+	 FROM resultados2017 where n_ins is not null LIMIT ".$START.", ".$RECORD);
+	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+
+}
+//without limit
+function showDataResultadoW(){
+   // $record_page = 10;
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+	 FROM resultados2017 where n_ins is not null ");
+	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+
+}
+
+//reportes
+function getDataReportV1($SEDE){
+
+	if ($SEDE < 10) {
+	$actSEDE = '0'.$SEDE;
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,facultad, ps, gatb,pca,indice,verbal,numer
+	 FROM resultados2017 where sede = ? LIMIT 10");
+	$parametros = array('s',&$actSEDE);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+	}
+	else{
+
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
+	 FROM resultados2017 where sede = ? LIMIT 10");
+	$parametros = array('s',&$SEDE);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+	}
+
+}
+
+
+function getDataReportV2($SEDE,$AREAP){
+
+	if ($SEDE < 10) {
+	$actSEDE = '0'.$SEDE;
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,facultad, ps, gatb,pca,indice,verbal,numer
+	 FROM resultados2017 where WHERE ( sede = ? AND areap = ?) LIMIT 10");
+	$parametros = array('ss',&$actSEDE , &$AREAP);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+	}
+	else{
+
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
+	 FROM resultados2017 where ( sede = ? AND areap = ?) LIMIT 10");
+	$parametros = array('ss', &$SEDE , &$AREAP);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+	}
+
+}
+
+
+function dataToReport($SEDE){
+
+	if ($SEDE < 10) {
+	saveLogs("Renold","Aplicando la instruccion A");
+	$actSEDE = '0'.$SEDE;
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
+	 FROM resultados2017 WHERE sede =?");
+	$parametros = array('s',&$actSEDE);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+	}
+	else{
+		saveLogs("Renold","Aplicando la instruccion B");
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
+	 FROM resultados2017 WHERE sede =?");
+	$parametros = array('s', &$SEDE);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+	}
+
+}
+
+//INSCRITOS
+//LIMIT 1000
+function showDataInscrito($START,$RECORD){
+   // $record_page = 10;
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+	 FROM inscritos2017 where n_ins is not null LIMIT ".$START.", ".$RECORD);
+	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+
+}
+//without limit
+function showDataInscritoW(){
+   // $record_page = 10;
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+	 FROM inscritos2017 where n_ins is not null ");
+	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+
+}
+
+
+//
+
+function searchInscrito($ID_SEARCH){
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM resultados2017 where n_ins =?");
+	$parametros = array('s', &$ID_SEARCH);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+}
+
+function searchInscritoI($ID_SEARCH){
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM inscritos2017 where n_ins =?");
+	$parametros = array('s', &$ID_SEARCH);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+}
+
+
+
+
 
 function getAreasComun(){
 	global $mysqli;
@@ -147,6 +401,7 @@ function getAreasComun(){
 
 function getFacultadesComun($idAreas){
 	global $mysqli;
+	echo "hola";
 	$query = new Query($mysqli,"SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
 	$parametros = array("i", &$idAreas);
 	$data = $query->getresults();
@@ -191,7 +446,7 @@ function areaEstudiante($numInscrito){
 
 function updateRowDB($nombre,$apellido,$sede,$fac1a,$esc1a,$car1a,$fac2a,$esc2a,$car2a,$fac3a,$esc3a,$car3a,$numInscrito){
 	global $mysqli;
-	$query = new Query($mysqli,'UPDATE resultados set nombre=?, apellido=?,sede=?,fac_ia=?,esc_ia=?,car_ia=?,fac_iia=?,esc_iia=?,car_iia=?,fac_iiia=?,esc_iiia=?,car_iiia=?  WHERE n_ins =? ');
+	$query = new Query($mysqli,'UPDATE resultados2017 set nombre=?, apellido=?,sede=?,fac_ia=?,esc_ia=?,car_ia=?,fac_iia=?,esc_iia=?,car_iia=?,fac_iiia=?,esc_iiia=?,car_iiia=?  WHERE n_ins =? ');
 	$parametros = array("sssssssssssss",&$nombre,&$apellido,&$sede,&$fac1a,&$esc1a,&$car1a,&$fac2a,&$esc2a,&$car2a,&$fac3a,&$esc3a,&$car3a,&$numInscrito);
 	$data = $query->getresults($parametros);
 
@@ -203,7 +458,7 @@ function updateRowDB($nombre,$apellido,$sede,$fac1a,$esc1a,$car1a,$fac2a,$esc2a,
 
 function deleteRowDB($numInscrito){
 	global $mysqli;
-	$query = new Query($mysqli,'DELETE from resultados WHERE n_ins=?');
+	$query = new Query($mysqli,'DELETE from resultados2017 WHERE n_ins=?');
 	$parametros = array("s", &$numInscrito);
 	$data = $query->getresults($parametros);
 
@@ -229,7 +484,7 @@ function showRegistersUsers(){
 
 function showLogsUsers(){
 	global $mysqli;
-	$query = new Query($mysqli,"SELECT * from LOGSYSTEM ORDER BY ID_LOG DESC");
+	$query = new Query($mysqli,"SELECT * from logsystem ORDER BY ID_LOG DESC");
     $parametros = array();
     $data = $query->getresults();
 	if(isset($data[0]))
@@ -242,7 +497,7 @@ function saveLogs($USERNAME,$LOGREPORT) {
 	global $mysqli;
     date_default_timezone_set("America/Panama");//ZONA HORARIA PAN
     $datetime = date("d-m-Y h:i:s A");
-	$query = new Query($mysqli,"INSERT INTO LOGSYSTEM(USERNAME,DATE_LOG,ACCION) VALUES (?,?,?)");
+	$query = new Query($mysqli,"INSERT INTO logsystem(username,datelog,accion) VALUES (?,?,?)");
     $parametros = array("sss",&$USERNAME,&$datetime,&$LOGREPORT);
 	$data = $query->getresults($parametros);
 	//$result = "Registro insertado";  
@@ -337,10 +592,23 @@ function validationLastYearInscrito($NUMINSCRITO){
         else {return null;}
 }
 
+
 function validationLastYearResultado($NUMINSCRITO){
 	global $mysqli;
     $Query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
 	 FROM resultados2017 WHERE n_ins=?");
+    $parametros = array('s', &$NUMINSCRITO);
+    $data = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];}
+        else {return null;}
+}
+
+
+function validationExist($NUMINSCRITO){
+	global $mysqli;
+    $Query = new Query($mysqli, "SELECT inscritoanterior,codigovalidacion FROM validaciones WHERE inscritoanterior=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data = $Query->getresults($parametros);
 
@@ -457,6 +725,56 @@ function updateResultadosTMP($NEWCODE,$NUMINSCRITO)
 	return true;
 }
 
+function insertOldID($N_INS,$C_VALIDACION){
+    global $mysqli;
+    $query = new Query($mysqli,"INSERT INTO validaciones(inscritoanterior,codigovalidacion) VALUES (?,?)");
+    $parametros = array("ss",&$N_INS,&$C_VALIDACION);
+    $data = $query->getresults($parametros);
+    return true;
+}
+
+
+function countRow()
+{
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT COUNT(*) AS countRow FROM logsystem");
+    $parametros = array();
+    $data = $query->getresults();
+
+	 if (isset($data[0])) {
+	 	foreach ($data as $key) {
+              if ($key->countRow > 1000){
+              	exportLogs();
+              	truncateTable();
+              }
+                 }
+	 }
+       
+        else {return null;}
+
+}
+
+
+function exportLogs()
+{
+	global $mysqli;
+	date_default_timezone_set("America/Panama");//ZONA HORARIA PAN
+    $datetime = date("d-m-Y");
+	$query = new Query($mysqli,"SELECT * FROM logsystem INTO OUTFILE 'C:/xampp/htdocs/SGRA/logs/logs".$datetime.".txt'" );
+    $parametros = array();
+    $data = $query->getresults();
+}
+
+
+
+function truncateTable()
+{
+	global $mysqli;
+	$query = new Query($mysqli,"TRUNCATE TABLE logsystem");
+    $parametros = array();
+    $data = $query->getresults();
+	return true;
+}
 
 
 function insertNewDataInscritos($RED,$NOTA,$APELLIDO,$NOMBRE,$CEDULA,$CEDULATXT,$PROVINCIA,$CLAVE,$TOMO,$FOLIO,$PASAPORTE,$NACIONALIDAD,$TRABAJA,$OCUPACION,$TIPOC,$COL_PROC,$COD_COL,$EST_CIVIL,$MES_N,$DIA_N,$AO_N,$MES_I,$DIA_I,$AO_I,$FAC_IA,$ESC_IA,$CAR_IA,$FAC_IIA,
@@ -493,6 +811,20 @@ function insertNewDataResultados($RED,$RED2,$REGION,$EXTRANJERO,$SEDE,$NSEDE,$FA
     $data = $Query->getresults($parametros);
     return null;
 
+}
+
+function convert_object_to_array($data) {
+
+    if (is_object($data)) {
+        $data = get_object_vars($data);
+    }
+
+    if (is_array($data)) {
+        return array_map(__FUNCTION__, $data);
+    }
+    else {
+        return $data;
+    }
 }
 
 

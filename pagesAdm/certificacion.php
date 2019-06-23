@@ -30,27 +30,26 @@ exit;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="Renold Gonzalez" content="">
 
     <title>Sistema de gestión de resultados academicos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet"
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
-     <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
-     <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="../JS/bootstrap.js"></script>
+    <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+    <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
     <script src="../JS/Filtros.js"></script>
-     <script src="../JS/getCheckedRow.js"></script>
+    <script src="../JS/getCheckedRow.js"></script>
+    <script src="../JS/tableEdit.js"></script>
+   <!--    <script src="../JS/Editable table/custom_table_edit.js"></script>-->
 
     <style>
     #vertical-bar {
@@ -60,19 +59,88 @@ exit;
         margin-left: 265px;
       
     }
+
+    .th {
+  height: 20px;
+}
+
+  html,body { 
+  overflow:hidden; 
+}
+
+/*body {
+  background-color: #FFFFFF;
+  font-family: "Trebuchet MS", Tahoma, Verdana;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  margin: 10px;
+  padding: 0;
+}*/
+
+.vertical{
+            width: 1000px;
+            height: 1190px;
+            overflow: auto;
+            overflow-y: auto;
+            margin: 0 auto;
+            white-space: nowrap
+        }
+
+.fadebox {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.30;
+  filter: alpha(opacity=50);
+}
+.overbox {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  z-index:1002;
+  overflow: auto;
+}
+#content {
+  background: #FFFFFF;
+  border: solid 3px #CCCCCC;
+  padding: 10px;
+}
+
+  
+ 
+
   </style>
 
-  <script >
+<!--   <script >
 $(document).ready(function() {
-$('#checkboxlist').DataTable( {
-order: [],
-autoWidth: true,
+var datatable = $('#checkboxlist').DataTable( {
+  ajax:"../Scripts/showData.php",
+ columns: [
+            {data:'nombre'},
+            {data:'apellido'}
+        ],
+/*order: [],
 columnDefs: [ { orderable: false, targets: [0,16] },
-{"width": "65px", "targets":[16] } ]
+{"width": "65px", "targets":[16] } ]*/
 });
+//alert( 'Data source: '+table.ajax.url() ); // Will show 'Data source: data.json'
+
+
 
 } );
-</script>
+</script> -->
+
+
 
 
 
@@ -80,19 +148,23 @@ columnDefs: [ { orderable: false, targets: [0,16] },
 
 <body>
 
+<div id="loading"  class="overbox" style="display:none;width:300px;height:300px;position:absolute;top:50%;left:50%;padding:2px;"><img src='../images/loading.gif' width="100" height="100" />
+<center>Cargando..</center>
+  </div>
+
+
+<div id="fadeing" class="fadebox">&nbsp;</div>
+
     <div id="wrapper">
 
-     <?php
-  include '../modulos/header.php';
-  ?>
-        
+     <?php include '../modulos/header.php';?>
+     <!--overflow-x:hidden;overflow-x:hidden;-->
 
-
-<div class="container col-lg-12" style="margin-top: -30px">
+<div class="container col-lg-12" style="margin-top: -30px;">
   <h2></h2>
   <div class="panel panel-default " >
 <!--     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Certificación</a></div> -->
-    <div class="panel-heading"style="height: 70px">Filtro local:   
+    <div class="panel-heading" style="height: 52px">Filtro local:   
 
 <select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
   <option >Seleccione Sede</option>
@@ -117,83 +189,64 @@ columnDefs: [ { orderable: false, targets: [0,16] },
   
   </select>
 
-<button type="button" class="btn btn-default btn-xs pull-right" style="width: 150px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
+<button type="button" class="btn btn-default btn-xs pull-right" style="width: 150px;margin-top: -9px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
 
 
-<div style="margin-top: 10px">
-<button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 150px"  ><span class="glyphicon glyphicon-list-alt"></span>  Generar Certificaciones</button>
+<div style="margin-top: -2px">
+<button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 150px" data-toggle="modal" data-target="#tipoCertificaciones" ><span class="glyphicon glyphicon-list-alt" ></span>  Generar Certificaciones</button>
 </div>
-
-
     </div>
-   <div class="panel panel-default" style="margin-top: 5px">
-    <div class="panel-body">       
- <table id="checkboxlist" class="table table-bordered table-hover table-editable">
- <thead style="text-align:center;width: : 10px;background: #225ddb" >
-  <tr style="font-size: 11px;text-align:center; color: #ffffff">
-     <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
+
+  </div>
+
+<!--TABLE CERTIFICATION-->
+  <div class="col-lg-12" style="height: 400px;width: 1500px; overflow-y: auto; " >  
+  <!--SELECT MODULE-->
+    <?php include '../modulos/select.php';?>
+    
+    <table id="checkboxlist" class="table table-bordered table-hover table-editable">
+     <thead style="text-align:center;width: : 9px;background: #225ddb" >
+       <tr style="font-size: 11px;text-align:center; color: #ffffff">
+        <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
         <th style="text-align: center;">#</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
+        <th style="text-align: center;">Nombre</th>
+        <th style="text-align: center;">Apellido</th>
         <th style="width:70px;" >Cédula</th>
-        <th>Inscripción</th>
-        <th>Sede</th>
-        <th>Fac1A</th>
-        <th>Esc1A</th>
-        <th>Car1A</th>
+        <th style="text-align: center;">Inscripción</th>
+        <th style="text-align: center;">Sede</th>
+        <th style="text-align: center;">Fac1A</th>
+        <th style="text-align: center;">Esc1A</th>
+        <th style="text-align: center;">Car1A</th>
         <th>Fac2A</th>
         <th>Esc2A</th>
         <th>Car2A</th>
         <th>Fac3A</th>
         <th>Esc3A</th>
         <th>Car3A</th>
-        <th>Acciones</th>
-       </tr>
+        <th style="text-align: center;" >Acciones</th>
+      </tr>
     </thead>
-      <tbody>
+    <tbody >
 
-<?php
-         $estResultado = showDataResultado();
-         if($estResultado){
-          foreach ($estResultado as $item) {
-          echo'<tr style="font-size: 11px;text-align:center">';
-          echo'<td style="text-align: center;"><input type="checkbox" class="checkthis" value='.$item->n_ins.'></td>';
-          echo "<td></td>";
-          echo "<td>".$item->nombre."</td>";  
-          echo "<td>".$item->apellido."</td>";  
-          echo "<td>".$item->cedula."</td>";
-          echo "<td>".$item->n_ins."</td>";  
-          echo "<td>".$item->sede."</td>";  
-          echo "<td>".$item->fac_ia."</td>";
-          echo "<td>".$item->esc_ia."</td>";  
-          echo "<td>".$item->car_ia."</td>";  
-          echo "<td>".$item->fac_iia."</td>";
-          echo "<td>".$item->esc_iia."</td>";  
-          echo "<td>".$item->car_iia."</td>";  
-          echo "<td>".$item->fac_iiia."</td>";
-          echo "<td>".$item->esc_iiia."</td>";  
-          echo "<td>".$item->car_iiia."</td>";  
-          echo '<td><a  id="edit" href="#" class="btn btn-info btn-xs" ><span class="glyphicon glyphicon-pencil"></span> </a>
-          <a  id="remove" href="#" class="btn btn-success btn-xs" data-toggle="modal" data-target="#save"><span class="glyphicon glyphicon-floppy-saved" ></span> </a>
+      <?php 
+      if (isset($_REQUEST['idSearch'])) {
+      //  echo "res ".$_REQUEST['idSearch'];
+          include '../Scripts/searchEST.php';
+          echo "</tbody>";
+          echo "</table>";
+      }
+      else
+      {
+          include '../Scripts/tableData.php';
+          echo "</tbody>";
+          echo "</table>";
+          echo '<div align="center">';
+          include '../Scripts/paginator.php';
+          echo "</div>";
+      }
 
-            <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span> </a>
-
-          </td>';
-
-          echo"</tr>";       
-          }
-         }else { 
-             echo'<tr><td colspan="4">No hay datos a mostrar en esta Pantalla</td></tr>';
-         }     
-?>
-
-      </tbody>
- </table>
-
-    </div>
-  </div>
-
-  </div>
+     ?>
+</div>
 
 
    <!-- Modal Certificaciones Individuales -->
@@ -278,28 +331,30 @@ columnDefs: [ { orderable: false, targets: [0,16] },
   </div>
 <!-- /.modal. para eliminar registro Fin -->
 
-<!-- /.modal- para guardar registro     -->
-  <div class="modal fade" id="save" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-    <div class="modal-dialog">
+ <!-- Modal -->
+  <div class="modal fade" id="tipoCertificaciones" role="dialog">
+    <div class="modal-dialog modal-sm">
       <div class="modal-content">
-
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-          <h4 class="modal-title custom_align" id="Heading">Guardar Registro</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Tipo de certificación</h4>
         </div>
-
         <div class="modal-body">
-         <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span>  ¿Desea guardar el registro seleccionado?</div>
-       </div>
-
-       <div class="modal-footer ">
-        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> SI</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> NO</button>
+        
+        <div id="certType" >
+          <center>
+             <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Coordinador</label>
+          <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Director</label>
+          </center>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button id="sendTypeReport" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+        </div>
       </div>
-
-    </div><!-- /.modal-content --> 
-   </div><!-- /.modal-dialog --> 
+    </div>
   </div>
+
 <!-- /.modal. para eliminar registro Fin -->
 
 </div>
@@ -308,9 +363,6 @@ columnDefs: [ { orderable: false, targets: [0,16] },
     </div>
     <!-- /#wrapper -->
 
-   
-
-    
 
 </body>
 
