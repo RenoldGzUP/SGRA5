@@ -66,7 +66,7 @@ function getUsers($userName){
 }
 
 
-
+//FILTROS DEL SISTEMA
 function getSedes(){
 	global $mysqli;
 	$query = new Query($mysqli,"SELECT id_sede,codigo_sede,nombre_sede from sedes");
@@ -98,25 +98,52 @@ ORDER BY 2,1");
 	else
 	    return null;	
 }
+
 function getFacultades($idSede,$idAreas){
 	global $mysqli;
 	//$query = new Query($mysqli,"SELECT id_facultad,codigo_facultad,nombre_facultad  from facultades  where codigo_relacion = ?");
 
 	$query = new Query($mysqli,"SELECT A.id_facultad AS id_facultad, A.id_area AS id_area, B.codigo_facultad AS codigo_facultad, B.nombre_facultad AS nombre_facultad
-from `sede-area` A, `facultades` B
-WHERE A.id_sede=?
-AND A.id_area=?
-AND B.id_facultad=A.id_facultad
-ORDER BY 3");	
+		from `sede-area` A, `facultades` B
+		WHERE A.id_sede=?
+		AND A.id_area=?
+		AND B.id_facultad=A.id_facultad
+		ORDER BY 3");	
 	
 	$parametros = array("ii",&$idSede,&$idAreas);
 	
 	$data = $query->getresults($parametros);
 
 	if(isset($data[0]))
-	    return $data;
+		return $data;
 	else
-	    return null;	
+		return null;	
+}
+
+function getEscuelas($idSede,$idFacultad){
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT DISTINCT esc from esc WHERE sed = ? AND fac = ?");	
+	
+	$parametros = array("ss",&$idSede,&$idFacultad);
+	
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+		return $data;
+	else
+		return null;	
+}
+
+function getCarreras($idSede,$idFacultad,$idEscuela){
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT car,nombre_car from esc WHERE sed = ? AND fac = ? AND esc = ?");	
+	$parametros = array("sss",&$idSede,&$idFacultad,&$idEscuela);
+	$data = $query->getresults($parametros);
+
+	if(isset($data[0]))
+		return $data;
+	else
+		return null;	
 }
 
 //datachat
@@ -331,6 +358,23 @@ function showDataInscrito($START,$RECORD){
 	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
 	 FROM inscritos2017 where n_ins is not null LIMIT ".$START.", ".$RECORD);
 	$parametros = array();
+	$data = $query->getresults();
+
+	if(isset($data[0]))
+	    return $data;
+	else
+	    return null;
+
+}
+
+//Tabla con Filtros definidos 
+function showDataFilterInscrito($START,$RECORD,$SEDE,$AREA,$FACULTAD,$ESCUELA,$CARRERA){
+   // $record_page = 10;
+    $page = '';
+	global $mysqli;
+	$query = new Query($mysqli,"SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+	 FROM inscritos2017 where sede = ? AND area1 = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? is not null LIMIT ".$START.", ".$RECORD);
+	$parametros = array('sssss', &$SEDE,&$AREA,&$FACULTAD,&$ESCUELA,&$CARRERA);
 	$data = $query->getresults();
 
 	if(isset($data[0]))
@@ -743,7 +787,7 @@ function countRow()
 
 	 if (isset($data[0])) {
 	 	foreach ($data as $key) {
-              if ($key->countRow > 1000){
+              if ($key->countRow > 2000){
               	exportLogs();
               	truncateTable();
               }

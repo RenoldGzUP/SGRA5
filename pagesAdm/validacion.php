@@ -80,8 +80,8 @@ if($now > $_SESSION['expire']) {
     <div id="wrapper">
 
       <?php
-  include '../modulos/header.php';
-  ?>
+        include '../modulos/userControl.php';
+      ?>
        
 
       <div class="container col-lg-12">

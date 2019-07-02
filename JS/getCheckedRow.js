@@ -80,7 +80,8 @@ function attachCheckboxHandlers() {
             if (isChecked2) {
                 var dataCoor = input2.value;
                 input.disabled = true;
-                alert ("The checkBox1 is " + dataCoor);
+               // alert ("The checkBox1 is " + dataCoor);
+
             }else{
                  input.disabled = false;
             }
@@ -157,7 +158,7 @@ function sendReporte(){
      var f = document.getElementById("buttonReportes");
     // var strUser2 = d.options[d.selectedIndex].value;
      //var text = $('#selectorID').val();
-    alert(strUser);
+    alert("DATOS EPARA ENVIAR EN EL sendReporte"+strUser);
      $.ajax({
 
         data: {"idSede": strUser},
@@ -166,16 +167,16 @@ function sendReporte(){
         url: "../Scripts/PDF/fpdf181/tutorial/generadorReportes.php",
         beforeSend: function(msg){
           
-          //loading.style.display = "block";
-         // fadescreen.style.display = "block";
+         // loading.style.display = "block";
+         //fadescreen.style.display = "block";
             //sleep(15000);
                  },
     })
     .done(function( data, textStatus, jqXHR ) {
         console.log("data retornada:  "+data);
-        f.disabled = true;
+        //f.disabled = true;
         d.setAttribute('href', data);
-        d.style.backgroundColor="#47c080";
+      //  d.style.backgroundColor="#47c080";
 
 
        //loading.style.display = "none";

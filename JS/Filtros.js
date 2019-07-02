@@ -27,21 +27,69 @@ function obtenerFacultades(val)
 				 });
 				
 }
-function obtenerFacultadesComun(val) 
-{
-	alert(val);
-				 $.ajax
+
+
+
+function obtenerEscuela() 
+{  
+	var sede = $("#lista_sedes").val();
+	var facultad = $("#lista_facultades").val();
+	var escuela = $("#lista_escuelas").val();
+	
+	//alert (sede +" - "+ facultad);
+				$.ajax
 				 ({
 					type: "POST",
-					url: "../Consultas/FacultadesComun.php",
-					data:'id_areacomun='+val,
+					url: "../Consultas/Escuelas.php",
+					data: {"idSede": sede,"idFacultad":facultad},
 					success: function(data)
-					{
-					   $("#lista_facultades_comunes").html(data);
+					{ console.log( "Result: " +  data);
+					   $("#lista_escuelas").html(data);
 					}
 				 });
 				
 }
+
+function obtenerCarreras() 
+{  
+	var sede = $("#lista_sedes").val();
+	var facultad = $("#lista_facultades").val();
+	var escuela = $("#lista_escuelas").val();
+	//alert (sede +" - "+ facultad);
+				$.ajax
+				 ({
+					type: "POST",
+					url: "../Consultas/Carreras.php",
+					data: {"idSede": sede,"idFacultad":facultad,"idEscuela":escuela},
+					success: function(data)
+					{ console.log( "Result: " +  data);
+					   $("#lista_carreras").html(data);
+					}
+				 });
+}
+
+function filtrarTabla() 
+{  
+	var sede = $("#lista_sedes").val();
+	var area = $("#lista_areas").val();
+	var facultad = $("#lista_facultades").val();
+	var escuela = $("#lista_escuelas").val();
+	var carreras = $("#lista_carreras").val();
+	//alert (sede +" - "+ facultad);
+				$.ajax
+				 ({
+					type: "POST",
+					url: "../Consultas/dbFilter.php",
+					data: {"idSede": sede,"idArea": area,"idFacultad":facultad,"idEscuela":escuela,"idCarrera":carrera},
+					success: function(data)
+					{ console.log( "Result: " +  data);
+					   $("#lista_carreras").html(data);
+					}
+				 });
+}
+
+
+
 
 function generarCertificacion(val)
 {

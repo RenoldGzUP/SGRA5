@@ -32,7 +32,7 @@ exit;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sistema de gestión de resultados academicos</title>
+    <title>*Sistema de gestión de resultados academicos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -97,7 +97,7 @@ exit;
     <div id="wrapper">
 
   <?php
-  include '../modulos/header.php';
+  include '../modulos/userControl.php';
   ?>
        
           <div class="container col-lg-8" style="margin-top: 10px" >

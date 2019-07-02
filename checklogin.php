@@ -21,18 +21,20 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 			if (is_object($result)) {	
 
 				if ($location == 1) {
-					saveLogs($result->nombre_usuario,"Usuario inicio session"); 
+					saveLogs($result->nombre_usuario,"Inició sesión como Usuario Regular "); 
 					$_SESSION['loggedin'] = true;
 					$_SESSION['name'] = $result->nombre_usuario;
+					$_SESSION['rol'] = $result->type;
 					$_SESSION['start'] = time();
-					$_SESSION['expire'] = $_SESSION['start'] + (1 * 60) ;						
-					header("Location:./pages/dashboard.php");}
+					$_SESSION['expire'] = $_SESSION['start'] + (100 * 60) ;						
+					header("Location:./pagesAdm/dashboard.php");}
 
 					elseif ($location == 2) {
-						saveLogs($result->nombre_usuario,"Usuario inicio session"); 
+						saveLogs($result->nombre_usuario,"Inició sesión como administrador del sistema"); 
 						$_SESSION['loggedin'] = true;
 						$_SESSION['name'] = $result->nombre_usuario;
 						$_SESSION['start'] = time();
+						$_SESSION['rol'] = $result->type;
 						$_SESSION['expire'] = $_SESSION['start'] + (100 * 60) ;						
 						header("Location:./pagesAdm/dashboard.php");}
 

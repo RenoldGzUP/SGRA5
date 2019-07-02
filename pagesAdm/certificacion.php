@@ -157,7 +157,7 @@ columnDefs: [ { orderable: false, targets: [0,16] },
 
     <div id="wrapper">
 
-     <?php include '../modulos/header.php';?>
+     <?php include '../modulos/userControl.php';?>
      <!--overflow-x:hidden;overflow-x:hidden;-->
 
 <div class="container col-lg-12" style="margin-top: -30px;">

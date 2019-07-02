@@ -4,8 +4,8 @@ openConnection();
 include_once('../Scripts/library_db_sql.php');
 
 //Capturando ID de SEde
-// $id_sede= $_POST["id_sedes"] ;
-$id_sede = 4;
+$id_sede= $_POST["id_sedes"] ;
+//$id_sede = 4;
 var_dump($id_sede);
 $listaAreas=getAreas($id_sede);
 var_dump($listaAreas);

@@ -72,7 +72,7 @@ if($now > $_SESSION['expire']) {
 
   <div id="wrapper">
     <?php
-    include '../modulos/header.php';
+    include '../modulos/userControl.php';
     ?>
 
     <div class="container col-lg-12" style="margin-top: -25px">
@@ -172,7 +172,7 @@ if($now > $_SESSION['expire']) {
          </div>
 
          <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Aplicar Cambios</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="sendReporte();">Aplicar Cambios</button>
         </div>
 
       </div>

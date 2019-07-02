@@ -37,7 +37,7 @@ if (is_array($newData)) {
 		          	    echo '<td id="esc_iiia'.$newData[$i]['n_ins'].'">'.$newData[$i]['esc_iia'].'</td>';
 		                 echo '<td id="car_iiia'.$newData[$i]['n_ins'].'">'.$newData[$i]['car_iia'].'</td>';       
 		                 echo '<td>
-         <button type="button" id="edit_button'.$newData[$i]['n_ins'].'" class="btn btn-warning btn-xs" onclick="edit_row(\''.$newData[$i]['n_ins'].'\');"><span class="glyphicon glyphicon-pencil"></span>    </button>
+         <button type="button" id="edit_button'.$newData[$i]['n_ins'].'" class="btn btn-warning btn-xs" onclick="modal_edit(\''.$newData[$i]['n_ins'].'\');" ><span class="glyphicon glyphicon-pencil"></span>    </button>
          <button type="button"  id="save_button'.$newData[$i]['n_ins'].'"  style="display:none;" class="btn btn-success btn-xs"  onclick="save_row(\''.$newData[$i]['n_ins'].'\');"><span class="glyphicon glyphicon-floppy-saved"></span> </button>
          <button type="button" id="delete_button'.$newData[$i]['n_ins'].'" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash" onclick="delete_row(\''.$newData[$i]['n_ins'].'\');"></span> </button>
 

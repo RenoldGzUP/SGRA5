@@ -115,30 +115,28 @@ if (respSave == true) {
 
 }
 
+//PARA EDITAR LOS REGISTROS DE LA TABLA
 function modal_edit(id){
 
-  var resp = id;
+  var idInscrito = id;
 
-  alert(resp);
+  $.ajax({
+   data: {"idInscrito": idInscrito},
+   type: "POST",
+   dataType: "text",
+   url: "../Scripts/getAllDataInscritos.php",
+ })
+  .done(function( data, textStatus, jqXHR ) {
 
-  /*if (resp == true) {
-   $.ajax
-   ({
-    type:'post',
-    url:'../Scripts/adminActionsRow.php',
-    data:{
-     delete_row:'delete_row',
-     row_id:id,
-   },
-   success:function(response) {
-     if(response=="success")
-     {
-      var row = document.getElementById("row"+id);
-      row.parentNode.removeChild(row);
-    }
-  }
-});
- }*/
+  console.log("data  :"+data);
+  document.getElementById('studentTableEdit').innerHTML = data;
+  $("#tipoCertificaciones").modal();
+  })
+
+  .fail(function( jqXHR, textStatus, errorThrown ) {
+    console.log( "La solicitud a fallado: " +  textStatus);
+  });
+
 
 }
 

@@ -23,7 +23,6 @@ if($now > $_SESSION['expire']) {
   exit;
 }
 
-
 ?>
 <head>
 
@@ -85,12 +84,8 @@ if($now > $_SESSION['expire']) {
 
   <div id="wrapper">
 
-    <?php
-      include '../modulos/header.php';
-      ?>
+    <?php include '../modulos/userControl.php'; ?>
        
-
-
 
     <div class="container col-lg-12" style="margin-top: -15px">
       <h2></h2>
