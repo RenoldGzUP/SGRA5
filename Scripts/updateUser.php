@@ -14,14 +14,14 @@
                 <table class="table table-bordered table-responsive" align="center">
 
                  <?php
-                 $idUSER = $_POST["idUser"];
-                 $dataResult = getAllDataUser($idUser);
+$idUSER     = $_POST["idUser"];
+$dataResult = getAllDataUser($idUser);
 
-                 ?>
+?>
 
                   <tr>
                     <td><label class="control-label">Nombre</label></td>
-                    <td><input class="form-control" type="text" name="name" value="<?php $dataResult->name ?>" /></td>
+                    <td><input class="form-control" type="text" name="name" value="<?php $dataResult->name?>" /></td>
                   </tr>
 
                   <tr>
