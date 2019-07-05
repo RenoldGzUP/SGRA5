@@ -160,41 +160,17 @@ columnDefs: [ { orderable: false, targets: [0,16] },
      <?php include '../modulos/userControl.php';?>
      <!--overflow-x:hidden;overflow-x:hidden;-->
 
-<div class="container col-lg-12" style="margin-top: -30px;">
+<div class="container col-lg-12" style="margin-top: -18px;">
   <h2></h2>
+
   <div class="panel panel-default " >
-<!--     <div class="panel-heading"><a href="">>>Inicio</a><a href="">>>Certificación</a></div> -->
-    <div class="panel-heading" style="height: 52px">Filtro local:   
+    <div class="panel-heading" style="height: 70px">Filtro local:   
+      <?php include '../modulos/filters.php';?>
+       
+          <div style="margin-top: -20px">
+            <button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 200px" data-toggle="modal" data-target="#tipoCertificaciones" ><span class="glyphicon glyphicon-list-alt" ></span>  Generar Certificaciones</button>
+          </div>
 
-<select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
-  <option >Seleccione Sede</option>
-  <?php
-  include '../Consultas/Sedes.php';
-  $listaSedes = getPHPSedes(); 
-     foreach( $listaSedes as $item){
-   echo "<option value='$item->id_sede'>".$item->codigo_sede."-".$item->nombre_sede."</option> ";
-  } 
-  ?>
-  </select>
-
- donde :
- 
-    <select name="areas"  id="lista_areas" onChange='obtenerFacultades(this.value)'>
-  <option >Seleccione Area</option>
-  
-  </select>
- en: 
-    <select name="facultades" id="lista_facultades" >
-  <option >Seleccione Facultad</option>
-  
-  </select>
-
-<button type="button" class="btn btn-default btn-xs pull-right" style="width: 150px;margin-top: -9px" ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
-
-
-<div style="margin-top: -2px">
-<button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 150px" data-toggle="modal" data-target="#tipoCertificaciones" ><span class="glyphicon glyphicon-list-alt" ></span>  Generar Certificaciones</button>
-</div>
     </div>
 
   </div>

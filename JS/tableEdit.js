@@ -143,19 +143,18 @@ function modal_edit(id){
 
 
 
-function delete_row(id){
-
+function delete_row(id)
+{
   var resp = confirm("Confirme borrado de "+id+"  ?");
-  if (resp == true) {
+  if (resp == true) 
+  {
    $.ajax
    ({
     type:'post',
     url:'../Scripts/adminActionsRow.php',
-    data:{
-     delete_row:'delete_row',
-     row_id:id,
-   },
-   success:function(response) {
+    data:{delete_row:'delete_row',row_id:id,},
+    success:function(response) 
+    {
      if(response=="success")
      {
       var row = document.getElementById("row"+id);

@@ -32,7 +32,7 @@ exit;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>*Sistema de gestión de resultados academicos</title>
+    <title>Sistema de gestión de resultados academicos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -120,7 +120,7 @@ exit;
                       <input type="text"  name="mensaje"  size="110" class="form-control" id="inputPassword2" placeholder="Mensaje a enviar ">
                      </div>
 
-                        <button type="submit" name="enviar" class="btn btn-primary mb-2">Enviar</button>
+                        <button title="Enviar Mensaje" type="submit" name="enviar" class="btn btn-primary mb-2">Enviar</button>
                      </form>
 
                       <?php
@@ -137,16 +137,16 @@ exit;
           <div class="container col-lg-4" style="margin-top: -10px">
             <h2></h2>
             <div class="panel panel-default " >
-              <div class="panel-heading">Artículos de Ayuda</div>
+              <div class="panel-heading">Ayuda</div>
               <div class="panel-body">
 
                 <ol>
                   <li><a href="../help/index.html" target="_blank"> Generar Certificaciones</a></li>
                   <li><a href="">Generar Reportes</a></li>
                   <li><a href="">Generar Validación Usuarios</a></li>
-                  <li><a href="">Generar Certificacion Director o Coordinador</a></li>
-                  <li><a href="">Como editar o eliminar registros?</a></li>
-                  <li><a href="">Que ocurre con los registros duplicados</a></li>
+                  <li><a href="">Generar Certificación Director o Coordinador</a></li>
+                  <li><a href="">Cómo editar o eliminar registros?</a></li>
+                  <li><a href="">Qué ocurre con los registros duplicados</a></li>
                   <li><a href="">Manual General de Ayuda para el Usuario</a></li>
 
                 </ol> 
@@ -167,9 +167,8 @@ exit;
 
                 <ul style="list-style-type:none;">
                 <li>Sistema de Gestión de Resultados Academicos </li>
-                <li>Version 1.0.25 ST</li>
+                <li>Version 1.0.75 PROT</li>
                 <li>Autor : Renold M . González</li>
-                <li>Todos los derechos reservados</li>
                 <li>2019-2020</li>
 
                 </ul>  

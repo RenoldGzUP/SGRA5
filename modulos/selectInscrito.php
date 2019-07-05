@@ -10,7 +10,7 @@
 	</select> 
 	registros
 	<!--<a type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-refresh"></span> </a>-->
-	  <input type="submit" name="operar"> 
+	  <input type="submit" value="Aplicar" name="operar"> 
 	</form>
 
 
@@ -18,7 +18,7 @@
 		<form class="form-inline" action="../pagesAdm/inscritos.php"  style="margin-top: -42px">
 			 Buscar : <input id="idSearch" type="text" name="idSearch" size="17" >
 		<!-- <a href="#" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> </a>-->
-		  <input type="submit" name="buscar"> 
+		  <input type="submit" value="OK"  name="buscar"> 
 		</form>
 		
 	</div>

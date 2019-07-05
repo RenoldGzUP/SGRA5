@@ -75,10 +75,13 @@ if($now > $_SESSION['expire']) {
     include '../modulos/userControl.php';
     ?>
 
-    <div class="container col-lg-12" style="margin-top: -25px">
+    <div class="container col-lg-12" style="margin-top: -18px">
       <h2></h2>
-      <div class="panel panel-default " >
-       <?php include '../modulos/filtros.php';?> </div>
+      <div class="panel panel-default ">
+        <div class="panel-heading" style="height: 70px">Filtro local:   
+         <?php include '../modulos/filters.php';?>
+        </div>           
+      </div>
 
        <div  class="col-lg-12" style="margin-top: 15px">
          <table id="inscritosTable" class="table table-bordered table-hover table-editable">
