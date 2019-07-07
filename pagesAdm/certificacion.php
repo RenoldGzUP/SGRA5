@@ -1,26 +1,25 @@
 <?php
-include_once('../Scripts/classConexionDB.php');
+include_once '../Scripts/classConexionDB.php';
 openConnection();
-include_once('../Scripts/library_db_sql.php');
+include_once '../Scripts/library_db_sql.php';
 session_start();
-saveLogs($_SESSION['name'],"Usuario accedió a página certificaciones");
+saveLogs($_SESSION['name'], "Usuario accedió a página certificaciones");
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-} 
-else {
-  header('Location:../index.html');
- //  echo "Esta pagina es solo para usuarios registrados.<br>";
-  // echo "<br><a href='login.html'>Login</a>";
-   //echo "<br><br><a href='index.html'>Registrarme</a>";//
-exit;
+} else {
+    header('Location:../index.html');
+    //  echo "Esta pagina es solo para usuarios registrados.<br>";
+    // echo "<br><a href='login.html'>Login</a>";
+    //echo "<br><br><a href='index.html'>Registrarme</a>";//
+    exit;
 }
 
 $now = time();
-if($now > $_SESSION['expire']) {
-session_destroy();
+if ($now > $_SESSION['expire']) {
+    session_destroy();
 //echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
-echo "<script>location.href='../noAccess.html'</script>";
-exit;
+    echo "<script>location.href='../noAccess.html'</script>";
+    exit;
 }
 ?>
 
@@ -45,6 +44,7 @@ exit;
     <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../JS/bootstrap.js"></script>
     <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+    <link rel="stylesheet" media="all" href="../Style/ResultadosStyle.css">
     <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
     <script src="../JS/Filtros.js"></script>
     <script src="../JS/getCheckedRow.js"></script>
@@ -57,15 +57,15 @@ exit;
         width:2px;
         height:65px;
         margin-left: 265px;
-      
+
     }
 
     .th {
   height: 20px;
 }
 
-  html,body { 
-  overflow:hidden; 
+  html,body {
+  overflow:hidden;
 }
 
 /*body {
@@ -116,42 +116,18 @@ exit;
   padding: 10px;
 }
 
-  
- 
+
+
 
   </style>
-
-<!--   <script >
-$(document).ready(function() {
-var datatable = $('#checkboxlist').DataTable( {
-  ajax:"../Scripts/showData.php",
- columns: [
-            {data:'nombre'},
-            {data:'apellido'}
-        ],
-/*order: [],
-columnDefs: [ { orderable: false, targets: [0,16] },
-{"width": "65px", "targets":[16] } ]*/
-});
-//alert( 'Data source: '+table.ajax.url() ); // Will show 'Data source: data.json'
-
-
-
-} );
-</script> -->
-
-
-
 
 
 </head>
 
 <body>
-
 <div id="loading"  class="overbox" style="display:none;width:300px;height:300px;position:absolute;top:50%;left:50%;padding:2px;"><img src='../images/loading.gif' width="100" height="100" />
 <center>Cargando..</center>
   </div>
-
 
 <div id="fadeing" class="fadebox">&nbsp;</div>
 
@@ -164,9 +140,9 @@ columnDefs: [ { orderable: false, targets: [0,16] },
   <h2></h2>
 
   <div class="panel panel-default " >
-    <div class="panel-heading" style="height: 70px">Filtro local:   
+    <div class="panel-heading" style="height: 70px">Filtro local:
       <?php include '../modulos/filters.php';?>
-       
+
           <div style="margin-top: -20px">
             <button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 200px" data-toggle="modal" data-target="#tipoCertificaciones" ><span class="glyphicon glyphicon-list-alt" ></span>  Generar Certificaciones</button>
           </div>
@@ -176,52 +152,54 @@ columnDefs: [ { orderable: false, targets: [0,16] },
   </div>
 
 <!--TABLE CERTIFICATION-->
-  <div class="col-lg-12" style="height: 400px;width: 1500px; overflow-y: auto; " >  
-  <!--SELECT MODULE-->
-    <?php include '../modulos/select.php';?>
-    
-    <table id="checkboxlist" class="table table-bordered table-hover table-editable">
+<div class="col-lg-12">
+  <?php include '../modulos/select.php';?>
+</div>
+  <div class="col-lg-12 table-responsive">
+    <table id="tableresultados" class="table table-bordered table-hover table-editable">
      <thead style="text-align:center;width: : 9px;background: #225ddb" >
-       <tr style="font-size: 11px;text-align:center; color: #ffffff">
-        <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
-        <th style="text-align: center;">#</th>
-        <th style="text-align: center;">Nombre</th>
-        <th style="text-align: center;">Apellido</th>
-        <th style="width:70px;" >Cédula</th>
-        <th style="text-align: center;">Inscripción</th>
-        <th style="text-align: center;">Sede</th>
-        <th style="text-align: center;">Fac1A</th>
-        <th style="text-align: center;">Esc1A</th>
-        <th style="text-align: center;">Car1A</th>
-        <th>Fac2A</th>
-        <th>Esc2A</th>
-        <th>Car2A</th>
-        <th>Fac3A</th>
-        <th>Esc3A</th>
-        <th>Car3A</th>
-        <th style="text-align: center;" >Acciones</th>
+       <tr style="text-align:center; color: #ffffff">
+        <th> <input type="checkbox"  id="checkall" ></th>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th class="cedula"> Cédula  </th>
+        <th>Inscripción</th>
+        <th>Sede</th>
+        <th>Fac1A</th>
+        <th>Esc1A</th>
+        <th>Car1A</th>
+        <th>PS</th>
+        <th>PCA</th>
+        <th>PCG</th>
+        <th>GATB</th>
+        <th>A.Verbal</th>
+        <th>A.Numerica</th>
+        <th>Indice Pre.</th>
+        <th>Acciones</th>
       </tr>
     </thead>
-    <tbody >
+    <!-- <div class="col-lg-12" style="width: 1500px; overflow-y: auto;"> -->
+      <tbody >
+      <?php
+if (isset($_REQUEST['idSearch'])) {
+    //  echo "res ".$_REQUEST['idSearch'];
+    include '../Scripts/searchEST.php';
+    echo "</tbody>";
+    echo "</table>";
+} else {
+    include '../Scripts/tableData.php';
+    echo "</tbody>";
+    echo "</table>";
+    echo '<div align="center">';
+    include '../Scripts/paginator.php';
+    echo "</div>";
+}
 
-      <?php 
-      if (isset($_REQUEST['idSearch'])) {
-      //  echo "res ".$_REQUEST['idSearch'];
-          include '../Scripts/searchEST.php';
-          echo "</tbody>";
-          echo "</table>";
-      }
-      else
-      {
-          include '../Scripts/tableData.php';
-          echo "</tbody>";
-          echo "</table>";
-          echo '<div align="center">';
-          include '../Scripts/paginator.php';
-          echo "</div>";
-      }
+?>
 
-     ?>
+    </div>
+
 </div>
 
 
@@ -240,22 +218,22 @@ columnDefs: [ { orderable: false, targets: [0,16] },
 
     <!--       <div class="panel panel-primary">
             <div class="panel-heading">Modelo de certificaciones</div>
-            <div class="panel-body">	  
+            <div class="panel-body">
 
               <form></form>
 
             <select name="Area" id="lista_areas_comunes" onChange='obtenerFacultadesComun(this.value)'>
              <option selected value="0"> Área </option>
              <?php
-             $listaSedes = getAreasComun(); 
-             foreach( $listaSedes as $item){
-               echo "<option value='$item->codigo_area'>".$item->codigo_area."-".$item->nombre_area."</option> ";
-             } 
-             ?> 
+$listaSedes = getAreasComun();
+foreach ($listaSedes as $item) {
+    echo "<option value='$item->codigo_area'>" . $item->codigo_area . "-" . $item->nombre_area . "</option> ";
+}
+?>
            </select>
           <select name="FacultadModal" id="lista_facultades_comunes">
              <option selected value="">Facultad</option>
-           </select> 
+           </select>
 
            <button type="button" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-list-alt"></span> Aplicar</button>
 
@@ -302,8 +280,8 @@ columnDefs: [ { orderable: false, targets: [0,16] },
         <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> NO</button>
       </div>
 
-    </div><!-- /.modal-content --> 
-   </div><!-- /.modal-dialog --> 
+    </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
   </div>
 <!-- /.modal. para eliminar registro Fin -->
 
@@ -316,7 +294,7 @@ columnDefs: [ { orderable: false, targets: [0,16] },
           <h4 class="modal-title">Tipo de certificación</h4>
         </div>
         <div class="modal-body">
-        
+
         <div id="certType" >
           <center>
              <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Coordinador</label>
@@ -325,11 +303,13 @@ columnDefs: [ { orderable: false, targets: [0,16] },
         </div>
         </div>
         <div class="modal-footer">
-          <button id="sendTypeReport" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+          <button id="sendTypeReport" onclick="getValueUsingParentTag();" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
         </div>
       </div>
     </div>
   </div>
+
+  <?php include '../modulos/modals.php';?>
 
 <!-- /.modal. para eliminar registro Fin -->
 

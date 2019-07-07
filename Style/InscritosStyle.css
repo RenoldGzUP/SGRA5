@@ -1,0 +1,61 @@
+
+#tableInscritos{
+    border-spacing: 0;
+    display: flex;/*Se ajuste dinamicamente al tamano del dispositivo**/
+    max-height: 55vh; /*El alto que necesitemos**/
+    overflow-y: auto; /**El scroll verticalmente cuando sea necesario*/
+    overflow-x: hidden;/*Sin scroll horizontal*/
+    /*table-layout: fixed;/**Forzamos a que las filas tenga el mismo ancho**/
+    width: 120vw; /*El ancho que necesitemos*/
+    border:1px solid gray;
+}
+
+.cedula{
+     width:70px;!important;
+}
+
+thead{
+    background-color: #225ddb;
+    position: fixed !important;/*el thead va ser siempre estatico**/
+}
+
+th{
+    border-bottom: 1px solid #c4c0c9;
+    border-right: 1px solid #c4c0c9;
+    text-align: center;
+    font-size: 11px;
+}
+
+th,td{
+    font-weight: normal;
+    margin: 0;
+    max-width: 84px; /**Ancho por celda*/
+    min-width: 84px;/**Ancho por celda*/
+    word-wrap: break-word;/*Si el contenido supera el tamano, adiciona a una nueve linea**/
+    font-size: 11px;
+    height: 3.5vh !important;/*El mismo alto para todas las celdas**/
+    padding: 4px;
+    border-right: 1px solid #c4c0c9;
+}
+tr:nth-child(2n) {
+    background: none repeat scroll 0 0 #edebeb;
+}   
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
