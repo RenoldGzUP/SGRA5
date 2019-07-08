@@ -7,13 +7,14 @@ include_once 'library_db_sql.php';
 session_start();
 
 //PAGINATION SET
-$page_result = showDataInscritoW();
+$page_result = showDataInscritoW($_SESSION['sede']);
 $dataQuery   = convert_object_to_array($page_result);
 //print_r($newData);
 $total_records = sizeof($dataQuery);
-$total_pages   = ceil($total_records / $record_per_page);
-$start_loop    = $pagina;
-$diferencia    = $total_pages - $pagina;
+//redondeo
+$total_pages = ceil($total_records / $record_per_page);
+$start_loop  = $pagina;
+$diferencia  = $total_pages - $pagina;
 if ($diferencia <= 5) {$start_loop = $total_pages - 5;}
 
 $end_loop = $start_loop + 4;

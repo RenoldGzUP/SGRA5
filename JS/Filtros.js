@@ -63,23 +63,27 @@ function obtenerCarreras() {
 function filtrarTabla() {
     var sede = $("#lista_sedes").val();
     var area = $("#lista_areas").val();
+    var areaSplit = area.split('-');
     var facultad = $("#lista_facultades").val();
     var escuela = $("#lista_escuelas").val();
-    var carreras = $("#lista_carreras").val();
-    //alert (sede +" - "+ facultad);
+    var carrera = $("#lista_carreras").val();
+    var filterState = 1;
+    alert(sede + " - " + areaSplit[0] + " - " + facultad + " - " + escuela + " - " + carrera + " - " + 1);
     $.ajax({
         type: "POST",
-        url: "../Consultas/tableFilter.php",
+        url: "../pagesAdm/inscritos.php",
         data: {
             "idSede": sede,
-            "idArea": area,
+            "idArea": areaSplit[0],
             "idFacultad": facultad,
             "idEscuela": escuela,
-            "idCarrera": carrera
+            "idCarrera": carrera,
+            "filter": filterState
         },
         success: function(data) {
-            console.log("Result: " + data);
-            $("#lista_carreras").html(data);
+            location.reload();
+            //console.log("Result: " + data);
+            // $("#lista_carreras").html(data);
         }
     });
 }
@@ -128,8 +132,6 @@ function showModalLoading() {
     } else console.log("VACIO");
     // $("#loadingModal").modal();
 }*/
-c
-
 function accessCookie(cookieName) {
     var range_a = cookieName + "=";
     var allCookieArray = document.cookie.split(';');

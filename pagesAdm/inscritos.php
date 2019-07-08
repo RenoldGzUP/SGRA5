@@ -85,7 +85,7 @@ include '../modulos/userControl.php';
     <h2></h2>
 
     <div class="panel panel-default " >
-      <div class="panel-heading"style="height: 70px">Filtro local:
+      <div class="panel-heading"style="height: 70px">
       <?php include '../modulos/filters.php';?>
        </div> <!--PANEL HEADING-->
     </div>

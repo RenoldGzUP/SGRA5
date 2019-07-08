@@ -7,6 +7,8 @@
 
 $ranges_list = array(20, 50, 100, 500);
 
+//SI LA VARAIBLE range esta seteada
+
 if (isset($_REQUEST['range'])) {
 
     for ($i = 0; $i <= 3; $i++) {
@@ -17,34 +19,26 @@ if (isset($_REQUEST['range'])) {
             echo "<option value=" . $ranges_list[$i] . ">" . $ranges_list[$i] . "</option>";
         }
     }
-} 
-
-
-else if (isset($_SESSION['ndataI'])) 
-{
+} else if (isset($_SESSION['ndataI'])) {
     for ($i = 0; $i <= 3; $i++) {
-	        
-	        if ($ranges_list[$i] == $_SESSION['ndataI']) {
-	        	 echo "<option value=" . $ranges_list[$i] . " selected>" . $_SESSION['ndataI'] . "</option>";	        	
-	        }else{
-	        	echo "<option value=" . $ranges_list[$i] . ">" . $ranges_list[$i] . "</option>";
 
-	        }
+        if ($ranges_list[$i] == $_SESSION['ndataI']) {
+            echo "<option value=" . $ranges_list[$i] . " selected>" . $_SESSION['ndataI'] . "</option>";
+        } else {
+            echo "<option value=" . $ranges_list[$i] . ">" . $ranges_list[$i] . "</option>";
+
         }
-} 
-
-
-
-else {
-            echo "
+    }
+} else {
+    echo "
     <option value='20'>20</option>
     <option value='50'>50</option>
     <option value='100'>100</option>
     <option value='500'>500</option>
 	";
-        }
+}
 
-        ?>
+?>
 
 
 	</select>

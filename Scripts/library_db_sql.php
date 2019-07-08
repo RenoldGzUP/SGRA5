@@ -90,6 +90,21 @@ function getSedes()
 
 }
 
+function getCodigoSedes($SEDE)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT codigo_sede from sedes WHERE id_sede = ?");
+    $parametros = array('s', &$SEDE);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
 function getAreas($idSedes)
 {
     global $mysqli;
@@ -119,11 +134,11 @@ function getFacultades($idSede, $idAreas)
     //$query = new Query($mysqli,"SELECT id_facultad,codigo_facultad,nombre_facultad  from facultades  where codigo_relacion = ?");
 
     $query = new Query($mysqli, "SELECT A.id_facultad AS id_facultad, A.id_area AS id_area, B.codigo_facultad AS codigo_facultad, B.nombre_facultad AS nombre_facultad
-		from `sede-area` A, `facultades` B
-		WHERE A.id_sede=?
-		AND A.id_area=?
-		AND B.id_facultad=A.id_facultad
-		ORDER BY 3");
+        from `sede-area` A, `facultades` B
+        WHERE A.id_sede=?
+        AND A.id_area=?
+        AND B.id_facultad=A.id_facultad
+        ORDER BY 3");
 
     $parametros = array("ii", &$idSede, &$idAreas);
 
@@ -256,7 +271,7 @@ function showDataResultado($START, $RECORD)
     $page = '';
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice
-    	FROM resultados2017 where n_ins is not null LIMIT " . $START . ", " . $RECORD);
+        FROM resultados2017 where n_ins is not null LIMIT " . $START . ", " . $RECORD);
     $parametros = array();
     $data       = $query->getresults();
 
@@ -274,7 +289,7 @@ function showDataResultadoW()
     $page = '';
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-	 FROM resultados2017 where n_ins is not null ");
+     FROM resultados2017 where n_ins is not null ");
     $parametros = array();
     $data       = $query->getresults();
 
@@ -294,7 +309,7 @@ function getDataReportV1($SEDE)
         $actSEDE = '0' . $SEDE;
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,facultad, ps, gatb,pca,indice,verbal,numer
-	 FROM resultados2017 where sede = ? LIMIT 10");
+     FROM resultados2017 where sede = ? LIMIT 10");
         $parametros = array('s', &$actSEDE);
         $data       = $query->getresults($parametros);
 
@@ -308,7 +323,7 @@ function getDataReportV1($SEDE)
 
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
-	 FROM resultados2017 where sede = ? LIMIT 10");
+     FROM resultados2017 where sede = ? LIMIT 10");
         $parametros = array('s', &$SEDE);
         $data       = $query->getresults($parametros);
 
@@ -329,7 +344,7 @@ function getDataReportV2($SEDE, $AREAP)
         $actSEDE = '0' . $SEDE;
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,facultad, ps, gatb,pca,indice,verbal,numer
-	 FROM resultados2017 where WHERE ( sede = ? AND areap = ?) LIMIT 10");
+     FROM resultados2017 where WHERE ( sede = ? AND areap = ?) LIMIT 10");
         $parametros = array('ss', &$actSEDE, &$AREAP);
         $data       = $query->getresults($parametros);
 
@@ -343,7 +358,7 @@ function getDataReportV2($SEDE, $AREAP)
 
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
-	 FROM resultados2017 where ( sede = ? AND areap = ?) LIMIT 10");
+     FROM resultados2017 where ( sede = ? AND areap = ?) LIMIT 10");
         $parametros = array('ss', &$SEDE, &$AREAP);
         $data       = $query->getresults($parametros);
 
@@ -365,7 +380,7 @@ function dataToReport($SEDE)
         $actSEDE = '0' . $SEDE;
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
-	 FROM resultados2017 WHERE sede =?");
+     FROM resultados2017 WHERE sede =?");
         $parametros = array('s', &$actSEDE);
         $data       = $query->getresults($parametros);
 
@@ -379,7 +394,7 @@ function dataToReport($SEDE)
         saveLogs("Renold", "Aplicando la instruccion B");
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula, ps, gatb,pca,indice,verbal,numer
-	 FROM resultados2017 WHERE sede =?");
+     FROM resultados2017 WHERE sede =?");
         $parametros = array('s', &$SEDE);
         $data       = $query->getresults($parametros);
 
@@ -401,7 +416,7 @@ function showDataInscrito($START, $RECORD)
     $page = '';
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-	 FROM inscritos2017 where n_ins is not null LIMIT " . $START . ", " . $RECORD);
+     FROM inscritos2017 where n_ins is not null LIMIT " . $START . ", " . $RECORD);
     $parametros = array();
     $data       = $query->getresults();
 
@@ -414,15 +429,13 @@ function showDataInscrito($START, $RECORD)
 }
 
 //Tabla con Filtros definidos
-function showDataFilterInscrito($START, $RECORD, $SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+function showDataFilterInscrito($START, $RECORD, $SEDE)
 {
-    // $record_page = 10;
-    $page = '';
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-	 FROM inscritos2017 where sede = ? AND area1 = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? is not null LIMIT " . $START . ", " . $RECORD);
-    $parametros = array('sssss', &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
-    $data       = $query->getresults();
+     FROM inscritos2017 where sede = ? LIMIT " . $START . ", " . $RECORD);
+    $parametros = array('i', &$SEDE);
+    $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
         return $data;
@@ -432,15 +445,14 @@ function showDataFilterInscrito($START, $RECORD, $SEDE, $AREA, $FACULTAD, $ESCUE
 
 }
 //without limit
-function showDataInscritoW()
+function showDataInscritoW($SEDE)
 {
-    // $record_page = 10;
-    $page = '';
+
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-	 FROM inscritos2017 where n_ins is not null ");
-    $parametros = array();
-    $data       = $query->getresults();
+     FROM inscritos2017 where sede = ? ");
+    $parametros = array('i', &$SEDE);
+    $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
         return $data;
@@ -517,14 +529,14 @@ function getDataIndividual($numeroInscrito)
 {
     global $mysqli;
     $query = new Query($mysqli, "SELECT n_ins, CONCAT(nombre,' ',apellido) as  nombre_completo,
-		CONCAT(provincia,'-',tomo,'-',folio)AS cedula ,nsede, area_i,
-		nfacultad, ncarrera, col_proc, nbachiller,indice, ps ,gatb, pca ,
-		SUM(cl_def+cl_propb) as valor_lexico,
-		SUM(lect1+lect2) as valor_lectura,
-		SUM(r_com_comp+rel_o+r_plan) as valor_redaccion,
-		SUM(cl_def+cl_propb+r_com_comp+rel_o+r_plan+lect1+lect2) as subtotalverbal,
-		SUM(oper1+oper2)as operatoria, SUM(razon1+razon2) as razonamiento ,
-		SUM(oper1+oper2+razon1+razon2) as subtotalnumerico,pca from resultados2017 where n_ins=?");
+        CONCAT(provincia,'-',tomo,'-',folio)AS cedula ,nsede, area_i,
+        nfacultad, ncarrera, col_proc, nbachiller,indice, ps ,gatb, pca ,
+        SUM(cl_def+cl_propb) as valor_lexico,
+        SUM(lect1+lect2) as valor_lectura,
+        SUM(r_com_comp+rel_o+r_plan) as valor_redaccion,
+        SUM(cl_def+cl_propb+r_com_comp+rel_o+r_plan+lect1+lect2) as subtotalverbal,
+        SUM(oper1+oper2)as operatoria, SUM(razon1+razon2) as razonamiento ,
+        SUM(oper1+oper2+razon1+razon2) as subtotalnumerico,pca from resultados2017 where n_ins=?");
     $parametros = array("s", &$numeroInscrito);
     $data       = $query->getresults($parametros);
 
@@ -713,7 +725,7 @@ function validationLastYearResultado($NUMINSCRITO)
 {
     global $mysqli;
     $Query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-	 FROM resultados2017 WHERE n_ins=?");
+     FROM resultados2017 WHERE n_ins=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data       = $Query->getresults($parametros);
 
