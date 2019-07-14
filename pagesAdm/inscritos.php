@@ -21,106 +21,89 @@ if ($now > $_SESSION['expire']) {
     exit;
 }
 ?>
+<!DOCTYPE html>
+<html>
+        <head>
 
-<head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="description" content="">
+          <meta name="author" content="Renold Gonzalez">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Renold Gonzalez">
+          <title>Sistema de gestión de resultados academicos</title>
 
-  <title>Sistema de gestión de resultados academicos</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- MetisMenu CSS -->
-  <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-  <!-- Custom Fonts -->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="../JS/bootstrap.js"></script>
-  <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
-  <link rel="stylesheet" media="all" href="../Style/InscritosStyle.css">
-  <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
-  <script src="../JS/Filtros.js"></script>
-  <script src="../JS/getCheckedRow.js"></script>
-  <script src="../JS/tableEdit.js"></script>
-   <!--    <script src="../JS/Editable table/custom_table_edit.js"></script>
-   -->
-
-
-   <style>
-    #vertical-bar {
-      border-left: 2px solid #ffffff;
-      width:2px;
-      height:65px;
-      margin-left: 265px;
-
-    }
-  </style>
-
-<!--   <script >
-$(document).ready(function() {
-$('#inscritosTable').DataTable( {
-});
-
-} );
-</script> -->
-
-</head>
-
-<body>
-
-  <div id="wrapper">
-
-   <?php
-include '../modulos/userControl.php';
-?>
-
-   <div class="container col-lg-12" style="margin-top: -18px">
-    <script src="../JS/Filtros.js"></script>
-    <h2></h2>
-
-    <div class="panel panel-default " >
-      <div class="panel-heading"style="height: 70px">
-      <?php include '../modulos/filters.php';?>
-       </div> <!--PANEL HEADING-->
-    </div>
-<!-- /.panel-body -->
+          <!-- Bootstrap Core CSS -->
+          <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+          <!-- MetisMenu CSS -->
+          <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+          <!-- Custom CSS -->
+          <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+          <!-- Custom Fonts -->
+          <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+          <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
+          <script type="text/javascript" src="../JS/bootstrap.js"></script>
+          <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+          <link rel="stylesheet" media="all" href="../Style/InscritosStyle.css">
+          <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+          <script src="../JS/Filtros.js"></script>
+          <script src="../JS/getCheckedRow.js"></script>
+          <script src="../JS/tableEdit.js"></script>
+           <!--    <script src="../JS/Editable table/custom_table_edit.js"></script>
+           -->
 
 
-<div  class="col-lg-12">
-  <?php include '../modulos/selectInscrito.php';?>
+        </head>
 
-  <table id="tableInscritos" class="table table-bordered table-hover table-editable">
-    <thead style="text-align:center;" >
-     <tr style="font-size: 11px;text-align:center; color: #ffffff">
-      <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
-      <th style="text-align: center;">#</th>
-      <th>Nombre</th>
-      <th>Apellido</th>
-      <th style="width:70px;" >Cédula</th>
-      <th>Inscripción</th>
-      <th>Sede</th>
-      <th>Fac1A</th>
-      <th>Esc1A</th>
-      <th>Car1A</th>
-      <th>Fac2A</th>
-      <th>Esc2A</th>
-      <th>Car2A</th>
-      <th>Fac3A</th>
-      <th>Esc3A</th>
-      <th>Car3A</th>
-      <th>Acciones</th>
-    </tr>
-  </thead>
-  <tbody >
+          <body>
 
-    <!--EMBEDED CODE -->
-    <?php
+            <div id="wrapper">
+
+             <?php include '../modulos/userControl.php';?>
+
+             <div class="container col-lg-12" style="margin-top: -18px">
+              <script src="../JS/Filtros.js"></script>
+              <h2></h2>
+
+              <div class="panel panel-default " >
+                <div class="panel-heading"style="height: 70px">
+                <?php include '../modulos/filters.php';?>
+                 </div> <!--PANEL HEADING-->
+              </div>
+
+                <div  class="col-lg-12">
+                <?php include '../modulos/selectInscrito.php';?>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-fixed">
+                      <thead >
+                        <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
+                          <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
+                            <th style="text-align: center;">#</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cédula</th>
+                            <th>Inscripción</th>
+                            <th>Sede</th>
+                            <th>Fac1A</th>
+                            <th>Esc1A</th>
+                            <th>Car1A</th>
+                            <th>Fac2A</th>
+                            <th>Esc2A</th>
+                            <th>Car2A</th>
+                            <th>Fac3A</th>
+                            <th>Esc3A</th>
+                            <th>Car3A</th>
+                            <th>Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!--PHP
+
+                          <!--EMBEDED CODE -->
+                                  <?php
 if (isset($_REQUEST['idSearch'])) {
     //  echo "res ".$_REQUEST['idSearch'];
     include '../Scripts/searchInscritos.php';
@@ -130,61 +113,63 @@ if (isset($_REQUEST['idSearch'])) {
     include '../Scripts/tableDataInscrito.php';
     echo "</tbody>";
     echo "</table>";
-    echo '<div align="center">';
-    include '../Scripts/paginatorInscrito.php';
-    echo "</div>";
+
+    //////
+
+    echo "<table class='table'>
+    <thead >
+      <tr>
+        <th class='align'>Mostrando X de Y de XYZ registros</th>
+        <th>";include '../Scripts/paginatorInscrito.php';
+    echo "</th>
+        <th></th>
+      </tr>
+    </thead>
+  </table>";
+
 }
 
 ?>
+                    </div>
 
-  </div>
+                 </div>
 
-</div>
+                    <!-- MODALS-->
+                    <!-- Modal para editar Registros-->
+                    <div class="modal fade" id="tipoCertificaciones" role="dialog" data-keyboard="false" data-backdrop="static">
+                      <div class="modal-dialog modal-lg" style="width: 1200px">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Editar Registro</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <table class="table table-bordered table table-hover">
 
+                                  <tbody id="studentTableEdit">
 
+                                  </tbody>
 
-<!-- Modal para editar Registros-->
-<div class="modal fade" id="tipoCertificaciones" role="dialog" data-keyboard="false" data-backdrop="static">
-  <div class="modal-dialog modal-lg" style="width: 1200px">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Editar Registro</h4>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-lg-12">
-            <table class="table table-bordered table table-hover">
+                                </table>
+                              </div>
 
-              <tbody id="studentTableEdit">
+                            </div>
 
-              </tbody>
+                          </div>
+                          <div class="modal-footer" >
+                            <button id="sendTypeReport" type="button"  class="btn btn-default" data-dismiss="modal">Guardar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!--fin MODAL-->
 
-            </table>
-          </div>
+                    <?php include '../modulos/modals.php';?>
+                    <!-- FIN  MODALS-->
 
-        </div>
+              </div>
 
-      </div>
-      <div class="modal-footer" >
-        <button id="sendTypeReport" type="button"  class="btn btn-default" data-dismiss="modal">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<?php include '../modulos/modals.php';?>
-
-</div>
-
-
-
-
-</div>
-<!-- /#page-wrapper -->
-
-</div>
-
-</body>
-
+          </div><!-- /#page-wrapper -->
+        </body>
 </html>

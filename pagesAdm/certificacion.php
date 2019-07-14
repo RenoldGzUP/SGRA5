@@ -140,10 +140,10 @@ if ($now > $_SESSION['expire']) {
   <h2></h2>
 
   <div class="panel panel-default " >
-    <div class="panel-heading" style="height: 70px">Filtro local:
+    <div class="panel-heading" style="height: 70px">
       <?php include '../modulos/filters.php';?>
 
-          <div style="margin-top: -20px">
+          <div style="margin-top: -32px">
             <button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 200px" data-toggle="modal" data-target="#tipoCertificaciones" ><span class="glyphicon glyphicon-list-alt" ></span>  Generar Certificaciones</button>
           </div>
 
@@ -157,18 +157,18 @@ if ($now > $_SESSION['expire']) {
 </div>
   <div class="col-lg-12 table-responsive">
     <table id="tableresultados" class="table table-bordered table-hover table-editable">
-     <thead style="text-align:center;width: : 9px;background: #225ddb" >
-       <tr style="text-align:center; color: #ffffff">
+     <thead>
+       <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
         <th> <input type="checkbox"  id="checkall" ></th>
         <th>#</th>
         <th>Nombre</th>
         <th>Apellido</th>
-        <th class="cedula"> Cédula  </th>
+        <th> Cédula  </th>
         <th>Inscripción</th>
         <th>Sede</th>
         <th>Fac1A</th>
         <th>Esc1A</th>
-        <th>Car1A</th>
+        <th>Car1A</th>x
         <th>PS</th>
         <th>PCA</th>
         <th>PCG</th>
@@ -297,13 +297,13 @@ foreach ($listaSedes as $item) {
 
         <div id="certType" >
           <center>
-             <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Coordinador</label>
-          <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Director</label>
+             <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" >Coordinador</label>
+          <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2"   >Director</label>
           </center>
         </div>
         </div>
         <div class="modal-footer">
-          <button id="sendTypeReport" onclick="getValueUsingParentTag();" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+          <button id="sendTypeReport" onclick=" startF();" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
         </div>
       </div>
     </div>

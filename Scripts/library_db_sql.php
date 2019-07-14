@@ -445,14 +445,14 @@ function showDataFilterInscrito($START, $RECORD, $SEDE)
 
 }
 //without limit
-function showDataInscritoW($SEDE)
+function showDataInscritoW()
 {
 
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ? ");
-    $parametros = array('i', &$SEDE);
-    $data       = $query->getresults($parametros);
+     FROM inscritos2017 where n_ins is not null ");
+    $parametros = array();
+    $data       = $query->getresults();
 
     if (isset($data[0])) {
         return $data;
@@ -512,7 +512,6 @@ function getAreasComun()
 function getFacultadesComun($idAreas)
 {
     global $mysqli;
-    echo "hola";
     $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
     $parametros = array("i", &$idAreas);
     $data       = $query->getresults();
@@ -948,3 +947,85 @@ function convert_object_to_array($data)
         return $data;
     }
 }
+
+//////////////////////////////////////////////////////
+//CERTIFICACIONES
+function GetPersonalData($ID_INSCRITO)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT CONCAT(nombre,' ',apellido) as nombrecompleto ,sede,facultad,col_proc, CONCAT(provincia,'-',tomo,'-',folio)AS cedula, area1,carrera,nbachiller from resultados2017 WHERE n_ins = '?'");
+    $parametros = array("i", &$ID_INSCRITO);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function GetAverageData($ID_INSCRITO)
+{
+    global $mysqli;
+    echo "hola";
+    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
+    $parametros = array("i", &$ID_INSCRITO);
+    $data       = $query->getresults();
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function GetPCAData($ID_INSCRITO)
+{
+    global $mysqli;
+    echo "hola";
+    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
+    $parametros = array("i", &$ID_INSCRITO);
+    $data       = $query->getresults();
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function GetAreaData($ID_INSCRITO)
+{
+    global $mysqli;
+    echo "hola";
+    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
+    $parametros = array("i", &$ID_INSCRITO);
+    $data       = $query->getresults();
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function GetPCGData($ID_INSCRITO)
+{
+    global $mysqli;
+    echo "hola";
+    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
+    $parametros = array("i", &$ID_INSCRITO);
+    $data       = $query->getresults();
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+////////////////////////////////////////////////////////

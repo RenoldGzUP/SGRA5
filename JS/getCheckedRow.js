@@ -5,9 +5,9 @@ $(document).ready(function() {
         getValueUsingClass();
     });
     /* Get the checkboxes values based on the parent div id */
-    $("#sendTypeReport").click(function() {
+    /*$("#sendTypeReport").click(function() {
         getValueUsingParentTag();
-    });
+    });*/
     $("#sendTypegghgReport").click(function() {
         alert("SEND");
         attachCheckboxHandlers();
@@ -71,6 +71,7 @@ function GetCheckedStateCoor() {
 
 function getValueUsingParentTag() {
     var chkArray = [];
+    console.log("Start getValueUsingParentTag function");
     /* look for all checkboes that have a parent id called 'checkboxlist' attached to it and check if it was checked */
     $("#tableresultados input:checked").each(function() {
         if ($(this).val() != "on") {
@@ -81,8 +82,33 @@ function getValueUsingParentTag() {
     var selected;
     selected = chkArray.join(',');
     /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
-    if (selected.length > 0) {
+    if (selected.length > 1) {
+        //sendID(selected);
+        console.log("True");
+        // generateTallies(selected);
+        //enviar id 
+    } else {
+        $("#errorModal").modal();
+    }
+}
+
+function startF() {
+    var chkArray = [];
+    console.log("Start function OK");
+    /* look for all checkboes that have a parent id called 'checkboxlist' attached to it and check if it was checked */
+    $("#tableresultados input:checked").each(function() {
+        if ($(this).val() != "on") {
+            chkArray.push($(this).val());
+        }
+    });
+    /* we join the array separated by the comma */
+    var selected;
+    selected = chkArray.join(',');
+    /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
+    if (selected.length > 1) {
         sendID(selected);
+        console.log("Send ID to Tallies File");
+        //generateTallies(selected);
         //enviar id 
     } else {
         $("#errorModal").modal();
@@ -90,30 +116,22 @@ function getValueUsingParentTag() {
 }
 
 function sendID(id) {
-    var loading = document.getElementById("loading");
-    var fadescreen = document.getElementById("fadeing");
     var idInscrito = id;
-    // alert("test");
+    $("#processModal").modal();
     $.ajax({
         data: {
             "idInscrito": idInscrito
         },
         type: "POST",
         dataType: "text",
-        url: "../Scripts/PHPCertificationsWord/PHPWord-master/samples/procesor.php",
-        beforeSend: function(msg) {
-            // loading.style.display = "block";
-            // fadescreen.style.display = "block";
-            //sleep(15000);
-            $("#processModal").modal();
-        },
+        url: "../Scripts/PDF/fpdf181/tutorial/CertificacionOficial.php",
     }).done(function(data, textStatus, jqXHR) {
-        //console.log("data retornada:"+data);
-        //loading.style.display = "none";
-        //fadescreen.style.display = "none";
         $("#processModal").modal("hide");
         $("#doneModal").modal();
-        window.location = data;
+        if (data != null) {
+            window.open(data);
+        }
+        console.log("DATA-> " + data);
     }).fail(function(jqXHR, textStatus, errorThrown) {
         console.log("La solicitud a fallado: " + textStatus);
     });
@@ -157,9 +175,32 @@ function sendReporte() {
     });
 }
 
-function sleep(delay) {
+function sleep(milliseconds) {
+    alert("Dude");
     var start = new Date().getTime();
-    while (new Date().getTime() < start + delay);
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds) {
+            break;
+        }
+    }
+}
+
+function generateTallies(id) {
+    var idInscrito = id;
+    $("#processModal").modal();
+    $.ajax({
+        data: {
+            "idInscrito": idInscrito,
+        },
+        type: "POST",
+        dataType: "text",
+        url: "../Scripts/cert.php",
+    }).done(function(data, textStatus, jqXHR) {
+        $("#processModal").modal("hide");
+        console.log("data retornada:" + data);
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("La solicitud a fallado: " + textStatus);
+    });
 }
 /*$(function(){
             $("td").click(function(event){

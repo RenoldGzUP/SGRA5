@@ -7,7 +7,7 @@ include_once 'library_db_sql.php';
 session_start();
 
 //PAGINATION SET
-$page_result = showDataInscritoW($_SESSION['sede']);
+$page_result = showDataInscritoW();
 $dataQuery   = convert_object_to_array($page_result);
 //print_r($newData);
 $total_records = sizeof($dataQuery);

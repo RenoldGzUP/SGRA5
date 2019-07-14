@@ -1,4 +1,12 @@
-th {
+#vertical-bar {
+          border-left: 2px solid #ffffff;
+          width:2px;
+          height:65px;
+          margin-left: 265px;
+
+        }
+
+        th {
   text-align:center;
 }
 
@@ -11,7 +19,7 @@ td { width: 33%; }
 
 tbody {
   display:block;
-  height:400px;
+  height:100px;
   overflow:auto;
 }
 thead, tbody tr {
