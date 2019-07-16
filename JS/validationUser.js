@@ -16,7 +16,12 @@ function sendIDSearch(id) {
         // console.log("data retornada:"+data);
         if (data == 1) {
             $("#foundRegister").modal();
+        } else if (data == 2) {
+            $("#wrongRegister").modal();
+        } else if (data == 3) {
+            $("#withoutRegister").modal();
         } else {
+            $("#dataRegister").modal();
             document.getElementById('taInscritosInscritos').innerHTML = data;
             document.getElementById('taInscritosResultado').innerHTML = data;
         }
