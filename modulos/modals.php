@@ -101,14 +101,67 @@
   </div>
 
 
-    <!-- SEARCH OK -->
+    <!--EXIST OK -->
 <div class="modal fade" id="foundRegister" role="dialog" data-keyboard="false" data-backdrop="static" >
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+              <center><img src='../images/validacionOK.png' width="150" height=150" /> </center>
+                <center><h4>Usuario ya validado!</h4></center>
+          </div>
+        </div>
+        <div class="modal-footer">
+         <center><button type="button" class="btn btn-success" data-dismiss="modal">OK</button></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- WRONG OK -->
+<div class="modal fade" id="wrongRegister" role="dialog" data-keyboard="false" data-backdrop="static" >
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+              <center><img src='../images/wrong.png' width="150" height=150" /> </center>
+                <center><h4>Verifique los valores de selección!</h4></center>
+          </div>
+        </div>
+        <div class="modal-footer">
+         <center><button type="button" class="btn btn-success" data-dismiss="modal">OK</button></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- FOUNDED OK -->
+<div class="modal fade" id="dataRegister" role="dialog" data-keyboard="false" data-backdrop="static" >
   <div class="modal-dialog modal-sm" >
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
               <center><img src='../images/found.png' width="150" height=150" /> </center>
                 <center><h4>Registros encontrados</h4></center>
+          </div>
+        </div>
+        <div class="modal-footer">
+         <center><button type="button" class="btn btn-success" data-dismiss="modal">OK</button></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!-- WITHOUT DATA -->
+<div class="modal fade" id="withoutRegister" role="dialog" data-keyboard="false" data-backdrop="static" >
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+              <center><img src='../images/wrongFound.png' width="150" height=150" /> </center>
+                <center><h4>Se encontro un registro incompleto </h4></center>
+                <center><h5>sólo existe  data en una base de datos</h5></center>
           </div>
         </div>
         <div class="modal-footer">

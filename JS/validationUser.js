@@ -2,7 +2,6 @@ function sendIDSearch(id) {
     var idInscrito = $("#idSearch").val();
     var table1 = $("#tablaInscritos").val();
     var table2 = $("#tablaResultados").val();
-    $("#foundRegister").modal();
     //alert("hola  "+idInscrito+" "+table1+" "+table2);
     $.ajax({
         data: {
@@ -15,8 +14,17 @@ function sendIDSearch(id) {
         url: "../Scripts/validationRegisterExist.php",
     }).done(function(data, textStatus, jqXHR) {
         // console.log("data retornada:"+data);
-        document.getElementById('taInscritosInscritos').innerHTML = data;
-        document.getElementById('taInscritosResultado').innerHTML = data;
+        if (data == 1) {
+            $("#foundRegister").modal();
+        } else if (data == 2) {
+            $("#wrongRegister").modal();
+        } else if (data == 3) {
+            $("#withoutRegister").modal();
+        } else {
+            $("#dataRegister").modal();
+            document.getElementById('taInscritosInscritos').innerHTML = data;
+            document.getElementById('taInscritosResultado').innerHTML = data;
+        }
         // document.getElementById("ValidateBtt").disabled = false;
         //document.getElementById("ValidateBtt").style.display="inline";
     }).fail(function(jqXHR, textStatus, errorThrown) {
