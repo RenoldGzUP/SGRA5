@@ -109,6 +109,8 @@ if (isset($_REQUEST['idSearch'])) {
     include '../Scripts/searchInscritos.php';
     echo "</tbody>";
     echo "</table>";
+} else if (!empty($_REQUEST['idSearch'])) {
+    header('Location:inscritos.php');
 } else {
     include '../Scripts/tableDataInscrito.php';
     echo "</tbody>";
@@ -130,6 +132,7 @@ if (isset($_REQUEST['idSearch'])) {
 }
 
 ?>
+
                     </div>
 
                  </div>

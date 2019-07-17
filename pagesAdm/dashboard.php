@@ -1,26 +1,24 @@
 <?php
-include_once('../Scripts/classConexionDB.php');
+include_once '../Scripts/classConexionDB.php';
 openConnection();
-include_once('../Scripts/library_db_sql.php');
+include_once '../Scripts/library_db_sql.php';
 session_start();
-saveLogs($_SESSION['name'],"Usuario accedió a página principal");
+saveLogs($_SESSION['name'], "Usuario accedió a página principal");
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-} 
-else {
-  header('Location:../index.html');
- //  echo "Esta pagina es solo para usuarios registrados.<br>";
-  // echo "<br><a href='login.html'>Login</a>";
-   //echo "<br><br><a href='index.html'>Registrarme</a>";//
-exit;
+} else {
+    header('Location:../index.html');
+    //  echo "Esta pagina es solo para usuarios registrados.<br>";
+    // echo "<br><a href='login.html'>Login</a>";
+    //echo "<br><br><a href='index.html'>Registrarme</a>";//
+    exit;
 }
 
 $now = time();
-if($now > $_SESSION['expire']) {
-session_destroy();
-echo "<script>location.href='../noAccess.html'</script>";
-exit;
+if ($now > $_SESSION['expire']) {
+    session_destroy();
+    echo "<script>location.href='../noAccess.html'</script>";
+    exit;
 }
-
 
 ?>
 
@@ -66,7 +64,7 @@ exit;
         width:2px;
         height:65px;
         margin-left: 265px;
-      
+
     }
 </style>
 
@@ -97,16 +95,16 @@ exit;
     <div id="wrapper">
 
   <?php
-  include '../modulos/userControl.php';
-  ?>
-       
+include '../modulos/userControl.php';
+?>
+
           <div class="container col-lg-8" style="margin-top: 10px" >
               <div class="panel panel-primary">
                 <div class="panel-heading">
                     <span class="glyphicon glyphicon-comment"></span> Chat
                 </div>
                 <div class="body-chat" onload="ajax();">
-                  <!--Lista de mensajes-->  
+                  <!--Lista de mensajes-->
                     <ul id="chat" class="chat">
 
                     </ul>
@@ -115,7 +113,7 @@ exit;
                 <div class="panel-footer">
                     <div class="input-group">
                       <form class="form-inline" method="post" action="dashboard.php">
-                
+
                      <div class="form-group mx-sm-3 mb-2">
                       <input type="text"  name="mensaje"  size="110" class="form-control" id="inputPassword2" placeholder="Mensaje a enviar ">
                      </div>
@@ -124,14 +122,14 @@ exit;
                      </form>
 
                       <?php
-                      include '../modulos/sendMessage.php';
-                      ?>
+include '../modulos/sendMessage.php';
+?>
 
-                        
+
                     </div>
                 </div>
             </div>
-              
+
           </div>
 
           <div class="container col-lg-4" style="margin-top: -10px">
@@ -149,9 +147,9 @@ exit;
                   <li><a href="">Qué ocurre con los registros duplicados</a></li>
                   <li><a href="">Manual General de Ayuda para el Usuario</a></li>
 
-                </ol> 
-                
-             
+                </ol>
+
+
 
               </div>
 
@@ -163,7 +161,13 @@ exit;
             <div class="panel panel-default " >
               <div class="panel-heading">Sobre el sistema</div>
               <div class="panel-body">
-            
+             <?php
+
+$url_actual = $_SERVER["REQUEST_URI"];
+
+echo "<b>$url_actual</b>";
+
+?>
 
                 <ul style="list-style-type:none;">
                 <li>Sistema de Gestión de Resultados Academicos </li>
@@ -171,10 +175,10 @@ exit;
                 <li>Autor : Renold M . González</li>
                 <li>2019-2020</li>
 
-                </ul>  
-               
+                </ul>
 
-                
+
+
               </div>
 
             </div>

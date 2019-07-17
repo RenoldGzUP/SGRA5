@@ -21,10 +21,11 @@ if (preg_match("/2017/", $tableInscritos) && preg_match("/2017/", $tableResultad
 
     //BUSCAR SI YA HA SIDO VALIDADO EL USUARIO
     if (is_object($exist)) {
-        echo 1;
-        //echo'<tr ><td colspan="17" class="">Ya ha sido validado el Inscrito ->'.$idSearch.'</td></tr>';
-    } else {
-        //VALIDACION DEL ID A BUSCAR QUE ESTE EN LAS DOS BASE DE D ATOS
+        echo 1;}
+    //echo'<tr ><td colspan="17" class="">Ya ha sido validado el Inscrito ->'.$idSearch.'</td></tr>';
+    //VALIDACION DEL ID A BUSCAR QUE ESTE EN LAS DOS BASE DE D ATOS
+    else {
+
         if (is_object($vInscrito) && is_object($vResultado)) {
             echo '<tr style="font-size: 11px;text-align:center">';
             echo '<td style="text-align: center;"><input type="checkbox" class="checkthis" value=' . $vResultado->n_ins . '></td>';
@@ -55,25 +56,12 @@ if (preg_match("/2017/", $tableInscritos) && preg_match("/2017/", $tableResultad
             //insertValidateStudentInscritos($idSearch);
             //insertValidateStudentResultados($idSearch);
         } else {
-            echo '<tr ><td colspan="17" class="">No hay datos a mostrar de ' . $idSearch . '</td></tr>';}
-    } //FIN DE LA VALIDACION ANTERIOR
+            echo 3;
+            //echo '<tr ><td colspan="17" class="">No hay datos a mostrar de ' . $idSearch . '</td></tr>';}
+        } //FIN DE LA VALIDACION ANTERIOR
 
-} //FIN DE LA VALIDACION DE LAS TABLAS
-else {
-    echo '<tr ><td colspan="17" class="">No hay congruencia con las tablas y el año de Validación</td></tr>';}
-===  ===  =
-
-//PASAR EL ID DE BUSQEUDAD A LA FUNCION QUE BUSCARA OTRa vez al usuario y pasara todos los datos de consulta
-//a
-//insertValidateStudentInscritos($idSearch);
-//insertValidateStudentResultados($idSearch);
-} else {echo 3;}
-    // echo '<tr ><td colspan="17" class="">No hay datos a mostrar de ' . $idSearch . '</td></tr>';}
-} //FIN DE LA VALIDACION ANTERIOR
-
-} //FIN DE LA VALIDACION DE LAS TABLAS
+    } //FIN DE LA VALIDACION DE LAS TABLAS
     else {
-
         echo 2;
         //echo '<tr ><td colspan="17" class="">No hay congruencia con las tablas y el año de Validación</td></tr>';
     }
@@ -81,7 +69,7 @@ else {
 //FUNCIONES
 
     function utf8_converter($array)
-{
+    {
         array_walk_recursive($array, function (&$item, $key) {
             if (!mb_detect_encoding($item, 'utf-8', true)) {
                 $item = utf8_encode($item);
@@ -92,7 +80,7 @@ else {
     }
 
     function cvf_convert_object_to_array($data)
-{
+    {
         if (is_object($data)) {
             $data = get_object_vars($data);
         }
