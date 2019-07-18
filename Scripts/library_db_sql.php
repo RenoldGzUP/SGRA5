@@ -803,6 +803,8 @@ function getAllDataValidationRes($NUMINSCRITO)
 
 }
 
+//////////////////////////////////////////////////////////////////////////////////////
+//COPIADO DE LA BASE DE DATOS A LA BASA DE DE DATOS TEMPORAL
 function clonTable1toTable2Inscritos($NUMINSCRITO)
 {
     global $mysqli;
@@ -812,6 +814,7 @@ function clonTable1toTable2Inscritos($NUMINSCRITO)
     return true;
 }
 
+//COPIADO DE LA BASE DE DATOS A LA BASA DE DE DATOS TEMPORAL
 function clonTable1toTable2Resultados($NUMINSCRITO)
 {
     global $mysqli;
@@ -821,6 +824,7 @@ function clonTable1toTable2Resultados($NUMINSCRITO)
     return true;
 }
 
+//CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS INSCRITOS
 function clonInscritos($NUMINSCRITO)
 {
     global $mysqli;
@@ -830,6 +834,7 @@ function clonInscritos($NUMINSCRITO)
     return true;
 }
 
+//CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS RESULTADO
 function clonResultados($NUMINSCRITO)
 {
     global $mysqli;
@@ -839,6 +844,7 @@ function clonResultados($NUMINSCRITO)
     return true;
 }
 
+//ACTUALIZAR NUMERO DE INSCRITOS DE LA BASE DE DATOS INSCRITOS TMP
 function updateInscritosTMP($NEWCODE, $NUMINSCRITO)
 {
     global $mysqli;
@@ -848,6 +854,7 @@ function updateInscritosTMP($NEWCODE, $NUMINSCRITO)
     return true;
 }
 
+//ACTUALIZAR NUMERO DE INSCRITOS DE LA BASE DE DATOS RESULTADOS TMP
 function updateResultadosTMP($NEWCODE, $NUMINSCRITO)
 {
     global $mysqli;
@@ -857,6 +864,7 @@ function updateResultadosTMP($NEWCODE, $NUMINSCRITO)
     return true;
 }
 
+//INSERTAR NUMERO DE VALIDACION ,ANTERIOR  Y NUEVO NUMERO DE VALIDACION
 function insertOldID($N_INS, $C_VALIDACION)
 {
     global $mysqli;
@@ -866,6 +874,7 @@ function insertOldID($N_INS, $C_VALIDACION)
     return true;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////
 function countRow()
 {
     global $mysqli;

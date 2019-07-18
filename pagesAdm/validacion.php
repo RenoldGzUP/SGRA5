@@ -63,7 +63,26 @@ include '../modulos/userControl.php';
 ?>
 
 
+
+
         <div class="container col-lg-12">
+
+        <div class="alert alert-info alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Información Importante!</strong> Una vez iniciado el proceso de validación , se habilitarán los botones en orden.
+  </div>
+
+  <div id="alertValidar" class="alert alert-success alert-dismissible fade in" style="display:none;">
+    <a href="#" class="close"  data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Se han encontrado registros,el botón de Validar se ha habilitado!</strong> .
+  </div>
+
+   <div  id="alertDocumento" class="alert alert-info alert-dismissible fade in" style="display:none;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Validación Aceptada!, </strong> Se habilitará el botón para generar la Certificación de Validación
+  </div>
+
+
           <div class="panel-group">
             <div class="panel panel-default">
               <div class="panel-heading">Validación de Resultados - Año Anterior </div>
@@ -104,8 +123,8 @@ foreach ($listasDB as $item) {
 
                   <th>
                     <button id="SearchBtt" type="button" onClick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
-                    <button id="ValidateBtt"  type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm disabled" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
-                    <button id="TalliesBtt" type="button" class="btn btn-info btn-sm disabled " ><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
+                    <button id="ValidateBtt" disabled type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
+                    <button id="TalliesBtt" disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
                   </th>
 
                 </tr>
