@@ -37,7 +37,7 @@
             <a href="datos.php" title="Data del sistema"  style="margin-left: 18px;width: 90px" class="btn btn-warning btn-sm">Datos</a>
             <a href="usuarios.php" title="Usuarios del sistema" style="margin-left: 18px;width: 90px" class="btn btn-warning btn-sm">Usuarios</a> -->
                  <?php
-$url = explode("/SGRA/pagesAdm/", $_SERVER["REQUEST_URI"]);
+$url = explode("/SGRA5/pagesAdm/", $_SERVER["REQUEST_URI"]);
 colorButtonAdm($url[1]);
 ?>
           </nav>

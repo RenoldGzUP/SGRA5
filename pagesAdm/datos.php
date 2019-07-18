@@ -1,28 +1,26 @@
 <?php
-include_once('../Scripts/classConexionDB.php');
+include_once '../Scripts/classConexionDB.php';
 openConnection();
-include_once('../Scripts/library_db_sql.php');
+include_once '../Scripts/library_db_sql.php';
 session_start();
-saveLogs($_SESSION['name'],"Usuario accedió a página de administrtacion de datos");
+saveLogs($_SESSION['name'], "Usuario accedió a página de administrtacion de datos");
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-} 
-else {
-  header('Location:../index.html');
- //  echo "Esta pagina es solo para usuarios registrados.<br>";
-  // echo "<br><a href='login.html'>Login</a>";
-   //echo "<br><br><a href='index.html'>Registrarme</a>";//
-  exit;
+} else {
+    header('Location:../index.html');
+    //  echo "Esta pagina es solo para usuarios registrados.<br>";
+    // echo "<br><a href='login.html'>Login</a>";
+    //echo "<br><br><a href='index.html'>Registrarme</a>";//
+    exit;
 }
 
 $now = time();
-if($now > $_SESSION['expire']) {
-  session_destroy();
-  echo "<script>location.href='../noAccess.html'</script>";
+if ($now > $_SESSION['expire']) {
+    session_destroy();
+    echo "<script>location.href='../noAccess.html'</script>";
 
 //  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
-  exit;
+    exit;
 }
-
 
 ?>
 <head>
@@ -71,9 +69,9 @@ if($now > $_SESSION['expire']) {
 
     <div id="wrapper">
      <?php
-       include '../modulos/userControl.php';
-     ?>
-       
+include '../modulos/userControl.php';
+?>
+
 
 
       <div class="container col-lg-6" style="margin-top: -10px">
@@ -82,15 +80,15 @@ if($now > $_SESSION['expire']) {
           <div class="panel panel-default">
             <div class="panel-heading" style="font-size: 14px;">Importar Registros A BD - <b>Inscritos</b></div>
             <div class="panel-body" style="height: 130px">
-             <div class="container col-lg-12" style="margin-top: -10px">   
-              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+             <div class="container col-lg-12" style="margin-top: -10px">
+        <!--       <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > -->
 
                 <table class="table table-borderless" style="font-size: 12px;" >
 
                   <tbody>
                     <tr>
                       <td class ="text-left col-sm-3" >Archivo CSV : </td>
-                      <td width="100"><input type="file" id="file" name="file"></td>
+                      <td width="100"><input type="file" id="fileImportInscritosBtt" name="file"></td>
                     </tr>
 
                     <tr>
@@ -98,30 +96,30 @@ if($now > $_SESSION['expire']) {
                        <td>
                         <select name="listaBD">
                        <?php
-                       $listasDB = getTablesList(); 
+$listasDB = getTablesList();
 
-                       foreach($listasDB as $item){
-                        if (preg_match("/inscritos/",$item->Tables_in_sgra)) {
-                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
-                        }
-                        
-                      }  
-                         ?>
+foreach ($listasDB as $item) {
+    if (preg_match("/inscritos/", $item->Tables_in_sgra)) {
+        echo "<option value='$item->Tables_in_sgra'>" . $item->Tables_in_sgra . "</option> ";
+    }
+
+}
+?>
                        </select>
-                        </td>   
+                        </td>
                     </tr>
 
                     <tr>
                       <td></td>
                         <td width="100">
                         <div class = "pull-right" style="margin-top: -20px">
-                          <button style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
+                          <button id="importInscritosBtt" style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm" onclick="loadFile()" ><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
                         </div>
-                      </td> 
+                      </td>
                     </tr>
                   </tbody>
                 </table>
-              </form>
+             <!--  </form> -->
                <div id="bar1"  class="progress" style="margin-top: -15px; display: none;" >
                   <div class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
                 </div>
@@ -138,8 +136,8 @@ if($now > $_SESSION['expire']) {
         <div class="panel panel-default">
           <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <b>Inscritos</b></div>
           <div class="panel-body" style="height: 200px">
-            <div class="container col-lg-12">   
-              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+            <div class="container col-lg-12">
+              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" >
 
                 <table class="table table-borderless" style="font-size: 13px;" >
 
@@ -154,17 +152,17 @@ if($now > $_SESSION['expire']) {
                        <td>
                         <select name="listaBD">
                        <?php
-                       $listasDB = getTablesList(); 
+$listasDB = getTablesList();
 
-                       foreach($listasDB as $item){
-                        if (preg_match("/inscritos/",$item->Tables_in_sgra)) {
-                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
-                        }
-                        
-                      }  
-                         ?>
+foreach ($listasDB as $item) {
+    if (preg_match("/inscritos/", $item->Tables_in_sgra)) {
+        echo "<option value='$item->Tables_in_sgra'>" . $item->Tables_in_sgra . "</option> ";
+    }
+
+}
+?>
                        </select>
-                        </td>   
+                        </td>
                     </tr>
 
                      <tr>
@@ -173,7 +171,7 @@ if($now > $_SESSION['expire']) {
                         <select name="listaBD">
                     <option>PDF</option><option>Excel</option><option>SQL</option>
                        </select>
-                        </td>   
+                        </td>
                     </tr>
 
                     <tr>
@@ -182,7 +180,7 @@ if($now > $_SESSION['expire']) {
                         <div class = "pull-right" style="margin-top: -20px">
                           <button style="width: 130px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
                         </div>
-                      </td> 
+                      </td>
                     </tr>
 
                   </tbody>
@@ -208,8 +206,8 @@ if($now > $_SESSION['expire']) {
           <div class="panel panel-default">
             <div class="panel-heading" style="font-size: 14px;">Importar Registros  BD- <b>Resultados</b></div>
             <div class="panel-body" style="height: 130px">
-             <div class="container col-lg-12"  style="margin-top: -10px">   
-              <form action="../Scripts/uploadCSVResultados.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+             <div class="container col-lg-12"  style="margin-top: -10px">
+              <form action="../Scripts/uploadCSVResultados.php" method="post" enctype="multipart/form-data" class="form-horizontal" >
 
                         <table class="table table-borderless" style="font-size: 12px;" >
 
@@ -224,17 +222,16 @@ if($now > $_SESSION['expire']) {
                        <td>
                         <select name="listaBD">
                        <?php
-                       $listasDB = getTablesList(); 
-                      
-                      foreach($listasDB as $item){
-                        if (preg_match("/resultados/",$item->Tables_in_sgra)) {
-                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";}
-                        }  
+$listasDB = getTablesList();
 
+foreach ($listasDB as $item) {
+    if (preg_match("/resultados/", $item->Tables_in_sgra)) {
+        echo "<option value='$item->Tables_in_sgra'>" . $item->Tables_in_sgra . "</option> ";}
+}
 
-                         ?>
+?>
                        </select>
-                        </td>   
+                        </td>
                     </tr>
 
                     <tr>
@@ -243,7 +240,7 @@ if($now > $_SESSION['expire']) {
                         <div class = "pull-right" style="margin-top: -20px">
                           <button style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
                         </div>
-                      </td> 
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -259,8 +256,8 @@ if($now > $_SESSION['expire']) {
         <div class="panel panel-default">
           <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <B>Resultados</B></div>
           <div class="panel-body" style="height: 200px">
-           <div class="container col-lg-12" >   
-              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" > 
+           <div class="container col-lg-12" >
+              <form action="../Scripts/uploadCSV.php" method="post" enctype="multipart/form-data" class="form-horizontal" >
 
                 <table class="table table-borderless" style="font-size: 13px;" >
 
@@ -275,17 +272,17 @@ if($now > $_SESSION['expire']) {
                        <td>
                         <select name="listaBD">
                        <?php
-                       $listasDB = getTablesList(); 
+$listasDB = getTablesList();
 
-                       foreach($listasDB as $item){
-                        if (preg_match("/resultados/",$item->Tables_in_sgra)) {
-                           echo "<option value='$item->Tables_in_sgra'>".$item->Tables_in_sgra."</option> ";
-                        }
-                        
-                      }  
-                         ?>
+foreach ($listasDB as $item) {
+    if (preg_match("/resultados/", $item->Tables_in_sgra)) {
+        echo "<option value='$item->Tables_in_sgra'>" . $item->Tables_in_sgra . "</option> ";
+    }
+
+}
+?>
                        </select>
-                        </td>   
+                        </td>
                     </tr>
 
                      <tr>
@@ -294,7 +291,7 @@ if($now > $_SESSION['expire']) {
                         <select name="listaBD">
                     <option>PDF</option><option>Excel</option><option>SQL</option>
                        </select>
-                        </td>   
+                        </td>
                     </tr>
 
                     <tr>
@@ -304,7 +301,7 @@ if($now > $_SESSION['expire']) {
                           <!--onClick=" exportDataR()" -->
                           <button style="width: 130px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExport"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
                         </div>
-                      </td> 
+                      </td>
                     </tr>
 
                   </tbody>
@@ -327,7 +324,7 @@ if($now > $_SESSION['expire']) {
  <!-- Modal -->
   <div class="modal fade" id="opcionesExportInscritos" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -341,14 +338,14 @@ if($now > $_SESSION['expire']) {
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
-  </div> <!-- Fin Modal --> 
+  </div> <!-- Fin Modal -->
 
    <!-- Modal -->
   <div class="modal fade" id="opcionesExportResultados" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -362,9 +359,9 @@ if($now > $_SESSION['expire']) {
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
-  </div> <!-- Fin Modal --> 
+  </div> <!-- Fin Modal -->
 
 
 
