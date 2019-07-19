@@ -1,8 +1,29 @@
 <?php
 $archivo = $_FILES["archivo"];
-$resultado = move_uploaded_file($archivo["tmp_name"], $archivo["name"]);
-if ($resultado) {
-    echo "Subido con éxito";
+
+//COMPRUEBA SI EL ARCHIVO EXISTE
+$rNumber     = rand();
+$newNameFile = explode('.csv', $archivo["name"]);
+
+if (file_exists($archivo["name"])) {
+    echo "El fichero" . $archivo["name"] . " existe";
+    rename($archivo["name"], $newNameFile[0] . $rNumber . ".csv");
+
+    if (move_uploaded_file($archivo["tmp_name"], $archivo["name"])) {
+        echo "Subido con éxito ->" . $archivo["name"];
+
+    } else {
+        echo "Error al subir archivo";
+    }
+
+    //echo "Subido con éxito ->" . $archivo["name"];
 } else {
-    echo "Error al subir archivo";
+    echo "El fichero" . $archivo["name"] . " no existe";
+    if (move_uploaded_file($archivo["tmp_name"], $archivo["name"])) {
+        echo "Subido con éxito ->" . $archivo["name"];
+
+    } else {
+        echo "Error al subir archivo";
+    }
+
 }

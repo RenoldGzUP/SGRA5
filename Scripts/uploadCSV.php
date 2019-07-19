@@ -7,8 +7,7 @@ session_start();
 //Logs
 //saveLogs($_SESSION['name'],"Administrador cargó  a la base de datos el archivo CSV  Name -> ");
 //include_once("../db_connect.php");
-
-$fila = 1;
+/////////////////////////////////////////
 
 if (isset($_POST['import_data'])) {
 // Validate to check uploaded file is a valid csv file

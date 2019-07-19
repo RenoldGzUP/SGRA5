@@ -112,17 +112,18 @@ foreach ($listasDB as $item) {
                     <tr>
                       <td></td>
                         <td width="100">
-                        <div class = "pull-right" style="margin-top: -20px">
-                          <button id="importInscritosBtt" style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm" onclick="loadFile()" ><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
+                        <div class = "pull-right" style="margin-top: -15px">
+                          <button id="importInscritosBtt" style="width: 130px;"  name="import_data" type="submit" class="btn btn-default btn-sm" onclick="loadFile()" ><span class="glyphicon glyphicon-floppy-open"></span>  Importar*</button>
                         </div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
              <!--  </form> -->
-               <div id="bar1"  class="progress" style="margin-top: -15px; display: none;" >
-                  <div class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
-                </div>
+               <div id="myProgress"  class="progress" style="margin-top: -5px">
+                  <div id="myBar"  class="progress-bar progress-bar-success" role="progressbar" >0%</div>
+                  </div>
+
             </div>
 
 
