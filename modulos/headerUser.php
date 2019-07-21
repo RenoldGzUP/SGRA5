@@ -37,7 +37,7 @@
             <a href="reportes.php" title="Crear reportes" style="margin-left: 18px;width: 90px" class="btn btn-warning btn-sm">Reportes</a> -->
 
             <?php
-$url = explode("/SGRA5/pagesAdm/", $_SERVER["REQUEST_URI"]);
+$url = explode("/SGRA/pagesAdm/", $_SERVER["REQUEST_URI"]);
 colorButton($url[1]);
 ?>
           </nav>
