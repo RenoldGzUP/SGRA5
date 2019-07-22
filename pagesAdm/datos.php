@@ -65,8 +65,6 @@ include '../modulos/userControl.php';
         <div class="col-lg-6" >
           <div class="panel panel-primary">
             <div class="panel-heading" style="font-size: 14px;">Importar Registros A BD - <b>Inscritos</b></div>
-                    <tr>
-                      <td class ="text-left col-sm-3" >Archivo CSV : </td>
             <div class="panel-body" style="height:auto">
               <!--ROW PAR IMPORTAR REGISTROS A  TB INSCRTIOS-->
               <div class="row">

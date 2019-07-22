@@ -49,7 +49,7 @@ class Query
 
             while ($this->mysql->more_results()) {
                 //Eliminamos otros resultados
-                $this->mysql->next_result();
+                $this->mysql->next_rlesult();
                 $this->mysql->use_result();
             }
             // $stmt->close();
@@ -910,6 +910,17 @@ function truncateTable()
     $parametros = array();
     $data       = $query->getresults();
     return true;
+}
+/////////////////////EXPORT DATA FROM INSCRITOS AND RESULTADOS
+//INDICAR EL NOMBRE DE LA BASE DATOS Y EL NOMBRE DEL ARCHIVO A EXPORTAR
+function exportData($DB, $NAMEFILE)
+{
+    global $mysqli;
+    date_default_timezone_set("America/Panama"); //ZONA HORARIA PANs
+    $datetime   = date("d-m-Y");
+    $query      = new Query($mysqli, "SELECT * FROM $DB INTO OUTFILE 'C:/xampp/htdocs/SGRA5/Export/$NAMEFILE" . $datetime . ".txt'");
+    $parametros = array();
+    $data       = $query->getresults();
 }
 
 function insertNewDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATXT, $PROVINCIA, $CLAVE, $TOMO, $FOLIO, $PASAPORTE, $NACIONALIDAD, $TRABAJA, $OCUPACION, $TIPOC, $COL_PROC, $COD_COL, $EST_CIVIL, $MES_N, $DIA_N, $AO_N, $MES_I, $DIA_I, $AO_I, $FAC_IA, $ESC_IA, $CAR_IA, $FAC_IIA,
