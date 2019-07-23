@@ -1,6 +1,22 @@
 <?php
-//include database configuration file
-include 'dbConfig.php';
+include_once '../Scripts/classConexionDB.php';
+openConnection();
+include_once '../Scripts/library_db_sql.php';
+session_start();
+
+//GET DATA FROM AJAX JS
+$archivo = $_POST["idFile"];
+
+//CONSULTAR SI LOS REGISTROS FUERON EXPORTADOS O NO
+
+//OBTENER TODOS LOS REGISTROS QUE NO HAYAN SIDO EXPORTADOS
+
+//GUARDAR LOS REGISTROS QUE SE VAN A EXPORTAR
+
+//PROCESAR LA INFORMACIÓN
+exportData($DB, $NAMEFILE);
+
+//RETORNAR LA RUTA DEL ARCHIVO
 
 //get records from database
 $query = $db->query("SELECT * FROM members ORDER BY id DESC");

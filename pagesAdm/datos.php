@@ -19,6 +19,39 @@ if ($now > $_SESSION['expire']) {
 //  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
     exit;
 }
+function printSelect($IDSELECT, $SELECTED)
+{
+    $state = 1;
+    echo "<select id='$IDSELECT'>";
+    while ($state < 100) {
+
+        if ($state == $SELECTED) {
+            echo "<option value='$state' selected >$state</option>";
+        } else {echo "<option value='$state' >$state</option>";}
+
+        $state++;
+    }
+    echo "</select>";
+}
+
+function printRow($ARRAY_lABEL_A, $ARRAY_lABEL_B)
+{
+    $size = count($ARRAY_lABEL_A);
+    $j    = 0;
+
+    while ($j < $size) {
+        echo " <tr>";
+        echo "<td>$ARRAY_lABEL_A[$j]</td>";
+        echo "<td>";
+        printSelect(strtolower($ARRAY_lABEL_A[$j]), $ARRAY_lABEL_B[$j]);
+        echo "</td>";
+        echo "</tr>";
+        $j++;
+
+    }
+
+}
+
 ?>
 <head>
   <meta charset="utf-8">
@@ -233,18 +266,18 @@ foreach ($listasDB as $item) {
                             </td>
                           </tr>
                           <tr>
-                            <td class ="text-left">Formato :</td>
+                            <!-- <td class ="text-left">Formato :</td>
                             <td>
                               <select name="listaBD">
                                 <option>PDF</option><option>Excel</option><option>SQL</option>
                               </select>
-                            </td>
+                            </td> -->
                           </tr>
                           <tr>
                             <td></td>
                             <td width="100">
                               <div class = "pull-right" style="margin-top: -20px">
-                                <button style="width: 150px;"type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
+                                <button style="width: 150px;"type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportInscritos"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
                               </div>
                             </td>
                           </tr>
@@ -280,10 +313,9 @@ foreach ($listasDB as $item) {
               <div class="panel panel-success">
                 <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <B>Resultados</B></div>
                 <div class="panel-body" style="height: 200px">
-
                   <div class="row">
                     <div class="col-lg-12">
-                        <table class="table table-borderless" style="font-size: 13px;" >
+                      <table class="table table-borderless" style="font-size: 13px;" >
                         <tbody>
                           <tr>
                             <td class ="text-left col-sm-3" >Nombre del archivo: </td>
@@ -304,30 +336,27 @@ foreach ($listasDB as $item) {
                               </select>
                             </td>
                           </tr>
-                          <tr>
+                          <!--   <tr>
                             <td class ="text-left">Formato :</td>
                             <td>
                               <select name="listaBD">
                                 <option>csv</option><option>TXT</option>
                               </select>
                             </td>
-                          </tr>
+                          </tr> -->
                           <tr>
                             <td></td>
                             <td width="100">
                               <div class = "pull-right" style="margin-top: -20px">
                                 <!--onClick=" exportDataR()" -->
-                                <button style="width: 150px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExport"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
+                                <button style="width: 150px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportResultados"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
                               </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
-
-
                     </div>
-
-                     <div class="col-lg-12">
+                    <div class="col-lg-12">
                       <div id="doneResultadoE" class="alert alert-info" style="display:none;" >
                         <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong> Registros cargados al servidor
                       </div>
@@ -346,52 +375,126 @@ foreach ($listasDB as $item) {
                       <div class="progress" style="display:none;" >
                         <div id="progressResultadoE" class="progress-bar progress-bar-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                       </div>
+                    </div>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="opcionesExportInscritos" role="dialog">
-          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-          </div> <!-- Fin Modal -->
           <!-- Modal -->
-          <div class="modal fade" id="opcionesExportResultados" role="dialog">
+          <div class="modal fade" id="opcionesExportInscritos" role="dialog">
             <div class="modal-dialog">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
+                  <h4 class="modal-title">Configuración para exportar datos de TB Inscritos</h4>
                 </div>
                 <div class="modal-body">
-                  <p>Some text in the modal.</p>
+
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Campo</th>
+                        <th>Tamaño </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+  <?php
+
+$labelTExpIns  = array("Apellido", "Nombre", "Provincia", "Clave", "Tomo", "Folio", "Bachiller", "Año Graduación", "Sexo", "Colegio Proc", "Código Colegio", "Mes Nacimiento", "Día Nacimiento", "Año de Nacimiento", "Tipo C", "Provincia", "Distrito", "Corregimiento", "Mes De inscrito", "Día de inscrito", "Año de inscrito", "Año Lectivo", "Sede", "Facultad", "Carrera IA", "Carrera IIA", "Carrera IIIA", "Facultad 2", "Facultad 3", "Telefono", "Fecha Nacimiento", "Fecha Inscripción", "Núm . Inscrito", "D");
+$labelWidthIns = array(15, 13, 2, 2, 5, 6, 2, 4, 1, 50, 4, 3, 2, 2, 2, 12, 18, 18, 3, 2, 2, 4, 2, 2, 2, 2, 6, 6, 6, 2, 2, 7, 10, 10, 8, 1);
+
+printRow($labelTExpIns, $labelWidthIns);
+
+?>
+
+                    </tbody>
+                  </table>
+
                 </div>
+
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Continuar</button>
                 </div>
               </div>
             </div>
             </div> <!-- Fin Modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="opcionesExportResultados" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Configuración para exportar datos de TB Resultados</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a data-toggle="tab" href="#home">Indice</a></li>
+                          <li><a data-toggle="tab" href="#menu1">Resultados</a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div id="home" class="tab-pane fade in active">
+                            <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Campo</th>
+                        <th>Tamaño </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+
+$labelTExpI  = array("Provincia", "Clave", "Tomo", "Folio", "Indice", "N_Inscrito", "Área", "Año Lectivo");
+$labelWidthI = array(2, 2, 6, 7, 9, 9, 1, 4);
+
+printRow($labelTExpI, $labelWidthI);
+
+?>
+
+
+                    </tbody>
+                  </table>
+
+                          </div>
+                          <div id="menu1" class="tab-pane fade">
+                            <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Campo</th>
+                        <th>Tamaño </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+
+$labelTExpR = array("Sede", "Facultad", "Escuela", "Carrera", "Provincia", "Clave", "Tomo", "Folio", "Apellido", "Nombre", "Año Lectivo", "GATB", "PCA", "PCG", "Indice", "Área", "OPC*", "N_Inscrito", "D");
+$labelWidth = array(2, 2, 2, 2, 2, 2, 5, 6, 15, 13, 4, 7, 3, 3, 9, 1, 1, 8, 1);
+
+printRow($labelTExpR, $labelWidth);
+
+?>
+
+
+                    </tbody>
+                  </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+              </div> <!-- Fin Modal -->
+            </div>
+            <!-- /#page-wrapper -->
           </div>
-          <!-- /#page-wrapper -->
-        </div>
-        <!-- /#wrapper -->
-      </body>
-    </html>
+          <!-- /#wrapper -->
+        </body>
+      </html>

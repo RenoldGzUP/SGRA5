@@ -922,6 +922,7 @@ function exportData($DB, $NAMEFILE)
     $parametros = array();
     $data       = $query->getresults();
 }
+///////////////////////////////
 
 function insertNewDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATXT, $PROVINCIA, $CLAVE, $TOMO, $FOLIO, $PASAPORTE, $NACIONALIDAD, $TRABAJA, $OCUPACION, $TIPOC, $COL_PROC, $COD_COL, $EST_CIVIL, $MES_N, $DIA_N, $AO_N, $MES_I, $DIA_I, $AO_I, $FAC_IA, $ESC_IA, $CAR_IA, $FAC_IIA,
     $ESC_IIA, $CAR_IIA, $FAC_IIIA, $ESC_IIIA, $CAR_IIIA, $N_INS, $BACH, $NBACHILLER, $AO_GRAD, $ECROP, $SEXO, $PVIU, $AOPVIU, $SEDE,
