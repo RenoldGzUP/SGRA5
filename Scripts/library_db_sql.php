@@ -918,7 +918,7 @@ function exportData($DB, $NAMEFILE)
     global $mysqli;
     date_default_timezone_set("America/Panama"); //ZONA HORARIA PANs
     $datetime   = date("d-m-Y");
-    $query      = new Query($mysqli, "SELECT * FROM $DB INTO OUTFILE 'C:/xampp/htdocs/SGRA5/Export/$NAMEFILE" . $datetime . ".txt'");
+    $query      = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo, folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,facultad,escuela,carrera,car_ia,car_iia,car_iiia, facultad2, facultad3, telefono, fecha_n , fecha_i, n_ins, d FROM $DB INTO OUTFILE 'C:/xampp/htdocs/SGRA5/Export/$NAMEFILE" . $datetime . ".txt'");
     $parametros = array();
     $data       = $query->getresults();
 }
