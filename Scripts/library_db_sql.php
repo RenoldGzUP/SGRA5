@@ -917,9 +917,8 @@ function truncateTable()
 function exportDatosInscritos()
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo,folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,fac_ia,esc_ia,car_ia,car_ia,car_iia,car_iiia, fac_iia, fac_iiia, telefono,CONCAT(dia_n,'/',mes_n, '/' , ao_n) as fecha_n ,CONCAT(dia_i,'/',mes_i,'/20',ao_i) as fecha_i, n_ins, d from inscritos2017
-");
-    $data = $query->getresults();
+    $query = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo,folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,fac_ia,esc_ia,car_ia,car_ia,car_iia,car_iiia, fac_iia, fac_iiia, telefono, CONCAT(dia_n,'/',DATE_FORMAT(STR_TO_DATE(mes_n,'%b'), '%m') , '/' , DATE_FORMAT(STR_TO_DATE(ao_n,'%Y'), '%Y')) as fecha_n ,CONCAT(dia_i,'/',DATE_FORMAT(STR_TO_DATE(mes_n,'%b'), '%m'),'/',DATE_FORMAT(STR_TO_DATE(ao_i,'%Y'), '%Y')) as fecha_i, n_ins, d from inscritos2017 LIMIT 2000");
+    $data  = $query->getresults();
     if (isset($data[0])) {
         return $data;
     } else {

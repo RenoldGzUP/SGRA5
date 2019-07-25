@@ -16,7 +16,8 @@ $fila         = 0;
 $errorCounter = 0;
 $okCounter    = 0;
 
-$linecount1     = count(file($archivo));
+$linecount1 = count(file($archivo));
+//GET TIME
 $tiempo_inicial = microtime(true);
 
 //CONTEO DE LA PRIMERA LINEA DEL CSV
