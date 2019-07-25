@@ -19,10 +19,12 @@ if ($now > $_SESSION['expire']) {
 //  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
     exit;
 }
+
 function printSelect($IDSELECT, $SELECTED)
 {
     $state = 1;
-    echo "<select id='$IDSELECT'>";
+
+    echo "<select id=" . eliminar_tildes($IDSELECT) . ">";
     while ($state < 100) {
 
         if ($state == $SELECTED) {
@@ -50,6 +52,48 @@ function printRow($ARRAY_lABEL_A, $ARRAY_lABEL_B)
 
     }
 
+}
+
+function eliminar_tildes($cadena)
+{
+
+    //Codificamos la cadena en formato utf8 en caso de que nos de errores
+    //$cadena = utf8_encode($cadena);
+
+    //Ahora reemplazamos las letras
+    $cadena = str_replace(
+        array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+        array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+        $cadena
+    );
+
+    $cadena = str_replace(
+        array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+        array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+        $cadena);
+
+    $cadena = str_replace(
+        array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+        array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+        $cadena);
+
+    $cadena = str_replace(
+        array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+        array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+        $cadena);
+
+    $cadena = str_replace(
+        array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+        array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+        $cadena);
+
+    $cadena = str_replace(
+        array('ñ', 'Ñ', 'ç', 'Ç'),
+        array('n', 'N', 'c', 'C'),
+        $cadena
+    );
+
+    return $cadena;
 }
 
 ?>
@@ -402,7 +446,7 @@ foreach ($listasDB as $item) {
                     <tbody>
   <?php
 
-$labelTExpIns  = array("Apellido", "Nombre", "Provincia", "Clave", "Tomo", "Folio", "Bachiller", "Año Graduación", "Sexo", "Colegio Proc", "Código Colegio", "Mes Nacimiento", "Día Nacimiento", "Año de Nacimiento", "Tipo C", "Provincia", "Distrito", "Corregimiento", "Mes De inscrito", "Día de inscrito", "Año de inscrito", "Año Lectivo", "Sede", "Facultad", "Carrera IA", "Carrera IIA", "Carrera IIIA", "Facultad 2", "Facultad 3", "Telefono", "Fecha Nacimiento", "Fecha Inscripción", "Núm . Inscrito", "D");
+$labelTExpIns  = array("Apellido", "Nombre", "Provincia", "Clave", "Tomo", "Folio", "Bachiller", "Año_Graduación", "Sexo", "Colegio_Proc", "Código_Colegio", "Mes_Nacimiento", "Día_Nacimiento", "Año_de_Nacimiento", "Tipo_C", "Provincia_Vivienda", "Distrito", "Corregimiento", "Mes_De_inscrito", "Día_de_inscrito", "Año_de_inscrito", "Año_Lectivo", "Sede", "Facultad", "Escuela", "Carrera", "Carrera_IA", "Carrera_IIA", "Carrera_IIIA", "Facultad_2", "Facultad_3", "Teléfono", "Fecha_de_Nacimiento", "Fecha_Inscripción", "Núm_Inscrito", "D");
 $labelWidthIns = array(15, 13, 2, 2, 5, 6, 2, 4, 1, 50, 4, 3, 2, 2, 2, 12, 18, 18, 3, 2, 2, 4, 2, 2, 2, 2, 6, 6, 6, 2, 2, 7, 10, 10, 8, 1);
 
 printRow($labelTExpIns, $labelWidthIns);
@@ -415,7 +459,7 @@ printRow($labelTExpIns, $labelWidthIns);
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Continuar</button>
+                  <button type="button" onclick="getDataFills()" class="btn btn-default" data-dismiss="modal">Continuar</button>
                 </div>
               </div>
             </div>

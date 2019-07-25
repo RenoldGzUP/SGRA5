@@ -241,6 +241,52 @@
         console.log("Time AJAX OK");
         setInterval(FUNC, 1000);
     }
+    //EXPORTAR DATOS
+    function getDataFills() {
+        //get select data
+        var dataLabelsInscritos = ["apellido", "nombre", "provincia", "clave", "tomo", "folio", "bachiller", "ano_graduacion", "sexo", "colegio_proc", "codigo_colegio", "mes_nacimiento", "dia_nacimiento", "ano_de_nacimiento", "tipo_c", "provincia_vivienda", "distrito", "corregimiento", "mes_de_inscrito", "dia_de_inscrito", "ano_de_inscrito", "ano_lectivo", "sede", "facultad", "escuela", "carrera", "carrera_ia", "carrera_iia", "carrera_iiia", "facultad_2", "facultad_3", "telefono", "fecha_de_nacimiento", "fecha_inscripcion", "num_inscrito", "d"];
+        var len = dataLabelsInscritos.length;
+        var dataInscritos = [];
+        for (var i = 0; i < len; i++) {
+            //alert(table1[i]);
+            //console.log(dataLabelsInscritos[i].toLowerCase());
+            dataInscritos.push($("#" + dataLabelsInscritos[i]).val());
+            var idNumberLabel = dataInscritos.join('-');
+            //console.log(idNumberLabel);
+        }
+        //////////////////////////////////
+        /*for (var i = 0; i < len; i++) {
+            //alert(table1[i]);
+            //console.log(dataLabelsInscritos[i].toLowerCase());
+            //dataInscritos.push($("#" + dataLabelsInscritos[i]).val());
+            console.log("id_" + dataLabelsInscritos[i] + ":" + dataInscritos[i] + ",");
+            if (i == len) {
+                console.log("id_" + dataLabelsInscritos[i] + ":" + dataInscritos[i]);
+            }
+        }*/
+        sendIDExportAjax(idNumberLabel);
+        /*for (var i = 0; i < len; i++) {
+            //alert();
+            console.log(dataLabelsInscritos[i] + "---" + dataInscritos[i]);
+        }*/
+    }
+
+    function sendIDExportAjax(dataInscritosExp) {
+        var idFile = dataInscritosExp;
+        $.ajax({
+            data: {
+                "idInscritosExp": idFile
+            },
+            type: "POST",
+            url: "../Export/ExportData.php",
+        }).done(function(data, textStatus, jqXHR) {
+            console.log("data retornada -> " + data);
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            //console.log("La solicitud a fallado: " + textStatus);
+            $('#wrongResultadoI').show();
+        });
+    }
+    //CLOSE PAGE
     // Warning before leaving the page (back button, or outgoinglink)
     window.onbeforeunload = function() {
         return "Do you really want to leave our brilliant application?";

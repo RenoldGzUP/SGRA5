@@ -746,7 +746,7 @@ function validationExist($NUMINSCRITO)
 function checkRegisterExistInscritos($NUMINSCRITO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM inscritos2018 WHERE n_ins=?");
+    $query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM inscritos2017 WHERE n_ins=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data       = $query->getresults($parametros);
 
@@ -913,6 +913,35 @@ function truncateTable()
 }
 /////////////////////EXPORT DATA FROM INSCRITOS AND RESULTADOS
 //INDICAR EL NOMBRE DE LA BASE DATOS Y EL NOMBRE DEL ARCHIVO A EXPORTAR
+
+function exportDatosInscritos()
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo,folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,fac_ia,esc_ia,car_ia,car_ia,car_iia,car_iiia, fac_iia, fac_iiia, telefono,CONCAT(dia_n,'/',mes_n, '/' , ao_n) as fecha_n ,CONCAT(dia_i,'/',mes_i,'/20',ao_i) as fecha_i, n_ins, d from inscritos2017
+");
+    $data = $query->getresults();
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function exportDatosInscritos2($N_INS)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo, folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,facultad,escuela,carrera,car_ia,car_iia,car_iiia, facultad2, facultad3, telefono, fecha_n , fecha_i, n_ins, d from resultados2017 where n_ins=?");
+    $parametros = array('s', &$NUMINSCRITO);
+    $data       = $query->getresults($parametros);
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
 function exportData($DB, $NAMEFILE)
 {
     global $mysqli;
@@ -933,7 +962,7 @@ function insertNewDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDUL
     $MATRICULA, $SEFAESCA, $RED2, $NO1, $NO2) {
 
     global $mysqli;
-    $Query      = new Query($mysqli, "INSERT INTO inscritos2018(red, nota, apellido, nombre, cedula, cedulatxt, provincia, clave, tomo, folio, pasaporte, nacionalidad, trabaja, ocupacion, tipoc, col_proc, cod_col, est_civil, mes_n, dia_n, ao_n, mes_i, dia_i, ao_i, fac_ia, esc_ia, car_ia, fac_iia, esc_iia, car_iia, fac_iiia, esc_iiia, car_iiia, n_ins, bach, nbachiller, ao_grad, ecrop, sexo, pviu, aopviu, sede, provi, distrito, corregimiento, ocup_p, ocup_m, grado_p, esc_p, grado_m, esc_m, cfe, ecps, imf, npers, mtrasp, thijos, chijos, discap, rpadre, rmadre, rhnos, pgind, rend_esc, telefono, tel_cel, tel_ofic, mail, t_comp, t_internet, cod_promed, cod_ext_le, consu_dic, pg_num, area_i, area_ii, area_iii, arch_i, grupo, edif, aula, hora_prueb, ao_lect, edad, fecha_inscr, fecha_nac, otro_coleg, nfac_ia, d, cod_prov, nsede, nfacultad, ncarrera, matricula, sefaesca, red2, no1, no2) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $Query      = new Query($mysqli, "INSERT INTO inscritos2017(red, nota, apellido, nombre, cedula, cedulatxt, provincia, clave, tomo, folio, pasaporte, nacionalidad, trabaja, ocupacion, tipoc, col_proc, cod_col, est_civil, mes_n, dia_n, ao_n, mes_i, dia_i, ao_i, fac_ia, esc_ia, car_ia, fac_iia, esc_iia, car_iia, fac_iiia, esc_iiia, car_iiia, n_ins, bach, nbachiller, ao_grad, ecrop, sexo, pviu, aopviu, sede, provi, distri, corregi, ocup_p, ocup_m, grado_p, esc_p, grado_m, esc_m, cfe, ecps, imf, npers, mtrasp, thijos, chijos, discap, rpadre, rmadre, rhnos, pgind, rend_esc, telefono, tel_cel, tel_ofic, mail, t_comp, t_internet, cod_promed, cod_ext_le, consu_dic, pg_num, area_i, area_ii, area_iii, arch_i, grupo, edif, aula, hora_prueb, ao_lectivo, edad, fecha_inscr, fecha_nac, otro_coleg, nfac_ia, d, cod_prov, nsede, nfacultad, ncarrera, matricula, sefaesca, red2, no1, no2) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $parametros = array('ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss', &$RED, &$NOTA, &$APELLIDO, &$NOMBRE, &$CEDULA, &$CEDULATXT, &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO, &$PASAPORTE, &$NACIONALIDAD, &$TRABAJA, &$OCUPACION,
         &$TIPOC, &$COL_PROC, &$COD_COL, &$EST_CIVIL, &$MES_N, &$DIA_N, &$AO_N, &$MES_I, &$DIA_I, &$AO_I, &$FAC_IA, &$ESC_IA, &$CAR_IA, &$FAC_IIA,
         &$ESC_IIA, &$CAR_IIA, &$FAC_IIIA, &$ESC_IIIA, &$CAR_IIIA, &$N_INS, &$BACH, &$NBACHILLER, &$AO_GRAD, &$ECROP, &$SEXO, &$PVIU, &$AOPVIU, &$SEDE,
