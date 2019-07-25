@@ -4,6 +4,7 @@ $archivo = $_FILES["archivo"];
 //CONTAR EL NUMERO DE ARCHIOS
 $files = glob('../temp/*.csv'); //obtenemos todos los nombres de los ficheros
 var_dump($files);
+
 foreach ($files as $file) {
     if (is_file($file)) {
         echo "bORRADO " . $file;

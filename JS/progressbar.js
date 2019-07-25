@@ -13,6 +13,7 @@
     function loadFile() {
         const btnEnviar = document.querySelector("#importInscritosBtt");
         const inputFile = document.querySelector("#fileImportInscritosBtt");
+        $('#myProgress').hide();
         var elem = document.getElementById("myBar");
         elem.style.width = '0%';
         var filePath = $('#fileImportInscritosBtt').val();
@@ -20,7 +21,8 @@
         $('#done').hide();
         if (inputFile.files.length > 0) {
             $('#loading').show();
-            document.getElementById("importInscritosBtt").disabled = true;
+            disableActionButtons();
+            //document.getElementById("importInscritosBtt").disabled = true;
             document.getElementById("fileImportInscritosBtt").disabled = true;
             let formData = new FormData();
             formData.append("archivo", inputFile.files[0]); // En la posición 0; es decir, el primer elemento
@@ -66,7 +68,7 @@
                 $('#wrong').show();
                 $('#loading').hide();
                 $('#myProgress').hide();
-                document.getElementById("importInscritosBtt").disabled = false;
+                //document.getElementById("importInscritosBtt").disabled = false;
                 document.getElementById("fileImportInscritosBtt").disabled = false;
                 document.getElementById("messageInscritoWrong").innerHTML = infoLoaderIns[1];
             } else {
@@ -94,7 +96,8 @@
         function frame() {
             if (width == 100) {
                 clearInterval(id);
-                document.getElementById("importInscritosBtt").disabled = false;
+                enableActionButtons();
+                //document.getElementById("importInscritosBtt").disabled = false;
                 document.getElementById("fileImportInscritosBtt").disabled = false;
                 document.getElementById('fileImportInscritosBtt').value = '';
             } else {
@@ -241,10 +244,39 @@
         console.log("Time AJAX OK");
         setInterval(FUNC, 1000);
     }
+    ///////////////////////////////////////
     //EXPORTAR DATOS
+    //EXPORTAR DATOS INSCRITOS
+    function closeButton() {
+        $('#downloadFileExportInscrito').hide();
+        $('#loadingInscritoE').hide();
+        $('#doneInscritoE').hide();
+    }
+
+    function disableActionButtons() {
+        var idButtons = ["importInscritosBtt", "importResultadosBtt", "exportInscritosBtt", "exportResultadosBtt"];
+        var i = 0;
+        while (i < 4) {
+            document.getElementById(idButtons[i]).disabled = true;
+            i++;
+        }
+    }
+
+    function enableActionButtons() {
+        var idButtons = ["importInscritosBtt", "importResultadosBtt", "exportInscritosBtt", "exportResultadosBtt"];
+        var i = 0;
+        while (i < 4) {
+            document.getElementById(idButtons[i]).disabled = false;
+            i++;
+        }
+    }
+
     function getDataFills() {
+        disableActionButtons();
         //get select data
         var dataLabelsInscritos = ["apellido", "nombre", "provincia", "clave", "tomo", "folio", "bachiller", "ano_graduacion", "sexo", "colegio_proc", "codigo_colegio", "mes_nacimiento", "dia_nacimiento", "ano_de_nacimiento", "tipo_c", "provincia_vivienda", "distrito", "corregimiento", "mes_de_inscrito", "dia_de_inscrito", "ano_de_inscrito", "ano_lectivo", "sede", "facultad", "escuela", "carrera", "carrera_ia", "carrera_iia", "carrera_iiia", "facultad_2", "facultad_3", "telefono", "fecha_de_nacimiento", "fecha_inscripcion", "num_inscrito", "d"];
+        var dataLabelsResultadosIndice = ["provincia", "clave", "tomo", "folio", "indice", "num_inscrito", "area", "ano_lectivo"];
+        var dataLabelsResultados = ["sede", "facultad", "escuela", "carrera", "provincia", "clave", "tomo", "folio", "apellido", "nombre", "ano_lectivo", "gatb", "pca", "pcg", "indice", "area", "opc*", "num_inscrito", "d"];
         var len = dataLabelsInscritos.length;
         var dataInscritos = [];
         for (var i = 0; i < len; i++) {
@@ -254,25 +286,48 @@
             var idNumberLabel = dataInscritos.join('-');
             //console.log(idNumberLabel);
         }
-        //////////////////////////////////
-        /*for (var i = 0; i < len; i++) {
+        sendIDExportAjax(idNumberLabel);
+    }
+
+    function getFills(ARRAYDATA) {
+        var dataLabel = ARRAYDATA;
+        var len = dataLabel.length;
+        var dataArrayModal = [];
+        for (var i = 0; i < len; i++) {
             //alert(table1[i]);
             //console.log(dataLabelsInscritos[i].toLowerCase());
-            //dataInscritos.push($("#" + dataLabelsInscritos[i]).val());
-            console.log("id_" + dataLabelsInscritos[i] + ":" + dataInscritos[i] + ",");
-            if (i == len) {
-                console.log("id_" + dataLabelsInscritos[i] + ":" + dataInscritos[i]);
-            }
-        }*/
-        sendIDExportAjax(idNumberLabel);
-        /*for (var i = 0; i < len; i++) {
-            //alert();
-            console.log(dataLabelsInscritos[i] + "---" + dataInscritos[i]);
-        }*/
+            dataArrayModal.push($("#" + dataLabel[i]).val());
+            var idNumberLabel = dataArrayModal.join('-');
+            console.log(idNumberLabel);
+        }
+        //sendIDExportAjax(idNumberLabel);
+    }
+
+    function getDataFillsExport(STATE) {
+        //ID  APRA IDENFIFICAR DE CUAL EXPORT SE HARA EL GET FILL
+        var type = STATE;
+        if (type == 1) {
+            var dataLabelsInscritos = ["apellido", "nombre", "provincia", "clave", "tomo", "folio", "bachiller", "ano_graduacion", "sexo", "colegio_proc", "codigo_colegio", "mes_nacimiento", "dia_nacimiento", "ano_de_nacimiento", "tipo_c", "provincia_vivienda", "distrito", "corregimiento", "mes_de_inscrito", "dia_de_inscrito", "ano_de_inscrito", "ano_lectivo", "sede", "facultad", "escuela", "carrera", "carrera_ia", "carrera_iia", "carrera_iiia", "facultad_2", "facultad_3", "telefono", "fecha_de_nacimiento", "fecha_inscripcion", "num_inscrito", "d"];
+            getFills(dataLabelsInscritos);
+            console.log("STATE " + type);
+        } else if (type == 2) {
+            var dataLabelsResultadosIndice = ["provincia", "clave", "tomo", "folio", "indice", "num_inscrito", "area", "ano_lectivo"];
+            //getFills(dataLabelsResultadosIndice);
+            console.log("STATE " + type);
+        } else if (type == 3) {
+            var dataLabelsResultados = ["sede", "facultad", "escuela", "carrera", "provincia", "clave", "tomo", "folio", "apellido", "nombre", "ano_lectivo", "gatb", "pca", "pcg", "indice", "area", "opc*", "num_inscrito", "d"];
+            //getFills(dataLabelsResultados);
+            console.log("STATE " + type);
+        } else {
+            console.log("Inválido");
+        }
     }
 
     function sendIDExportAjax(dataInscritosExp) {
         var idFile = dataInscritosExp;
+        var downloadInscritoFile = document.getElementById('downloadFileExportInscrito');
+        var downloadResultadoFile = document.getElementById('downloadFileExportResultado');
+        $('#loadingInscritoE').show();
         $.ajax({
             data: {
                 "idInscritosExp": idFile
@@ -280,7 +335,12 @@
             type: "POST",
             url: "../Export/ExportData.php",
         }).done(function(data, textStatus, jqXHR) {
-            console.log("data retornada -> " + data);
+            console.log(data);
+            enableActionButtons();
+            $('#loadingInscritoE').hide();
+            $('#doneInscritoE').show();
+            $('#downloadFileExportInscrito').show();
+            downloadInscritoFile.setAttribute('href', data);
         }).fail(function(jqXHR, textStatus, errorThrown) {
             //console.log("La solicitud a fallado: " + textStatus);
             $('#wrongResultadoI').show();
