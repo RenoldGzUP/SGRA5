@@ -326,10 +326,10 @@
             var arrayPerformI = ["downloadFileExportInscrito", "loadingInscritoE", "ExportData", "doneInscritoE", "wrongInscritoE"];
             sendAJAXExport(dataInscritosExp, arrayPerformI);
         } else if (STATE == 2) {
-            var arrayPerformIn = ["downloadFileExportResultado", "loadingResultadoE", "ScriptName", "doneResultadoE", "wrongResultadoE"];
+            var arrayPerformIn = ["downloadFileExportResultado", "loadingResultadoE", "ExportData", "doneResultadoE", "wrongResultadoE"];
             sendAJAXExport(dataInscritosExp, arrayPerformIn);
         } else if (STATE == 3) {
-            var arrayPerformRes = ["downloadFileExportResultado", "loadingResultadoE", "ScriptName", "doneResultadoE", "wrongResultadoE"];
+            var arrayPerformRes = ["downloadFileExportResultado", "loadingResultadoE", "ExportData", "doneResultadoE", "wrongResultadoE"];
             sendAJAXExport(dataInscritosExp, arrayPerformRes);
         } else {
             console.log("Inválido");

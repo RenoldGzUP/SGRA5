@@ -13,6 +13,7 @@ $leng = count($labelsInscritos);
 $tiempo_inicial = microtime(true);
 //GET ARRAY FROM JS
 $idFromHTML = explode('-', $_POST["idFrontEnd"]);
+var_dump($idFromHTML);
 //GET DAT FROM DB - WITH FORMAT OD LABELS UP
 $dataExport = exportDatosInscritos();
 //CONVERT OBJECT TO ARRAY
@@ -31,11 +32,11 @@ $j++;
 }*/
 
 //SET ARRAY WITH NUMBER FILL
-while ($j < $lengArrayA) {
-    analyserRow($j, $labelsInscritos, $idFromHTML, $arrayDataExport);
-    $j++;
+/*while ($j < $lengArrayA) {
+analyserRow($j, $labelsInscritos, $idFromHTML, $arrayDataExport);
+$j++;
 }
-
+ */
 //MEASURING START TIME
 $tiempo_final = microtime(true);
 $tiempo       = $tiempo_final - $tiempo_inicial;
@@ -43,9 +44,9 @@ $mSegundos    = $tiempo * 1000;
 
 //SEND NAME FILE AND INSERT NEW LOG INTO DATABASE REGISTER
 //GET THE NAME FILE
-$fName = nameFile();
-echo "../Export/$fName";
-saveLogs($_SESSION['name'], "Usuario exportó  registros de TB inscritos - Nombre del archivo $fName");
+//$fName = nameFile();
+//echo "../Export/$fName";
+//saveLogs($_SESSION['name'], "Usuario exportó  registros de TB inscritos - Nombre del archivo $fName");
 
 //ENVIAR SOLO UNA
 //analyserRow(2, $labelsInscritos, $idFromHTML, $arrayDataExport);
