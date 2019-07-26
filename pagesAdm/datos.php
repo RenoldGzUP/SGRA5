@@ -20,10 +20,10 @@ if ($now > $_SESSION['expire']) {
 //  echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
     exit;
 }
-function printSelect($IDSELECT, $SELECTED)
+function printSelect($IDSELECT, $SELECTED, $LETTER)
 {
     $state = 1;
-    echo "<select id=" . limpiar_caracteres_especiales($IDSELECT) . ">";
+    echo "<select id=" . $IDSELECT . $LETTER . ">";
     while ($state < 100) {
         if ($state == $SELECTED) {
             echo "<option value='$state' selected >$state</option>";
@@ -32,7 +32,7 @@ function printSelect($IDSELECT, $SELECTED)
     }
     echo "</select>";
 }
-function printRow($ARRAY_LABEL_A, $ARRAY_LABEL_B)
+function printRow($ARRAY_LABEL_A, $ARRAY_LABEL_B, $LETTER)
 {
     $size = count($ARRAY_LABEL_A);
     $j    = 0;
@@ -41,7 +41,7 @@ function printRow($ARRAY_LABEL_A, $ARRAY_LABEL_B)
         echo "<td>$ARRAY_LABEL_A[$j]</td>";
         echo "<td>";
         $converString = limpiar_caracteres_especiales($ARRAY_LABEL_A[$j]);
-        printSelect(strtolower($converString), $ARRAY_LABEL_B[$j]);
+        printSelect(strtolower($converString), $ARRAY_LABEL_B[$j], $LETTER);
         echo "</td>";
         echo "</tr>";
         $j++;
@@ -453,7 +453,7 @@ foreach ($listasDB as $item) {
 $labelTExpIns = array("Apellido", "Nombre", "Provincia", "Clave", "Tomo", "Folio", "Bachiller", "A&ntilde;o_Graduaci&oacute;n", "Sexo", "Colegio_Proc", "C&oacute;digo_Colegio", "Mes_Nacimiento", "D&iacute;a_Nacimiento", "A&ntilde;o_de_Nacimiento", "Tipo_C", "Provincia_Vivienda", "Distrito", "Corregimiento", "Mes_De_inscrito", "D&iacute;a_de_inscrito", "A&ntilde;o_de_inscrito", "A&ntilde;o_Lectivo", "Sede", "Facultad", "Escuela", "Carrera", "Carrera_IA", "Carrera_IIA", "Carrera_IIIA", "Facultad_2", "Facultad_3", "Tel&eacute;fono", "Fecha_de_Nacimiento", "Fecha_Inscripci&oacute;n", "N&uacute;m_Inscrito", "D");
 
 $labelWidthIns = array(15, 13, 2, 2, 5, 6, 2, 4, 1, 50, 4, 3, 2, 2, 2, 12, 18, 18, 3, 2, 2, 4, 2, 2, 2, 2, 6, 6, 6, 2, 2, 7, 10, 10, 8, 1);
-printRow($labelTExpIns, $labelWidthIns);
+printRow($labelTExpIns, $labelWidthIns, "_i");
 ?>
                     </tbody>
                   </table>
@@ -494,7 +494,7 @@ printRow($labelTExpIns, $labelWidthIns);
                                 <?php
 $labelTExpI  = array("Provincia", "Clave", "Tomo", "Folio", "Indice", "N&uacute;m_Inscrito", "&Aacute;rea", "A&ntilde;o_Lectivo");
 $labelWidthI = array(2, 2, 6, 7, 9, 9, 1, 4);
-printRow($labelTExpI, $labelWidthI);
+printRow($labelTExpI, $labelWidthI, "_ind");
 ?>
                               </tbody>
                             </table>
@@ -515,9 +515,9 @@ printRow($labelTExpI, $labelWidthI);
                               </thead>
                               <tbody>
                                 <?php
-$labelTExpR = array("Sede", "Facultad", "Escuela", "Carrera", "Provincia", "Clave", "Tomo", "Folio", "Apellido", "Nombre", "A&ntilde;o_Lectivo", "GATB", "PCA", "PCG", "Indice", "&Aacute;rea", "OPC*", "N&uacute;m_Inscrito", "D");
+$labelTExpR = array("Sede", "Facultad", "Escuela", "Carrera", "Provincia", "Clave", "Tomo", "Folio", "Apellido", "Nombre", "A&ntilde;o_Lectivo", "GATB", "PCA", "PCG", "Indice", "&Aacute;rea", "OPC", "N&uacute;m_Inscrito", "D");
 $labelWidth = array(2, 2, 2, 2, 2, 2, 5, 6, 15, 13, 4, 7, 3, 3, 9, 1, 1, 8, 1);
-printRow($labelTExpR, $labelWidth);
+printRow($labelTExpR, $labelWidth, "_res");
 ?>
                               </tbody>
                             </table>

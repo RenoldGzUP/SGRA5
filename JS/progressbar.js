@@ -288,41 +288,77 @@
         }
         sendIDExportAjax(idNumberLabel);
     }
-
-    function getFills(ARRAYDATA) {
-        var dataLabel = ARRAYDATA;
-        var len = dataLabel.length;
-        var dataArrayModal = [];
-        for (var i = 0; i < len; i++) {
-            //alert(table1[i]);
-            //console.log(dataLabelsInscritos[i].toLowerCase());
-            dataArrayModal.push($("#" + dataLabel[i]).val());
-            var idNumberLabel = dataArrayModal.join('-');
-            console.log(idNumberLabel);
-        }
-        //sendIDExportAjax(idNumberLabel);
-    }
-
+    //////////////////////////////////////////////////////////////////////////
     function getDataFillsExport(STATE) {
         //ID  APRA IDENFIFICAR DE CUAL EXPORT SE HARA EL GET FILL
         var type = STATE;
         if (type == 1) {
-            var dataLabelsInscritos = ["apellido", "nombre", "provincia", "clave", "tomo", "folio", "bachiller", "ano_graduacion", "sexo", "colegio_proc", "codigo_colegio", "mes_nacimiento", "dia_nacimiento", "ano_de_nacimiento", "tipo_c", "provincia_vivienda", "distrito", "corregimiento", "mes_de_inscrito", "dia_de_inscrito", "ano_de_inscrito", "ano_lectivo", "sede", "facultad", "escuela", "carrera", "carrera_ia", "carrera_iia", "carrera_iiia", "facultad_2", "facultad_3", "telefono", "fecha_de_nacimiento", "fecha_inscripcion", "num_inscrito", "d"];
-            getFills(dataLabelsInscritos);
+            var dataLabelsInscritos = ["apellido_i", "nombre_i", "provincia_i", "clave_i", "tomo_i", "folio_i", "bachiller_i", "ano_graduacion_i", "sexo_i", "colegio_proc_i", "codigo_colegio_i", "mes_nacimiento_i", "dia_nacimiento_i", "ano_de_nacimiento_i", "tipo_c_i", "provincia_vivienda_i", "distrito_i", "corregimiento_i", "mes_de_inscrito_i", "dia_de_inscrito_i", "ano_de_inscrito_i", "ano_lectivo_i", "sede_i", "facultad_i", "escuela_i", "carrera_i", "carrera_ia_i", "carrera_iia_i", "carrera_iiia_i", "facultad_2_i", "facultad_3_i", "telefono_i", "fecha_de_nacimiento_i", "fecha_inscripcion_i", "num_inscrito_i", "d_i"];
+            getFills(dataLabelsInscritos, type);
             console.log("STATE " + type);
         } else if (type == 2) {
-            var dataLabelsResultadosIndice = ["provincia", "clave", "tomo", "folio", "indice", "num_inscrito", "area", "ano_lectivo"];
-            //getFills(dataLabelsResultadosIndice);
+            var dataLabelsResultadosIndice = ["provincia_ind", "clave_ind", "tomo_ind", "folio_ind", "indice_ind", "num_inscrito_ind", "area_ind", "ano_lectivo_ind"];
+            getFills(dataLabelsResultadosIndice, type);
             console.log("STATE " + type);
         } else if (type == 3) {
-            var dataLabelsResultados = ["sede", "facultad", "escuela", "carrera", "provincia", "clave", "tomo", "folio", "apellido", "nombre", "ano_lectivo", "gatb", "pca", "pcg", "indice", "area", "opc*", "num_inscrito", "d"];
-            //getFills(dataLabelsResultados);
+            var dataLabelsResultados = ["sede_res", "facultad_res", "escuela_res", "carrera_res", "provincia_res", "clave_res", "tomo_res", "folio_res", "apellido_res", "nombre_res", "ano_lectivo_res", "gatb_res", "pca_res", "pcg_res", "indice_res", "area_res", "opc_res", "num_inscrito_res", "d_res"];
+            getFills(dataLabelsResultados, type);
             console.log("STATE " + type);
         } else {
             console.log("Inválido");
         }
     }
+    //////////////////////////////////////////////////////////////
+    function getFills(ARRAYDATA, TYPE) {
+        var dataLabel = ARRAYDATA;
+        var len = dataLabel.length;
+        var dataArrayModal = [];
+        for (var i = 0; i < len; i++) {
+            dataArrayModal.push($("#" + dataLabel[i]).val());
+            var idNumberLabel = dataArrayModal.join('-');
+            console.log(idNumberLabel);
+        }
+        sendIDToExport(idNumberLabel, TYPE);
+    }
 
+    function sendIDToExport(dataInscritosExp, STATE) {
+        if (STATE == 1) {
+            var arrayPerformI = ["downloadFileExportInscrito", "loadingInscritoE", "ExportData", "doneInscritoE", "wrongInscritoE"];
+            sendAJAXExport(dataInscritosExp, arrayPerformI);
+        } else if (STATE == 2) {
+            var arrayPerformIn = ["downloadFileExportResultado", "loadingResultadoE", "ScriptName", "doneResultadoE", "wrongResultadoE"];
+            sendAJAXExport(dataInscritosExp, arrayPerformIn);
+        } else if (STATE == 3) {
+            var arrayPerformRes = ["downloadFileExportResultado", "loadingResultadoE", "ScriptName", "doneResultadoE", "wrongResultadoE"];
+            sendAJAXExport(dataInscritosExp, arrayPerformRes);
+        } else {
+            console.log("Inválido");
+        }
+    }
+
+    function sendAJAXExport(DATOS, LABELCOMPONENT) {
+        var idFile = DATOS;
+        var downloadButton = document.getElementById(LABELCOMPONENT[0]);
+        $('#' + LABELCOMPONENT[1]).show();
+        $.ajax({
+            data: {
+                "idFrontEnd": idFile
+            },
+            type: "POST",
+            url: "../Export/" + LABELCOMPONENT[2] + ".php",
+        }).done(function(data, textStatus, jqXHR) {
+            console.log(data);
+            enableActionButtons();
+            $('#' + LABELCOMPONENT[1]).hide();
+            $('#' + LABELCOMPONENT[3]).show();
+            $('#' + LABELCOMPONENT[0]).show();
+            downloadButton.setAttribute('href', data);
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            //console.log("La solicitud a fallado: " + textStatus);
+            $('#' + LABELCOMPONENT[4]).show();
+        });
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////
     function sendIDExportAjax(dataInscritosExp) {
         var idFile = dataInscritosExp;
         var downloadInscritoFile = document.getElementById('downloadFileExportInscrito');
@@ -343,7 +379,7 @@
             downloadInscritoFile.setAttribute('href', data);
         }).fail(function(jqXHR, textStatus, errorThrown) {
             //console.log("La solicitud a fallado: " + textStatus);
-            $('#wrongResultadoI').show();
+            $('#wrongInscritoE').show();
         });
     }
     //CLOSE PAGE

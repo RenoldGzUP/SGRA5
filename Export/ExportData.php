@@ -12,7 +12,7 @@ $leng = count($labelsInscritos);
 //GET TIME
 $tiempo_inicial = microtime(true);
 //GET ARRAY FROM JS
-$idFromHTML = explode('-', $_POST["idInscritosExp"]);
+$idFromHTML = explode('-', $_POST["idFrontEnd"]);
 //GET DAT FROM DB - WITH FORMAT OD LABELS UP
 $dataExport = exportDatosInscritos();
 //CONVERT OBJECT TO ARRAY
