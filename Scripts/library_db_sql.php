@@ -757,7 +757,7 @@ function checkRegisterExistInscritos($NUMINSCRITO)
 function checkRegisterExistResultados($NUMINSCRITO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM resultados2018 WHERE n_ins=?");
+    $Query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM resultados2017 WHERE n_ins=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data       = $Query->getresults($parametros);
 
@@ -917,7 +917,33 @@ function truncateTable()
 function exportDatosInscritos()
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo,folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,fac_ia,esc_ia,car_ia,car_ia,car_iia,car_iiia, fac_iia, fac_iiia, telefono, CONCAT(dia_n,'/',DATE_FORMAT(STR_TO_DATE(mes_n,'%b'), '%m') , '/' , DATE_FORMAT(STR_TO_DATE(ao_n,'%Y'), '%Y')) as fecha_n ,CONCAT(dia_i,'/',DATE_FORMAT(STR_TO_DATE(mes_n,'%b'), '%m'),'/',DATE_FORMAT(STR_TO_DATE(ao_i,'%Y'), '%Y')) as fecha_i, n_ins, d from inscritos2017 LIMIT 2000");
+    $query = new Query($mysqli, "SELECT apellido,nombre,provincia,clave,tomo,folio,bach,ao_grad,sexo,col_proc,cod_col,mes_n,dia_n,ao_n,tipoc,provi,distri,corregi,mes_i,dia_i,ao_i,ao_lectivo,sede,fac_ia,esc_ia,car_ia,car_ia,car_iia,car_iiia, fac_iia, fac_iiia, telefono, CONCAT(dia_n,'/',DATE_FORMAT(STR_TO_DATE(mes_n,'%b'), '%m') , '/' , DATE_FORMAT(STR_TO_DATE(ao_n,'%Y'), '%Y')) as fecha_n ,CONCAT(dia_i,'/',DATE_FORMAT(STR_TO_DATE(mes_n,'%b'), '%m'),'/',DATE_FORMAT(STR_TO_DATE(ao_i,'%Y'), '%Y')) as fecha_i, n_ins, d from inscritos2017 LIMIT 1000");
+    $data  = $query->getresults();
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function exportDatosResultados()
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT sede, fac_ia, esc_ia, car_ia, provincia, clave, tomo, folio, apellido, nombre, ao_lectivo, gatb, pca, pcg, indice, areap, opc, n_ins, d from resultados2017 LIMIT 1500");
+    $data  = $query->getresults();
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function exportDatosIndices()
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT provincia,clave, tomo, folio, indice, n_ins, areap, ao_lectivo from resultados2017");
     $data  = $query->getresults();
     if (isset($data[0])) {
         return $data;

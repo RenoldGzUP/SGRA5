@@ -226,12 +226,12 @@ foreach ($listasDB as $item) {
                     </div>
                     <div class="col-lg-12">
                       <div id="doneResultadoI" class="alert alert-info" style="display:none;" >
-                        <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong><span id="doneMessageResultadoI"></span>
+                        <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!   </strong><span id="doneMessageResultadoI"></span>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div id="loadingResultadoI" class="alert alert-info" style="display:none;">
-                        <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!</strong> Cargando Registros...##
+                        <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!  </strong> Cargando Registros...
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -265,7 +265,7 @@ foreach ($listasDB as $item) {
             <div class="col-lg-6">
               <!--SECCION PARA EXPORTAR REGISTROS DESDE LA TABLA INSCRITOS-->
               <div class="panel panel-success">
-                <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <b>Inscritos</b></div>
+                <div class="panel-heading" style="font-size: 14px;" >Exportar los Registros de BD <b >Inscritos</b></div>
                 <div class="panel-body" style="height: auto;">
                   <div class="row">
                     <div class="col-lg-12">
@@ -302,7 +302,7 @@ foreach ($listasDB as $item) {
                             <td></td>
                             <td width="100">
                               <div class = "pull-right" style="margin-top: -20px">
-                                <button id="exportInscritosBtt" style="width: 150px;"type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportInscritos" onclick="closeButton()"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
+                                <button id="exportInscritosBtt" style="width: 150px;"type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportInscritos" onclick="hideMessage(1)"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
                               </div>
                             </td>
                           </tr>
@@ -389,7 +389,7 @@ foreach ($listasDB as $item) {
                             <td width="100">
                               <div class = "pull-right" style="margin-top: -20px">
                                 <!--onClick=" exportDataR()" -->
-                                <button id="exportResultadosBtt" style="width: 150px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportResultados"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
+                                <button id="exportResultadosBtt" onclick="hideMessage(2)" style="width: 150px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportResultados"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
                               </div>
                             </td>
                           </tr>
@@ -414,7 +414,7 @@ foreach ($listasDB as $item) {
 
                     <div class=" col-lg-12">
                       <center>
-                        <button id="downloadFileExportResultado" href="#" type="button" class="btn btn-warning btn-sm" style="display:none;"><span class="glyphicon glyphicon-download-alt"></span> Descargar</button>
+                        <a id="downloadFileExportResultado" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
                       </center>
                     </div>
 
@@ -500,7 +500,7 @@ printRow($labelTExpI, $labelWidthI, "_ind");
                             </table>
 
                             <div class="pull-right" >
-                              <button type="button" class="btn btn-default" onclick="getDataFillsExport(2)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
+                              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(2)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
 
                             </div>
 
@@ -522,7 +522,7 @@ printRow($labelTExpR, $labelWidth, "_res");
                               </tbody>
                             </table>
                             <div class="pull-right" >
-                              <button type="button" class="btn btn-default" onclick="getDataFillsExport(3)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
+                              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(3)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
 
                             </div>
                           </div>

@@ -4,17 +4,90 @@ openConnection();
 include_once '../Scripts/library_db_sql.php';
 session_start();
 
-//GET DATA FROM AJAX JS
+/*//GET DATA FROM AJAX JS
 $labelsInscritos = array("apellido", "nombre", "provincia", "clave", "tomo", "folio", "bach", "ao_grad", "sexo", "col_proc", "cod_col", "mes_n", "dia_n", "ao_n", "tipoc", "provi", "distri", "corregi", "mes_i", "dia_i", "ao_i", "ao_lectivo", "sede", "fac_ia", "esc_ia", "car_ia", "car_ia", "car_iia", "car_iiia", "fac_iia", "fac_iiia", "telefono", "fecha_n", "fecha_i", "n_ins", "d");
 
-$leng = count($labelsInscritos);
+$leng = count($labelsInscritos);*/
 
 //GET TIME
-$tiempo_inicial = microtime(true);
+//$tiempo_inicial = microtime(true);
 //GET ARRAY FROM JS
 $idFromHTML = explode('-', $_POST["idFrontEnd"]);
-var_dump($idFromHTML);
-//GET DAT FROM DB - WITH FORMAT OD LABELS UP
+//var_dump($idFromHTML);
+
+//SORT AT
+$longArray = count($idFromHTML);
+//print $longArray;
+
+switch ($longArray) {
+    case 36:
+        //GET DATA FROM AJAX JS
+        $labelsInscritos = array("apellido", "nombre", "provincia", "clave", "tomo", "folio", "bach", "ao_grad", "sexo", "col_proc", "cod_col", "mes_n", "dia_n", "ao_n", "tipoc", "provi", "distri", "corregi", "mes_i", "dia_i", "ao_i", "ao_lectivo", "sede", "fac_ia", "esc_ia", "car_ia", "car_ia", "car_iia", "car_iiia", "fac_iia", "fac_iiia", "telefono", "fecha_n", "fecha_i", "n_ins", "d");
+        //GET DAT FROM DB - WITH FORMAT OD LABELS UP
+        date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+        $datetime = date("d_m_Y");
+        $fName    = "inscritos" . $datetime . ".txt";
+        //QUERY
+        $dataExport = exportDatosInscritos();
+        //VALIDATE THAT THE FILE EXIST AND WAS DELETED
+        if (renameFile($fName)) {
+            getDataAnalyser($dataExport, $labelsInscritos, $idFromHTML, $fName);
+            echo "../Export/" . $fName;
+            saveLogs($_SESSION['name'], "El sistema borró el archivo anterior y creó el archivo $fName ,Usuario exportó  registros de TB inscritos - Nombre del archivo $fName");
+        } else {
+            getDataAnalyser($dataExport, $labelsInscritos, $idFromHTML, $fName);
+            echo "../Export/" . $fName;
+            saveLogs($_SESSION['name'], "El sistema creó el archivo $fName y  exportó  registros de TB inscritos - Nombre del archivo $fName");
+        }
+        break;
+    case 19:
+        //GET DATA FROM AJAX JS
+        $labelsResultados = array("sede", "fac_ia", "esc_ia", "car_ia", "provincia", "clave", "tomo", "folio", "apellido", "nombre", "ao_lectivo", "gatb", "pca", "pcg", "indice", "areap", "opc", "n_ins", "d");
+
+        //GET DAT FROM DB - WITH FORMAT OD LABELS UP
+        date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+        $datetime = date("d_m_Y");
+        $fName    = "resultados" . $datetime . ".txt";
+        //QUERY
+        $dataExport = exportDatosResultados();
+        //VALIDATE THAT THE FILE EXIST AND WAS DELETED
+        if (renameFile($fName)) {
+            getDataAnalyser($dataExport, $labelsResultados, $idFromHTML, $fName);
+            echo "../Export/" . $fName;
+            saveLogs($_SESSION['name'], "El sistema borró el archivo anterior y creó el archivo $fName ,Usuario exportó  registros de TB resultados- Nombre del archivo $fName");
+        } else {
+            getDataAnalyser($dataExport, $labelsResultados, $idFromHTML, $fName);
+            echo "../Export/" . $fName;
+            saveLogs($_SESSION['name'], "El sistema creó el archivo $fName y  exportó  registros de TB resultados - Nombre del archivo $fName");
+        }
+        break;
+    case 8:
+        //GET DATA FROM AJAX JS
+        $labelsIndices = array("provincia", "clave", "tomo", "folio", "indice", "n_ins", "areap", "ao_lectivo");
+        //GET DAT FROM DB - WITH FORMAT OD LABELS UP
+        date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+        $datetime = date("d_m_Y");
+        $fName    = "indices" . $datetime . ".txt";
+        //QUERY
+        $dataExport = exportDatosIndices();
+        //VALIDATE THAT THE FILE EXIST AND WAS DELETED
+        if (renameFile($fName)) {
+            getDataAnalyser($dataExport, $labelsIndices, $idFromHTML, $fName);
+            echo "../Export/" . $fName;
+            saveLogs($_SESSION['name'], "El sistema borró el archivo anterior y creó el archivo $fName ,Usuario exportó  registros de TB resultados - Nombre del archivo $fName");
+        } else {
+            getDataAnalyser($dataExport, $labelsIndices, $idFromHTML, $fName);
+            echo "../Export/" . $fName;
+            saveLogs($_SESSION['name'], "El sistema creó el archivo $fName y  exportó  registros de TB resultados - Nombre del archivo $fName");
+        }
+        break;
+
+    default:
+        echo "Algo salió mal en la calsificación del tipo de Export";
+        break;
+}
+
+/*//GET DAT FROM DB - WITH FORMAT OD LABELS UP
 $dataExport = exportDatosInscritos();
 //CONVERT OBJECT TO ARRAY
 $arrayDataExport = convert_object_to_array($dataExport);
@@ -23,7 +96,7 @@ $lengArrayA = sizeof($arrayDataExport);
 $lengArrayB = sizeof($labelsInscritos);
 //INIT VARS
 $j = 0;
-$k = 0;
+$k = 0;*/
 //TEST ARRAYS PRINT
 /*//ENVIAR LAS FILAS - PRINT
 while ($j < 36) {
@@ -31,32 +104,32 @@ echo "ETIQUETA ->" . $labelsInscritos[$j] . "  Valor JS ->" . $idFromHTML[$j] . 
 $j++;
 }*/
 
-//SET ARRAY WITH NUMBER FILL
-/*while ($j < $lengArrayA) {
-analyserRow($j, $labelsInscritos, $idFromHTML, $arrayDataExport);
-$j++;
-}
- */
-//MEASURING START TIME
-$tiempo_final = microtime(true);
-$tiempo       = $tiempo_final - $tiempo_inicial;
-$mSegundos    = $tiempo * 1000;
-
-//SEND NAME FILE AND INSERT NEW LOG INTO DATABASE REGISTER
-//GET THE NAME FILE
-//$fName = nameFile();
-//echo "../Export/$fName";
-//saveLogs($_SESSION['name'], "Usuario exportó  registros de TB inscritos - Nombre del archivo $fName");
-
-//ENVIAR SOLO UNA
-//analyserRow(2, $labelsInscritos, $idFromHTML, $arrayDataExport);
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FUNCIONES
+
+function getDataAnalyser($DATABASE, $LABELSSQL, $LABELSJS, $FILENAME)
+{
+
+//CONVERT OBJECT TO ARRAY
+    $arrayDataExport = convert_object_to_array($DATABASE);
+//GET SIZE FROM BOTH ARRAYS
+    $lengArrayA = sizeof($arrayDataExport);
+    $lengArrayB = sizeof($LABELSJS);
+//INIT VARS
+    $j = 0;
+    $k = 0;
+
+//SET ARRAY WITH NUMBER FILL
+    while ($j < $lengArrayA) {
+        analyserRow($j, $LABELSSQL, $LABELSJS, $arrayDataExport, $FILENAME);
+        $j++;
+    }
+}
+
 //FUNCION PARA CONTAR LOS CARACTERES
 
 //FUNCTION TO SEND ONE BY ONE ID TO  MAKE THE NEW ARRAY
-function analyserRow($INDICE, $ARRAYLABELCONFIG, $ARRAYHTML, $ARRAYTOANALYZER)
+function analyserRow($INDICE, $ARRAYLABELCONFIG, $ARRAYHTML, $ARRAYTOANALYZER, $FILENAME)
 {
     $sizeArray = count($ARRAYLABELCONFIG);
     $a         = 0;
@@ -72,7 +145,23 @@ function analyserRow($INDICE, $ARRAYLABELCONFIG, $ARRAYHTML, $ARRAYTOANALYZER)
     //DELETE ALL STRANGE CHARACTERS AND  MAKE A IMPLODE TO INSERT ALL DATA INTO THE NEW ARRAY
     $xdata = implode("", $arrayExport);
     //CALL TO THE TXTFILE FUNCTION
-    txtFile($xdata);
+    $typefilelong = count($ARRAYHTML);
+    switch ($typefilelong) {
+        case 36:
+            txtFile($xdata, $FILENAME);
+            break;
+        case 19:
+            //renameFile($fName);
+            txtFile($xdata, $FILENAME);
+            break;
+        case 8:
+            //renameFile($fName);
+            txtFile($xdata, $FILENAME);
+            break;
+        default:
+
+            break;
+    }
 
 }
 
@@ -109,31 +198,25 @@ function space_fill($valor, $long)
 }
 
 //CONVERTIR LA CADENA A TXT
-function txtFile($DATA)
+function txtFile($DATA, $FILENAME)
 {
-    $fileNameTXT = nameFile();
-    $fp          = fopen($fileNameTXT, "a");
+    $fp = fopen($FILENAME, "a");
     fwrite($fp, $DATA . PHP_EOL);
     fclose($fp);
 
 }
 
-function nameFile()
+function renameFile($FILENAME)
 {
-    date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
-    $datetime = date("d_m_Y");
-    //$randName  = rand();
-    $nameToTxt = "inscritos$datetime.txt";
-    //return $nameToTxt;
-
 //COMPRUEBA SI EL ARCHIVO EXISTE
-    $newNameFile = explode('.txt', $nameToTxt);
-    if (file_exists($nameToTxt)) {
-//  echo "El fichero" . $archivo["name"] . " existe";
-        //rename($archivo["name"], $newNameFile[0] . $rNumber . ".csv");
-        copy($nameToTxt, $newNameFile[0] . "tmp.txt");
-
+    $newNameFile = explode('.txt', $FILENAME);
+    $randFile    = rand();
+    if (file_exists($FILENAME)) {
+        rename($FILENAME, $newNameFile[0] . $randFile . "tmp.txt");
+        $result = true;
+    } else {
+        $result = false;
     }
 
-    return $nameToTxt;
+    return $result;
 }
