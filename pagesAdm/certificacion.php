@@ -134,9 +134,8 @@ if ($now > $_SESSION['expire']) {
     <div id="wrapper">
 
      <?php include '../modulos/userControl.php';?>
-     <!--overflow-x:hidden;overflow-x:hidden;-->
 
-<div class="container col-lg-12" style="margin-top: -18px;">
+<div class="container col-lg-12" style="margin-top: -18px">
   <h2></h2>
 
   <div class="panel panel-default " >
@@ -168,7 +167,7 @@ if ($now > $_SESSION['expire']) {
         <th>Sede</th>
         <th>Fac1A</th>
         <th>Esc1A</th>
-        <th>Car1A</th>x
+        <th>Car1A</th>
         <th>PS</th>
         <th>PCA</th>
         <th>PCG</th>
