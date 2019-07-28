@@ -23,6 +23,12 @@ th {
     text-align: left;
     vertical-align: middle;
 }
+span {
+    font-size: 12px;
+}
+input, select, textarea {
+    font-size: 75%;
+}
 .table-hover tbody tr:hover td {
     background-color: #A0E1EE;
 }

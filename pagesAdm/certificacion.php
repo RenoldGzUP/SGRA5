@@ -49,87 +49,10 @@ if ($now > $_SESSION['expire']) {
     <script src="../JS/Filtros.js"></script>
     <script src="../JS/getCheckedRow.js"></script>
     <script src="../JS/tableEdit.js"></script>
-   <!--    <script src="../JS/Editable table/custom_table_edit.js"></script>-->
-
-    <style>
-    #vertical-bar {
-        border-left: 2px solid #ffffff;
-        width:2px;
-        height:65px;
-        margin-left: 265px;
-
-    }
-
-    .th {
-  height: 20px;
-}
-
-  html,body {
-  overflow:hidden;
-}
-
-/*body {
-  background-color: #FFFFFF;
-  font-family: "Trebuchet MS", Tahoma, Verdana;
-  font-size: 12px;
-  font-weight: normal;
-  color: #666666;
-  margin: 10px;
-  padding: 0;
-}*/
-
-.vertical{
-            width: 1000px;
-            height: 1190px;
-            overflow: auto;
-            overflow-y: auto;
-            margin: 0 auto;
-            white-space: nowrap
-        }
-
-.fadebox {
-  display: none;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index:1001;
-  -moz-opacity: 0.8;
-  opacity:.30;
-  filter: alpha(opacity=50);
-}
-.overbox {
-  display: none;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  z-index:1002;
-  overflow: auto;
-}
-#content {
-  background: #FFFFFF;
-  border: solid 3px #CCCCCC;
-  padding: 10px;
-}
-
-
-
-
-  </style>
-
 
 </head>
 
 <body>
-<div id="loading"  class="overbox" style="display:none;width:300px;height:300px;position:absolute;top:50%;left:50%;padding:2px;"><img src='../images/loading.gif' width="100" height="100" />
-<center>Cargando..</center>
-  </div>
-
-<div id="fadeing" class="fadebox">&nbsp;</div>
 
     <div id="wrapper">
 
@@ -137,23 +60,18 @@ if ($now > $_SESSION['expire']) {
 
 <div class="container col-lg-12" style="margin-top: -18px">
   <h2></h2>
-
+  <!--Panel de Filtros-->
+      <?php include '../modulos/panelFilter.php';?>
+  <!---->
   <div class="panel panel-default " >
-    <div class="panel-heading" style="height: 70px">
-      <?php include '../modulos/filters.php';?>
-
-          <div style="margin-top: -32px">
-            <button type="button" id="buttonCertification" class="btn btn-default btn-xs pull-right" style="width: 200px" data-toggle="modal" data-target="#tipoCertificaciones" ><span class="glyphicon glyphicon-list-alt" ></span>  Generar Certificaciones</button>
-          </div>
+    <div class="panel-heading" style="height: 40px">
+      <?php include '../modulos/select.php';?>
 
     </div>
 
   </div>
 
-<!--TABLE CERTIFICATION-->
-<div class="col-lg-12">
-  <?php include '../modulos/select.php';?>
-</div>
+
   <div class="col-lg-12 table-responsive">
     <table id="tableresultados" class="table table-bordered table-hover table-editable">
      <thead>

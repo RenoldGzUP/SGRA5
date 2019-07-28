@@ -6,6 +6,10 @@
 }
 th {
     text-align: center;
+    font-size: 12px;
+}
+.align {
+    text-align: left;
 }
 .modal {
     text-align: center;
@@ -22,6 +26,12 @@ th {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+}
+span {
+    font-size: 12px;
+}
+input, select, textarea {
+    font-size: 75%;
 }
 .table-hover tbody tr:hover td {
     background-color: #A0E1EE;

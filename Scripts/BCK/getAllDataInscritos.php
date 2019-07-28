@@ -42,18 +42,16 @@ for ($i = 0; $i < 20; $i++) {
                     <td><input type='text' name='FirstName' value=" . $newEstData[$i] . "></td>
 
                     <td class='success'>" . $resources[$i + 20]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i + 20] . "></td>
-
+                    <td style='font-size: 10px;text-align:left;color: #000000'>" . $newEstData[$i + 20] . "</td>
 
                     <td class='success'>" . $resources[$i + 40]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i + 40] . "></td>
+                    <td style='font-size: 10px;text-align:left;color: #000000'>" . $newEstData[$i + 40] . "</td>
 
-
-                    <td class='success'>" . $resources[$i + 60]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i + 60] . "></td>
+                    <td  class='success'>" . $resources[$i + 60]['recurso'] . "</td>
+                    <td style='font-size: 10px;text-align:left;color: #000000'>" . $newEstData[$i + 60] . "</td>
 
                     <td  class='success'>" . $resources[$i + 80]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i + 80] . "></td>
+                    <td style='font-size: 10px;text-align:left;color: #000000'>" . $newEstData[$i + 80] . "</td>
 
                     </tr>";
 }

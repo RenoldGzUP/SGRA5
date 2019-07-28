@@ -1,26 +1,25 @@
 <?php
-include_once('../Scripts/classConexionDB.php');
+include_once '../Scripts/classConexionDB.php';
 openConnection();
-include_once('../Scripts/library_db_sql.php');
+include_once '../Scripts/library_db_sql.php';
 session_start();
-saveLogs($_SESSION['name'],"Usuario accedió a página reportes");
+saveLogs($_SESSION['name'], "Usuario accedió a página reportes");
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-} 
-else {
-  header('Location:../index.html');
- //  echo "Esta pagina es solo para usuarios registrados.<br>";
-  // echo "<br><a href='login.html'>Login</a>";
-   //echo "<br><br><a href='index.html'>Registrarme</a>";//
-  exit;
+} else {
+    header('Location:../index.html');
+    //  echo "Esta pagina es solo para usuarios registrados.<br>";
+    // echo "<br><a href='login.html'>Login</a>";
+    //echo "<br><br><a href='index.html'>Registrarme</a>";//
+    exit;
 }
 
 $now = time();
-if($now > $_SESSION['expire']) {
-  session_destroy();
-  echo "<script>location.href='../noAccess.html'</script>";
+if ($now > $_SESSION['expire']) {
+    session_destroy();
+    echo "<script>location.href='../noAccess.html'</script>";
 //echo "Su sesion a terminado,<a href='../index.html'>Necesita Hacer Login</a>";
-  exit;
+    exit;
 }
 ?>
 
@@ -49,6 +48,7 @@ if($now > $_SESSION['expire']) {
   <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="../JS/bootstrap.js"></script>
   <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+  <link rel="stylesheet" media="all" href="../Style/ReportesStyle.css">
   <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
   <script src="../JS/Filtros.js"></script>
   <script src="../JS/getCheckedRow.js"></script>
@@ -72,16 +72,14 @@ if($now > $_SESSION['expire']) {
 
   <div id="wrapper">
     <?php
-    include '../modulos/userControl.php';
-    ?>
+include '../modulos/userControl.php';
+?>
 
-    <div class="container col-lg-12" style="margin-top: -18px">
+    <div class="container col-lg-12" style="margin-top: -20px">
       <h2></h2>
-      <div class="panel panel-default ">
-        <div class="panel-heading" style="height: 70px">Filtro local:   
-         <?php include '../modulos/filters.php';?>
-        </div>           
-      </div>
+      <!--Panel de Filtros-->
+      <?php include '../modulos/panelFilter.php';?>
+  <!---->
 
        <div  class="col-lg-12" style="margin-top: 15px">
          <table id="inscritosTable" class="table table-bordered table-hover table-editable">
@@ -105,16 +103,16 @@ if($now > $_SESSION['expire']) {
 
         <tbody >
           <!--EMBEDED CODE -->
-          <?php 
-          include '../Scripts/dataReportes.php';
-          echo "</tbody>";
-          echo "</table>";
-          ?>
+          <?php
+include '../Scripts/dataReportes.php';
+echo "</tbody>";
+echo "</table>";
+?>
         </table>
         <div >
           <center style="margin-top: -15px">
-            <button id="buttongReportes" type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#typereporte"><span class="glyphicon glyphicon-list-alt" ></span> Generar reporte de resultados</button>
-            <a id="downloadFile" href="#" target="_blank" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-fullscreen"></span> Ver Documento</a>
+            <button id="buttongReportes" type="button" disabled class="btn btn-default btn-lg" data-toggle="modal" data-target="#typereporte"><span class="glyphicon glyphicon-list-alt"   ></span> Generar reporte de resultados</button>
+            <a id="downloadFile" href="#" download class="btn btn-default btn-lg" style="display: none;"><span class="glyphicon glyphicon-fullscreen"></span> Ver Documento</a>
             <!--  <button id="downloadFile" href="#" target="_blank" type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-fullscreen"></span> Ver Reporte</button> -->
           </center>
         </div>
@@ -124,72 +122,10 @@ if($now > $_SESSION['expire']) {
 
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="typereporte" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Propiedades del Reporte</h4>
-          </div>
-
-          <div class="modal-body">
-
-            <div class="row">
-
-              <div class="col-lg-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Campo para Indexación </div>
-                  <div class="panel-body">
-                    <div id="certType" >
-
-                      <center>
-                      <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Nombre</label>
-                     <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Apellido </label>
-                     <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Indice</label>
-                      </center>
-                    
-                   </div>
-                 </div>
-               </div>
-             </div>
-
-              <div class="col-lg-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Tipo de Indexación </div>
-                  <div class="panel-body">
-                    <div id="certType" >
-                      <center>
-                         <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Ascendente</label>
-                        <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Descendente</label>
-                        
-                      </center>
-                    
-                   </div>
-                 </div>
-               </div>
-             </div>
-
-           </div>
-         </div>
-
-         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="sendReporte();">Aplicar Cambios</button>
-        </div>
-
-      </div>
-    </div>
-  </div> <!--Fin del MODAL-->
-
-
-
-
-
+   <!--MODALS FILE PHP-->
+   <?php include '../modulos/modals.php';?>
+   <!-- -->
   </div><!-- /#wrapper -->
-
-
-
 </body>
 
 </html>

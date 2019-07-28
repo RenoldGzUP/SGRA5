@@ -1,6 +1,6 @@
 <div >
  <!--LLAMA A LA CLASE TABLAINSCRTIOPS-->
-    <form  class="form-inline"  action="../pagesAdm/inscritos.php" method="post" style="margin-top: -10px">
+    <form  class="form-inline"  action="../pagesAdm/inscritos.php" method="post" style="margin-top: -15px">
         Mostrar:&nbsp&nbsp&nbsp
         <select id="select_range" name="range">
              <?php

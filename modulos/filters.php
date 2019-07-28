@@ -1,5 +1,5 @@
- <form class="form-inline" action="../pagesAdm/inscritos.php" method="post" style="margin-top: 1px">
-  Filtro local:
+ <form class="form-inline" action="../pagesAdm/inscritos.php" method="post" style="margin-top: -7px">
+  <span>Filtro local:</span>
   <select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
    <option >Seleccione Sede</option>
    <?php
@@ -11,19 +11,19 @@ foreach ($listaSedes as $item) {
 ?>
 </select>
 
-donde :
+<span> donde :</span>
 <select name="areas"  id="lista_areas" onChange='obtenerFacultades(this.value)'>
   <option >Seleccione Area</option>
 </select>
-en:
+<span>en:</span>
 <select name="facultades" id="lista_facultades" onChange='obtenerEscuela()' >
  <option >Seleccione Facultad</option>
 </select>
 
-<button type="button submit" title="Filtrar registros en base a su selección " class="btn btn-default btn-xs pull-right" style="width: 200px"  ><span class="glyphicon glyphicon-filter"></span> Aplicar filtros</button>
+<button type="button submit" title="Filtrar registros en base a su selección " class="btn btn-default btn-xs pull-right" style="width: 200px"  ><span class="glyphicon glyphicon-filter"></span> <span>Aplicar filtros</span> </button>
 
 <div style="margin-top: 12px">
-  Filtros Academicos:
+ <span>Filtros Academicos: </span>
   <select name="escuelas" id="lista_escuelas" onChange='obtenerCarreras()' >
    <option >Seleccione Escuela</option>
  </select>

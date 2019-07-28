@@ -37,31 +37,79 @@
             <a href="reportes.php" title="Crear reportes" style="margin-left: 18px;width: 90px" class="btn btn-warning btn-sm">Reportes</a> -->
 
             <?php
-$url = explode("/SGRA/pagesAdm/", $_SERVER["REQUEST_URI"]);
+$url = explode("/SGRA5/pagesAdm/", $_SERVER["REQUEST_URI"]);
 colorButton($url[1]);
+//UpdateArray();
 ?>
           </nav>
           <!--   </div>-->
-
-
-
-
-
 <?php
 
-function colorButton($page)
+function colorButton($PAGE)
 {
-    $url_actual = $page;
+    //$url_actual = $page;
     //echo "<b>$url_actual</b>";
     $pagesAccess  = array("dashboard.php", "inscritos.php", "certificacion.php", "validacion.php", "reportes.php");
     $labelButton  = array("Inicio", "Inscritos", "Certificación", "Validación", "Reportes");
     $tittleButton = array('Pantalla_Principal', 'Estudiantes_Inscritos', 'Resultado_de_las_pruebas', 'Validar_estudiantes', 'Crear_reportes');
 
-    for ($i = 0; $i <= 4; $i++) {
-        if ($url_actual == $pagesAccess[$i]) {
-            echo "<a href=" . $pagesAccess[$i] . " title=" . $tittleButton[$i] . " style='margin-left: 18px;width: 90px' class='btn btn-success btn-sm active'>" . $labelButton[$i] . "</a>";
-        } else {
-            echo "<a href=" . $pagesAccess[$i] . " title=" . $tittleButton[$i] . " style='margin-left: 18px;width: 90px' class='btn btn-warning btn-sm'>" . $labelButton[$i] . "</a>";
+    $indices = UpdateArray();
+
+    $pagesAllow = array();
+    $labelAllow = array();
+    $titleAllow = array();
+
+    //IDENTIFY WHICH ARE THE LABELS THAT USER ALLOW
+    for ($i = 0; $i <= count($pagesAccess); $i++) {
+        for ($j = 0; $j < count($indices); $j++) {
+            if ($i == $indices[$j]) {
+                // echo "<-$i ->igual a -> $indices[$j]";
+                array_push($pagesAllow, $pagesAccess[$i]);
+                array_push($labelAllow, $labelButton[$i]);
+                array_push($titleAllow, $tittleButton[$i]);
+            }
+        }
+
+    }
+
+    //////////////////////////////////
+
+    array_unshift($pagesAllow, $pagesAccess[0]);
+    array_unshift($labelAllow, $labelButton[0]);
+    array_unshift($titleAllow, $tittleButton[0]);
+    ///////////////////////////////
+
+    printButon($PAGE, $pagesAllow, $labelAllow, $titleAllow);
+
+}
+
+function UpdateArray()
+{
+    $pagesAccessF = array("dashboard.php", "inscritos.php", "certificacion.php", "validacion.php", "reportes.php");
+    $temporal     = getAllowPages($_SESSION['name']);
+    $typeAllow    = convert_object_to_array($temporal);
+    ///////////////////////////////////////
+    $indices = array();
+
+    foreach ($typeAllow as $key) {
+        //echo "->  " . $key;
+        if ($key != "") {
+            array_push($indices, $key);
+        }
+    }
+    return $indices;
+
+}
+
+function printButon($NOWPAGE, $PAGES, $LABELS, $TITLE)
+{
+    $url_actual = $NOWPAGE;
+
+    for ($i = 0; $i <= count($PAGES); $i++) {
+        if ($url_actual == $PAGES[$i]) {
+            echo "<a href=" . $PAGES[$i] . " title=" . $TITLE[$i] . " style='margin-left: 18px;width: 90px' class='btn btn-success btn-sm active'>" . $LABELS[$i] . "</a>";
+        } else if ($PAGES[$i] != "") {
+            echo "<a href=" . $PAGES[$i] . " title=" . $TITLE[$i] . " style='margin-left: 18px;width: 90px' class='btn btn-warning btn-sm'>" . $LABELS[$i] . "</a>";
         }
 
     }

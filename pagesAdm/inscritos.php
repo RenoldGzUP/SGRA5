@@ -64,13 +64,9 @@ if ($now > $_SESSION['expire']) {
              <div class="container col-lg-12" style="margin-top: -18px">
               <script src="../JS/Filtros.js"></script>
               <h2></h2>
-
-              <div class="panel panel-default " >
-                <div class="panel-heading"style="height: 70px">
-                <?php include '../modulos/filters.php';?>
-                 </div> <!--PANEL HEADING-->
-              </div>
-
+            <!--Panel de Filtros-->
+                     <?php include '../modulos/panelFilter.php';?>
+              <!---->
                 <div  class="col-lg-12">
                 <?php include '../modulos/selectInscrito.php';?>
                 </div>

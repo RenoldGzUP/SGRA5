@@ -3,12 +3,20 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 //USER CONTROL - ROL SELECTION
-if ($_SESSION['rol'] == 1) {
-    //saveLogs($_SESSION['name'],"Usuario inició Sesión con rol 1");
-    include 'headerUser.php';
-} else if ($_SESSION['rol'] == 2) {
-    //saveLogs($_SESSION['name'],"Usuario inició Sesión con rol 2");
-    include 'header.php';
-}
+switch ($_SESSION['rol']) {
+    case 1:
+        include 'headerUser.php';
+        break;
 
-//PERMISOS ESPECIALES
+    case 2:
+        include 'header.php';
+        break;
+    case 3:
+        //PERMISOS ESPECIALES
+        include 'headerSpecial.php';
+        break;
+
+    default:
+        echo "Ocurrio un error al identificar el tipo de usuario";
+        break;
+}

@@ -641,6 +641,17 @@ function insertNewRegister($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $PASSWORD)
     return true;
 }
 
+//USUARIO ESPECIAL
+function insertNewRegisterSpecial($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $PASSWORD, $ACCESS2, $ACCESS3, $ACCESS4, $ACCESS5)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "INSERT INTO usuarios(name,lastname,nombre_usuario,email,type,password,acceso2,acceso3,acceso4,acceso5) VALUES (?,?,?,?,?,?,?,?,?,?)");
+    $parametros = array("ssssssssss", &$NAME, &$LASTNAME, &$USERNAME, &$EMAIL, &$ROL, &$PASSWORD, &$ACCESS2, &$ACCESS3, &$ACCESS4, &$ACCESS5);
+    $data       = $query->getresults($parametros);
+    return true;
+}
+
+/////////////////////////////////////////
 function deleteRegister($USERNAME)
 {
     global $mysqli;
@@ -655,6 +666,20 @@ function getUser($USERNAME, $PASSWORD)
     global $mysqli;
     $query      = new Query($mysqli, "SELECT nombre_usuario,password,type FROM usuarios WHERE nombre_usuario=? AND password=?");
     $parametros = array('ss', &$USERNAME, &$PASSWORD);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];
+    } else {
+        return null;
+    }
+}
+
+function getAllowPages($USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT acceso2,acceso3,acceso4,acceso5 FROM usuarios WHERE nombre_usuario=?");
+    $parametros = array('s', &$USERNAME);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
