@@ -650,6 +650,40 @@ function insertNewRegisterSpecial($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $PA
     $data       = $query->getresults($parametros);
     return true;
 }
+function updateUserSpecialData($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $ACCESS2, $ACCESS3, $ACCESS4, $ACCESS5, $USER_ID)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "UPDATE usuarios SET name=?,lastname=?,nombre_usuario=?,email=?,type=?,acceso2=?, acceso3=?,acceso4=?,acceso5=? WHERE id_usuario=?");
+    $parametros = array('ssssssssss', &$NAME, &$LASTNAME, &$USERNAME, &$EMAIL, &$ROL, &$ACCESS2, &$ACCESS3, &$ACCESS4, &$ACCESS5, &$USER_ID);
+    $data       = $query->getresults($parametros);
+    return true;
+
+}
+
+function updateUserData($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $USER_ID)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "UPDATE usuarios SET name=?,lastname=?,nombre_usuario=?,email=?,type=? WHERE id_usuario=?");
+    $parametros = array('ssssss', &$NAME, &$LASTNAME, &$USERNAME, &$EMAIL, &$ROL, &$USER_ID);
+    $data       = $query->getresults($parametros);
+    return true;
+}
+
+/////////////////////////////////
+//GET ID
+function getUserID($USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT id_usuario FROM usuarios WHERE nombre_usuario=?");
+    $parametros = array('s', &$USERNAME);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];
+    } else {
+        return null;
+    }
+}
 
 /////////////////////////////////////////
 function deleteRegister($USERNAME)
@@ -689,6 +723,17 @@ function getAllowPages($USERNAME)
     }
 }
 
+function getTypeUser($USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT type FROM usuarios WHERE nombre_usuario=?");
+    $parametros = array('s', &$USERNAME);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+}
+
 function getAllDataUser($USERNAME)
 {
     global $mysqli;
@@ -700,13 +745,15 @@ function getAllDataUser($USERNAME)
         return $data[0];} else {return null;}
 }
 
-function updateDataUser()
+function getDataUserUniq($USERNAME)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre_usuario,password,type FROM usuarios WHERE nombre_usuario=?");
+    $query      = new Query($mysqli, "SELECT name,lastname,nombre_usuario,email,type,id_usuario FROM usuarios WHERE nombre_usuario=?");
     $parametros = array('s', &$USERNAME);
     $data       = $query->getresults($parametros);
 
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
 }
 
 function getTablesList()

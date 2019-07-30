@@ -149,6 +149,7 @@ if (isset($_REQUEST['idSearch'])) {
 
                                   <tbody id="studentTableEdit">
 
+
                                   </tbody>
 
                                 </table>

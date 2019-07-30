@@ -78,6 +78,25 @@
     </div>
   </div>
 </div>
+<!-- DELETE USER ROW-->
+<div class="modal fade" id="deleteUserModal" role="dialog" data-keyboard="false" data-backdrop="static" >
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <center><img src='../images/delete.png' width="200" height="200" /> </center>
+          <center><h5>¿Seguro desea borrar a <span id="userNameModal"></span>?</h5></center>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <center>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Volver</button>
+        <button id="deleteUserTaskBtt" type="button"  onclick="confirmDeleteUser()" class="btn btn-danger" data-dismiss="modal">Sí, Borrar</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- DONE DELETE ROW -->
 <div class="modal fade" id="doneDeleteModal" role="dialog" data-keyboard="false" data-backdrop="static" >
   <div class="modal-dialog modal-sm" >
@@ -89,7 +108,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <center><button type="button" class="btn btn-success" data-dismiss="modal">OK</button></center>
+        <center><button type="button" onClick="history.go(0)" class="btn btn-success" data-dismiss="modal">OK</button></center>
       </div>
     </div>
   </div>

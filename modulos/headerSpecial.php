@@ -79,7 +79,7 @@ function colorButton($PAGE)
     array_unshift($titleAllow, $tittleButton[0]);
     ///////////////////////////////
 
-    printButon($PAGE, $pagesAllow, $labelAllow, $titleAllow);
+    printButton($PAGE, $pagesAllow, $labelAllow, $titleAllow);
 
 }
 
@@ -97,11 +97,12 @@ function UpdateArray()
             array_push($indices, $key);
         }
     }
+    // var_dump($indices);
     return $indices;
 
 }
 
-function printButon($NOWPAGE, $PAGES, $LABELS, $TITLE)
+function printButton($NOWPAGE, $PAGES, $LABELS, $TITLE)
 {
     $url_actual = $NOWPAGE;
 

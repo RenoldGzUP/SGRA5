@@ -53,10 +53,16 @@ if ($now > $_SESSION['expire']) {
   } );
   $(document).ready(function() {
   $('#dataShow').DataTable({
-  "iDisplayLength": 15,
-  "aLengthMenu": [[15, 50, 100, -1], [15, 50, 100, "Todos"]]
+  "iDisplayLength": 25,
+
+  "aLengthMenu": [[25, 50, 100, -1], [25, 50, 100, "Todos"]]
   });
+
+
   } );
+
+
+
   </script>
 </head>
 <body>
@@ -75,7 +81,7 @@ if ($now > $_SESSION['expire']) {
               <div class="table-responsive" >
                 <table id ="datatesterShow" class="table table-bordered table-hover table-striped" >
                   <thead>
-                    <tr>
+                    <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
                       <th>#</th>
                       <th>Nombre</th>
                       <th>Apellido</th>
@@ -100,7 +106,7 @@ if ($logs) {
         echo "<td>" . $item->nombre_usuario . "</td>";
         echo "<td>" . $item->email . "</td>";
         if ($item->type == 1) {
-            echo "<td>Usuario Común </td>";
+            echo "<td>Usuario Regular </td>";
         } elseif ($item->type == 2) {
             echo "<td>Administrador </td>";
         } elseif ($item->type == 3) {
@@ -108,8 +114,8 @@ if ($logs) {
         } else {
             echo "<td>Sin determinar tipo</td>";
         }
-        echo '<td><button type="button" onClick="updateUser(\'' . $item->nombre_usuario . '\')"  class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span> </button>';
-        echo '<button type="button" onClick="sendata(\'' . $item->nombre_usuario . '\')" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span> </button>';
+        echo '<td><button type="button" onClick="editUser(\'' . $item->nombre_usuario . '\')"  class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span> </button>';
+        echo '<button type="button" onClick="openDeleteUserModal(\'' . $item->nombre_usuario . '\')" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span> </button>';
         echo '</td>';
         echo "</tr>";
     }
@@ -138,7 +144,7 @@ if ($logs) {
                       <div class="table-responsive">
                         <table id ="dataShow" class="table table-bordered table-hover table-striped" style="font-size: 14px;text-align:center;">
                           <thead>
-                            <tr >
+                            <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
                               <th>#</th>
                               <th>Usuario</th>
                               <th>Fecha</th>
@@ -173,21 +179,23 @@ if ($logs) {
                 </div>
               </div>
             </div>
-            <!-- Modal -->
-            <div class="modal fade" id="registerUser" role="dialog">
+            <!-- Modal AGREGAR USUARIOS-->
+            <div class="modal fade" id="registerUser" role="dialog" data-keyboard="false" data-backdrop="static">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" onClick="history.go(0)" VALUE="Refresh" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Registrar Nuevo Usuario</h4>
                   </div>
                   <div class="modal-body">
-                    <div class="container">
+
                       <div class="row">
-                        <div class="col-lg-9">
-                          <form action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+                        <div class="col-lg-12">
+                          <form  id="editUpdateUser" action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
                             <table class="table table-responsive" align="center">
-                              <tr>
+
+                              <tbody id="fillUserUpdate">
+                                <tr>
                                 <td><label class="control-label">Nombre</label></td>
                                 <td><input class="form-control" required  type="text" name="name" value="" /></td>
                               </tr>
@@ -201,8 +209,9 @@ if ($logs) {
                               </tr>
                               <tr>
                                 <td><label class="control-label">Email</label></td>
-                                <td><input class="form-control" type="email" name="email  required   name="email"  value="" /></td>
+                                <td><input class="form-control" type="email" required   name="email"  value="" /></td>
                               </tr>
+
                               <tr>
                                 <td><label class="control-label">Tipo de Usuario</label></td>
                                 <td> <center>
@@ -212,16 +221,18 @@ if ($logs) {
                                   </center>
                                 </td>
                               </tr>
+
                               <tr id="permitionUser"  style="display: none;">
                                 <td><label class="control-label">Seleccione Permisos</label></td>
                                 <td > <center id="checkPages">
-                                  <label  class="checkbox-inline"><input id="typePage2" name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()" value="1" >Inscritos</label>
-                                  <label  class="checkbox-inline"><input id="typePage3" name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="2" >Certificacion</label>
-                                  <label  class="checkbox-inline"><input id="typePage4" name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="3" >Validación</label>
-                                  <label  class="checkbox-inline"><input id="typePage5" name="chkPage[]" type="checkbox" onclick="return checkBoxOK()"  value="4" >Reportes</label>
+                                  <label  class="checkbox-inline"><input id='page1'  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()" value="1" >Inscritos</label>
+                                  <label  class="checkbox-inline"><input id='page2'  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="2" >Certificacion</label>
+                                  <label  class="checkbox-inline"><input id='page3'  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="3" >Validación</label>
+                                  <label  class="checkbox-inline"><input id='page4'  name="chkPage[]" type="checkbox" onclick="return checkBoxOK()"  value="4" >Reportes</label>
                                   </center>
                                 </td>
                               </tr>
+
                               <tr>
                                 <td><label class="control-label">Contraseña</label></td>
                                 <td><input  required  class="form-control" type="password"  autocomplete="off" name="password"  value="" /></td>
@@ -229,70 +240,21 @@ if ($logs) {
                               <tr>
                                 <td colspan="2"> <div class="pull-right"> <button type="submit" name="btnsave" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button></div>  </td>
                               </tr>
+
+                              </tbody>
+
                             </table>
                           </form>
                         </div>
                       </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
-              <!-- <!--  <!-- Modal EDITAR USUARIOS-->
-              <div class="modal fade" id="editUser" role="dialog">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Editar un registro </h4>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <d--.63
-                        iv class="col-lg-6">
-                        <form action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
-                          <table class="table table-bordered table-responsive" align="center">
-                            <?php
-$idUSER     = $_POST["idUser"];
-$dataResult = getAllDataUser($USERNAME);
-?>
-                            <tr>
-                              <td><label class="control-label">Nombre</label></td>
-                              <td><input class="form-control" type="text" name="name" value="<?php $dataResult->name?>" /></td>
-                            </tr>
-                            <tr>
-                              <td><label class="control-label">Apellido</label></td>
-                              <td><input class="form-control" type="text" name="lastname" value="" /></td>
-                            </tr>
-                            <tr>
-                              <td><label class="control-label">Nombre Usuario</label></td>
-                              <td><input class="form-control" type="text" name="username" placeholder="Formato [ nombre.apellido ]" value="" /></td>
-                            </tr>
-                            <tr>
-                              <td><label class="control-label">Email</label></td>
-                              <td><input class="form-control" type="text" name="email"  value="" /></td>
-                            </tr>
-                            <tr>
-                              <td><label class="control-label">Tipo de Usuario</label></td>
-                              <td><input class="form-control" type="text" name="rol"  value=""  placeholder="1 Común - 2 Administrador"/></td>
-                            </tr>
-                            <tr>
-                              <td><label class="control-label">Contraseña</label></td>
-                              <td><input class="form-control" type="password"  autocomplete="off" name="password"  value="" /></td>
-                            </tr>
-                            <tr>
-                              <td colspan="2"> <div class="pull-right"> <button type="submit" name="btnsave" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Actualizar</button></div>  </td>
-                            </tr>
-                          </table>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div><!--Container Table -->
+
+              </div><!--MODAL ADD USER-->
+
+  <?php include '../modulos/modals.php';?>
               </div><!-- /#wrapper -->
             </body>
           </html>
