@@ -107,6 +107,7 @@ foreach ($listasDB as $item) {
                   <th>
                     <center>
                     <button id="SearchBtt" type="button" onClick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                    <button type="MeasuringBtt" disabled  class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-plus"></span> Recalcular</button>
                     <button id="ValidateBtt" disabled type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
                     <button id="TalliesBtt" disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
                     </center>
