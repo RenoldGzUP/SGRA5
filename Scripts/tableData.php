@@ -68,11 +68,11 @@ if ($leng != 0) {
          <button type="button"  id="save_button' . $newData[$i]['n_ins'] . '"  style="display:none;" class="btn btn-success btn-xs"  onclick="save_row(\'' . $newData[$i]['n_ins'] . '\');"><span class="glyphicon glyphicon-floppy-saved"></span> </button>
          <button type="button" title="Eliminar" id="delete_button' . $newData[$i]['n_ins'] . '" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash" onclick="delete_row(\'' . $newData[$i]['n_ins'] . '\');"></span> </button>
 
-          					</td>';
+                            </td>';
 
         echo "</tr>";
         //COUNTER
-        $i = $i + 1;
+        $i++;
     }
 //WHILE END
 

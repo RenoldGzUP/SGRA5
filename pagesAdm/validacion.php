@@ -54,6 +54,10 @@ include '../modulos/userControl.php';
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <strong>Información Importante!</strong> Una vez iniciado el proceso de validación , se habilitarán los botones en orden.
       </div>
+      <div id="alertRecalcular" class="alert alert-warning alert-dismissible fade in" style="display:none;">
+        <a href="#" class="close"  data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Hay registros sin campos especificos?, el botón para Recalcular se ha habilitado!</strong> .
+      </div>
       <div id="alertValidar" class="alert alert-success alert-dismissible fade in" style="display:none;">
         <a href="#" class="close"  data-dismiss="alert" aria-label="close">&times;</a>
         <strong>Se han encontrado registros,el botón de Validar se ha habilitado!</strong> .
@@ -66,14 +70,15 @@ include '../modulos/userControl.php';
         <div class="panel panel-default">
           <div class="panel-heading">Validación de Resultados - Año Anterior </div>
           <div class="panel-body">
-            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal" >
-              <table class="table" style="font-size: 11px;">
-                <tr>
-                  <th>
-                    <center>
-                    Tabla Inscritos: <select  id="tablaInscritos"  name="tableIns" style="width:200px;margin-left:25px">
-                      <option  selected value="0">Seleccione Tabla</option>
-                      <?php
+            <div class="row">
+              <div class="col-sm-2">
+                <center>
+                <span>Tabla Inscritos: </span>
+                </center>
+                <center>
+                <select  id="tablaInscritos"  name="tableIns" style="margin-left:25px">
+                  <option  selected value="0">Seleccione Tabla</option>
+                  <?php
 $listasDB = getTablesList();
 foreach ($listasDB as $item) {
     if (preg_match("/inscritos2/", $item->Tables_in_sgra)) {
@@ -81,14 +86,17 @@ foreach ($listasDB as $item) {
     }
 }
 ?>
-                    </select>
-                    </center>
-                  </th>
-                  <th>
-                    <center>
-                    Tabla Inscritos: <select  id="tablaResultados"  name="tableRes" style="width:200px;margin-left:25px">
-                      <option selected value="0">Seleccione Tabla</option>
-                      <?php
+                </select>
+                </center>
+              </div>
+              <div class="col-sm-2" >
+                <center>
+                <span> Tabla Inscritos:</span>
+                </center>
+                <center>
+                <select  id="tablaResultados"  name="tableRes" style="margin-left:25px">
+                  <option selected value="0">Seleccione Tabla</option>
+                  <?php
 $listasDB = getTablesList();
 foreach ($listasDB as $item) {
     if (preg_match("/resultados2/", $item->Tables_in_sgra)) {
@@ -96,25 +104,32 @@ foreach ($listasDB as $item) {
     }
 }
 ?>
-                    </select>
-                    </center>
-                  </th>
-                  <th>
-                    <center>
-                    Núm.Inscrito: <input id="idSearch" type="text" name="FirstName" >
-                    </center>
-                  </th>
-                  <th>
-                    <center>
-                    <button id="SearchBtt" type="button" onClick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
-                    <button type="MeasuringBtt" disabled  class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-plus"></span> Recalcular</button>
-                    <button id="ValidateBtt" disabled type="button"  onClick="sendIDValidate()"  class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
-                    <button id="TalliesBtt" disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
-                    </center>
-                  </th>
-                </tr>
-              </table>
-            </form>
+                </select>
+                </center>
+              </div>
+              <div class="col-sm-4">
+                <center>
+                <span>Indique datos del estudiante:</span>
+                </center>
+                <form>
+                  <center>
+                  <input id="idName" type="text" name="FirstName" size="15" placeholder="Nombre" >
+                  <input id="idLastName"  type="text" name="LastName" size="15" placeholder="Apellido" >
+                  </center>
+                  <center>
+                  <input id="idCID"  type="text" name="Cedula" maxlength="15" size="15" placeholder="Cédula">
+                  <input id="idSearch" required type="text" name="Inscrito" disabled="" maxlength="8" size="15" placeholder="Núm.Inscrito">
+                </center>  </form>
+              </div>
+              <div class="col-sm-4">
+                <center>
+                <button id="SearchBtt" type="button" onclick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                <!-- <button type="button"  id="MeasuringBtt" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#measuringModal"><span class="glyphicon glyphicon-plus"></span> Recalcular</button> -->
+                <button id="ValidateBtt" disabled type="button" value="" onclick="sendIDValidate()"  class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
+                <button id="TalliesBtt" onclick="generateValidation()"   disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
+                </center>
+              </div>
+            </div>
           </div>
         </div>
         <div class="panel panel-default">
@@ -124,7 +139,7 @@ foreach ($listasDB as $item) {
               <table class="table table-bordered" style="font-size: 11px;">
                 <thead style="text-align:center;width: : 10px;background: #225ddb" >
                   <tr style="font-size: 11px;text-align:center; color: #ffffff">
-                    <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
+                    <th style="text-align: center;"> </th>
                     <th style="text-align: center;">#</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
@@ -140,7 +155,7 @@ foreach ($listasDB as $item) {
                     <th>Fac3A</th>
                     <th>Esc3A</th>
                     <th>Car3A</th>
-                    <th>Acciones</th>
+                    <!-- <th>Acciones</th> -->
                   </tr>
                 </thead>
                 <tbody id="taInscritosInscritos">
@@ -157,7 +172,7 @@ foreach ($listasDB as $item) {
               <table class="table table-bordered" style="font-size: 11px;">
                 <thead style="text-align:center;width: : 10px;background: #225ddb" >
                   <tr style="font-size: 11px;text-align:center; color: #ffffff">
-                    <th style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
+                    <th style="text-align: center;"></th>
                     <th style="text-align: center;">#</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
@@ -178,7 +193,7 @@ foreach ($listasDB as $item) {
                   </tr>
                 </thead>
                 <tbody id="taInscritosResultado">
-                  <tr ><td colspan="17" class="">No  se ha iniciado ninguna validación</td></tr>
+                  <tr ><td colspan="18" class="">No  se ha iniciado ninguna validación</td></tr>
                 </tbody>
               </table>
             </div>
@@ -189,7 +204,31 @@ foreach ($listasDB as $item) {
     <?php include '../modulos/modals.php';?>
   </div>
 </div>
-<!-- /#page-wrapper -->
+<!-- Modal REWCALCULAR-->
+<div class="modal fade" id="measuringModal" role="dialog" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog modal-lg" style="width: 600px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button"  class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Recalcular Indices</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <form  id="editUpdateUser" action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+              <table class="table table-responsive" align="center">
+                <tbody id="measuringTableEdit">
+
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!--MODAL ADD USER-->
+  <!-- /#page-wrapper -->
 </div>
 <!-- /#wrapper -->
 </body>

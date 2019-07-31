@@ -1,64 +1,58 @@
 <?php
-// Notificar todos los errores excepto E_NOTICE
-error_reporting(E_ALL ^ E_NOTICE);
 include_once '../Scripts/classConexionDB.php';
 openConnection();
 include_once '../Scripts/library_db_sql.php';
 session_start();
-include_once '../Scripts/validacionFlujoNewUser.php';
+// Notificar todos los errores excepto E_NOTICE
+error_reporting(E_ALL ^ E_NOTICE);
+//include_once '../Scripts/validacionFlujoNewUser.php';
 
+//GET DATA FROM JS
+$name            = strtoupper($_POST["idName"]);
+$lastName        = strtoupper($_POST["idLastName"]);
+$cedula          = $_POST["idCID"];
 $idSearch        = $_POST["idInscrito"];
 $tableInscritos  = $_POST["table1"];
 $tableResultados = $_POST["table2"];
 
-$minusYear = date("Y") - 1;
-//Colocar el nombre de la tabla correcta usando la varible
-//VALIDACION DE LAS TABLAS
-if (preg_match("/2017/", $tableInscritos) && preg_match("/2017/", $tableResultados)) {
-    $vInscrito  = validationLastYearInscrito($idSearch);
-    $vResultado = validationLastYearResultado($idSearch);
-    $exist      = validationExist($idSearch);
-    // SI EL REGISTRO EXISTE EN LA TABLA DE VALIDACIONES
-    if (!is_null($exist)) {
-        echo 1;} else if (!is_null($vInscrito) && !is_null($vResultado)) {
-        echo '<tr style="font-size: 11px;text-align:center">';
-        echo '<td style="text-align: center;"><input type="checkbox" class="checkthis" value=' . $vResultado->n_ins . '></td>';
-        echo "<td></td>";
-        echo "<td>" . $vResultado->nombre . "</td>";
-        echo "<td>" . $vResultado->apellido . "</td>";
-        echo "<td>" . $vResultado->cedula . "</td>";
-        echo "<td>" . $vResultado->n_ins . "</td>";
-        echo "<td>" . $vResultado->sede . "</td>";
-        echo "<td>" . $vResultado->fac_ia . "</td>";
-        echo "<td>" . $vResultado->esc_ia . "</td>";
-        echo "<td>" . $vResultado->car_ia . "</td>";
-        echo "<td>" . $vResultado->fac_iia . "</td>";
-        echo "<td>" . $vResultado->esc_iia . "</td>";
-        echo "<td>" . $vResultado->car_iia . "</td>";
-        echo "<td>" . $vResultado->fac_iiia . "</td>";
-        echo "<td>" . $vResultado->esc_iiia . "</td>";
-        echo "<td>" . $vResultado->car_iiia . "</td>";
-        echo '<td><a  id="edit" href="#" class="btn btn-info btn-xs" ><span class="glyphicon glyphicon-pencil"></span> </a>
-        <a  id="remove" href="#" class="btn btn-success btn-xs" data-toggle="modal" data-target="#save"><span class="glyphicon glyphicon-floppy-saved" ></span> </a>
+//VALIDATE DATA TO DO THE QUERY
 
-        <a href="#" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span> </a>
-        </td>';
-        echo "</tr>";
-        //PASAR EL ID DE BUSQEUDAD A LA FUNCION QUE BUSCARA OTRa vez al usuario y pasara todos los datos de consulta
-        //al
-        //insertValidateStudentInscritos($idSearch);
-        //insertValidateStudentResultados($idSearch);
+if (compare_table($tableInscritos, $tableResultados)) {
+///SI LA CEDULA NO ESTA VACIA
+    if (isset($cedula)) {
+        //BUSQUEDA DE RESULTADOS X CEDULA
+        // validate_user_exist_CID($cedula);
+        if (validate_user_exist_CID($cedula, $name, $lastName) == 0) {
+            // echo "EXISTE DATA PARA ESTEE USUARIO";
+            echo 0;
+        } else if (validate_user_exist_CID($cedula, $name, $lastName) == 3) {
+            //echo "USUARIO IMCPMPLETO";
+            echo 3;
+
+        } else {
+            echo 2;
+        }
+
+    } else if (isset($idSearch)) {
+        //BUSQUEDA DE RESULTADOS X N_INSCRITOS
+        if (validate_user_exist_Ninscrito($idSearch)) {
+            echo 3;
+        } else {
+            //echo "NO existe usuario en las bases de datos";
+            echo 3;
+        }
+
     } else {
-
+        //echo "Hay campos sin especificar para la busqueda";
         echo 2;
     }
-
 } else {
-    //SI LOS DATOS DE LAS TABLAS ESTAN CORRECTOS
+    //echo "Usuario no INDICO Las tablas correspondiente al año anterior";
     echo 2;
-    //echo '<tr ><td colspan="17" class="">No hay congruencia con las tablas y el año de Validación</td></tr>';
+
 }
 
+//////////////////////////////////////////////////////////////////
 //FUNCIONES
 function utf8_converter($array)
 {
@@ -82,4 +76,74 @@ function cvf_convert_object_to_array($data)
     } else {
         return $data;
     }
+}
+
+//COMPROBAR TABLAS
+function compare_table($TABLA_A, $TABLA_B)
+{
+    //TABLA A INSCRITPOS | TABLA B RESULTADOS
+    $result_Tabla = "";
+//VALIDACION DE LAS TABLAS
+    if (preg_match("/2017/", $TABLA_A) && preg_match("/2017/", $TABLA_B)) {
+        $result_Tabla = true;
+    } else {
+        $result_Tabla = false;
+    }
+
+    return $result_Tabla;
+}
+
+function validate_user_exist_CID($CID, $NAME, $LASTNAME)
+{
+
+    $State_validation_byCID = "";
+    $CIDExiste              = validationCIDExist($cedula);
+    //SI SE ENCEUNTRAN DATOS  ENTONCES SI EXISTE UNA VALIADACION ANTERIOR
+    if (!is_null($CIDExiste)) {
+
+        echo "YA EXISTE UNA VALIDACION CON ESTA CEDULA";
+    } else {
+        //NO EXISTE UNA VALIDCION ANTERIOR, se PUEDE CONTINUAR
+        //VERIFICAR QUE EL USUARIO EXISTE EN LAS BASE DE DATOS
+        $DataInscritosCID  = getUserCIDFromInscritos($NAME, $LASTNAME);
+        $DataResultadosCID = getUserCIDFromResultados($NAME, $LASTNAME);
+
+        if (!is_null($DataInscritosCID) && !is_null($DataResultadosCID)) {
+            $State_validation_byCID = 0;
+
+        } else if (is_null($DataInscritosCID) || is_null($DataResultadosCID)) {
+
+            // echo "El usuario existe en una de las dos TB de datos ";
+            $State_validation_byCID = 3;
+
+        } else {
+            $State_validation_byCID = 2;
+        }
+
+    }
+
+    return $State_validation_byCID;
+
+}
+
+function validate_user_exist_Ninscrito($N_INSCRITO, $NAME, $LASTNAME)
+{
+    $State_validation_byNInscrito = "";
+
+    $Validation = validationExist($N_INSCRITO);
+    //SI SE ENCEUNTRAN DATOS  ENTONCES SI EXISTE UNA VALIADACION ANTERIOR
+    if (!is_null($Validation)) {
+        // echo "YA EXISTE UNA VALIDACION CON ESTE N_INSCRITO";
+    } else {
+        $vInscrito  = validationLastYearInscrito($idSearch);
+        $vResultado = validationLastYearResultado($idSearch);
+        if (!is_null($vInscrito) && !is_null($vResultado)) {
+            $State_validation_byNInscrito = true;
+
+        } else {
+            $State_validation_byNInscrito = false;
+        }
+
+    }
+    return $State_validation_byNInscrito;
 }

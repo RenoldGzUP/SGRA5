@@ -169,7 +169,7 @@
         <div class="row">
           <center><img src='../images/wrongFound.png' width="150" height=150" /> </center>
           <center><h4>Se encontro un registro incompleto </h4></center>
-          <center><h5>sólo existe  data en una base de datos</h5></center>
+          <center><h5>sólo existe  data en una tabla de datos</h5></center>
         </div>
       </div>
       <div class="modal-footer">

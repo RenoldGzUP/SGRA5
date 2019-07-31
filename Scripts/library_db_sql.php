@@ -286,12 +286,14 @@ function showDataResultado($START, $RECORD)
 function showDataResultadoW()
 {
     // $record_page = 10;
-    $page = '';
+    $page     = '';
+    $NAME     = "JOSE";
+    $LASTNAME = "PINTO";
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM resultados2017 where n_ins is not null ");
-    $parametros = array();
-    $data       = $query->getresults();
+     FROM resultados2017 where nombre = ? AND apellido = ? LIMIT 30 ");
+    $parametros = array("ss", &$NAME, &$LASTNAME);
+    $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
         return $data;
@@ -344,7 +346,7 @@ function getDataReportV2($SEDE, $AREAP)
         $actSEDE = '0' . $SEDE;
         global $mysqli;
         $query = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,facultad, ps, gatb,pca,indice,verbal,numer
-     FROM resultados2017 where WHERE ( sede = ? AND areap = ?) LIMIT 10");
+     FROM resultados2017 where ( sede = ? AND areap = ?) LIMIT 10");
         $parametros = array('ss', &$actSEDE, &$AREAP);
         $data       = $query->getresults($parametros);
 
@@ -527,9 +529,7 @@ function getFacultadesComun($idAreas)
 function getDataIndividual($numeroInscrito)
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT n_ins, CONCAT(nombre,' ',apellido) as  nombre_completo,
-        CONCAT(provincia,'-',tomo,'-',folio)AS cedula ,nsede, area_i,
-        nfacultad, ncarrera, col_proc, nbachiller,indice, ps ,gatb, pca ,
+    $query = new Query($mysqli, "SELECT
         SUM(cl_def+cl_propb) as valor_lexico,
         SUM(lect1+lect2) as valor_lectura,
         SUM(r_com_comp+rel_o+r_plan) as valor_redaccion,
@@ -807,14 +807,93 @@ function validationLastYearResultado($NUMINSCRITO)
 function validationExist($NUMINSCRITO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT inscritoanterior,codigovalidacion FROM validaciones WHERE inscritoanterior=?");
+    $Query      = new Query($mysqli, "SELECT  inscritoanterior,codigovalidacion FROM validaciones WHERE inscritoanterior=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data       = $Query->getresults($parametros);
 
     if (isset($data[0])) {
         return $data[0];} else {return null;}
 }
+////////////////////////////////////////////////////
+//POR CID INSCRITOS
 
+function getInscritos()
+{
+    global $mysqli;
+    $Query      = new Query($mysqli, "SELECT name,lastname,nombre_usuario,email,type from usuarios");
+    $parametros = array();
+    $data       = $Query->getresults();
+
+    if (isset($data[0])) {
+        return $data[0];
+    } else {
+        return null;
+    }
+
+}
+
+//POR CID en RESULTADOS
+
+function showDataVAI($NAME, $LASTNAME)
+{
+    // $record_page = 10;
+
+    $NAMEA     = $NAME;
+    $LASTNAMEB = $LASTNAME;
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM inscritos2017 where nombre = ? AND apellido = ? ");
+    $parametros = array("ss", &$NAMEA, &$LASTNAMEB);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function showDataVAR($NAME, $LASTNAME)
+{
+    $NAMEA     = $NAME;
+    $LASTNAMEB = $LASTNAME;
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM resultados2017 where nombre = ? AND apellido = ? ");
+    $parametros = array("ss", &$NAMEA, &$LASTNAMEB);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function getTestUSER($NUMINSCRITO)
+{
+    global $mysqli;
+    $Query      = new Query($mysqli, "SELECT ps,pca,pcg,gatb FROM resultados2017 WHERE n_ins=?");
+    $parametros = array('s', &$NUMINSCRITO);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
+}
+
+function validationCIDExist($CID)
+{
+    global $mysqli;
+    $Query      = new Query($mysqli, "SELECT * FROM validaciones WHERE cedula=?");
+    $parametros = array('s', &$CID);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+}
+
+///////////////////////
 function checkRegisterExistInscritos($NUMINSCRITO)
 {
     global $mysqli;
@@ -1100,7 +1179,7 @@ function convert_object_to_array($data)
 function GetPersonalData($ID_INSCRITO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT CONCAT(nombre,' ',apellido) as nombrecompleto ,sede,facultad,col_proc, CONCAT(provincia,'-',tomo,'-',folio)AS cedula, area1,carrera,nbachiller from resultados2017 WHERE n_ins = '?'");
+    $query      = new Query($mysqli, "SELECT CONCAT(nombre,' ',apellido) as nombrecompleto ,sede,facultad,col_proc, CONCAT(provincia,'-',tomo,'-',folio)AS cedula, areap,carrera,nbachiller from resultados2017 WHERE n_ins = ? ");
     $parametros = array("i", &$ID_INSCRITO);
     $data       = $query->getresults($parametros);
 
@@ -1115,10 +1194,9 @@ function GetPersonalData($ID_INSCRITO)
 function GetAverageData($ID_INSCRITO)
 {
     global $mysqli;
-    echo "hola";
-    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
+    $query      = new Query($mysqli, "SELECT indice,gatb,ps,pca,pcg from resultados2017 WHERE n_ins = ? ");
     $parametros = array("i", &$ID_INSCRITO);
-    $data       = $query->getresults();
+    $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
         return $data;
@@ -1131,7 +1209,6 @@ function GetAverageData($ID_INSCRITO)
 function GetPCAData($ID_INSCRITO)
 {
     global $mysqli;
-    echo "hola";
     $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
     $parametros = array("i", &$ID_INSCRITO);
     $data       = $query->getresults();
@@ -1147,8 +1224,7 @@ function GetPCAData($ID_INSCRITO)
 function GetAreaData($ID_INSCRITO)
 {
     global $mysqli;
-    echo "hola";
-    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
+    $query      = new Query($mysqli, "SELECT areap from resultados2017 WHERE n_ins = '?'");
     $parametros = array("i", &$ID_INSCRITO);
     $data       = $query->getresults();
 
@@ -1160,10 +1236,56 @@ function GetAreaData($ID_INSCRITO)
 
 }
 
+///////////////////////////////////////////
+//labels
+function GetAreaLabels($AREA)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre_area from area WHERE id_area = ?");
+    $parametros = array("i", &$AREA);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function GetSedeLabels($SEDE)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre_sede from sedes WHERE codigo_sede = ?");
+    $parametros = array("i", &$SEDE);
+    $data       = $query->getresults($parametros);
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+function GetFacultadLabels($FACULTAD)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre_facultad from facultades WHERE codigo_facultad = ?");
+    $parametros = array("i", &$FACULTAD);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+/////////////////////////////////////////////////////////////////
 function GetPCGData($ID_INSCRITO)
 {
     global $mysqli;
-    echo "hola";
+
     $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from facultades WHERE codigo_relacion = '?'");
     $parametros = array("i", &$ID_INSCRITO);
     $data       = $query->getresults();
@@ -1175,4 +1297,5 @@ function GetPCGData($ID_INSCRITO)
     }
 
 }
+
 ////////////////////////////////////////////////////////

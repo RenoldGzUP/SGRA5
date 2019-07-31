@@ -235,7 +235,7 @@ if ($logs) {
 
                               <tr>
                                 <td><label class="control-label">Contraseña</label></td>
-                                <td><input  required  class="form-control" type="password"  autocomplete="off" name="password"  value="" /></td>
+                                <td><input  required  class="form-control" maxlength="8" size="8" type="password"  autocomplete="off" name="password"  value="" /></td>
                               </tr>
                               <tr>
                                 <td colspan="2"> <div class="pull-right"> <button type="submit" name="btnsave" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button></div>  </td>
