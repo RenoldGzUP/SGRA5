@@ -119,65 +119,6 @@ if (isset($_REQUEST['idSearch'])) {
 
 </div>
 
-
-   <!-- Modal Certificaciones Individuales -->
-   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Administrador de Certificaciones</h4>
-        </div>
-        <div class="modal-body">
-         <div class="panel-group">
-
-    <!--       <div class="panel panel-primary">
-            <div class="panel-heading">Modelo de certificaciones</div>
-            <div class="panel-body">
-
-              <form></form>
-
-            <select name="Area" id="lista_areas_comunes" onChange='obtenerFacultadesComun(this.value)'>
-             <option selected value="0"> Área </option>
-             <?php
-$listaSedes = getAreasComun();
-foreach ($listaSedes as $item) {
-    echo "<option value='$item->codigo_area'>" . $item->codigo_area . "-" . $item->nombre_area . "</option> ";
-}
-?>
-           </select>
-          <select name="FacultadModal" id="lista_facultades_comunes">
-             <option selected value="">Facultad</option>
-           </select>
-
-           <button type="button" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-list-alt"></span> Aplicar</button>
-
-         </div>
-       </div> -->
-
-
-       <div class="panel panel-primary">
-        <div class="panel-heading">Previsualizacion</div>
-        <div class="panel-body">
-
-        </div>
-      </div>
-
-    </div>
-    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-arrow-down"></span> PDF</button>
-    <button type="button" class="btn btn-default "><span class="glyphicon glyphicon-arrow-down"></span> Word</button>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-  </div>
-</div>
-
-</div>
-</div>  <!-- /#FIN MODAL Indivual de certificaciones-->
-
-
 <!-- /.modal- para eliminar registro     -->
   <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
     <div class="modal-dialog">

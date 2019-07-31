@@ -48,7 +48,7 @@ class PDF extends FPDF
         $this->Cell(0, 10, 'Fecha : ' . $datetime, 0, 0, 'L');
     }
 
-    public function printPCG($INSCRITO, $ARRAYTAGS)
+    public function printPCG($INSCRITO, $ARRAYTAGS, $MAX, $MIN)
     {
         $i            = 0;
         $pdf          = new PDF();

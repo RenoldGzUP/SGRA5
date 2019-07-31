@@ -117,6 +117,7 @@ function startF() {
 
 function sendID(id) {
     var idInscrito = id;
+    //console.log($idInscrito);
     $("#processModal").modal();
     $.ajax({
         data: {
