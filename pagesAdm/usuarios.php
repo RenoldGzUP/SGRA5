@@ -99,7 +99,7 @@ $record = 0;
 if ($logs) {
     foreach ($logs as $item) {
         $record += 1;
-        echo '<tr style="font-size: 12px;" >';
+        echo '<tr style="font-size: 12px;text-align:center;">';
         echo " <td>" . $record . "</td>";
         echo "<td>" . $item->name . "</td>";
         echo "<td>" . $item->lastname . "</td>";
