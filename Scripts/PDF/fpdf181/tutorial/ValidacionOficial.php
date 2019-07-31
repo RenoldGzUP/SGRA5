@@ -306,7 +306,7 @@ class PDF extends FPDF
     public function PrintPCG($ARRAYTAGS, $ID_INSCRITO, $MAXIMOS, $MINIMOS)
     {
         //DATA
-        // $PCGData = GetPCGData();
+        //$PCGData = GetPCGData();
 
         //TABLA
         $i            = 0;
@@ -410,72 +410,103 @@ class PDF extends FPDF
     }
 
 }
-
+/////////////////////////////////////////////////////////////
+//TABLA D
+$pcgAdmonPublicaTAGS = array('Contabilidad', 'Ciencias Politicas', 'Administración Pública', 'Matemática', 'Economía', 'PCG TOTAL');
+$pcgCientificaTAGS   = array('Biología', 'Física', 'Química', 'Matemática', 'PCG TOTAL');
+$pcgDerechoTAGS      = array('Filosofía', 'Historia', 'Geografía', 'Español', 'Gobierno', 'PCG TOTAL');
+//$pdf->SetFont('Arial', 'B', 7);
+//MINIMOS Y MAXIMOS
+//MINIMOS
+//ADMMINISTRACION PUBLICA
+$pcgMaxAdmon   = array(10, 15, 25, 25, 25, 100);
+$pcgMinixAdmon = array(7, 11, 17, 17, 17, 68);
+//CIENTIFICA
+$pcgMaxCientifica   = array(25, 25, 25, 25, 100);
+$pcgMinixCientifica = array(17, 17, 17, 17, 68);
+//DERECHO
+$pcgMaxDerecho   = array(20, 15, 25, 20, 15, 100);
+$pcgMinixDerecho = array(15, 11, 18, 15, 11, 70);
+////////////////////////////////////////////////////////////////////////////////////////
+//DECLARAR OBJETO DE CALSE PDF
 // Creación del objeto de la clase heredada
 $pdf = new PDF();
 $j   = 0;
 
+//////////////////////////////////////////////////////////////////////////
 //Get Data from JS
-//Convert the POST info to array using explode
 $numInscrito = $_POST["idInscrito"];
-//Files inside Array
-//var_dump($numInscrito);
-$countInscritos = count($numInscrito);
-
+//////////////////////////////////////////////////////////////////////
+//GENERATE PDF DOCUMENT
 //while ($j < $countInscritos) {
 $pdf->AddPage('', 'Letter');
 $pdf->PersonalData($numInscrito);
 $pdf->Averages($numInscrito);
 $pdf->PrintPCA($numInscrito);
-validate_PCG($numInscrito);
-//$pdf->MessaguePCG($numInscrito);
-//$pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito);
-$pdf->SelloDGA();
-//    $j++;
-//}
+////////////////////////////////////////////////////////////
+$Area     = GetAreaData($numInscrito);
+$typeArea = convert_object_to_array($Area);
 
-date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
-$datetime = date("d-m-Y_h_i_s_A");
-$pdf->Output('../../../../modulos/Certificaciones_' . $datetime . '.pdf', 'F');
-echo "../modulos/Certificaciones_" . $datetime . ".pdf";
+if ($typeArea[0]["areap"] == 4) {
+    $pdf->MessaguePCG();
+    $pdf->printPCG($pcgCientificaTAGS, $numInscrito, $pcgMaxCientifica, $pcgMinixCientifica);
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-function validate_PCG($N_INSCRITO)
-{
-    //TABLA D
-    $pcgAdmonPublicaTAGS = array('Contabilidad', 'Ciencias Politicas', 'Administración Pública', 'Matemática', 'Economía', 'PCG TOTAL');
-    $pcgCientificaTAGS   = array('Biología', 'Física', 'Química', 'Matemática', 'PCG TOTAL');
-    $pcgDerechoTAGS      = array('Filosofía', 'Historia', 'Geografía', 'Español', 'Gobierno', 'PCG TOTAL');
-//$pdf->SetFont('Arial', 'B', 7);
-    //MINIMOS Y MAXIMOS
-    //MINIMOS
-    //ADMMINISTRACION PUBLICA
-    $pcgMaxAdmon   = array(10, 15, 25, 25, 25, 100);
-    $pcgMinixAdmon = array(7, 11, 17, 17, 17, 68);
-//CIENTIFICA
-    $pcgMaxCientifica   = array(25, 25, 25, 25, 100);
-    $pcgMinixCientifica = array(17, 17, 17, 17, 68);
-//DERECHO
-    $pcgMaxDerecho   = array(20, 15, 25, 20, 15, 100);
-    $pcgMinixDerecho = array(15, 11, 18, 15, 11, 70);
-////////////////////////////////////////////////////////////////////////////////////////
-    $Area     = GetAreaData($N_INSCRITO);
-    $typeArea = convert_object_to_array($Area);
-    switch ($typeArea[0]["areap"]) {
-        case 4:
-            $pdf->MessaguePCG($N_INSCRITO);
-            $pdf->printPCG($pcgCientificaTAGS, $N_INSCRITO, $pcgMaxCientifica, $pcgMinixCientifica);
-            break;
-        case 6:
-            $pdf->MessaguePCG($N_INSCRITO);
-            $pdf->printPCG($pcgAdmonPublicaTAGS, $N_INSCRITO, $pcgMaxAdmon, $pcgMinixAdmon);
-            break;
-        case 7:
-            $pdf->MessaguePCG($N_INSCRITO);
-            $pdf->printPCG($pcgDerechoTAGS, $N_INSCRITO, $pcgMaxDerecho, $pcgMinixDerecho);
-            break;
-        default:
-            break;
-    }
-
+} else if ($typeArea[0]["areap"] == 6) {
+    $pdf->MessaguePCG();
+    $pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito, $pcgMaxAdmon, $pcgMinixAdmon);
+} else if ($typeArea[0]["areap"] == 7) {
+    $pdf->MessaguePCG();
+    $pdf->printPCG($pcgDerechoTAGS, $numInscrito, $pcgMaxDerecho, $pcgMinixDerecho);
 }
+///////////////////////////////////////////////////////////
+$pdf->SelloDGA();
+$j++;
+}
+/////////////////////////////////////////////////////////////////////////
+
+    date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+    $datetime = date("d-m-Y_h_i_s_A");
+    $pdf->Output('../../../../modulos/Certificaciones_' . $datetime . '.pdf', 'F');
+    echo "../modulos/Certificaciones_" . $datetime . ".pdf";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //FUNCTIONDEPRECATE
+    function validatedd_PCG($N_INSCRITO)
+{
+        //TABLA D
+        $pcgAdmonPublicaTAGS = array('Contabilidad', 'Ciencias Politicas', 'Administración Pública', 'Matemática', 'Economía', 'PCG TOTAL');
+        $pcgCientificaTAGS   = array('Biología', 'Física', 'Química', 'Matemática', 'PCG TOTAL');
+        $pcgDerechoTAGS      = array('Filosofía', 'Historia', 'Geografía', 'Español', 'Gobierno', 'PCG TOTAL');
+//$pdf->SetFont('Arial', 'B', 7);
+        //MINIMOS Y MAXIMOS
+        //MINIMOS
+        //ADMMINISTRACION PUBLICA
+        $pcgMaxAdmon   = array(10, 15, 25, 25, 25, 100);
+        $pcgMinixAdmon = array(7, 11, 17, 17, 17, 68);
+//CIENTIFICA
+        $pcgMaxCientifica   = array(25, 25, 25, 25, 100);
+        $pcgMinixCientifica = array(17, 17, 17, 17, 68);
+//DERECHO
+        $pcgMaxDerecho   = array(20, 15, 25, 20, 15, 100);
+        $pcgMinixDerecho = array(15, 11, 18, 15, 11, 70);
+////////////////////////////////////////////////////////////////////////////////////////
+
+        $Area     = GetAreaData($N_INSCRITO);
+        $typeArea = convert_object_to_array($Area);
+        switch ($typeArea[0]["areap"]) {
+            case 4:
+                $pdf->MessaguePCG();
+                $pdf->printPCG($pcgCientificaTAGS, $N_INSCRITO, $pcgMaxCientifica, $pcgMinixCientifica);
+                break;
+            case 6:
+                $pdf->MessaguePCG();
+                $pdf->printPCG($pcgAdmonPublicaTAGS, $N_INSCRITO, $pcgMaxAdmon, $pcgMinixAdmon);
+                break;
+            case 7:
+                $pdf->MessaguePCG();
+                $pdf->printPCG($pcgDerechoTAGS, $N_INSCRITO, $pcgMaxDerecho, $pcgMinixDerecho);
+                break;
+            default:
+                break;
+        }
+    }
