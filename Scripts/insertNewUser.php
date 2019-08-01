@@ -33,7 +33,7 @@ switch ($CHECKROL[0]) {
         $DATARRAY = addExtraFill($CHECKPAGE);
         // var_dump($DATARRAY);
         saveLogs($_SESSION['name'], "Administrador registró a " . $NAME . " " . $LASTNAME . " como usuario especial");
-        // $resultSQL = insertNewRegisterSpecial($NAME, $LASTNAME, $USERNAME, $EMAIL, '3', $Encrypted, $DATARRAY[0], $DATARRAY[1], $DATARRAY[2], $DATARRAY[3]);
+        $resultSQL = insertNewRegisterSpecial($NAME, $LASTNAME, $USERNAME, $EMAIL, '3', $Encrypted, $DATARRAY[0], $DATARRAY[1], $DATARRAY[2], $DATARRAY[3]);
         break;
 
     default:

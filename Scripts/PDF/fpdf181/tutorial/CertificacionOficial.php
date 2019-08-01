@@ -110,7 +110,7 @@ class PDF extends FPDF
         //TABLA B
         $i = 0;
 
-        $averageLabels = array('INDICE PREDICTIVO', 'PRUEBA PSICOLÓGICA',
+        $averageLabels = array('ÍNDICE PREDICTIVO', 'PRUEBA PSICOLÓGICA',
             'PROMEDIO DE SECUNDARIA', 'PRUEBA DE CAPACIDADES ACADÉMICAS (PCA):', 'PRUEBA DE CONOCIMIENTOS GENERALES (PCG):');
         $dataIndice = array($averageData[0]["indice"], $averageData[0]["gatb"], $averageData[0]["ps"], $averageData[0]["pca"], $averageData[0]["pcg"]);
 

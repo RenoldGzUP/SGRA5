@@ -480,6 +480,7 @@ printRow($labelTExpIns, $labelWidthIns, "_i");
                         <ul class="nav nav-tabs">
                           <li class="active"><a data-toggle="tab" href="#home">Indice</a></li>
                           <li><a data-toggle="tab" href="#menu1">Resultados</a></li>
+                          <li><a data-toggle="tab" href="#menu2">Tabla Resultados</a></li>
                         </ul>
                         <div class="tab-content">
                           <div id="home" class="tab-pane fade in active">
@@ -505,6 +506,7 @@ printRow($labelTExpI, $labelWidthI, "_ind");
                             </div>
 
                           </div>
+
                           <div id="menu1" class="tab-pane fade">
                             <table class="table table-bordered">
                               <thead>
@@ -527,8 +529,20 @@ printRow($labelTExpR, $labelWidth, "_res");
                             </div>
                           </div>
 
+                          <div id="menu2" class="tab-pane fade">
+                            <div class="pull-right" style="margin-top: 25px">
+                              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(3)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
+
+                          </div>
+
+
+
+
+
 
                         </div>
+
+
                       </div>
                     </div>
                   </div>
