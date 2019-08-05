@@ -6,6 +6,7 @@
 }
 th {
     text-align: center;
+  
 }
 .align {
     text-align: left;
@@ -14,11 +15,11 @@ table {
     table-layout: fixed;
 }
 td {
-    width: 33%;
+    width: 25%;
 }
 tbody {
     display: block;
-    height: 400px;
+    height: 500px;
     overflow: auto;
 }
 thead, tbody tr {
@@ -27,7 +28,7 @@ thead, tbody tr {
     table-layout: fixed;
 }
 thead {
-    width: calc( 100% - 1em)
+    width: calc( 99.8% - 1em)
 }
 .modal {
     text-align: center;
@@ -46,11 +47,42 @@ thead {
     vertical-align: middle;
 }
 span {
-    font-size: 15px;
+    font-size: 14px;
 }
 input, select, textarea {
-    font-size: 75%;
+    font-size: 18px;
 }
 .table-hover tbody tr:hover td {
     background-color: #A0E1EE;
+}
+
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+.checkboxRow{
+    width: 50px;
+}
+
+.cidRow{
+    width: 110px;
+}
+
+.integerRow{
+    width: 75px;
+}
+
+.longIntegerRow{
+    width: 90px;
+}
+
+.actionRow{
+     width: 80px;
+}
+
+.textRow{
+    width: 160px;
 }

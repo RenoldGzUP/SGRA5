@@ -71,4 +71,4 @@ function addExtraFill($ARRAY)
 }
 
 ////REFRESH
-//header("Location:../pagesAdm/usuarios.php");
+header("Location:../pagesAdm/usuarios.php");

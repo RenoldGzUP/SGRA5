@@ -431,7 +431,9 @@ function showDataInscrito($START, $RECORD)
 }
 
 //Tabla con Filtros definidos
-function showDataFilterInscrito($START, $RECORD, $SEDE)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//FILTER BY SEDE
+function filterByS($START, $RECORD, $SEDE)
 {
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
@@ -446,6 +448,109 @@ function showDataFilterInscrito($START, $RECORD, $SEDE)
     }
 
 }
+
+//FILTER SEDE AREA
+function filterByS_A($START, $RECORD, $SEDE, $AREA)
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM inscritos2017 where sede = ? AND area_i = ? LIMIT " . $START . ", " . $RECORD);
+    $parametros = array("ii", &$SEDE, &$AREA);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+//FILTER SEDE AREA FACULTAD
+function filterByS_A_F($START, $RECORD, $SEDE, $AREA, $FACULTAD)
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? LIMIT " . $START . ", " . $RECORD);
+    $parametros = array("iii", &$SEDE, &$AREA, &$FACULTAD);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+//FILTER SEDE AREA FACULTAD ESCUELA
+function filterBy_S_A_F_E($START, $RECORD, $SEDE, $AREA, $FACULTAD, $ESCUELA)
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? LIMIT " . $START . ", " . $RECORD);
+    $parametros = array("iiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+//FILTER SEDE AREA FACULTAD ESCUELA CARRERA
+function filterBy_S_A_F_E_C($START, $RECORD, $SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+{
+    global $mysqli;
+    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? LIMIT " . $START . ", " . $RECORD);
+    $parametros = array("iiiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//COUNT BY SEDE
+function showDataBySede($SEDE)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre,apellido,sede FROM inscritos2017 where sede = ?");
+    $parametros = array("i", &$SEDE);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
+//COUNT BY SEDE & area
+function showDataBySedeArea($SEDE, $AREA)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre,apellido,sede,area_i FROM inscritos2017 where sede = ? and area_i = ? ");
+    $parametros = array("ii", &$SEDE, &$AREA);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
 //without limit
 function showDataInscritoW()
 {

@@ -551,13 +551,14 @@ printRow($labelTExpR, $labelWidth, "_res");
                   </div> -->
                 </div>
               </div>
-              </div> <!-- Fin Modal -->
-
-
- <?php include '../modulos/modals.php';?>
+              </div> <!-- Fin Modal TB-->
 
             </div>
-            <!-- /#page-wrapper -->
+
+            <!--MODALS PHP-->
+            <?php include '../modulos/modals.php';?>
+
+<!--MODALS PHP END-->            <!-- /#page-wrapper -->
           </div>
           <!-- /#wrapper -->
         </body>

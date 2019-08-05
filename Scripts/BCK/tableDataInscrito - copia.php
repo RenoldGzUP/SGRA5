@@ -17,6 +17,40 @@ $form_facultad = $_REQUEST["facultades"];
 $form_escuela  = $_REQUEST["escuelas"];
 $form_carrera  = $_REQUEST["carreras"];
 
+//SESSION SAVE
+if (isset($form_sede)) {
+    //IF VAR SEDE IS SETTED
+    $codeSede         = getCodigoSedes($form_sede);
+    $saveCodeSede     = convert_object_to_array($codeSede);
+    $_SESSION['sede'] = $saveCodeSede[0]['codigo_sede'];
+
+} else if (isset($form_sede) && isset($form_area)) {
+
+    # code...
+} else if (isset($form_sede) && isset($form_area) && isset($form_facultad)) {
+    # code...
+} else if (isset($form_sede) && isset($form_area) && isset($form_facultad) && isset($form_escuela)) {
+    # code...
+} else if (isset($form_sede) && isset($form_area) && isset($form_facultad) && isset($form_escuela) && isset($form_carrera)) {
+    # code...
+} else {
+
+}
+
+////////////////////////////////////////////////////////////////////
+//IF THE VAR  FORM SEDE IS NULL , THE LAST VALUE OF SEDE
+if (is_null($form_sede)) {
+    $_SESSION['sedeBefore'] = $_SESSION['sede'];
+
+} else {
+    $codeSede         = getCodigoSedes($form_sede);
+    $saveCodeSede     = convert_object_to_array($codeSede);
+    $_SESSION['sede'] = $saveCodeSede[0]['codigo_sede'];
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //GET PAGE SET FROM USER SELECT
 //SI LA VARIABLES RANGE NO ES VACIA SE GUARDA EL STATE EN UNA VARIABLE DE SESSION
@@ -43,85 +77,18 @@ if (isset($_GET["pagina"])) {
 //GET DATA FROM DATABASE
 $start_from = ($pagina - 1) * $record_per_page;
 ////////////////////////////////////////////////////////////////////////////////////////////////
-//TABLE
 
-$labelSQL = array("sede", "area_i", "fac_ia", "esc_ia", "car_ia");
+////////////////////////////////////////////////////////////////////////////////////////////////
+//$estResultado = showDataInscrito($start_from, $record_per_page);
+$estResultado = showDataFilterInscrito($start_from, $record_per_page, $_SESSION['sede']);
+$newData      = convert_object_to_array($estResultado);
+$leng         = sizeof($newData);
 
-if (isset($form_sede)) {
-
-    if ($form_area[0] > 0) {
-        //CON DOS CAMPOS
-        //IF VAR area is SETTED
-        echo "F BCK INICIAL CON  AREA ASIGNADA";
-        unset($_SESSION['area']);
-
-        $_SESSION['area'] = $form_area[0];
-        // var_dump($_SESSION['area']);
-        //IF THE VAR  FORM AREA IS NULL , THE LAST VALUE OF SEDE
-        $estResultado = filterByS_A($start_from, $record_per_page, $_SESSION['sede'], $_SESSION['area']);
-        $newData      = convert_object_to_array($estResultado);
-        $leng         = sizeof($newData);
-        printTable($leng, $newData, $start_from);
-
-    } else {
-        //CON UN CAMPO
-        //IF VAR SEDE IS SETTED
-        echo "F BCK INICIAL SIN AREA";
-        unset($_SESSION['sede']);
-        unset($_SESSION['area']);
-        $codeSede         = getCodigoSedes($form_sede);
-        $saveCodeSede     = convert_object_to_array($codeSede);
-        $_SESSION['sede'] = $saveCodeSede[0]['codigo_sede'];
-
-        //IF THE VAR  FORM SEDE IS NULL , THE LAST VALUE OF SEDE
-        $estResultado = filterByS($start_from, $record_per_page, $_SESSION['sede']);
-        $newData      = convert_object_to_array($estResultado);
-        $leng         = sizeof($newData);
-        printTable($leng, $newData, $start_from);
-
-    }
-} else {
-    //SI LA VARIABLE ES NULL
-    echo "F BCK SIN AREA";
-    $estResultado = filterByS($start_from, $record_per_page, $_SESSION['sede']);
-    $newData      = convert_object_to_array($estResultado);
-    $leng         = sizeof($newData);
-    printTable($leng, $newData, $start_from);
-
-}
+printTable($leng, $newData, $start_from);
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 //functions
 ////////////////////////////////////////////////////////////////////////////////
-
-function sede($SEDE)
-{
-    //CHECK THAT THE VAR FROM-END AT SET
-    if (is_null($SEDE)) {
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////
-        $estResultado = showDataFilterInscrito($start_from, $record_per_page, $_SESSION['sede']);
-        $newData      = convert_object_to_array($estResultado);
-        $leng         = sizeof($newData);
-
-        printTable($leng, $newData, $start_from);
-
-    } else {
-        ///////////////////////////////////////////////////////////////////////////////////////////////
-        //IF VAR SEDE IS SETTED
-        $codeSede         = getCodigoSedes($SEDE);
-        $saveCodeSede     = convert_object_to_array($codeSede);
-        $_SESSION['sede'] = $saveCodeSede[0]['codigo_sede'];
-
-        //IF THE VAR  FORM SEDE IS NULL , THE LAST VALUE OF SEDE
-        $estResultado = showDataFilterInscrito($start_from, $record_per_page, $_SESSION['sede']);
-        $newData      = convert_object_to_array($estResultado);
-        $leng         = sizeof($newData);
-
-        printTable($leng, $newData, $start_from);
-
-    }
-
-}
 
 function printTable($SIZEARRAY, $ARRAY_Ins, $START_PAGE)
 {
@@ -171,34 +138,3 @@ function printTable($SIZEARRAY, $ARRAY_Ins, $START_PAGE)
 
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//check data
-/*
-if (isset($form_sede)) {
-if (isset($form_area)) {
-//CON DOS CAMPOS
-
-} else {
-//CON UN CAMPO
-//IF VAR SEDE IS SETTED
-$codeSede         = getCodigoSedes($SEDE);
-$saveCodeSede     = convert_object_to_array($codeSede);
-$_SESSION['sede'] = $saveCodeSede[0]['codigo_sede'];
-
-//IF THE VAR  FORM SEDE IS NULL , THE LAST VALUE OF SEDE
-$estResultado = showDataFilterInscrito($start_from, $record_per_page, $_SESSION['sede']);
-$newData      = convert_object_to_array($estResultado);
-$leng         = sizeof($newData);
-
-printTable($leng, $newData, $start_from);
-
-}
-} else {
-//SI LA VARIABLE ES NULL
-$estResultado = showDataFilterInscrito($start_from, $record_per_page, $_SESSION['sede']);
-$newData      = convert_object_to_array($estResultado);
-$leng         = sizeof($newData);
-
-printTable($leng, $newData, $start_from);
-
-}*/

@@ -37,7 +37,7 @@
             // completeProgressBar(filePath);
         } else {
             // El usuario no ha seleccionado archivos
-            //alert("Selecciona un archivo");
+            console.log("Selecciona un archivo");
             $("#notselectFile").modal();
         }
     }
@@ -119,7 +119,7 @@
         var filePathI = fileInputI.value;
         var allowedExtensions = /(.csv)$/i;
         if (!allowedExtensions.exec(filePathI)) {
-            //alert('Porfavor seleccione un archivo en formato .CSV');
+            console.log("Porfavor seleccione un archivo en formato .CSV");
             $("#csvnotFound").modal();
             fileInputI.value = '';
             return false;
@@ -155,7 +155,7 @@
             // completeProgressBar(filePath);
         } else {
             // El usuario no ha seleccionado archivos
-            //alert("Selecciona un archivo");
+            console.log("Selecciona un archivo");
             $("#notselectFile").modal();
         }
     }

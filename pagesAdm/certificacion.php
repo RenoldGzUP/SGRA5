@@ -63,7 +63,7 @@ if ($now > $_SESSION['expire']) {
   <!--Panel de Filtros-->
       <?php include '../modulos/panelFilter.php';?>
   <!---->
-  <div class="panel panel-default " >
+  <div class="panel panel-default " style="margin-top: -10px" >
     <div class="panel-heading" style="height: 40px">
       <?php include '../modulos/select.php';?>
 
