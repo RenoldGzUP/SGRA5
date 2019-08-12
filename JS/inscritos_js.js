@@ -221,6 +221,151 @@ function getFilter() {
     //////////////////////////////////////////////////
     //submit
 }
+///datatable
+$(document).ready(function() {
+    $('#tableInscritos').DataTable({
+        "iDisplayLength": 15,
+        "aLengthMenu": [
+            [25, 50, 100, -1],
+            [25, 50, 100, "Todos"]
+        ],
+    });
+});
+
+function filtrarTabla() {
+    var sede = $("#lista_sedes").val();
+    var area = $("#lista_areas").val();
+    var areaSplit = area.split('-');
+    var facultad = $("#lista_facultades").val();
+    var escuela = $("#lista_escuelas").val();
+    var carrera = $("#lista_carreras").val();
+    console.log(sede + " - " + areaSplit[0] + " - " + facultad + " - " + escuela + " - " + carrera + " - ");
+    var dataFilter = [sede, areaSplit[0], facultad, escuela, carrera];
+    //VALIDATE 
+    var a = 0;
+    var issetData = [];
+    while (a < dataFilter.length) {
+        if (dataFilter[a] > 0) {
+            console.log("IS SET ->" + dataFilter[a]);
+            issetData.push(dataFilter[a]);
+        }
+        a++;
+    }
+    dump(issetData);
+    var filterState = issetData.length;
+    //console.log(issetData.length);
+    getDataAJAX(issetData, filterState);
+    //send data and return  full table 
+}
+
+function getDataAJAX(issetData, filterState) {
+    var t = $('#tableInscritos').DataTable({
+        "destroy": true,
+        "ajax": {
+            "data": {
+                "idFilters": issetData,
+                "filter": filterState
+            },
+            "method": "POST",
+            "url": "../Scripts/getTableInscritosJS.php",
+            "dataSrc": ""
+        },
+        "columns": [{
+            "data": null
+        }, {
+            "data": null
+        }, {
+            "data": "nombre"
+        }, {
+            "data": "apellido"
+        }, {
+            "data": "cedula"
+        }, {
+            "data": "n_ins"
+        }, {
+            "data": "sede"
+        }, {
+            "data": "fac_ia"
+        }, {
+            "data": "esc_ia"
+        }, {
+            "data": "car_ia"
+        }, {
+            "data": "fac_iia"
+        }, {
+            "data": "esc_iia"
+        }, {
+            "data": "car_iia"
+        }, {
+            "data": "fac_iiia"
+        }, {
+            "data": "esc_iiia"
+        }, {
+            "data": "car_iiia"
+        }, {
+            "defaultContent": "<button type='button' title ='Editar'  class='editar btn btn-warning btn-xs' ><span class='glyphicon glyphicon-pencil'></span></button>  <button type='button' title ='Borrar'  class='borrar btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash' ></span></button> "
+        }],
+        'columnDefs': [{
+            'targets': 0,
+            'searchable': false,
+            'orderable': false,
+            'className': 'dt-body-center',
+            'render': function(data, type, full, meta) {
+                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
+            }
+        }],
+        "order": [
+            [1, 'asc']
+        ]
+    });
+    t.on('order.dt search.dt', function() {
+        t.column(1, {
+            search: 'applied',
+            order: 'applied'
+        }).nodes().each(function(cell, i) {
+            cell.innerHTML = i + 1;
+        });
+    }).draw();
+    // Handle click on "Select all" control
+    $('#inscritos_checkall').on('click', function() {
+        // Get all rows with search applied
+        var rows = t.rows({
+            'search': 'applied'
+        }).nodes();
+        // Check/uncheck checkboxes for all rows in the table
+        $('input[type="checkbox"]', rows).prop('checked', this.checked);
+    });
+    // Handle click on checkbox to set state of "Select all" control
+    $('#tableInscritos tbody').on('change', 'input[type="checkbox"]', function() {
+        // If checkbox is not checked
+        if (!this.checked) {
+            var el = $('#inscritos_checkall').get(0);
+            // If "Select all" control is checked and has 'indeterminate' property
+            if (el && el.checked && ('indeterminate' in el)) {
+                // Set visual state of "Select all" control
+                // as 'indeterminate'
+                el.indeterminate = true;
+            }
+        }
+    });
+    $('#tableInscritos tbody').on('click', 'button.editar', function() {
+        var dataUni = t.row($(this).parents("tr")).data().n_ins;
+        console.log("numero de inscrito ->" + dataUni);
+        //call function 
+        modal_edit(dataUni);
+        // console.log("HOLIS" + dataUni.n_ins);
+        // console.log(t.row(this).data());
+    });
+    $('#tableInscritos tbody').on('click', 'button.borrar', function() {
+        var dataUni = t.row($(this).parents("tr")).data().n_ins;
+        console.log("borrar->" + dataUni);
+        //call function
+        delete_row(dataUni);
+        // console.log("HOLIS" + dataUni.n_ins);
+        // console.log(t.row(this).data());
+    });
+}
+//////////////////////////////////////////////////////////////
 /*$(function(){
             $("td").click(function(event){
                     if($(this).children("input").length > 0)

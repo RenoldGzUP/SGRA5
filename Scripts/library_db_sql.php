@@ -433,11 +433,11 @@ function showDataInscrito($START, $RECORD)
 //Tabla con Filtros definidos
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //FILTER BY SEDE
-function filterByS($START, $RECORD, $SEDE)
+function filterByS($SEDE)
 {
     global $mysqli;
     $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ? LIMIT " . $START . ", " . $RECORD);
+     FROM inscritos2017 where sede = ?");
     $parametros = array('i', &$SEDE);
     $data       = $query->getresults($parametros);
 

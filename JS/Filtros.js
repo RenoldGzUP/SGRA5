@@ -60,34 +60,6 @@ function obtenerCarreras() {
     });
 }
 
-function filtrarTabla() {
-    var sede = $("#lista_sedes").val();
-    var area = $("#lista_areas").val();
-    var areaSplit = area.split('-');
-    var facultad = $("#lista_facultades").val();
-    var escuela = $("#lista_escuelas").val();
-    var carrera = $("#lista_carreras").val();
-    var filterState = 1;
-    alert(sede + " - " + areaSplit[0] + " - " + facultad + " - " + escuela + " - " + carrera + " - " + 1);
-    $.ajax({
-        type: "POST",
-        url: "../pagesAdm/inscritos.php",
-        data: {
-            "idSede": sede,
-            "idArea": areaSplit[0],
-            "idFacultad": facultad,
-            "idEscuela": escuela,
-            "idCarrera": carrera,
-            "filter": filterState
-        },
-        success: function(data) {
-            location.reload();
-            //console.log("Result: " + data);
-            // $("#lista_carreras").html(data);
-        }
-    });
-}
-
 function generarCertificacion(val) {
     $.ajax({
         type: "POST",
@@ -95,6 +67,9 @@ function generarCertificacion(val) {
         data: 'id_sedes=' + val,
         success: function(data) {
             $("#lista_areas").html(data);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log("Algo salio mal");
         }
     });
 }
@@ -102,6 +77,14 @@ function generarCertificacion(val) {
 function obtenerAreasCertificacion(val) {
     var opcionArea = document.getElementById('areasCertificacion');
     alert(val);
+}
+
+function dump(obj) {
+    var out = '';
+    for (var i in obj) {
+        out += i + ": " + obj[i] + "\n";
+    }
+    console.log(out);
 }
 
 function showModalLoading() {

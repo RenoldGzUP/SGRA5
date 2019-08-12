@@ -1,4 +1,4 @@
- <form class="form-inline" action="../pagesAdm/inscritos.php" method="post" style="margin-top: -7px">
+<!-- <form class="form-inline" action="../pagesAdm/inscritos.php" method="post" style="margin-top: -7px">-->
 
   <span>Filtro local:</span>
   <select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
@@ -32,20 +32,20 @@ if (isset($_SESSION['sede'])) {
 </select>
 <span>en:</span>
 <select name="facultades" id="lista_facultades" onChange='obtenerEscuela()' >
- <option >Facultad</option>
+ <option  value='' >Facultad</option>
 </select>
 
  <span>donde:</span>
   <select  name="escuelas" id="lista_escuelas" onChange='obtenerCarreras()' >
-   <option >Escuela</option>
+   <option  value=''>Escuela</option>
  </select>
 
  <span>está: </span>
   <select name="carreras" id="lista_carreras">
-   <option >Carrera</option>
+   <option value='' >Carrera</option>
  </select>
 
-<button type="button submit" title="Filtrar registros en base a su selección " class="btn btn-default btn-xs pull-right" style="width: 100px"  ><span class="glyphicon glyphicon-filter"></span> <span>Filtrar</span> </button>
-
+<button type="button" onclick="filtrarTabla()" title="Filtrar registros en base a su selección " class="btn btn-default btn-xs pull-right" style="width: 100px"  ><span class="glyphicon glyphicon-filter"></span> <span>Filtrar</span> </button>
+<!--
 </form>
-
+-->

@@ -58,54 +58,50 @@ if ($now > $_SESSION['expire']) {
          <?php include '../modulos/vars.php';?>
         <?php include '../modulos/panelFilter.php';?>
         <!---->
-        <div class="panel panel-default " style="margin-top: -10px" >
+       <!--  <div class="panel panel-default " style="margin-top: -10px" >
           <div class="panel-heading" style="height: 40px">
-            <?php include '../modulos/selectInscrito.php';?>
+            <?php //include '../modulos/selectInscrito.php';?>
           </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="table-responsive">
-            <table class="table table-bordered table-hover table-fixed sortable">
+        </div> -->
+        <div class="row">
+          <div class="col-lg-12">
+          <div  class="table-responsive">
+            <table id="tableInscritos" class="table table-bordered table-hover table-fixed select">
               <thead >
                 <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
-                  <th class="sorttable_nosort checkboxRow "  style="text-align: center;"> <input type="checkbox"  id="checkall" ></th>
-                  <th class="integerRow" style="text-align: center;">#</th>
-                  <th class="textRow" >Nombre</th>
-                  <th class="textRow" >Apellido</th>
-                  <th class="cidRow" >Cédula</th>
-                  <th class="longIntegerRow" >Inscripción</th>
-                  <th class="integerRow">Sede</th>
-                  <th class="integerRow">Fac1A</th>
-                  <th class="integerRow">Esc1A</th>
-                  <th class="integerRow">Car1A</th>
-                  <th class="integerRow">Fac2A</th>
-                  <th class="integerRow">Esc2A</th>
-                  <th class="integerRow">Car2A</th>
-                  <th class="integerRow">Fac3A</th>
-                  <th class="integerRow">Esc3A</th>
-                  <th class="integerRow">Car3A</th>
-                  <th class="sorttable_nosort actionRow">Acciones</th>
+                  <th class="checkboxRow " style="text-align: center;"> <input type="checkbox"  id="inscritos_checkall" ></th>
+                  <th  style="text-align: center;">#</th>
+                  <th >Nombre</th>
+                  <th >Apellido</th>
+                  <th >Cedula</th>
+                  <th >n_ins</th>
+                  <th >Sede</th>
+                  <th >Fac_ia</th>
+                  <th >Esc_ia</th>
+                  <th >Car_ia</th>
+                  <th >Fac_iia</th>
+                  <th >Esc_iia</th>
+                  <th >Car_iia</th>
+                  <th >Fac_iiia</th>
+                  <th >Esc_iiia</th>
+                  <th >Car_iiia</th>
+                  <th >Acciones</th>
                 </tr>
               </thead>
-              <tbody>
-                <!--PHP
-                <!--EMBEDED CODE -->
-                <?php
-if (isset($_REQUEST['idSearch'])) {
-    //  echo "res ".$_REQUEST['idSearch'];
-    include '../Scripts/searchInscritos.php';
-    echo "</tbody>";
-    echo "</table>";
-} else if (!empty($_REQUEST['idSearch'])) {
-    header('Location:inscritos.php');
-} else {
-    include '../Scripts/tableDataInscrito.php';
-    include '../Scripts/paginatorInscrito.php';
+              <tbody id="tbodyInscritos">
 
-}
-?>
+              </tbody>
+            </table>
+
       </div>
     </div>
+
+
+
+        </div>
+
+
+
     <!-- MODALS-->
     <!-- Modal para editar Registros-->
     <div class="modal fade" id="tipoCertificaciones" role="dialog" data-keyboard="false" data-backdrop="static">
