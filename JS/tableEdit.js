@@ -107,7 +107,7 @@ function modal_edit(id) {
         dataType: "text",
         url: "../Scripts/getAllDataInscritos.php",
     }).done(function(data, textStatus, jqXHR) {
-        console.log("data  :" + data);
+        //console.log("data  :" + data);
         document.getElementById('studentTableEdit').innerHTML = data;
         $("#tipoCertificaciones").modal();
     }).fail(function(jqXHR, textStatus, errorThrown) {
@@ -127,18 +127,17 @@ function deleteTask(id) {
         url: '../Scripts/adminActionsRow.php',
         success: function(response) {
             if (response == "success") {
-                var row = document.getElementById("row" + id);
-                row.parentNode.removeChild(row);
+                // var row = document.getElementById("row" + id);
+                // row.parentNode.removeChild(row);
                 $("#doneDeleteModal").modal();
             }
         }
     });
 }
-
-function delete_row(id) {
+/*function delete_row(id) {
     // var resp = confirm("Confirme borrado de " + id + "  ?");
     $("#deleteModal").modal();
     document.getElementById("deleteTaskBtt").onclick = function() {
-        deleteTask(id)
+        deleteTask(id);
     };
-}
+}*/

@@ -34,7 +34,7 @@ function obtenerEscuela() {
             "idFacultad": facultad
         },
         success: function(data) {
-            console.log("Result: " + data);
+            //console.log("Result: " + data);
             $("#lista_escuelas").html(data);
         }
     });
@@ -54,7 +54,7 @@ function obtenerCarreras() {
             "idEscuela": escuela
         },
         success: function(data) {
-            console.log("Result: " + data);
+            //console.log("Result: " + data);
             $("#lista_carreras").html(data);
         }
     });

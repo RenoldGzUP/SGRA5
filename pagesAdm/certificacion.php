@@ -63,15 +63,6 @@ if ($now > $_SESSION['expire']) {
   <!--Panel de Filtros-->
       <?php include '../modulos/panelFilter.php';?>
   <!---->
-  <div class="panel panel-default " style="margin-top: -10px" >
-    <div class="panel-heading" style="height: 40px">
-      <?php include '../modulos/select.php';?>
-
-    </div>
-
-  </div>
-
-
   <div class="col-lg-12 table-responsive">
     <table id="tableresultados" class="table table-bordered table-hover table-editable">
      <thead>
@@ -98,7 +89,7 @@ if ($now > $_SESSION['expire']) {
     </thead>
     <!-- <div class="col-lg-12" style="width: 1500px; overflow-y: auto;"> -->
       <tbody >
-      <?php
+<!--       <?php
 if (isset($_REQUEST['idSearch'])) {
     //  echo "res ".$_REQUEST['idSearch'];
     include '../Scripts/searchEST.php';
@@ -113,7 +104,9 @@ if (isset($_REQUEST['idSearch'])) {
     echo "</div>";
 }
 
-?>
+?> -->
+</tbody>
+</table>
 
     </div>
 

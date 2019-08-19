@@ -38,11 +38,14 @@ if ($now > $_SESSION['expire']) {
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
+    <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+    <script  type="text/javascript" src="../JS/dataTables.fixedHeader.min.js"></script>
     <script type="text/javascript" src="../JS/bootstrap.js"></script>
     <script src="../JS/sorttable.js" ></script>
     <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+    <link rel="stylesheet" media="all" href="../Style/fixedHeader.dataTables.min.css">
     <link rel="stylesheet" media="all" href="../Style/InscritosStyle.css">
-    <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+
     <script src="../JS/Filtros.js"></script>
     <script src="../JS/inscritos_js.js"></script>
     <script src="../JS/tableEdit.js"></script>
@@ -64,13 +67,13 @@ if ($now > $_SESSION['expire']) {
           </div>
         </div> -->
         <div class="row">
-          <div class="col-lg-12">
-          <div  class="table-responsive">
+          <div class="col-sm-12">
+         <div  class="table-responsive">
             <table id="tableInscritos" class="table table-bordered table-hover table-fixed select">
-              <thead >
-                <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
-                  <th class="checkboxRow " style="text-align: center;"> <input type="checkbox"  id="inscritos_checkall" ></th>
-                  <th  style="text-align: center;">#</th>
+              <thead style="font-size: 12px;text-align:center; color: #ffffff; background-color: #225ddb">
+                <tr >
+                  <th > <input type="checkbox"  id="inscritos_checkall" ></th>
+                  <th >#</th>
                   <th >Nombre</th>
                   <th >Apellido</th>
                   <th >Cedula</th>
@@ -90,14 +93,50 @@ if ($now > $_SESSION['expire']) {
               </thead>
               <tbody id="tbodyInscritos">
 
+               <!--  <?php
+$dataInscritos = showDataInscrito();
+$newData       = convert_object_to_array($dataInscritos);
+$i             = 0;
+$counter       = 0;
+$leng          = sizeof($newData);
+//FULL DATA LOAD INSIDE OF TABLE
+while ($i < $leng) {
+
+    echo '<tr id="row' . $newData[$i]['n_ins'] . '" style="font-size: 11px;text-align:center">';
+    echo '<td class="checkboxRow" style="text-align: center;"><input type="checkbox" class="checkthis" value=' . $newData[$i]['n_ins'] . '></td>';
+    echo '<td class="integerRow" >' . $counter . '</td>';
+    echo '<td class="textRow" id="name' . $newData[$i]['n_ins'] . '">' . $newData[$i]['nombre'] . '</td>';
+    echo '<td class="textRow" id="lastname' . $newData[$i]['n_ins'] . '">' . $newData[$i]['apellido'] . '</td>';
+    echo '<td  class="cidRow" id="CID' . $newData[$i]['n_ins'] . '">' . $newData[$i]['cedula'] . '</td>';
+    echo '<td class="longIntegerRow"  id="n_ins' . $newData[$i]['n_ins'] . '">' . $newData[$i]['n_ins'] . '</td>';
+    echo '<td class="integerRow"  id="sede' . $newData[$i]['n_ins'] . '">' . $newData[$i]['sede'] . '</td>';
+    echo '<td class="integerRow" id="fac_ia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['fac_ia'] . '</td>';
+    echo '<td class="integerRow" id="esc_ia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['esc_ia'] . '</td>';
+    echo '<td class="integerRow" id="car_ia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['car_ia'] . '</td>';
+    echo '<td class="integerRow"  id="fac_iia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['fac_iia'] . '</td>';
+    echo '<td class="integerRow"  id="esc_iia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['esc_iia'] . '</td>';
+    echo '<td class="integerRow" id="car_iia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['car_iia'] . '</td>';
+    echo '<td class="integerRow" id="fac_iiia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['fac_iia'] . '</td>';
+    echo '<td class="integerRow" id="esc_iiia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['esc_iia'] . '</td>';
+    echo '<td class="integerRow" id="car_iiia' . $newData[$i]['n_ins'] . '">' . $newData[$i]['car_iia'] . '</td>';
+    echo '<td class="actionRow">
+<button type="button" title ="Editar" id="edit_button' . $newData[$i]['n_ins'] . '" class="btn btn-warning btn-xs" onclick="modal_edit(\'' . $newData[$i]['n_ins'] . '\');" ><span class="glyphicon glyphicon-pencil"></span>    </button>
+<button type="button"  id="save_button' . $newData[$i]['n_ins'] . '"  style="display:none;" class="btn btn-success btn-xs"  onclick="save_row(\'' . $newData[$i]['n_ins'] . '\');"><span class="glyphicon glyphicon-floppy-saved"></span> </button>
+<button type="button" title ="Borrar" id="delete_button' . $newData[$i]['n_ins'] . '" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash" onclick="delete_row(\'' . $newData[$i]['n_ins'] . '\');"></span> </button>
+
+</td>';
+    echo "</tr>";
+//COUNTER
+    $i++;
+    $counter++;
+}
+?> -->
+
               </tbody>
             </table>
 
-      </div>
+     </div>
     </div>
-
-
-
         </div>
 
 

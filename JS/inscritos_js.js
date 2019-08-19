@@ -258,9 +258,102 @@ function filtrarTabla() {
     //send data and return  full table 
 }
 
-function getDataAJAX(issetData, filterState) {
+function initialData() {
     var t = $('#tableInscritos').DataTable({
         "destroy": true,
+        "ajax": {
+            "url": "../Scripts/getTableInscritosJS.php",
+            "dataSrc": ""
+        },
+        "columns": [{
+            "data": null
+        }, {
+            "data": null,
+        }, {
+            "data": "nombre"
+        }, {
+            "data": "apellido"
+        }, {
+            "data": "cedula"
+        }, {
+            "data": "n_ins"
+        }, {
+            "data": "sede"
+        }, {
+            "data": "fac_ia"
+        }, {
+            "data": "esc_ia"
+        }, {
+            "data": "car_ia"
+        }, {
+            "data": "fac_iia"
+        }, {
+            "data": "esc_iia"
+        }, {
+            "data": "car_iia"
+        }, {
+            "data": "fac_iiia"
+        }, {
+            "data": "esc_iiia"
+        }, {
+            "data": "car_iiia"
+        }, {
+            "defaultContent": "<button type='button' title ='Editar'  class='editar btn btn-warning btn-xs' ><span class='glyphicon glyphicon-pencil'></span></button>  <button type='button' title ='Borrar'  class='borrar btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash' ></span></button> "
+        }],
+        'columnDefs': [{
+            'targets': 0,
+            'searchable': false,
+            'orderable': false,
+            'className': 'dt-body-center',
+            'render': function(data, type, full, meta) {
+                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
+            }
+        }, {
+            'className': 'dt-body-center',
+            'targets': 1,
+        }],
+        "order": [
+            [1, 'asc']
+        ]
+    });
+    t.on('order.dt search.dt', function() {
+        t.column(1, {
+            search: 'applied',
+            order: 'applied'
+        }).nodes().each(function(cell, i) {
+            cell.innerHTML = i + 1;
+        });
+    }).draw();
+    // Handle click on "Select all" control
+    $('#inscritos_checkall').on('click', function() {
+        // Get all rows with search applied
+        var rows = t.rows({
+            'search': 'applied'
+        }).nodes();
+        // Check/uncheck checkboxes for all rows in the table
+        $('input[type="checkbox"]', rows).prop('checked', this.checked);
+    });
+    // Handle click on checkbox to set state of "Select all" control
+    $('#tableInscritos tbody').on('change', 'input[type="checkbox"]', function() {
+        // If checkbox is not checked
+        if (!this.checked) {
+            var el = $('#inscritos_checkall').get(0);
+            // If "Select all" control is checked and has 'indeterminate' property
+            if (el && el.checked && ('indeterminate' in el)) {
+                // Set visual state of "Select all" control
+                // as 'indeterminate'
+                el.indeterminate = true;
+            }
+        }
+    });
+}
+
+function getDataAJAX(issetData, filterState) {
+    var t = $('#tableInscritos').removeAttr('width').DataTable({
+        "destroy": true,
+        "fixedHeader": {
+            "header": true,
+        },
         "ajax": {
             "data": {
                 "idFilters": issetData,
@@ -271,7 +364,7 @@ function getDataAJAX(issetData, filterState) {
             "dataSrc": ""
         },
         "columns": [{
-            "data": null
+            "data": null,
         }, {
             "data": null
         }, {
@@ -313,11 +406,41 @@ function getDataAJAX(issetData, filterState) {
             'render': function(data, type, full, meta) {
                 return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
             }
+        }, {
+            "className": "dt-center",
+            "targets": "_all"
+        }, {
+            width: 10,
+            targets: [0, 1, 5]
+        }, {
+            width: 9,
+            targets: 16
+        }, {
+            width: 18,
+            targets: [2, 3, 4]
+        }, {
+            width: 5,
+            targets: [6,
+                7,
+                8, ,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ]
+        }, {
+            "orderable": false,
+            "targets": 16
         }],
         "order": [
             [1, 'asc']
         ]
     });
+    editar_row("#tableInscritos tbody", t);
+    borrar_row("#tableInscritos tbody", t);
     t.on('order.dt search.dt', function() {
         t.column(1, {
             search: 'applied',
@@ -348,53 +471,52 @@ function getDataAJAX(issetData, filterState) {
             }
         }
     });
-    $('#tableInscritos tbody').on('click', 'button.editar', function() {
-        var dataUni = t.row($(this).parents("tr")).data().n_ins;
-        console.log("numero de inscrito ->" + dataUni);
-        //call function 
-        modal_edit(dataUni);
-        // console.log("HOLIS" + dataUni.n_ins);
-        // console.log(t.row(this).data());
-    });
-    $('#tableInscritos tbody').on('click', 'button.borrar', function() {
-        var dataUni = t.row($(this).parents("tr")).data().n_ins;
-        console.log("borrar->" + dataUni);
-        //call function
-        delete_row(dataUni);
-        // console.log("HOLIS" + dataUni.n_ins);
-        // console.log(t.row(this).data());
+}
+//////////////////////////////////////////////////
+$('#userslist').DataTable({
+    "initComplete": function(settings, json) {
+        $("#reportDetails").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+    },
+});
+var editar_row = function(tbody, table) {
+    $(tbody).on("click", "button.editar", function() {
+        var data = table.row($(this).parents("tr")).data();
+        if (data != null) {
+            console.log(data);
+            modal_edit(data.n_ins);
+        } else {
+            console.log("Null exist");
+            //modal_edit(data-);
+        }
+        //modal_edit(data-);
     });
 }
-//////////////////////////////////////////////////////////////
-/*$(function(){
-            $("td").click(function(event){
-                    if($(this).children("input").length > 0)
-                            return false;
-                    var tdObj = $(this);
-                    var preText = tdObj.html();
-                    var inputObj = $("<input type='text' />");
-                    tdObj.html("");
-                    inputObj.width(tdObj.width())
-                            .height(tdObj.height())
-                            .css({border:"0px",fontSize:"12px"})
-                            .val(preText)
-                            .appendTo(tdObj)
-                            .trigger("focus")
-                            .trigger("select");
-                    inputObj.keyup(function(event){
-                            if(13 == event.which) { // press ENTER-key
-                                    var text = $(this).val();
-                                    tdObj.html(text);
-                            }
-                            else if(27 == event.which) {  // press ESC-key
-                                    tdObj.html(preText);
-                            }
-                  });
-                    inputObj.click(function(){
-                            return false;
-                    });
-            });
+var borrar_row = function(tbody, table) {
+    $(tbody).on("click", "button.borrar", function() {
+        var data = table.row($(this).parents("tr")).data();
+        if (data != null) {
+            console.log(data);
+            //delete_row(data.n_ins);
+            var ins = data.n_ins;
+            $("#deleteModal").modal();
+            document.getElementById("deleteTaskBtt").onclick = function() {
+                // console.log("DELETE ON");
+                deleteTask(data.n_ins);
+                // deleteComplete(table, ins);
+            };
+        } else {
+            console.log("Null exist");
+            //modal_edit(data-);
+        }
+        //modal_edit(data-);
     });
-
-
-*/
+}
+/**function delete_row(id) {
+    // var resp = confirm("Confirme borrado de " + id + "  ?");
+    $("#deleteModal").modal();
+    document.getElementById("deleteTaskBtt").onclick = function() {
+        deleteTask(id);
+        table.row($(this).parents('tr')).remove().draw(false);
+    };
+}*/
+//////////////////////////////////////////////////////////////

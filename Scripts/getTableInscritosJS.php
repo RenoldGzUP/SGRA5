@@ -13,13 +13,13 @@ $form_state  = $_POST["filter"];
 if ($form_state == 1) {
     filterBySede($form_filter[0]);
 } elseif ($form_state == 2) {
-    # code...
+    filterByArea($form_filter[0], $form_filter[1]);
 } elseif ($form_state == 3) {
-    # code...
+    filterByFacultad($form_filter[0], $form_filter[1], $form_filter[2]);
 } elseif ($form_state == 4) {
-    # code...
+    filterByEscuela($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3]);
 } elseif ($form_state == 5) {
-    # code...
+    filterByCarrera($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4]);
 } else {
     echo "Algo salio mal en el server";
 }
@@ -29,48 +29,31 @@ if ($form_state == 1) {
 function filterBySede($SEDE)
 {
     $estResultado = filterByS($SEDE);
-
-    //var_dump($estResultado);
     echo json_encode($estResultado);
-    $newData = convert_object_to_array($estResultado);
-    $leng    = sizeof($newData);
-    //tableInscrito($leng, $newData);
+}
+
+function filterByArea($SEDE, $AREA)
+{
+    $estResultado = filterByS_A($SEDE, $AREA);
+    echo json_encode($estResultado);
+}
+function filterByFacultad($SEDE, $AREA, $FACULTAD)
+{
+    $estResultado = filterByS_A_F($SEDE, $AREA, $FACULTAD);
+    echo json_encode($estResultado);
+}
+
+function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
+{
+    $estResultado = filterByS_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA);
+    echo json_encode($estResultado);
 
 }
 
-function filterByArea($start_from, $record_per_page, $SEDE, $AREA)
+function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
 {
-    $estResultado = filterByS_A($start_from, $record_per_page, $SEDE, $AREA);
-    $newData      = convert_object_to_array($estResultado);
-    $leng         = sizeof($newData);
-    printTable($leng, $newData, $start_from);
-
-}
-function filterByFacultad($start_from, $record_per_page, $SEDE, $AREA, $FACULTAD)
-{
-    $estResultado = filterByS_A($start_from, $record_per_page, $SEDE, $AREA, $FACULTAD);
-    $newData      = convert_object_to_array($estResultado);
-    $leng         = sizeof($newData);
-    printTable($leng, $newData, $start_from);
-
-}
-
-function filterByEscuela($start_from, $record_per_page, $SEDE, $AREA, $FACULTAD, $ESCUELA)
-{
-    $estResultado = filterByS_A($start_from, $record_per_page, $SEDE, $AREA, $FACULTAD, $ESCUELA);
-    $newData      = convert_object_to_array($estResultado);
-    $leng         = sizeof($newData);
-    printTable($leng, $newData, $start_from);
-
-}
-
-function filterByCarrera($start_from, $record_per_page, $SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
-{
-    $estResultado = filterByS_A($start_from, $record_per_page, $SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
-    $newData      = convert_object_to_array($estResultado);
-    $leng         = sizeof($newData);
-    printTable($leng, $newData, $start_from);
-
+    $estResultado = filterByS_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
+    echo json_encode($estResultado);
 }
 
 function printTable($SIZEARRAY, $ARRAY_Ins)

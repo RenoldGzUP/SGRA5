@@ -72,7 +72,7 @@
       <div class="modal-footer">
         <center>
         <button type="button" class="btn btn-success" data-dismiss="modal">Volver</button>
-        <button id="deleteTaskBtt" type="button" class="btn btn-danger" data-dismiss="modal">Sí, Borrar</button>
+        <button id="deleteTaskBtt" onclick="deleteComplete()" type="button" class="btn btn-danger" data-dismiss="modal">Sí, Borrar</button>
         </center>
       </div>
     </div>
@@ -108,7 +108,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <center><button type="button" onClick="history.go(0)" class="btn btn-success" data-dismiss="modal">OK</button></center>
+        <center><button type="button"  class="btn btn-success" data-dismiss="modal">OK</button></center>
       </div>
     </div>
   </div>
@@ -242,7 +242,7 @@
               <div class="panel-body">
                 <div id="certType" >
                   <center>
-                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Nombre</label>
+                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoord">Nombre</label>
                   <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Apellido </label>
                   <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Indice</label>
                   </center>

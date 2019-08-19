@@ -4,13 +4,19 @@
     height: 65px;
     margin-left: 265px;
 }
-th {
+
+/*html,body {
+overflow:hidden;
+}
+*/
+/*th {
     text-align: center;
   
 }
 .align {
     text-align: left;
 }
+
 table {
     table-layout: fixed;
 }
@@ -27,9 +33,25 @@ thead, tbody tr {
     width: 100%;
     table-layout: fixed;
 }
-thead {
-    width: calc( 99.8% - 1em)
+*/
+/* 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: auto;
+    max-width: auto;
+    width: auto;
 }
+
+table.dataTable {
+    margin: 0 !important;
+}
+
+
+tables
+----------------------------------------------------------*/
+
+
 .modal {
     text-align: center;
     padding: 0!important;
@@ -50,7 +72,7 @@ span {
     font-size: 14px;
 }
 input, select, textarea {
-    font-size: 18px;
+    font-size: 12px;
 }
 .table-hover tbody tr:hover td {
     background-color: #A0E1EE;
@@ -64,7 +86,7 @@ table.sortable thead {
 }
 
 .checkboxRow{
-    width: 50px;
+    width: 15px;
 }
 
 .cidRow{
@@ -72,7 +94,7 @@ table.sortable thead {
 }
 
 .integerRow{
-    width: 75px;
+    width: 10px;
 }
 
 .longIntegerRow{
