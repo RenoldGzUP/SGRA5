@@ -224,6 +224,10 @@ function getFilter() {
 ///datatable
 $(document).ready(function() {
     $('#tableInscritos').DataTable({
+        "columnDefs": [{
+            orderable: false,
+            targets: [0, 16]
+        }],
         "iDisplayLength": 15,
         "aLengthMenu": [
             [25, 50, 100, -1],
@@ -406,8 +410,7 @@ function getDataAJAX(issetData, filterState) {
             'render': function(data, type, full, meta) {
                 return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
             }
-        }, {
-            "className": "dt-center",
+        }, { << << << < HEAD "className": "dt-center",
             "targets": "_all"
         }, {
             width: 10,
@@ -432,8 +435,10 @@ function getDataAJAX(issetData, filterState) {
                 15
             ]
         }, {
+            /* "orderable": false,
+             "targets": 16*/
             "orderable": false,
-            "targets": 16
+            "targets": [0, 16]
         }],
         "order": [
             [1, 'asc']
