@@ -410,7 +410,8 @@ function getDataAJAX(issetData, filterState) {
             'render': function(data, type, full, meta) {
                 return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
             }
-        }, { << << << < HEAD "className": "dt-center",
+        }, {
+            "className": "dt-center",
             "targets": "_all"
         }, {
             width: 10,
