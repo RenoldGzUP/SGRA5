@@ -1,5 +1,20 @@
 ///////////////////////filtro////////////////////////////////////
 ////////////////////////////////////////////////////////////
+///datatable
+$(document).ready(function() {
+    $('#tableresultados').DataTable({
+        "columnDefs": [{
+            orderable: false,
+            targets: [0, 17]
+        }],
+        "iDisplayLength": 15,
+        "aLengthMenu": [
+            [25, 50, 100, -1],
+            [25, 50, 100, "Todos"]
+        ],
+    });
+});
+////////////////////////////////////
 function filtrarTabla() {
     var sede = $("#lista_sedes").val();
     var area = $("#lista_areas").val();
@@ -21,6 +36,21 @@ function filtrarTabla() {
     }
     dump(issetData);
     var filterState = issetData.length;
+    //////
+    /* $.ajax({
+         data: {
+             "idFilters": issetData,
+             "filter": filterState
+         },
+         type: "POST",
+         dataType: "text",
+         url: "../Scripts//getTableResultadosJS.php",
+     }).done(function(data, textStatus, jqXHR) {
+         console.log("data retornada:" + data);
+     }).fail(function(jqXHR, textStatus, errorThrown) {
+         console.log("La solicitud a fallado: " + textStatus);
+     });*/
+    ///
     //console.log(issetData.length);
     getDataAJAX(issetData, filterState);
     //send data and return  full table 
@@ -38,8 +68,19 @@ function getDataAJAX(issetData, filterState) {
                 "filter": filterState
             },
             "method": "POST",
-            "url": "../Scripts/getTableInscritosJS.php",
-            "dataSrc": ""
+            "url": "../Scripts/getTableResultadosJS.php",
+            "dataSrc": "" // function(data) {
+            //     console.log("Hello data");
+            //     // $("#loadingModal").modal();
+            //     //document.getElementById("checkboxlist").name = "n_ins" + data.n_ins;
+            //     for (var i = 0; i < data.length; i++) {
+            //         console.log(data[i]['n_ins']);
+            //         //$('#checkboxlist').val(55455);
+            //         // $('#checkboxlist').val(data[i].n_ins);
+            //         //document.getElementById("checkboxlist").value = data[i]['n_ins'];
+            //     }
+            //     return data;
+            // }
         },
         "columns": [{
             "data": null,
@@ -62,17 +103,19 @@ function getDataAJAX(issetData, filterState) {
         }, {
             "data": "car_ia"
         }, {
-            "data": "fac_iia"
+            "data": "ps"
         }, {
-            "data": "esc_iia"
+            "data": "pca"
         }, {
-            "data": "car_iia"
+            "data": "pcg"
         }, {
-            "data": "fac_iiia"
+            "data": "gatb"
         }, {
-            "data": "esc_iiia"
+            "data": "verbal"
         }, {
-            "data": "car_iiia"
+            "data": "numer"
+        }, {
+            "data": "indice"
         }, {
             "defaultContent": "<button type='button' title ='Editar'  class='editar btn btn-warning btn-xs' ><span class='glyphicon glyphicon-pencil'></span></button>  <button type='button' title ='Borrar'  class='borrar btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash' ></span></button> "
         }],
@@ -82,9 +125,11 @@ function getDataAJAX(issetData, filterState) {
             'orderable': false,
             'className': 'dt-body-center',
             'render': function(data, type, full, meta) {
-                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
+                return '<input type="checkbox"  id="checkboxlist" name="n_ins" value="' + $('<div/>').text(data.n_ins).html() + '">';
+                //return '<input type="checkbox"  id="checkboxlist" name="n_ins" value="' + $('<div/>').text(data.cedula).html() + '">';
             }
-        }, { << << << < HEAD "className": "dt-center",
+        }, {
+            "className": "dt-center",
             "targets": "_all"
         }, {
             width: 10,
@@ -112,8 +157,15 @@ function getDataAJAX(issetData, filterState) {
             /* "orderable": false,
              "targets": 16*/
             "orderable": false,
-            "targets": [0, 16]
+            "targets": [0, 17]
         }],
+        'createdRow': function(row, data, index) {
+            if (data.n_ins != 0) {
+                // $('td', row).eq(5).addClass('row-style');
+                $(row).addClass('row-style');
+                console.log("TRUE" + data.n_ins);
+            }
+        },
         "order": [
             [1, 'asc']
         ]
@@ -128,29 +180,44 @@ function getDataAJAX(issetData, filterState) {
             cell.innerHTML = i + 1;
         });
     }).draw();
-    // Handle click on "Select all" control
-    $('#inscritos_checkall').on('click', function() {
-        // Get all rows with search applied
-        var rows = t.rows({
-            'search': 'applied'
-        }).nodes();
-        // Check/uncheck checkboxes for all rows in the table
-        $('input[type="checkbox"]', rows).prop('checked', this.checked);
-    });
-    // Handle click on checkbox to set state of "Select all" control
-    $('#tableresultados tbody').on('change', 'input[type="checkbox"]', function() {
-        // If checkbox is not checked
-        if (!this.checked) {
-            var el = $('#inscritos_checkall').get(0);
-            // If "Select all" control is checked and has 'indeterminate' property
-            if (el && el.checked && ('indeterminate' in el)) {
-                // Set visual state of "Select all" control
-                // as 'indeterminate'
-                el.indeterminate = true;
-            }
-        }
-    });
+    /* // Handle click on "Select all" control
+     $('#inscritos_checkall').on('click', function() {
+         // Get all rows with search applied
+         var rows = t.rows({
+             'search': 'applied'
+         }).nodes();
+         // Check/uncheck checkboxes for all rows in the table
+         $('input[type="checkbox"]', rows).prop('checked', this.checked);
+     });
+     // Handle click on checkbox to set state of "Select all" control
+     $('#tableresultados tbody').on('change', 'input[type="checkbox"]', function() {
+         // If checkbox is not checked
+         if (!this.checked) {
+             var el = $('#inscritos_checkall').get(0);
+             // If "Select all" control is checked and has 'indeterminate' property
+             if (el && el.checked && ('indeterminate' in el)) {
+                 // Set visual state of "Select all" control
+                 // as 'indeterminate'
+                 el.indeterminate = true;
+             }
+         }
+     });*/
+    //////////////////////////////////
+    //TABLENAME    //INPUT CHECK NAME
+    /*  $('#articles').on('page.dt', function() {
+          $('#select_all_existent').prop("checked", 0);
+          $('#select_all_existent').trigger('change');
+      });
+      $('#articles').on('length.dt', function() {
+          $('#select_all_existent').prop("checked", 0);
+          $('#select_all_existent').trigger('change');
+      });
+      $('#select_all_existent').on('change', function() {
+          checkAllCheckbox(oTable);
+      });*/
+    /////////////
 }
+//end ajax func
 //////////////////////////////////////////////////
 $('#userslist').DataTable({
     "initComplete": function(settings, json) {

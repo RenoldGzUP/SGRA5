@@ -104,9 +104,10 @@ function startF() {
     /* we join the array separated by the comma */
     var selected;
     selected = chkArray.join(',');
+    console.log(selected);
     /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
     if (selected.length > 1) {
-        sendID(selected);
+        //sendID(selected);
         console.log("Send ID to Tallies File");
         //generateTallies(selected);
         //enviar id 

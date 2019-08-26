@@ -4,7 +4,7 @@
      height: 65px;
      margin-left: 265px;
  }
- th {
+ /*th {
      text-align: center;
  }
  .align {
@@ -28,7 +28,7 @@
  }
  thead {
      width: calc( 100% - 1em)
- }
+ }*/
  .modal {
      text-align: center;
      padding: 0!important;
@@ -54,3 +54,5 @@
  .table-hover tbody tr:hover td {
      background-color: #A0E1EE;
  }
+.row-style{background-color: #FFFFCC !important;
+color: blue;}

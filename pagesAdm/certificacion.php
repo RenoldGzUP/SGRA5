@@ -47,6 +47,7 @@ if ($now > $_SESSION['expire']) {
     <link rel="stylesheet" media="all" href="../Style/ResultadosStyle.css">
     <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
     <script src="../JS/Filtros.js"></script>
+    <script src="../JS/tableResultados.js"></script>
     <script src="../JS/getCheckedRow.js"></script>
     <script src="../JS/tableEdit.js"></script>
 
@@ -64,9 +65,9 @@ if ($now > $_SESSION['expire']) {
       <?php include '../modulos/panelFilter.php';?>
   <!---->
   <div class="col-lg-12 table-responsive">
-    <table id="tableresultados" class="table table-bordered table-hover table-editable">
-     <thead>
-       <tr style="font-size: 11px;text-align:center; color: #ffffff; background-color: #225ddb">
+    <table id="tableresultados" class="table table-bordered table-hover display compact">
+     <thead style="font-size: 12px;text-align:center; color: #ffffff; background-color: #225ddb">
+       <tr>
         <th> <input type="checkbox"  id="checkall" ></th>
         <th>#</th>
         <th>Nombre</th>
@@ -83,28 +84,11 @@ if ($now > $_SESSION['expire']) {
         <th>GATB</th>
         <th>A.Verbal</th>
         <th>A.Numerica</th>
-        <th>Indice Pre.</th>
+        <th>Indice</th>
         <th>Acciones</th>
       </tr>
     </thead>
-    <!-- <div class="col-lg-12" style="width: 1500px; overflow-y: auto;"> -->
       <tbody >
-<!--       <?php
-if (isset($_REQUEST['idSearch'])) {
-    //  echo "res ".$_REQUEST['idSearch'];
-    include '../Scripts/searchEST.php';
-    echo "</tbody>";
-    echo "</table>";
-} else {
-    include '../Scripts/tableData.php';
-    echo "</tbody>";
-    echo "</table>";
-    echo '<div align="center">';
-    include '../Scripts/paginator.php';
-    echo "</div>";
-}
-
-?> -->
 </tbody>
 </table>
 
