@@ -51,7 +51,8 @@ if ($now > $_SESSION['expire']) {
   <link rel="stylesheet" media="all" href="../Style/ReportesStyle.css">
   <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
   <script src="../JS/Filtros.js"></script>
-  <script src="../JS/getCheckedRow.js"></script>
+  <script src="../JS/tableResultadosReportes.js"></script>
+  <!--<script src="../JS/getCheckedRow.js"></script>-->
 
 
   <style>
@@ -82,7 +83,7 @@ include '../modulos/userControl.php';
   <!---->
 
        <div  class="col-lg-12" style="margin-top: 15px">
-         <table id="inscritosTable" class="table table-bordered table-hover table-editable">
+         <table id="tableReportes" class="table table-bordered table-hover table-editable">
           <thead style="text-align:center;width: : 10px;background: #225ddb" >
            <tr style="font-size: 11px;text-align:center; color: #ffffff">
             <th style="text-align: center;">#</th>
@@ -91,7 +92,6 @@ include '../modulos/userControl.php';
             <th>Cédula</th>
             <th>SEDE</th>
             <th>ÁREA</th>
-            <th>FACULTAD</th>
             <th>P/S</th>
             <th>GATB</th>
             <th>PCA</th>
@@ -103,11 +103,7 @@ include '../modulos/userControl.php';
 
         <tbody >
           <!--EMBEDED CODE -->
-          <?php
-include '../Scripts/dataReportes.php';
-echo "</tbody>";
-echo "</table>";
-?>
+        </tbody>
         </table>
         <div >
           <center style="margin-top: -15px">

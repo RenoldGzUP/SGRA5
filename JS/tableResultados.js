@@ -16,6 +16,7 @@ $(document).ready(function() {
 });
 ////////////////////////////////////
 function filtrarTabla() {
+    $("#loadingModal").modal();
     var sede = $("#lista_sedes").val();
     var area = $("#lista_areas").val();
     var areaSplit = area.split('-');
@@ -27,6 +28,7 @@ function filtrarTabla() {
     //VALIDATE 
     var a = 0;
     var issetData = [];
+    $("#loadingModal").modal();
     while (a < dataFilter.length) {
         if (dataFilter[a] > 0) {
             console.log("IS SET ->" + dataFilter[a]);
@@ -36,22 +38,6 @@ function filtrarTabla() {
     }
     dump(issetData);
     var filterState = issetData.length;
-    //////
-    /* $.ajax({
-         data: {
-             "idFilters": issetData,
-             "filter": filterState
-         },
-         type: "POST",
-         dataType: "text",
-         url: "../Scripts//getTableResultadosJS.php",
-     }).done(function(data, textStatus, jqXHR) {
-         console.log("data retornada:" + data);
-     }).fail(function(jqXHR, textStatus, errorThrown) {
-         console.log("La solicitud a fallado: " + textStatus);
-     });*/
-    ///
-    //console.log(issetData.length);
     getDataAJAX(issetData, filterState);
     //send data and return  full table 
 }
@@ -69,18 +55,10 @@ function getDataAJAX(issetData, filterState) {
             },
             "method": "POST",
             "url": "../Scripts/getTableResultadosJS.php",
-            "dataSrc": "" // function(data) {
-            //     console.log("Hello data");
-            //     // $("#loadingModal").modal();
-            //     //document.getElementById("checkboxlist").name = "n_ins" + data.n_ins;
-            //     for (var i = 0; i < data.length; i++) {
-            //         console.log(data[i]['n_ins']);
-            //         //$('#checkboxlist').val(55455);
-            //         // $('#checkboxlist').val(data[i].n_ins);
-            //         //document.getElementById("checkboxlist").value = data[i]['n_ins'];
-            //     }
-            //     return data;
-            // }
+            "dataSrc": function(data) {
+                $("#loadingModal").modal("hide");
+                return data;
+            }
         },
         "columns": [{
             "data": null,
@@ -163,7 +141,7 @@ function getDataAJAX(issetData, filterState) {
             if (data.n_ins != 0) {
                 // $('td', row).eq(5).addClass('row-style');
                 $(row).addClass('row-style');
-                console.log("TRUE" + data.n_ins);
+                // console.log("TRUE" + data.n_ins);
             }
         },
         "order": [

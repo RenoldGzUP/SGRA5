@@ -242,9 +242,9 @@
               <div class="panel-body">
                 <div id="certType" >
                   <center>
-                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoord">Nombre</label>
-                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Apellido </label>
-                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Indice</label>
+                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="nombre" onclick="GetCheckedStateCoord">Nombre</label>
+                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="apellido" onclick="GetCheckedStateDirector();"  >Apellido </label>
+                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="indice" onclick="GetCheckedStateDirector();"  >Indice</label>
                   </center>
                 </div>
               </div>
@@ -256,8 +256,8 @@
               <div class="panel-body">
                 <div id="certType" >
                   <center>
-                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" onclick="GetCheckedStateCoor();">Ascendente</label>
-                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2" onclick="GetCheckedStateDirector();"  >Descendente</label>
+                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="ASC" onclick="GetCheckedStateCoor();">Ascendente</label>
+                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="DESC" onclick="GetCheckedStateDirector();"  >Descendente</label>
                   </center>
                 </div>
               </div>
@@ -266,7 +266,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="sendReporte();">Aplicar Cambios</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="StartReportGenerate();">Aplicar Cambios</button>
       </div>
     </div>
   </div>

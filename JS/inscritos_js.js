@@ -106,8 +106,8 @@ function startF() {
     selected = chkArray.join(',');
     /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
     if (selected.length > 1) {
-        sendID(selected);
         console.log("Send ID to Tallies File");
+        sendID(selected);
         //generateTallies(selected);
         //enviar id 
     } else {
@@ -117,7 +117,7 @@ function startF() {
 
 function sendID(id) {
     var idInscrito = id;
-    //console.log($idInscrito);
+    console.log($idInscrito);
     $("#processModal").modal();
     $.ajax({
         data: {

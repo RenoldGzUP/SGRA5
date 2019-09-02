@@ -3,18 +3,22 @@ include_once '../../../classConexionDB.php';
 openConnection();
 include_once '../../../library_db_sql.php';
 session_start();
-saveLogs($_SESSION['name'], "Usuario generó reporte academico reporteAcademico_" . $datetime);
-require '../fpdf.php';
 
-$idrequest   = $_POST["idSede"];
-$dataReport  = dataToReport($idrequest);
-$convertData = convert_object_to_array($dataReport);
+date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+$datetimeReport = date("d-m-Y_h_i_s_A");
+saveLogs($_SESSION['name'], "Usuario generó reporte academico reporteAcademico_" . $datetimeReport);
+require '../fpdf.php';
 
 class PDF extends FPDF
 {
-// Cabecera de página
+    private $sede; //Current sede to report
+    private $area; //Current area to report
+    // Cabecera de página
     public function Header()
     {
+        $sedeTXT = $this->getSede();
+        $areaTXT = $this->getArea();
+
         // Logo
         //$this->Image('Universidad_SF.png',33,15,15);
         // Arial bold 15
@@ -55,11 +59,11 @@ class PDF extends FPDF
         $this->Ln(10);
         $this->SetX(12);
         $this->SetFont('Courier', '', 9);
-        $this->Cell(30, 5, 'Sede:', 0, 0, 'C');
+        $this->Cell(50, 5, 'Sede : ' . $sedeTXT, 0, 0, 'L');
         $this->Ln(4);
         $this->SetX(12);
         $this->SetFont('Courier', '', 9);
-        $this->Cell(30, 5, 'Área:', 0, 0, 'C');
+        $this->Cell(50, 5, 'Área : ' . $areaTXT, 0, 0, 'L');
 
         $this->Ln(6);
         $this->SetX(179);
@@ -81,15 +85,14 @@ class PDF extends FPDF
     }
 
 // Tabla simple
-    public function BasicTable($id)
+    public function BasicTable($form_filter, $form_state)
     {
 
-        $idR         = $id;
-        $dataReport  = dataToReport($idR);
-        $convertData = convert_object_to_array($dataReport);
-        $leng        = sizeof($convertData);
+        include_once "setDataToReport.php";
+    }
 
-        //$array = array("1", "JULIO", "MORAN", "8-898-15","45.6", "117.00" , "65" , " 1.373455", "*34", "*27");
+    public function printTableContent($leng, $convertData)
+    {
         $len = 1;
         $i   = 0;
         while ($len < $leng) {
@@ -111,15 +114,31 @@ class PDF extends FPDF
             $len = $len + 1;
         }
 
-        // Datos
-        /* foreach($data as $row)
+    }
+
+    //NEW FUNCTIONS
+    public function setSede($sede)
     {
-    foreach($row as $col)
-    $this->Cell(40,6,$col,1);
-    $this->Ln();
-    } */
+
+        $this->sede = $sede;
 
     }
+    public function setArea($area)
+    {
+        $this->area = $area;
+
+    }
+
+    public function getSede()
+    {
+        return $this->sede;
+
+    }
+    public function getArea()
+    {
+        return $this->area;
+    }
+//
 
 // Pie de página
     public function Footer()
@@ -150,19 +169,33 @@ class PDF extends FPDF
 
 // Creación del objeto de la clase heredada
 $pdf = new PDF();
-// Títulos de las columnas
-//$header = array('', 'APELLIDO', 'NOMBRE', 'CÉDULA' ,'P/S' , 'GATB' , 'PCA' , 'ÍNDICE','VER.','NUM.');
-// Carga de datos
-//$data = $pdf->LoadData('paises.txt');
-$idrequest = $_POST["idSede"];
+//GET ID'S FROM-END
+$form_filter = $_POST["idFilters"];
+$form_state  = $_POST["filter"];
+/////////////////////////////////
+$SedeArray = convert_object_to_array(GetSedeLabels($form_filter[0]));
+$pdf->setSede($SedeArray[0]["nombre_sede"]);
+
+//CHECK AREA SET
+if (sizeof($form_filter) > 1) {
+    if (isset($form_filter[1])) {
+        $AreaArray = convert_object_to_array(GetAreaLabels($form_filter[1]));
+        $pdf->setArea($AreaArray[0]["nombre_area"]);
+    } else {
+        $pdf->setArea("-----------");
+    }
+}
+
+////////////////////////////////
+
 $pdf->SetFont('Courier', '', 8);
 $pdf->AddPage();
-$pdf->BasicTable($idrequest);
+$pdf->BasicTable($form_filter, $form_state);
 $pdf->AliasNbPages();
 
 date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
 $datetime = date("d-m-Y_h_i_s_A");
 $pdf->Output('../../../../modulos/reporteAcademico_' . $datetime . '.pdf', 'F');
-echo "../modulos/reportesAcademicos" . $datetime . ".pdf";
+echo "../modulos/reporteAcademico_" . $datetime . ".pdf";
 //BODY
 //$pdf->Output();

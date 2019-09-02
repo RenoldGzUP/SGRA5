@@ -1,6 +1,11 @@
+///datatable
+$(document).ready(function() {
+    $('#tableReportes').DataTable();
+});
 ///////////////////////filtro////////////////////////////////////
 ////////////////////////////////////////////////////////////
 function filtrarTabla() {
+    $("#loadingModal").modal();
     var sede = $("#lista_sedes").val();
     var area = $("#lista_areas").val();
     var areaSplit = area.split('-');
@@ -22,12 +27,15 @@ function filtrarTabla() {
     dump(issetData);
     var filterState = issetData.length;
     //console.log(issetData.length);
-    getDataAJAX(issetData, filterState);
+    if (getDataAJAX(issetData, filterState)) {
+        $("#loadingModal").modal("hide");
+        document.getElementById("buttongReportes").disabled = false;
+    }
     //send data and return  full table 
 }
 
 function getDataAJAX(issetData, filterState) {
-    var t = $('#tableresultados').removeAttr('width').DataTable({
+    var t = $('#tableReportes').removeAttr('width').DataTable({
         "destroy": true,
         "fixedHeader": {
             "header": true,
@@ -38,125 +46,58 @@ function getDataAJAX(issetData, filterState) {
                 "filter": filterState
             },
             "method": "POST",
-            "url": "../Scripts/getTableInscritosJS.php",
+            "url": "../Scripts/getTableReportes.php",
             "dataSrc": ""
         },
         "columns": [{
             "data": null,
         }, {
-            "data": null
+            "data": "apellido"
         }, {
             "data": "nombre"
         }, {
-            "data": "apellido"
-        }, {
             "data": "cedula"
-        }, {
-            "data": "n_ins"
         }, {
             "data": "sede"
         }, {
-            "data": "fac_ia"
+            "data": "areap"
         }, {
-            "data": "esc_ia"
+            "data": "ps"
         }, {
-            "data": "car_ia"
+            "data": "gatb"
         }, {
-            "data": "fac_iia"
+            "data": "pca"
         }, {
-            "data": "esc_iia"
+            "data": "indice"
         }, {
-            "data": "car_iia"
+            "data": "verbal"
         }, {
-            "data": "fac_iiia"
-        }, {
-            "data": "esc_iiia"
-        }, {
-            "data": "car_iiia"
-        }, {
-            "defaultContent": "<button type='button' title ='Editar'  class='editar btn btn-warning btn-xs' ><span class='glyphicon glyphicon-pencil'></span></button>  <button type='button' title ='Borrar'  class='borrar btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash' ></span></button> "
+            "data": "numer"
         }],
         'columnDefs': [{
-            'targets': 0,
-            'searchable': false,
-            'orderable': false,
-            'className': 'dt-body-center',
-            'render': function(data, type, full, meta) {
-                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
-            }
-        }, { << << << < HEAD "className": "dt-center",
+            "className": "dt-center",
             "targets": "_all"
-        }, {
-            width: 10,
-            targets: [0, 1, 5]
-        }, {
-            width: 9,
-            targets: 16
-        }, {
-            width: 18,
-            targets: [2, 3, 4]
-        }, {
-            width: 5,
-            targets: [6,
-                7,
-                8, ,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14,
-                15
-            ]
-        }, {
-            /* "orderable": false,
-             "targets": 16*/
-            "orderable": false,
-            "targets": [0, 16]
         }],
         "order": [
-            [1, 'asc']
+            [0, 'asc']
         ]
     });
-    editar_row("#tableresultados tbody", t);
-    borrar_row("#tableresultados tbody", t);
     t.on('order.dt search.dt', function() {
-        t.column(1, {
+        t.column(0, {
             search: 'applied',
             order: 'applied'
         }).nodes().each(function(cell, i) {
             cell.innerHTML = i + 1;
         });
     }).draw();
-    // Handle click on "Select all" control
-    $('#inscritos_checkall').on('click', function() {
-        // Get all rows with search applied
-        var rows = t.rows({
-            'search': 'applied'
-        }).nodes();
-        // Check/uncheck checkboxes for all rows in the table
-        $('input[type="checkbox"]', rows).prop('checked', this.checked);
-    });
-    // Handle click on checkbox to set state of "Select all" control
-    $('#tableresultados tbody').on('change', 'input[type="checkbox"]', function() {
-        // If checkbox is not checked
-        if (!this.checked) {
-            var el = $('#inscritos_checkall').get(0);
-            // If "Select all" control is checked and has 'indeterminate' property
-            if (el && el.checked && ('indeterminate' in el)) {
-                // Set visual state of "Select all" control
-                // as 'indeterminate'
-                el.indeterminate = true;
-            }
-        }
-    });
+    return true;
 }
 //////////////////////////////////////////////////
-$('#userslist').DataTable({
+/*$('#userslist').DataTable({
     "initComplete": function(settings, json) {
         $("#reportDetails").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
     },
-});
+});*/
 var editar_row = function(tbody, table) {
     $(tbody).on("click", "button.editar", function() {
         var data = table.row($(this).parents("tr")).data();
@@ -188,5 +129,83 @@ var borrar_row = function(tbody, table) {
             //modal_edit(data-);
         }
         //modal_edit(data-);
+    });
+}
+
+function sendReporte() {
+    // var idInscrito = id;
+    //var optionText = $("#lista_sedes option:selected").text();
+    //var text = optionText.split('[A-Z]');
+    var e = document.getElementById("lista_sedes");
+    var strUser = e.options[e.selectedIndex].value;
+    var d = document.getElementById("downloadFile");
+    var f = document.getElementById("buttonReportes");
+    // var strUser2 = d.options[d.selectedIndex].value;
+    //var text = $('#selectorID').val();
+    alert("DATOS EPARA ENVIAR EN EL sendReporte" + strUser);
+    $.ajax({
+        data: {
+            "idSede": strUser
+        },
+        type: "POST",
+        dataType: "text",
+        url: "../Scripts/PDF/fpdf181/tutorial/generadorReportes.php",
+        beforeSend: function(msg) {
+            // loading.style.display = "block";
+            //fadescreen.style.display = "block";
+            //sleep(15000);
+        },
+    }).done(function(data, textStatus, jqXHR) {
+        console.log("data retornada:  " + data);
+        //f.disabled = true;
+        d.setAttribute('href', data);
+        //  d.style.backgroundColor="#47c080";
+        //loading.style.display = "none";
+        //fadescreen.style.display = "none";
+        //window.location = data;
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("La solicitud a fallado: " + textStatus);
+    });
+}
+
+function StartReportGenerate() {
+    $("#processModal").modal();
+    var sede = $("#lista_sedes").val();
+    var area = $("#lista_areas").val();
+    var areaSplit = area.split('-');
+    var facultad = $("#lista_facultades").val();
+    var escuela = $("#lista_escuelas").val();
+    var carrera = $("#lista_carreras").val();
+    console.log(sede + " - " + areaSplit[0] + " - " + facultad + " - " + escuela + " - " + carrera + " - ");
+    var dataFilter = [sede, areaSplit[0], facultad, escuela, carrera];
+    //VALIDATE 
+    var a = 0;
+    var issetData = [];
+    while (a < dataFilter.length) {
+        if (dataFilter[a] > 0) {
+            console.log("IS SET ->" + dataFilter[a]);
+            issetData.push(dataFilter[a]);
+        }
+        a++;
+    }
+    dump(issetData);
+    var filterState = issetData.length;
+    $.ajax({
+        data: {
+            "idFilters": issetData,
+            "filter": filterState
+        },
+        type: "POST",
+        dataType: "text",
+        url: "../Scripts/PDF/fpdf181/tutorial/generadorReportes.php",
+    }).done(function(data, textStatus, jqXHR) {
+        $("#processModal").modal("hide");
+        //$("#doneModal").modal();
+        if (data != null) {
+            window.open(data);
+        }
+        console.log("DATA-> " + data);
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("La solicitud a fallado: " + textStatus);
     });
 }
