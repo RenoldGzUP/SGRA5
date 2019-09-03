@@ -28,7 +28,7 @@ if ($form_state == 1) {
 
 function filterBySede($SEDE)
 {
-    $estResultado = filter_TREPORTE_By_S($SEDE);
+    $estResultado = filter_TREPORTE_By_S($SEDE, 1, "", "");
     //var_dump($estResultado);
     echo json_encode($estResultado);
 }

@@ -607,13 +607,29 @@ function filter_TR_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
 ///////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-function filter_TREPORTE_By_S($SEDE)
+function filter_TREPORTE_By_S($SEDE, $state, $row, $index)
 {
     global $mysqli;
-    $TR         = "resultados2017";
-    $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? limit 20");
-    $parametros = array('i', &$SEDE);
-    $data       = $query->getresults($parametros);
+    $TR        = "resultados2017";
+    $addQuery  = "ORDER BY " . $row . " " . $index;
+    $lastQuery = "limit 20";
+
+    //SET QUERY
+    //1 to send at main table
+    //2 to send at the report
+    if ($state == 1) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? limit 20");
+        $parametros = array('i', &$SEDE);
+        $data       = $query->getresults($parametros);
+
+    } else if ($state == 2) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? " . $addQuery);
+        $parametros = array('i', &$SEDE);
+        $data       = $query->getresults($parametros);
+
+    } else {
+        //error
+    }
 
     if (isset($data[0])) {
         return $data;

@@ -2,6 +2,9 @@
 $(document).ready(function() {
     $('#tableReportes').DataTable();
 });
+$(document).ready(function() {
+    checkBoxToIndex();
+});
 ///////////////////////filtro////////////////////////////////////
 ////////////////////////////////////////////////////////////
 function filtrarTabla() {
@@ -170,13 +173,18 @@ function sendReporte() {
 
 function StartReportGenerate() {
     $("#processModal").modal();
+    ///////////////////////////
+    //GET REPORT SETTINGS
+    var sortBy = printCheckedSort();
+    var indexBy = checkBoxToIndex();
+    //////////////////////////////
     var sede = $("#lista_sedes").val();
     var area = $("#lista_areas").val();
     var areaSplit = area.split('-');
     var facultad = $("#lista_facultades").val();
     var escuela = $("#lista_escuelas").val();
     var carrera = $("#lista_carreras").val();
-    console.log(sede + " - " + areaSplit[0] + " - " + facultad + " - " + escuela + " - " + carrera + " - ");
+    console.log("Sample " + sortBy + " -> " + indexBy);
     var dataFilter = [sede, areaSplit[0], facultad, escuela, carrera];
     //VALIDATE 
     var a = 0;
@@ -193,7 +201,9 @@ function StartReportGenerate() {
     $.ajax({
         data: {
             "idFilters": issetData,
-            "filter": filterState
+            "filter": filterState,
+            "Order": sortBy,
+            "Index": indexBy
         },
         type: "POST",
         dataType: "text",
@@ -208,4 +218,64 @@ function StartReportGenerate() {
     }).fail(function(jqXHR, textStatus, errorThrown) {
         console.log("La solicitud a fallado: " + textStatus);
     });
+}
+
+function checkBoxToSort() {
+    var nameCheckbox = document.getElementsByName('sortLabel');
+    var counterCheck = 0;
+    var i = 0;
+    var max = 2;
+    while (i < nameCheckbox.length) {
+        if (nameCheckbox[i].checked) {
+            counterCheck++;
+        }
+        i++;
+    }
+    if (counterCheck >= max) {
+        //alert("Max checkedBox selected");
+        console.log("Max checkedBox selected");
+        return false;
+    }
+}
+
+function checkBoxToIndex() {
+    var input = document.getElementById("ascIndex");
+    var input2 = document.getElementById("descIndex");
+    var isChecked = input.checked;
+    var isChecked2 = input2.checked;
+    var data;
+    if (isChecked) {
+        data = input.value;
+        console.log(data);
+        input2.disabled = true;
+    } else if (isChecked2) {
+        data = input2.value;
+        console.log(data);
+        input.disabled = true;
+    } else {
+        input.disabled = false;
+        input2.disabled = false;
+        console.log("Ok");
+    }
+    return data;
+}
+
+function printCheckedSort() {
+    var items = document.getElementsByName('sortLabel');
+    var selectedItems = "";
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].type == 'checkbox' && items[i].checked == true) selectedItems += items[i].value + "\n";
+    }
+    return selectedItems;
+    //alert(selectedItems);
+}
+
+function printCheckedIndex() {
+    var items = document.getElementsByName('chkUserUpdate');
+    var selectedItems = "";
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].type == 'checkbox' && items[i].checked == true) selectedItems += items[i].value + "\n";
+    }
+    return selectedItems;
+    // alert(selectedItems);
 }

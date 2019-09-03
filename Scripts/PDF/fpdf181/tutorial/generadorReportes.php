@@ -85,7 +85,7 @@ class PDF extends FPDF
     }
 
 // Tabla simple
-    public function BasicTable($form_filter, $form_state)
+    public function BasicTable($form_filter, $form_state, $order, $index)
     {
 
         include_once "setDataToReport.php";
@@ -172,7 +172,11 @@ $pdf = new PDF();
 //GET ID'S FROM-END
 $form_filter = $_POST["idFilters"];
 $form_state  = $_POST["filter"];
-/////////////////////////////////
+
+$qOrderBy = $_POST["Order"];
+$qIndexBy = $_POST["Index"];
+
+///////////////////////////////////
 $SedeArray = convert_object_to_array(GetSedeLabels($form_filter[0]));
 $pdf->setSede($SedeArray[0]["nombre_sede"]);
 
@@ -190,7 +194,7 @@ if (sizeof($form_filter) > 1) {
 
 $pdf->SetFont('Courier', '', 8);
 $pdf->AddPage();
-$pdf->BasicTable($form_filter, $form_state);
+$pdf->BasicTable($form_filter, $form_state, $qOrderBy, $qIndexBy);
 $pdf->AliasNbPages();
 
 date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN

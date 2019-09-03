@@ -6,7 +6,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if ($form_state == 1) {
     //filterBySede($form_filter[0]);
-    $Data      = convert_object_to_array(filter_TREPORTE_By_S($form_filter[0]));
+    $Data      = convert_object_to_array(filter_TREPORTE_By_S($form_filter[0], 2, $order, $index));
     $longArray = sizeof($Data);
     $this->printTableContent($longArray, $Data);
 

@@ -242,9 +242,9 @@
               <div class="panel-body">
                 <div id="certType" >
                   <center>
-                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="nombre" onclick="GetCheckedStateCoord">Nombre</label>
-                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="apellido" onclick="GetCheckedStateDirector();"  >Apellido </label>
-                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="indice" onclick="GetCheckedStateDirector();"  >Indice</label>
+                  <label  class="checkbox-inline"><input id="nameSort" name="sortLabel" type="checkbox" value="nombre" onclick="return checkBoxToSort()" >Nombre</label>
+                  <label  class="checkbox-inline"><input id="lastnameSort" name="sortLabel"  type="checkbox" value="apellido" onclick="return checkBoxToSort()"  >Apellido </label>
+                  <label  class="checkbox-inline"><input id="indiceSort" checked="true" name="sortLabel" type="checkbox" value="indice" onclick="return checkBoxToSort()"  >Indice</label>
                   </center>
                 </div>
               </div>
@@ -256,8 +256,8 @@
               <div class="panel-body">
                 <div id="certType" >
                   <center>
-                  <label  class="checkbox-inline"><input id="type1" type="checkbox" value="ASC" onclick="GetCheckedStateCoor();">Ascendente</label>
-                  <label  class="checkbox-inline"><input id="type2" type="checkbox" value="DESC" onclick="GetCheckedStateDirector();"  >Descendente</label>
+                  <label  class="checkbox-inline"><input id="ascIndex" name="indexLabel" type="checkbox" value="ASC" onclick="checkBoxToIndex()" >Ascendente</label>
+                  <label  class="checkbox-inline"><input id="descIndex" checked="true"  name="indexLabel" type="checkbox" value="DESC" onclick="checkBoxToIndex()" >Descendente</label>
                   </center>
                 </div>
               </div>
