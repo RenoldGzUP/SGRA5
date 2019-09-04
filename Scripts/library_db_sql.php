@@ -1150,19 +1150,44 @@ function getTablesList()
 }
 
 //Cambiar ruta para exportar datos
+//EXPORTAR RESULTADOS DE TABLA RESULTADOS
 function exportDataResultados($FILENAME)
 {
     global $mysqli;
-    $datetime     = date("d-m-Y_h:i:s_A");
-    $newFileName  = $FILENAME . "_" . $datetime;
-    $pathDocument = "../BD/export/" . $newFileName . ".csv";
-    $Query        = new Query($mysqli, "SELECT * FROM resultados2017 INTO OUTFILE 'C:/xampp/htdocs/SGRA/BD/export/" . $newFileName . ".csv' FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
-    $parametros   = array();
-    $data         = $Query->getresults();
+    $datetime    = date("d_m_Y_h_i_s_A");
+    $newFileName = $FILENAME . "_" . $datetime;
+    //$pathDocument = "../Export/" . $newFileName . ".csv";
+    $pathDocument = "'C:/xampp/htdocs/SGRA5/Export/" . $newFileName . ".csv'";
+    $path         = "../Export/" . $newFileName . ".csv";
+
+    $Query      = new Query($mysqli, "SELECT * FROM resultados2017 INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
+    $parametros = array();
+    $data       = $Query->getresults();
 
     // --- Guardamos el documento
-    return $pathDocument;
+    return $path;
 }
+
+//EXPORTAR RESULTADOS DE TABLA INSCRITOS
+//Cambiar ruta para exportar datos
+function exportDataInscritos($FILENAME)
+{
+    global $mysqli;
+    $TB          = "inscritos2017";
+    $datetime    = date("d_m_Y_h_i_s_A");
+    $newFileName = $FILENAME . "_" . $datetime;
+    //$pathDocument = "../Export/" . $newFileName . ".csv";
+    $pathDocument = "'C:/xampp/htdocs/SGRA5/Export/" . $newFileName . ".csv'";
+    $path         = "../Export/" . $newFileName . ".csv";
+
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TB . " INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
+    $parametros = array();
+    $data       = $Query->getresults();
+
+    // --- Guardamos el documento
+    return $path;
+}
+////////////////////////////////////////////
 
 function validationLastYearInscrito($NUMINSCRITO)
 {

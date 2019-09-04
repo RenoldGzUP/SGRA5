@@ -60,7 +60,6 @@ function limpiar_caracteres_especiales($s)
     $s = ereg_replace("[úùû]", "u", $s);
     $s = ereg_replace("[ÚÙÛ]", "U", $s);
     $s = ereg_replace("[A]", "a", $s);
-
     $s = str_replace(" ", "-", $s);
     $s = str_replace("&aacute;", "&#97;", $s); //a
     $s = str_replace("&uacute;", "&#117;", $s); //u
@@ -68,14 +67,12 @@ function limpiar_caracteres_especiales($s)
     $s = str_replace("&oacute;", "&#111;", $s); //o
     $s = str_replace("&ntilde;", "&#110;", $s); //ñ
     $s = str_replace("&Aacute;", "&#65;", $s); //A
-
     $s = str_replace("&eacute;", "&#101;", $s); //e
     $s = str_replace("Ñ", "&#78;", $s);
-    //para ampliar los caracteres a reemplazar agregar lineas de este tipo:
+//para ampliar los caracteres a reemplazar agregar lineas de este tipo:
     //$s = str_replace("caracter-que-queremos-cambiar","caracter-por-el-cual-lo-vamos-a-cambiar",$s);
     return $s;
 }
-
 ?>
 <head>
   <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
@@ -121,7 +118,7 @@ include '../modulos/userControl.php';
         <!--SECCION PARA IMPORTAR REGISTROS  A LA TABLA INSCRITOS-->
         <div class="col-lg-6" >
           <div class="panel panel-primary">
-            <div class="panel-heading" style="font-size: 14px;">Importar Registros A BD - <b>Inscritos</b></div>
+            <div class="panel-heading" style="font-size: 14px;">Importar Registros a la Tabla - <b>Inscritos</b></div>
             <div class="panel-body" style="height:auto">
               <!--ROW PAR IMPORTAR REGISTROS A  TB INSCRTIOS-->
               <div class="row">
@@ -151,7 +148,7 @@ foreach ($listasDB as $item) {
                         <td></td>
                         <td width="100">
                           <div class = "pull-right" style="margin-top: -20px">
-                            <button id="importInscritosBtt"  style="width: 150px;"  name="import_data" type="submit" class="btn btn-default btn-sm" onclick="loadFile()" ><span class="glyphicon glyphicon-floppy-open"></span>  Importar*</button>
+                            <button id="importInscritosBtt"  style="width: 150px;"  name="import_data" type="submit" class="btn btn-default btn-sm" onclick="loadFile()" ><span class="glyphicon glyphicon-floppy-open"></span>  Importar</button>
                           </div>
                         </td>
                       </tr>
@@ -185,7 +182,7 @@ foreach ($listasDB as $item) {
           <!--SECCION PARA IMPORTAR REGISTROS A LA TABLA RESULTADOS-->
           <div class="col-lg-6">
             <div class="panel panel-primary">
-              <div class="panel-heading" style="font-size: 14px;">Importar Registros  BD- <b>Resultados</b></div>
+              <div class="panel-heading" style="font-size: 14px;">Importar Registros a la Tabla - <b>Resultados</b></div>
               <div class="panel-body" style="height:auto">
                 <!-- row interno-->
                 <div class="row" >
@@ -220,7 +217,6 @@ foreach ($listasDB as $item) {
                               </div>
                             </td>
                           </tr>
-
                         </tbody>
                       </table>
                     </div>
@@ -265,7 +261,7 @@ foreach ($listasDB as $item) {
             <div class="col-lg-6">
               <!--SECCION PARA EXPORTAR REGISTROS DESDE LA TABLA INSCRITOS-->
               <div class="panel panel-success">
-                <div class="panel-heading" style="font-size: 14px;" >Exportar los Registros de BD <b >Inscritos</b></div>
+                <div class="panel-heading" style="font-size: 14px;" >Exportar los Registros de la Tabla  <b >Inscritos</b></div>
                 <div class="panel-body" style="height: auto;">
                   <div class="row">
                     <div class="col-lg-12">
@@ -273,7 +269,7 @@ foreach ($listasDB as $item) {
                         <tbody>
                           <tr>
                             <td class ="text-left col-sm-3" >Nombre del archivo: </td>
-                            <td  width="50"><input class="form-control " type="text" name="name" value="download"></td>
+                            <td  width="50"><input id="labelTBInscritosName" class="form-control " type="text" name="name" value="TB_Inscritos"></td>
                           </tr>
                           <tr>
                             <td class ="text-left">Tabla Origen:</td>
@@ -306,21 +302,14 @@ foreach ($listasDB as $item) {
                               </div>
                             </td>
                           </tr>
-
                         </tbody>
                       </table>
                     </div>
-
-
-
-
                     <div class="col-lg-12">
                       <div id="doneInscritoE" class="alert alert-info" style="display:none;"  >
                         <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong> Registros procesados , presione el botón debajo para descargar el archivo
                       </div>
                     </div>
-
-
                     <div class="col-lg-12">
                       <div id="loadingInscritoE" class="alert alert-info" style="display:none;">
                         <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!</strong> Cargando Registros...
@@ -336,14 +325,11 @@ foreach ($listasDB as $item) {
                         <div id="progressInscritoE" class="progress-bar progress-bar-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                       </div>
                     </div>
-
-                      <div class=" col-lg-12">
+                    <div class=" col-lg-12">
                       <center>
-
-                        <a id="downloadFileExportInscrito" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
+                      <a id="downloadFileExportInscrito" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
                       </center>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -351,7 +337,7 @@ foreach ($listasDB as $item) {
             <!--SECCION PARA EXPORTAR REGISTROS DESDE LA TABLA RESULTADOS-->
             <div class="col-lg-6" >
               <div class="panel panel-success">
-                <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de BD <B>Resultados</B></div>
+                <div class="panel-heading" style="font-size: 14px;">Exportar los Registros de la Tabla <B>Resultados</B></div>
                 <div class="panel-body" style="height: auto">
                   <div class="row">
                     <div class="col-lg-12">
@@ -359,7 +345,7 @@ foreach ($listasDB as $item) {
                         <tbody>
                           <tr>
                             <td class ="text-left col-sm-3" >Nombre del archivo: </td>
-                            <td  width="100"><input class="form-control " type="text" name="name" value="download"></td>
+                            <td  width="100"><input id="labelTBResultadosName"  class="form-control " type="text" name="name" value="TB_Resultados"></td>
                           </tr>
                           <tr>
                             <td class ="text-left">Tabla Origen:</td>
@@ -411,21 +397,16 @@ foreach ($listasDB as $item) {
                         <strong><img src="../images/wrong.png"  style="width:20px;height:20px;"> Error!</strong> Ocurrio un error en la carga del archivo CSV!.
                       </div>
                     </div>
-
                     <div class=" col-lg-12">
                       <center>
-                        <a id="downloadFileExportResultado" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
+                      <a id="downloadFileExportResultado" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
                       </center>
                     </div>
-
                     <div class="col-lg-12" >
                       <div class="progress" style="display:none;" >
                         <div id="progressResultadoE" class="progress-bar progress-bar-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                       </div>
                     </div>
-
-
-
                   </div>
                 </div>
               </div>
@@ -441,30 +422,48 @@ foreach ($listasDB as $item) {
                   <h4 class="modal-title">Configuración para exportar datos de TB Inscritos</h4>
                 </div>
                 <div class="modal-body">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th>Campo</th>
-                        <th>Tamaño </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <?php
-$labelTExpIns = array("Apellido", "Nombre", "Provincia", "Clave", "Tomo", "Folio", "Bachiller", "A&ntilde;o_Graduaci&oacute;n", "Sexo", "Colegio_Proc", "C&oacute;digo_Colegio", "Mes_Nacimiento", "D&iacute;a_Nacimiento", "A&ntilde;o_de_Nacimiento", "Tipo_C", "Provincia_Vivienda", "Distrito", "Corregimiento", "Mes_De_inscrito", "D&iacute;a_de_inscrito", "A&ntilde;o_de_inscrito", "A&ntilde;o_Lectivo", "Sede", "Facultad", "Escuela", "Carrera", "Carrera_IA", "Carrera_IIA", "Carrera_IIIA", "Facultad_2", "Facultad_3", "Tel&eacute;fono", "Fecha_de_Nacimiento", "Fecha_Inscripci&oacute;n", "N&uacute;m_Inscrito", "D");
-
+                  <div class=" row">
+                    <div class="col-lg-12">
+                      <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#toOracle">Para Oracle</a></li>
+                        <li><a data-toggle="tab" href="#toBackup">Respaldo de la Tabla Inscritos</a></li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="toOracle" class="tab-pane fade in active">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Campo</th>
+                                <th>Tamaño </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <?php
+$labelTExpIns  = array("Apellido", "Nombre", "Provincia", "Clave", "Tomo", "Folio", "Bachiller", "A&ntilde;o_Graduaci&oacute;n", "Sexo", "Colegio_Proc", "C&oacute;digo_Colegio", "Mes_Nacimiento", "D&iacute;a_Nacimiento", "A&ntilde;o_de_Nacimiento", "Tipo_C", "Provincia_Vivienda", "Distrito", "Corregimiento", "Mes_De_inscrito", "D&iacute;a_de_inscrito", "A&ntilde;o_de_inscrito", "A&ntilde;o_Lectivo", "Sede", "Facultad", "Escuela", "Carrera", "Carrera_IA", "Carrera_IIA", "Carrera_IIIA", "Facultad_2", "Facultad_3", "Tel&eacute;fono", "Fecha_de_Nacimiento", "Fecha_Inscripci&oacute;n", "N&uacute;m_Inscrito", "D");
 $labelWidthIns = array(15, 13, 2, 2, 5, 6, 2, 4, 1, 50, 4, 3, 2, 2, 2, 12, 18, 18, 3, 2, 2, 4, 2, 2, 2, 2, 6, 6, 6, 2, 2, 7, 10, 10, 8, 1);
 printRow($labelTExpIns, $labelWidthIns, "_i");
 ?>
-                    </tbody>
-                  </table>
+                            </tbody>
+                          </table>
+                          <div class="pull-right" >
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(1)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
+                          </div>
+                        </div>
+                        <div id="toBackup" class="tab-pane fade">
+                          <div class="pull-right" style="margin-top: 25px">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="exportTableInscritos()">Exportar Tabla Inscritos <span class="glyphicon glyphicon-triangle-right"></span></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-footer">
+                <!--                 <div class="modal-footer">
                   <button type="button" onclick="getDataFillsExport(1)" class="btn btn-default" data-dismiss="modal">Continuar</button>
-                </div>
+                </div> -->
               </div>
             </div>
             </div> <!-- Fin Modal -->
-
             <!-- Modal -->
             <div class="modal fade" id="opcionesExportResultados" role="dialog">
               <div class="modal-dialog">
@@ -480,7 +479,7 @@ printRow($labelTExpIns, $labelWidthIns, "_i");
                         <ul class="nav nav-tabs">
                           <li class="active"><a data-toggle="tab" href="#home">Indice</a></li>
                           <li><a data-toggle="tab" href="#menu1">Resultados</a></li>
-                          <li><a data-toggle="tab" href="#menu2">Tabla Resultados</a></li>
+                          <li><a data-toggle="tab" href="#menu2">Respaldo de la Tabla Resultados</a></li>
                         </ul>
                         <div class="tab-content">
                           <div id="home" class="tab-pane fade in active">
@@ -499,14 +498,10 @@ printRow($labelTExpI, $labelWidthI, "_ind");
 ?>
                               </tbody>
                             </table>
-
                             <div class="pull-right" >
                               <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(2)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
-
                             </div>
-
                           </div>
-
                           <div id="menu1" class="tab-pane fade">
                             <table class="table table-bordered">
                               <thead>
@@ -525,41 +520,27 @@ printRow($labelTExpR, $labelWidth, "_res");
                             </table>
                             <div class="pull-right" >
                               <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(3)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
-
                             </div>
                           </div>
-
                           <div id="menu2" class="tab-pane fade">
                             <div class="pull-right" style="margin-top: 25px">
-                              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getDataFillsExport(3)">Continuar <span class="glyphicon glyphicon-triangle-right"></span></button>
-
+                              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="exportTableResultados()">Exportar Tabla Resultados <span class="glyphicon glyphicon-triangle-right"></span></button>
+                            </div>
                           </div>
-
-
-
-
-
-
                         </div>
-
-
                       </div>
                     </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div> -->
                   </div>
-                  <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div> -->
                 </div>
+                </div> <!-- Fin Modal TB-->
               </div>
-              </div> <!-- Fin Modal TB-->
-
+              <!--MODALS PHP-->
+              <?php include '../modulos/modals.php';?>
+              <!--MODALS PHP END-->            <!-- /#page-wrapper -->
             </div>
-
-            <!--MODALS PHP-->
-            <?php include '../modulos/modals.php';?>
-
-<!--MODALS PHP END-->            <!-- /#page-wrapper -->
-          </div>
-          <!-- /#wrapper -->
-        </body>
-      </html>
+            <!-- /#wrapper -->
+          </body>
+        </html>

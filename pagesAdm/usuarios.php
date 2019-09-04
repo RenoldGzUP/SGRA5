@@ -115,7 +115,8 @@ if ($logs) {
             echo "<td>Sin determinar tipo</td>";
         }
         echo '<td><button type="button" onClick="editUser(\'' . $item->nombre_usuario . '\')"  class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span> </button>';
-        echo '<button type="button" onClick="openDeleteUserModal(\'' . $item->nombre_usuario . '\')" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span> </button>';
+        echo '   ' . '<button type="button" onClick="openDeleteUserModal(\'' . $item->nombre_usuario . '\')" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span> </button>';
+        echo '   ' . '<button type="button" onClick="changePwd()" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-lock"></span> </button>';
         echo '</td>';
         echo "</tr>";
     }
@@ -253,6 +254,35 @@ if ($logs) {
               </div>
 
               </div><!--MODAL ADD USER-->
+
+              <div class="modal fade" id="changePassword" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Cambiar Contraseña</h4>
+        </div>
+        <div class="modal-body">
+
+          <table>
+            <tr>
+              <td><label class="control-label">Contraseña Nueva</label></td>
+              <td><input type="text" name="newPWD"><br></td>
+            </tr>
+            <tr>
+               <td><label class="control-label">Contraseña Nueva</label></td>
+              <td><input type="text" name="newPWD"><br></td>
+            </tr>
+
+
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Actualizar contraseña</button>
+        </div>
+      </div>
+    </div>
+</div>
 
   <?php include '../modulos/modals.php';?>
               </div><!-- /#wrapper -->

@@ -223,3 +223,7 @@ function deleteUserRegister(USER_NAME) {
         console.log("La solicitud a fallado: " + textStatus);
     });
 }
+
+function changePwd() {
+    $("#changePassword").modal();
+}

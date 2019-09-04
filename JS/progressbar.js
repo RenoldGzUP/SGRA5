@@ -360,6 +360,51 @@
             i++;
         }
     }
+    /////////////////
+    //BACK UP DATA BASE
+    function exportTableInscritos() {
+        console.log("OK INSCRITOS");
+        var inputVal = document.getElementById("labelTBInscritosName").value;
+        var downloadButton = document.getElementById("downloadFileExportInscrito");
+        console.log(inputVal);
+        var stateExport = 1;
+        $.ajax({
+            data: {
+                "inputName": inputVal,
+                "idStateExport": stateExport
+            },
+            type: "POST",
+            url: "../Scripts/exportDBResultados.php",
+        }).done(function(data, textStatus, jqXHR) {
+            console.log(data);
+            $('#downloadFileExportInscrito').show();
+            downloadButton.setAttribute('href', data);
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.log("La solicitud a fallado: " + textStatus);
+        });
+    }
+
+    function exportTableResultados() {
+        console.log("OK RESULTADOS");
+        var inputVal = document.getElementById("labelTBResultadosName").value;
+        var downloadButton = document.getElementById("downloadFileExportResultado");
+        console.log(inputVal);
+        var stateExport = 2;
+        $.ajax({
+            data: {
+                "inputName": inputVal,
+                "idStateExport": stateExport
+            },
+            type: "POST",
+            url: "../Scripts/exportDBResultados.php",
+        }).done(function(data, textStatus, jqXHR) {
+            console.log(data);
+            $('#downloadFileExportResultado').show();
+            downloadButton.setAttribute('href', data);
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.log("La solicitud a fallado: " + textStatus);
+        });
+    }
     //CLOSE PAGE
     // Warning before leaving the page (back button, or outgoinglink)
     window.onbeforeunload = function() {
