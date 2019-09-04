@@ -17,7 +17,7 @@ $CHECKPAGE = $_POST["chkPage"];
 $userID    = $_POST["id_user"];
 //$Encrypted = md5($CLAVE);
 
-var_dump($userID);
+//var_dump($userID);
 
 switch ($CHECKROL[0]) {
     case 1:
@@ -71,4 +71,4 @@ function addExtraFill($ARRAY)
 }
 
 //REFRESH WHEN COMPLETE ALL
-//header("Location:../pagesAdm/usuarios.php");
+header("Location:../pagesAdm/usuarios.php");

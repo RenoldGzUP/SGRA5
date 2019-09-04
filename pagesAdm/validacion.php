@@ -115,11 +115,9 @@ foreach ($listasDB as $item) {
                   <center>
                   <input id="idName" type="text" name="FirstName" size="15" placeholder="Nombre" >
                   <input id="idLastName"  type="text" name="LastName" size="15" placeholder="Apellido" >
-                  </center>
-                  <center>
                   <input id="idCID"  type="text" name="Cedula" maxlength="15" size="15" placeholder="Cédula">
-                  <input id="idSearch" required type="text" name="Inscrito" disabled="" maxlength="8" size="15" placeholder="Núm.Inscrito">
-                </center>  </form>
+                  </center>
+                   </form>
               </div>
               <div class="col-sm-4">
                 <center>

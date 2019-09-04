@@ -11,21 +11,21 @@ if ($form_state == 1) {
     $this->printTableContent($longArray, $Data);
 
 } elseif ($form_state == 2) {
-    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A($form_filter[0], $form_filter[1]));
+    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A($form_filter[0], $form_filter[1], 2, $order, $index));
     $longArray = sizeof($Data);
     $this->printTableContent($longArray, $Data);
 
 } elseif ($form_state == 3) {
-    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A_F($form_filter[0], $form_filter[1], $form_filter[2]));
+    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A_F($form_filter[0], $form_filter[1], $form_filter[2], 2, $order, $index));
     $longArray = sizeof($Data);
     $this->printTableContent($longArray, $Data);
 
 } elseif ($form_state == 4) {
-    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A_F_E($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3]));
+    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A_F_E($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], 2, $order, $index));
     $longArray = sizeof($Data);
     $this->printTableContent($longArray, $Data);
 } elseif ($form_state == 5) {
-    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A_F_E_C($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4]));
+    $Data      = convert_object_to_array(filter_TREPORTE_By_S_A_F_E_C($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4], 2, $order, $index));
     $longArray = sizeof($Data);
     $this->printTableContent($longArray, $Data);
 } else {

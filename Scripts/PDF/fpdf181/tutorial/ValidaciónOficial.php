@@ -32,7 +32,7 @@ class PDF extends FPDF
         $yearMin  = $dateYear - 1;
         $this->Cell(40);
         $this->SetFont('Arial', 'B', 10);
-        $this->Cell(40, 8, 'VALIDAR PROCESO DE ADMISIÓN ' . $yearMin . ' - ' . $dateYear, 0, 1, 'L');
+        $this->Cell(40, 8, 'VALIDACIÓN DE LAS PRUEBAS DE ADMISIÓN ' . $dateYear, 0, 1, 'L');
     }
 
 //emcabezados
@@ -110,7 +110,7 @@ class PDF extends FPDF
         //TABLA B
         $i = 0;
 
-        $averageLabels = array('INDICE PREDICTIVO', 'PRUEBA PSICOLÓGICA',
+        $averageLabels = array('ÍNDICE PREDICTIVO', 'PRUEBA PSICOLÓGICA',
             'PROMEDIO DE SECUNDARIA', 'PRUEBA DE CAPACIDADES ACADÉMICAS (PCA):', 'PRUEBA DE CONOCIMIENTOS GENERALES (PCG):');
         $dataIndice = array($averageData[0]["indice"], $averageData[0]["gatb"], $averageData[0]["ps"], $averageData[0]["pca"], $averageData[0]["pcg"]);
 
@@ -435,33 +435,47 @@ $j   = 0;
 
 //////////////////////////////////////////////////////////////////////////
 //Get Data from JS
-$numInscrito = $_POST["idInscrito"];
-//////////////////////////////////////////////////////////////////////
+//Convert the POST info to array using explode
+$numIns = $_POST["idInscrito"];
+//Count Files inside Array
+
+$countInscritos = count($numIns);
+$numInscrito    = explode(",", $_POST["idInscrito"]);
+//var_dump($numInscrito);
+
+//Files inside Array
+$countInscritos = count($numInscrito);
+
+///////////////////////////////////////////////////////////////////////
 //GENERATE PDF DOCUMENT
-//while ($j < $countInscritos) {
-$pdf->AddPage('', 'Letter');
-$pdf->PersonalData($numInscrito);
-$pdf->Averages($numInscrito);
-$pdf->PrintPCA($numInscrito);
-////////////////////////////////////////////////////////////
-$Area     = GetAreaData($numInscrito);
-$typeArea = convert_object_to_array($Area);
+while ($j < $countInscritos) {
+    $pdf->AddPage('', 'Letter');
+    $pdf->PersonalData($numInscrito[$j]);
+    $pdf->Averages($numInscrito[$j]);
+    $pdf->PrintPCA($numInscrito[$j]);
+    /////////////////////////////////////////////
+    // validate_PCG($numInscrito[$j]);
+    //$pdf->MessaguePCG($numInscrito);
+    //$pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito);
+    ////////////////////////////////////////////////////////////
+    $Area     = GetAreaData($numInscrito[$j]);
+    $typeArea = convert_object_to_array($Area);
 
-if ($typeArea[0]["areap"] == 4) {
-    $pdf->MessaguePCG();
-    $pdf->printPCG($pcgCientificaTAGS, $numInscrito, $pcgMaxCientifica, $pcgMinixCientifica);
+    if ($typeArea[0]["areap"] == 4) {
+        $pdf->MessaguePCG();
+        $pdf->printPCG($pcgCientificaTAGS, $numInscrito[$j], $pcgMaxCientifica, $pcgMinixCientifica);
 
-} else if ($typeArea[0]["areap"] == 6) {
-    $pdf->MessaguePCG();
-    $pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito, $pcgMaxAdmon, $pcgMinixAdmon);
-} else if ($typeArea[0]["areap"] == 7) {
-    $pdf->MessaguePCG();
-    $pdf->printPCG($pcgDerechoTAGS, $numInscrito, $pcgMaxDerecho, $pcgMinixDerecho);
-}
+    } else if ($typeArea[0]["areap"] == 6) {
+        $pdf->MessaguePCG();
+        $pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito[$j], $pcgMaxAdmon, $pcgMinixAdmon);
+    } else if ($typeArea[0]["areap"] == 7) {
+        $pdf->MessaguePCG();
+        $pdf->printPCG($pcgDerechoTAGS, $numInscrito[$j], $pcgMaxDerecho, $pcgMinixDerecho);
+    }
 ///////////////////////////////////////////////////////////
-$pdf->SelloDGA();
-//$j++;
-//}
+    $pdf->SelloDGA();
+    $j++;
+}
 /////////////////////////////////////////////////////////////////////////
 
 date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
@@ -470,8 +484,8 @@ $pdf->Output('../../../../modulos/Certificaciones_' . $datetime . '.pdf', 'F');
 echo "../modulos/Certificaciones_" . $datetime . ".pdf";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//FUNCTIONDEPRECATE
-function validatedd_PCG($N_INSCRITO)
+//FUNCTION
+function validate_PCG($N_INSCRITO)
 {
     //TABLA D
     $pcgAdmonPublicaTAGS = array('Contabilidad', 'Ciencias Politicas', 'Administración Pública', 'Matemática', 'Economía', 'PCG TOTAL');

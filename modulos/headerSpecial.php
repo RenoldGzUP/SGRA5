@@ -7,7 +7,7 @@
              <div style="margin-top: 13px;margin-left: 85px">
                <p style="color: #ffffff;font-size: 18px;font-family: Calisto MT">UNIVERSIDAD DE</p>
                <p style="color: #ffffff;font-size:36px;margin: -3.2% 0;font-family: Calisto MT">PANAMÁ</p>
-               <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;margin-top: -69px">Vicerrectoría Academica-USER*</p>
+               <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;margin-top: -69px">Vicerrectoría Academica</p>
                <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;">Dirección General de Admisión</p>
                <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;">Sistema de Gestión de Resultados Académicos</p>
              </div>
@@ -37,7 +37,7 @@
             <a href="reportes.php" title="Crear reportes" style="margin-left: 18px;width: 90px" class="btn btn-warning btn-sm">Reportes</a> -->
 
             <?php
-$url = explode("/SGRA5/pagesAdm/", $_SERVER["REQUEST_URI"]);
+$url = explode("/SGRA/pagesAdm/", $_SERVER["REQUEST_URI"]);
 colorButton($url[1]);
 //UpdateArray();
 ?>

@@ -631,6 +631,7 @@ function filter_TREPORTE_By_S($SEDE, $state, $row, $index)
         //error
     }
 
+//return
     if (isset($data[0])) {
         return $data;
     } else {
@@ -640,14 +641,31 @@ function filter_TREPORTE_By_S($SEDE, $state, $row, $index)
 }
 
 //FILTER SEDE AREA
-function filter_TREPORTE_By_S_A($SEDE, $AREA)
+function filter_TREPORTE_By_S_A($SEDE, $AREA, $state, $row, $index)
 {
     global $mysqli;
-    $TR         = "resultados2017";
-    $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND areap = ? limit 20");
-    $parametros = array("ii", &$SEDE, &$AREA);
-    $data       = $query->getresults($parametros);
+    $TR        = "resultados2017";
+    $addQuery  = "ORDER BY " . $row . " " . $index;
+    $lastQuery = "limit 20";
 
+    //SET QUERY
+    //1 to send at main table
+    //2 to send at the report
+
+    if ($state == 1) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND areap = ? limit 20");
+        $parametros = array("ii", &$SEDE, &$AREA);
+        $data       = $query->getresults($parametros);
+
+    } elseif ($state == 2) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND areap = ? " . $addQuery);
+        $parametros = array("ii", &$SEDE, &$AREA);
+        $data       = $query->getresults($parametros);
+    } else {
+        //error
+    }
+
+//return
     if (isset($data[0])) {
         return $data;
     } else {
@@ -657,14 +675,32 @@ function filter_TREPORTE_By_S_A($SEDE, $AREA)
 }
 
 //FILTER SEDE AREA FACULTAD
-function filter_TREPORTE_By_S_A_F($SEDE, $AREA, $FACULTAD)
+function filter_TREPORTE_By_S_A_F($SEDE, $AREA, $FACULTAD, $state, $row, $index)
 {
     global $mysqli;
-    $TR         = "resultados2017";
-    $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? limit 20");
-    $parametros = array("iii", &$SEDE, &$AREA, &$FACULTAD);
-    $data       = $query->getresults($parametros);
+    $TR        = "resultados2017";
+    $addQuery  = "ORDER BY " . $row . " " . $index;
+    $lastQuery = "limit 20";
 
+    //SET QUERY
+    //1 to send at main table
+    //2 to send at the report
+
+    if ($state == 1) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? limit 20");
+        $parametros = array("iii", &$SEDE, &$AREA, &$FACULTAD);
+        $data       = $query->getresults($parametros);
+
+    } elseif ($state == 2) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? " . $addQuery);
+        $parametros = array("iii", &$SEDE, &$AREA, &$FACULTAD);
+        $data       = $query->getresults($parametros);
+
+    } else {
+        //error
+    }
+
+//return
     if (isset($data[0])) {
         return $data;
     } else {
@@ -674,14 +710,32 @@ function filter_TREPORTE_By_S_A_F($SEDE, $AREA, $FACULTAD)
 }
 
 //FILTER SEDE AREA FACULTAD ESCUELA
-function filter_TREPORTE_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA)
+function filter_TREPORTE_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA, $state, $row, $index)
 {
     global $mysqli;
-    $TR         = "resultados2017";
-    $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? limit 20 ");
-    $parametros = array("iiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA);
-    $data       = $query->getresults($parametros);
+    $TR        = "resultados2017";
+    $addQuery  = "ORDER BY " . $row . " " . $index;
+    $lastQuery = "limit 20";
 
+    //SET QUERY
+    //1 to send at main table
+    //2 to send at the report
+
+    if ($state == 1) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? limit 20 ");
+        $parametros = array("iiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA);
+        $data       = $query->getresults($parametros);
+
+    } elseif ($state == 2) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? " . $addQuery);
+        $parametros = array("iiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA);
+        $data       = $query->getresults($parametros);
+
+    } else {
+        //error
+    }
+
+//return
     if (isset($data[0])) {
         return $data;
     } else {
@@ -691,14 +745,33 @@ function filter_TREPORTE_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA)
 }
 
 //FILTER SEDE AREA FACULTAD ESCUELA CARRERA
-function filter_TREPORTE_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+function filter_TREPORTE_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA, $state, $row, $index)
 {
     global $mysqli;
-    $TR         = "resultados2017";
-    $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? limit 20");
-    $parametros = array("iiiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
-    $data       = $query->getresults($parametros);
+    $TR = "resultados2017";
 
+    $addQuery  = "ORDER BY " . $row . " " . $index;
+    $lastQuery = "limit 20";
+
+    //SET QUERY
+    //1 to send at main table
+    //2 to send at the report
+
+    if ($state == 1) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? limit 20");
+        $parametros = array("iiiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
+        $data       = $query->getresults($parametros);
+
+    } elseif ($state == 2) {
+        $query      = new Query($mysqli, "SELECT apellido,nombre,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,sede,areap,ps,gatb,pca,indice,verbal,numer FROM " . $TR . " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? " . $addQuery);
+        $parametros = array("iiiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
+        $data       = $query->getresults($parametros);
+
+    } else {
+        //error
+    }
+
+//return
     if (isset($data[0])) {
         return $data;
     } else {

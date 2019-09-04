@@ -5,7 +5,7 @@ include_once 'library_db_sql.php';
 session_start();
 // Turn off all error reporting
 error_reporting(0);
-//saveLogs($_SESSION['name'],"Administrador registro un usuario ");
+saveLogs($_SESSION['name'], "Administrador registro un usuario ");
 
 $NAME      = $_POST["name"];
 $LASTNAME  = $_POST["lastname"];

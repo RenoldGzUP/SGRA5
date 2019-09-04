@@ -35,25 +35,25 @@ function filterBySede($SEDE)
 
 function filterByArea($SEDE, $AREA)
 {
-    $estResultado = filter_TREPORTE_By_S_A($SEDE, $AREA);
+    $estResultado = filter_TREPORTE_By_S_A($SEDE, $AREA, 1, "", "");
     echo json_encode($estResultado);
 }
 function filterByFacultad($SEDE, $AREA, $FACULTAD)
 {
-    $estResultado = filter_TREPORTE_By_S_A_F($SEDE, $AREA, $FACULTAD);
+    $estResultado = filter_TREPORTE_By_S_A_F($SEDE, $AREA, $FACULTAD, 1, "", "");
     echo json_encode($estResultado);
 }
 
 function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
 {
-    $estResultado = filter_TREPORTE_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA);
+    $estResultado = filter_TREPORTE_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA, 1, "", "");
     echo json_encode($estResultado);
 
 }
 
 function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
 {
-    $estResultado = filter_TREPORTE_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
+    $estResultado = filter_TREPORTE_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA, 1, "", "");
     echo json_encode($estResultado);
 }
 
