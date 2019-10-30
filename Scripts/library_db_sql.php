@@ -1052,6 +1052,23 @@ function updateUserData($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $USER_ID)
     return true;
 }
 
+function updatePaswordUser($PWD, $STATE, $USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "UPDATE usuarios SET password=?, estado_acceso=? WHERE nombre_usuario = ?");
+    $parametros = array('sss', &$PWD, &$STATE, &$USERNAME);
+    $data       = $query->getresults($parametros);
+    return true;
+}
+
+function checkPwdRestore($PWD, $STATE_PWD, $USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "UPDATE usuarios SET password=?,pwdRestaurar=? WHERE nombre_usuario = ?");
+    $parametros = array('sss', &$PWD, &$STATE_PWD, &$USERNAME);
+    $data       = $query->getresults($parametros);
+    return true;
+}
 /////////////////////////////////
 //GET ID
 function getUserID($USERNAME)
@@ -1081,7 +1098,7 @@ function deleteRegister($USERNAME)
 function getUser($USERNAME, $PASSWORD)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre_usuario,password,type FROM usuarios WHERE nombre_usuario=? AND password=?");
+    $query      = new Query($mysqli, "SELECT nombre_usuario,password,type,estado_acceso FROM usuarios WHERE nombre_usuario=? AND password=?");
     $parametros = array('ss', &$USERNAME, &$PASSWORD);
     $data       = $query->getresults($parametros);
 
@@ -1092,6 +1109,19 @@ function getUser($USERNAME, $PASSWORD)
     }
 }
 
+function getUserPWD($USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT nombre_usuario,password FROM usuarios WHERE nombre_usuario=? ");
+    $parametros = array('s', &$USERNAME);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];
+    } else {
+        return null;
+    }
+}
 function getAllowPages($USERNAME)
 {
     global $mysqli;
@@ -1157,7 +1187,7 @@ function exportDataResultados($FILENAME)
     $datetime    = date("d_m_Y_h_i_s_A");
     $newFileName = $FILENAME . "_" . $datetime;
     //$pathDocument = "../Export/" . $newFileName . ".csv";
-    $pathDocument = "'C:/xampp/htdocs/SGRA5/Export/" . $newFileName . ".csv'";
+    $pathDocument = "'C:/xampp/htdocs/SGRA/Export/" . $newFileName . ".csv'";
     $path         = "../Export/" . $newFileName . ".csv";
 
     $Query      = new Query($mysqli, "SELECT * FROM resultados2017 INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
@@ -1177,7 +1207,7 @@ function exportDataInscritos($FILENAME)
     $datetime    = date("d_m_Y_h_i_s_A");
     $newFileName = $FILENAME . "_" . $datetime;
     //$pathDocument = "../Export/" . $newFileName . ".csv";
-    $pathDocument = "'C:/xampp/htdocs/SGRA5/Export/" . $newFileName . ".csv'";
+    $pathDocument = "'C:/xampp/htdocs/SGRA/Export/" . $newFileName . ".csv'";
     $path         = "../Export/" . $newFileName . ".csv";
 
     $Query      = new Query($mysqli, "SELECT * FROM " . $TB . " INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
@@ -1302,6 +1332,34 @@ function validationCIDExist($CID)
 }
 
 ///////////////////////
+//CID EXIST
+
+function getUserCIDFromInscritos()
+{
+    global $mysqli;
+    $TR         = "inscritos2017";
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE cedula=?");
+    $parametros = array('s', &$CID);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
+}
+
+function getUserCIDFromResultados()
+{
+    global $mysqli;
+    $TR         = "resultados2017";
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE cedula=?");
+    $parametros = array('s', &$CID);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
+}
+//////////////////
 function checkRegisterExistInscritos($NUMINSCRITO)
 {
     global $mysqli;

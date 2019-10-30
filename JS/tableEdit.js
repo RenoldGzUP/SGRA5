@@ -107,7 +107,6 @@ function modal_edit(id) {
         dataType: "text",
         url: "../Scripts/getAllDataInscritos.php",
     }).done(function(data, textStatus, jqXHR) {
-        //console.log("data  :" + data);
         document.getElementById('studentTableEdit').innerHTML = data;
         $("#tipoCertificaciones").modal();
     }).fail(function(jqXHR, textStatus, errorThrown) {

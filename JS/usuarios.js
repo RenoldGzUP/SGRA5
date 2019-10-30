@@ -1,3 +1,8 @@
+//START FUNTIONS
+$(document).ready(function() {
+    // checkBoxToIndex();
+});
+////////////////////////
 function clickUsuario() {
     var input = document.getElementById("usuarioRegular");
     var input2 = document.getElementById("usuarioEspecial");
@@ -224,6 +229,27 @@ function deleteUserRegister(USER_NAME) {
     });
 }
 
-function changePwd() {
+function changePwd(ID_USER) {
     $("#changePassword").modal();
+    console.log(ID_USER);
+    document.getElementById("restorePwdBtt").value = ID_USER;
+}
+
+function resetPwd() {
+    var idSend = $("#restorePwdBtt").val();
+    console.log(idSend);
+    $.ajax({
+        data: {
+            "idUsuarioPWD": idSend
+        },
+        type: "POST",
+        dataType: "text",
+        url: "../Scripts/resetPwd.php",
+    }).done(function(data, textStatus, jqXHR) {
+        console.log("OK");
+        $("#changePassword").modal('hide');
+        $("#doneModalUser").modal();
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.log("La solicitud a fallado: " + textStatus);
+    });
 }

@@ -43,7 +43,6 @@ if ($now > $_SESSION['expire']) {
   <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
   <script type="text/javascript" src="../js/sendId.js"></script>
   <script type="text/javascript" src="../JS/usuarios.js"></script>
-
   <script >
   $(document).ready(function() {
   $('#datatesterShow').DataTable({
@@ -54,15 +53,9 @@ if ($now > $_SESSION['expire']) {
   $(document).ready(function() {
   $('#dataShow').DataTable({
   "iDisplayLength": 25,
-
   "aLengthMenu": [[25, 50, 100, -1], [25, 50, 100, "Todos"]]
   });
-
-
   } );
-
-
-
   </script>
 </head>
 <body>
@@ -116,7 +109,7 @@ if ($logs) {
         }
         echo '<td><button type="button" onClick="editUser(\'' . $item->nombre_usuario . '\')"  class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span> </button>';
         echo '   ' . '<button type="button" onClick="openDeleteUserModal(\'' . $item->nombre_usuario . '\')" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span> </button>';
-        echo '   ' . '<button type="button" onClick="changePwd()" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-lock"></span> </button>';
+        echo '   ' . '<button type="button" onClick="changePwd(\'' . $item->nombre_usuario . '\')" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-lock"></span> </button>';
         echo '</td>';
         echo "</tr>";
     }
@@ -189,14 +182,12 @@ if ($logs) {
                     <h4 class="modal-title">Registrar Nuevo Usuario</h4>
                   </div>
                   <div class="modal-body">
-
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <form  id="editUpdateUser" action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
-                            <table class="table table-responsive" align="center">
-
-                              <tbody id="fillUserUpdate">
-                                <tr>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form  id="editUpdateUser" action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+                          <table class="table table-responsive" align="center">
+                            <tbody id="fillUserUpdate">
+                              <tr>
                                 <td><label class="control-label">Nombre</label></td>
                                 <td><input class="form-control" required  type="text" name="name" value="" /></td>
                               </tr>
@@ -212,7 +203,6 @@ if ($logs) {
                                 <td><label class="control-label">Email</label></td>
                                 <td><input class="form-control" type="email" required   name="email"  value="" /></td>
                               </tr>
-
                               <tr>
                                 <td><label class="control-label">Tipo de Usuario</label></td>
                                 <td> <center>
@@ -222,7 +212,6 @@ if ($logs) {
                                   </center>
                                 </td>
                               </tr>
-
                               <tr id="permitionUser"  style="display: none;">
                                 <td><label class="control-label">Seleccione Permisos</label></td>
                                 <td > <center id="checkPages">
@@ -233,7 +222,6 @@ if ($logs) {
                                   </center>
                                 </td>
                               </tr>
-
                               <tr>
                                 <td><label class="control-label">Contraseña</label></td>
                                 <td><input  required  class="form-control" maxlength="8" size="8" type="password"  autocomplete="off" name="password"  value="" /></td>
@@ -241,50 +229,70 @@ if ($logs) {
                               <tr>
                                 <td colspan="2"> <div class="pull-right"> <button type="submit" name="btnsave" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button></div>  </td>
                               </tr>
-
-                              </tbody>
-
-                            </table>
-                          </form>
-                        </div>
+                            </tbody>
+                          </table>
+                        </form>
                       </div>
-
+                    </div>
                   </div>
                 </div>
               </div>
-
               </div><!--MODAL ADD USER-->
 
+              <!-- MODAL EDIT PWD-->
+            <div class="modal fade" id="editPWD" role="dialog" data-keyboard="false" data-backdrop="static">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Cambiar contraseña</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form  id="editUpdateUser" action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+                          <table class="table table-responsive" align="center">
+                            <tbody id="fillUserUpdate">
+                              <tr>
+                                <td><label class="control-label">Nueva Contraseña</label></td>
+                                <td><input  required  class="form-control" maxlength="8" size="8" type="password"  autocomplete="off" name="password"  value="" /></td>
+                              </tr>
+                              <tr>
+                                <td><label class="control-label">Repetir Contraseña</label></td>
+                                <td><input  required  class="form-control" maxlength="8" size="8" type="password"  autocomplete="off" name="password"  value="" /></td>
+                              </tr>
+                              <tr>
+                                <td colspan="2"> <div class="pull-right"> <button type="submit" name="btnsave" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button></div>  </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div><!--MODAL ADD USER-->
+
+
+
+              <!---->
+
               <div class="modal fade" id="changePassword" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Cambiar Contraseña</h4>
-        </div>
-        <div class="modal-body">
-
-          <table>
-            <tr>
-              <td><label class="control-label">Contraseña Nueva</label></td>
-              <td><input type="text" name="newPWD"><br></td>
-            </tr>
-            <tr>
-               <td><label class="control-label">Contraseña Nueva</label></td>
-              <td><input type="text" name="newPWD"><br></td>
-            </tr>
-
-
-          </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Actualizar contraseña</button>
-        </div>
-      </div>
-    </div>
-</div>
-
-  <?php include '../modulos/modals.php';?>
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Cambiar Contraseña</h4>
+                    </div>
+                    <div class="modal-body">
+                              <center>
+                               <button id="restorePwdBtt" value=""  type="button"  class="btn btn-default"  onclick="resetPwd()">Restaurar contraseña</button>
+                              </center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <?php include '../modulos/modals.php';?>
               </div><!-- /#wrapper -->
             </body>
           </html>

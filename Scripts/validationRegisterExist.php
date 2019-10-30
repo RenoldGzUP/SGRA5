@@ -84,6 +84,7 @@ function compare_table($TABLA_A, $TABLA_B)
     //TABLA A INSCRITPOS | TABLA B RESULTADOS
     $result_Tabla = "";
 //VALIDACION DE LAS TABLAS
+
     if (preg_match("/2017/", $TABLA_A) && preg_match("/2017/", $TABLA_B)) {
         $result_Tabla = true;
     } else {
@@ -105,7 +106,9 @@ function validate_user_exist_CID($CID, $NAME, $LASTNAME)
     } else {
         //NO EXISTE UNA VALIDCION ANTERIOR, se PUEDE CONTINUAR
         //VERIFICAR QUE EL USUARIO EXISTE EN LAS BASE DE DATOS
-        $DataInscritosCID  = getUserCIDFromInscritos($NAME, $LASTNAME);
+        $SPLIT_ID         = split("-", $CID);
+        $DataInscritosCID = getUserCIDFromInscritos($NAME, $LASTNAME);
+
         $DataResultadosCID = getUserCIDFromResultados($NAME, $LASTNAME);
 
         if (!is_null($DataInscritosCID) && !is_null($DataResultadosCID)) {

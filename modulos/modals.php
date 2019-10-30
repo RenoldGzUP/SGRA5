@@ -113,6 +113,22 @@
     </div>
   </div>
 </div>
+<!-- DONE  -->
+<div class="modal fade" id="doneModalUser" role="dialog" data-keyboard="false" data-backdrop="static" >
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <center><img src='../images/checked.png' width="100" height="100" /> </center>
+          <center><h5>Contraseña restaurada, proporcione al usuario la contraseña de respaldo</h5></center>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <center><button type="button"  class="btn btn-success" data-dismiss="modal">OK</button></center>
+      </div>
+    </div>
+  </div>
+</div>
 <!--EXIST OK -->
 <div class="modal fade" id="foundRegister" role="dialog" data-keyboard="false" data-backdrop="static" >
   <div class="modal-dialog modal-sm" >

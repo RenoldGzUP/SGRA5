@@ -45,7 +45,38 @@ if (isset($_SESSION['sede'])) {
    <option value='' >Carrera</option>
  </select>
 
-<button type="button" onclick="filtrarTabla()" title="Filtrar registros en base a su selección " class="btn btn-default btn-xs pull-right" style="width: 100px"  ><span class="glyphicon glyphicon-filter"></span> <span>Filtrar</span> </button>
+<!--<button type="button" onclick="filtrarTabla()" title="Filtrar registros en base a su selección " class="btn btn-default btn-xs pull-right" style="width: 100px"  ><span class="glyphicon glyphicon-filter"></span> <span>Filtrar</span> </button>-->
+<div class="pull-right">
+
+  <?php
+
+$url = explode("/SGRA/pagesAdm/", $_SERVER["REQUEST_URI"]);
+//var_dump($url);
+$pagesAccessF = array("dashboard.php", "inscritos.php", "certificacion.php", "validacion.php", "reportes.php");
+if ($url[1] == $pagesAccessF[2]) {
+    
+echo "<button type='button' class='btn btn-info btn-sm' onclick='filtrarTabla()' title='Filtrar registros en base a su selección'>Filtrar</button>
+<button type='button' class='btn btn-success btn-sm'> Exportar Registros</button>
+<button type='button' class='btn btn-primary btn-sm'  id='buttonCertification' onclick='startF()' ><span class='glyphicon glyphicon-hourglass'></span> Generar Certificaciones</button>";
+}
+else if($url[1] == $pagesAccessF[4]){
+  echo " <button type='button' class='btn btn-info btn-sm' onclick='filtrarTabla()' title='Filtrar registros en base a su selección'>Filtrar</button>";
+
+}else{
+  echo " <button type='button' class='btn btn-info btn-sm' onclick='filtrarTabla()' title='Filtrar registros en base a su selección'>Filtrar</button>
+
+<button type='button' class='btn btn-success btn-sm'> Exportar Registros</button>";
+ 
+}
+?>
+
+
+</div>
+
+
+
+
+
 <!--
 </form>
 -->

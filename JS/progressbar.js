@@ -87,7 +87,7 @@
         if (step < 100) {
             stepIn = step * 70;
         } else if (step > 30000) {} {
-            stepIn = step / 10;
+            stepIn = step / 100;
         }
         console.log(step);
         var elem = document.getElementById("myBar");
@@ -206,7 +206,7 @@
         if (step < 100) {
             stepIn = step * 70;
         } else if (step > 30000) {} {
-            stepIn = step / 10;
+            stepIn = step / 100;
         }
         console.log(step);
         var elem = document.getElementById("progressResultadoI");

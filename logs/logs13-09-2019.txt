@@ -1,0 +1,2013 @@
+1	renold.gonzalez	03-08-2019 02:20:47 PM	Usuario accedió a página reportes
+2	renold.gonzalez	03-08-2019 02:20:49 PM	Usuario accedió a página de usuarios
+3	renold.gonzalez	03-08-2019 02:23:48 PM	Usuario accedió a página inscritos
+4	renold.gonzalez	03-08-2019 02:25:24 PM	Usuario accedió a página inscritos
+5	renold.gonzalez	03-08-2019 02:25:32 PM	Usuario accedió a página inscritos
+6	renold.gonzalez	03-08-2019 02:26:12 PM	Usuario accedió a página inscritos
+7	renold.gonzalez	03-08-2019 02:26:22 PM	Usuario accedió a página inscritos
+8	renold.gonzalez	03-08-2019 02:26:34 PM	Usuario accedió a página inscritos
+9	renold.gonzalez	03-08-2019 02:26:39 PM	Usuario accedió a página inscritos
+10	renold.gonzalez	03-08-2019 02:27:15 PM	Usuario accedió a página inscritos
+11	renold.gonzalez	03-08-2019 02:27:32 PM	Usuario accedió a página inscritos
+12	renold.gonzalez	03-08-2019 02:28:14 PM	Usuario accedió a página inscritos
+13	renold.gonzalez	03-08-2019 02:28:51 PM	Usuario accedió a página inscritos
+14	renold.gonzalez	03-08-2019 02:28:58 PM	Usuario accedió a página inscritos
+15	renold.gonzalez	03-08-2019 02:30:22 PM	Usuario accedió a página inscritos
+16	renold.gonzalez	03-08-2019 02:30:24 PM	Usuario accedió a página inscritos
+17	renold.gonzalez	03-08-2019 02:30:28 PM	Usuario accedió a página inscritos
+18	renold.gonzalez	03-08-2019 02:30:36 PM	Usuario accedió a página inscritos
+19	renold.gonzalez	03-08-2019 02:30:42 PM	Usuario accedió a página inscritos
+20	renold.gonzalez	03-08-2019 02:30:52 PM	Usuario accedió a página inscritos
+21	renold.gonzalez	03-08-2019 02:30:58 PM	Usuario accedió a página inscritos
+22	renold.gonzalez	03-08-2019 02:33:19 PM	Usuario accedió a página inscritos
+23	renold.gonzalez	03-08-2019 02:33:22 PM	Usuario accedió a página inscritos
+24	renold.gonzalez	03-08-2019 02:33:25 PM	Usuario accedió a página inscritos
+25	renold.gonzalez	03-08-2019 02:33:52 PM	Usuario accedió a página inscritos
+26	renold.gonzalez	03-08-2019 02:34:11 PM	Usuario accedió a página inscritos
+27	renold.gonzalez	03-08-2019 02:34:22 PM	Usuario accedió a página inscritos
+28	renold.gonzalez	03-08-2019 02:35:25 PM	Usuario accedió a página inscritos
+29	renold.gonzalez	03-08-2019 02:35:28 PM	Usuario accedió a página inscritos
+30	renold.gonzalez	03-08-2019 02:35:30 PM	Usuario accedió a página inscritos
+31	renold.gonzalez	03-08-2019 02:35:32 PM	Usuario accedió a página inscritos
+32	renold.gonzalez	03-08-2019 02:35:34 PM	Usuario accedió a página inscritos
+33	renold.gonzalez	03-08-2019 02:36:23 PM	Usuario accedió a página inscritos
+34	renold.gonzalez	03-08-2019 02:36:26 PM	Usuario accedió a página inscritos
+35	renold.gonzalez	03-08-2019 02:36:31 PM	Usuario accedió a página inscritos
+36	renold.gonzalez	03-08-2019 02:36:36 PM	Usuario accedió a página inscritos
+37	renold.gonzalez	03-08-2019 02:36:39 PM	Usuario accedió a página inscritos
+38	renold.gonzalez	03-08-2019 02:36:46 PM	Usuario accedió a página inscritos
+39	renold.gonzalez	03-08-2019 02:36:56 PM	Usuario accedió a página inscritos
+40	renold.gonzalez	03-08-2019 02:36:58 PM	Usuario accedió a página inscritos
+41	renold.gonzalez	03-08-2019 02:37:20 PM	Usuario accedió a página inscritos
+42	renold.gonzalez	03-08-2019 02:37:31 PM	Usuario accedió a página inscritos
+43	renold.gonzalez	03-08-2019 02:37:43 PM	Usuario accedió a página inscritos
+44	renold.gonzalez	03-08-2019 02:39:44 PM	Usuario accedió a página inscritos
+45	renold.gonzalez	03-08-2019 02:40:35 PM	Usuario accedió a página inscritos
+46	renold.gonzalez	03-08-2019 02:40:43 PM	Usuario accedió a página inscritos
+47	renold.gonzalez	03-08-2019 02:40:46 PM	Usuario accedió a página inscritos
+48	renold.gonzalez	03-08-2019 02:40:48 PM	Usuario accedió a página inscritos
+49	renold.gonzalez	03-08-2019 02:40:52 PM	Usuario accedió a página inscritos
+50	renold.gonzalez	03-08-2019 02:41:00 PM	Usuario accedió a página inscritos
+51	renold.gonzalez	03-08-2019 02:41:02 PM	Usuario accedió a página inscritos
+52	renold.gonzalez	03-08-2019 02:41:14 PM	Usuario accedió a página inscritos
+53	renold.gonzalez	03-08-2019 02:41:33 PM	Usuario accedió a página inscritos
+54	renold.gonzalez	03-08-2019 02:49:46 PM	Usuario accedió a página inscritos
+55	renold.gonzalez	03-08-2019 02:49:54 PM	Usuario accedió a página inscritos
+56	renold.gonzalez	03-08-2019 02:50:02 PM	Usuario accedió a página inscritos
+57	renold.gonzalez	03-08-2019 02:50:12 PM	Usuario accedió a página inscritos
+58	renold.gonzalez	03-08-2019 02:54:45 PM	Usuario accedió a página de administrtacion de datos
+59	renold.gonzalez	03-08-2019 02:54:52 PM	Usuario accedió a página de administrtacion de datos
+60	renold.gonzalez	03-08-2019 02:54:55 PM	Usuario accedió a página de usuarios
+61	renold.gonzalez	03-08-2019 02:54:57 PM	Usuario accedió a página inscritos
+62	renold.gonzalez	03-08-2019 02:55:11 PM	Usuario accedió a página principal
+63	renold.gonzalez	03-08-2019 02:55:13 PM	Usuario accedió a página inscritos
+64	renold.gonzalez	03-08-2019 02:55:25 PM	Usuario accedió a página principal
+65	renold.gonzalez	03-08-2019 02:55:25 PM	Usuario accedió a página inscritos
+66	renold.gonzalez	03-08-2019 02:55:26 PM	Usuario accedió a página certificaciones
+67	renold.gonzalez	03-08-2019 02:55:28 PM	Usuario accedió a página inscritos
+68	renold.gonzalez	03-08-2019 03:03:11 PM	Usuario accedió a página inscritos
+69	renold.gonzalez	03-08-2019 03:03:24 PM	Inició sesión como administrador del sistema
+70	renold.gonzalez	03-08-2019 03:03:24 PM	Usuario accedió a página principal
+71	renold.gonzalez	03-08-2019 03:03:26 PM	Usuario accedió a página inscritos
+72	renold.gonzalez	03-08-2019 03:03:31 PM	Usuario accedió a página inscritos
+73	renold.gonzalez	03-08-2019 03:06:13 PM	Usuario accedió a página inscritos
+74	renold.gonzalez	03-08-2019 03:06:35 PM	Usuario accedió a página inscritos
+75	renold.gonzalez	03-08-2019 03:11:00 PM	Usuario accedió a página inscritos
+76	renold.gonzalez	03-08-2019 03:11:05 PM	Usuario accedió a página inscritos
+77	renold.gonzalez	03-08-2019 03:11:08 PM	Usuario accedió a página inscritos
+78	renold.gonzalez	03-08-2019 03:11:11 PM	Usuario accedió a página inscritos
+79	renold.gonzalez	03-08-2019 03:11:21 PM	Usuario accedió a página inscritos
+80	renold.gonzalez	03-08-2019 03:11:36 PM	Usuario accedió a página inscritos
+81	renold.gonzalez	03-08-2019 03:12:07 PM	Usuario accedió a página inscritos
+82	renold.gonzalez	03-08-2019 03:12:10 PM	Usuario accedió a página inscritos
+83	renold.gonzalez	03-08-2019 03:12:13 PM	Usuario accedió a página inscritos
+84	renold.gonzalez	03-08-2019 03:13:40 PM	Usuario accedió a página inscritos
+85	renold.gonzalez	03-08-2019 03:13:43 PM	Usuario accedió a página inscritos
+86	renold.gonzalez	03-08-2019 03:17:45 PM	Usuario accedió a página inscritos
+87	renold.gonzalez	03-08-2019 03:18:16 PM	Usuario accedió a página inscritos
+88	renold.gonzalez	03-08-2019 03:18:25 PM	Usuario accedió a página inscritos
+89	renold.gonzalez	03-08-2019 03:18:28 PM	Usuario accedió a página inscritos
+90	renold.gonzalez	03-08-2019 03:18:41 PM	Usuario accedió a página inscritos
+91	renold.gonzalez	03-08-2019 03:18:48 PM	Usuario accedió a página inscritos
+92	renold.gonzalez	03-08-2019 03:18:53 PM	Usuario accedió a página inscritos
+93	renold.gonzalez	03-08-2019 03:25:37 PM	Usuario accedió a página inscritos
+94	renold.gonzalez	03-08-2019 03:25:40 PM	Usuario accedió a página inscritos
+95	renold.gonzalez	03-08-2019 03:27:55 PM	Usuario accedió a página inscritos
+96	renold.gonzalez	03-08-2019 03:27:57 PM	Usuario accedió a página inscritos
+97	renold.gonzalez	03-08-2019 03:28:01 PM	Usuario accedió a página inscritos
+98	renold.gonzalez	03-08-2019 03:28:17 PM	Usuario accedió a página principal
+99	renold.gonzalez	03-08-2019 03:28:18 PM	Usuario accedió a página inscritos
+100	renold.gonzalez	03-08-2019 03:50:20 PM	Usuario accedió a página inscritos
+101	renold.gonzalez	03-08-2019 03:50:29 PM	Usuario accedió a página inscritos
+102	renold.gonzalez	03-08-2019 03:50:39 PM	Usuario accedió a página inscritos
+103	renold.gonzalez	03-08-2019 03:50:41 PM	Usuario accedió a página inscritos
+104	renold.gonzalez	03-08-2019 03:50:43 PM	Usuario accedió a página inscritos
+105	renold.gonzalez	03-08-2019 03:50:45 PM	Usuario accedió a página inscritos
+106	renold.gonzalez	03-08-2019 03:51:40 PM	Usuario accedió a página inscritos
+107	renold.gonzalez	03-08-2019 03:51:43 PM	Usuario accedió a página inscritos
+108	renold.gonzalez	03-08-2019 03:51:46 PM	Usuario accedió a página inscritos
+109	renold.gonzalez	03-08-2019 03:51:50 PM	Usuario accedió a página inscritos
+110	renold.gonzalez	03-08-2019 03:51:51 PM	Usuario accedió a página inscritos
+111	renold.gonzalez	03-08-2019 03:51:53 PM	Usuario accedió a página inscritos
+112	renold.gonzalez	03-08-2019 03:51:54 PM	Usuario accedió a página inscritos
+113	renold.gonzalez	03-08-2019 03:51:57 PM	Usuario accedió a página inscritos
+114	renold.gonzalez	03-08-2019 03:52:00 PM	Usuario accedió a página inscritos
+115	renold.gonzalez	03-08-2019 03:52:10 PM	Usuario accedió a página inscritos
+116	renold.gonzalez	03-08-2019 03:52:13 PM	Usuario accedió a página inscritos
+117	renold.gonzalez	03-08-2019 03:53:53 PM	Usuario accedió a página inscritos
+118	renold.gonzalez	03-08-2019 03:54:00 PM	Usuario accedió a página inscritos
+119	renold.gonzalez	03-08-2019 03:54:10 PM	Usuario accedió a página inscritos
+120	renold.gonzalez	03-08-2019 03:54:58 PM	Usuario accedió a página inscritos
+121	renold.gonzalez	03-08-2019 03:55:03 PM	Usuario accedió a página inscritos
+122	renold.gonzalez	03-08-2019 03:56:08 PM	Usuario accedió a página inscritos
+123	renold.gonzalez	03-08-2019 03:56:14 PM	Usuario accedió a página inscritos
+124	renold.gonzalez	03-08-2019 04:25:21 PM	Usuario accedió a página inscritos
+125	renold.gonzalez	03-08-2019 04:34:47 PM	Usuario accedió a página inscritos
+126	renold.gonzalez	03-08-2019 04:36:02 PM	Usuario accedió a página inscritos
+127	renold.gonzalez	03-08-2019 04:36:32 PM	Usuario accedió a página inscritos
+128	renold.gonzalez	03-08-2019 04:37:24 PM	Usuario accedió a página inscritos
+129	renold.gonzalez	03-08-2019 04:38:28 PM	Usuario accedió a página inscritos
+130	renold.gonzalez	03-08-2019 04:39:16 PM	Usuario accedió a página inscritos
+131	renold.gonzalez	03-08-2019 04:39:20 PM	Usuario accedió a página inscritos
+132	renold.gonzalez	03-08-2019 04:39:57 PM	Usuario accedió a página inscritos
+133	renold.gonzalez	03-08-2019 04:40:02 PM	Usuario accedió a página inscritos
+134	renold.gonzalez	03-08-2019 04:40:05 PM	Usuario accedió a página inscritos
+135	renold.gonzalez	03-08-2019 04:40:09 PM	Usuario accedió a página inscritos
+136	renold.gonzalez	03-08-2019 04:40:14 PM	Usuario accedió a página inscritos
+137	renold.gonzalez	03-08-2019 04:40:16 PM	Usuario accedió a página inscritos
+138	renold.gonzalez	03-08-2019 04:40:20 PM	Usuario accedió a página inscritos
+139	renold.gonzalez	03-08-2019 04:40:48 PM	Usuario accedió a página inscritos
+140	renold.gonzalez	03-08-2019 04:41:52 PM	Usuario accedió a página inscritos
+141	renold.gonzalez	03-08-2019 04:43:09 PM	Usuario accedió a página inscritos
+142	renold.gonzalez	03-08-2019 04:43:14 PM	Usuario accedió a página inscritos
+143	renold.gonzalez	03-08-2019 05:36:07 PM	Usuario accedió a página inscritos
+144	renold.gonzalez	03-08-2019 05:36:21 PM	Inició sesión como administrador del sistema
+145	renold.gonzalez	03-08-2019 05:36:21 PM	Usuario accedió a página principal
+146	renold.gonzalez	03-08-2019 05:36:24 PM	Usuario accedió a página inscritos
+147	renold.gonzalez	03-08-2019 05:36:28 PM	Usuario accedió a página inscritos
+148	renold.gonzalez	03-08-2019 05:36:58 PM	Usuario accedió a página inscritos
+149	renold.gonzalez	03-08-2019 05:37:00 PM	Usuario accedió a página inscritos
+150	renold.gonzalez	03-08-2019 05:37:02 PM	Usuario accedió a página inscritos
+151	renold.gonzalez	03-08-2019 05:37:04 PM	Usuario accedió a página inscritos
+152	renold.gonzalez	03-08-2019 05:41:38 PM	Usuario accedió a página inscritos
+153	renold.gonzalez	03-08-2019 05:41:41 PM	Usuario accedió a página inscritos
+154	renold.gonzalez	03-08-2019 05:41:47 PM	Usuario accedió a página inscritos
+155	renold.gonzalez	03-08-2019 05:41:54 PM	Usuario accedió a página inscritos
+156	renold.gonzalez	03-08-2019 05:41:58 PM	Usuario accedió a página inscritos
+157	renold.gonzalez	03-08-2019 05:42:03 PM	Usuario accedió a página inscritos
+158	renold.gonzalez	03-08-2019 05:42:48 PM	Usuario accedió a página inscritos
+159	renold.gonzalez	03-08-2019 05:42:52 PM	Usuario accedió a página inscritos
+160	renold.gonzalez	03-08-2019 05:44:10 PM	Usuario accedió a página inscritos
+161	renold.gonzalez	03-08-2019 05:44:43 PM	Usuario accedió a página inscritos
+162	renold.gonzalez	03-08-2019 05:45:25 PM	Usuario accedió a página inscritos
+163	renold.gonzalez	03-08-2019 05:45:38 PM	Usuario accedió a página inscritos
+164	renold.gonzalez	03-08-2019 05:45:41 PM	Usuario accedió a página inscritos
+165	renold.gonzalez	03-08-2019 05:45:42 PM	Usuario accedió a página inscritos
+166	renold.gonzalez	03-08-2019 05:45:43 PM	Usuario accedió a página inscritos
+167	renold.gonzalez	03-08-2019 05:45:49 PM	Usuario accedió a página inscritos
+168	renold.gonzalez	03-08-2019 05:45:52 PM	Usuario accedió a página certificaciones
+169	renold.gonzalez	03-08-2019 05:45:54 PM	Usuario accedió a página inscritos
+170	renold.gonzalez	03-08-2019 05:46:06 PM	Usuario accedió a página inscritos
+171	renold.gonzalez	03-08-2019 05:46:52 PM	Usuario accedió a página inscritos
+172	renold.gonzalez	03-08-2019 05:46:57 PM	Usuario accedió a página inscritos
+173	renold.gonzalez	03-08-2019 05:47:27 PM	Usuario accedió a página inscritos
+174	renold.gonzalez	03-08-2019 05:47:34 PM	Usuario accedió a página inscritos
+175	renold.gonzalez	03-08-2019 05:47:36 PM	Usuario accedió a página inscritos
+176	renold.gonzalez	03-08-2019 05:47:38 PM	Usuario accedió a página inscritos
+177	renold.gonzalez	03-08-2019 05:47:40 PM	Usuario accedió a página inscritos
+178	renold.gonzalez	03-08-2019 05:47:42 PM	Usuario accedió a página inscritos
+179	renold.gonzalez	03-08-2019 05:49:33 PM	Usuario accedió a página inscritos
+180	renold.gonzalez	03-08-2019 05:50:04 PM	Usuario accedió a página inscritos
+181	renold.gonzalez	03-08-2019 05:50:12 PM	Usuario accedió a página inscritos
+182	renold.gonzalez	03-08-2019 05:50:55 PM	Usuario accedió a página inscritos
+183	renold.gonzalez	03-08-2019 05:51:20 PM	Usuario accedió a página inscritos
+184	renold.gonzalez	03-08-2019 05:52:23 PM	Usuario accedió a página inscritos
+185	renold.gonzalez	03-08-2019 05:53:37 PM	Usuario accedió a página inscritos
+186	renold.gonzalez	03-08-2019 05:53:47 PM	Usuario accedió a página inscritos
+187	renold.gonzalez	03-08-2019 05:54:07 PM	Usuario accedió a página inscritos
+188	renold.gonzalez	03-08-2019 05:54:31 PM	Usuario accedió a página inscritos
+189	renold.gonzalez	03-08-2019 05:54:57 PM	Usuario accedió a página inscritos
+190	renold.gonzalez	03-08-2019 05:55:27 PM	Usuario accedió a página inscritos
+191	renold.gonzalez	03-08-2019 05:56:50 PM	Usuario accedió a página inscritos
+192	renold.gonzalez	03-08-2019 05:57:36 PM	Usuario accedió a página inscritos
+193	renold.gonzalez	03-08-2019 05:57:54 PM	Usuario accedió a página inscritos
+194	renold.gonzalez	03-08-2019 06:00:14 PM	Usuario accedió a página inscritos
+195	renold.gonzalez	03-08-2019 06:00:30 PM	Usuario accedió a página inscritos
+196	renold.gonzalez	03-08-2019 06:00:41 PM	Usuario accedió a página inscritos
+197	renold.gonzalez	03-08-2019 06:01:17 PM	Usuario accedió a página inscritos
+198	renold.gonzalez	03-08-2019 06:01:24 PM	Usuario accedió a página inscritos
+199	renold.gonzalez	03-08-2019 06:01:34 PM	Usuario accedió a página inscritos
+200	renold.gonzalez	03-08-2019 06:08:29 PM	Usuario accedió a página inscritos
+201	renold.gonzalez	03-08-2019 07:28:04 PM	Usuario accedió a página inscritos
+202	renold.gonzalez	03-08-2019 07:28:19 PM	Inició sesión como administrador del sistema
+203	renold.gonzalez	03-08-2019 07:28:19 PM	Usuario accedió a página principal
+204	renold.gonzalez	03-08-2019 07:28:23 PM	Usuario accedió a página inscritos
+205	renold.gonzalez	03-08-2019 07:28:31 PM	Usuario accedió a página inscritos
+206	renold.gonzalez	03-08-2019 07:28:54 PM	Usuario accedió a página inscritos
+207	renold.gonzalez	04-08-2019 11:31:41 AM	Inició sesión como administrador del sistema
+208	renold.gonzalez	04-08-2019 11:31:41 AM	Usuario accedió a página principal
+209	renold.gonzalez	04-08-2019 11:31:44 AM	Usuario accedió a página inscritos
+210	renold.gonzalez	04-08-2019 11:31:49 AM	Usuario accedió a página inscritos
+211	renold.gonzalez	04-08-2019 11:31:55 AM	Usuario accedió a página inscritos
+212	renold.gonzalez	04-08-2019 11:32:02 AM	Usuario accedió a página inscritos
+213	renold.gonzalez	04-08-2019 11:32:07 AM	Usuario accedió a página inscritos
+214	renold.gonzalez	04-08-2019 11:32:21 AM	Usuario accedió a página inscritos
+215	renold.gonzalez	04-08-2019 11:33:13 AM	Usuario accedió a página inscritos
+216	renold.gonzalez	04-08-2019 11:33:17 AM	Usuario accedió a página inscritos
+217	renold.gonzalez	04-08-2019 11:49:12 AM	Usuario accedió a página inscritos
+218	renold.gonzalez	04-08-2019 11:49:18 AM	Usuario accedió a página inscritos
+219	renold.gonzalez	04-08-2019 11:49:21 AM	Usuario accedió a página inscritos
+220	renold.gonzalez	04-08-2019 11:49:25 AM	Usuario accedió a página inscritos
+221	renold.gonzalez	04-08-2019 11:49:42 AM	Usuario accedió a página inscritos
+222	renold.gonzalez	04-08-2019 11:57:26 AM	Usuario accedió a página inscritos
+223	renold.gonzalez	04-08-2019 11:57:41 AM	Usuario accedió a página inscritos
+224	renold.gonzalez	04-08-2019 12:08:05 PM	Usuario accedió a página inscritos
+225	renold.gonzalez	04-08-2019 12:08:25 PM	Usuario accedió a página inscritos
+226	renold.gonzalez	04-08-2019 12:08:29 PM	Usuario accedió a página principal
+227	renold.gonzalez	04-08-2019 12:08:29 PM	Usuario accedió a página inscritos
+228	renold.gonzalez	04-08-2019 12:08:40 PM	Usuario accedió a página inscritos
+229	renold.gonzalez	04-08-2019 12:08:52 PM	Usuario accedió a página inscritos
+230	renold.gonzalez	04-08-2019 12:08:57 PM	Usuario accedió a página inscritos
+231	renold.gonzalez	04-08-2019 12:09:12 PM	Usuario accedió a página inscritos
+232	renold.gonzalez	04-08-2019 12:09:47 PM	Usuario accedió a página inscritos
+233	renold.gonzalez	04-08-2019 12:10:12 PM	Usuario accedió a página inscritos
+234	renold.gonzalez	04-08-2019 12:10:24 PM	Usuario accedió a página inscritos
+235	renold.gonzalez	04-08-2019 12:10:47 PM	Usuario accedió a página inscritos
+236	renold.gonzalez	04-08-2019 12:10:53 PM	Usuario accedió a página inscritos
+237	renold.gonzalez	04-08-2019 12:11:05 PM	Usuario accedió a página inscritos
+238	renold.gonzalez	04-08-2019 12:14:17 PM	Usuario accedió a página certificaciones
+239	renold.gonzalez	04-08-2019 12:14:18 PM	Usuario accedió a página inscritos
+240	renold.gonzalez	04-08-2019 12:14:41 PM	Usuario accedió a página inscritos
+241	renold.gonzalez	04-08-2019 12:14:47 PM	Usuario accedió a página inscritos
+242	renold.gonzalez	04-08-2019 12:14:54 PM	Usuario accedió a página inscritos
+243	renold.gonzalez	04-08-2019 12:14:58 PM	Usuario accedió a página inscritos
+244	renold.gonzalez	04-08-2019 12:15:03 PM	Usuario accedió a página inscritos
+245	renold.gonzalez	04-08-2019 12:15:13 PM	Usuario accedió a página inscritos
+246	renold.gonzalez	04-08-2019 12:15:34 PM	Usuario accedió a página inscritos
+247	renold.gonzalez	04-08-2019 12:15:38 PM	Usuario accedió a página inscritos
+248	renold.gonzalez	04-08-2019 12:15:42 PM	Usuario accedió a página inscritos
+249	renold.gonzalez	04-08-2019 12:15:47 PM	Usuario accedió a página inscritos
+250	renold.gonzalez	04-08-2019 12:15:53 PM	Usuario accedió a página inscritos
+251	renold.gonzalez	04-08-2019 12:16:01 PM	Usuario accedió a página inscritos
+252	renold.gonzalez	04-08-2019 12:16:04 PM	Usuario accedió a página inscritos
+253	renold.gonzalez	04-08-2019 12:16:09 PM	Usuario accedió a página inscritos
+254	renold.gonzalez	04-08-2019 12:16:12 PM	Usuario accedió a página inscritos
+255	renold.gonzalez	04-08-2019 12:16:19 PM	Usuario accedió a página inscritos
+256	renold.gonzalez	04-08-2019 12:16:24 PM	Usuario accedió a página inscritos
+257	renold.gonzalez	04-08-2019 12:17:07 PM	Usuario accedió a página inscritos
+258	renold.gonzalez	04-08-2019 12:17:12 PM	Usuario accedió a página inscritos
+259	renold.gonzalez	04-08-2019 12:18:22 PM	Usuario accedió a página inscritos
+260	renold.gonzalez	04-08-2019 12:18:46 PM	Usuario accedió a página inscritos
+261	renold.gonzalez	04-08-2019 12:27:36 PM	Usuario accedió a página inscritos
+262	renold.gonzalez	04-08-2019 02:08:53 PM	Usuario accedió a página inscritos
+263	renold.gonzalez	04-08-2019 02:08:58 PM	Inició sesión como administrador del sistema
+264	renold.gonzalez	04-08-2019 02:08:58 PM	Usuario accedió a página principal
+265	renold.gonzalez	04-08-2019 02:09:02 PM	Usuario accedió a página inscritos
+266	renold.gonzalez	04-08-2019 02:09:06 PM	Usuario accedió a página inscritos
+267	renold.gonzalez	04-08-2019 02:15:31 PM	Usuario accedió a página inscritos
+268	renold.gonzalez	04-08-2019 02:15:37 PM	Usuario accedió a página inscritos
+269	renold.gonzalez	04-08-2019 02:15:44 PM	Usuario accedió a página inscritos
+270	renold.gonzalez	04-08-2019 02:15:50 PM	Usuario accedió a página inscritos
+271	renold.gonzalez	04-08-2019 02:15:56 PM	Usuario accedió a página inscritos
+272	renold.gonzalez	04-08-2019 02:16:17 PM	Usuario accedió a página inscritos
+273	renold.gonzalez	04-08-2019 02:22:07 PM	Usuario accedió a página inscritos
+274	renold.gonzalez	04-08-2019 02:25:50 PM	Usuario accedió a página de administrtacion de datos
+275	renold.gonzalez	04-08-2019 02:25:59 PM	Usuario accedió a página de administrtacion de datos
+276	renold.gonzalez	04-08-2019 02:26:02 PM	Usuario accedió a página certificaciones
+277	renold.gonzalez	04-08-2019 02:26:10 PM	Usuario accedió a página inscritos
+278	renold.gonzalez	04-08-2019 02:36:36 PM	Usuario accedió a página inscritos
+279	renold.gonzalez	04-08-2019 02:36:40 PM	Usuario accedió a página inscritos
+280	renold.gonzalez	04-08-2019 02:36:46 PM	Usuario accedió a página inscritos
+281	renold.gonzalez	04-08-2019 02:37:07 PM	Usuario accedió a página inscritos
+282	renold.gonzalez	04-08-2019 02:37:36 PM	Usuario accedió a página inscritos
+283	renold.gonzalez	04-08-2019 02:37:41 PM	Usuario accedió a página inscritos
+284	renold.gonzalez	04-08-2019 02:37:46 PM	Usuario accedió a página inscritos
+285	renold.gonzalez	04-08-2019 02:37:51 PM	Usuario accedió a página inscritos
+286	renold.gonzalez	04-08-2019 02:37:55 PM	Usuario accedió a página inscritos
+287	renold.gonzalez	04-08-2019 02:37:58 PM	Usuario accedió a página inscritos
+288	renold.gonzalez	04-08-2019 02:38:29 PM	Usuario accedió a página inscritos
+289	renold.gonzalez	04-08-2019 02:38:34 PM	Usuario accedió a página principal
+290	renold.gonzalez	04-08-2019 02:38:34 PM	Usuario accedió a página inscritos
+291	renold.gonzalez	04-08-2019 02:38:39 PM	Usuario accedió a página inscritos
+292	renold.gonzalez	04-08-2019 02:38:43 PM	Usuario accedió a página inscritos
+293	renold.gonzalez	04-08-2019 02:38:48 PM	Usuario accedió a página inscritos
+294	renold.gonzalez	04-08-2019 02:38:53 PM	Usuario accedió a página inscritos
+295	renold.gonzalez	04-08-2019 02:38:58 PM	Usuario accedió a página inscritos
+296	renold.gonzalez	04-08-2019 02:40:12 PM	Usuario accedió a página inscritos
+297	renold.gonzalez	04-08-2019 02:40:17 PM	Usuario accedió a página inscritos
+298	renold.gonzalez	04-08-2019 02:40:21 PM	Usuario accedió a página inscritos
+299	renold.gonzalez	04-08-2019 02:40:33 PM	Usuario accedió a página inscritos
+300	renold.gonzalez	04-08-2019 02:40:35 PM	Usuario accedió a página inscritos
+301	renold.gonzalez	04-08-2019 02:40:38 PM	Usuario accedió a página inscritos
+302	renold.gonzalez	04-08-2019 02:40:45 PM	Usuario accedió a página inscritos
+303	renold.gonzalez	04-08-2019 02:48:42 PM	Usuario accedió a página inscritos
+304	renold.gonzalez	04-08-2019 02:48:44 PM	Usuario accedió a página principal
+305	renold.gonzalez	04-08-2019 02:48:44 PM	Usuario accedió a página inscritos
+306	renold.gonzalez	04-08-2019 02:48:48 PM	Usuario accedió a página inscritos
+307	renold.gonzalez	04-08-2019 02:48:52 PM	Usuario accedió a página inscritos
+308	renold.gonzalez	04-08-2019 02:49:00 PM	Usuario accedió a página inscritos
+309	renold.gonzalez	04-08-2019 02:50:52 PM	Usuario accedió a página inscritos
+310	renold.gonzalez	04-08-2019 02:50:57 PM	Usuario accedió a página inscritos
+311	renold.gonzalez	04-08-2019 02:51:08 PM	Usuario accedió a página inscritos
+312	renold.gonzalez	04-08-2019 02:52:05 PM	Usuario accedió a página inscritos
+313	renold.gonzalez	04-08-2019 02:52:57 PM	Usuario accedió a página inscritos
+314	renold.gonzalez	04-08-2019 02:53:06 PM	Usuario accedió a página inscritos
+315	renold.gonzalez	04-08-2019 02:53:11 PM	Usuario accedió a página inscritos
+316	renold.gonzalez	04-08-2019 02:53:18 PM	Usuario accedió a página inscritos
+317	renold.gonzalez	04-08-2019 02:53:25 PM	Usuario accedió a página inscritos
+318	renold.gonzalez	04-08-2019 02:53:25 PM	Usuario accedió a página inscritos
+319	renold.gonzalez	04-08-2019 02:53:26 PM	Usuario accedió a página inscritos
+320	renold.gonzalez	04-08-2019 02:53:27 PM	Usuario accedió a página inscritos
+321	renold.gonzalez	04-08-2019 02:53:45 PM	Usuario accedió a página inscritos
+322	renold.gonzalez	04-08-2019 02:54:23 PM	Usuario accedió a página inscritos
+323	renold.gonzalez	04-08-2019 02:54:29 PM	Usuario accedió a página inscritos
+324	renold.gonzalez	04-08-2019 02:54:41 PM	Usuario accedió a página inscritos
+325	renold.gonzalez	04-08-2019 02:54:55 PM	Usuario accedió a página inscritos
+326	renold.gonzalez	04-08-2019 02:55:34 PM	Usuario accedió a página inscritos
+327	renold.gonzalez	04-08-2019 02:56:11 PM	Usuario accedió a página inscritos
+328	renold.gonzalez	04-08-2019 02:56:23 PM	Usuario accedió a página inscritos
+329	renold.gonzalez	04-08-2019 02:56:28 PM	Usuario accedió a página principal
+330	renold.gonzalez	04-08-2019 02:56:28 PM	Usuario accedió a página inscritos
+331	renold.gonzalez	04-08-2019 02:56:33 PM	Usuario accedió a página inscritos
+332	renold.gonzalez	04-08-2019 02:56:37 PM	Usuario accedió a página inscritos
+333	renold.gonzalez	04-08-2019 02:56:57 PM	Usuario accedió a página inscritos
+334	renold.gonzalez	04-08-2019 02:58:44 PM	Usuario accedió a página inscritos
+335	renold.gonzalez	04-08-2019 02:58:48 PM	Usuario salió del sistema
+336	renold.gonzalez	04-08-2019 02:58:53 PM	Inició sesión como administrador del sistema
+337	renold.gonzalez	04-08-2019 02:58:53 PM	Usuario accedió a página principal
+338	renold.gonzalez	04-08-2019 02:58:54 PM	Usuario accedió a página inscritos
+339	renold.gonzalez	04-08-2019 02:59:00 PM	Usuario accedió a página inscritos
+340	renold.gonzalez	04-08-2019 02:59:17 PM	Usuario accedió a página inscritos
+341	renold.gonzalez	04-08-2019 02:59:27 PM	Usuario accedió a página inscritos
+342	renold.gonzalez	04-08-2019 02:59:34 PM	Usuario accedió a página inscritos
+343	renold.gonzalez	04-08-2019 02:59:40 PM	Usuario salió del sistema
+344	renold.gonzalez	04-08-2019 02:59:51 PM	Inició sesión como administrador del sistema
+345	renold.gonzalez	04-08-2019 02:59:51 PM	Usuario accedió a página principal
+346	renold.gonzalez	04-08-2019 02:59:52 PM	Usuario accedió a página inscritos
+347	renold.gonzalez	04-08-2019 02:59:56 PM	Usuario accedió a página inscritos
+348	renold.gonzalez	04-08-2019 03:00:03 PM	Usuario accedió a página inscritos
+349	renold.gonzalez	04-08-2019 03:00:23 PM	Usuario accedió a página inscritos
+350	renold.gonzalez	04-08-2019 03:02:59 PM	Inició sesión como administrador del sistema
+351	renold.gonzalez	04-08-2019 03:02:59 PM	Usuario accedió a página principal
+352	renold.gonzalez	04-08-2019 03:03:01 PM	Usuario accedió a página inscritos
+353	renold.gonzalez	04-08-2019 03:03:06 PM	Usuario accedió a página inscritos
+354	renold.gonzalez	04-08-2019 03:05:48 PM	Usuario accedió a página inscritos
+355	renold.gonzalez	04-08-2019 03:05:52 PM	Usuario accedió a página inscritos
+356	renold.gonzalez	04-08-2019 03:06:09 PM	Usuario accedió a página inscritos
+357	renold.gonzalez	04-08-2019 03:06:38 PM	Usuario salió del sistema
+358	renold.gonzalez	04-08-2019 03:06:47 PM	Inició sesión como administrador del sistema
+359	renold.gonzalez	04-08-2019 03:06:47 PM	Usuario accedió a página principal
+360	renold.gonzalez	04-08-2019 03:06:49 PM	Usuario accedió a página inscritos
+361	renold.gonzalez	04-08-2019 03:06:55 PM	Usuario accedió a página inscritos
+362	renold.gonzalez	04-08-2019 03:07:46 PM	Usuario accedió a página inscritos
+363	renold.gonzalez	04-08-2019 03:07:51 PM	Usuario accedió a página inscritos
+364	renold.gonzalez	04-08-2019 03:07:54 PM	Usuario accedió a página inscritos
+365	renold.gonzalez	04-08-2019 03:08:21 PM	Usuario accedió a página inscritos
+366	renold.gonzalez	04-08-2019 03:08:34 PM	Usuario accedió a página inscritos
+367	renold.gonzalez	04-08-2019 03:09:39 PM	Usuario accedió a página inscritos
+368	renold.gonzalez	04-08-2019 03:09:48 PM	Usuario accedió a página inscritos
+369	renold.gonzalez	04-08-2019 03:10:25 PM	Usuario accedió a página inscritos
+370	renold.gonzalez	04-08-2019 03:10:28 PM	Usuario accedió a página inscritos
+371	renold.gonzalez	04-08-2019 03:10:30 PM	Usuario accedió a página inscritos
+372	renold.gonzalez	04-08-2019 03:11:15 PM	Usuario accedió a página inscritos
+373	renold.gonzalez	04-08-2019 03:39:16 PM	Usuario accedió a página inscritos
+374	renold.gonzalez	04-08-2019 03:39:56 PM	Usuario accedió a página inscritos
+375	renold.gonzalez	04-08-2019 03:40:04 PM	Usuario accedió a página inscritos
+376	renold.gonzalez	04-08-2019 03:43:54 PM	Usuario accedió a página inscritos
+377	renold.gonzalez	04-08-2019 03:45:44 PM	Usuario accedió a página inscritos
+378	renold.gonzalez	04-08-2019 03:45:48 PM	Usuario accedió a página inscritos
+379	renold.gonzalez	04-08-2019 03:45:53 PM	Usuario accedió a página inscritos
+380	renold.gonzalez	04-08-2019 03:46:02 PM	Usuario accedió a página inscritos
+381	renold.gonzalez	04-08-2019 03:46:39 PM	Usuario accedió a página inscritos
+382	renold.gonzalez	04-08-2019 03:46:43 PM	Usuario accedió a página inscritos
+383	renold.gonzalez	04-08-2019 03:46:47 PM	Usuario accedió a página inscritos
+384	renold.gonzalez	04-08-2019 03:46:52 PM	Usuario accedió a página inscritos
+385	renold.gonzalez	04-08-2019 03:46:57 PM	Usuario accedió a página inscritos
+386	renold.gonzalez	04-08-2019 03:50:27 PM	Usuario accedió a página inscritos
+387	renold.gonzalez	04-08-2019 03:50:53 PM	Usuario accedió a página inscritos
+388	renold.gonzalez	04-08-2019 03:51:02 PM	Usuario accedió a página inscritos
+389	renold.gonzalez	04-08-2019 03:51:11 PM	Usuario accedió a página inscritos
+390	renold.gonzalez	04-08-2019 03:51:19 PM	Usuario accedió a página inscritos
+391	renold.gonzalez	04-08-2019 03:51:23 PM	Usuario accedió a página inscritos
+392	renold.gonzalez	04-08-2019 03:51:29 PM	Usuario accedió a página inscritos
+393	renold.gonzalez	04-08-2019 03:51:33 PM	Usuario accedió a página inscritos
+394	renold.gonzalez	04-08-2019 03:53:24 PM	Usuario accedió a página inscritos
+395	renold.gonzalez	04-08-2019 03:53:48 PM	Usuario accedió a página inscritos
+396	renold.gonzalez	04-08-2019 03:53:53 PM	Usuario accedió a página inscritos
+397	renold.gonzalez	04-08-2019 03:54:11 PM	Usuario accedió a página inscritos
+398	renold.gonzalez	04-08-2019 03:54:42 PM	Usuario accedió a página inscritos
+399	renold.gonzalez	04-08-2019 03:54:48 PM	Usuario accedió a página inscritos
+400	renold.gonzalez	04-08-2019 03:57:25 PM	Usuario accedió a página inscritos
+401	renold.gonzalez	04-08-2019 04:04:52 PM	Usuario accedió a página inscritos
+402	renold.gonzalez	04-08-2019 04:06:30 PM	Usuario accedió a página inscritos
+403	renold.gonzalez	04-08-2019 04:06:37 PM	Usuario accedió a página inscritos
+404	renold.gonzalez	04-08-2019 04:06:41 PM	Usuario accedió a página inscritos
+405	renold.gonzalez	04-08-2019 04:07:24 PM	Usuario accedió a página inscritos
+406	renold.gonzalez	04-08-2019 04:07:48 PM	Usuario accedió a página inscritos
+407	renold.gonzalez	04-08-2019 04:08:06 PM	Usuario accedió a página inscritos
+408	renold.gonzalez	04-08-2019 04:08:21 PM	Usuario accedió a página inscritos
+409	renold.gonzalez	04-08-2019 04:08:27 PM	Usuario accedió a página inscritos
+410	renold.gonzalez	04-08-2019 04:08:34 PM	Usuario accedió a página inscritos
+411	renold.gonzalez	04-08-2019 04:08:44 PM	Usuario accedió a página inscritos
+412	renold.gonzalez	04-08-2019 04:10:02 PM	Usuario accedió a página inscritos
+413	renold.gonzalez	04-08-2019 04:10:58 PM	Usuario accedió a página inscritos
+414	renold.gonzalez	04-08-2019 04:11:03 PM	Usuario accedió a página inscritos
+415	renold.gonzalez	04-08-2019 04:11:13 PM	Usuario accedió a página inscritos
+416	renold.gonzalez	04-08-2019 04:11:16 PM	Usuario accedió a página inscritos
+417	renold.gonzalez	04-08-2019 04:22:45 PM	Usuario accedió a página inscritos
+418	renold.gonzalez	04-08-2019 04:22:51 PM	Usuario accedió a página inscritos
+419	renold.gonzalez	04-08-2019 04:22:57 PM	Usuario accedió a página inscritos
+420	renold.gonzalez	04-08-2019 04:23:03 PM	Usuario accedió a página inscritos
+421	renold.gonzalez	04-08-2019 04:24:34 PM	Usuario salió del sistema
+422	renold.gonzalez	04-08-2019 05:41:16 PM	Inició sesión como administrador del sistema
+423	renold.gonzalez	04-08-2019 05:41:16 PM	Usuario accedió a página principal
+424	renold.gonzalez	04-08-2019 05:41:19 PM	Usuario accedió a página inscritos
+425	renold.gonzalez	04-08-2019 05:41:22 PM	Usuario accedió a página de administrtacion de datos
+426	renold.gonzalez	04-08-2019 05:41:56 PM	Usuario accedió a página inscritos
+427	renold.gonzalez	04-08-2019 05:41:58 PM	Usuario accedió a página de administrtacion de datos
+428	renold.gonzalez	04-08-2019 05:44:02 PM	Usuario accedió a página de administrtacion de datos
+429	renold.gonzalez	04-08-2019 05:44:41 PM	Usuario cargo al sistema (TB Inscritos) el archivo inscrtios2017_1200.csv
+430	renold.gonzalez	04-08-2019 05:45:34 PM	Usuario accedió a página de administrtacion de datos
+431	renold.gonzalez	04-08-2019 05:45:39 PM	Usuario cargo al sistema (TB Inscritos) el archivo inscrtios2017_1200.csv
+432	renold.gonzalez	04-08-2019 05:46:29 PM	Registros cargados al sistema (TB Inscritos) : 1199  DESDE-> inscrtios2017_1200.csv
+433	renold.gonzalez	04-08-2019 05:48:16 PM	Usuario accedió a página inscritos
+434	renold.gonzalez	04-08-2019 05:48:19 PM	Usuario accedió a página inscritos
+435	renold.gonzalez	04-08-2019 05:48:34 PM	Usuario accedió a página inscritos
+436	renold.gonzalez	04-08-2019 05:49:32 PM	Usuario salió del sistema
+437	renold.gonzalez	04-08-2019 05:56:30 PM	Inició sesión como administrador del sistema
+438	renold.gonzalez	04-08-2019 05:56:30 PM	Usuario accedió a página principal
+439	renold.gonzalez	04-08-2019 05:56:32 PM	Usuario accedió a página de administrtacion de datos
+440	renold.gonzalez	04-08-2019 05:57:14 PM	Usuario accedió a página de administrtacion de datos
+441	renold.gonzalez	04-08-2019 05:58:11 PM	Usuario accedió a página de administrtacion de datos
+442	renold.gonzalez	04-08-2019 05:58:26 PM	Usuario accedió a página de administrtacion de datos
+443	renold.gonzalez	04-08-2019 05:58:56 PM	Usuario accedió a página de administrtacion de datos
+444	renold.gonzalez	04-08-2019 05:59:17 PM	Usuario accedió a página de administrtacion de datos
+445	renold.gonzalez	04-08-2019 05:59:36 PM	Usuario accedió a página de administrtacion de datos
+446	renold.gonzalez	04-08-2019 06:00:11 PM	Usuario accedió a página de administrtacion de datos
+447	renold.gonzalez	04-08-2019 06:00:18 PM	Usuario accedió a página de administrtacion de datos
+448	renold.gonzalez	04-08-2019 06:01:27 PM	Usuario accedió a página de administrtacion de datos
+449	renold.gonzalez	04-08-2019 06:01:34 PM	Usuario accedió a página de administrtacion de datos
+450	renold.gonzalez	04-08-2019 06:01:49 PM	Usuario accedió a página de administrtacion de datos
+451	renold.gonzalez	04-08-2019 06:02:07 PM	Usuario accedió a página de administrtacion de datos
+452	renold.gonzalez	04-08-2019 06:02:41 PM	Usuario accedió a página de administrtacion de datos
+453	renold.gonzalez	04-08-2019 06:03:59 PM	Usuario accedió a página de administrtacion de datos
+454	renold.gonzalez	04-08-2019 06:04:08 PM	Usuario accedió a página de administrtacion de datos
+455	renold.gonzalez	04-08-2019 06:06:33 PM	Usuario accedió a página de administrtacion de datos
+456	renold.gonzalez	04-08-2019 06:07:01 PM	Usuario accedió a página de administrtacion de datos
+457	renold.gonzalez	04-08-2019 06:07:41 PM	Usuario accedió a página de administrtacion de datos
+458	renold.gonzalez	04-08-2019 06:08:39 PM	Usuario accedió a página de administrtacion de datos
+459	renold.gonzalez	04-08-2019 06:08:45 PM	Usuario accedió a página de administrtacion de datos
+460	renold.gonzalez	04-08-2019 06:08:55 PM	Usuario salió del sistema
+461	renold.gonzalez	07-08-2019 09:57:10 PM	Inició sesión como administrador del sistema
+462	renold.gonzalez	07-08-2019 09:57:10 PM	Usuario accedió a página principal
+463	renold.gonzalez	07-08-2019 09:57:12 PM	Usuario accedió a página inscritos
+464	renold.gonzalez	07-08-2019 09:57:16 PM	Usuario accedió a página inscritos
+465	renold.gonzalez	07-08-2019 09:57:27 PM	Usuario accedió a página inscritos
+466	renold.gonzalez	07-08-2019 09:57:35 PM	Usuario accedió a página inscritos
+467	renold.gonzalez	07-08-2019 09:57:48 PM	Usuario accedió a página inscritos
+468	renold.gonzalez	07-08-2019 09:57:53 PM	Usuario accedió a página inscritos
+469	renold.gonzalez	07-08-2019 09:57:59 PM	Usuario salió del sistema
+470	renold.gonzalez	10-08-2019 07:24:15 AM	Inició sesión como administrador del sistema
+471	renold.gonzalez	10-08-2019 07:24:16 AM	Usuario accedió a página principal
+472	renold.gonzalez	10-08-2019 07:24:21 AM	Usuario accedió a página inscritos
+473	renold.gonzalez	10-08-2019 07:24:25 AM	Usuario accedió a página inscritos
+474	renold.gonzalez	10-08-2019 07:25:10 AM	Usuario accedió a página inscritos
+475	renold.gonzalez	10-08-2019 07:25:19 AM	Usuario accedió a página inscritos
+476	renold.gonzalez	10-08-2019 07:25:24 AM	Usuario accedió a página inscritos
+477	renold.gonzalez	10-08-2019 07:25:28 AM	Usuario accedió a página inscritos
+478	renold.gonzalez	10-08-2019 07:26:24 AM	Usuario accedió a página inscritos
+479	renold.gonzalez	10-08-2019 07:26:30 AM	Usuario accedió a página inscritos
+480	renold.gonzalez	10-08-2019 07:26:33 AM	Usuario accedió a página inscritos
+481	renold.gonzalez	10-08-2019 07:26:36 AM	Usuario accedió a página inscritos
+482	renold.gonzalez	10-08-2019 07:49:26 AM	Usuario accedió a página inscritos
+483	renold.gonzalez	10-08-2019 07:49:30 AM	Usuario accedió a página inscritos
+484	renold.gonzalez	10-08-2019 07:50:05 AM	Usuario accedió a página inscritos
+485	renold.gonzalez	10-08-2019 07:50:11 AM	Usuario accedió a página inscritos
+486	renold.gonzalez	10-08-2019 07:51:14 AM	Usuario accedió a página inscritos
+487	renold.gonzalez	10-08-2019 07:51:18 AM	Usuario accedió a página inscritos
+488	renold.gonzalez	10-08-2019 07:51:48 AM	Usuario accedió a página inscritos
+489	renold.gonzalez	10-08-2019 07:51:52 AM	Usuario accedió a página inscritos
+490	renold.gonzalez	10-08-2019 07:51:58 AM	Usuario accedió a página inscritos
+491	renold.gonzalez	10-08-2019 08:51:29 AM	Inició sesión como administrador del sistema
+492	renold.gonzalez	10-08-2019 08:51:29 AM	Usuario accedió a página principal
+493	renold.gonzalez	10-08-2019 08:51:32 AM	Usuario accedió a página inscritos
+494	renold.gonzalez	10-08-2019 09:55:44 AM	Usuario accedió a página inscritos
+495	renold.gonzalez	10-08-2019 09:57:06 AM	Usuario accedió a página inscritos
+496	renold.gonzalez	10-08-2019 09:57:22 AM	Usuario accedió a página certificaciones
+497	renold.gonzalez	10-08-2019 09:57:23 AM	Usuario accedió a página inscritos
+498	renold.gonzalez	10-08-2019 09:57:43 AM	Usuario accedió a página inscritos
+499	renold.gonzalez	10-08-2019 09:59:43 AM	Usuario accedió a página inscritos
+500	renold.gonzalez	10-08-2019 10:10:25 AM	Usuario accedió a página inscritos
+501	renold.gonzalez	10-08-2019 10:10:29 AM	Usuario accedió a página inscritos
+502	renold.gonzalez	10-08-2019 10:10:36 AM	Usuario accedió a página inscritos
+503	renold.gonzalez	10-08-2019 10:23:53 AM	Usuario accedió a página inscritos
+504	renold.gonzalez	10-08-2019 10:24:06 AM	Usuario accedió a página inscritos
+505	renold.gonzalez	10-08-2019 10:25:31 AM	Usuario accedió a página inscritos
+506	renold.gonzalez	10-08-2019 10:27:02 AM	Usuario accedió a página inscritos
+507	renold.gonzalez	10-08-2019 10:27:07 AM	Usuario accedió a página inscritos
+508	renold.gonzalez	10-08-2019 10:27:35 AM	Usuario accedió a página inscritos
+509	renold.gonzalez	10-08-2019 10:28:35 AM	Usuario accedió a página inscritos
+510	renold.gonzalez	10-08-2019 10:28:52 AM	Usuario accedió a página inscritos
+511	renold.gonzalez	10-08-2019 10:29:39 AM	Usuario accedió a página inscritos
+512	renold.gonzalez	10-08-2019 10:29:50 AM	Usuario accedió a página inscritos
+513	renold.gonzalez	10-08-2019 10:30:06 AM	Usuario accedió a página inscritos
+514	renold.gonzalez	10-08-2019 10:31:58 AM	Usuario accedió a página inscritos
+515	renold.gonzalez	10-08-2019 10:32:03 AM	Inició sesión como administrador del sistema
+516	renold.gonzalez	10-08-2019 10:32:03 AM	Usuario accedió a página principal
+517	renold.gonzalez	10-08-2019 10:32:05 AM	Usuario accedió a página inscritos
+518	renold.gonzalez	10-08-2019 10:32:08 AM	Usuario accedió a página inscritos
+519	renold.gonzalez	10-08-2019 10:39:29 AM	Usuario accedió a página inscritos
+520	renold.gonzalez	10-08-2019 10:40:43 AM	Usuario accedió a página inscritos
+521	renold.gonzalez	10-08-2019 10:40:54 AM	Usuario accedió a página inscritos
+522	renold.gonzalez	10-08-2019 10:41:06 AM	Usuario accedió a página inscritos
+523	renold.gonzalez	10-08-2019 10:43:34 AM	Usuario accedió a página inscritos
+524	renold.gonzalez	10-08-2019 10:45:08 AM	Usuario accedió a página inscritos
+525	renold.gonzalez	10-08-2019 10:49:48 AM	Usuario accedió a página inscritos
+526	renold.gonzalez	10-08-2019 10:50:04 AM	Usuario accedió a página inscritos
+527	renold.gonzalez	10-08-2019 10:51:28 AM	Usuario accedió a página inscritos
+528	renold.gonzalez	10-08-2019 10:54:26 AM	Usuario accedió a página inscritos
+529	renold.gonzalez	10-08-2019 10:56:29 AM	Usuario accedió a página inscritos
+530	renold.gonzalez	10-08-2019 11:01:18 AM	Usuario accedió a página inscritos
+531	renold.gonzalez	10-08-2019 11:01:40 AM	Usuario accedió a página inscritos
+532	renold.gonzalez	10-08-2019 11:01:46 AM	Usuario accedió a página inscritos
+533	renold.gonzalez	10-08-2019 11:01:51 AM	Usuario accedió a página inscritos
+534	renold.gonzalez	10-08-2019 11:01:58 AM	Usuario accedió a página inscritos
+535	renold.gonzalez	10-08-2019 11:16:05 AM	Usuario accedió a página inscritos
+536	renold.gonzalez	10-08-2019 11:16:08 AM	Usuario accedió a página inscritos
+537	renold.gonzalez	11-08-2019 09:28:02 AM	Usuario salió del sistema
+538	renold.gonzalez	11-08-2019 09:28:11 AM	Inició sesión como administrador del sistema
+539	renold.gonzalez	11-08-2019 09:28:11 AM	Usuario accedió a página principal
+540	renold.gonzalez	11-08-2019 09:28:14 AM	Usuario accedió a página inscritos
+541	renold.gonzalez	11-08-2019 09:28:36 AM	Usuario accedió a página inscritos
+542	renold.gonzalez	11-08-2019 09:28:40 AM	Usuario accedió a página inscritos
+543	renold.gonzalez	11-08-2019 09:28:46 AM	Usuario accedió a página inscritos
+544	renold.gonzalez	11-08-2019 09:29:31 AM	Usuario accedió a página inscritos
+545	renold.gonzalez	11-08-2019 09:29:35 AM	Usuario accedió a página inscritos
+546	renold.gonzalez	11-08-2019 09:31:02 AM	Usuario accedió a página inscritos
+547	renold.gonzalez	11-08-2019 09:32:40 AM	Usuario accedió a página inscritos
+548	renold.gonzalez	11-08-2019 09:32:45 AM	Usuario accedió a página inscritos
+549	renold.gonzalez	11-08-2019 09:32:52 AM	Usuario accedió a página inscritos
+550	renold.gonzalez	11-08-2019 09:32:58 AM	Usuario accedió a página inscritos
+551	renold.gonzalez	11-08-2019 09:33:09 AM	Usuario accedió a página inscritos
+552	renold.gonzalez	11-08-2019 09:33:15 AM	Usuario accedió a página inscritos
+553	renold.gonzalez	11-08-2019 09:33:37 AM	Usuario accedió a página inscritos
+554	renold.gonzalez	11-08-2019 09:33:43 AM	Usuario accedió a página inscritos
+555	renold.gonzalez	11-08-2019 09:33:47 AM	Usuario accedió a página inscritos
+556	renold.gonzalez	11-08-2019 09:33:52 AM	Usuario accedió a página inscritos
+557	renold.gonzalez	11-08-2019 09:35:37 AM	Usuario accedió a página inscritos
+558	renold.gonzalez	11-08-2019 09:35:41 AM	Usuario accedió a página inscritos
+559	renold.gonzalez	11-08-2019 09:35:46 AM	Usuario accedió a página inscritos
+560	renold.gonzalez	11-08-2019 09:35:52 AM	Usuario accedió a página inscritos
+561	renold.gonzalez	11-08-2019 09:44:06 AM	Usuario accedió a página inscritos
+562	renold.gonzalez	11-08-2019 09:44:11 AM	Usuario accedió a página inscritos
+563	renold.gonzalez	11-08-2019 09:44:15 AM	Usuario accedió a página inscritos
+564	renold.gonzalez	11-08-2019 09:45:11 AM	Usuario accedió a página inscritos
+565	renold.gonzalez	11-08-2019 09:45:17 AM	Usuario accedió a página inscritos
+566	renold.gonzalez	11-08-2019 09:45:20 AM	Usuario accedió a página inscritos
+567	renold.gonzalez	11-08-2019 09:45:24 AM	Usuario accedió a página inscritos
+568	renold.gonzalez	11-08-2019 10:00:29 AM	Usuario accedió a página inscritos
+569	renold.gonzalez	11-08-2019 10:00:34 AM	Usuario accedió a página inscritos
+570	renold.gonzalez	11-08-2019 10:01:10 AM	Usuario accedió a página inscritos
+571	renold.gonzalez	11-08-2019 10:01:14 AM	Usuario accedió a página inscritos
+572	renold.gonzalez	11-08-2019 10:01:24 AM	Usuario accedió a página inscritos
+573	renold.gonzalez	11-08-2019 10:01:50 AM	Usuario accedió a página inscritos
+574	renold.gonzalez	11-08-2019 10:02:06 AM	Usuario accedió a página inscritos
+575	renold.gonzalez	11-08-2019 10:02:16 AM	Usuario accedió a página inscritos
+576	renold.gonzalez	11-08-2019 10:21:59 AM	Usuario accedió a página inscritos
+577	renold.gonzalez	11-08-2019 10:22:03 AM	Usuario accedió a página inscritos
+578	renold.gonzalez	11-08-2019 10:22:05 AM	Usuario accedió a página inscritos
+579	renold.gonzalez	11-08-2019 10:25:07 AM	Usuario accedió a página inscritos
+580	renold.gonzalez	11-08-2019 10:25:15 AM	Usuario accedió a página inscritos
+581	renold.gonzalez	11-08-2019 10:25:45 AM	Usuario accedió a página inscritos
+582	renold.gonzalez	11-08-2019 10:25:53 AM	Usuario accedió a página inscritos
+583	renold.gonzalez	11-08-2019 10:25:56 AM	Usuario accedió a página inscritos
+584	renold.gonzalez	11-08-2019 10:27:28 AM	Usuario accedió a página inscritos
+585	renold.gonzalez	11-08-2019 10:27:34 AM	Usuario accedió a página inscritos
+586	renold.gonzalez	11-08-2019 10:27:39 AM	Usuario accedió a página inscritos
+587	renold.gonzalez	11-08-2019 10:29:28 AM	Usuario accedió a página inscritos
+588	renold.gonzalez	11-08-2019 10:29:34 AM	Usuario accedió a página inscritos
+589	renold.gonzalez	11-08-2019 10:32:07 AM	Usuario accedió a página inscritos
+590	renold.gonzalez	11-08-2019 10:32:15 AM	Usuario accedió a página inscritos
+591	renold.gonzalez	11-08-2019 10:37:28 AM	Usuario accedió a página inscritos
+592	renold.gonzalez	11-08-2019 10:40:13 AM	Usuario accedió a página inscritos
+593	renold.gonzalez	11-08-2019 10:40:17 AM	Usuario accedió a página inscritos
+594	renold.gonzalez	11-08-2019 10:40:21 AM	Usuario accedió a página inscritos
+595	renold.gonzalez	11-08-2019 10:40:44 AM	Usuario accedió a página inscritos
+596	renold.gonzalez	11-08-2019 10:40:48 AM	Usuario accedió a página inscritos
+597	renold.gonzalez	11-08-2019 10:40:51 AM	Usuario accedió a página inscritos
+598	renold.gonzalez	11-08-2019 10:43:07 AM	Usuario accedió a página inscritos
+599	renold.gonzalez	11-08-2019 10:43:10 AM	Usuario salió del sistema
+600	renold.gonzalez	11-08-2019 10:43:14 AM	Inició sesión como administrador del sistema
+601	renold.gonzalez	11-08-2019 10:43:14 AM	Usuario accedió a página principal
+602	renold.gonzalez	11-08-2019 10:43:16 AM	Usuario accedió a página inscritos
+603	renold.gonzalez	11-08-2019 10:43:19 AM	Usuario accedió a página inscritos
+604	renold.gonzalez	11-08-2019 10:43:23 AM	Usuario accedió a página inscritos
+605	renold.gonzalez	11-08-2019 10:43:28 AM	Usuario accedió a página inscritos
+606	renold.gonzalez	11-08-2019 10:43:31 AM	Usuario accedió a página inscritos
+607	renold.gonzalez	11-08-2019 10:43:34 AM	Usuario accedió a página inscritos
+608	renold.gonzalez	11-08-2019 10:43:37 AM	Usuario accedió a página inscritos
+609	renold.gonzalez	11-08-2019 10:43:44 AM	Usuario accedió a página inscritos
+610	renold.gonzalez	11-08-2019 10:43:48 AM	Usuario accedió a página inscritos
+611	renold.gonzalez	11-08-2019 10:44:55 AM	Usuario accedió a página inscritos
+612	renold.gonzalez	11-08-2019 10:44:59 AM	Usuario accedió a página inscritos
+613	renold.gonzalez	11-08-2019 10:45:02 AM	Usuario accedió a página inscritos
+614	renold.gonzalez	11-08-2019 10:45:08 AM	Usuario accedió a página inscritos
+615	renold.gonzalez	11-08-2019 10:45:54 AM	Usuario accedió a página inscritos
+616	renold.gonzalez	11-08-2019 10:46:02 AM	Usuario accedió a página inscritos
+617	renold.gonzalez	11-08-2019 10:47:22 AM	Usuario accedió a página inscritos
+618	renold.gonzalez	11-08-2019 10:49:16 AM	Usuario accedió a página inscritos
+619	renold.gonzalez	11-08-2019 10:50:18 AM	Usuario salió del sistema
+620	renold.gonzalez	11-08-2019 10:50:22 AM	Inició sesión como administrador del sistema
+621	renold.gonzalez	11-08-2019 10:50:22 AM	Usuario accedió a página principal
+622	renold.gonzalez	11-08-2019 10:50:27 AM	Usuario accedió a página inscritos
+623	renold.gonzalez	11-08-2019 10:50:34 AM	Usuario accedió a página inscritos
+624	renold.gonzalez	11-08-2019 10:50:38 AM	Usuario accedió a página inscritos
+625	renold.gonzalez	11-08-2019 10:53:15 AM	Usuario salió del sistema
+626	renold.gonzalez	11-08-2019 10:53:20 AM	Inició sesión como administrador del sistema
+627	renold.gonzalez	11-08-2019 10:53:20 AM	Usuario accedió a página principal
+628	renold.gonzalez	11-08-2019 10:53:30 AM	Usuario accedió a página inscritos
+629	renold.gonzalez	11-08-2019 10:53:36 AM	Usuario accedió a página inscritos
+630	renold.gonzalez	11-08-2019 10:53:45 AM	Usuario accedió a página inscritos
+631	renold.gonzalez	11-08-2019 10:54:58 AM	Usuario accedió a página inscritos
+632	renold.gonzalez	11-08-2019 10:55:25 AM	Usuario accedió a página inscritos
+633	renold.gonzalez	11-08-2019 10:57:40 AM	Usuario accedió a página inscritos
+634	renold.gonzalez	11-08-2019 10:57:43 AM	Usuario accedió a página inscritos
+635	renold.gonzalez	11-08-2019 10:57:49 AM	Usuario accedió a página inscritos
+636	renold.gonzalez	11-08-2019 10:59:54 AM	Usuario salió del sistema
+637	renold.gonzalez	11-08-2019 10:59:58 AM	Inició sesión como administrador del sistema
+638	renold.gonzalez	11-08-2019 10:59:58 AM	Usuario accedió a página principal
+639	renold.gonzalez	11-08-2019 11:00:00 AM	Usuario accedió a página inscritos
+640	renold.gonzalez	11-08-2019 11:00:05 AM	Usuario accedió a página inscritos
+641	renold.gonzalez	11-08-2019 11:03:30 AM	Usuario accedió a página inscritos
+642	renold.gonzalez	11-08-2019 11:05:07 AM	Usuario accedió a página inscritos
+643	renold.gonzalez	11-08-2019 11:05:18 AM	Usuario accedió a página inscritos
+644	renold.gonzalez	11-08-2019 11:05:23 AM	Usuario accedió a página inscritos
+645	renold.gonzalez	11-08-2019 11:07:04 AM	Usuario accedió a página inscritos
+646	renold.gonzalez	11-08-2019 11:07:19 AM	Usuario accedió a página inscritos
+647	renold.gonzalez	11-08-2019 11:09:59 AM	Usuario accedió a página inscritos
+648	renold.gonzalez	11-08-2019 11:10:06 AM	Usuario accedió a página inscritos
+649	renold.gonzalez	11-08-2019 11:10:07 AM	Usuario accedió a página inscritos
+650	renold.gonzalez	11-08-2019 11:10:17 AM	Usuario accedió a página inscritos
+651	renold.gonzalez	11-08-2019 11:10:28 AM	Usuario accedió a página inscritos
+652	renold.gonzalez	11-08-2019 11:10:53 AM	Usuario salió del sistema
+653	renold.gonzalez	11-08-2019 11:11:57 AM	Inició sesión como administrador del sistema
+654	renold.gonzalez	11-08-2019 11:11:58 AM	Usuario accedió a página principal
+655	renold.gonzalez	11-08-2019 11:11:59 AM	Usuario accedió a página inscritos
+656	renold.gonzalez	11-08-2019 11:12:02 AM	Usuario accedió a página inscritos
+657	renold.gonzalez	11-08-2019 11:12:09 AM	Usuario accedió a página inscritos
+658	renold.gonzalez	11-08-2019 11:12:13 AM	Usuario accedió a página inscritos
+659	renold.gonzalez	11-08-2019 11:12:20 AM	Usuario accedió a página inscritos
+660	renold.gonzalez	11-08-2019 11:51:11 AM	Usuario accedió a página de administrtacion de datos
+661	renold.gonzalez	11-08-2019 11:51:14 AM	Usuario accedió a página de usuarios
+662	renold.gonzalez	11-08-2019 12:21:41 PM	Usuario accedió a página principal
+663	renold.gonzalez	11-08-2019 12:21:43 PM	Usuario accedió a página inscritos
+664	renold.gonzalez	11-08-2019 12:51:20 PM	Usuario accedió a página de administrtacion de datos
+665	renold.gonzalez	11-08-2019 12:51:24 PM	Usuario accedió a página de usuarios
+666	renold.gonzalez	11-08-2019 12:51:56 PM	Usuario accedió a página de usuarios
+667	renold.gonzalez	11-08-2019 12:52:04 PM	Usuario accedió a página inscritos
+668	renold.gonzalez	11-08-2019 12:52:12 PM	Inició sesión como administrador del sistema
+669	renold.gonzalez	11-08-2019 12:52:12 PM	Usuario accedió a página principal
+670	renold.gonzalez	11-08-2019 12:52:19 PM	Usuario accedió a página inscritos
+671	renold.gonzalez	11-08-2019 12:55:54 PM	Usuario accedió a página inscritos
+672	renold.gonzalez	11-08-2019 12:56:01 PM	Usuario accedió a página inscritos
+673	renold.gonzalez	11-08-2019 12:56:01 PM	Usuario accedió a página inscritos
+674	renold.gonzalez	11-08-2019 12:56:04 PM	Usuario accedió a página inscritos
+675	renold.gonzalez	11-08-2019 12:56:04 PM	Usuario accedió a página inscritos
+676	renold.gonzalez	11-08-2019 12:56:06 PM	Usuario accedió a página inscritos
+677	renold.gonzalez	11-08-2019 12:56:06 PM	Usuario accedió a página inscritos
+678	renold.gonzalez	11-08-2019 12:56:28 PM	Usuario accedió a página inscritos
+679	renold.gonzalez	11-08-2019 12:56:28 PM	Usuario accedió a página inscritos
+680	renold.gonzalez	11-08-2019 12:57:00 PM	Usuario accedió a página inscritos
+681	renold.gonzalez	11-08-2019 12:57:00 PM	Usuario accedió a página inscritos
+682	renold.gonzalez	11-08-2019 12:57:03 PM	Usuario accedió a página inscritos
+683	renold.gonzalez	11-08-2019 12:57:31 PM	Usuario accedió a página inscritos
+684	renold.gonzalez	11-08-2019 12:57:31 PM	Usuario accedió a página inscritos
+685	renold.gonzalez	11-08-2019 12:58:08 PM	Usuario accedió a página inscritos
+686	renold.gonzalez	11-08-2019 12:58:22 PM	Usuario accedió a página inscritos
+687	renold.gonzalez	11-08-2019 12:58:22 PM	Usuario accedió a página inscritos
+688	renold.gonzalez	11-08-2019 01:09:41 PM	Usuario accedió a página inscritos
+689	renold.gonzalez	11-08-2019 01:10:07 PM	Usuario accedió a página inscritos
+690	renold.gonzalez	11-08-2019 01:13:21 PM	Usuario accedió a página inscritos
+691	renold.gonzalez	11-08-2019 01:17:50 PM	Usuario accedió a página inscritos
+692	renold.gonzalez	11-08-2019 01:19:18 PM	Usuario accedió a página inscritos
+693	renold.gonzalez	11-08-2019 01:19:20 PM	Usuario accedió a página inscritos
+694	renold.gonzalez	11-08-2019 01:19:47 PM	Usuario accedió a página inscritos
+695	renold.gonzalez	11-08-2019 01:20:15 PM	Usuario accedió a página inscritos
+696	renold.gonzalez	11-08-2019 01:21:16 PM	Usuario accedió a página inscritos
+697	renold.gonzalez	11-08-2019 01:22:22 PM	Usuario accedió a página inscritos
+698	renold.gonzalez	11-08-2019 01:23:18 PM	Usuario accedió a página inscritos
+699	renold.gonzalez	11-08-2019 01:23:37 PM	Usuario accedió a página inscritos
+700	renold.gonzalez	11-08-2019 01:43:01 PM	Usuario accedió a página inscritos
+701	renold.gonzalez	11-08-2019 02:07:14 PM	Usuario accedió a página inscritos
+702	renold.gonzalez	11-08-2019 02:08:09 PM	Usuario accedió a página inscritos
+703	renold.gonzalez	11-08-2019 02:09:06 PM	Usuario accedió a página inscritos
+704	renold.gonzalez	11-08-2019 02:11:23 PM	Usuario accedió a página inscritos
+705	renold.gonzalez	11-08-2019 02:13:44 PM	Usuario accedió a página inscritos
+706	renold.gonzalez	11-08-2019 02:14:17 PM	Usuario accedió a página inscritos
+707	renold.gonzalez	11-08-2019 02:14:49 PM	Usuario accedió a página inscritos
+708	renold.gonzalez	11-08-2019 02:16:13 PM	Usuario accedió a página inscritos
+709	renold.gonzalez	11-08-2019 02:16:31 PM	Usuario accedió a página inscritos
+710	renold.gonzalez	11-08-2019 02:19:23 PM	Usuario accedió a página inscritos
+711	renold.gonzalez	11-08-2019 02:23:36 PM	Usuario accedió a página inscritos
+712	renold.gonzalez	11-08-2019 02:24:36 PM	Usuario accedió a página inscritos
+713	renold.gonzalez	11-08-2019 02:25:55 PM	Usuario accedió a página inscritos
+714	renold.gonzalez	11-08-2019 02:26:42 PM	Usuario accedió a página inscritos
+715	renold.gonzalez	11-08-2019 02:29:05 PM	Usuario accedió a página de administrtacion de datos
+716	renold.gonzalez	11-08-2019 02:29:11 PM	Usuario accedió a página de usuarios
+717	renold.gonzalez	11-08-2019 02:29:12 PM	Usuario accedió a página validación
+718	renold.gonzalez	11-08-2019 02:29:14 PM	Usuario accedió a página de usuarios
+719	renold.gonzalez	11-08-2019 02:30:01 PM	Usuario accedió a página inscritos
+720	renold.gonzalez	11-08-2019 02:32:59 PM	Usuario accedió a página inscritos
+721	renold.gonzalez	11-08-2019 02:33:04 PM	Inició sesión como administrador del sistema
+722	renold.gonzalez	11-08-2019 02:33:04 PM	Usuario accedió a página principal
+723	renold.gonzalez	11-08-2019 02:33:06 PM	Usuario accedió a página inscritos
+724	renold.gonzalez	11-08-2019 02:34:47 PM	Usuario accedió a página inscritos
+725	renold.gonzalez	11-08-2019 02:35:50 PM	Usuario accedió a página inscritos
+726	renold.gonzalez	11-08-2019 03:13:41 PM	Usuario accedió a página inscritos
+727	renold.gonzalez	11-08-2019 03:26:36 PM	Usuario accedió a página de usuarios
+728	renold.gonzalez	11-08-2019 03:26:43 PM	Usuario accedió a página de administrtacion de datos
+729	renold.gonzalez	11-08-2019 03:26:45 PM	Usuario accedió a página de usuarios
+730	renold.gonzalez	11-08-2019 03:28:55 PM	Usuario accedió a página principal
+731	renold.gonzalez	11-08-2019 03:28:57 PM	Usuario accedió a página inscritos
+732	renold.gonzalez	11-08-2019 03:45:01 PM	Usuario accedió a página inscritos
+733	renold.gonzalez	11-08-2019 03:46:59 PM	Usuario accedió a página inscritos
+734	renold.gonzalez	11-08-2019 03:47:45 PM	Usuario accedió a página inscritos
+735	renold.gonzalez	11-08-2019 03:48:18 PM	Usuario accedió a página inscritos
+736	renold.gonzalez	11-08-2019 03:54:55 PM	Usuario accedió a página inscritos
+737	renold.gonzalez	11-08-2019 03:55:02 PM	Usuario accedió a página inscritos
+738	renold.gonzalez	11-08-2019 03:55:21 PM	Usuario accedió a página inscritos
+739	renold.gonzalez	11-08-2019 03:55:51 PM	Usuario accedió a página inscritos
+740	renold.gonzalez	11-08-2019 03:59:22 PM	Usuario accedió a página inscritos
+741	renold.gonzalez	11-08-2019 03:59:59 PM	Usuario accedió a página inscritos
+742	renold.gonzalez	11-08-2019 04:00:27 PM	Usuario accedió a página inscritos
+743	renold.gonzalez	11-08-2019 04:00:48 PM	Usuario accedió a página inscritos
+744	renold.gonzalez	11-08-2019 04:06:23 PM	Usuario accedió a página inscritos
+745	renold.gonzalez	11-08-2019 04:07:06 PM	Usuario accedió a página inscritos
+746	renold.gonzalez	11-08-2019 04:21:36 PM	Usuario accedió a página inscritos
+747	renold.gonzalez	11-08-2019 04:21:41 PM	Inició sesión como administrador del sistema
+748	renold.gonzalez	11-08-2019 04:21:41 PM	Usuario accedió a página principal
+749	renold.gonzalez	11-08-2019 04:21:43 PM	Usuario accedió a página inscritos
+750	renold.gonzalez	11-08-2019 04:22:59 PM	Usuario accedió a página inscritos
+751	renold.gonzalez	11-08-2019 04:23:59 PM	Usuario accedió a página inscritos
+752	renold.gonzalez	11-08-2019 04:24:28 PM	Usuario accedió a página inscritos
+753	renold.gonzalez	11-08-2019 04:24:56 PM	Usuario accedió a página inscritos
+754	renold.gonzalez	11-08-2019 04:27:59 PM	Usuario accedió a página certificaciones
+755	renold.gonzalez	11-08-2019 04:28:01 PM	Usuario accedió a página inscritos
+756	renold.gonzalez	11-08-2019 04:33:23 PM	Usuario accedió a página inscritos
+757	renold.gonzalez	11-08-2019 04:35:16 PM	Usuario accedió a página inscritos
+758	renold.gonzalez	11-08-2019 04:35:43 PM	Usuario accedió a página inscritos
+759	renold.gonzalez	11-08-2019 04:48:01 PM	Usuario accedió a página inscritos
+760	renold.gonzalez	11-08-2019 04:48:50 PM	Usuario accedió a página inscritos
+761	renold.gonzalez	11-08-2019 04:48:54 PM	Usuario accedió a página inscritos
+762	renold.gonzalez	11-08-2019 04:49:15 PM	Usuario accedió a página inscritos
+763	renold.gonzalez	11-08-2019 04:51:23 PM	Usuario accedió a página inscritos
+764	renold.gonzalez	11-08-2019 04:53:38 PM	Usuario accedió a página inscritos
+765	renold.gonzalez	11-08-2019 04:55:38 PM	Usuario accedió a página inscritos
+766	renold.gonzalez	11-08-2019 04:57:47 PM	Usuario accedió a página inscritos
+767	renold.gonzalez	11-08-2019 04:58:40 PM	Usuario accedió a página inscritos
+768	renold.gonzalez	11-08-2019 04:58:44 PM	Usuario accedió a página inscritos
+769	renold.gonzalez	11-08-2019 05:01:17 PM	Usuario accedió a página inscritos
+770	renold.gonzalez	11-08-2019 05:01:59 PM	Usuario accedió a página inscritos
+771	renold.gonzalez	11-08-2019 05:02:13 PM	Usuario accedió a página inscritos
+772	renold.gonzalez	11-08-2019 05:02:48 PM	Usuario accedió a página inscritos
+773	renold.gonzalez	11-08-2019 05:03:13 PM	Usuario accedió a página inscritos
+774	renold.gonzalez	11-08-2019 05:04:19 PM	Usuario accedió a página inscritos
+775	renold.gonzalez	11-08-2019 05:04:56 PM	Usuario accedió a página inscritos
+776	renold.gonzalez	11-08-2019 05:05:29 PM	Usuario accedió a página inscritos
+777	renold.gonzalez	11-08-2019 05:07:02 PM	Usuario accedió a página inscritos
+778	renold.gonzalez	11-08-2019 05:12:25 PM	Usuario accedió a página inscritos
+779	renold.gonzalez	11-08-2019 05:12:28 PM	Usuario accedió a página inscritos
+780	renold.gonzalez	11-08-2019 05:15:37 PM	Usuario accedió a página inscritos
+781	renold.gonzalez	11-08-2019 05:17:44 PM	Usuario accedió a página inscritos
+782	renold.gonzalez	11-08-2019 05:34:10 PM	Usuario accedió a página inscritos
+783	renold.gonzalez	11-08-2019 05:34:40 PM	Usuario accedió a página inscritos
+784	renold.gonzalez	11-08-2019 05:38:42 PM	Usuario accedió a página inscritos
+785	renold.gonzalez	11-08-2019 05:40:00 PM	Usuario accedió a página inscritos
+786	renold.gonzalez	11-08-2019 05:41:14 PM	Usuario accedió a página inscritos
+787	renold.gonzalez	11-08-2019 05:41:21 PM	Usuario accedió a página inscritos
+788	renold.gonzalez	11-08-2019 05:49:41 PM	Usuario accedió a página inscritos
+789	renold.gonzalez	11-08-2019 05:55:02 PM	Usuario accedió a página inscritos
+790	renold.gonzalez	11-08-2019 05:55:09 PM	Usuario accedió a página inscritos
+791	renold.gonzalez	11-08-2019 05:57:42 PM	Usuario accedió a página inscritos
+792	renold.gonzalez	11-08-2019 06:02:37 PM	Usuario accedió a página inscritos
+793	renold.gonzalez	11-08-2019 06:02:50 PM	Inició sesión como administrador del sistema
+794	renold.gonzalez	11-08-2019 06:02:50 PM	Usuario accedió a página principal
+795	renold.gonzalez	11-08-2019 06:02:51 PM	Usuario accedió a página inscritos
+796	renold.gonzalez	11-08-2019 06:09:09 PM	Usuario accedió a página inscritos
+797	renold.gonzalez	11-08-2019 06:11:20 PM	Usuario accedió a página inscritos
+798	renold.gonzalez	11-08-2019 06:11:24 PM	Usuario accedió a página inscritos
+799	renold.gonzalez	11-08-2019 06:11:29 PM	Usuario accedió a página inscritos
+800	renold.gonzalez	11-08-2019 06:13:40 PM	Usuario accedió a página inscritos
+801	renold.gonzalez	11-08-2019 06:18:56 PM	Usuario accedió a página inscritos
+802	renold.gonzalez	11-08-2019 06:18:59 PM	Usuario accedió a página inscritos
+803	renold.gonzalez	11-08-2019 06:19:30 PM	Usuario accedió a página inscritos
+804	renold.gonzalez	11-08-2019 06:19:34 PM	Usuario accedió a página inscritos
+805	renold.gonzalez	11-08-2019 06:19:56 PM	Usuario accedió a página inscritos
+806	renold.gonzalez	11-08-2019 06:19:59 PM	Usuario accedió a página inscritos
+807	renold.gonzalez	11-08-2019 06:20:00 PM	Usuario accedió a página certificaciones
+808	renold.gonzalez	11-08-2019 06:20:01 PM	Usuario accedió a página inscritos
+809	renold.gonzalez	11-08-2019 06:23:15 PM	Usuario accedió a página inscritos
+810	renold.gonzalez	11-08-2019 06:25:08 PM	Usuario accedió a página inscritos
+811	renold.gonzalez	11-08-2019 06:30:42 PM	Usuario accedió a página inscritos
+812	renold.gonzalez	11-08-2019 06:38:39 PM	Usuario accedió a página inscritos
+813	renold.gonzalez	11-08-2019 07:23:18 PM	Usuario accedió a página inscritos
+814	renold.gonzalez	11-08-2019 07:23:26 PM	Usuario accedió a página inscritos
+815	renold.gonzalez	11-08-2019 07:25:00 PM	Usuario accedió a página inscritos
+816	renold.gonzalez	11-08-2019 07:25:39 PM	Usuario accedió a página inscritos
+817	renold.gonzalez	11-08-2019 07:33:37 PM	Usuario accedió a página inscritos
+818	renold.gonzalez	11-08-2019 07:33:41 PM	Usuario accedió a página inscritos
+819	renold.gonzalez	11-08-2019 07:34:29 PM	Usuario accedió a página inscritos
+820	renold.gonzalez	11-08-2019 07:36:37 PM	Usuario accedió a página inscritos
+821	renold.gonzalez	11-08-2019 07:36:43 PM	Usuario accedió a página inscritos
+822	renold.gonzalez	11-08-2019 07:39:03 PM	Usuario accedió a página inscritos
+823	renold.gonzalez	11-08-2019 07:39:06 PM	Usuario accedió a página inscritos
+824	renold.gonzalez	11-08-2019 08:15:39 PM	Usuario accedió a página inscritos
+825	renold.gonzalez	11-08-2019 08:15:44 PM	Inició sesión como administrador del sistema
+826	renold.gonzalez	11-08-2019 08:15:45 PM	Usuario accedió a página principal
+827	renold.gonzalez	11-08-2019 08:15:46 PM	Usuario accedió a página inscritos
+828	renold.gonzalez	11-08-2019 08:31:33 PM	Usuario accedió a página inscritos
+829	renold.gonzalez	11-08-2019 08:33:51 PM	Usuario accedió a página inscritos
+830	renold.gonzalez	11-08-2019 08:34:37 PM	Usuario accedió a página inscritos
+831	renold.gonzalez	11-08-2019 08:37:42 PM	Usuario accedió a página inscritos
+832	renold.gonzalez	11-08-2019 08:53:02 PM	Usuario accedió a página inscritos
+833	renold.gonzalez	11-08-2019 09:43:25 PM	Usuario accedió a página inscritos
+834	renold.gonzalez	11-08-2019 09:45:25 PM	Usuario accedió a página inscritos
+835	renold.gonzalez	11-08-2019 09:45:32 PM	Usuario accedió a página inscritos
+836	renold.gonzalez	11-08-2019 09:47:46 PM	Usuario accedió a página inscritos
+837	renold.gonzalez	11-08-2019 09:48:08 PM	Usuario accedió a página inscritos
+838	renold.gonzalez	11-08-2019 10:05:43 PM	Usuario accedió a página inscritos
+839	renold.gonzalez	11-08-2019 10:05:55 PM	Inició sesión como administrador del sistema
+840	renold.gonzalez	11-08-2019 10:05:55 PM	Usuario accedió a página principal
+841	renold.gonzalez	11-08-2019 10:05:57 PM	Usuario accedió a página inscritos
+842	renold.gonzalez	11-08-2019 10:06:20 PM	Usuario accedió a página inscritos
+843	renold.gonzalez	11-08-2019 10:08:06 PM	Usuario accedió a página inscritos
+844	renold.gonzalez	11-08-2019 10:13:15 PM	Usuario accedió a página inscritos
+845	renold.gonzalez	11-08-2019 10:31:52 PM	Usuario accedió a página inscritos
+846	renold.gonzalez	11-08-2019 10:32:15 PM	Usuario accedió a página inscritos
+847	renold.gonzalez	11-08-2019 10:32:34 PM	Usuario accedió a página inscritos
+848	renold.gonzalez	11-08-2019 10:33:30 PM	Usuario accedió a página inscritos
+849	renold.gonzalez	11-08-2019 11:07:14 PM	Usuario accedió a página inscritos
+850	renold.gonzalez	11-08-2019 11:10:14 PM	Usuario accedió a página inscritos
+851	renold.gonzalez	11-08-2019 11:12:57 PM	Usuario accedió a página inscritos
+852	renold.gonzalez	11-08-2019 11:19:01 PM	Usuario accedió a página inscritos
+853	renold.gonzalez	11-08-2019 11:20:48 PM	Usuario accedió a página inscritos
+854	renold.gonzalez	11-08-2019 11:20:57 PM	Administrador eliminó el registro  000231
+855	renold.gonzalez	11-08-2019 11:21:06 PM	Usuario accedió a página inscritos
+856	renold.gonzalez	11-08-2019 11:21:24 PM	Usuario accedió a página inscritos
+857	renold.gonzalez	12-08-2019 10:26:29 PM	Inició sesión como administrador del sistema
+858	renold.gonzalez	12-08-2019 10:26:29 PM	Usuario accedió a página principal
+859	renold.gonzalez	12-08-2019 10:26:36 PM	Usuario accedió a página inscritos
+860	renold.gonzalez	12-08-2019 10:27:46 PM	Usuario accedió a página certificaciones
+861	renold.gonzalez	12-08-2019 10:27:51 PM	Usuario accedió a página inscritos
+862	renold.gonzalez	12-08-2019 10:28:05 PM	Usuario accedió a página de usuarios
+863	renold.gonzalez	12-08-2019 10:28:26 PM	Usuario accedió a página reportes
+864	renold.gonzalez	12-08-2019 10:28:30 PM	Usuario accedió a página inscritos
+865	renold.gonzalez	12-08-2019 10:28:33 PM	Usuario salió del sistema
+866	renold.gonzalez	13-08-2019 07:46:33 PM	Inició sesión como administrador del sistema
+867	renold.gonzalez	13-08-2019 07:46:33 PM	Usuario accedió a página principal
+868	renold.gonzalez	13-08-2019 07:46:35 PM	Usuario accedió a página inscritos
+869	renold.gonzalez	13-08-2019 07:52:38 PM	Usuario accedió a página inscritos
+870	renold.gonzalez	13-08-2019 07:52:52 PM	Usuario accedió a página inscritos
+871	renold.gonzalez	13-08-2019 07:53:52 PM	Usuario accedió a página inscritos
+872	renold.gonzalez	13-08-2019 07:53:56 PM	Usuario accedió a página inscritos
+873	renold.gonzalez	13-08-2019 07:54:47 PM	Usuario accedió a página inscritos
+874	renold.gonzalez	13-08-2019 07:54:50 PM	Usuario accedió a página inscritos
+875	renold.gonzalez	13-08-2019 07:55:56 PM	Usuario accedió a página inscritos
+876	renold.gonzalez	13-08-2019 07:56:06 PM	Usuario accedió a página inscritos
+877	renold.gonzalez	13-08-2019 07:58:51 PM	Usuario accedió a página inscritos
+878	renold.gonzalez	13-08-2019 08:09:41 PM	Usuario accedió a página inscritos
+879	renold.gonzalez	13-08-2019 08:19:05 PM	Usuario accedió a página inscritos
+880	renold.gonzalez	13-08-2019 08:19:14 PM	Usuario accedió a página inscritos
+881	renold.gonzalez	13-08-2019 08:20:17 PM	Usuario accedió a página inscritos
+882	renold.gonzalez	13-08-2019 08:20:21 PM	Usuario accedió a página inscritos
+883	renold.gonzalez	13-08-2019 08:20:44 PM	Usuario accedió a página inscritos
+884	renold.gonzalez	13-08-2019 08:20:47 PM	Usuario accedió a página inscritos
+885	renold.gonzalez	13-08-2019 08:28:10 PM	Usuario accedió a página inscritos
+886	renold.gonzalez	13-08-2019 08:29:55 PM	Usuario accedió a página inscritos
+887	renold.gonzalez	13-08-2019 08:36:10 PM	Usuario accedió a página inscritos
+888	renold.gonzalez	13-08-2019 08:37:11 PM	Usuario accedió a página inscritos
+889	renold.gonzalez	13-08-2019 08:43:39 PM	Usuario accedió a página inscritos
+890	renold.gonzalez	13-08-2019 08:53:43 PM	Usuario accedió a página inscritos
+891	renold.gonzalez	13-08-2019 09:01:30 PM	Usuario accedió a página inscritos
+892	renold.gonzalez	13-08-2019 09:03:59 PM	Usuario accedió a página inscritos
+893	renold.gonzalez	13-08-2019 09:04:58 PM	Usuario accedió a página inscritos
+894	renold.gonzalez	13-08-2019 09:08:53 PM	Usuario accedió a página inscritos
+895	renold.gonzalez	13-08-2019 09:10:01 PM	Usuario accedió a página inscritos
+896	renold.gonzalez	13-08-2019 09:28:05 PM	Usuario accedió a página inscritos
+897	renold.gonzalez	13-08-2019 09:28:11 PM	Inició sesión como administrador del sistema
+898	renold.gonzalez	13-08-2019 09:28:11 PM	Usuario accedió a página principal
+899	renold.gonzalez	13-08-2019 09:28:14 PM	Usuario accedió a página inscritos
+900	renold.gonzalez	13-08-2019 09:28:38 PM	Usuario accedió a página inscritos
+901	renold.gonzalez	13-08-2019 09:29:17 PM	Usuario accedió a página inscritos
+902	renold.gonzalez	13-08-2019 09:29:47 PM	Usuario accedió a página inscritos
+903	renold.gonzalez	13-08-2019 09:30:16 PM	Usuario accedió a página inscritos
+904	renold.gonzalez	13-08-2019 09:30:44 PM	Usuario accedió a página inscritos
+905	renold.gonzalez	13-08-2019 09:30:54 PM	Usuario accedió a página inscritos
+906	renold.gonzalez	13-08-2019 09:36:00 PM	Usuario accedió a página inscritos
+907	renold.gonzalez	13-08-2019 09:37:41 PM	Usuario accedió a página inscritos
+908	renold.gonzalez	13-08-2019 09:38:32 PM	Usuario accedió a página inscritos
+909	renold.gonzalez	13-08-2019 09:48:50 PM	Usuario accedió a página principal
+910	renold.gonzalez	13-08-2019 09:48:52 PM	Usuario accedió a página inscritos
+911	renold.gonzalez	13-08-2019 09:51:08 PM	Usuario accedió a página inscritos
+912	renold.gonzalez	13-08-2019 09:58:14 PM	Usuario accedió a página inscritos
+913	renold.gonzalez	13-08-2019 09:58:43 PM	Usuario accedió a página inscritos
+914	renold.gonzalez	13-08-2019 09:59:10 PM	Usuario accedió a página inscritos
+915	renold.gonzalez	13-08-2019 10:02:10 PM	Usuario accedió a página inscritos
+916	renold.gonzalez	13-08-2019 10:04:09 PM	Usuario accedió a página inscritos
+917	renold.gonzalez	13-08-2019 10:04:55 PM	Usuario accedió a página inscritos
+918	renold.gonzalez	13-08-2019 10:06:18 PM	Usuario accedió a página inscritos
+919	renold.gonzalez	13-08-2019 10:06:23 PM	Usuario accedió a página inscritos
+920	renold.gonzalez	13-08-2019 10:06:27 PM	Usuario accedió a página inscritos
+921	renold.gonzalez	13-08-2019 10:07:45 PM	Usuario accedió a página inscritos
+922	renold.gonzalez	13-08-2019 10:07:56 PM	Usuario accedió a página inscritos
+923	renold.gonzalez	13-08-2019 10:08:46 PM	Usuario accedió a página inscritos
+924	renold.gonzalez	13-08-2019 10:31:02 PM	Usuario accedió a página inscritos
+925	renold.gonzalez	13-08-2019 10:31:59 PM	Usuario accedió a página inscritos
+926	renold.gonzalez	13-08-2019 10:32:12 PM	Usuario accedió a página inscritos
+927	renold.gonzalez	13-08-2019 10:33:08 PM	Usuario accedió a página inscritos
+928	renold.gonzalez	13-08-2019 10:34:19 PM	Usuario accedió a página inscritos
+929	renold.gonzalez	13-08-2019 10:34:52 PM	Usuario accedió a página inscritos
+930	renold.gonzalez	13-08-2019 10:35:32 PM	Usuario accedió a página inscritos
+931	renold.gonzalez	13-08-2019 10:35:58 PM	Usuario accedió a página inscritos
+932	renold.gonzalez	13-08-2019 10:36:31 PM	Usuario accedió a página inscritos
+933	renold.gonzalez	13-08-2019 10:36:48 PM	Usuario accedió a página inscritos
+934	renold.gonzalez	13-08-2019 10:37:07 PM	Usuario accedió a página inscritos
+935	renold.gonzalez	13-08-2019 10:37:26 PM	Usuario accedió a página inscritos
+936	renold.gonzalez	13-08-2019 10:37:54 PM	Usuario accedió a página inscritos
+937	renold.gonzalez	13-08-2019 10:38:32 PM	Usuario accedió a página inscritos
+938	renold.gonzalez	13-08-2019 10:38:42 PM	Usuario accedió a página inscritos
+939	renold.gonzalez	13-08-2019 10:39:04 PM	Usuario accedió a página inscritos
+940	renold.gonzalez	13-08-2019 10:39:33 PM	Usuario accedió a página inscritos
+941	renold.gonzalez	13-08-2019 10:40:48 PM	Usuario accedió a página inscritos
+942	renold.gonzalez	13-08-2019 10:41:25 PM	Usuario accedió a página inscritos
+943	renold.gonzalez	13-08-2019 10:42:10 PM	Usuario accedió a página inscritos
+944	renold.gonzalez	13-08-2019 10:44:20 PM	Usuario accedió a página inscritos
+945	renold.gonzalez	13-08-2019 10:44:49 PM	Usuario accedió a página inscritos
+946	renold.gonzalez	13-08-2019 10:45:40 PM	Usuario accedió a página inscritos
+947	renold.gonzalez	13-08-2019 10:51:43 PM	Usuario accedió a página inscritos
+948	renold.gonzalez	13-08-2019 10:56:30 PM	Usuario accedió a página inscritos
+949	renold.gonzalez	13-08-2019 10:56:34 PM	Usuario accedió a página inscritos
+950	renold.gonzalez	13-08-2019 10:57:20 PM	Usuario accedió a página inscritos
+951	renold.gonzalez	13-08-2019 10:57:24 PM	Usuario accedió a página inscritos
+952	renold.gonzalez	13-08-2019 10:57:34 PM	Usuario accedió a página inscritos
+953	renold.gonzalez	13-08-2019 10:57:59 PM	Usuario accedió a página inscritos
+954	renold.gonzalez	13-08-2019 10:58:29 PM	Usuario accedió a página inscritos
+955	renold.gonzalez	13-08-2019 10:58:56 PM	Usuario accedió a página inscritos
+956	renold.gonzalez	13-08-2019 10:59:44 PM	Usuario accedió a página inscritos
+957	renold.gonzalez	13-08-2019 11:01:10 PM	Usuario accedió a página inscritos
+958	renold.gonzalez	13-08-2019 11:01:14 PM	Usuario accedió a página inscritos
+959	renold.gonzalez	13-08-2019 11:03:26 PM	Usuario accedió a página inscritos
+960	renold.gonzalez	13-08-2019 11:10:17 PM	Usuario accedió a página inscritos
+961	renold.gonzalez	13-08-2019 11:10:30 PM	Inició sesión como administrador del sistema
+962	renold.gonzalez	13-08-2019 11:10:31 PM	Usuario accedió a página principal
+963	renold.gonzalez	13-08-2019 11:10:32 PM	Usuario accedió a página inscritos
+964	renold.gonzalez	13-08-2019 11:11:49 PM	Usuario accedió a página inscritos
+965	renold.gonzalez	13-08-2019 11:14:43 PM	Usuario accedió a página inscritos
+966	renold.gonzalez	13-08-2019 11:16:34 PM	Usuario accedió a página inscritos
+967	renold.gonzalez	13-08-2019 11:16:37 PM	Usuario accedió a página inscritos
+968	renold.gonzalez	13-08-2019 11:17:11 PM	Usuario accedió a página inscritos
+969	renold.gonzalez	13-08-2019 11:17:54 PM	Usuario accedió a página inscritos
+970	renold.gonzalez	13-08-2019 11:18:58 PM	Usuario accedió a página inscritos
+971	renold.gonzalez	13-08-2019 11:21:57 PM	Usuario accedió a página inscritos
+972	renold.gonzalez	13-08-2019 11:24:15 PM	Usuario accedió a página inscritos
+973	renold.gonzalez	13-08-2019 11:26:48 PM	Usuario accedió a página inscritos
+974	renold.gonzalez	13-08-2019 11:27:44 PM	Usuario accedió a página inscritos
+975	renold.gonzalez	13-08-2019 11:28:19 PM	Usuario accedió a página inscritos
+976	renold.gonzalez	13-08-2019 11:28:35 PM	Usuario accedió a página inscritos
+977	renold.gonzalez	13-08-2019 11:29:09 PM	Usuario accedió a página inscritos
+978	renold.gonzalez	13-08-2019 11:30:17 PM	Usuario accedió a página inscritos
+979	renold.gonzalez	13-08-2019 11:32:26 PM	Usuario accedió a página inscritos
+980	renold.gonzalez	13-08-2019 11:34:36 PM	Usuario accedió a página inscritos
+981	renold.gonzalez	13-08-2019 11:36:05 PM	Usuario accedió a página inscritos
+982	renold.gonzalez	13-08-2019 11:36:37 PM	Usuario accedió a página inscritos
+983	renold.gonzalez	13-08-2019 11:37:14 PM	Usuario accedió a página inscritos
+984	renold.gonzalez	14-08-2019 06:21:14 AM	Usuario accedió a página inscritos
+985	renold.gonzalez	14-08-2019 06:21:28 AM	Inició sesión como administrador del sistema
+986	renold.gonzalez	14-08-2019 06:21:28 AM	Usuario accedió a página principal
+987	renold.gonzalez	14-08-2019 06:21:29 AM	Usuario accedió a página inscritos
+988	renold.gonzalez	14-08-2019 06:23:14 AM	Usuario accedió a página inscritos
+989	renold.gonzalez	14-08-2019 06:23:17 AM	Usuario accedió a página inscritos
+990	renold.gonzalez	14-08-2019 06:24:50 AM	Usuario accedió a página inscritos
+991	renold.gonzalez	14-08-2019 06:24:54 AM	Usuario accedió a página inscritos
+992	renold.gonzalez	14-08-2019 06:25:07 AM	Usuario accedió a página inscritos
+993	renold.gonzalez	14-08-2019 09:41:13 PM	Inició sesión como administrador del sistema
+994	renold.gonzalez	14-08-2019 09:41:13 PM	Usuario accedió a página principal
+995	renold.gonzalez	14-08-2019 09:41:17 PM	Usuario accedió a página inscritos
+996	renold.gonzalez	14-08-2019 09:42:45 PM	Usuario accedió a página inscritos
+997	renold.gonzalez	14-08-2019 09:42:54 PM	Usuario accedió a página inscritos
+998	renold.gonzalez	17-08-2019 03:35:54 PM	Inició sesión como administrador del sistema
+999	renold.gonzalez	17-08-2019 03:35:54 PM	Usuario accedió a página principal
+1000	renold.gonzalez	17-08-2019 03:35:56 PM	Usuario accedió a página inscritos
+1001	renold.gonzalez	17-08-2019 03:38:14 PM	Usuario accedió a página inscritos
+1002	renold.gonzalez	17-08-2019 03:54:01 PM	Usuario accedió a página inscritos
+1003	renold.gonzalez	17-08-2019 04:15:20 PM	Usuario accedió a página inscritos
+1004	renold.gonzalez	17-08-2019 04:18:29 PM	Usuario accedió a página inscritos
+1005	renold.gonzalez	17-08-2019 06:34:56 PM	Usuario accedió a página inscritos
+1006	renold.gonzalez	17-08-2019 06:35:02 PM	Inició sesión como administrador del sistema
+1007	renold.gonzalez	17-08-2019 06:35:02 PM	Usuario accedió a página principal
+1008	renold.gonzalez	17-08-2019 06:35:05 PM	Usuario accedió a página inscritos
+1009	renold.gonzalez	17-08-2019 06:35:20 PM	Usuario accedió a página inscritos
+1010	renold.gonzalez	17-08-2019 06:50:03 PM	Usuario accedió a página inscritos
+1011	renold.gonzalez	17-08-2019 06:50:17 PM	Usuario accedió a página inscritos
+1012	renold.gonzalez	17-08-2019 06:51:13 PM	Usuario accedió a página inscritos
+1013	renold.gonzalez	17-08-2019 06:51:27 PM	Usuario accedió a página inscritos
+1014	renold.gonzalez	17-08-2019 07:07:50 PM	Usuario accedió a página inscritos
+1015	renold.gonzalez	17-08-2019 07:10:16 PM	Usuario accedió a página inscritos
+1016	renold.gonzalez	17-08-2019 07:11:00 PM	Usuario accedió a página inscritos
+1017	renold.gonzalez	17-08-2019 07:11:59 PM	Usuario accedió a página inscritos
+1018	renold.gonzalez	17-08-2019 07:15:14 PM	Usuario accedió a página inscritos
+1019	renold.gonzalez	17-08-2019 07:16:00 PM	Usuario accedió a página inscritos
+1020	renold.gonzalez	17-08-2019 07:16:06 PM	Usuario accedió a página inscritos
+1021	renold.gonzalez	17-08-2019 07:20:38 PM	Usuario accedió a página inscritos
+1022	renold.gonzalez	17-08-2019 07:23:30 PM	Usuario accedió a página inscritos
+1023	renold.gonzalez	17-08-2019 07:30:09 PM	Usuario accedió a página inscritos
+1024	renold.gonzalez	17-08-2019 07:30:54 PM	Usuario accedió a página inscritos
+1025	renold.gonzalez	17-08-2019 07:33:39 PM	Usuario accedió a página inscritos
+1026	renold.gonzalez	17-08-2019 07:33:48 PM	Usuario accedió a página inscritos
+1027	renold.gonzalez	17-08-2019 07:35:48 PM	Usuario accedió a página inscritos
+1028	renold.gonzalez	17-08-2019 07:36:25 PM	Usuario accedió a página inscritos
+1029	renold.gonzalez	17-08-2019 07:36:44 PM	Usuario accedió a página inscritos
+1030	renold.gonzalez	17-08-2019 07:37:26 PM	Usuario accedió a página inscritos
+1031	renold.gonzalez	17-08-2019 07:38:54 PM	Usuario accedió a página inscritos
+1032	renold.gonzalez	17-08-2019 07:43:33 PM	Usuario accedió a página inscritos
+1033	renold.gonzalez	17-08-2019 07:44:29 PM	Usuario accedió a página inscritos
+1034	renold.gonzalez	17-08-2019 07:46:34 PM	Usuario accedió a página inscritos
+1035	renold.gonzalez	17-08-2019 07:50:36 PM	Usuario accedió a página inscritos
+1036	renold.gonzalez	17-08-2019 07:53:56 PM	Usuario accedió a página principal
+1037	renold.gonzalez	17-08-2019 07:53:57 PM	Usuario accedió a página inscritos
+1038	renold.gonzalez	17-08-2019 07:58:12 PM	Usuario accedió a página inscritos
+1039	renold.gonzalez	17-08-2019 07:59:27 PM	Usuario accedió a página inscritos
+1040	renold.gonzalez	17-08-2019 08:00:05 PM	Usuario accedió a página inscritos
+1041	renold.gonzalez	17-08-2019 08:00:26 PM	Usuario accedió a página principal
+1042	renold.gonzalez	17-08-2019 08:00:27 PM	Usuario accedió a página inscritos
+1043	renold.gonzalez	17-08-2019 08:01:02 PM	Usuario accedió a página inscritos
+1044	renold.gonzalez	17-08-2019 08:01:45 PM	Usuario accedió a página inscritos
+1045	renold.gonzalez	17-08-2019 08:01:57 PM	Usuario accedió a página inscritos
+1046	renold.gonzalez	17-08-2019 08:02:21 PM	Usuario accedió a página inscritos
+1047	renold.gonzalez	17-08-2019 08:02:43 PM	Usuario accedió a página inscritos
+1048	renold.gonzalez	17-08-2019 08:02:44 PM	Usuario accedió a página inscritos
+1049	renold.gonzalez	17-08-2019 08:04:57 PM	Usuario accedió a página inscritos
+1050	renold.gonzalez	17-08-2019 08:05:08 PM	Usuario accedió a página inscritos
+1051	renold.gonzalez	17-08-2019 08:07:25 PM	Usuario accedió a página inscritos
+1052	renold.gonzalez	17-08-2019 08:07:33 PM	Usuario accedió a página inscritos
+1053	renold.gonzalez	17-08-2019 08:09:12 PM	Usuario accedió a página inscritos
+1054	renold.gonzalez	17-08-2019 08:09:36 PM	Usuario accedió a página inscritos
+1055	renold.gonzalez	17-08-2019 08:11:55 PM	Usuario accedió a página inscritos
+1056	renold.gonzalez	17-08-2019 08:12:20 PM	Usuario accedió a página principal
+1057	renold.gonzalez	17-08-2019 08:12:23 PM	Usuario accedió a página inscritos
+1058	renold.gonzalez	17-08-2019 08:13:39 PM	Usuario salió del sistema
+1059	renold.gonzalez	17-08-2019 08:15:05 PM	Inició sesión como administrador del sistema
+1060	renold.gonzalez	17-08-2019 08:15:05 PM	Usuario accedió a página principal
+1061	renold.gonzalez	17-08-2019 08:15:06 PM	Usuario accedió a página inscritos
+1062	renold.gonzalez	17-08-2019 08:16:26 PM	Usuario accedió a página inscritos
+1063	renold.gonzalez	17-08-2019 08:17:34 PM	Usuario accedió a página inscritos
+1064	renold.gonzalez	17-08-2019 08:17:43 PM	Usuario accedió a página inscritos
+1065	renold.gonzalez	17-08-2019 08:20:01 PM	Usuario accedió a página inscritos
+1066	renold.gonzalez	17-08-2019 08:20:11 PM	Usuario accedió a página inscritos
+1067	renold.gonzalez	17-08-2019 08:20:31 PM	Usuario accedió a página inscritos
+1068	renold.gonzalez	17-08-2019 08:21:02 PM	Usuario accedió a página inscritos
+1069	renold.gonzalez	17-08-2019 08:21:55 PM	Usuario accedió a página inscritos
+1070	renold.gonzalez	17-08-2019 08:22:33 PM	Usuario accedió a página inscritos
+1071	renold.gonzalez	17-08-2019 08:22:35 PM	Usuario accedió a página principal
+1072	renold.gonzalez	17-08-2019 08:22:36 PM	Usuario accedió a página inscritos
+1073	renold.gonzalez	17-08-2019 08:23:40 PM	Usuario accedió a página inscritos
+1074	renold.gonzalez	17-08-2019 08:23:47 PM	Usuario accedió a página inscritos
+1075	renold.gonzalez	17-08-2019 08:24:25 PM	Usuario accedió a página inscritos
+1076	renold.gonzalez	17-08-2019 08:24:34 PM	Usuario accedió a página inscritos
+1077	renold.gonzalez	17-08-2019 08:24:40 PM	Usuario accedió a página inscritos
+1078	renold.gonzalez	17-08-2019 08:26:50 PM	Usuario accedió a página inscritos
+1079	renold.gonzalez	17-08-2019 08:28:17 PM	Usuario accedió a página inscritos
+1080	renold.gonzalez	17-08-2019 08:28:27 PM	Usuario accedió a página inscritos
+1081	renold.gonzalez	17-08-2019 08:29:44 PM	Usuario accedió a página inscritos
+1082	renold.gonzalez	17-08-2019 08:30:20 PM	Usuario accedió a página inscritos
+1083	renold.gonzalez	17-08-2019 08:30:50 PM	Usuario accedió a página inscritos
+1084	renold.gonzalez	17-08-2019 08:33:11 PM	Usuario accedió a página inscritos
+1085	renold.gonzalez	17-08-2019 08:34:07 PM	Usuario accedió a página inscritos
+1086	renold.gonzalez	17-08-2019 08:34:23 PM	Usuario accedió a página inscritos
+1087	renold.gonzalez	17-08-2019 08:35:45 PM	Usuario accedió a página inscritos
+1088	renold.gonzalez	17-08-2019 08:37:19 PM	Usuario accedió a página inscritos
+1089	renold.gonzalez	17-08-2019 08:38:10 PM	Usuario accedió a página inscritos
+1090	renold.gonzalez	17-08-2019 08:38:13 PM	Usuario accedió a página inscritos
+1091	renold.gonzalez	17-08-2019 08:40:06 PM	Usuario accedió a página inscritos
+1092	renold.gonzalez	17-08-2019 08:40:19 PM	Usuario accedió a página inscritos
+1093	renold.gonzalez	17-08-2019 08:42:08 PM	Usuario accedió a página inscritos
+1094	renold.gonzalez	17-08-2019 08:43:02 PM	Usuario accedió a página inscritos
+1095	renold.gonzalez	17-08-2019 09:00:42 PM	Usuario accedió a página inscritos
+1096	renold.gonzalez	17-08-2019 09:20:10 PM	Usuario accedió a página inscritos
+1097	renold.gonzalez	17-08-2019 09:20:50 PM	Usuario accedió a página inscritos
+1098	renold.gonzalez	17-08-2019 09:24:30 PM	Usuario accedió a página inscritos
+1099	renold.gonzalez	17-08-2019 09:25:53 PM	Usuario accedió a página inscritos
+1100	renold.gonzalez	17-08-2019 09:29:11 PM	Usuario salió del sistema
+1101	renold.gonzalez	18-08-2019 07:16:32 AM	Inició sesión como administrador del sistema
+1102	renold.gonzalez	18-08-2019 07:16:32 AM	Usuario accedió a página principal
+1103	renold.gonzalez	18-08-2019 07:16:34 AM	Usuario accedió a página inscritos
+1104	renold.gonzalez	18-08-2019 07:17:47 AM	Usuario accedió a página inscritos
+1105	renold.gonzalez	18-08-2019 07:18:42 AM	Usuario accedió a página inscritos
+1106	renold.gonzalez	18-08-2019 07:20:06 AM	Usuario accedió a página inscritos
+1107	renold.gonzalez	18-08-2019 07:51:07 AM	Usuario accedió a página inscritos
+1108	renold.gonzalez	18-08-2019 08:09:45 AM	Usuario accedió a página inscritos
+1109	renold.gonzalez	18-08-2019 08:09:48 AM	Usuario accedió a página certificaciones
+1110	renold.gonzalez	18-08-2019 08:09:51 AM	Usuario accedió a página inscritos
+1111	renold.gonzalez	18-08-2019 08:09:53 AM	Usuario accedió a página certificaciones
+1112	renold.gonzalez	18-08-2019 08:09:54 AM	Usuario accedió a página inscritos
+1113	renold.gonzalez	18-08-2019 08:24:17 AM	Usuario accedió a página inscritos
+1114	renold.gonzalez	18-08-2019 08:26:03 AM	Usuario accedió a página certificaciones
+1115	renold.gonzalez	18-08-2019 08:26:04 AM	Usuario accedió a página inscritos
+1116	renold.gonzalez	18-08-2019 08:32:30 AM	Usuario accedió a página inscritos
+1117	renold.gonzalez	18-08-2019 08:32:43 AM	Usuario accedió a página inscritos
+1118	renold.gonzalez	18-08-2019 09:11:20 AM	Usuario accedió a página inscritos
+1119	renold.gonzalez	18-08-2019 09:11:26 AM	Inició sesión como administrador del sistema
+1120	renold.gonzalez	18-08-2019 09:11:26 AM	Usuario accedió a página principal
+1121	renold.gonzalez	18-08-2019 09:11:28 AM	Usuario accedió a página inscritos
+1122	renold.gonzalez	18-08-2019 09:12:47 AM	Usuario accedió a página certificaciones
+1123	renold.gonzalez	18-08-2019 09:12:48 AM	Usuario accedió a página inscritos
+1124	renold.gonzalez	18-08-2019 09:12:50 AM	Usuario accedió a página certificaciones
+1125	renold.gonzalez	18-08-2019 09:12:51 AM	Usuario accedió a página inscritos
+1126	renold.gonzalez	18-08-2019 09:42:59 AM	Usuario accedió a página inscritos
+1127	renold.gonzalez	18-08-2019 09:47:54 AM	Usuario accedió a página inscritos
+1128	renold.gonzalez	18-08-2019 09:49:09 AM	Usuario accedió a página inscritos
+1129	renold.gonzalez	18-08-2019 09:52:18 AM	Usuario accedió a página inscritos
+1130	renold.gonzalez	18-08-2019 09:56:33 AM	Usuario accedió a página inscritos
+1131	renold.gonzalez	18-08-2019 09:57:09 AM	Usuario accedió a página inscritos
+1132	renold.gonzalez	18-08-2019 09:58:13 AM	Usuario accedió a página inscritos
+1133	renold.gonzalez	18-08-2019 10:56:07 AM	Usuario accedió a página certificaciones
+1134	renold.gonzalez	18-08-2019 10:56:22 AM	Inició sesión como administrador del sistema
+1135	renold.gonzalez	18-08-2019 10:56:23 AM	Usuario accedió a página principal
+1136	renold.gonzalez	18-08-2019 10:56:24 AM	Usuario accedió a página inscritos
+1137	renold.gonzalez	18-08-2019 10:56:30 AM	Usuario accedió a página reportes
+1138	renold.gonzalez	18-08-2019 10:56:32 AM	Usuario accedió a página de administrtacion de datos
+1139	renold.gonzalez	18-08-2019 10:57:24 AM	Usuario accedió a página de usuarios
+1140	renold.gonzalez	18-08-2019 10:57:33 AM	Administrador registró a Admin General como Usuario común
+1141	renold.gonzalez	18-08-2019 10:57:36 AM	Usuario accedió a página de usuarios
+1142	renold.gonzalez	18-08-2019 10:57:40 AM	Usuario accedió a página de usuarios
+1143	renold.gonzalez	18-08-2019 10:57:46 AM	Usuario accedió a página de usuarios
+1144	renold.gonzalez	18-08-2019 10:57:52 AM	Usuario accedió a página de usuarios
+1145	renold.gonzalez	18-08-2019 10:57:53 AM	Usuario accedió a página reportes
+1146	renold.gonzalez	18-08-2019 10:57:54 AM	Usuario accedió a página certificaciones
+1147	renold.gonzalez	18-08-2019 10:58:08 AM	Usuario accedió a página principal
+1148	renold.gonzalez	18-08-2019 10:58:09 AM	Usuario accedió a página inscritos
+1149	renold.gonzalez	18-08-2019 10:58:11 AM	Usuario accedió a página certificaciones
+1150	renold.gonzalez	18-08-2019 10:58:14 AM	Usuario accedió a página inscritos
+1151	renold.gonzalez	18-08-2019 10:58:16 AM	Usuario accedió a página certificaciones
+1152	renold.gonzalez	18-08-2019 11:15:36 AM	Usuario accedió a página certificaciones
+1153	renold.gonzalez	18-08-2019 11:15:45 AM	Usuario accedió a página certificaciones
+1154	renold.gonzalez	18-08-2019 11:15:48 AM	Usuario accedió a página inscritos
+1155	renold.gonzalez	18-08-2019 11:16:29 AM	Usuario accedió a página inscritos
+1156	renold.gonzalez	18-08-2019 11:18:18 AM	Usuario accedió a página inscritos
+1157	renold.gonzalez	18-08-2019 11:34:37 AM	Usuario accedió a página inscritos
+1158	renold.gonzalez	18-08-2019 11:37:42 AM	Usuario accedió a página inscritos
+1159	renold.gonzalez	18-08-2019 11:48:57 AM	Usuario accedió a página inscritos
+1160	renold.gonzalez	18-08-2019 11:52:44 AM	Usuario accedió a página inscritos
+1161	renold.gonzalez	18-08-2019 11:54:13 AM	Usuario accedió a página inscritos
+1162	renold.gonzalez	18-08-2019 11:55:30 AM	Usuario accedió a página inscritos
+1163	renold.gonzalez	18-08-2019 11:56:32 AM	Usuario accedió a página inscritos
+1164	renold.gonzalez	18-08-2019 11:57:09 AM	Usuario accedió a página inscritos
+1165	renold.gonzalez	18-08-2019 11:58:10 AM	Usuario accedió a página inscritos
+1166	renold.gonzalez	18-08-2019 11:59:47 AM	Usuario accedió a página inscritos
+1167	renold.gonzalez	18-08-2019 12:00:53 PM	Usuario accedió a página inscritos
+1168	renold.gonzalez	18-08-2019 12:01:25 PM	Usuario accedió a página validación
+1169	renold.gonzalez	18-08-2019 12:01:29 PM	Usuario accedió a página principal
+1170	renold.gonzalez	18-08-2019 12:01:31 PM	Usuario accedió a página inscritos
+1171	renold.gonzalez	18-08-2019 12:01:32 PM	Usuario accedió a página certificaciones
+1172	renold.gonzalez	18-08-2019 12:01:33 PM	Usuario accedió a página inscritos
+1173	renold.gonzalez	18-08-2019 12:03:47 PM	Usuario accedió a página inscritos
+1174	renold.gonzalez	18-08-2019 12:04:11 PM	Usuario accedió a página inscritos
+1175	renold.gonzalez	18-08-2019 12:04:57 PM	Usuario accedió a página inscritos
+1176	renold.gonzalez	18-08-2019 12:05:08 PM	Administrador eliminó el registro  000231
+1177	renold.gonzalez	18-08-2019 12:05:22 PM	Administrador eliminó el registro  000231
+1178	renold.gonzalez	18-08-2019 12:11:10 PM	Usuario accedió a página inscritos
+1179	renold.gonzalez	18-08-2019 12:11:25 PM	Usuario accedió a página inscritos
+1180	renold.gonzalez	18-08-2019 12:11:35 PM	Administrador eliminó el registro  000231
+1181	renold.gonzalez	18-08-2019 12:11:37 PM	Usuario accedió a página inscritos
+1182	renold.gonzalez	18-08-2019 12:12:10 PM	Usuario accedió a página de usuarios
+1183	renold.gonzalez	18-08-2019 12:12:27 PM	Usuario accedió a página principal
+1184	renold.gonzalez	18-08-2019 12:12:28 PM	Usuario accedió a página de usuarios
+1185	renold.gonzalez	18-08-2019 12:12:42 PM	Usuario accedió a página principal
+1186	renold.gonzalez	18-08-2019 12:12:43 PM	Usuario accedió a página inscritos
+1187	renold.gonzalez	18-08-2019 12:12:51 PM	Administrador eliminó el registro  000236
+1188	renold.gonzalez	18-08-2019 12:12:54 PM	Usuario accedió a página inscritos
+1189	renold.gonzalez	18-08-2019 12:28:00 PM	Usuario accedió a página inscritos
+1190	renold.gonzalez	18-08-2019 12:28:11 PM	Administrador eliminó el registro  000240
+1191	renold.gonzalez	18-08-2019 12:28:20 PM	Administrador eliminó el registro  000238
+1192	renold.gonzalez	18-08-2019 12:28:35 PM	Administrador eliminó el registro  000256
+1193	renold.gonzalez	18-08-2019 12:53:38 PM	Administrador eliminó el registro  000272
+1194	renold.gonzalez	18-08-2019 01:04:10 PM	Usuario accedió a página inscritos
+1195	renold.gonzalez	18-08-2019 01:04:15 PM	Inició sesión como administrador del sistema
+1196	renold.gonzalez	18-08-2019 01:04:15 PM	Usuario accedió a página principal
+1197	renold.gonzalez	18-08-2019 01:04:17 PM	Usuario accedió a página inscritos
+1198	renold.gonzalez	18-08-2019 01:06:30 PM	Usuario accedió a página inscritos
+1199	renold.gonzalez	18-08-2019 01:06:42 PM	Administrador eliminó el registro  000233
+1200	renold.gonzalez	18-08-2019 01:06:55 PM	Administrador eliminó el registro  000233
+1201	renold.gonzalez	18-08-2019 01:08:27 PM	Usuario accedió a página inscritos
+1202	renold.gonzalez	18-08-2019 01:08:42 PM	Administrador eliminó el registro  000241
+1203	renold.gonzalez	18-08-2019 01:10:32 PM	Usuario accedió a página inscritos
+1204	renold.gonzalez	18-08-2019 01:10:44 PM	Administrador eliminó el registro  000246
+1205	renold.gonzalez	18-08-2019 01:10:49 PM	Administrador eliminó el registro  000273
+1206	renold.gonzalez	18-08-2019 01:20:19 PM	Usuario accedió a página inscritos
+1207	renold.gonzalez	18-08-2019 01:24:38 PM	Usuario accedió a página inscritos
+1208	renold.gonzalez	18-08-2019 01:28:07 PM	Usuario accedió a página inscritos
+1209	renold.gonzalez	18-08-2019 01:28:17 PM	Administrador eliminó el registro  000266
+1210	renold.gonzalez	18-08-2019 01:29:01 PM	Usuario accedió a página principal
+1211	renold.gonzalez	18-08-2019 01:29:02 PM	Usuario accedió a página inscritos
+1212	renold.gonzalez	18-08-2019 01:29:51 PM	Usuario accedió a página certificaciones
+1213	renold.gonzalez	18-08-2019 01:29:53 PM	Usuario accedió a página certificaciones
+1214	renold.gonzalez	18-08-2019 01:31:17 PM	Usuario accedió a página certificaciones
+1215	renold.gonzalez	18-08-2019 01:38:40 PM	Usuario accedió a página inscritos
+1216	renold.gonzalez	18-08-2019 01:38:41 PM	Usuario accedió a página certificaciones
+1217	renold.gonzalez	21-08-2019 06:06:39 AM	Inició sesión como administrador del sistema
+1218	renold.gonzalez	21-08-2019 06:06:40 AM	Usuario accedió a página principal
+1219	renold.gonzalez	21-08-2019 06:06:42 AM	Usuario accedió a página inscritos
+1220	renold.gonzalez	21-08-2019 06:08:00 AM	Usuario accedió a página inscritos
+1221	renold.gonzalez	21-08-2019 06:08:52 AM	Usuario accedió a página inscritos
+1222	renold.gonzalez	21-08-2019 06:09:39 AM	Usuario accedió a página certificaciones
+1223	renold.gonzalez	21-08-2019 06:09:44 AM	Usuario accedió a página validación
+1224	renold.gonzalez	21-08-2019 06:09:45 AM	Usuario accedió a página reportes
+1225	renold.gonzalez	21-08-2019 06:09:47 AM	Usuario accedió a página de administrtacion de datos
+1226	renold.gonzalez	21-08-2019 06:09:49 AM	Usuario accedió a página reportes
+1227	renold.gonzalez	21-08-2019 06:10:01 AM	Usuario salió del sistema
+1228	renold.gonzalez	21-08-2019 09:17:56 PM	Inició sesión como administrador del sistema
+1229	renold.gonzalez	21-08-2019 09:17:56 PM	Usuario accedió a página principal
+1230	renold.gonzalez	21-08-2019 09:17:58 PM	Usuario accedió a página certificaciones
+1231	renold.gonzalez	21-08-2019 09:19:36 PM	Usuario accedió a página inscritos
+1232	renold.gonzalez	21-08-2019 09:19:46 PM	Usuario accedió a página certificaciones
+1233	renold.gonzalez	21-08-2019 09:23:01 PM	Usuario accedió a página certificaciones
+1234	renold.gonzalez	21-08-2019 09:23:27 PM	Usuario accedió a página certificaciones
+1235	renold.gonzalez	21-08-2019 09:23:50 PM	Usuario accedió a página validación
+1236	renold.gonzalez	21-08-2019 09:23:51 PM	Usuario accedió a página inscritos
+1237	renold.gonzalez	21-08-2019 09:23:52 PM	Usuario accedió a página certificaciones
+1238	renold.gonzalez	21-08-2019 10:31:50 PM	Usuario accedió a página certificaciones
+1239	renold.gonzalez	21-08-2019 10:37:33 PM	Usuario accedió a página certificaciones
+1240	renold.gonzalez	21-08-2019 10:45:49 PM	Usuario accedió a página certificaciones
+1241	renold.gonzalez	21-08-2019 10:48:06 PM	Usuario accedió a página certificaciones
+1242	renold.gonzalez	21-08-2019 10:48:52 PM	Usuario accedió a página certificaciones
+1243	renold.gonzalez	21-08-2019 10:55:26 PM	Usuario accedió a página certificaciones
+1244	renold.gonzalez	21-08-2019 11:09:31 PM	Usuario accedió a página certificaciones
+1245	renold.gonzalez	21-08-2019 11:09:39 PM	Inició sesión como administrador del sistema
+1246	renold.gonzalez	21-08-2019 11:09:39 PM	Usuario accedió a página principal
+1247	renold.gonzalez	21-08-2019 11:09:41 PM	Usuario accedió a página certificaciones
+1248	renold.gonzalez	21-08-2019 11:12:03 PM	Usuario accedió a página certificaciones
+1249	renold.gonzalez	21-08-2019 11:12:07 PM	Usuario accedió a página certificaciones
+1250	renold.gonzalez	21-08-2019 11:13:24 PM	Usuario accedió a página certificaciones
+1251	renold.gonzalez	21-08-2019 11:13:35 PM	Usuario accedió a página certificaciones
+1252	renold.gonzalez	24-08-2019 10:09:50 AM	Usuario salió del sistema
+1253	renold.gonzalez	24-08-2019 10:10:11 AM	Inició sesión como administrador del sistema
+1254	renold.gonzalez	24-08-2019 10:10:11 AM	Usuario accedió a página principal
+1255	renold.gonzalez	24-08-2019 10:10:13 AM	Usuario accedió a página certificaciones
+1256	renold.gonzalez	24-08-2019 10:20:13 AM	Usuario accedió a página certificaciones
+1257	renold.gonzalez	24-08-2019 10:24:46 AM	Usuario accedió a página inscritos
+1258	renold.gonzalez	24-08-2019 10:26:00 AM	Usuario accedió a página certificaciones
+1259	renold.gonzalez	24-08-2019 10:28:47 AM	Usuario accedió a página certificaciones
+1260	renold.gonzalez	24-08-2019 10:36:03 AM	Usuario accedió a página validación
+1261	renold.gonzalez	24-08-2019 10:36:04 AM	Usuario accedió a página reportes
+1262	renold.gonzalez	24-08-2019 10:36:06 AM	Usuario accedió a página de administrtacion de datos
+1263	renold.gonzalez	24-08-2019 10:36:09 AM	Usuario accedió a página certificaciones
+1264	renold.gonzalez	24-08-2019 10:36:10 AM	Usuario accedió a página inscritos
+1265	renold.gonzalez	24-08-2019 10:36:25 AM	Usuario accedió a página certificaciones
+1266	renold.gonzalez	24-08-2019 10:37:16 AM	Usuario accedió a página certificaciones
+1267	renold.gonzalez	24-08-2019 10:38:02 AM	Usuario accedió a página certificaciones
+1268	renold.gonzalez	24-08-2019 10:42:05 AM	Usuario accedió a página inscritos
+1269	renold.gonzalez	24-08-2019 10:42:06 AM	Usuario accedió a página certificaciones
+1270	renold.gonzalez	24-08-2019 10:42:08 AM	Usuario accedió a página validación
+1271	renold.gonzalez	24-08-2019 10:42:11 AM	Usuario accedió a página reportes
+1272	renold.gonzalez	24-08-2019 10:42:13 AM	Usuario accedió a página inscritos
+1273	renold.gonzalez	24-08-2019 10:42:15 AM	Usuario accedió a página certificaciones
+1274	renold.gonzalez	24-08-2019 10:42:16 AM	Usuario accedió a página inscritos
+1275	renold.gonzalez	24-08-2019 10:42:17 AM	Usuario accedió a página certificaciones
+1276	renold.gonzalez	24-08-2019 10:42:20 AM	Usuario accedió a página inscritos
+1277	renold.gonzalez	24-08-2019 10:42:22 AM	Usuario accedió a página certificaciones
+1278	renold.gonzalez	24-08-2019 10:42:41 AM	Usuario accedió a página de usuarios
+1279	renold.gonzalez	24-08-2019 10:42:48 AM	Usuario salió del sistema
+1280	renold.gonzalez	24-08-2019 02:23:20 PM	Inició sesión como administrador del sistema
+1281	renold.gonzalez	24-08-2019 02:23:20 PM	Usuario accedió a página principal
+1282	renold.gonzalez	24-08-2019 02:23:22 PM	Usuario accedió a página inscritos
+1283	renold.gonzalez	24-08-2019 02:23:23 PM	Usuario accedió a página certificaciones
+1284	renold.gonzalez	24-08-2019 02:23:38 PM	Usuario gener? Certificacion
+1285	renold.gonzalez	24-08-2019 02:24:10 PM	Usuario accedió a página validación
+1286	renold.gonzalez	24-08-2019 02:24:20 PM	Usuario accedió a página reportes
+1287	renold.gonzalez	24-08-2019 02:24:21 PM	Usuario accedió a página de administrtacion de datos
+1288	renold.gonzalez	24-08-2019 02:24:24 PM	Usuario accedió a página de usuarios
+1289	renold.gonzalez	25-08-2019 11:54:05 AM	Inició sesión como administrador del sistema
+1290	renold.gonzalez	25-08-2019 11:54:05 AM	Usuario accedió a página principal
+1291	renold.gonzalez	25-08-2019 11:54:07 AM	Usuario accedió a página inscritos
+1292	renold.gonzalez	25-08-2019 11:54:24 AM	Usuario accedió a página certificaciones
+1293	renold.gonzalez	25-08-2019 12:09:58 PM	Usuario accedió a página certificaciones
+1294	renold.gonzalez	25-08-2019 01:20:02 PM	Usuario accedió a página certificaciones
+1295	renold.gonzalez	25-08-2019 01:20:26 PM	Usuario accedió a página certificaciones
+1296	renold.gonzalez	25-08-2019 01:36:44 PM	Usuario accedió a página certificaciones
+1297	renold.gonzalez	25-08-2019 01:36:59 PM	Inició sesión como administrador del sistema
+1298	renold.gonzalez	25-08-2019 01:37:00 PM	Usuario accedió a página principal
+1299	renold.gonzalez	25-08-2019 01:37:06 PM	Usuario accedió a página certificaciones
+1300	renold.gonzalez	25-08-2019 01:38:24 PM	Usuario accedió a página certificaciones
+1301	renold.gonzalez	25-08-2019 01:38:42 PM	Usuario accedió a página certificaciones
+1302	renold.gonzalez	25-08-2019 01:38:45 PM	Usuario accedió a página certificaciones
+1303	renold.gonzalez	25-08-2019 01:52:53 PM	Usuario accedió a página certificaciones
+1304	renold.gonzalez	25-08-2019 03:59:52 PM	Usuario accedió a página certificaciones
+1305	renold.gonzalez	25-08-2019 03:59:59 PM	Inició sesión como administrador del sistema
+1306	renold.gonzalez	25-08-2019 03:59:59 PM	Usuario accedió a página principal
+1307	renold.gonzalez	25-08-2019 04:00:01 PM	Usuario accedió a página certificaciones
+1308	renold.gonzalez	25-08-2019 04:12:41 PM	Usuario accedió a página certificaciones
+1309	renold.gonzalez	25-08-2019 04:21:13 PM	Usuario accedió a página certificaciones
+1310	renold.gonzalez	25-08-2019 04:28:30 PM	Usuario accedió a página certificaciones
+1311	renold.gonzalez	25-08-2019 04:31:30 PM	Usuario accedió a página certificaciones
+1312	renold.gonzalez	25-08-2019 04:32:04 PM	Usuario accedió a página certificaciones
+1313	renold.gonzalez	25-08-2019 04:32:48 PM	Usuario accedió a página certificaciones
+1314	renold.gonzalez	25-08-2019 04:33:05 PM	Usuario accedió a página certificaciones
+1315	renold.gonzalez	25-08-2019 04:33:27 PM	Usuario accedió a página certificaciones
+1316	renold.gonzalez	25-08-2019 04:35:15 PM	Usuario accedió a página certificaciones
+1317	renold.gonzalez	25-08-2019 04:37:32 PM	Usuario accedió a página certificaciones
+1318	renold.gonzalez	25-08-2019 04:45:07 PM	Usuario accedió a página certificaciones
+1319	renold.gonzalez	25-08-2019 04:45:54 PM	Usuario accedió a página certificaciones
+1320	renold.gonzalez	25-08-2019 04:47:01 PM	Usuario accedió a página certificaciones
+1321	renold.gonzalez	25-08-2019 04:47:38 PM	Usuario accedió a página certificaciones
+1322	renold.gonzalez	25-08-2019 04:47:47 PM	Usuario accedió a página certificaciones
+1323	renold.gonzalez	25-08-2019 04:51:01 PM	Usuario accedió a página certificaciones
+1324	renold.gonzalez	25-08-2019 04:53:04 PM	Usuario accedió a página certificaciones
+1325	renold.gonzalez	25-08-2019 04:55:51 PM	Usuario accedió a página certificaciones
+1326	renold.gonzalez	25-08-2019 04:56:59 PM	Usuario accedió a página certificaciones
+1327	renold.gonzalez	25-08-2019 04:59:21 PM	Usuario accedió a página certificaciones
+1328	renold.gonzalez	25-08-2019 05:02:58 PM	Usuario accedió a página certificaciones
+1329	renold.gonzalez	25-08-2019 05:04:37 PM	Usuario accedió a página certificaciones
+1330	renold.gonzalez	25-08-2019 05:05:21 PM	Usuario accedió a página certificaciones
+1331	renold.gonzalez	25-08-2019 05:05:23 PM	Usuario accedió a página certificaciones
+1332	renold.gonzalez	25-08-2019 05:07:53 PM	Usuario accedió a página certificaciones
+1333	renold.gonzalez	25-08-2019 05:07:57 PM	Usuario accedió a página certificaciones
+1334	renold.gonzalez	25-08-2019 05:08:30 PM	Usuario accedió a página certificaciones
+1335	renold.gonzalez	25-08-2019 05:08:50 PM	Usuario accedió a página certificaciones
+1336	renold.gonzalez	25-08-2019 05:09:22 PM	Usuario accedió a página certificaciones
+1337	renold.gonzalez	25-08-2019 05:11:26 PM	Usuario accedió a página certificaciones
+1338	renold.gonzalez	25-08-2019 05:11:30 PM	Usuario accedió a página certificaciones
+1339	renold.gonzalez	25-08-2019 05:13:40 PM	Usuario accedió a página certificaciones
+1340	renold.gonzalez	25-08-2019 05:15:14 PM	Usuario accedió a página certificaciones
+1341	renold.gonzalez	25-08-2019 05:18:05 PM	Usuario accedió a página certificaciones
+1342	renold.gonzalez	25-08-2019 05:19:28 PM	Usuario accedió a página certificaciones
+1343	renold.gonzalez	25-08-2019 05:19:52 PM	Usuario accedió a página certificaciones
+1344	renold.gonzalez	25-08-2019 05:22:47 PM	Usuario accedió a página certificaciones
+1345	renold.gonzalez	25-08-2019 05:26:20 PM	Usuario accedió a página certificaciones
+1346	renold.gonzalez	25-08-2019 05:32:46 PM	Usuario accedió a página certificaciones
+1347	renold.gonzalez	25-08-2019 05:32:52 PM	Usuario accedió a página certificaciones
+1348	renold.gonzalez	25-08-2019 05:33:51 PM	Usuario accedió a página certificaciones
+1349	renold.gonzalez	25-08-2019 05:38:40 PM	Usuario accedió a página certificaciones
+1350	renold.gonzalez	25-08-2019 05:39:59 PM	Usuario accedió a página certificaciones
+1351	renold.gonzalez	25-08-2019 05:43:35 PM	Usuario accedió a página certificaciones
+1352	renold.gonzalez	25-08-2019 05:43:41 PM	Inició sesión como administrador del sistema
+1353	renold.gonzalez	25-08-2019 05:43:41 PM	Usuario accedió a página principal
+1354	renold.gonzalez	25-08-2019 05:43:43 PM	Usuario accedió a página certificaciones
+1355	renold.gonzalez	25-08-2019 05:48:14 PM	Usuario accedió a página certificaciones
+1356	renold.gonzalez	25-08-2019 05:49:48 PM	Usuario accedió a página certificaciones
+1357	renold.gonzalez	25-08-2019 05:53:11 PM	Usuario accedió a página certificaciones
+1358	renold.gonzalez	25-08-2019 05:53:34 PM	Usuario gener? Certificacion
+1359	renold.gonzalez	25-08-2019 05:53:49 PM	Usuario accedió a página certificaciones
+1360	renold.gonzalez	25-08-2019 05:55:22 PM	Usuario accedió a página certificaciones
+1361	renold.gonzalez	25-08-2019 05:55:25 PM	Usuario accedió a página certificaciones
+1362	renold.gonzalez	25-08-2019 05:56:00 PM	Usuario gener? Certificacion
+1363	renold.gonzalez	25-08-2019 06:14:21 PM	Usuario gener? Certificacion
+1364	renold.gonzalez	25-08-2019 06:15:49 PM	Usuario accedió a página certificaciones
+1365	renold.gonzalez	25-08-2019 06:16:43 PM	Usuario gener? Certificacion
+1366	renold.gonzalez	25-08-2019 09:48:03 PM	Usuario accedió a página certificaciones
+1367	renold.gonzalez	25-08-2019 09:48:11 PM	Inició sesión como administrador del sistema
+1368	renold.gonzalez	25-08-2019 09:48:11 PM	Usuario accedió a página principal
+1369	renold.gonzalez	25-08-2019 09:48:14 PM	Usuario accedió a página inscritos
+1370	renold.gonzalez	25-08-2019 09:48:16 PM	Usuario accedió a página certificaciones
+1371	renold.gonzalez	25-08-2019 09:48:42 PM	Usuario gener? Certificacion
+1372	renold.gonzalez	25-08-2019 09:51:57 PM	Usuario accedió a página certificaciones
+1373	renold.gonzalez	25-08-2019 10:18:55 PM	Usuario accedió a página certificaciones
+1374	renold.gonzalez	25-08-2019 10:30:42 PM	Usuario accedió a página certificaciones
+1375	renold.gonzalez	25-08-2019 10:32:19 PM	Usuario accedió a página certificaciones
+1376	renold.gonzalez	25-08-2019 10:33:11 PM	Usuario accedió a página certificaciones
+1377	renold.gonzalez	25-08-2019 10:34:47 PM	Usuario accedió a página certificaciones
+1378	renold.gonzalez	25-08-2019 10:35:01 PM	Usuario accedió a página certificaciones
+1379	renold.gonzalez	25-08-2019 10:37:08 PM	Usuario accedió a página certificaciones
+1380	renold.gonzalez	25-08-2019 10:40:24 PM	Usuario accedió a página certificaciones
+1381	renold.gonzalez	25-08-2019 10:40:43 PM	Usuario accedió a página certificaciones
+1382	renold.gonzalez	25-08-2019 10:40:58 PM	Usuario accedió a página certificaciones
+1383	renold.gonzalez	25-08-2019 10:41:45 PM	Usuario accedió a página certificaciones
+1384	renold.gonzalez	25-08-2019 10:44:22 PM	Usuario accedió a página certificaciones
+1385	renold.gonzalez	25-08-2019 10:44:26 PM	Usuario accedió a página certificaciones
+1386	renold.gonzalez	25-08-2019 10:44:41 PM	Usuario accedió a página certificaciones
+1387	renold.gonzalez	25-08-2019 10:45:58 PM	Usuario accedió a página certificaciones
+1388	renold.gonzalez	25-08-2019 10:55:15 PM	Usuario accedió a página certificaciones
+1389	renold.gonzalez	25-08-2019 11:01:38 PM	Usuario accedió a página certificaciones
+1390	renold.gonzalez	25-08-2019 11:07:44 PM	Usuario accedió a página certificaciones
+1391	renold.gonzalez	25-08-2019 11:08:29 PM	Usuario accedió a página certificaciones
+1392	renold.gonzalez	25-08-2019 11:08:50 PM	Usuario accedió a página certificaciones
+1393	renold.gonzalez	25-08-2019 11:09:09 PM	Usuario accedió a página certificaciones
+1394	renold.gonzalez	25-08-2019 11:10:22 PM	Usuario accedió a página certificaciones
+1395	renold.gonzalez	25-08-2019 11:13:24 PM	Usuario accedió a página certificaciones
+1396	renold.gonzalez	25-08-2019 11:13:53 PM	Usuario accedió a página certificaciones
+1397	renold.gonzalez	25-08-2019 11:14:14 PM	Usuario accedió a página certificaciones
+1398	renold.gonzalez	25-08-2019 11:17:00 PM	Usuario accedió a página certificaciones
+1399	renold.gonzalez	25-08-2019 11:19:05 PM	Usuario accedió a página certificaciones
+1400	renold.gonzalez	25-08-2019 11:19:38 PM	Usuario accedió a página certificaciones
+1401	renold.gonzalez	25-08-2019 11:23:43 PM	Usuario accedió a página certificaciones
+1402	renold.gonzalez	25-08-2019 11:24:45 PM	Usuario accedió a página certificaciones
+1403	renold.gonzalez	25-08-2019 11:26:30 PM	Usuario accedió a página certificaciones
+1404	renold.gonzalez	25-08-2019 11:28:25 PM	Usuario accedió a página certificaciones
+1405	renold.gonzalez	25-08-2019 11:28:41 PM	Inició sesión como administrador del sistema
+1406	renold.gonzalez	25-08-2019 11:28:41 PM	Usuario accedió a página principal
+1407	renold.gonzalez	25-08-2019 11:28:42 PM	Usuario accedió a página inscritos
+1408	renold.gonzalez	25-08-2019 11:29:01 PM	Usuario accedió a página certificaciones
+1409	renold.gonzalez	25-08-2019 11:29:39 PM	Usuario accedió a página certificaciones
+1410	renold.gonzalez	25-08-2019 11:32:04 PM	Usuario accedió a página certificaciones
+1411	renold.gonzalez	25-08-2019 11:34:46 PM	Usuario accedió a página certificaciones
+1412	renold.gonzalez	25-08-2019 11:36:47 PM	Usuario accedió a página certificaciones
+1413	renold.gonzalez	25-08-2019 11:39:08 PM	Usuario accedió a página certificaciones
+1414	renold.gonzalez	25-08-2019 11:40:04 PM	Usuario accedió a página certificaciones
+1415	renold.gonzalez	31-08-2019 11:05:57 AM	Inició sesión como administrador del sistema
+1416	renold.gonzalez	31-08-2019 11:05:57 AM	Usuario accedió a página principal
+1417	renold.gonzalez	31-08-2019 11:06:02 AM	Usuario accedió a página inscritos
+1418	renold.gonzalez	31-08-2019 11:06:12 AM	Usuario accedió a página certificaciones
+1419	renold.gonzalez	31-08-2019 11:07:14 AM	Usuario accedió a página principal
+1420	renold.gonzalez	31-08-2019 11:07:16 AM	Usuario accedió a página inscritos
+1421	renold.gonzalez	31-08-2019 11:07:45 AM	Usuario accedió a página validación
+1422	renold.gonzalez	31-08-2019 11:07:50 AM	Usuario accedió a página reportes
+1423	renold.gonzalez	31-08-2019 11:07:57 AM	Usuario accedió a página de administrtacion de datos
+1424	renold.gonzalez	31-08-2019 11:08:44 AM	Usuario cargo al sistema (TB Resultados)  el archivo inscritosOficial100.csv
+1425	renold.gonzalez	31-08-2019 11:08:44 AM	CSV no cuenta con el Formato valido para la Tabla Resultados -> inscritosOficial100.csv
+1426	renold.gonzalez	31-08-2019 11:08:55 AM	Usuario cargo al sistema (TB Resultados)  el archivo inscritosOficial100.csv
+1427	renold.gonzalez	31-08-2019 11:08:55 AM	CSV no cuenta con el Formato valido para la Tabla Resultados -> inscritosOficial100.csv
+1428	renold.gonzalez	31-08-2019 11:09:08 AM	Usuario accedió a página validación
+1429	renold.gonzalez	31-08-2019 11:09:10 AM	Usuario accedió a página reportes
+1430	renold.gonzalez	31-08-2019 11:09:11 AM	Usuario accedió a página de administrtacion de datos
+1431	renold.gonzalez	31-08-2019 11:09:14 AM	Usuario accedió a página reportes
+1432	renold.gonzalez	31-08-2019 11:09:15 AM	Usuario accedió a página de usuarios
+1433	renold.gonzalez	31-08-2019 11:10:34 AM	Usuario accedió a página principal
+1434	renold.gonzalez	31-08-2019 11:10:37 AM	Usuario accedió a página inscritos
+1435	renold.gonzalez	31-08-2019 11:10:38 AM	Usuario accedió a página principal
+1436	renold.gonzalez	31-08-2019 11:10:43 AM	Usuario accedió a página inscritos
+1437	renold.gonzalez	31-08-2019 11:10:51 AM	Usuario accedió a página certificaciones
+1438	renold.gonzalez	31-08-2019 11:14:14 AM	Usuario accedió a página certificaciones
+1439	renold.gonzalez	31-08-2019 11:16:46 AM	Usuario accedió a página certificaciones
+1440	renold.gonzalez	31-08-2019 11:19:05 AM	Usuario accedió a página certificaciones
+1441	renold.gonzalez	31-08-2019 11:20:02 AM	Usuario accedió a página certificaciones
+1442	renold.gonzalez	31-08-2019 11:21:16 AM	Usuario accedió a página inscritos
+1443	renold.gonzalez	31-08-2019 11:21:36 AM	Usuario accedió a página inscritos
+1444	renold.gonzalez	31-08-2019 11:21:56 AM	Usuario accedió a página inscritos
+1445	renold.gonzalez	31-08-2019 11:22:10 AM	Usuario accedió a página inscritos
+1446	renold.gonzalez	31-08-2019 11:22:11 AM	Usuario accedió a página certificaciones
+1447	renold.gonzalez	31-08-2019 11:24:54 AM	Usuario accedió a página certificaciones
+1448	renold.gonzalez	31-08-2019 11:30:28 AM	Usuario accedió a página certificaciones
+1449	renold.gonzalez	31-08-2019 11:32:19 AM	Usuario accedió a página certificaciones
+1450	renold.gonzalez	31-08-2019 11:33:57 AM	Usuario accedió a página certificaciones
+1451	renold.gonzalez	31-08-2019 11:35:11 AM	Usuario accedió a página certificaciones
+1452	renold.gonzalez	31-08-2019 11:37:39 AM	Usuario accedió a página certificaciones
+1453	renold.gonzalez	31-08-2019 11:37:42 AM	Usuario accedió a página certificaciones
+1454	renold.gonzalez	31-08-2019 11:45:04 AM	Usuario accedió a página certificaciones
+1455	renold.gonzalez	31-08-2019 11:45:10 AM	Usuario accedió a página certificaciones
+1456	renold.gonzalez	31-08-2019 11:46:15 AM	Usuario accedió a página certificaciones
+1457	renold.gonzalez	31-08-2019 11:46:48 AM	Usuario accedió a página validación
+1458	renold.gonzalez	31-08-2019 11:46:50 AM	Usuario accedió a página reportes
+1459	renold.gonzalez	31-08-2019 11:46:52 AM	Usuario accedió a página de administrtacion de datos
+1460	renold.gonzalez	31-08-2019 11:46:55 AM	Usuario accedió a página reportes
+1461	renold.gonzalez	31-08-2019 11:50:08 AM	Usuario accedió a página certificaciones
+1462	renold.gonzalez	31-08-2019 11:50:11 AM	Usuario accedió a página validación
+1463	renold.gonzalez	31-08-2019 11:50:13 AM	Usuario accedió a página reportes
+1464	renold.gonzalez	31-08-2019 11:50:37 AM	Usuario accedió a página certificaciones
+1465	renold.gonzalez	31-08-2019 11:50:40 AM	Usuario accedió a página reportes
+1466	renold.gonzalez	31-08-2019 12:41:27 PM	Usuario accedió a página reportes
+1467	renold.gonzalez	31-08-2019 12:44:11 PM	Usuario accedió a página reportes
+1468	renold.gonzalez	31-08-2019 12:51:46 PM	Usuario accedió a página reportes
+1469	renold.gonzalez	31-08-2019 12:51:51 PM	Inició sesión como administrador del sistema
+1470	renold.gonzalez	31-08-2019 12:51:51 PM	Usuario accedió a página principal
+1471	renold.gonzalez	31-08-2019 12:51:53 PM	Usuario accedió a página reportes
+1472	renold.gonzalez	31-08-2019 12:53:31 PM	Usuario accedió a página reportes
+1473	renold.gonzalez	31-08-2019 12:54:08 PM	Usuario accedió a página reportes
+1474	renold.gonzalez	31-08-2019 12:55:49 PM	Usuario accedió a página reportes
+1475	renold.gonzalez	31-08-2019 12:56:36 PM	Usuario accedió a página reportes
+1476	renold.gonzalez	31-08-2019 12:57:55 PM	Usuario accedió a página reportes
+1477	renold.gonzalez	31-08-2019 12:59:01 PM	Usuario accedió a página reportes
+1478	renold.gonzalez	31-08-2019 12:59:08 PM	Usuario accedió a página reportes
+1479	renold.gonzalez	31-08-2019 12:59:36 PM	Usuario accedió a página reportes
+1480	renold.gonzalez	31-08-2019 01:00:09 PM	Usuario accedió a página reportes
+1481	renold.gonzalez	31-08-2019 01:00:55 PM	Usuario accedió a página reportes
+1482	renold.gonzalez	31-08-2019 01:01:47 PM	Usuario accedió a página reportes
+1483	renold.gonzalez	31-08-2019 01:02:21 PM	Usuario accedió a página reportes
+1484	renold.gonzalez	31-08-2019 01:03:49 PM	Usuario accedió a página reportes
+1485	renold.gonzalez	31-08-2019 01:04:34 PM	Usuario accedió a página reportes
+1486	renold.gonzalez	31-08-2019 01:08:38 PM	Usuario accedió a página reportes
+1487	renold.gonzalez	31-08-2019 01:09:31 PM	Usuario accedió a página reportes
+1488	renold.gonzalez	31-08-2019 01:11:35 PM	Usuario accedió a página reportes
+1489	renold.gonzalez	31-08-2019 01:15:03 PM	Usuario accedió a página reportes
+1490	renold.gonzalez	31-08-2019 01:24:37 PM	Usuario accedió a página reportes
+1491	renold.gonzalez	31-08-2019 01:25:08 PM	Usuario accedió a página reportes
+1492	renold.gonzalez	31-08-2019 03:34:17 PM	Usuario gener? reporte academico reporteAcademico_
+1493	Renold	31-08-2019 03:34:18 PM	Aplicando la instruccion A
+1494	Renold	31-08-2019 03:34:19 PM	Aplicando la instruccion A
+1495	renold.gonzalez	31-08-2019 04:01:28 PM	Usuario accedió a página reportes
+1496	renold.gonzalez	31-08-2019 04:01:34 PM	Inició sesión como administrador del sistema
+1497	renold.gonzalez	31-08-2019 04:01:35 PM	Usuario accedió a página principal
+1498	renold.gonzalez	31-08-2019 04:01:37 PM	Usuario accedió a página reportes
+1499	renold.gonzalez	31-08-2019 04:01:47 PM	Usuario gener? reporte academico reporteAcademico_
+1500	Renold	31-08-2019 04:01:47 PM	Aplicando la instruccion A
+1501	renold.gonzalez	31-08-2019 04:02:48 PM	Usuario accedió a página reportes
+1502	renold.gonzalez	31-08-2019 04:02:55 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_02_55_PM
+1503	renold.gonzalez	31-08-2019 04:10:24 PM	Usuario accedió a página reportes
+1504	renold.gonzalez	31-08-2019 04:10:30 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_10_30_PM
+1505	renold.gonzalez	31-08-2019 04:11:00 PM	Usuario accedió a página reportes
+1506	renold.gonzalez	31-08-2019 04:11:07 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_11_07_PM
+1507	renold.gonzalez	31-08-2019 04:11:29 PM	Usuario accedió a página reportes
+1508	renold.gonzalez	31-08-2019 04:11:35 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_11_35_PM
+1509	renold.gonzalez	31-08-2019 04:13:29 PM	Usuario accedió a página reportes
+1510	renold.gonzalez	31-08-2019 04:13:35 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_13_35_PM
+1511	renold.gonzalez	31-08-2019 04:15:19 PM	Usuario accedió a página reportes
+1512	renold.gonzalez	31-08-2019 04:15:24 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_15_24_PM
+1513	renold.gonzalez	31-08-2019 04:17:33 PM	Usuario accedió a página reportes
+1514	renold.gonzalez	31-08-2019 04:17:38 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_17_38_PM
+1515	renold.gonzalez	31-08-2019 04:19:12 PM	Usuario accedió a página reportes
+1516	renold.gonzalez	31-08-2019 04:19:18 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_19_18_PM
+1517	renold.gonzalez	31-08-2019 04:20:14 PM	Usuario accedió a página reportes
+1518	renold.gonzalez	31-08-2019 04:20:20 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_20_20_PM
+1519	renold.gonzalez	31-08-2019 04:23:38 PM	Usuario accedió a página reportes
+1520	renold.gonzalez	31-08-2019 04:23:43 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_23_43_PM
+1521	renold.gonzalez	31-08-2019 04:25:58 PM	Usuario accedió a página reportes
+1522	renold.gonzalez	31-08-2019 04:26:05 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_26_05_PM
+1523	renold.gonzalez	31-08-2019 04:27:36 PM	Usuario accedió a página reportes
+1524	renold.gonzalez	31-08-2019 04:27:42 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_27_42_PM
+1525	renold.gonzalez	31-08-2019 04:28:01 PM	Usuario accedió a página reportes
+1526	renold.gonzalez	31-08-2019 04:28:07 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_28_07_PM
+1527	renold.gonzalez	31-08-2019 04:28:29 PM	Usuario accedió a página reportes
+1528	renold.gonzalez	31-08-2019 04:28:34 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_28_34_PM
+1529	renold.gonzalez	31-08-2019 04:32:10 PM	Usuario accedió a página reportes
+1530	renold.gonzalez	31-08-2019 04:32:17 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_32_17_PM
+1531	renold.gonzalez	31-08-2019 04:34:24 PM	Usuario accedió a página certificaciones
+1532	renold.gonzalez	31-08-2019 04:34:57 PM	Usuario accedió a página certificaciones
+1533	renold.gonzalez	31-08-2019 04:35:28 PM	Usuario accedió a página certificaciones
+1534	renold.gonzalez	31-08-2019 04:35:30 PM	Usuario accedió a página certificaciones
+1535	renold.gonzalez	31-08-2019 04:36:15 PM	Usuario accedió a página certificaciones
+1536	renold.gonzalez	31-08-2019 04:36:18 PM	Usuario accedió a página certificaciones
+1537	renold.gonzalez	31-08-2019 04:37:09 PM	Usuario accedió a página certificaciones
+1538	renold.gonzalez	31-08-2019 04:38:13 PM	Usuario accedió a página certificaciones
+1539	renold.gonzalez	31-08-2019 04:41:06 PM	Usuario accedió a página reportes
+1540	renold.gonzalez	31-08-2019 04:41:34 PM	Usuario accedió a página reportes
+1541	renold.gonzalez	31-08-2019 04:41:40 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_41_40_PM
+1542	renold.gonzalez	31-08-2019 04:42:17 PM	Usuario accedió a página reportes
+1543	renold.gonzalez	31-08-2019 04:42:22 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_42_22_PM
+1544	renold.gonzalez	31-08-2019 04:42:52 PM	Usuario accedió a página reportes
+1545	renold.gonzalez	31-08-2019 04:42:58 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_42_58_PM
+1546	renold.gonzalez	31-08-2019 04:43:23 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_43_23_PM
+1547	renold.gonzalez	31-08-2019 04:53:49 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_53_49_PM
+1548	renold.gonzalez	31-08-2019 04:54:15 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_04_54_15_PM
+1549	renold.gonzalez	31-08-2019 05:04:10 PM	Usuario accedió a página reportes
+1550	renold.gonzalez	31-08-2019 05:15:10 PM	Usuario accedió a página reportes
+1551	renold.gonzalez	31-08-2019 05:15:31 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_05_15_31_PM
+1552	renold.gonzalez	31-08-2019 05:18:27 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_05_18_27_PM
+1553	renold.gonzalez	31-08-2019 05:20:48 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_05_20_48_PM
+1554	renold.gonzalez	31-08-2019 05:21:26 PM	Usuario accedió a página reportes
+1555	renold.gonzalez	31-08-2019 05:21:52 PM	Usuario accedió a página reportes
+1556	renold.gonzalez	31-08-2019 05:21:58 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_05_21_58_PM
+1557	renold.gonzalez	31-08-2019 05:31:17 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_05_31_17_PM
+1558	renold.gonzalez	31-08-2019 05:45:00 PM	Usuario accedió a página reportes
+1559	renold.gonzalez	31-08-2019 05:45:08 PM	Inició sesión como administrador del sistema
+1560	renold.gonzalez	31-08-2019 05:45:08 PM	Usuario accedió a página principal
+1561	renold.gonzalez	31-08-2019 05:45:11 PM	Usuario accedió a página reportes
+1562	renold.gonzalez	31-08-2019 05:46:03 PM	Usuario accedió a página reportes
+1563	renold.gonzalez	31-08-2019 05:46:53 PM	Usuario accedió a página reportes
+1564	renold.gonzalez	31-08-2019 05:47:19 PM	Usuario accedió a página reportes
+1565	renold.gonzalez	31-08-2019 05:47:33 PM	Usuario accedió a página reportes
+1566	renold.gonzalez	31-08-2019 05:48:51 PM	Usuario accedió a página reportes
+1567	renold.gonzalez	31-08-2019 05:48:59 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_05_48_59_PM
+1568	renold.gonzalez	31-08-2019 05:57:31 PM	Usuario accedió a página reportes
+1569	renold.gonzalez	31-08-2019 06:01:09 PM	Usuario accedió a página reportes
+1570	renold.gonzalez	31-08-2019 06:01:14 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_01_14_PM
+1571	renold.gonzalez	31-08-2019 06:02:01 PM	Usuario accedió a página reportes
+1572	renold.gonzalez	31-08-2019 06:02:06 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_02_06_PM
+1573	renold.gonzalez	31-08-2019 06:03:16 PM	Usuario accedió a página reportes
+1574	renold.gonzalez	31-08-2019 06:03:22 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_03_22_PM
+1575	renold.gonzalez	31-08-2019 06:05:03 PM	Usuario accedió a página reportes
+1576	renold.gonzalez	31-08-2019 06:05:08 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_05_08_PM
+1577	renold.gonzalez	31-08-2019 06:06:03 PM	Usuario accedió a página reportes
+1578	renold.gonzalez	31-08-2019 06:06:08 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_06_08_PM
+1579	renold.gonzalez	31-08-2019 06:08:07 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_08_07_PM
+1580	renold.gonzalez	31-08-2019 06:11:12 PM	Inició sesión como administrador del sistema
+1581	renold.gonzalez	31-08-2019 06:11:12 PM	Usuario accedió a página principal
+1582	renold.gonzalez	31-08-2019 06:11:15 PM	Usuario accedió a página reportes
+1583	renold.gonzalez	31-08-2019 06:11:20 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_11_20_PM
+1584	renold.gonzalez	31-08-2019 06:12:05 PM	Usuario accedió a página reportes
+1585	renold.gonzalez	31-08-2019 06:12:10 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_12_10_PM
+1586	renold.gonzalez	31-08-2019 06:12:58 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_12_58_PM
+1587	renold.gonzalez	31-08-2019 06:16:49 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_16_49_PM
+1588	renold.gonzalez	31-08-2019 06:17:16 PM	Usuario accedió a página reportes
+1589	renold.gonzalez	31-08-2019 06:17:21 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_17_21_PM
+1590	renold.gonzalez	31-08-2019 06:19:23 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_19_23_PM
+1591	renold.gonzalez	31-08-2019 06:19:55 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_19_55_PM
+1592	renold.gonzalez	31-08-2019 06:20:07 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_20_07_PM
+1593	renold.gonzalez	31-08-2019 06:23:18 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_23_18_PM
+1594	renold.gonzalez	31-08-2019 06:23:37 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_23_37_PM
+1595	renold.gonzalez	31-08-2019 06:24:33 PM	Usuario gener? reporte academico reporteAcademico_31-08-2019_06_24_33_PM
+1596	renold.gonzalez	01-09-2019 09:58:21 AM	Usuario accedió a página reportes
+1597	renold.gonzalez	01-09-2019 09:58:26 AM	Inició sesión como administrador del sistema
+1598	renold.gonzalez	01-09-2019 09:58:27 AM	Usuario accedió a página principal
+1599	renold.gonzalez	01-09-2019 09:58:30 AM	Usuario accedió a página reportes
+1600	renold.gonzalez	01-09-2019 09:58:36 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_09_58_36_AM
+1601	renold.gonzalez	01-09-2019 10:01:06 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_01_06_AM
+1602	renold.gonzalez	01-09-2019 10:01:32 AM	Usuario accedió a página reportes
+1603	renold.gonzalez	01-09-2019 10:01:39 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_01_39_AM
+1604	renold.gonzalez	01-09-2019 10:09:12 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_09_12_AM
+1605	renold.gonzalez	01-09-2019 10:09:41 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_09_41_AM
+1606	renold.gonzalez	01-09-2019 10:18:24 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_18_24_AM
+1607	renold.gonzalez	01-09-2019 10:19:01 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_19_01_AM
+1608	renold.gonzalez	01-09-2019 10:20:20 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_20_20_AM
+1609	renold.gonzalez	01-09-2019 10:22:56 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_22_56_AM
+1610	renold.gonzalez	01-09-2019 10:25:56 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_25_56_AM
+1611	renold.gonzalez	01-09-2019 10:27:23 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_27_23_AM
+1612	renold.gonzalez	01-09-2019 10:32:04 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_32_04_AM
+1613	renold.gonzalez	01-09-2019 10:48:51 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_48_51_AM
+1614	renold.gonzalez	01-09-2019 10:50:17 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_50_17_AM
+1615	renold.gonzalez	01-09-2019 10:55:13 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_10_55_13_AM
+1616	renold.gonzalez	01-09-2019 11:17:53 AM	Usuario accedió a página reportes
+1617	renold.gonzalez	01-09-2019 11:18:00 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_18_00_AM
+1618	renold.gonzalez	01-09-2019 11:18:52 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_18_52_AM
+1619	renold.gonzalez	01-09-2019 11:20:16 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_20_16_AM
+1620	renold.gonzalez	01-09-2019 11:24:43 AM	Usuario accedió a página reportes
+1621	renold.gonzalez	01-09-2019 11:24:50 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_24_50_AM
+1622	renold.gonzalez	01-09-2019 11:26:24 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_26_24_AM
+1623	renold.gonzalez	01-09-2019 11:32:06 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_32_06_AM
+1624	renold.gonzalez	01-09-2019 11:44:08 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_44_08_AM
+1625	renold.gonzalez	01-09-2019 11:44:16 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_44_16_AM
+1626	renold.gonzalez	01-09-2019 11:44:57 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_44_57_AM
+1627	renold.gonzalez	01-09-2019 11:45:22 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_45_22_AM
+1628	renold.gonzalez	01-09-2019 11:56:49 AM	Usuario gener? reporte academico reporteAcademico_01-09-2019_11_56_49_AM
+1629	renold.gonzalez	01-09-2019 12:02:26 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_02_26_PM
+1630	renold.gonzalez	01-09-2019 12:03:37 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_03_37_PM
+1631	renold.gonzalez	01-09-2019 12:05:00 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_05_00_PM
+1632	renold.gonzalez	01-09-2019 12:06:14 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_06_14_PM
+1633	renold.gonzalez	01-09-2019 12:12:07 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_12_07_PM
+1634	renold.gonzalez	01-09-2019 12:12:29 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_12_29_PM
+1635	renold.gonzalez	01-09-2019 12:12:55 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_12_55_PM
+1636	renold.gonzalez	01-09-2019 12:13:18 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_13_18_PM
+1637	renold.gonzalez	01-09-2019 12:13:46 PM	Usuario accedió a página reportes
+1638	renold.gonzalez	01-09-2019 12:14:01 PM	Inició sesión como administrador del sistema
+1639	renold.gonzalez	01-09-2019 12:14:01 PM	Usuario accedió a página principal
+1640	renold.gonzalez	01-09-2019 12:14:03 PM	Usuario accedió a página inscritos
+1641	renold.gonzalez	01-09-2019 12:14:05 PM	Usuario accedió a página validación
+1642	renold.gonzalez	01-09-2019 12:14:06 PM	Usuario accedió a página reportes
+1643	renold.gonzalez	01-09-2019 12:14:28 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_14_28_PM
+1644	renold.gonzalez	01-09-2019 12:16:15 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_16_15_PM
+1645	renold.gonzalez	01-09-2019 12:19:07 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_19_07_PM
+1646	renold.gonzalez	01-09-2019 12:19:35 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_19_35_PM
+1647	renold.gonzalez	01-09-2019 12:19:58 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_19_58_PM
+1648	renold.gonzalez	01-09-2019 12:21:24 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_21_24_PM
+1649	renold.gonzalez	01-09-2019 12:21:50 PM	Usuario accedió a página reportes
+1650	renold.gonzalez	01-09-2019 12:21:56 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_21_56_PM
+1651	renold.gonzalez	01-09-2019 12:24:17 PM	Usuario accedió a página reportes
+1652	renold.gonzalez	01-09-2019 12:24:23 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_24_23_PM
+1653	renold.gonzalez	01-09-2019 12:25:27 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_25_27_PM
+1654	renold.gonzalez	01-09-2019 12:25:39 PM	Usuario accedió a página reportes
+1655	renold.gonzalez	01-09-2019 12:25:47 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_25_47_PM
+1656	renold.gonzalez	01-09-2019 12:51:16 PM	Usuario accedió a página reportes
+1657	renold.gonzalez	01-09-2019 12:51:24 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_51_24_PM
+1658	renold.gonzalez	01-09-2019 12:51:37 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_51_37_PM
+1659	renold.gonzalez	01-09-2019 12:52:16 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_52_16_PM
+1660	renold.gonzalez	01-09-2019 12:52:28 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_12_52_28_PM
+1661	renold.gonzalez	01-09-2019 02:26:08 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_02_26_08_PM
+1662	renold.gonzalez	01-09-2019 02:26:34 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_02_26_34_PM
+1663	renold.gonzalez	01-09-2019 02:26:38 PM	Usuario gener? reporte academico reporteAcademico_01-09-2019_02_26_38_PM
+1664	renold.gonzalez	01-09-2019 02:31:29 PM	Inició sesión como administrador del sistema
+1665	renold.gonzalez	01-09-2019 02:31:29 PM	Usuario accedió a página principal
+1666	renold.gonzalez	01-09-2019 02:31:31 PM	Usuario accedió a página validación
+1667	renold.gonzalez	01-09-2019 02:31:40 PM	Usuario accedió a página reportes
+1668	renold.gonzalez	01-09-2019 02:31:44 PM	Usuario accedió a página de administrtacion de datos
+1669	renold.gonzalez	01-09-2019 02:31:54 PM	Usuario accedió a página validación
+1670	renold.gonzalez	01-09-2019 02:31:58 PM	Usuario accedió a página de usuarios
+1671	renold.gonzalez	02-09-2019 06:04:13 AM	Usuario accedió a página de administrtacion de datos
+1672	renold.gonzalez	02-09-2019 06:04:20 AM	Inició sesión como administrador del sistema
+1673	renold.gonzalez	02-09-2019 06:04:20 AM	Usuario accedió a página principal
+1674	renold.gonzalez	02-09-2019 06:04:26 AM	Usuario accedió a página validación
+1675	renold.gonzalez	02-09-2019 06:04:31 AM	Usuario accedió a página reportes
+1676	renold.gonzalez	02-09-2019 06:04:34 AM	Usuario accedió a página de administrtacion de datos
+1677	renold.gonzalez	02-09-2019 06:04:37 AM	Usuario accedió a página reportes
+1678	renold.gonzalez	02-09-2019 06:04:40 AM	Usuario accedió a página de administrtacion de datos
+1679	renold.gonzalez	02-09-2019 06:04:46 AM	Usuario accedió a página de usuarios
+1680	renold.gonzalez	02-09-2019 06:04:54 AM	Usuario accedió a página reportes
+1681	renold.gonzalez	02-09-2019 06:05:09 AM	Usuario gener? reporte academico reporteAcademico_02-09-2019_06_05_09_AM
+1682	renold.gonzalez	02-09-2019 06:05:38 AM	Usuario accedió a página inscritos
+1683	renold.gonzalez	02-09-2019 06:05:40 AM	Usuario accedió a página certificaciones
+1684	renold.gonzalez	02-09-2019 06:05:42 AM	Usuario accedió a página validación
+1685	renold.gonzalez	02-09-2019 06:05:44 AM	Usuario accedió a página reportes
+1686	renold.gonzalez	02-09-2019 06:05:45 AM	Usuario accedió a página de administrtacion de datos
+1687	renold.gonzalez	02-09-2019 06:05:48 AM	Usuario accedió a página validación
+1688	renold.gonzalez	02-09-2019 06:06:20 AM	Usuario salió del sistema
+1689	renold.gonzalez	02-09-2019 08:21:56 PM	Inició sesión como administrador del sistema
+1690	renold.gonzalez	02-09-2019 08:21:57 PM	Usuario accedió a página principal
+1691	renold.gonzalez	02-09-2019 08:21:58 PM	Usuario accedió a página reportes
+1692	renold.gonzalez	02-09-2019 08:22:00 PM	Usuario accedió a página de administrtacion de datos
+1693	renold.gonzalez	02-09-2019 08:22:02 PM	Usuario accedió a página de usuarios
+1694	renold.gonzalez	02-09-2019 08:36:46 PM	Usuario accedió a página de usuarios
+1695	renold.gonzalez	02-09-2019 08:36:49 PM	Usuario accedió a página reportes
+1696	renold.gonzalez	02-09-2019 08:37:14 PM	Usuario accedió a página reportes
+1697	renold.gonzalez	02-09-2019 09:01:46 PM	Usuario accedió a página reportes
+1698	renold.gonzalez	02-09-2019 09:03:42 PM	Usuario accedió a página reportes
+1699	renold.gonzalez	02-09-2019 09:06:56 PM	Usuario accedió a página reportes
+1700	renold.gonzalez	02-09-2019 09:07:29 PM	Usuario accedió a página reportes
+1701	renold.gonzalez	02-09-2019 09:07:32 PM	Usuario accedió a página reportes
+1702	renold.gonzalez	02-09-2019 09:08:13 PM	Usuario accedió a página reportes
+1703	renold.gonzalez	02-09-2019 09:08:33 PM	Usuario accedió a página reportes
+1704	renold.gonzalez	02-09-2019 09:08:46 PM	Usuario accedió a página reportes
+1705	renold.gonzalez	02-09-2019 09:09:35 PM	Usuario accedió a página reportes
+1706	renold.gonzalez	02-09-2019 09:10:01 PM	Usuario accedió a página reportes
+1707	renold.gonzalez	02-09-2019 09:19:48 PM	Usuario accedió a página reportes
+1708	renold.gonzalez	02-09-2019 09:22:34 PM	Usuario accedió a página reportes
+1709	renold.gonzalez	02-09-2019 09:24:33 PM	Usuario accedió a página reportes
+1710	renold.gonzalez	02-09-2019 09:29:13 PM	Usuario accedió a página reportes
+1711	renold.gonzalez	02-09-2019 09:55:26 PM	Usuario accedió a página reportes
+1712	renold.gonzalez	02-09-2019 09:55:56 PM	Usuario accedió a página reportes
+1713	renold.gonzalez	02-09-2019 09:56:39 PM	Usuario accedió a página reportes
+1714	renold.gonzalez	02-09-2019 10:00:54 PM	Usuario accedió a página reportes
+1715	renold.gonzalez	02-09-2019 10:06:51 PM	Usuario accedió a página reportes
+1716	renold.gonzalez	02-09-2019 10:07:04 PM	Inició sesión como administrador del sistema
+1717	renold.gonzalez	02-09-2019 10:07:04 PM	Usuario accedió a página principal
+1718	renold.gonzalez	02-09-2019 10:07:06 PM	Usuario accedió a página de administrtacion de datos
+1719	renold.gonzalez	02-09-2019 10:07:08 PM	Usuario accedió a página reportes
+1720	renold.gonzalez	02-09-2019 10:07:30 PM	Usuario accedió a página reportes
+1721	renold.gonzalez	02-09-2019 10:32:42 PM	Usuario accedió a página reportes
+1722	renold.gonzalez	02-09-2019 10:34:17 PM	Usuario accedió a página reportes
+1723	renold.gonzalez	02-09-2019 10:34:23 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_34_23_PM
+1724	renold.gonzalez	02-09-2019 10:35:04 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_35_04_PM
+1725	renold.gonzalez	02-09-2019 10:36:18 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_36_18_PM
+1726	renold.gonzalez	02-09-2019 10:36:43 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_36_43_PM
+1727	renold.gonzalez	02-09-2019 10:37:03 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_37_03_PM
+1728	renold.gonzalez	02-09-2019 10:37:17 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_37_17_PM
+1729	renold.gonzalez	02-09-2019 10:40:09 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_40_09_PM
+1730	renold.gonzalez	02-09-2019 10:42:41 PM	Usuario accedió a página reportes
+1731	renold.gonzalez	02-09-2019 10:42:45 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_42_45_PM
+1732	renold.gonzalez	02-09-2019 10:45:23 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_45_23_PM
+1733	renold.gonzalez	02-09-2019 10:47:53 PM	Usuario accedió a página reportes
+1734	renold.gonzalez	02-09-2019 10:47:58 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_47_58_PM
+1735	renold.gonzalez	02-09-2019 10:48:27 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_48_27_PM
+1736	renold.gonzalez	02-09-2019 10:50:40 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_50_40_PM
+1737	renold.gonzalez	02-09-2019 10:50:57 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_50_57_PM
+1738	renold.gonzalez	02-09-2019 10:51:10 PM	Usuario gener? reporte academico reporteAcademico_02-09-2019_10_51_10_PM
+1739	renold.gonzalez	02-09-2019 10:53:13 PM	Usuario accedió a página de usuarios
+1740	renold.gonzalez	02-09-2019 10:53:26 PM	Usuario salió del sistema
+1741	renold.gonzalez	03-09-2019 08:46:26 PM	Inició sesión como administrador del sistema
+1742	renold.gonzalez	03-09-2019 08:46:26 PM	Usuario accedió a página principal
+1743	renold.gonzalez	03-09-2019 08:46:28 PM	Usuario accedió a página reportes
+1744	renold.gonzalez	03-09-2019 08:46:37 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_46_37_PM
+1745	renold.gonzalez	03-09-2019 08:47:16 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_47_16_PM
+1746	renold.gonzalez	03-09-2019 08:47:34 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_47_34_PM
+1747	renold.gonzalez	03-09-2019 08:47:48 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_47_48_PM
+1748	renold.gonzalez	03-09-2019 08:48:30 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_48_30_PM
+1749	renold.gonzalez	03-09-2019 08:48:57 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_48_57_PM
+1750	renold.gonzalez	03-09-2019 08:49:55 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_49_55_PM
+1751	renold.gonzalez	03-09-2019 08:50:26 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_08_50_26_PM
+1752	renold.gonzalez	03-09-2019 08:50:37 PM	Usuario accedió a página principal
+1753	renold.gonzalez	03-09-2019 08:50:39 PM	Usuario accedió a página reportes
+1754	renold.gonzalez	03-09-2019 08:50:40 PM	Usuario accedió a página de administrtacion de datos
+1755	renold.gonzalez	03-09-2019 08:50:46 PM	Usuario accedió a página reportes
+1756	renold.gonzalez	03-09-2019 09:00:04 PM	Usuario accedió a página de administrtacion de datos
+1757	renold.gonzalez	03-09-2019 09:00:07 PM	Usuario accedió a página de usuarios
+1758	renold.gonzalez	03-09-2019 09:01:03 PM	Administrador registró a Julian Batist como usuario especial
+1759	renold.gonzalez	03-09-2019 09:01:03 PM	Usuario accedió a página de usuarios
+1760	renold.gonzalez	03-09-2019 09:01:22 PM	Usuario accedió a página de usuarios
+1761	renold.gonzalez	03-09-2019 09:01:35 PM	Administrador eliminó a un usuario
+1762	renold.gonzalez	03-09-2019 09:01:35 PM	Administrador eliminó a [julian.martinez]
+1763	renold.gonzalez	03-09-2019 09:01:39 PM	Usuario accedió a página de usuarios
+1764	renold.gonzalez	03-09-2019 09:02:40 PM	Usuario accedió a página de usuarios
+1765	renold.gonzalez	03-09-2019 09:03:12 PM	Administrador registro un usuario 
+1766	renold.gonzalez	03-09-2019 09:03:12 PM	Administrador registró a admin admin como Usuario común
+1767	renold.gonzalez	03-09-2019 09:03:12 PM	Usuario accedió a página de usuarios
+1768	renold.gonzalez	03-09-2019 09:03:32 PM	Administrador registró a admin admin como usuario especial
+1769	renold.gonzalez	03-09-2019 09:04:05 PM	Usuario accedió a página de usuarios
+1770	renold.gonzalez	03-09-2019 09:04:08 PM	Usuario accedió a página de usuarios
+1771	renold.gonzalez	03-09-2019 09:04:13 PM	Usuario accedió a página de usuarios
+1772	renold.gonzalez	03-09-2019 09:04:17 PM	Usuario salió del sistema
+1773	renold.gonzalez	03-09-2019 09:04:45 PM	Inició sesión como administrador del sistema
+1774	renold.gonzalez	03-09-2019 09:04:46 PM	Usuario accedió a página principal
+1775	renold.gonzalez	03-09-2019 09:04:47 PM	Usuario accedió a página de usuarios
+1776	renold.gonzalez	03-09-2019 09:05:01 PM	Usuario accedió a página de usuarios
+1777	renold.gonzalez	03-09-2019 09:05:06 PM	Usuario salió del sistema
+1778	ADMIN.ADMIN2	03-09-2019 09:05:24 PM	Inició sesión como Usuario Especial
+1779	ADMIN.ADMIN2	03-09-2019 09:05:24 PM	Usuario accedió a página principal
+1780	ADMIN.ADMIN2	03-09-2019 09:05:28 PM	Usuario accedió a página certificaciones
+1781	ADMIN.ADMIN2	03-09-2019 09:05:29 PM	Usuario accedió a página validación
+1782	ADMIN.ADMIN2	03-09-2019 09:05:33 PM	Usuario accedió a página validación
+1783	ADMIN.ADMIN2	03-09-2019 09:05:36 PM	Usuario accedió a página certificaciones
+1784	ADMIN.ADMIN2	03-09-2019 09:05:37 PM	Usuario accedió a página validación
+1785	ADMIN.ADMIN2	03-09-2019 09:05:39 PM	Usuario accedió a página principal
+1786	ADMIN.ADMIN2	03-09-2019 09:05:40 PM	Usuario accedió a página certificaciones
+1787	ADMIN.ADMIN2	03-09-2019 09:05:41 PM	Usuario accedió a página validación
+1788	ADMIN.ADMIN2	03-09-2019 09:05:48 PM	Usuario salió del sistema
+1789	renold.gonzalez	03-09-2019 09:05:57 PM	Inició sesión como administrador del sistema
+1790	renold.gonzalez	03-09-2019 09:05:57 PM	Usuario accedió a página principal
+1791	renold.gonzalez	03-09-2019 09:05:58 PM	Usuario accedió a página de administrtacion de datos
+1792	renold.gonzalez	03-09-2019 09:10:55 PM	El sistema creó el archivo inscritos03_09_2019.txt y  exportó  registros de TB inscritos - Nombre de
+1793	renold.gonzalez	03-09-2019 09:13:29 PM	El sistema creó el archivo indices03_09_2019.txt y  exportó  registros de TB resultados - Nombre del
+1794	renold.gonzalez	03-09-2019 09:14:07 PM	Usuario accedió a página de usuarios
+1795	renold.gonzalez	03-09-2019 09:14:36 PM	Usuario accedió a página de administrtacion de datos
+1796	renold.gonzalez	03-09-2019 09:14:39 PM	Usuario accedió a página certificaciones
+1797	renold.gonzalez	03-09-2019 09:15:28 PM	Usuario accedió a página inscritos
+1798	renold.gonzalez	03-09-2019 09:16:15 PM	Usuario accedió a página certificaciones
+1799	renold.gonzalez	03-09-2019 09:16:17 PM	Usuario accedió a página validación
+1800	renold.gonzalez	03-09-2019 09:18:09 PM	Usuario accedió a página validación
+1801	renold.gonzalez	03-09-2019 09:18:45 PM	Usuario accedió a página validación
+1802	renold.gonzalez	03-09-2019 09:19:22 PM	Usuario accedió a página reportes
+1803	renold.gonzalez	03-09-2019 09:19:23 PM	Usuario accedió a página de administrtacion de datos
+1804	renold.gonzalez	03-09-2019 09:19:43 PM	El sistema creó el archivo resultados03_09_2019.txt y  exportó  registros de TB resultados - Nombre 
+1805	renold.gonzalez	03-09-2019 09:20:03 PM	Usuario accedió a página validación
+1806	renold.gonzalez	03-09-2019 09:20:05 PM	Usuario accedió a página reportes
+1807	renold.gonzalez	03-09-2019 09:20:14 PM	Usuario accedió a página de administrtacion de datos
+1808	renold.gonzalez	03-09-2019 09:27:56 PM	Usuario accedió a página reportes
+1809	renold.gonzalez	03-09-2019 09:28:03 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_09_28_03_PM
+1810	renold.gonzalez	03-09-2019 09:28:19 PM	Usuario gener? reporte academico reporteAcademico_03-09-2019_09_28_19_PM
+1811	renold.gonzalez	03-09-2019 09:28:36 PM	Usuario salió del sistema
+1812	renold.gonzalez	03-09-2019 09:33:58 PM	Inició sesión como administrador del sistema
+1813	renold.gonzalez	03-09-2019 09:33:58 PM	Usuario accedió a página principal
+1814	renold.gonzalez	03-09-2019 09:34:00 PM	Usuario accedió a página de administrtacion de datos
+1815	renold.gonzalez	03-09-2019 09:34:04 PM	Usuario accedió a página reportes
+1816	renold.gonzalez	03-09-2019 09:34:07 PM	Usuario accedió a página de usuarios
+1817	renold.gonzalez	03-09-2019 09:34:09 PM	Usuario accedió a página de administrtacion de datos
+1818	renold.gonzalez	03-09-2019 09:34:26 PM	Usuario accedió a página de usuarios
+1819	renold.gonzalez	03-09-2019 09:34:37 PM	Usuario salió del sistema
+1820	renold.gonzalez	06-09-2019 08:59:49 PM	Inició sesión como administrador del sistema
+1821	renold.gonzalez	06-09-2019 08:59:49 PM	Usuario accedió a página principal
+1822	renold.gonzalez	06-09-2019 08:59:53 PM	Usuario accedió a página reportes
+1823	renold.gonzalez	06-09-2019 09:00:01 PM	Usuario gener? reporte academico reporteAcademico_06-09-2019_09_00_01_PM
+1824	renold.gonzalez	06-09-2019 09:06:03 PM	Usuario accedió a página de administrtacion de datos
+1825	renold.gonzalez	06-09-2019 09:06:12 PM	Administrador exportó  datos de BD Resultados 
+1826	renold.gonzalez	06-09-2019 09:08:57 PM	Usuario accedió a página de administrtacion de datos
+1827	renold.gonzalez	06-09-2019 09:10:55 PM	Administrador exportó  datos de BD Resultados 
+1828	renold.gonzalez	06-09-2019 09:11:33 PM	Usuario accedió a página de administrtacion de datos
+1829	renold.gonzalez	06-09-2019 09:11:54 PM	Administrador exportó  datos de BD Resultados 
+1830	renold.gonzalez	06-09-2019 09:12:01 PM	Administrador exportó  datos de BD Resultados 
+1831	renold.gonzalez	06-09-2019 09:15:13 PM	Usuario accedió a página de usuarios
+1832	renold.gonzalez	06-09-2019 09:18:29 PM	Usuario accedió a página de usuarios
+1833	renold.gonzalez	06-09-2019 09:20:07 PM	Usuario accedió a página de administrtacion de datos
+1834	renold.gonzalez	06-09-2019 09:20:10 PM	Usuario accedió a página reportes
+1835	renold.gonzalez	06-09-2019 09:20:22 PM	Usuario gener? reporte academico reporteAcademico_06-09-2019_09_20_22_PM
+1836	renold.gonzalez	06-09-2019 09:20:45 PM	Usuario gener? reporte academico reporteAcademico_06-09-2019_09_20_45_PM
+1837	renold.gonzalez	06-09-2019 09:20:58 PM	Usuario accedió a página de administrtacion de datos
+1838	renold.gonzalez	06-09-2019 09:21:03 PM	Usuario accedió a página de usuarios
+1839	renold.gonzalez	06-09-2019 09:21:05 PM	Usuario accedió a página inscritos
+1840	renold.gonzalez	06-09-2019 09:28:17 PM	Usuario accedió a página certificaciones
+1841	renold.gonzalez	06-09-2019 09:29:46 PM	Usuario accedió a página certificaciones
+1842	renold.gonzalez	06-09-2019 09:29:48 PM	Usuario accedió a página de usuarios
+1843	renold.gonzalez	07-09-2019 11:29:38 AM	Usuario accedió a página de usuarios
+1844	renold.gonzalez	07-09-2019 11:29:44 AM	Inició sesión como administrador del sistema
+1845	renold.gonzalez	07-09-2019 11:29:44 AM	Usuario accedió a página principal
+1846	renold.gonzalez	07-09-2019 11:29:45 AM	Usuario accedió a página de usuarios
+1847	renold.gonzalez	07-09-2019 11:30:27 AM	Usuario accedió a página de usuarios
+1848	renold.gonzalez	07-09-2019 11:30:59 AM	Usuario accedió a página de usuarios
+1849	renold.gonzalez	07-09-2019 11:31:54 AM	Usuario accedió a página de usuarios
+1850	renold.gonzalez	07-09-2019 11:32:57 AM	Usuario accedió a página de usuarios
+1851	renold.gonzalez	07-09-2019 11:33:20 AM	Usuario accedió a página de usuarios
+1852	renold.gonzalez	07-09-2019 11:34:12 AM	Usuario accedió a página de usuarios
+1853	renold.gonzalez	07-09-2019 11:35:01 AM	Usuario accedió a página de usuarios
+1854	renold.gonzalez	07-09-2019 11:35:33 AM	Usuario accedió a página de usuarios
+1855	renold.gonzalez	07-09-2019 11:47:00 AM	Usuario accedió a página de usuarios
+1856	renold.gonzalez	07-09-2019 11:47:44 AM	Usuario accedió a página de usuarios
+1857	renold.gonzalez	07-09-2019 11:55:38 AM	Usuario accedió a página de usuarios
+1858	renold.gonzalez	07-09-2019 11:56:17 AM	Usuario accedió a página de usuarios
+1859	renold.gonzalez	07-09-2019 12:08:24 PM	Usuario accedió a página de usuarios
+1860	renold.gonzalez	07-09-2019 12:09:08 PM	Usuario salió del sistema
+1861	renold.gonzalez	07-09-2019 12:10:42 PM	Inició sesión como administrador del sistema
+1862	renold.gonzalez	07-09-2019 12:10:42 PM	Usuario accedió a página principal
+1863	renold.gonzalez	07-09-2019 12:12:07 PM	Usuario accedió a página de usuarios
+1864	renold.gonzalez	07-09-2019 12:13:01 PM	Usuario accedió a página de usuarios
+1865	renold.gonzalez	07-09-2019 12:14:12 PM	Usuario accedió a página de usuarios
+1866	renold.gonzalez	07-09-2019 12:15:39 PM	Usuario accedió a página de usuarios
+1867	renold.gonzalez	07-09-2019 12:15:50 PM	Usuario accedió a página de usuarios
+1868	renold.gonzalez	07-09-2019 12:18:01 PM	Usuario accedió a página de usuarios
+1869	renold.gonzalez	07-09-2019 12:18:56 PM	Usuario accedió a página de usuarios
+1870	renold.gonzalez	07-09-2019 12:19:04 PM	Administrador registro un usuario 
+1871	renold.gonzalez	07-09-2019 12:19:04 PM	Usuario accedió a página de usuarios
+1872	renold.gonzalez	07-09-2019 12:23:23 PM	Administrador registro un usuario 
+1873	renold.gonzalez	07-09-2019 12:25:16 PM	Usuario accedió a página de usuarios
+1874	renold.gonzalez	07-09-2019 12:25:23 PM	Administrador registro un usuario 
+1875	renold.gonzalez	07-09-2019 12:25:39 PM	Usuario accedió a página de usuarios
+1876	renold.gonzalez	07-09-2019 12:25:43 PM	Administrador registro un usuario 
+1877	renold.gonzalez	07-09-2019 12:32:10 PM	Usuario accedió a página de usuarios
+1878	renold.gonzalez	07-09-2019 12:32:16 PM	Administrador registro un usuario 
+1879	renold.gonzalez	07-09-2019 12:32:31 PM	Administrador registro un usuario 
+1880	renold.gonzalez	07-09-2019 12:33:39 PM	Usuario accedió a página de usuarios
+1881	renold.gonzalez	07-09-2019 12:33:43 PM	Administrador registro un usuario 
+1882	renold.gonzalez	07-09-2019 12:51:04 PM	Usuario salió del sistema
+1883	renold.gonzalez	07-09-2019 12:55:42 PM	Inició sesión como administrador del sistema
+1884	renold.gonzalez	07-09-2019 12:55:42 PM	Usuario accedió a página principal
+1885	renold.gonzalez	07-09-2019 01:07:22 PM	Usuario salió del sistema
+1886	renold.gonzalez	07-09-2019 02:40:53 PM	Inició sesión como administrador del sistema
+1887	renold.gonzalez	07-09-2019 02:40:53 PM	Usuario accedió a página principal
+1888	renold.gonzalez	07-09-2019 02:40:56 PM	Usuario accedió a página de usuarios
+1889	renold.gonzalez	07-09-2019 02:41:01 PM	Administrador registro un usuario 
+1890	renold.gonzalez	07-09-2019 02:41:17 PM	Usuario salió del sistema
+1891	renold.gonzalez	07-09-2019 03:39:15 PM	Inició sesión como administrador del sistema
+1892	renold.gonzalez	07-09-2019 03:39:15 PM	Usuario accedió a página principal
+1893	renold.gonzalez	07-09-2019 03:39:17 PM	Usuario accedió a página de usuarios
+1894	renold.gonzalez	07-09-2019 03:39:28 PM	Administrador registro un usuario 
+1895	renold.gonzalez	07-09-2019 03:39:33 PM	Usuario salió del sistema
+1896	renold.gonzalez	07-09-2019 04:21:22 PM	Inició sesión como administrador del sistema
+1897	renold.gonzalez	07-09-2019 04:21:22 PM	Usuario accedió a página principal
+1898	renold.gonzalez	07-09-2019 04:21:23 PM	Usuario accedió a página de usuarios
+1899	renold.gonzalez	07-09-2019 04:21:30 PM	Administrador registro un usuario 
+1900	renold.gonzalez	07-09-2019 04:21:34 PM	Usuario salió del sistema
+1901	renold.gonzalez	07-09-2019 04:23:49 PM	Inició sesión como administrador del sistema
+1902	renold.gonzalez	07-09-2019 04:23:49 PM	Usuario accedió a página principal
+1903	renold.gonzalez	07-09-2019 04:23:50 PM	Usuario accedió a página de usuarios
+1904	renold.gonzalez	07-09-2019 04:24:02 PM	Administrador registro un usuario 
+1905	renold.gonzalez	07-09-2019 04:24:05 PM	Usuario salió del sistema
+1906	rodney.vega	07-09-2019 04:25:43 PM	Inició sesión como Usuario Especial
+1907	rodney.vega	07-09-2019 04:25:43 PM	Usuario accedió a página principal
+1908	rodney.vega	07-09-2019 04:25:45 PM	Usuario accedió a página inscritos
+1909	rodney.vega	07-09-2019 04:25:46 PM	Usuario accedió a página certificaciones
+1910	rodney.vega	07-09-2019 04:26:04 PM	Usuario salió del sistema
+1911	renold.gonzalez	07-09-2019 04:26:08 PM	Inició sesión como administrador del sistema
+1912	renold.gonzalez	07-09-2019 04:26:08 PM	Usuario accedió a página principal
+1913	renold.gonzalez	07-09-2019 04:26:10 PM	Usuario accedió a página de usuarios
+1914	renold.gonzalez	07-09-2019 04:26:16 PM	Administrador registro un usuario 
+1915	renold.gonzalez	07-09-2019 04:26:33 PM	Usuario salió del sistema
+1916	rodney.vega	07-09-2019 04:27:14 PM	Inició sesión como Usuario Especial
+1917	rodney.vega	07-09-2019 04:27:14 PM	Usuario accedió a página principal
+1918	rodney.vega	07-09-2019 04:27:17 PM	Usuario salió del sistema
+1919	renold.gonzalez	07-09-2019 04:27:21 PM	Inició sesión como administrador del sistema
+1920	renold.gonzalez	07-09-2019 04:27:21 PM	Usuario accedió a página principal
+1921	renold.gonzalez	07-09-2019 04:27:23 PM	Usuario accedió a página de usuarios
+1922	renold.gonzalez	07-09-2019 04:41:12 PM	Usuario accedió a página inscritos
+1923	renold.gonzalez	07-09-2019 04:41:25 PM	Usuario accedió a página certificaciones
+1924	renold.gonzalez	07-09-2019 04:41:27 PM	Usuario accedió a página inscritos
+1925	renold.gonzalez	07-09-2019 04:41:59 PM	Usuario accedió a página reportes
+1926	renold.gonzalez	07-09-2019 04:41:59 PM	Usuario accedió a página validación
+1927	renold.gonzalez	07-09-2019 04:42:02 PM	Usuario accedió a página reportes
+1928	renold.gonzalez	07-09-2019 04:42:03 PM	Usuario accedió a página de administrtacion de datos
+1929	renold.gonzalez	07-09-2019 04:42:06 PM	Usuario accedió a página de usuarios
+1930	renold.gonzalez	07-09-2019 04:42:22 PM	Usuario accedió a página de administrtacion de datos
+1931	renold.gonzalez	07-09-2019 04:42:30 PM	Usuario salió del sistema
+1932	renold.gonzalez	07-09-2019 04:49:41 PM	Inició sesión como administrador del sistema
+1933	renold.gonzalez	07-09-2019 04:49:41 PM	Usuario accedió a página principal
+1934	renold.gonzalez	07-09-2019 04:49:42 PM	Usuario accedió a página inscritos
+1935	renold.gonzalez	07-09-2019 04:49:48 PM	Usuario accedió a página certificaciones
+1936	renold.gonzalez	07-09-2019 04:50:05 PM	Usuario accedió a página certificaciones
+1937	renold.gonzalez	07-09-2019 04:50:07 PM	Usuario accedió a página reportes
+1938	renold.gonzalez	07-09-2019 04:50:09 PM	Usuario accedió a página de administrtacion de datos
+1939	renold.gonzalez	07-09-2019 04:50:38 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_test_full.csv
+1940	renold.gonzalez	07-09-2019 04:58:41 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_8000.csv
+1941	renold.gonzalez	07-09-2019 04:58:42 PM	CSV no cuenta con el Formato valido para la Tabla Inscritos -> datainscritos17_8000.csv
+1942	renold.gonzalez	07-09-2019 04:58:54 PM	Usuario accedió a página de administrtacion de datos
+1943	renold.gonzalez	07-09-2019 04:58:59 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_8000.csv
+1944	renold.gonzalez	07-09-2019 04:58:59 PM	CSV no cuenta con el Formato valido para la Tabla Inscritos -> datainscritos17_8000.csv
+1945	renold.gonzalez	07-09-2019 05:03:41 PM	Usuario accedió a página de administrtacion de datos
+1946	renold.gonzalez	07-09-2019 05:20:43 PM	Usuario accedió a página de administrtacion de datos
+1947	renold.gonzalez	07-09-2019 05:20:50 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_0.csv
+1948	renold.gonzalez	07-09-2019 05:26:42 PM	Usuario accedió a página de administrtacion de datos
+1949	renold.gonzalez	07-09-2019 05:26:55 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_0.csv
+1950	renold.gonzalez	07-09-2019 05:29:54 PM	Registros cargados al sistema (TB Inscritos) : 4000  DESDE-> datainscritos17_0.csv
+1951	renold.gonzalez	07-09-2019 05:38:12 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_1.csv
+1952	renold.gonzalez	07-09-2019 05:42:03 PM	Usuario accedió a página de administrtacion de datos
+1953	renold.gonzalez	07-09-2019 05:42:35 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_0.csv
+1954	renold.gonzalez	07-09-2019 05:43:57 PM	Registros cargados al sistema (TB Inscritos) : 2000  DESDE-> datainscritos17_0.csv
+1955	renold.gonzalez	07-09-2019 05:46:56 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_1.csv
+1956	renold.gonzalez	07-09-2019 05:48:27 PM	Registros cargados al sistema (TB Inscritos) : 2000  DESDE-> datainscritos17_1.csv
+1957	renold.gonzalez	07-09-2019 05:51:50 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_2.csv
+1958	renold.gonzalez	07-09-2019 05:53:40 PM	Registros cargados al sistema (TB Inscritos) : 2000  DESDE-> datainscritos17_2.csv
+1959	renold.gonzalez	07-09-2019 05:57:40 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_3.csv
+1960	renold.gonzalez	07-09-2019 05:59:41 PM	Registros cargados al sistema (TB Inscritos) : 2000  DESDE-> datainscritos17_3.csv
+1961	renold.gonzalez	07-09-2019 06:04:18 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_4.csv
+1962	renold.gonzalez	07-09-2019 06:07:35 PM	Registros cargados al sistema (TB Inscritos) : 2000  DESDE-> datainscritos17_4.csv
+1963	renold.gonzalez	07-09-2019 06:15:08 PM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_5.csv
+1964	renold.gonzalez	08-09-2019 08:19:56 AM	Usuario accedió a página de administrtacion de datos
+1965	renold.gonzalez	08-09-2019 08:28:12 AM	Inició sesión como administrador del sistema
+1966	renold.gonzalez	08-09-2019 08:28:12 AM	Usuario accedió a página principal
+1967	renold.gonzalez	08-09-2019 08:28:14 AM	Usuario accedió a página de administrtacion de datos
+1968	renold.gonzalez	08-09-2019 08:28:25 AM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_5.csv
+1969	renold.gonzalez	08-09-2019 08:29:17 AM	Registros cargados al sistema (TB Inscritos) : 166  DESDE-> datainscritos17_5.csv
+1970	renold.gonzalez	08-09-2019 08:32:03 AM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_6.csv
+1971	renold.gonzalez	08-09-2019 08:35:42 AM	Registros cargados al sistema (TB Inscritos) : 2000  DESDE-> datainscritos17_6.csv
+1972	renold.gonzalez	08-09-2019 08:44:03 AM	Usuario accedió a página de administrtacion de datos
+1973	renold.gonzalez	08-09-2019 08:44:09 AM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_7.csv
+1974	renold.gonzalez	08-09-2019 08:47:23 AM	Registros cargados al sistema (TB Inscritos) : 1999  DESDE-> datainscritos17_7.csv
+1975	renold.gonzalez	08-09-2019 08:48:14 AM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_8.csv
+1976	renold.gonzalez	08-09-2019 08:48:44 AM	Registros cargados al sistema (TB Inscritos) : 383  DESDE-> datainscritos17_8.csv
+1977	renold.gonzalez	08-09-2019 08:49:06 AM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_8.csv
+1978	renold.gonzalez	08-09-2019 08:49:13 AM	Registros cargados al sistema (TB Inscritos) : 0  DESDE-> datainscritos17_8.csv
+1979	renold.gonzalez	08-09-2019 08:55:07 AM	Usuario accedió a página de administrtacion de datos
+1980	renold.gonzalez	08-09-2019 08:55:14 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_0.csv
+1981	renold.gonzalez	08-09-2019 08:59:22 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_0.csv
+1982	renold.gonzalez	08-09-2019 09:02:37 AM	Usuario accedió a página de administrtacion de datos
+1983	renold.gonzalez	08-09-2019 09:02:42 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_0.csv
+1984	renold.gonzalez	08-09-2019 09:05:16 AM	Registros cargados al sistema (TB Resultados) : 4000  DESDE-> dataresultados17_full_0.csv
+1985	renold.gonzalez	08-09-2019 09:13:09 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_1.csv
+1986	renold.gonzalez	08-09-2019 09:15:33 AM	Registros cargados al sistema (TB Resultados) : 4000  DESDE-> dataresultados17_full_1.csv
+1987	renold.gonzalez	08-09-2019 09:21:38 AM	Usuario accedió a página de administrtacion de datos
+1988	renold.gonzalez	08-09-2019 09:21:44 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_2.csv
+1989	renold.gonzalez	08-09-2019 09:24:13 AM	Registros cargados al sistema (TB Resultados) : 4000  DESDE-> dataresultados17_full_2.csv
+1990	renold.gonzalez	08-09-2019 09:34:34 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_3.csv
+1991	renold.gonzalez	08-09-2019 09:37:03 AM	Registros cargados al sistema (TB Resultados) : 4000  DESDE-> dataresultados17_full_3.csv
+1992	renold.gonzalez	08-09-2019 09:38:20 AM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_4.csv
+1993	renold.gonzalez	08-09-2019 09:38:35 AM	Registros cargados al sistema (TB Resultados) : 383  DESDE-> dataresultados17_full_4.csv
+1994	renold.gonzalez	08-09-2019 09:39:42 AM	Usuario accedió a página de usuarios
+1995	renold.gonzalez	08-09-2019 09:39:52 AM	Usuario salió del sistema
+1996	renold.gonzalez	09-09-2019 08:31:35 PM	Inició sesión como administrador del sistema
+1997	renold.gonzalez	09-09-2019 08:31:35 PM	Usuario accedió a página principal
+1998	renold.gonzalez	09-09-2019 08:31:54 PM	Usuario accedió a página inscritos
+1999	renold.gonzalez	09-09-2019 08:50:31 PM	Usuario accedió a página certificaciones
+2000	renold.gonzalez	09-09-2019 08:50:35 PM	Usuario accedió a página principal
+2001	renold.gonzalez	09-09-2019 08:50:36 PM	Usuario accedió a página inscritos
+2002	renold.gonzalez	09-09-2019 08:59:44 PM	Usuario accedió a página certificaciones
+2003	renold.gonzalez	09-09-2019 09:00:26 PM	Usuario accedió a página inscritos
+2004	renold.gonzalez	09-09-2019 09:00:27 PM	Usuario accedió a página certificaciones
+2005	renold.gonzalez	09-09-2019 09:00:29 PM	Usuario accedió a página validación
+2006	renold.gonzalez	09-09-2019 09:01:18 PM	Usuario accedió a página inscritos
+2007	renold.gonzalez	09-09-2019 09:01:20 PM	Usuario accedió a página certificaciones
+2008	renold.gonzalez	09-09-2019 09:07:34 PM	Usuario accedió a página validación
+2009	renold.gonzalez	13-09-2019 06:32:31 AM	Usuario accedió a página validación
+2010	renold.gonzalez	13-09-2019 06:36:43 AM	Inició sesión como administrador del sistema
+2011	renold.gonzalez	13-09-2019 06:36:43 AM	Usuario accedió a página principal
+2012	renold.gonzalez	13-09-2019 06:37:00 AM	Usuario accedió a página inscritos
+2013	renold.gonzalez	13-09-2019 06:37:07 AM	Usuario accedió a página de usuarios

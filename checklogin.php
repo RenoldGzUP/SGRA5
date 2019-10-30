@@ -14,37 +14,48 @@ $password = md5($_POST['password']);
 if (isset($user)) {
     if (isset($password)) {
         // Query sent to database
-        $result   = getUser($user, $password);
-        $location = $result->type;
+        $result       = getUser($user, $password);
+        $location     = $result->type;
+        $block_action = $result->estado_acceso;
 
         if (is_object($result)) {
 
-            if ($location == 1) {
-                saveLogs($result->nombre_usuario, "Inició sesión como Usuario Regular ");
-                $_SESSION['loggedin'] = true;
-                $_SESSION['name']     = $result->nombre_usuario;
-                $_SESSION['rol']      = $result->type;
-                $_SESSION['start']    = time();
-                $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
-                header("Location:./pagesAdm/dashboard.php");
+            //GENERAL BLOCK
 
-            } elseif ($location == 2) {
-                saveLogs($result->nombre_usuario, "Inició sesión como administrador del sistema");
-                $_SESSION['loggedin'] = true;
-                $_SESSION['name']     = $result->nombre_usuario;
-                $_SESSION['start']    = time();
-                $_SESSION['rol']      = $result->type;
-                $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
-                header("Location:./pagesAdm/dashboard.php");
+            //0 login
+            //1 block
+            if ($block_action == 0) {
 
-            } elseif ($location == 3) {
-                saveLogs($result->nombre_usuario, "Inició sesión como Usuario Especial");
-                $_SESSION['loggedin'] = true;
-                $_SESSION['name']     = $result->nombre_usuario;
-                $_SESSION['start']    = time();
-                $_SESSION['rol']      = $result->type;
-                $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
-                header("Location:./pagesAdm/dashboard.php");
+                if ($location == 1) {
+                    saveLogs($result->nombre_usuario, "Inició sesión como Usuario Regular ");
+                    $_SESSION['loggedin'] = true;
+                    $_SESSION['name']     = $result->nombre_usuario;
+                    $_SESSION['rol']      = $result->type;
+                    $_SESSION['start']    = time();
+                    $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
+                    header("Location:./pagesAdm/dashboard.php");
+
+                } elseif ($location == 2) {
+                    saveLogs($result->nombre_usuario, "Inició sesión como administrador del sistema");
+                    $_SESSION['loggedin'] = true;
+                    $_SESSION['name']     = $result->nombre_usuario;
+                    $_SESSION['start']    = time();
+                    $_SESSION['rol']      = $result->type;
+                    $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
+                    header("Location:./pagesAdm/dashboard.php");
+
+                } elseif ($location == 3) {
+                    saveLogs($result->nombre_usuario, "Inició sesión como Usuario Especial");
+                    $_SESSION['loggedin'] = true;
+                    $_SESSION['name']     = $result->nombre_usuario;
+                    $_SESSION['start']    = time();
+                    $_SESSION['rol']      = $result->type;
+                    $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
+                    header("Location:./pagesAdm/dashboard.php");
+                }
+
+            } else {
+                header("Location:block.html");
             }
 
         } else {
