@@ -18,8 +18,8 @@
       <div class="modal-body">
         <div class="row">
           <center><img src='../images/loading.gif' width="100" height="100" /> </center>
-          <center><h4>Procesando certificaciones...</h4></center>
-          <center><h5>Este proceso puede demorar un poco</h5></center>
+          <center><h4>Procesando archivos...</h4></center>
+          <center><h5>Este proceso puede durar unos minutos</h5></center>
           <center><h5>El archivo se abrirá en otra ventana</h5></center>
         </div>
       </div>

@@ -91,7 +91,7 @@ foreach ($listasDB as $item) {
               </div>
               <div class="col-sm-2" >
                 <center>
-                <span> Tabla Inscritos:</span>
+                <span> Tabla Resultados:</span>
                 </center>
                 <center>
                 <select  id="tablaResultados"  name="tableRes" style="margin-left:25px">
@@ -124,7 +124,7 @@ foreach ($listasDB as $item) {
                 <button id="SearchBtt" type="button" onclick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
                 <!-- <button type="button"  id="MeasuringBtt" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#measuringModal"><span class="glyphicon glyphicon-plus"></span> Recalcular</button> -->
                 <button id="ValidateBtt" disabled type="button" value="" onclick="sendIDValidate()"  class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
-                <button id="TalliesBtt" onclick="generateValidation()"   disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Certificación</button>
+                <button id="TalliesBtt" onclick="generateValidation()"   disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Validación</button>
                 </center>
               </div>
             </div>

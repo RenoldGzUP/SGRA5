@@ -107,8 +107,8 @@ function startF() {
     console.log(selected);
     /* check if there is selected checkboxes, by default the length is 1 as it contains one single comma */
     if (selected.length > 1) {
-        //sendID(selected);
-        console.log("Send ID to Tallies File");
+        sendID(selected);
+        console.log("Send ID to Tallies File  from getchecked file");
         //generateTallies(selected);
         //enviar id 
     } else {

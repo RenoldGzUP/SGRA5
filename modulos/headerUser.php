@@ -2,7 +2,7 @@
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;background: #003366">
 
             <div class="navbar-header">
-             <img src="../images/LogoUp.png" align="left" alt="logo" style="width:60px;margin-top: 5px;margin-left: 20px;margin-bottom: 5px">
+             <img src="../images/LogoUp.png" align="left" alt="logo" style="width:70px;margin-top: 5px;margin-left: 20px;margin-bottom: 5px">
 
              <div style="margin-top: 13px;margin-left: 85px">
                <p style="color: #ffffff;font-size: 18px;font-family: Calisto MT">UNIVERSIDAD DE</p>
