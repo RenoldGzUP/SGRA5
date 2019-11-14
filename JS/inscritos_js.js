@@ -478,7 +478,7 @@ function getDataAJAX(issetData, filterState) {
         }
     });
 }
-//////////////////////////////////////////////////
+//////////////////////////////////////////////////TABLE JS
 $('#userslist').DataTable({
     "initComplete": function(settings, json) {
         $("#reportDetails").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");

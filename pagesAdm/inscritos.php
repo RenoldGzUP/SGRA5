@@ -24,6 +24,7 @@ if ($now > $_SESSION['expire']) {
 <html>
   <head>
     <meta charset="utf-8">
+    <html lang="es">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -111,7 +112,7 @@ if ($now > $_SESSION['expire']) {
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Editar Registro</h4>
+            <h4 class="modal-title">Editar Registro Inscrito </h4>
           </div>
           <div class="modal-body">
             <div class="row">
