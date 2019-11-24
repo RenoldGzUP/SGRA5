@@ -49,6 +49,7 @@ if ($now > $_SESSION['expire']) {
     <script src="../JS/Filtros.js"></script>
     <script src="../JS/tableResultados.js"></script>
     <script src="../JS/getCheckedRow.js"></script>
+    <script src="../JS/export_register_general.js"></script>
     <script src="../JS/tableEdit.js"></script>
 
 </head>
@@ -126,7 +127,7 @@ if ($now > $_SESSION['expire']) {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Tipo de certificación</h4>
+          <h4 class="modal-title">Tipo de Certificación a generar: </h4>
         </div>
         <div class="modal-body">
 
@@ -138,7 +139,7 @@ if ($now > $_SESSION['expire']) {
         </div>
         </div>
         <div class="modal-footer">
-          <button id="sendTypeReport" onclick=" startF();" type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+          <button id="sendTypeReport" onclick="startF()" type="button" class="btn btn-default" data-dismiss="modal">Continuar</button>
         </div>
       </div>
     </div>

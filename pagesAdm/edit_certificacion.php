@@ -73,17 +73,29 @@ if ($now > $_SESSION['expire']) {
         </nav>
 
        <div class="container-fluid">
-        <div class="pull-right">
-            <a href="#" class="btn btn-warning "><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</a>
-        </div>
+        
 
         <?php
 
 //GET DATA FROM MAIN TABLE
 $cedula_edit = $_GET["cedula"];
+$state = $_GET["state"];
 echo "<h2>Editar Registro ".$cedula_edit ."</h2>";
+
+if ($state == 1) {
+   echo "<div class='alert alert-success col-md-3' style='margin-left: 850px;margin-top: -50px' role='alert'>
+  <strong>Actualizado!</strong> El registro fue actualizado con exito.
+</div>";
+}
+
+
 ?>
 
+
+<form  method="POST" action="../Scripts/saveDataOneResultados.php"> 
+     <div class="pull-right">
+           <input type="submit" style="margin-bottom: 15px;margin-top: -50px" class="btn btn-warning btn-lg" value="Guardar">
+        </div>
  <table class="table table-bordered"> 
     <tbody>
 <?php
@@ -118,27 +130,27 @@ for ($i = 0; $i < 25; $i++) {
     echo '<tr style="font-size: 10px;text-align:left; color: #000000">';
     echo "
                     <td class='success'>" . $resources[$i]['recurso'] . " </td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i] . "></td>
+                    <td><input type='text' name=". $resources[$i]['recurso'] ." value=" . $newEstData[$i] . "></td>
 
                     <td class='success'>" . $resources[$i + 25]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i+25] . "></td>
+                    <td><input type='text' name=". $resources[$i + 25]['recurso'] ." value=" . $newEstData[$i+25] . "></td>
 
                     <td class='success'>" . $resources[$i + 45]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i+45] . "></td>
+                    <td><input type='text' name=". $resources[$i + 45]['recurso'] ." value=" . $newEstData[$i+45] . "></td>
 
                     <td class='success'>" . $resources[$i + 65]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i+65] . "></td>
+                    <td><input type='text' name=". $resources[$i + 65]['recurso'] ." value=" . $newEstData[$i+65] . "></td>
 
                     <td  class='success'>" . $resources[$i + 85]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i+85] . "></td>
+                    <td><input type='text' name=". $resources[$i + 85]['recurso'] ." value=" . $newEstData[$i+85] . "></td>
 
                     <td  class='success'>" . $resources[$i + 105]['recurso'] . "</td>
-                    <td><input type='text' name='FirstName' value=" . $newEstData[$i+105] . "></td>
+                    <td><input type='text' name=". $resources[$i + 105]['recurso'] ." value=" . $newEstData[$i+105] . "></td>
                     ";
 
                     if ($i+125 <= 144) {
                         echo "<td  class='success'>" . $resources[$i + 125]['recurso'] . "</td>
-                     <td><input type='text' name='FirstName' value=" . $newEstData[$i+125] . "></td>";
+                     <td><input type='text' name=". $resources[$i + 125]['recurso'] ." value=" . $newEstData[$i+125] . "></td>";
                     }
 
 }
@@ -149,6 +161,13 @@ for ($i = 0; $i < 25; $i++) {
        
     </tbody>
   </table>
+
+
+
+</form>
+
+
+
 </div>
     </body>
 </html>

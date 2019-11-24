@@ -103,13 +103,13 @@ include '../modulos/sendMessage.php';
               <div class="panel-body">
 
                 <ol>
-                  <li><a href="../help/indexA.html" target="_blank">¿Cómo se genera una certificación de resultados?</a></li>
+                  <li><a href="../help/indexA.html" target="_blank">¿Cómo generar una Certificación de resultados?</a></li>
                   <li><a href="../help/indexB.html" target="_blank">¿Cómo se crea un reporte académico?</a></li>
                   <li><a href="../help/indexC.html" target="_blank">¿Cómo validar a un estudiante con resultados del año anterior?</a></li>
-                  <li><a href="../help/indexD.html" target="_blank">Generar Certificación Director o Coordinador</a></li>
+                  <li><a href="../help/indexD.html" target="_blank"> ¿Cómo generar Certificaciones autorizadas por el Director o Coordinador de Admisión?</a></li>
                   <li><a href="../help/indexE.html" target="_blank">¿Cómo editar o eliminar registros?</a></li>
                   <li><a href="../help/indexF.html" target="_blank">¿Qué ocurre con los registros duplicados?</a></li>
-                  <li><a href="../help/indexG.html" target="_blank">Manual Portable de Ayuda para el Usuario</a></li>
+                  <li><a href="../help/user_manual_download.pdf" target="_blank">Descargar Manual Portable de Ayuda para el Usuario</a></li>
 
                 </ol>
 

@@ -207,7 +207,7 @@ var editar_row = function(tbody, table) {
         var data = table.row($(this).parents("tr")).data();
         if (data != null) {
             console.log(data.cedula);
-            window.open("http://localhost/SGRA/pagesAdm/edit_certificacion.php?cedula="+data.cedula);
+            window.open("http://localhost/SGRA/pagesAdm/edit_certificacion.php?cedula="+data.cedula+"&state=0");
            //modal_edit(data.n_ins);
         } else {
             console.log("Null exist");

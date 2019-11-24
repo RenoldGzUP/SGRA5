@@ -310,7 +310,7 @@ function initialData() {
             'orderable': false,
             'className': 'dt-body-center',
             'render': function(data, type, full, meta) {
-                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
+                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data.n_ins).html() + '">';
             }
         }, {
             'className': 'dt-body-center',
@@ -408,7 +408,7 @@ function getDataAJAX(issetData, filterState) {
             'orderable': false,
             'className': 'dt-body-center',
             'render': function(data, type, full, meta) {
-                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data).html() + '">';
+                return '<input type="checkbox" name="n_ins" value="' + $('<div/>').text(data.n_ins).html() + '">';
             }
         }, {
             "className": "dt-center",

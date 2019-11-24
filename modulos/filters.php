@@ -56,8 +56,8 @@ $pagesAccessF = array("dashboard.php", "inscritos.php", "certificacion.php", "va
 if ($url[1] == $pagesAccessF[2]) {
     
 echo "<button type='button' class='btn btn-info btn-sm' onclick='filtrarTabla()' title='Filtrar registros en base a su selección'>Filtrar</button>
-<button type='button' class='btn btn-success btn-sm'> Exportar Registros</button>
-<button type='button' class='btn btn-primary btn-sm'  id='buttonCertification' onclick='startF()' ><span class='glyphicon glyphicon-hourglass'></span> Generar Certificaciones</button>";
+<button type='button' class='btn btn-success btn-sm' onclick='getIDToExport()'> Exportar Registros</button>
+<button type='button' class='btn btn-primary btn-sm'  data-toggle='modal' data-target='#tipoCertificaciones' ><span class='glyphicon glyphicon-hourglass'></span> Generar Certificaciones</button>";
 }
 else if($url[1] == $pagesAccessF[4]){
   echo " <button type='button' class='btn btn-info btn-sm' onclick='filtrarTabla()' title='Filtrar registros en base a su selección'>Filtrar</button>";
@@ -65,7 +65,7 @@ else if($url[1] == $pagesAccessF[4]){
 }else{
   echo " <button type='button' class='btn btn-info btn-sm' onclick='filtrarTabla()' title='Filtrar registros en base a su selección'>Filtrar</button>
 
-<button type='button' class='btn btn-success btn-sm'> Exportar Registros</button>";
+<button type='button' class='btn btn-success btn-sm' onclick='getIDToExport()'> Exportar Registros</button>";
  
 }
 ?>

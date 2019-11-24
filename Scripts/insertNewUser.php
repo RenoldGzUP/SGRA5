@@ -17,8 +17,8 @@ $CHECKPAGE = $_POST["chkPage"];
 
 $Encrypted = md5($CLAVE);
 
-var_dump($CHECKROL);
-var_dump($CHECKPAGE);
+//var_dump($CHECKROL);
+//var_dump($CHECKPAGE);
 
 switch ($CHECKROL[0]) {
     case 1:
