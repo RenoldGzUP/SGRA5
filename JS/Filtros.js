@@ -88,9 +88,9 @@ function dump(obj) {
 }
 
 function showModalLoading() {
-    // alert("Hola");
     $("#loadingModal").modal();
 }
+
 /*function sendSelectRange() {
     // alert("Hola");
     var range = $("#select_range").val();

@@ -39,7 +39,6 @@ if ($now > $_SESSION['expire']) {
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
                     </script>
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
-
                     </script>
                 </link>
             </meta>
@@ -94,7 +93,7 @@ if ($state == 1) {
 ?>
 
 
-<form  method="POST" action="../Scripts/saveDataOneResultados.php"> 
+<form  method="POST" action="../Scripts/saveDataOneInscritos.php"> 
      <div class="pull-right">
            <input type="submit" style="margin-bottom: 15px;margin-top: -50px" class="btn btn-warning btn-lg" value="Guardar">
         </div>
@@ -103,16 +102,16 @@ if ($state == 1) {
 <?php
 
 $ced_to_find = explode("-", $cedula_edit);
-
 //Obtener el id para buscar desde js
-
-$fullDataResultados = showAllDataResultados($ced_to_find[0],$ced_to_find[1],$ced_to_find[2],$ced_to_find[3]);
-$fResultados = convert_object_to_array($fullDataResultados);
-
+//var_dump($ced_to_find);
+//$fullDataResultados = showAllDataResultados($ced_to_find[0],$ced_to_find[1],$ced_to_find[2],$ced_to_find[3]);
+$fullDataInscrito = showAllDataInscrito($ced_to_find[0],$ced_to_find[1],$ced_to_find[2],$ced_to_find[3]);
+$fInscrito        = convert_object_to_array($fullDataInscrito);
+//var_dump($fullDataInscrito);
 //
 //var_dump($fResultados);
 //FILL NEW ARRAY
-$fillTable   = showResourceResultados();
+$fillTable   = showResourceInscrito();
 $resourcesDb = convert_object_to_array($fillTable);
 $newEstData  = array();
 
@@ -120,41 +119,33 @@ $newEstData  = array();
 $j = 0;
 while ($j <= 144) {
 
-    array_push($newEstData, $fResultados[0][$resourcesDb[$j]['puredb']]);
+     array_push($newEstData, $fInscrito[0][$resourcesDb[$j]['puredb']]);
     $j++;
 }
 
 // <td style='font-size: 10px;text-align:left;color: #000000'>".$newEstData[$i]."</td>
-for ($i = 0; $i < 25; $i++) {
+for ($i = 0; $i < 20; $i++) {
 
-    $fillTable = showResourceResultados();
-    $resources = convert_object_to_array($fillTable);
+     $fillTable = showResourceInscrito();
+     $resources = convert_object_to_array($fillTable);
 
-    echo '<tr style="font-size: 11px;text-align:left; color: #000000">';
+    echo '<tr style="font-size: 13px;text-align:left; color: #000000">';
     echo "
                     <td class='success'>" . $resources[$i]['recurso'] . " </td>
                     <td><input type='text' name=". $resources[$i]['recurso'] ." value='".$newEstData[$i]."'></td>
 
-                    <td class='success'>" . $resources[$i + 25]['recurso'] . "</td>
-                    <td><input type='text' name=". $resources[$i + 25]['recurso'] ." value='".$newEstData[$i + 25]."'></td>
+                    <td class='success'>" . $resources[$i + 20]['recurso'] . "</td>
+                    <td><input type='text' name=". $resources[$i + 20]['recurso'] ." value='".$newEstData[$i + 20]."'></td>
 
-                    <td class='success'>" . $resources[$i + 45]['recurso'] . "</td>
-                    <td><input type='text' name=". $resources[$i + 45]['recurso'] ." value='" . $newEstData[$i+45] . "'></td>
+                    <td class='success'>" . $resources[$i + 40]['recurso'] . "</td>
+                    <td><input type='text' name=". $resources[$i + 40]['recurso'] ." value='" . $newEstData[$i+40] . "'></td>
 
-                    <td class='success'>" . $resources[$i + 65]['recurso'] . "</td>
-                    <td><input type='text' name=". $resources[$i + 65]['recurso'] ." value='" . $newEstData[$i+65] . "'></td>
+                    <td class='success'>" . $resources[$i + 60]['recurso'] . "</td>
+                    <td><input type='text' name=". $resources[$i + 60]['recurso'] ." value='" . $newEstData[$i+60] . "'></td>
 
-                    <td  class='success'>" . $resources[$i + 85]['recurso'] . "</td>
-                    <td><input type='text' name=". $resources[$i + 85]['recurso'] ." value='" . $newEstData[$i+85] . "'></td>
-
-                    <td  class='success'>" . $resources[$i + 105]['recurso'] . "</td>
-                    <td><input type='text' name=". $resources[$i + 105]['recurso'] ." value='" . $newEstData[$i+105] . "'></td>
+                    <td  class='success'>" . $resources[$i + 80]['recurso'] . "</td>
+                    <td><input type='text' name=". $resources[$i + 80]['recurso'] ." value='" . $newEstData[$i+80] . "'></td>
                     ";
-
-                    if ($i+125 <= 144) {
-                        echo "<td  class='success'>" . $resources[$i + 125]['recurso'] . "</td>
-                     <td><input type='text' name=". $resources[$i + 125]['recurso'] ." value='" . $newEstData[$i+125] . "'></td>";
-                    }
 
 }
 

@@ -29,31 +29,56 @@ if ($form_state == 1) {
 function filterBySede($SEDE)
 {
     $estResultado = filterByS($SEDE);
-    echo json_encode($estResultado);
+    
+    if (is_null($estResultado)) {
+      echo json_encode("error");
+    }else{
+      echo json_encode($estResultado);
+    }
 }
 
 function filterByArea($SEDE, $AREA)
 {
     $estResultado = filterByS_A($SEDE, $AREA);
-    echo json_encode($estResultado);
+   
+    if (is_null($estResultado)) {
+      echo json_encode("error");
+    }else{
+      echo json_encode($estResultado);
+    }
 }
 function filterByFacultad($SEDE, $AREA, $FACULTAD)
 {
     $estResultado = filterByS_A_F($SEDE, $AREA, $FACULTAD);
-    echo json_encode($estResultado);
+   
+    if (is_null($estResultado)) {
+      echo json_encode("error");
+    }else{
+      echo json_encode($estResultado);
+    }
+    
 }
 
 function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
 {
-    $estResultado = filterByS_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA);
-    echo json_encode($estResultado);
-
+    $estResultado = filterBy_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA);
+    
+    if (is_null($estResultado)) {
+      echo json_encode("error");
+    }else{
+      echo json_encode($estResultado);
+    }
 }
 
 function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
 {
-    $estResultado = filterByS_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
-    echo json_encode($estResultado);
+    $estResultado = filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
+   
+    if (is_null($estResultado)) {
+      echo json_encode("error");
+    }else{
+      echo json_encode($estResultado);
+    }
 }
 
 function printTable($SIZEARRAY, $ARRAY_Ins)

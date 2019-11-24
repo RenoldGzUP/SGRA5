@@ -11435,7 +11435,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "No hay datos disponibles",
+			"sEmptyTable": "No hay datos disponibles para mostrar",
 	
 	
 			/**

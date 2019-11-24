@@ -287,3 +287,20 @@
     </div>
   </div>
   </div> <!--Fin del MODAL TIPO DE REPORTE-->
+
+  <!--NO DATA TO SHOW-->
+<div class="modal fade" id="withoutDataShow" role="dialog" data-keyboard="false" data-backdrop="static" >
+  <div class="modal-dialog modal-sm" >
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <center><img src='../images/wrongFound.png' width="150" height=150" /> </center>
+          <center><h4>No hay data para mostrar en la tabla</h4></center>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <center><button type="button" class="btn btn-success" data-dismiss="modal">OK</button></center>
+      </div>
+    </div>
+  </div>
+</div>

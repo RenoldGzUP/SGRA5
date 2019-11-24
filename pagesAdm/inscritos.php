@@ -48,7 +48,7 @@ if ($now > $_SESSION['expire']) {
     <link rel="stylesheet" media="all" href="../Style/InscritosStyle.css">
 
     <script src="../JS/Filtros.js"></script>
-    <script src="../JS/inscritos_js.js"></script>
+   <script src="../JS/inscritos_js.js"></script>
     <script src="../JS/tableEdit.js"></script>
     <script src="../JS/export_register_general.js"></script>
     <!--    <script src="../JS/Editable table/custom_table_edit.js"></script>

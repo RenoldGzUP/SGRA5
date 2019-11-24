@@ -56,6 +56,14 @@ function getDataAJAX(issetData, filterState) {
             "method": "POST",
             "url": "../Scripts/getTableResultadosJS.php",
             "dataSrc": function(data) {
+                /*$("#loadingModal").modal("hide");
+                return data;*/
+                 if (data == "error") {
+                     $("#loadingModal").modal("hide");
+                     console.log("data error");
+                     $('td:eq(1)', row).attr('colspan', 3);
+                }
+
                 $("#loadingModal").modal("hide");
                 return data;
             }
@@ -220,19 +228,20 @@ var borrar_row = function(tbody, table) {
     $(tbody).on("click", "button.borrar", function() {
         var data = table.row($(this).parents("tr")).data();
         if (data != null) {
-            console.log(data);
+            //console.log(data);
             //delete_row(data.n_ins);
             var ins = data.n_ins;
             $("#deleteModal").modal();
+
             document.getElementById("deleteTaskBtt").onclick = function() {
-                // console.log("DELETE ON");
+                console.log("DELETE ON");
                 deleteTask(data.n_ins);
-                // deleteComplete(table, ins);
             };
+
         } else {
             console.log("Null exist");
-            //modal_edit(data-);
+           
         }
-        //modal_edit(data-);
+        
     });
 }

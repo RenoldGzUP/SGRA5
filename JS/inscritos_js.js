@@ -237,6 +237,7 @@ $(document).ready(function() {
 });
 
 function filtrarTabla() {
+    $("#loadingModal").modal();
     var sede = $("#lista_sedes").val();
     var area = $("#lista_areas").val();
     var areaSplit = area.split('-');
@@ -353,6 +354,7 @@ function initialData() {
 }
 
 function getDataAJAX(issetData, filterState) {
+    console.log("Start ajax function");
     var t = $('#tableInscritos').removeAttr('width').DataTable({
         "destroy": true,
         "fixedHeader": {
@@ -365,7 +367,17 @@ function getDataAJAX(issetData, filterState) {
             },
             "method": "POST",
             "url": "../Scripts/getTableInscritosJS.php",
-            "dataSrc": ""
+            "dataSrc": function(data) {
+
+                if (data == "error") {
+                     $("#loadingModal").modal("hide");
+                     console.log("data error");
+                     $('td:eq(1)', row).attr('colspan', 3);
+                }
+
+                $("#loadingModal").modal("hide");
+                return data;
+            }
         },
         "columns": [{
             "data": null,
@@ -489,7 +501,8 @@ var editar_row = function(tbody, table) {
         var data = table.row($(this).parents("tr")).data();
         if (data != null) {
             console.log(data);
-            modal_edit(data.n_ins);
+            //modal_edit(data.n_ins);
+            window.open("http://localhost/SGRA/pagesAdm/edit_inscrito.php?cedula="+data.cedula+"&state=0");
         } else {
             console.log("Null exist");
             //modal_edit(data-);
@@ -501,14 +514,12 @@ var borrar_row = function(tbody, table) {
     $(tbody).on("click", "button.borrar", function() {
         var data = table.row($(this).parents("tr")).data();
         if (data != null) {
-            console.log(data);
-            //delete_row(data.n_ins);
+            console.log(data.n_ins);
             var ins = data.n_ins;
             $("#deleteModal").modal();
             document.getElementById("deleteTaskBtt").onclick = function() {
-                // console.log("DELETE ON");
-                deleteTask(data.n_ins);
-                // deleteComplete(table, ins);
+                console.log("DELETE ON");
+                deleteTaskInscrito(data.n_ins)
             };
         } else {
             console.log("Null exist");

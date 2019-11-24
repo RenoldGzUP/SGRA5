@@ -133,6 +133,27 @@ function deleteTask(id) {
         }
     });
 }
+
+function deleteTaskInscrito(id) {
+    console.log("DELETE delete TaskInscrito  " + id);
+    $.ajax({
+        data: {
+            delete_row_inscrito : 'delete_row_inscrito',
+            row_id: id,
+        },
+        type: 'post',
+        dataType: "text",
+        url: '../Scripts/adminActionsRow.php',
+        success: function(response) {
+            if (response == "success") {
+                // var row = document.getElementById("row" + id);
+                // row.parentNode.removeChild(row);
+                $("#doneDeleteModal").modal();
+            }
+        }
+    });
+}
+
 /*function delete_row(id) {
     // var resp = confirm("Confirme borrado de " + id + "  ?");
     $("#deleteModal").modal();
