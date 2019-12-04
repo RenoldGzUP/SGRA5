@@ -87,13 +87,14 @@ function saveDataTest(idInscrito) {
     document.getElementById("ValidateBtt").disabled = false;
     document.getElementById("ValidateBtt").value = idInscrito;
     document.getElementById("SearchBtt").disabled = true;
+    
     /*  $.ajax({
           data: {
               "idInscrito": idInscrito,
           },
           type: "POST",
           dataType: "text",
-          url: "../Scripts/saveStudent.php",
+          url: "../Scripts/saveMeasuringStudent.php",
       }).done(function(data, textStatus, jqXHR) {
           $("#measuringModal").modal();
           document.getElementById('measuringTableEdit').innerHTML = data;
