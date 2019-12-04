@@ -22,7 +22,8 @@ if ($now > $_SESSION['expire']) {
     exit;
 }
 ?>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
 
   <meta charset="utf-8">

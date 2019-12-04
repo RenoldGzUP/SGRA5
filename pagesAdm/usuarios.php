@@ -20,6 +20,10 @@ if ($now > $_SESSION['expire']) {
     exit;
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -179,7 +183,7 @@ if ($logs) {
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" onClick="history.go(0)" VALUE="Refresh" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Registrar Nuevo Usuario</h4>
+                    <h4 class="modal-title">Plantilla de Usuario</h4>
                   </div>
                   <div class="modal-body">
                     <div class="row">
@@ -208,17 +212,17 @@ if ($logs) {
                                 <td> <center>
                                   <label  class="checkbox-inline"><input id="usuarioRegular" required name="chkUser[]" type="checkbox" onclick="clickUsuario()" value="1" >Usuario Regular</label>
                                   <label  class="checkbox-inline"><input id="usuarioEspecial" required  name="chkUser[]" type="checkbox" onclick="clickUsuarioEspecial()"  value="3" >Usuario Especial</label>
-                                  <label  class="checkbox-inline"><input id="administrador"required  name="chkUser[]"  type="checkbox" onclick="clickAdministrador()" value="2" >Administrador</label>
+                                  <label  class="checkbox-inline"><input id="administrador" required  name="chkUser[]"  type="checkbox" onclick="clickAdministrador()" value="2" >Administrador</label>
                                   </center>
                                 </td>
                               </tr>
                               <tr id="permitionUser"  style="display: none;">
                                 <td><label class="control-label">Seleccione Permisos</label></td>
                                 <td > <center id="checkPages">
-                                  <label  class="checkbox-inline"><input id='page1'  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()" value="1" >Inscritos</label>
-                                  <label  class="checkbox-inline"><input id='page2'  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="2" >Certificacion</label>
-                                  <label  class="checkbox-inline"><input id='page3'  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="3" >Validación</label>
-                                  <label  class="checkbox-inline"><input id='page4'  name="chkPage[]" type="checkbox" onclick="return checkBoxOK()"  value="4" >Reportes</label>
+                                  <label  class="checkbox-inline"><input id="page1"  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()" value="1" >Inscritos</label>
+                                  <label  class="checkbox-inline"><input id="page2"  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="2" >Certificacion</label>
+                                  <label  class="checkbox-inline"><input id="page3"  name="chkPage[]"  type="checkbox" onclick="return checkBoxOK()"  value="3" >Validación</label>
+                                  <label  class="checkbox-inline"><input id="page4"  name="chkPage[]" type="checkbox" onclick="return checkBoxOK()"  value="4" >Reportes</label>
                                   </center>
                                 </td>
                               </tr>
@@ -292,7 +296,9 @@ if ($logs) {
                   </div>
                 </div>
               </div>
+
               <?php include '../modulos/modals.php';?>
               </div><!-- /#wrapper -->
+              </div>
             </body>
           </html>

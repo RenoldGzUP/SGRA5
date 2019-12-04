@@ -26,7 +26,7 @@ if (isset($USERNAME)) {
         //VALIDATE MD5
         if (strcmp($LAST_PWD, $PWD_RESTORE) == 0) {
             if (strcmp($CLAVE_A, $CLAVE_B) == 0) {
-                $action_msg = "Contraseña Actualizada, será redirigido en 10 segundos";
+                $action_msg = "Contraseña Actualizada, será redirigido en 10 segundos a la página de inicio de sesión";
                 updatePaswordUser($CLAVE_A, 0, $USERNAME);
                 ////REFRESH
                 header("Refresh: 10; url=index.html");

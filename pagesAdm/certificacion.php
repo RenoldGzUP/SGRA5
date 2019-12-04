@@ -22,7 +22,8 @@ if ($now > $_SESSION['expire']) {
     exit;
 }
 ?>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
 
     <meta charset="utf-8">
@@ -36,8 +37,8 @@ if ($now > $_SESSION['expire']) {
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet"
-    <!-- Custom CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!--Custom CSS-->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -133,8 +134,8 @@ if ($now > $_SESSION['expire']) {
 
         <div id="certType" >
           <center>
-             <label  class="checkbox-inline"><input id="type1" type="checkbox" value="1" >Coordinador</label>
-          <label  class="checkbox-inline"><input id="type2" type="checkbox" value="2"   >Director</label>
+             <label  class="checkbox-inline"><input id="signature_type1" type="checkbox" value="1" onclick="checkBoxToSignature()" >Coordinador de Admisión </label>
+          <label  class="checkbox-inline"><input id="signature_type2" type="checkbox" value="2" onclick="checkBoxToSignature()"  >Director de Admisión</label>
           </center>
         </div>
         </div>
@@ -151,9 +152,6 @@ if ($now > $_SESSION['expire']) {
 
 </div>
         <!-- /#page-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
 
 
 </body>

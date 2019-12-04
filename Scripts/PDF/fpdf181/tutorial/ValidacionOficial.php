@@ -32,7 +32,7 @@ class PDF extends FPDF
         $yearMin  = $dateYear - 1;
         $this->Cell(40);
         $this->SetFont('Arial', 'B', 10);
-        $this->Cell(40, 8, 'RESULTADOS DE LAS PRUEBAS DE ADMISIÓN ' . $dateYear, 0, 1, 'L');
+        $this->Cell(40, 8, 'VALIDAR PROCESO DE ADMISIÓN ' . $yearMin . ' - ' . $dateYear, 0, 1, 'L');
     }
 
 //emcabezados
@@ -100,31 +100,23 @@ class PDF extends FPDF
 
     }
 
-    public function Averages($ID_INSCRITO,$AREA)
+    public function Averages($ID_INSCRITO)
     {
         //DATA
+
         $DataTest    = GetAverageData($ID_INSCRITO);
         $averageData = convert_object_to_array($DataTest);
 
         //TABLA B
         $i = 0;
 
-        $averageLabels = array('ÍNDICE PREDICTIVO', 'PRUEBA PSICOLÓGICA',
+        $averageLabels = array('INDICE PREDICTIVO', 'PRUEBA PSICOLÓGICA',
             'PROMEDIO DE SECUNDARIA', 'PRUEBA DE CAPACIDADES ACADÉMICAS (PCA):', 'PRUEBA DE CONOCIMIENTOS GENERALES (PCG):');
         $dataIndice = array($averageData[0]["indice"], $averageData[0]["gatb"], $averageData[0]["ps"], $averageData[0]["pca"], $averageData[0]["pcg"]);
 
-            
-        if($AREA == 4)
-        {
-            $long_array = 4;
-
-        }else{
-            $long_array = 3;
-        }
-
         $this->Ln(5);
         $this->setX(20);
-        for ($i = 0; $i <= $long_array; $i++) {
+        for ($i = 0; $i <= 4; $i++) {
             if ($averageLabels[$i] == 'INDICE PREDICTIVO') {
                 $this->Ln(5);
                 $this->setX(18);
@@ -393,7 +385,7 @@ class PDF extends FPDF
 
     }
 
-   /* // Pie de página de la clase
+    // Pie de página
     public function Footer()
     {
         date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
@@ -415,43 +407,9 @@ class PDF extends FPDF
         $this->SetXY(40, -15);
         $this->SetFont('Courier', 'BIU', 9);
         $this->Cell(0, 10, $datetime, 0, 0, 'L');
-    }*/
-
-     // Pie de página de la clase
-    public function FooterDocs($signature_type)
-    {
-        date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
-        $datetime = date("d/m/Y");
-
-        ///SIGNATURE
-        $this->Ln(15);
-        $this->setX(30);
-        $this->Cell(150, 5, '__________________________________________________________', 0, 0, 'C');
-        $this->Ln(6);
-        $this->setX(30);
-//validar tipo de fimra para la certificación
-        if ($signature_type == 1) {
-            $this->SetFont('Times', 'BI', 9);
-        $this->Cell(150, 5, 'Coordinador (a) de Admisión', 0, 0, 'C');
-        }else{
-            $this->SetFont('Times', 'BI', 9);
-        $this->Cell(150, 5, 'Director (a) de Admisión', 0, 0, 'C');
-         
-        }
-        // Posición: a 1,5 cm del final
-        $this->SetXY(25, -35);
-        $this->SetFont('Courier', 'BI', 9);
-        $this->Cell(0, 10, 'Fecha: ', 0, 0, 'L');
-        // Posición: a 1,5 cm del final
-        $this->SetXY(40, -35);
-        $this->SetFont('Courier', 'BIU', 9);
-        $this->Cell(0, 10, $datetime, 0, 0, 'L');
-        ///////////////////////////////////////
-       
     }
 
 }
-//GET DATA FROM MANIN SCREEEN
 /////////////////////////////////////////////////////////////
 //TABLA D
 $pcgAdmonPublicaTAGS = array('Contabilidad', 'Ciencias Politicas', 'Administración Pública', 'Matemática', 'Economía', 'PCG TOTAL');
@@ -477,52 +435,33 @@ $j   = 0;
 
 //////////////////////////////////////////////////////////////////////////
 //Get Data from JS
-//Convert the POST info to array using explode
-$numIns = $_POST["idInscrito"];
-$signature = $_POST["signature"];
-//Count Files inside Array
-
-$countInscritos = count($numIns);
-$numInscrito    = explode(",", $_POST["idInscrito"]);
-//var_dump($numInscrito);
-
-//Files inside Array
-$countInscritos = count($numInscrito);
-
-///////////////////////////////////////////////////////////////////////
+$numInscrito = $_POST["idInscrito"];
+//////////////////////////////////////////////////////////////////////
 //GENERATE PDF DOCUMENT
-while ($j < $countInscritos) {
+//while ($j < $countInscritos) {
+$pdf->AddPage('', 'Letter');
+$pdf->PersonalData($numInscrito);
+$pdf->Averages($numInscrito);
+$pdf->PrintPCA($numInscrito);
+////////////////////////////////////////////////////////////
+$Area     = GetAreaData($numInscrito);
+$typeArea = convert_object_to_array($Area);
 
-    //Get area from resultados tb
-    $Area     = GetAreaData($numInscrito[$j]);
-    $typeArea = convert_object_to_array($Area);
+if ($typeArea[0]["areap"] == 4) {
+    $pdf->MessaguePCG();
+    $pdf->printPCG($pcgCientificaTAGS, $numInscrito, $pcgMaxCientifica, $pcgMinixCientifica);
 
-    $pdf->AddPage('', 'Letter');
-    $pdf->PersonalData($numInscrito[$j]);
-    $pdf->Averages($numInscrito[$j],$typeArea[0]["areap"]);
-    $pdf->PrintPCA($numInscrito[$j]);
-    /////////////////////////////////////////////
-    // validate_PCG($numInscrito[$j]);
-    //$pdf->MessaguePCG($numInscrito);
-    //$pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito);
-    ////////////////////////////////////////////////////////////
-
-    if ($typeArea[0]["areap"] == 4) {
-        $pdf->MessaguePCG();
-        $pdf->printPCG($pcgCientificaTAGS, $numInscrito[$j], $pcgMaxCientifica, $pcgMinixCientifica);
-
-    } else if ($typeArea[0]["areap"] == 6) {
-        $pdf->MessaguePCG();
-        $pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito[$j], $pcgMaxAdmon, $pcgMinixAdmon);
-    } else if ($typeArea[0]["areap"] == 7) {
-        $pdf->MessaguePCG();
-        $pdf->printPCG($pcgDerechoTAGS, $numInscrito[$j], $pcgMaxDerecho, $pcgMinixDerecho);
-    }
-///////////////////////////////////////////////////////////
-    $pdf->FooterDocs($signature);
-    $pdf->SelloDGA();
-    $j++;
+} else if ($typeArea[0]["areap"] == 6) {
+    $pdf->MessaguePCG();
+    $pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito, $pcgMaxAdmon, $pcgMinixAdmon);
+} else if ($typeArea[0]["areap"] == 7) {
+    $pdf->MessaguePCG();
+    $pdf->printPCG($pcgDerechoTAGS, $numInscrito, $pcgMaxDerecho, $pcgMinixDerecho);
 }
+///////////////////////////////////////////////////////////
+$pdf->SelloDGA();
+//$j++;
+//}
 /////////////////////////////////////////////////////////////////////////
 
 date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
@@ -531,8 +470,8 @@ $pdf->Output('../../../../modulos/Certificaciones_' . $datetime . '.pdf', 'F');
 echo "../modulos/Certificaciones_" . $datetime . ".pdf";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//FUNCTION
-function validate_PCG($N_INSCRITO)
+//FUNCTIONDEPRECATE
+function validatedd_PCG($N_INSCRITO)
 {
     //TABLA D
     $pcgAdmonPublicaTAGS = array('Contabilidad', 'Ciencias Politicas', 'Administración Pública', 'Matemática', 'Economía', 'PCG TOTAL');

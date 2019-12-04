@@ -272,6 +272,7 @@
     }
     //////////////////////////////////////////////////////////////////////////
     function getDataFillsExport(STATE) {
+        console.log("call function ok")
         //ID  APRA IDENFIFICAR DE CUAL EXPORT SE HARA EL GET FILL
         var type = STATE;
         if (type == 1) {
@@ -320,6 +321,7 @@
 
     function sendAJAXExport(DATOS, LABELCOMPONENT) {
         var idFile = DATOS;
+        console.log(LABELCOMPONENT);
         var downloadButton = document.getElementById(LABELCOMPONENT[0]);
         $('#' + LABELCOMPONENT[1]).show();
         $.ajax({
@@ -353,6 +355,16 @@
         }
     }
 
+    function hideMessageLabels(){
+        var labelsData= ["downloadFileExportInscrito", "loadingInscritoE", "doneInscritoE", "wrongInscritosE","downloadFileExportResultado", "loadingResultadoE", "doneResultadoE", "wrongResultadoE"];
+        var i = 0;
+        while (i < 8) {
+            $('#' + labelsData[i]).hide();
+            i++;
+        }
+
+    }
+
     function setHideAtt(ARRAY) {
         var i = 0;
         while (i < 4) {
@@ -363,7 +375,8 @@
     /////////////////
     //BACK UP DATA BASE
     function exportTableInscritos() {
-        console.log("OK INSCRITOS");
+        console.log("OK INSCRITOS from main button");
+         $('#loadingInscritoE').show();
         var inputVal = document.getElementById("labelTBInscritosName").value;
         var downloadButton = document.getElementById("downloadFileExportInscrito");
         console.log(inputVal);
@@ -377,15 +390,21 @@
             url: "../Scripts/exportDBResultados.php",
         }).done(function(data, textStatus, jqXHR) {
             console.log(data);
+            $('#loadingInscritoE').hide();
+            $('#doneInscritoE').show();
             $('#downloadFileExportInscrito').show();
             downloadButton.setAttribute('href', data);
         }).fail(function(jqXHR, textStatus, errorThrown) {
+            $('#loadingInscritoE').hide();
+            $('#wrongInscritoE').show();
             console.log("La solicitud a fallado: " + textStatus);
         });
     }
 
     function exportTableResultados() {
         console.log("OK RESULTADOS");
+        $('#loadingResultadoE').show();
+        var messagueResultado = ["downloadFileExportResultado", "loadingResultadoE", "doneResultadoE", "wrongResultadoE"];
         var inputVal = document.getElementById("labelTBResultadosName").value;
         var downloadButton = document.getElementById("downloadFileExportResultado");
         console.log(inputVal);
@@ -399,9 +418,13 @@
             url: "../Scripts/exportDBResultados.php",
         }).done(function(data, textStatus, jqXHR) {
             console.log(data);
+            $('#loadingResultadoE').hide();
+            $('#doneResultadoE').show();
             $('#downloadFileExportResultado').show();
             downloadButton.setAttribute('href', data);
         }).fail(function(jqXHR, textStatus, errorThrown) {
+            $('#loadingResultadoE').hide();
+            $('#wrongResultadoE').show();
             console.log("La solicitud a fallado: " + textStatus);
         });
     }

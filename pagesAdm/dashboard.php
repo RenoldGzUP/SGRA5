@@ -21,15 +21,13 @@ if ($now > $_SESSION['expire']) {
 }
 
 ?>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-
-    <meta charset="utf-8">
-    <html lang="es">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Renold González">
 
     <title>Sistema de gestión de resultados academicos</title>
 
@@ -53,7 +51,6 @@ if ($now > $_SESSION['expire']) {
      <link href="../Style/chat.css" rel="stylesheet" type="text/css">
      <link href="../Style/dashboard.css" rel="stylesheet" type="text/css">
      <script src="../JS/chatQueryReader.js"></script>
-
 </head>
 
 <body>
@@ -144,10 +141,6 @@ include '../modulos/sendMessage.php';
         </div>
         <!-- /#page-wrapper -->
 
-      </div>
-      <!-- /#wrapper -->
-
-
+ 
 </body>
-
 </html>

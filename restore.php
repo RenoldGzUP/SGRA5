@@ -3,13 +3,17 @@ include 'Scripts/restorePWD.php';
 
 ?>
 
+<!DOCTYPE html>
+<html lang="es">
+
 <html>
 	<head>
-		<title>Login</title>
-
+		<title>Restaurar Contraseña</title>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="login/css/bootstrap.min.css" >
 		<link rel="stylesheet" href="login/css/bootstrap-theme.min.css" >
-		<script src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="./JS/jquery-3.3.1.min.js"></script>
+		<script src="./JS/bootstrap.min.js" ></script>
 
 	</head>
 
@@ -44,7 +48,7 @@ if (is_string($error_msg)) {
 			<div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 				<div class="panel panel-primary" >
 					<div class="panel-heading">
-						<div class="panel-title">Cambiar contrase&ntilde;a</div>
+						<div class="panel-title">Cambiar Contraseña</div>
 					</div>
 					<div style="padding-top:20px" class="panel-body" >
 						<div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
@@ -55,21 +59,21 @@ if (is_string($error_msg)) {
 								<input id="username" type="text" class="form-control" name="username" value="" placeholder="Nombre de Usuario" required>
 							</div>
 							<div style="margin-bottom: 25px" class="input-group">
-								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input id="password_key" type="password" autocomplete="off" class="form-control" name="password_restore" placeholder="Contrase&ntilde;a de Respaldo" required>
+								<span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+								<input id="password_key" type="password" autocomplete="off" class="form-control" name="password_restore" placeholder="Contraseña de Respaldo" required>
 							</div>
 							<div style="margin-bottom: 25px" class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input id="password_a" type="password" autocomplete="off" class="form-control" name="password_a" placeholder="Nueva Contrase&ntilde;a" required>
+								<input id="password_a" type="password" autocomplete="off" class="form-control" name="password_a" placeholder="Nueva Contraseña" required>
 							</div>
 							<div style="margin-bottom: 25px" class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input id="password_b" type="password" autocomplete="off" class="form-control" name="password_b" placeholder="Repetir Contrase&ntilde;a" required>
+								<input id="password_b" type="password" autocomplete="off" class="form-control" name="password_b" placeholder="Repetir Contraseña" required>
 							</div>
 
 							<div style="margin-top:10px" class="form-group">
 								<div class="col-sm-12 controls " align="center">
-								<button  name="Submit" type="submit" value="LOGIN"  class="btn btn-success">Actualizar contrase&ntilde;a</a>
+								<button  name="Submit" type="submit" value="LOGIN"  class="btn btn-success">Actualizar contraseña</a>
 							</div>
 						  </div>
 					   </form>

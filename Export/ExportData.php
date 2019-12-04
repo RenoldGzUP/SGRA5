@@ -42,7 +42,7 @@ switch ($longArray) {
         break;
     case 19:
         //GET DATA FROM AJAX JS
-        $labelsResultados = array("sede", "fac_ia", "esc_ia", "car_ia", "provincia", "clave", "tomo", "folio", "apellido", "nombre", "ao_lectivo", "gatb", "pca", "pcg", "indice", "areap", "opc", "n_ins", "d");
+        $labelsResultados = array("sede", "fac_ia", "esc_ia", "car_ia", "provincia", "clave", "tomo", "folio", "apellido", "nombre", "ao_lect", "gatb", "pca", "pcg", "indice", "areap", "opc", "n_ins", "d");
 
         //GET DAT FROM DB - WITH FORMAT OD LABELS UP
         date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
@@ -63,7 +63,7 @@ switch ($longArray) {
         break;
     case 8:
         //GET DATA FROM AJAX JS
-        $labelsIndices = array("provincia", "clave", "tomo", "folio", "indice", "n_ins", "areap", "ao_lectivo");
+        $labelsIndices = array("provincia", "clave", "tomo", "folio", "indice", "n_ins", "areap", "ao_lect");
         //GET DAT FROM DB - WITH FORMAT OD LABELS UP
         date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
         $datetime = date("d_m_Y");

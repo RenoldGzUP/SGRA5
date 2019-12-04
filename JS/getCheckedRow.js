@@ -69,6 +69,28 @@ function GetCheckedStateCoor() {
     }
 }
 
+function checkBoxToSignature() {
+    var input = document.getElementById("signature_type1");
+    var input2 = document.getElementById("signature_type2");
+    var isChecked = input.checked;
+    var isChecked2 = input2.checked;
+    var data;
+    if (isChecked) {
+        data = input.value;
+        console.log(data);
+        input2.disabled = true;
+    } else if (isChecked2) {
+        data = input2.value;
+        console.log(data);
+        input.disabled = true;
+    } else {
+        input.disabled = false;
+        input2.disabled = false;
+        console.log("Ok");
+    }
+    return data;
+}
+
 function getValueUsingParentTag() {
     var chkArray = [];
     console.log("Start getValueUsingParentTag function");
@@ -118,11 +140,13 @@ function startF() {
 
 function sendID(id) {
     var idInscrito = id;
-    //console.log($idInscrito);
+    var signature = checkBoxToSignature();
+    console.log(signature);
     $("#processModal").modal();
     $.ajax({
         data: {
-            "idInscrito": idInscrito
+            "idInscrito": idInscrito,
+            "signature":signature
         },
         type: "POST",
         dataType: "text",

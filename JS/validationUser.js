@@ -77,6 +77,12 @@ function measuringValidate(idInscrito) {
     });
 }
 
+
+function updateRegisterData(){
+
+}
+
+
 function saveDataTest(idInscrito) {
     document.getElementById("ValidateBtt").disabled = false;
     document.getElementById("ValidateBtt").value = idInscrito;

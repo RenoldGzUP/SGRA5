@@ -135,7 +135,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
-          <center><img src='../images/validacionOK.png' width="150" height=150" /> </center>
+          <center><img src="../images/validacionOK.png" width="150" height="150" /> </center>
           <center><h4>Usuario ya validado!</h4></center>
         </div>
       </div>
@@ -151,7 +151,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
-          <center><img src='../images/wrong.png' width="150" height=150" /> </center>
+          <center><img src='../images/wrong.png' width="150" height="150" /> </center>
           <center><h4>Verifique los valores de selección!</h4></center>
         </div>
       </div>
@@ -167,7 +167,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
-          <center><img src='../images/found.png' width="150" height=150" /> </center>
+          <center><img src='../images/found.png' width="150" height="150" /> </center>
           <center><h4>Registros encontrados</h4></center>
         </div>
       </div>
@@ -183,7 +183,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
-          <center><img src='../images/wrongFound.png' width="150" height=150" /> </center>
+          <center><img src='../images/wrongFound.png' width="150" height="150" /> </center>
           <center><h4>Se encontro un registro incompleto </h4></center>
           <center><h5>sólo existe  data en una tabla de datos</h5></center>
         </div>
@@ -294,7 +294,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
-          <center><img src='../images/wrongFound.png' width="150" height=150" /> </center>
+          <center><img src='../images/wrongFound.png' width="150" height="150" /> </center>
           <center><h4>No hay data para mostrar en la tabla</h4></center>
         </div>
       </div>

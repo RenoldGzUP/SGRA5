@@ -74,8 +74,11 @@ function limpiar_caracteres_especiales($s)
     return $s;
 }
 ?>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+  <meta http-equiv="Content-Type" content="text/html;" charset=UTF-8>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -106,6 +109,7 @@ function limpiar_caracteres_especiales($s)
   }
   </style>
 </head>
+
 <body>
   <div id="wrapper">
     <?php
@@ -197,15 +201,14 @@ foreach ($listasDB as $item) {
                           <td class ="text-left">Tabla Destino : </td>
                           <td>
                             <select name="listaBD">
-                              <?php
-$listasDB = getTablesList();?>
-                              <div class  = "container col-lg-12" style= "margin-top: -10px" >
+                              <?php $listasDB = getTablesList(); ?>
+                              <!--<div class  = "container col-lg-12" style= "margin-top: -10px;" >-->
                                 <?php
-foreach ($listasDB as $item) {
-    if (preg_match("/resultados/", $item->Tables_in_sgra)) {
-        echo "<option value='$item->Tables_in_sgra'>" . $item->Tables_in_sgra . "</option> ";}
-}
-?>
+                                        foreach ($listasDB as $item) {
+                                            if (preg_match("/resultados/", $item->Tables_in_sgra)) {
+                                                echo "<option value='$item->Tables_in_sgra'>" . $item->Tables_in_sgra . "</option> ";}
+                                        }
+                                                      ?>
                               </select>
                             </td>
                           </tr>
@@ -298,7 +301,8 @@ foreach ($listasDB as $item) {
                             <td></td>
                             <td width="100">
                               <div class = "pull-right" style="margin-top: -20px">
-                                <button id="exportInscritosBtt" style="width: 150px;"type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportInscritos" onclick="hideMessage(1)"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
+                                <!-- Para activar con modal data-toggle="modal" data-target="#opcionesExportInscritos" -->
+                                <button id="exportInscritosBtt" style="width: 150px" type="button" class="btn btn-default btn-sm" onclick="hideMessageLabels();exportTableInscritos()"><span class="glyphicon glyphicon-floppy-save"></span> Exportar  Inscritos</button>
                               </div>
                             </td>
                           </tr>
@@ -307,17 +311,17 @@ foreach ($listasDB as $item) {
                     </div>
                     <div class="col-lg-12">
                       <div id="doneInscritoE" class="alert alert-info" style="display:none;"  >
-                        <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong> Registros procesados , presione el botón debajo para descargar el archivo
+                        <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong> Registros procesados, presione el botón 'Descargar' para finalizar.
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div id="loadingInscritoE" class="alert alert-info" style="display:none;">
-                        <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!</strong> Cargando Registros...
+                        <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!</strong> Cargando Registros desde la base de datos...
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div id="wrongInscritoE" class="alert alert-danger" style="display:none;" >
-                        <strong><img src="../images/wrong.png"  style="width:20px;height:20px;"> Error!</strong> Ocurrio un error en la carga del archivo CSV!.
+                        <strong><img src="../images/wrong.png"  style="width:20px;height:20px;"> Error!</strong> Ocurrio un error en la carga de datos!.
                       </div>
                     </div>
                     <div class="col-lg-12" >
@@ -327,7 +331,7 @@ foreach ($listasDB as $item) {
                     </div>
                     <div class=" col-lg-12">
                       <center>
-                      <a id="downloadFileExportInscrito" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
+                      <a id="downloadFileExportInscrito" href="#" download class="btn btn-success" style="display:none;"><span class="glyphicon glyphicon-download-alt"></span> Descargar</a>
                       </center>
                     </div>
                   </div>
@@ -374,8 +378,9 @@ foreach ($listasDB as $item) {
                             <td></td>
                             <td width="100">
                               <div class = "pull-right" style="margin-top: -20px">
-                                <!--onClick=" exportDataR()" -->
-                                <button id="exportResultadosBtt" onclick="hideMessage(2)" style="width: 150px;" type="button"  class="btn btn-default btn-sm" data-toggle="modal" data-target="#opcionesExportResultados"><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
+                                <!--onClick=" exportDataR()"
+                                data-toggle="modal" data-target="#opcionesExportResultados" -->
+                                <button id="exportResultadosBtt" onclick="hideMessageLabels();exportTableResultados()" style="width: 150px;" type="button"  class="btn btn-default btn-sm" ><span class="glyphicon glyphicon-floppy-save"></span> Exportar resultados</button>
                               </div>
                             </td>
                           </tr>
@@ -384,22 +389,22 @@ foreach ($listasDB as $item) {
                     </div>
                     <div class="col-lg-12">
                       <div id="doneResultadoE" class="alert alert-info" style="display:none;" >
-                        <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong> Registros cargados al servidor
+                        <strong><img src="../images/checked.png"  style="width:20px;height:20px;">  Info!</strong> Registros procesados, presione el botón 'Descargar' para finalizar.
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div id="loadingResultadoE" class="alert alert-info" style="display:none;">
-                        <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!</strong> Cargando Registros...
+                        <strong><img src="../images/loading.gif"  style="width:20px;height:20px;">  Info!</strong> Cargando Registros desde la base de datos...
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div id="wrongResultadoE" class="alert alert-danger" style="display:none;" >
-                        <strong><img src="../images/wrong.png"  style="width:20px;height:20px;"> Error!</strong> Ocurrio un error en la carga del archivo CSV!.
+                        <strong><img src="../images/wrong.png"  style="width:20px;height:20px;"> Error!</strong> Ocurrio un error en la carga de datos!.
                       </div>
                     </div>
                     <div class=" col-lg-12">
                       <center>
-                      <a id="downloadFileExportResultado" href="#" download class="btn btn-default btn-sm" style="display:none;"><span class="glyphicon glyphicon-fullscreen"></span> Descargar</a>
+                      <a id="downloadFileExportResultado" href="#" download class="btn btn-success" style="display:none;"><span class="glyphicon glyphicon-download-alt"></span> Descargar</a>
                       </center>
                     </div>
                     <div class="col-lg-12" >
@@ -425,8 +430,8 @@ foreach ($listasDB as $item) {
                   <div class=" row">
                     <div class="col-lg-12">
                       <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#toOracle">Para Oracle</a></li>
-                        <li><a data-toggle="tab" href="#toBackup">Respaldo de la Tabla Inscritos</a></li>
+                        <li class="disabled"><a data-toggle="tab" href="#toOracle">Para Oracle</a></li>
+                        <li class="active"><a data-toggle="tab" href="#toBackup">Respaldo de la Tabla Inscritos</a></li>
                       </ul>
                       <div class="tab-content">
                         <div id="toOracle" class="tab-pane fade in active">
@@ -541,6 +546,7 @@ printRow($labelTExpR, $labelWidth, "_res");
               <?php include '../modulos/modals.php';?>
               <!--MODALS PHP END-->            <!-- /#page-wrapper -->
             </div>
+             </div>
             <!-- /#wrapper -->
           </body>
         </html>

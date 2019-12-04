@@ -1593,7 +1593,7 @@ function exportDatosInscritos()
 function exportDatosResultados()
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT sede, fac_ia, esc_ia, car_ia, provincia, clave, tomo, folio, apellido, nombre, ao_lectivo, gatb, pca, pcg, indice, areap, opc, n_ins, d from resultados2017 LIMIT 1500");
+    $query = new Query($mysqli, "SELECT sede, fac_ia, esc_ia, car_ia, provincia, clave, tomo, folio, apellido, nombre, ao_lect, gatb, pca, pcg, indice, areap, opc, n_ins, d from resultados2017 LIMIT 1500");
     $data  = $query->getresults();
     if (isset($data[0])) {
         return $data;
@@ -1606,7 +1606,7 @@ function exportDatosResultados()
 function exportDatosIndices()
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT provincia,clave, tomo, folio, indice, n_ins, areap, ao_lectivo from resultados2017");
+    $query = new Query($mysqli, "SELECT provincia,clave, tomo, folio, indice, n_ins, areap, ao_lect from resultados2017");
     $data  = $query->getresults();
     if (isset($data[0])) {
         return $data;

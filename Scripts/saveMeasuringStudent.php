@@ -10,19 +10,19 @@ $testStudent = getTestUSER($numInscrito);
 
 echo " <tr>
                     <td><label class='control-label'>Promedio de Secundaria</label></td>
-                    <td><input id ='indice_ps' class='form-control'   type='text' name='ps'  value=" . $testStudent->ps . " /></td>
+                    <td><input class='form-control'   type='text' name='ps'  value=" . $testStudent->ps . " /></td>
                   </tr>
                   <tr>
                     <td><label class='control-label'>Prueba de Capacidades Academicas</label></td>
-                    <td><input id ='indice_pca' class='form-control'   type='text' name='pca' value=" . $testStudent->pca . " /></td>
+                    <td><input class='form-control'   type='text' name='pca' value=" . $testStudent->pca . " /></td>
                   </tr>
                   <tr>
                     <td><label class='control-label'>Prueba de Conociemientos Generales</label></td>
-                    <td><input id ='indice_pcg' class='form-control'   type='text' name='pcg'   value=" . $testStudent->pcg . " /></td>
+                    <td><input class='form-control'   type='text' name='pcg'   value=" . $testStudent->pcg . " /></td>
                   </tr>
                   <tr>
                     <td><label class='control-label'>GATB</label></td>
-                    <td><input id ='indice_gatb' class='form-control' type='email'   name='gatb'  value=" . $testStudent->gatb . " /></td>
+                    <td><input class='form-control' type='email'   name='gatb'  value=" . $testStudent->gatb . " /></td>
                   </tr>
                   <tr>";
 echo '

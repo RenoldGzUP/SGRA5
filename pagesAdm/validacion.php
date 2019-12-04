@@ -20,6 +20,8 @@ if ($now > $_SESSION['expire']) {
     exit;
 }
 ?>
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -201,8 +203,10 @@ foreach ($listasDB as $item) {
     </div>
     <?php include '../modulos/modals.php';?>
   </div>
-</div>
-<!-- Modal REWCALCULAR-->
+
+
+<!--MODALS-->
+<!-- Modal RECALCULAR-->
 <div class="modal fade" id="measuringModal" role="dialog" data-keyboard="false" data-backdrop="static">
   <div class="modal-dialog modal-lg" style="width: 600px">
     <div class="modal-content">
@@ -213,7 +217,7 @@ foreach ($listasDB as $item) {
       <div class="modal-body">
         <div class="row">
           <div class="col-lg-12">
-            <form  id="editUpdateUser" action="../Scripts/insertNewUser.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <form  id="editTestValuesModal"  method="post" enctype="multipart/form-data" class="form-horizontal">
               <table class="table table-responsive" align="center">
                 <tbody id="measuringTableEdit">
 
@@ -226,8 +230,7 @@ foreach ($listasDB as $item) {
     </div>
   </div>
   </div><!--MODAL ADD USER-->
-  <!-- /#page-wrapper -->
-</div>
-<!-- /#wrapper -->
+
+
 </body>
 </html>

@@ -106,7 +106,7 @@ function validate_user_exist_CID($CID, $NAME, $LASTNAME)
     } else {
         //NO EXISTE UNA VALIDCION ANTERIOR, se PUEDE CONTINUAR
         //VERIFICAR QUE EL USUARIO EXISTE EN LAS BASE DE DATOS
-        $SPLIT_ID         = split("-", $CID);
+        $SPLIT_ID         = explode("-", $CID);
         $DataInscritosCID = getUserCIDFromInscritos($NAME, $LASTNAME);
 
         $DataResultadosCID = getUserCIDFromResultados($NAME, $LASTNAME);

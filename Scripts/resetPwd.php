@@ -8,7 +8,7 @@ error_reporting(0);
 saveLogs($_SESSION['name'], "Administrador registro un usuario ");
 
 $USERNAME = $_POST["idUsuarioPWD"];
-$RESTORE  = md5("sgra5210");
+$RESTORE  = md5("J{Uj2}F{ty");
 $STATE    = 1;
 //1 BLOCK
 //0 LOGIN
