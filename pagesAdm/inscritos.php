@@ -68,16 +68,16 @@ if ($now > $_SESSION['expire']) {
           </div>
         </div> -->
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-lg-12">
          <div  class="table-responsive">
             <table id="tableInscritos" class="table table-bordered table-hover table-fixed select">
               <thead style="font-size: 12px;text-align:center; color: #ffffff; background-color: #225ddb">
-                <tr >
-                  <th > <input type="checkbox"  id="inscritos_checkall" ></th>
+                <tr>
+                  <th ><input type="checkbox"  id="inscritos_checkall" ></th>
                   <th >#</th>
                   <th >Nombre</th>
                   <th >Apellido</th>
-                  <th >Cedula</th>
+                  <th >Cédula</th>
                   <th >n_ins</th>
                   <th >Sede</th>
                   <th >Fac_ia</th>

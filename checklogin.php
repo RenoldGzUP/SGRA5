@@ -52,6 +52,8 @@ if (isset($user)) {
                     $_SESSION['rol']      = $result->type;
                     $_SESSION['expire']   = $_SESSION['start'] + (100 * 60);
                     header("Location:./pagesAdm/dashboard.php");
+                }elseif ($location == 4) {
+                    header("Location:update_tb_sgra.php");
                 }
 
             } else {

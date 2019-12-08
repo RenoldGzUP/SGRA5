@@ -5,53 +5,6 @@
     margin-left: 265px;
 }
 
-/*html,body {
-overflow:hidden;
-}
-*/
-/*th {
-    text-align: center;
-  
-}
-.align {
-    text-align: left;
-}
-
-table {
-    table-layout: fixed;
-}
-td {
-    width: 25%;
-}
-tbody {
-    display: block;
-    height: 500px;
-    overflow: auto;
-}
-thead, tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-*/
-/* 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    max-width: auto;
-    max-width: auto;
-    width: auto;
-}
-
-table.dataTable {
-    margin: 0 !important;
-}
-
-
-tables
-----------------------------------------------------------*/
-
-
 .modal {
     text-align: center;
     padding: 0!important;

@@ -1,19 +1,18 @@
 <?php
-
 include_once '../Scripts/classConexionDB.php';
 openConnection();
 include_once '../Scripts/library_db_sql.php';
 session_start();
 
-$name     = strtoupper($_POST["idName"]);
-$lastName = strtoupper($_POST["idLastName"]);
+
+$id_CID_user = explode("-", $_POST["idCID"]);
 $typePost = $_POST["idPost"];
 
-$DataInscritosCID  = showDataVAI($name, $lastName);
-$DataResultadosCID = showDataVAR($name, $lastName);
+//EXPLODE OF ID AND SEND DATA
+$DataInscritosCID  = showDataVAI($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
+$DataResultadosCID = showDataVAR($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
 
 ////EMPTY ARRAY
-
 ////////////////////////////////////////////////////
 function getARRAYS($DataInscritos, $DataResultados)
 {
@@ -89,7 +88,7 @@ if ($typePost == 1) {
             rowColor($itemR->verbal);
             rowColor($itemR->numer);
             rowColor($itemR->indice);
-            echo '<td><a href="#" name="" class="btn btn-warning btn-xs" onclick="measuringValidate(\'' . $itemR->n_ins . '\')" ><span class="glyphicon glyphicon-plus"></span> RECALCULAR</a></td>';
+            echo '<td><a href="#" name="" class="btn btn-warning btn-xs" onclick="measuringValidate(\'' . $itemR->cedula . '\')" ><span class="glyphicon glyphicon-plus"></span> RECALCULAR</a></td>';
         }
 
     }

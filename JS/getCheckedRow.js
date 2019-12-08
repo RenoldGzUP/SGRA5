@@ -21,8 +21,8 @@ $(document).ready(function() {
     });
 });
 $(document).ready(function() {
-    $("#tableresultados #checkall").click(function() {
-        if ($("#tableresultados #checkall").is(':checked')) {
+    $("#tableresultados #resultados_checkall").click(function() {
+        if ($("#tableresultados #resultados_checkall").is(':checked')) {
             $("#tableresultados input[type=checkbox]").each(function() {
                 $(this).prop("checked", true);
             });

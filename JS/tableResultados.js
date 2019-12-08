@@ -56,14 +56,6 @@ function getDataAJAX(issetData, filterState) {
             "method": "POST",
             "url": "../Scripts/getTableResultadosJS.php",
             "dataSrc": function(data) {
-                /*$("#loadingModal").modal("hide");
-                return data;*/
-                 if (data == "error") {
-                     $("#loadingModal").modal("hide");
-                     console.log("data error");
-                     $('td:eq(1)', row).attr('colspan', 3);
-                }
-
                 $("#loadingModal").modal("hide");
                 return data;
             }
@@ -103,8 +95,8 @@ function getDataAJAX(issetData, filterState) {
         }, {
             "data": "indice"
         }, {
-            "defaultContent": "<button type='button' title ='Editar'  class='editar btn btn-warning btn-xs' ><span class='glyphicon glyphicon-pencil'></span></button>  <button type='button' title ='Borrar'  class='borrar btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash' ></span></button> "
-        }],
+/*            "defaultContent": "<button type='button' title ='Editar'  class='editar btn btn-warning btn-xs' ><span class='glyphicon glyphicon-pencil'></span></button>  <button type='button' title ='Borrar'  class='borrar btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash' ></span></button> "
+*/        }],
         'columnDefs': [{
             'targets': 0,
             'searchable': false,
@@ -205,11 +197,7 @@ function getDataAJAX(issetData, filterState) {
 }
 //end ajax func
 //////////////////////////////////////////////////
-$('#userslist').DataTable({
-    "initComplete": function(settings, json) {
-        $("#reportDetails").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
-    },
-});
+
 var editar_row = function(tbody, table) {
     $(tbody).on("click", "button.editar", function() {
         var data = table.row($(this).parents("tr")).data();
@@ -228,20 +216,19 @@ var borrar_row = function(tbody, table) {
     $(tbody).on("click", "button.borrar", function() {
         var data = table.row($(this).parents("tr")).data();
         if (data != null) {
-            //console.log(data);
+            console.log(data);
             //delete_row(data.n_ins);
             var ins = data.n_ins;
             $("#deleteModal").modal();
-
             document.getElementById("deleteTaskBtt").onclick = function() {
-                console.log("DELETE ON");
+                // console.log("DELETE ON");
                 deleteTask(data.n_ins);
+                // deleteComplete(table, ins);
             };
-
         } else {
             console.log("Null exist");
-           
+            //modal_edit(data-);
         }
-        
+        //modal_edit(data-);
     });
 }

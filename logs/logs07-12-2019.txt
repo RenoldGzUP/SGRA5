@@ -1,0 +1,2002 @@
+1	renold.gonzalez	13-09-2019 06:37:15 AM	Administrador registro un usuario 
+2	renold.gonzalez	13-09-2019 06:37:23 AM	Usuario salió del sistema
+3	rodney.vega	13-09-2019 06:38:22 AM	Inició sesión como Usuario Especial
+4	rodney.vega	13-09-2019 06:38:22 AM	Usuario accedió a página principal
+5	rodney.vega	13-09-2019 06:38:28 AM	Usuario salió del sistema
+6	renold.gonzalez	13-09-2019 07:05:57 AM	Inició sesión como administrador del sistema
+7	renold.gonzalez	13-09-2019 07:05:58 AM	Usuario accedió a página principal
+8	renold.gonzalez	13-09-2019 07:06:00 AM	Usuario accedió a página de administrtacion de datos
+9	renold.gonzalez	13-09-2019 07:07:30 AM	Usuario cargo al sistema (TB Inscritos) el archivo dataresultados17_full.csv
+10	renold.gonzalez	13-09-2019 07:07:30 AM	CSV no cuenta con el Formato valido para la Tabla Inscritos -> dataresultados17_full.csv
+11	renold.gonzalez	13-09-2019 07:08:03 AM	Usuario accedió a página de administrtacion de datos
+12	renold.gonzalez	13-09-2019 07:08:48 AM	Usuario cargo al sistema (TB Inscritos) el archivo datainscritos17_0.csv
+13	renold.gonzalez	13-09-2019 07:10:16 AM	Registros cargados al sistema (TB Inscritos) : 0  DESDE-> datainscritos17_0.csv
+14	renold.gonzalez	13-09-2019 07:10:42 AM	Usuario salió del sistema
+15	renold.gonzalez	13-09-2019 07:15:03 AM	Inició sesión como administrador del sistema
+16	renold.gonzalez	13-09-2019 07:15:03 AM	Usuario accedió a página principal
+17	renold.gonzalez	13-09-2019 07:35:00 AM	Usuario accedió a página de usuarios
+18	renold.gonzalez	13-09-2019 07:35:27 AM	Usuario accedió a página de usuarios
+19	renold.gonzalez	13-09-2019 07:35:51 AM	Usuario accedió a página de usuarios
+20	renold.gonzalez	13-09-2019 07:35:58 AM	Administrador eliminó a un usuario
+21	renold.gonzalez	13-09-2019 07:35:58 AM	Administrador eliminó a [adminG]
+22	renold.gonzalez	13-09-2019 07:36:02 AM	Usuario accedió a página de usuarios
+23	renold.gonzalez	13-09-2019 07:36:11 AM	Usuario salió del sistema
+24	renold.gonzalez	13-09-2019 07:41:00 AM	Inició sesión como administrador del sistema
+25	renold.gonzalez	13-09-2019 07:41:00 AM	Usuario accedió a página principal
+26	renold.gonzalez	13-09-2019 07:41:03 AM	Usuario accedió a página de usuarios
+27	renold.gonzalez	13-09-2019 07:41:05 AM	Usuario accedió a página de administrtacion de datos
+28	renold.gonzalez	13-09-2019 07:41:08 AM	Usuario accedió a página reportes
+29	renold.gonzalez	13-09-2019 07:41:15 AM	Usuario gener? reporte academico reporteAcademico_13-09-2019_07_41_15_AM
+30	renold.gonzalez	13-09-2019 07:41:36 AM	Usuario accedió a página validación
+31	renold.gonzalez	13-09-2019 07:41:37 AM	Usuario accedió a página reportes
+32	renold.gonzalez	13-09-2019 07:44:50 AM	Usuario gener? reporte academico reporteAcademico_13-09-2019_07_44_50_AM
+33	renold.gonzalez	13-09-2019 07:45:07 AM	Usuario gener? reporte academico reporteAcademico_13-09-2019_07_45_07_AM
+34	renold.gonzalez	13-09-2019 08:00:03 AM	Usuario accedió a página reportes
+35	renold.gonzalez	13-09-2019 08:00:43 AM	Usuario gener? reporte academico reporteAcademico_13-09-2019_08_00_43_AM
+36	renold.gonzalez	13-09-2019 08:01:07 AM	Usuario salió del sistema
+37	renold.gonzalez	13-09-2019 08:01:24 AM	Inició sesión como administrador del sistema
+38	renold.gonzalez	13-09-2019 08:01:25 AM	Usuario accedió a página principal
+39	renold.gonzalez	13-09-2019 08:01:37 AM	Usuario accedió a página de usuarios
+40	renold.gonzalez	13-09-2019 08:01:42 AM	Usuario salió del sistema
+41	renold.gonzalez	13-09-2019 08:06:30 AM	Inició sesión como administrador del sistema
+42	renold.gonzalez	13-09-2019 08:06:30 AM	Usuario accedió a página principal
+43	renold.gonzalez	13-09-2019 08:06:32 AM	Usuario accedió a página certificaciones
+44	renold.gonzalez	13-09-2019 08:06:53 AM	Usuario accedió a página inscritos
+45	renold.gonzalez	13-09-2019 08:07:14 AM	Usuario accedió a página de usuarios
+46	renold.gonzalez	13-09-2019 08:07:17 AM	Usuario salió del sistema
+47	renold.gonzalez	13-09-2019 08:07:24 AM	Inició sesión como administrador del sistema
+48	renold.gonzalez	13-09-2019 08:07:24 AM	Usuario accedió a página principal
+49	renold.gonzalez	13-09-2019 08:07:26 AM	Usuario accedió a página inscritos
+50	renold.gonzalez	13-09-2019 08:08:06 AM	Usuario salió del sistema
+51	renold.gonzalez	18-10-2019 04:13:54 PM	Inició sesión como administrador del sistema
+52	renold.gonzalez	18-10-2019 04:13:54 PM	Usuario accedió a página principal
+53	renold.gonzalez	18-10-2019 04:14:06 PM	Usuario salió del sistema
+54	renold.gonzalez	18-10-2019 05:08:06 PM	Inició sesión como administrador del sistema
+55	renold.gonzalez	18-10-2019 05:08:06 PM	Usuario accedió a página principal
+56	renold.gonzalez	18-10-2019 05:08:12 PM	Usuario accedió a página inscritos
+57	renold.gonzalez	18-10-2019 05:09:06 PM	Usuario accedió a página certificaciones
+58	renold.gonzalez	18-10-2019 05:42:06 PM	Usuario accedió a página inscritos
+59	renold.gonzalez	18-10-2019 05:42:09 PM	Usuario accedió a página certificaciones
+60	renold.gonzalez	18-10-2019 05:42:28 PM	Usuario accedió a página certificaciones
+61	renold.gonzalez	18-10-2019 05:52:46 PM	Usuario accedió a página inscritos
+62	renold.gonzalez	18-10-2019 05:55:50 PM	Usuario accedió a página inscritos
+63	renold.gonzalez	18-10-2019 05:56:19 PM	Usuario salió del sistema
+64	renold.gonzalez	18-10-2019 05:56:28 PM	Inició sesión como administrador del sistema
+65	renold.gonzalez	18-10-2019 05:56:28 PM	Usuario accedió a página principal
+66	renold.gonzalez	18-10-2019 05:56:30 PM	Usuario accedió a página inscritos
+67	renold.gonzalez	18-10-2019 06:04:49 PM	Usuario accedió a página validación
+68	renold.gonzalez	18-10-2019 06:21:05 PM	Usuario accedió a página reportes
+69	renold.gonzalez	29-10-2019 11:30:50 PM	Inició sesión como administrador del sistema
+70	renold.gonzalez	29-10-2019 11:30:50 PM	Usuario accedió a página principal
+71	renold.gonzalez	29-10-2019 11:30:53 PM	Usuario accedió a página inscritos
+72	renold.gonzalez	29-10-2019 11:32:08 PM	Usuario accedió a página inscritos
+73	renold.gonzalez	29-10-2019 11:32:27 PM	Usuario accedió a página inscritos
+74	renold.gonzalez	29-10-2019 11:33:46 PM	Usuario accedió a página inscritos
+75	renold.gonzalez	29-10-2019 11:36:33 PM	Usuario accedió a página inscritos
+76	renold.gonzalez	29-10-2019 11:37:15 PM	Usuario accedió a página inscritos
+77	renold.gonzalez	29-10-2019 11:39:42 PM	Usuario accedió a página inscritos
+78	renold.gonzalez	29-10-2019 11:39:56 PM	Usuario accedió a página inscritos
+79	renold.gonzalez	29-10-2019 11:41:17 PM	Usuario accedió a página inscritos
+80	renold.gonzalez	29-10-2019 11:41:18 PM	Usuario accedió a página inscritos
+81	renold.gonzalez	29-10-2019 11:41:27 PM	Usuario accedió a página inscritos
+82	renold.gonzalez	29-10-2019 11:41:28 PM	Usuario accedió a página inscritos
+83	renold.gonzalez	29-10-2019 11:43:36 PM	Usuario accedió a página inscritos
+84	renold.gonzalez	29-10-2019 11:45:15 PM	Usuario accedió a página certificaciones
+85	renold.gonzalez	29-10-2019 11:45:19 PM	Usuario accedió a página validación
+86	renold.gonzalez	29-10-2019 11:45:22 PM	Usuario accedió a página reportes
+87	renold.gonzalez	29-10-2019 11:45:25 PM	Usuario accedió a página de administrtacion de datos
+88	renold.gonzalez	29-10-2019 11:45:28 PM	Usuario accedió a página de usuarios
+89	renold.gonzalez	29-10-2019 11:45:30 PM	Usuario accedió a página principal
+90	renold.gonzalez	29-10-2019 11:45:33 PM	Usuario accedió a página inscritos
+91	renold.gonzalez	29-10-2019 11:46:20 PM	Usuario accedió a página inscritos
+92	renold.gonzalez	29-10-2019 11:46:47 PM	Usuario accedió a página inscritos
+93	renold.gonzalez	29-10-2019 11:46:52 PM	Usuario accedió a página certificaciones
+94	renold.gonzalez	29-10-2019 11:46:54 PM	Usuario accedió a página validación
+95	renold.gonzalez	29-10-2019 11:46:56 PM	Usuario accedió a página certificaciones
+96	renold.gonzalez	29-10-2019 11:47:34 PM	Usuario accedió a página inscritos
+97	renold.gonzalez	29-10-2019 11:47:36 PM	Usuario accedió a página certificaciones
+98	renold.gonzalez	29-10-2019 11:54:48 PM	Usuario accedió a página validación
+99	renold.gonzalez	29-10-2019 11:54:50 PM	Usuario accedió a página certificaciones
+100	renold.gonzalez	29-10-2019 11:54:52 PM	Usuario accedió a página inscritos
+101	renold.gonzalez	29-10-2019 11:54:54 PM	Usuario accedió a página certificaciones
+102	renold.gonzalez	29-10-2019 11:55:56 PM	Usuario accedió a página certificaciones
+103	renold.gonzalez	29-10-2019 11:59:22 PM	Usuario accedió a página certificaciones
+104	renold.gonzalez	29-10-2019 11:59:38 PM	Usuario accedió a página certificaciones
+105	renold.gonzalez	30-10-2019 12:00:24 AM	Usuario accedió a página certificaciones
+106	renold.gonzalez	30-10-2019 12:00:29 AM	Usuario accedió a página inscritos
+107	renold.gonzalez	30-10-2019 12:00:30 AM	Usuario accedió a página certificaciones
+108	renold.gonzalez	30-10-2019 12:02:34 AM	Usuario accedió a página certificaciones
+109	renold.gonzalez	30-10-2019 12:02:36 AM	Usuario accedió a página inscritos
+110	renold.gonzalez	30-10-2019 12:02:37 AM	Usuario accedió a página certificaciones
+111	renold.gonzalez	30-10-2019 12:02:39 AM	Usuario accedió a página inscritos
+112	renold.gonzalez	30-10-2019 12:02:40 AM	Usuario accedió a página certificaciones
+113	renold.gonzalez	30-10-2019 12:02:42 AM	Usuario accedió a página inscritos
+114	renold.gonzalez	30-10-2019 12:02:43 AM	Usuario accedió a página certificaciones
+115	renold.gonzalez	30-10-2019 12:02:45 AM	Usuario accedió a página validación
+116	renold.gonzalez	30-10-2019 12:02:46 AM	Usuario accedió a página inscritos
+117	renold.gonzalez	30-10-2019 12:02:47 AM	Usuario accedió a página certificaciones
+118	renold.gonzalez	30-10-2019 12:03:26 AM	Usuario accedió a página principal
+119	renold.gonzalez	30-10-2019 12:03:27 AM	Usuario accedió a página inscritos
+120	renold.gonzalez	30-10-2019 12:03:29 AM	Usuario accedió a página certificaciones
+121	renold.gonzalez	30-10-2019 12:03:30 AM	Usuario accedió a página inscritos
+122	renold.gonzalez	30-10-2019 12:03:32 AM	Usuario accedió a página principal
+123	renold.gonzalez	30-10-2019 12:03:33 AM	Usuario accedió a página inscritos
+124	renold.gonzalez	30-10-2019 12:03:34 AM	Usuario accedió a página certificaciones
+125	renold.gonzalez	30-10-2019 12:04:29 AM	Usuario accedió a página validación
+126	renold.gonzalez	30-10-2019 12:04:32 AM	Usuario accedió a página reportes
+127	renold.gonzalez	30-10-2019 12:04:37 AM	Usuario accedió a página de administrtacion de datos
+128	renold.gonzalez	30-10-2019 12:04:40 AM	Usuario accedió a página reportes
+129	renold.gonzalez	30-10-2019 12:06:23 AM	Usuario accedió a página certificaciones
+130	renold.gonzalez	30-10-2019 12:08:13 AM	Usuario accedió a página certificaciones
+131	renold.gonzalez	30-10-2019 12:08:14 AM	Usuario accedió a página inscritos
+132	renold.gonzalez	30-10-2019 12:08:16 AM	Usuario accedió a página certificaciones
+133	renold.gonzalez	30-10-2019 12:08:17 AM	Usuario accedió a página validación
+134	renold.gonzalez	30-10-2019 12:08:19 AM	Usuario accedió a página reportes
+135	renold.gonzalez	30-10-2019 12:08:23 AM	Usuario accedió a página inscritos
+136	renold.gonzalez	30-10-2019 12:08:25 AM	Usuario accedió a página certificaciones
+137	renold.gonzalez	30-10-2019 12:08:44 AM	Usuario accedió a página certificaciones
+138	renold.gonzalez	30-10-2019 12:09:17 AM	Usuario accedió a página certificaciones
+139	renold.gonzalez	30-10-2019 12:09:24 AM	Usuario accedió a página inscritos
+140	renold.gonzalez	30-10-2019 12:09:26 AM	Usuario accedió a página certificaciones
+141	renold.gonzalez	30-10-2019 12:09:27 AM	Usuario accedió a página validación
+142	renold.gonzalez	30-10-2019 12:09:29 AM	Usuario accedió a página reportes
+143	renold.gonzalez	30-10-2019 12:09:31 AM	Usuario accedió a página inscritos
+144	renold.gonzalez	30-10-2019 12:09:32 AM	Usuario accedió a página certificaciones
+145	renold.gonzalez	30-10-2019 12:10:32 AM	Usuario accedió a página inscritos
+146	renold.gonzalez	30-10-2019 12:10:34 AM	Usuario accedió a página certificaciones
+147	renold.gonzalez	30-10-2019 12:10:36 AM	Usuario accedió a página validación
+148	renold.gonzalez	30-10-2019 12:10:38 AM	Usuario accedió a página inscritos
+149	renold.gonzalez	30-10-2019 12:10:40 AM	Usuario accedió a página certificaciones
+150	renold.gonzalez	30-10-2019 12:11:17 AM	Usuario accedió a página certificaciones
+151	renold.gonzalez	30-10-2019 12:11:25 AM	Usuario accedió a página certificaciones
+152	renold.gonzalez	30-10-2019 12:11:29 AM	Usuario accedió a página principal
+153	renold.gonzalez	30-10-2019 12:11:30 AM	Usuario accedió a página inscritos
+154	renold.gonzalez	30-10-2019 12:11:31 AM	Usuario accedió a página certificaciones
+155	renold.gonzalez	30-10-2019 12:11:40 AM	Usuario accedió a página validación
+156	renold.gonzalez	30-10-2019 12:11:42 AM	Usuario accedió a página reportes
+157	renold.gonzalez	30-10-2019 12:11:43 AM	Usuario accedió a página de administrtacion de datos
+158	renold.gonzalez	30-10-2019 12:11:46 AM	Usuario accedió a página de usuarios
+159	renold.gonzalez	30-10-2019 12:11:55 AM	Usuario accedió a página principal
+160	renold.gonzalez	30-10-2019 12:15:33 AM	Usuario accedió a página principal
+161	renold.gonzalez	30-10-2019 12:15:34 AM	Usuario accedió a página inscritos
+162	renold.gonzalez	30-10-2019 12:16:33 AM	Usuario accedió a página inscritos
+163	renold.gonzalez	30-10-2019 12:17:12 AM	Usuario accedió a página certificaciones
+164	renold.gonzalez	30-10-2019 12:18:52 AM	Usuario accedió a página certificaciones
+165	renold.gonzalez	30-10-2019 12:19:22 AM	Usuario salió del sistema
+166	renold.gonzalez	31-10-2019 09:12:09 PM	Inició sesión como administrador del sistema
+167	renold.gonzalez	31-10-2019 09:12:10 PM	Usuario accedió a página principal
+168	renold.gonzalez	31-10-2019 09:12:13 PM	Usuario accedió a página inscritos
+169	renold.gonzalez	31-10-2019 09:12:59 PM	Usuario accedió a página certificaciones
+170	renold.gonzalez	31-10-2019 09:16:30 PM	Usuario accedió a página inscritos
+171	renold.gonzalez	31-10-2019 09:18:34 PM	Usuario accedió a página certificaciones
+172	renold.gonzalez	31-10-2019 09:18:41 PM	Usuario accedió a página validación
+173	renold.gonzalez	31-10-2019 09:18:43 PM	Usuario accedió a página reportes
+174	renold.gonzalez	31-10-2019 09:18:45 PM	Usuario accedió a página de administrtacion de datos
+175	renold.gonzalez	31-10-2019 09:18:49 PM	Usuario accedió a página de usuarios
+176	renold.gonzalez	31-10-2019 09:18:51 PM	Usuario accedió a página de administrtacion de datos
+177	renold.gonzalez	31-10-2019 09:18:54 PM	Usuario accedió a página de usuarios
+178	renold.gonzalez	31-10-2019 09:19:04 PM	Usuario accedió a página principal
+179	renold.gonzalez	31-10-2019 09:19:07 PM	Usuario accedió a página inscritos
+180	renold.gonzalez	31-10-2019 09:19:21 PM	Usuario accedió a página certificaciones
+181	renold.gonzalez	31-10-2019 09:19:24 PM	Usuario accedió a página inscritos
+182	renold.gonzalez	31-10-2019 09:27:18 PM	Usuario accedió a página inscritos
+183	renold.gonzalez	31-10-2019 09:27:31 PM	Usuario accedió a página certificaciones
+184	renold.gonzalez	31-10-2019 09:30:30 PM	Usuario accedió a página certificaciones
+185	renold.gonzalez	31-10-2019 09:32:43 PM	Usuario accedió a página certificaciones
+186	renold.gonzalez	31-10-2019 09:33:39 PM	Usuario gener? Certificacion
+187	renold.gonzalez	31-10-2019 09:48:20 PM	Usuario gener? Certificacion
+188	renold.gonzalez	31-10-2019 10:24:34 PM	Usuario accedió a página de administrtacion de datos
+189	renold.gonzalez	31-10-2019 10:24:38 PM	Usuario accedió a página validación
+190	renold.gonzalez	05-11-2019 04:13:39 PM	Usuario accedió a página validación
+191	renold.gonzalez	05-11-2019 04:13:49 PM	Inició sesión como administrador del sistema
+192	renold.gonzalez	05-11-2019 04:13:50 PM	Usuario accedió a página principal
+193	renold.gonzalez	05-11-2019 04:13:53 PM	Usuario accedió a página inscritos
+194	renold.gonzalez	05-11-2019 04:13:55 PM	Usuario accedió a página certificaciones
+195	renold.gonzalez	05-11-2019 04:13:56 PM	Usuario accedió a página inscritos
+196	renold.gonzalez	05-11-2019 04:22:03 PM	Usuario accedió a página principal
+197	renold.gonzalez	05-11-2019 04:22:04 PM	Usuario accedió a página inscritos
+198	renold.gonzalez	05-11-2019 04:22:05 PM	Usuario accedió a página certificaciones
+199	renold.gonzalez	05-11-2019 04:22:07 PM	Usuario accedió a página validación
+200	renold.gonzalez	05-11-2019 04:22:08 PM	Usuario accedió a página reportes
+201	renold.gonzalez	05-11-2019 04:22:11 PM	Usuario accedió a página de administrtacion de datos
+202	renold.gonzalez	05-11-2019 04:22:19 PM	Usuario accedió a página validación
+203	renold.gonzalez	05-11-2019 04:22:21 PM	Usuario accedió a página reportes
+204	renold.gonzalez	05-11-2019 04:22:23 PM	Usuario accedió a página de administrtacion de datos
+205	renold.gonzalez	05-11-2019 04:22:29 PM	Usuario accedió a página de usuarios
+206	renold.gonzalez	05-11-2019 04:22:36 PM	Usuario salió del sistema
+207	renold.gonzalez	05-11-2019 04:22:52 PM	Inició sesión como administrador del sistema
+208	renold.gonzalez	05-11-2019 04:22:52 PM	Usuario accedió a página principal
+209	renold.gonzalez	05-11-2019 04:22:54 PM	Usuario accedió a página de usuarios
+210	renold.gonzalez	05-11-2019 04:23:51 PM	Administrador registro un usuario 
+211	renold.gonzalez	05-11-2019 04:23:51 PM	Administrador registró a test test como Usuario común
+212	renold.gonzalez	05-11-2019 04:23:51 PM	Usuario accedió a página de usuarios
+213	renold.gonzalez	05-11-2019 04:24:00 PM	Usuario accedió a página de usuarios
+214	renold.gonzalez	05-11-2019 04:24:14 PM	Usuario salió del sistema
+215	test.test	05-11-2019 04:24:22 PM	Inició sesión como Usuario Regular 
+216	test.test	05-11-2019 04:24:22 PM	Usuario accedió a página principal
+217	test.test	05-11-2019 04:24:26 PM	Usuario accedió a página inscritos
+218	test.test	05-11-2019 04:24:28 PM	Usuario accedió a página certificaciones
+219	test.test	05-11-2019 04:24:46 PM	Usuario gener? Certificacion
+220	test.test	05-11-2019 04:29:52 PM	Usuario accedió a página inscritos
+221	test.test	05-11-2019 04:29:56 PM	Usuario accedió a página certificaciones
+222	test.test	05-11-2019 04:29:57 PM	Usuario accedió a página inscritos
+223	test.test	05-11-2019 04:29:59 PM	Usuario accedió a página certificaciones
+224	test.test	05-11-2019 04:30:02 PM	Usuario accedió a página principal
+225	test.test	05-11-2019 04:30:04 PM	Usuario accedió a página inscritos
+226	test.test	05-11-2019 04:30:06 PM	Usuario accedió a página principal
+227	test.test	05-11-2019 04:31:38 PM	Usuario accedió a página principal
+228	test.test	05-11-2019 04:31:45 PM	Usuario accedió a página principal
+229	test.test	05-11-2019 04:36:37 PM	Usuario accedió a página principal
+230	test.test	05-11-2019 04:36:39 PM	Usuario salió del sistema
+231	renold.gonzalez	05-11-2019 04:36:45 PM	Inició sesión como administrador del sistema
+232	renold.gonzalez	05-11-2019 04:36:45 PM	Usuario accedió a página principal
+233	renold.gonzalez	05-11-2019 04:37:20 PM	Usuario accedió a página principal
+234	renold.gonzalez	05-11-2019 04:41:58 PM	Usuario salió del sistema
+235	test.test	05-11-2019 04:42:05 PM	Inició sesión como Usuario Regular 
+236	test.test	05-11-2019 04:42:05 PM	Usuario accedió a página principal
+237	test.test	05-11-2019 04:42:10 PM	Usuario salió del sistema
+238	renold.gonzalez	05-11-2019 04:42:14 PM	Inició sesión como administrador del sistema
+239	renold.gonzalez	05-11-2019 04:42:14 PM	Usuario accedió a página principal
+240	renold.gonzalez	05-11-2019 04:42:16 PM	Usuario accedió a página inscritos
+241	renold.gonzalez	05-11-2019 04:42:25 PM	Usuario accedió a página certificaciones
+242	renold.gonzalez	05-11-2019 04:42:28 PM	Usuario accedió a página reportes
+243	renold.gonzalez	05-11-2019 04:42:31 PM	Usuario accedió a página certificaciones
+244	renold.gonzalez	05-11-2019 04:43:38 PM	Usuario accedió a página principal
+245	renold.gonzalez	05-11-2019 04:47:01 PM	Usuario accedió a página principal
+246	renold.gonzalez	05-11-2019 04:47:06 PM	Usuario accedió a página principal
+247	renold.gonzalez	05-11-2019 04:52:29 PM	Usuario accedió a página principal
+248	renold.gonzalez	05-11-2019 04:53:20 PM	Usuario accedió a página principal
+249	renold.gonzalez	05-11-2019 04:53:33 PM	Usuario accedió a página certificaciones
+250	renold.gonzalez	05-11-2019 05:23:16 PM	Usuario accedió a página principal
+251	renold.gonzalez	05-11-2019 05:28:45 PM	Usuario accedió a página certificaciones
+252	renold.gonzalez	05-11-2019 06:21:49 PM	Usuario gener? Certificacion
+253	renold.gonzalez	05-11-2019 06:21:57 PM	Usuario gener? Certificacion
+254	renold.gonzalez	05-11-2019 06:30:34 PM	Usuario gener? Certificacion
+255	renold.gonzalez	05-11-2019 06:33:01 PM	Usuario accedió a página principal
+256	renold.gonzalez	05-11-2019 06:34:27 PM	Inició sesión como administrador del sistema
+257	renold.gonzalez	05-11-2019 06:34:27 PM	Usuario accedió a página principal
+258	renold.gonzalez	05-11-2019 06:36:36 PM	Usuario accedió a página principal
+259	renold.gonzalez	05-11-2019 06:37:10 PM	Usuario accedió a página principal
+260	renold.gonzalez	05-11-2019 06:37:29 PM	Usuario accedió a página reportes
+261	renold.gonzalez	05-11-2019 06:37:40 PM	Usuario gener? reporte academico reporteAcademico_05-11-2019_06_37_40_PM
+262	renold.gonzalez	05-11-2019 06:38:53 PM	Usuario accedió a página inscritos
+263	renold.gonzalez	05-11-2019 06:38:55 PM	Usuario accedió a página principal
+264	renold.gonzalez	05-11-2019 06:41:42 PM	Usuario accedió a página reportes
+265	renold.gonzalez	05-11-2019 06:50:46 PM	Usuario accedió a página reportes
+266	renold.gonzalez	05-11-2019 07:11:24 PM	Usuario gener? reporte academico reporteAcademico_05-11-2019_07_11_24_PM
+267	renold.gonzalez	05-11-2019 07:12:14 PM	Usuario gener? reporte academico reporteAcademico_05-11-2019_07_12_14_PM
+268	renold.gonzalez	05-11-2019 07:13:32 PM	Usuario accedió a página reportes
+269	renold.gonzalez	05-11-2019 07:13:39 PM	Usuario gener? reporte academico reporteAcademico_05-11-2019_07_13_39_PM
+270	renold.gonzalez	05-11-2019 07:15:35 PM	Usuario accedió a página principal
+271	renold.gonzalez	05-11-2019 07:23:00 PM	Usuario accedió a página reportes
+272	renold.gonzalez	05-11-2019 07:23:11 PM	Usuario gener? reporte academico reporteAcademico_05-11-2019_07_23_11_PM
+273	renold.gonzalez	05-11-2019 07:25:13 PM	Usuario accedió a página reportes
+274	renold.gonzalez	05-11-2019 07:25:14 PM	Usuario accedió a página principal
+275	renold.gonzalez	05-11-2019 07:28:28 PM	Usuario accedió a página inscritos
+276	renold.gonzalez	05-11-2019 07:28:29 PM	Usuario accedió a página certificaciones
+277	renold.gonzalez	05-11-2019 07:30:57 PM	Usuario accedió a página principal
+278	renold.gonzalez	05-11-2019 07:32:37 PM	Usuario accedió a página reportes
+279	renold.gonzalez	05-11-2019 07:34:16 PM	Usuario gener? reporte academico reporteAcademico_05-11-2019_07_34_16_PM
+280	renold.gonzalez	05-11-2019 07:34:45 PM	Usuario accedió a página principal
+281	renold.gonzalez	05-11-2019 07:35:28 PM	Usuario accedió a página certificaciones
+282	renold.gonzalez	05-11-2019 07:36:46 PM	Usuario gener? Certificacion
+283	renold.gonzalez	05-11-2019 07:37:22 PM	Usuario accedió a página principal
+284	renold.gonzalez	05-11-2019 07:38:53 PM	Usuario accedió a página inscritos
+285	renold.gonzalez	05-11-2019 07:38:57 PM	Usuario accedió a página certificaciones
+286	renold.gonzalez	05-11-2019 07:39:01 PM	Usuario accedió a página principal
+287	renold.gonzalez	05-11-2019 07:39:56 PM	Usuario accedió a página validación
+288	renold.gonzalez	05-11-2019 07:40:05 PM	Usuario accedió a página principal
+289	renold.gonzalez	05-11-2019 07:41:34 PM	Usuario accedió a página validación
+290	renold.gonzalez	05-11-2019 07:46:04 PM	Usuario accedió a página validación
+291	renold.gonzalez	05-11-2019 07:55:12 PM	Usuario accedió a página validación
+292	renold.gonzalez	05-11-2019 07:57:15 PM	Usuario accedió a página validación
+293	renold.gonzalez	05-11-2019 07:59:55 PM	Usuario accedió a página validación
+294	renold.gonzalez	05-11-2019 08:03:02 PM	Usuario accedió a página validación
+295	renold.gonzalez	05-11-2019 08:19:33 PM	Administrador validó a 011917 en BD´s
+296	renold.gonzalez	05-11-2019 08:29:08 PM	Usuario accedió a página validación
+297	renold.gonzalez	05-11-2019 08:29:16 PM	Inició sesión como administrador del sistema
+298	renold.gonzalez	05-11-2019 08:29:16 PM	Usuario accedió a página principal
+299	renold.gonzalez	05-11-2019 08:30:07 PM	Usuario accedió a página validación
+300	renold.gonzalez	05-11-2019 08:37:18 PM	Usuario accedió a página principal
+301	renold.gonzalez	05-11-2019 08:54:48 PM	Usuario accedió a página principal
+302	renold.gonzalez	05-11-2019 08:55:32 PM	Usuario accedió a página principal
+303	renold.gonzalez	05-11-2019 08:56:48 PM	Usuario accedió a página principal
+304	renold.gonzalez	05-11-2019 08:57:28 PM	Usuario accedió a página inscritos
+305	renold.gonzalez	05-11-2019 08:57:30 PM	Usuario accedió a página principal
+306	renold.gonzalez	05-11-2019 08:59:30 PM	Usuario accedió a página principal
+307	renold.gonzalez	05-11-2019 09:00:01 PM	Usuario accedió a página principal
+308	renold.gonzalez	05-11-2019 09:03:25 PM	Usuario accedió a página inscritos
+309	renold.gonzalez	05-11-2019 09:03:27 PM	Usuario accedió a página certificaciones
+310	renold.gonzalez	05-11-2019 09:03:28 PM	Usuario accedió a página inscritos
+311	renold.gonzalez	05-11-2019 09:03:34 PM	Usuario accedió a página certificaciones
+312	renold.gonzalez	05-11-2019 09:03:35 PM	Usuario accedió a página validación
+313	renold.gonzalez	05-11-2019 09:03:37 PM	Usuario accedió a página inscritos
+314	renold.gonzalez	05-11-2019 09:03:38 PM	Usuario accedió a página principal
+315	renold.gonzalez	05-11-2019 09:03:42 PM	Usuario accedió a página de administrtacion de datos
+316	renold.gonzalez	05-11-2019 09:03:45 PM	Usuario accedió a página de usuarios
+317	renold.gonzalez	05-11-2019 09:03:56 PM	Usuario accedió a página principal
+318	renold.gonzalez	05-11-2019 09:50:55 PM	Usuario accedió a página certificaciones
+319	renold.gonzalez	05-11-2019 09:50:57 PM	Usuario accedió a página validación
+320	renold.gonzalez	05-11-2019 09:51:06 PM	Usuario accedió a página principal
+321	renold.gonzalez	05-11-2019 09:53:17 PM	Usuario accedió a página inscritos
+322	renold.gonzalez	05-11-2019 10:04:17 PM	Usuario accedió a página certificaciones
+323	renold.gonzalez	05-11-2019 10:09:55 PM	Administrador eliminó el registro  V00002
+324	renold.gonzalez	05-11-2019 10:09:58 PM	Usuario accedió a página inscritos
+325	renold.gonzalez	05-11-2019 10:13:10 PM	Inició sesión como administrador del sistema
+326	renold.gonzalez	05-11-2019 10:13:11 PM	Usuario accedió a página principal
+327	renold.gonzalez	05-11-2019 10:13:30 PM	Usuario accedió a página inscritos
+328	renold.gonzalez	05-11-2019 10:21:48 PM	Usuario accedió a página certificaciones
+329	renold.gonzalez	05-11-2019 10:33:46 PM	Usuario accedió a página principal
+330	renold.gonzalez	05-11-2019 10:33:47 PM	Usuario accedió a página inscritos
+331	renold.gonzalez	05-11-2019 10:33:49 PM	Usuario accedió a página principal
+332	renold.gonzalez	05-11-2019 10:53:37 PM	Usuario salió del sistema
+333	renold.gonzalez	10-11-2019 10:19:12 AM	Inició sesión como administrador del sistema
+334	renold.gonzalez	10-11-2019 10:19:12 AM	Usuario accedió a página principal
+335	renold.gonzalez	10-11-2019 10:20:32 AM	Usuario accedió a página inscritos
+336	renold.gonzalez	10-11-2019 10:20:33 AM	Usuario accedió a página certificaciones
+337	renold.gonzalez	10-11-2019 10:20:35 AM	Usuario accedió a página inscritos
+338	renold.gonzalez	10-11-2019 10:20:37 AM	Usuario accedió a página certificaciones
+339	renold.gonzalez	10-11-2019 10:24:42 AM	Usuario accedió a página inscritos
+340	renold.gonzalez	10-11-2019 10:25:37 AM	Usuario accedió a página certificaciones
+341	renold.gonzalez	10-11-2019 10:30:21 AM	Usuario accedió a página principal
+342	renold.gonzalez	10-11-2019 11:09:49 AM	Usuario accedió a página principal
+343	renold.gonzalez	10-11-2019 11:09:55 AM	Usuario accedió a página inscritos
+344	renold.gonzalez	10-11-2019 11:18:45 AM	Usuario accedió a página inscritos
+345	renold.gonzalez	10-11-2019 11:50:52 AM	Usuario accedió a página certificaciones
+346	renold.gonzalez	10-11-2019 11:55:35 AM	Usuario accedió a página inscritos
+347	renold.gonzalez	10-11-2019 12:01:21 PM	Usuario accedió a página certificaciones
+348	renold.gonzalez	10-11-2019 12:02:02 PM	Inició sesión como administrador del sistema
+349	renold.gonzalez	10-11-2019 12:02:02 PM	Usuario accedió a página principal
+350	renold.gonzalez	10-11-2019 12:02:05 PM	Usuario accedió a página validación
+351	renold.gonzalez	10-11-2019 12:02:05 PM	Usuario accedió a página certificaciones
+352	renold.gonzalez	10-11-2019 12:03:35 PM	Usuario accedió a página certificaciones
+353	renold.gonzalez	10-11-2019 12:06:37 PM	Usuario accedió a página certificaciones
+354	renold.gonzalez	10-11-2019 12:07:02 PM	Usuario accedió a página certificaciones
+355	renold.gonzalez	10-11-2019 12:07:27 PM	Usuario accedió a página certificaciones
+356	renold.gonzalez	10-11-2019 12:13:29 PM	Usuario accedió a página certificaciones
+357	renold.gonzalez	10-11-2019 12:13:52 PM	Usuario accedió a página certificaciones
+358	renold.gonzalez	10-11-2019 12:15:09 PM	Usuario accedió a página certificaciones
+359	renold.gonzalez	10-11-2019 12:15:50 PM	Usuario accedió a página certificaciones
+360	renold.gonzalez	10-11-2019 12:24:15 PM	Usuario accedió a página certificaciones
+361	renold.gonzalez	10-11-2019 12:25:56 PM	Usuario accedió a página certificaciones
+362	renold.gonzalez	10-11-2019 12:29:40 PM	Usuario accedió a página certificaciones
+363	renold.gonzalez	10-11-2019 12:29:52 PM	Usuario accedió a página certificaciones
+364	renold.gonzalez	10-11-2019 12:32:30 PM	Usuario accedió a página certificaciones
+365	renold.gonzalez	10-11-2019 12:32:39 PM	Usuario accedió a página certificaciones
+366	renold.gonzalez	10-11-2019 12:32:50 PM	Usuario accedió a página certificaciones
+367	renold.gonzalez	10-11-2019 12:33:18 PM	Usuario accedió a página certificaciones
+368	renold.gonzalez	10-11-2019 12:35:54 PM	Usuario accedió a página certificaciones
+369	renold.gonzalez	10-11-2019 12:35:59 PM	Usuario accedió a página certificaciones
+370	renold.gonzalez	10-11-2019 12:36:08 PM	Usuario accedió a página certificaciones
+371	renold.gonzalez	10-11-2019 12:36:11 PM	Usuario accedió a página certificaciones
+372	renold.gonzalez	10-11-2019 12:36:15 PM	Usuario accedió a página certificaciones
+373	renold.gonzalez	10-11-2019 12:36:18 PM	Usuario accedió a página certificaciones
+374	renold.gonzalez	10-11-2019 12:36:21 PM	Usuario accedió a página certificaciones
+375	renold.gonzalez	10-11-2019 12:36:24 PM	Usuario accedió a página certificaciones
+376	renold.gonzalez	10-11-2019 12:36:55 PM	Usuario accedió a página certificaciones
+377	renold.gonzalez	10-11-2019 12:37:03 PM	Usuario accedió a página certificaciones
+378	renold.gonzalez	10-11-2019 12:39:00 PM	Usuario accedió a página certificaciones
+379	renold.gonzalez	10-11-2019 12:39:05 PM	Usuario accedió a página certificaciones
+380	renold.gonzalez	10-11-2019 12:39:16 PM	Usuario accedió a página certificaciones
+381	renold.gonzalez	10-11-2019 12:39:21 PM	Usuario accedió a página certificaciones
+382	renold.gonzalez	10-11-2019 12:39:26 PM	Usuario accedió a página certificaciones
+383	renold.gonzalez	10-11-2019 12:40:45 PM	Usuario accedió a página certificaciones
+384	renold.gonzalez	10-11-2019 12:41:16 PM	Usuario accedió a página certificaciones
+385	renold.gonzalez	10-11-2019 12:41:26 PM	Usuario accedió a página certificaciones
+386	renold.gonzalez	10-11-2019 12:44:21 PM	Usuario accedió a página certificaciones
+387	renold.gonzalez	10-11-2019 12:45:15 PM	Usuario accedió a página certificaciones
+388	renold.gonzalez	10-11-2019 12:45:33 PM	Usuario accedió a página certificaciones
+389	renold.gonzalez	10-11-2019 12:47:03 PM	Usuario accedió a página certificaciones
+390	renold.gonzalez	10-11-2019 12:48:45 PM	Usuario accedió a página certificaciones
+391	renold.gonzalez	10-11-2019 12:49:14 PM	Usuario accedió a página certificaciones
+392	renold.gonzalez	10-11-2019 12:49:18 PM	Usuario accedió a página certificaciones
+393	renold.gonzalez	10-11-2019 01:39:13 PM	Usuario accedió a página inscritos
+394	renold.gonzalez	10-11-2019 01:39:58 PM	Usuario accedió a página certificaciones
+395	renold.gonzalez	10-11-2019 01:40:10 PM	Usuario accedió a página certificaciones
+396	renold.gonzalez	10-11-2019 01:41:16 PM	Usuario accedió a página certificaciones
+397	renold.gonzalez	10-11-2019 01:42:19 PM	Usuario accedió a página certificaciones
+398	renold.gonzalez	10-11-2019 01:42:29 PM	Inició sesión como administrador del sistema
+399	renold.gonzalez	10-11-2019 01:42:29 PM	Usuario accedió a página principal
+400	renold.gonzalez	10-11-2019 01:42:31 PM	Usuario accedió a página certificaciones
+401	renold.gonzalez	10-11-2019 01:42:42 PM	Usuario accedió a página certificaciones
+402	renold.gonzalez	10-11-2019 01:43:17 PM	Usuario accedió a página certificaciones
+403	renold.gonzalez	10-11-2019 01:44:20 PM	Usuario accedió a página certificaciones
+404	renold.gonzalez	10-11-2019 01:44:42 PM	Usuario accedió a página certificaciones
+405	renold.gonzalez	10-11-2019 01:49:25 PM	Usuario accedió a página certificaciones
+406	renold.gonzalez	10-11-2019 01:50:48 PM	Usuario accedió a página certificaciones
+407	renold.gonzalez	10-11-2019 01:51:12 PM	Usuario accedió a página certificaciones
+408	renold.gonzalez	10-11-2019 01:51:39 PM	Usuario accedió a página certificaciones
+409	renold.gonzalez	10-11-2019 01:51:42 PM	Usuario accedió a página inscritos
+410	renold.gonzalez	10-11-2019 01:52:11 PM	Usuario accedió a página certificaciones
+411	renold.gonzalez	10-11-2019 01:54:25 PM	Usuario accedió a página certificaciones
+412	renold.gonzalez	10-11-2019 01:55:34 PM	Usuario accedió a página certificaciones
+413	renold.gonzalez	10-11-2019 01:55:53 PM	Usuario accedió a página certificaciones
+414	renold.gonzalez	10-11-2019 02:01:10 PM	Usuario accedió a página certificaciones
+415	renold.gonzalez	10-11-2019 02:01:27 PM	Usuario accedió a página certificaciones
+416	renold.gonzalez	10-11-2019 02:01:37 PM	Usuario accedió a página certificaciones
+417	renold.gonzalez	10-11-2019 02:02:05 PM	Usuario accedió a página certificaciones
+418	renold.gonzalez	10-11-2019 02:02:31 PM	Usuario accedió a página certificaciones
+419	renold.gonzalez	10-11-2019 02:04:45 PM	Usuario accedió a página certificaciones
+420	renold.gonzalez	10-11-2019 02:04:52 PM	Usuario accedió a página certificaciones
+421	renold.gonzalez	10-11-2019 02:05:13 PM	Usuario accedió a página certificaciones
+422	renold.gonzalez	10-11-2019 02:06:27 PM	Usuario accedió a página certificaciones
+423	renold.gonzalez	10-11-2019 02:06:33 PM	Usuario accedió a página certificaciones
+424	renold.gonzalez	10-11-2019 02:06:43 PM	Usuario accedió a página certificaciones
+425	renold.gonzalez	10-11-2019 02:06:46 PM	Usuario accedió a página certificaciones
+426	renold.gonzalez	10-11-2019 02:06:49 PM	Usuario accedió a página certificaciones
+427	renold.gonzalez	10-11-2019 02:06:55 PM	Usuario accedió a página certificaciones
+428	renold.gonzalez	10-11-2019 02:07:00 PM	Usuario gener? Certificacion
+429	renold.gonzalez	10-11-2019 02:07:39 PM	Usuario accedió a página certificaciones
+430	renold.gonzalez	10-11-2019 02:07:57 PM	Usuario accedió a página inscritos
+431	renold.gonzalez	10-11-2019 02:07:58 PM	Usuario accedió a página certificaciones
+432	renold.gonzalez	10-11-2019 02:08:01 PM	Usuario accedió a página validación
+433	renold.gonzalez	10-11-2019 02:08:02 PM	Usuario accedió a página certificaciones
+434	renold.gonzalez	10-11-2019 02:08:04 PM	Usuario accedió a página reportes
+435	renold.gonzalez	10-11-2019 02:08:06 PM	Usuario accedió a página certificaciones
+436	renold.gonzalez	10-11-2019 02:09:31 PM	Usuario accedió a página inscritos
+437	renold.gonzalez	10-11-2019 02:10:12 PM	Usuario accedió a página certificaciones
+438	renold.gonzalez	10-11-2019 02:10:51 PM	Usuario accedió a página certificaciones
+439	renold.gonzalez	10-11-2019 02:11:01 PM	Usuario accedió a página certificaciones
+440	renold.gonzalez	10-11-2019 02:11:04 PM	Usuario accedió a página certificaciones
+441	renold.gonzalez	10-11-2019 02:11:08 PM	Usuario accedió a página certificaciones
+442	renold.gonzalez	10-11-2019 02:13:59 PM	Usuario accedió a página certificaciones
+443	renold.gonzalez	10-11-2019 02:14:54 PM	Usuario accedió a página certificaciones
+444	renold.gonzalez	10-11-2019 02:15:45 PM	Usuario gener? Certificacion
+445	renold.gonzalez	10-11-2019 02:16:11 PM	Usuario accedió a página inscritos
+446	renold.gonzalez	10-11-2019 02:16:12 PM	Usuario accedió a página validación
+447	renold.gonzalez	10-11-2019 02:16:13 PM	Usuario accedió a página reportes
+448	renold.gonzalez	10-11-2019 02:16:14 PM	Usuario accedió a página de administrtacion de datos
+449	renold.gonzalez	10-11-2019 02:16:18 PM	Usuario accedió a página de usuarios
+450	renold.gonzalez	10-11-2019 02:16:29 PM	Administrador registro un usuario 
+451	renold.gonzalez	10-11-2019 02:16:57 PM	Usuario accedió a página inscritos
+452	renold.gonzalez	10-11-2019 02:16:59 PM	Usuario accedió a página certificaciones
+453	renold.gonzalez	10-11-2019 02:17:26 PM	Usuario accedió a página certificaciones
+454	renold.gonzalez	10-11-2019 02:20:28 PM	Usuario accedió a página certificaciones
+455	renold.gonzalez	10-11-2019 02:21:14 PM	Usuario accedió a página certificaciones
+456	renold.gonzalez	10-11-2019 02:23:50 PM	Usuario accedió a página reportes
+457	renold.gonzalez	10-11-2019 02:24:22 PM	Usuario gener? reporte academico reporteAcademico_10-11-2019_02_24_22_PM
+458	renold.gonzalez	10-11-2019 02:24:41 PM	Usuario gener? reporte academico reporteAcademico_10-11-2019_02_24_41_PM
+459	renold.gonzalez	10-11-2019 02:25:08 PM	Usuario accedió a página inscritos
+460	renold.gonzalez	10-11-2019 02:25:09 PM	Usuario accedió a página certificaciones
+461	renold.gonzalez	10-11-2019 02:25:10 PM	Usuario accedió a página validación
+462	renold.gonzalez	10-11-2019 02:25:11 PM	Usuario accedió a página reportes
+463	renold.gonzalez	10-11-2019 02:25:13 PM	Usuario accedió a página de administrtacion de datos
+464	renold.gonzalez	10-11-2019 02:25:16 PM	Usuario accedió a página inscritos
+465	renold.gonzalez	10-11-2019 02:25:17 PM	Usuario accedió a página certificaciones
+466	renold.gonzalez	10-11-2019 02:25:24 PM	Usuario accedió a página certificaciones
+467	renold.gonzalez	10-11-2019 02:46:43 PM	Usuario accedió a página certificaciones
+468	renold.gonzalez	10-11-2019 03:29:27 PM	Usuario accedió a página certificaciones
+469	renold.gonzalez	10-11-2019 03:29:33 PM	Inició sesión como administrador del sistema
+470	renold.gonzalez	10-11-2019 03:29:33 PM	Usuario accedió a página principal
+471	renold.gonzalez	10-11-2019 03:29:35 PM	Usuario accedió a página certificaciones
+472	renold.gonzalez	10-11-2019 03:29:47 PM	Usuario accedió a página certificaciones
+473	renold.gonzalez	10-11-2019 03:46:35 PM	Usuario accedió a página certificaciones
+474	renold.gonzalez	10-11-2019 03:47:09 PM	Usuario accedió a página certificaciones
+475	renold.gonzalez	10-11-2019 03:49:01 PM	Usuario accedió a página certificaciones
+476	renold.gonzalez	10-11-2019 03:50:18 PM	Usuario accedió a página certificaciones
+477	renold.gonzalez	10-11-2019 04:02:49 PM	Usuario accedió a página certificaciones
+478	renold.gonzalez	10-11-2019 04:05:00 PM	Usuario accedió a página certificaciones
+479	renold.gonzalez	10-11-2019 04:05:27 PM	Usuario accedió a página certificaciones
+480	renold.gonzalez	10-11-2019 04:05:46 PM	Usuario accedió a página certificaciones
+481	renold.gonzalez	10-11-2019 04:06:20 PM	Usuario accedió a página certificaciones
+482	renold.gonzalez	10-11-2019 04:06:37 PM	Usuario accedió a página certificaciones
+483	renold.gonzalez	10-11-2019 04:06:46 PM	Usuario accedió a página certificaciones
+484	renold.gonzalez	10-11-2019 04:10:16 PM	Usuario accedió a página certificaciones
+485	renold.gonzalez	10-11-2019 04:11:14 PM	Usuario accedió a página certificaciones
+486	renold.gonzalez	10-11-2019 04:11:19 PM	Usuario accedió a página certificaciones
+487	renold.gonzalez	10-11-2019 04:13:02 PM	Usuario accedió a página certificaciones
+488	renold.gonzalez	10-11-2019 04:14:01 PM	Usuario accedió a página certificaciones
+489	renold.gonzalez	10-11-2019 04:14:36 PM	Usuario accedió a página certificaciones
+490	renold.gonzalez	10-11-2019 04:15:07 PM	Usuario accedió a página certificaciones
+491	renold.gonzalez	10-11-2019 04:15:27 PM	Usuario accedió a página certificaciones
+492	renold.gonzalez	10-11-2019 04:15:51 PM	Usuario accedió a página certificaciones
+493	renold.gonzalez	10-11-2019 04:16:16 PM	Usuario accedió a página certificaciones
+494	renold.gonzalez	10-11-2019 04:16:40 PM	Usuario accedió a página certificaciones
+495	renold.gonzalez	10-11-2019 04:16:43 PM	Usuario accedió a página certificaciones
+496	renold.gonzalez	10-11-2019 04:16:47 PM	Usuario accedió a página certificaciones
+497	renold.gonzalez	10-11-2019 04:17:15 PM	Usuario salió del sistema
+498	renold.gonzalez	23-11-2019 11:10:24 AM	Inició sesión como administrador del sistema
+499	renold.gonzalez	23-11-2019 11:10:25 AM	Usuario accedió a página principal
+500	renold.gonzalez	23-11-2019 11:10:28 AM	Usuario salió del sistema
+501	renold.gonzalez	23-11-2019 11:10:32 AM	Inició sesión como administrador del sistema
+502	renold.gonzalez	23-11-2019 11:10:33 AM	Usuario accedió a página principal
+503	renold.gonzalez	23-11-2019 11:13:21 AM	Usuario accedió a página certificaciones
+504	renold.gonzalez	23-11-2019 11:14:07 AM	Usuario accedió a página certificaciones
+505	renold.gonzalez	23-11-2019 11:22:07 AM	Usuario accedió a página principal
+506	renold.gonzalez	23-11-2019 11:44:57 AM	Usuario accedió a página inscritos
+507	renold.gonzalez	23-11-2019 11:45:00 AM	Usuario accedió a página principal
+508	renold.gonzalez	23-11-2019 12:00:42 PM	Usuario accedió a página inscritos
+509	renold.gonzalez	23-11-2019 12:00:44 PM	Usuario accedió a página certificaciones
+510	renold.gonzalez	23-11-2019 12:03:59 PM	Usuario accedió a página certificaciones
+511	renold.gonzalez	23-11-2019 12:04:26 PM	Usuario accedió a página certificaciones
+512	renold.gonzalez	23-11-2019 12:04:44 PM	Usuario gener? Certificacion
+513	renold.gonzalez	23-11-2019 12:09:37 PM	Usuario gener? Certificacion
+514	renold.gonzalez	23-11-2019 12:12:55 PM	Usuario accedió a página certificaciones
+515	renold.gonzalez	23-11-2019 12:14:43 PM	Usuario gener? Certificacion
+516	renold.gonzalez	23-11-2019 12:15:37 PM	Usuario gener? Certificacion
+517	renold.gonzalez	23-11-2019 12:16:15 PM	Usuario accedió a página certificaciones
+518	renold.gonzalez	23-11-2019 12:16:17 PM	Usuario accedió a página certificaciones
+519	renold.gonzalez	23-11-2019 12:16:44 PM	Usuario accedió a página certificaciones
+520	renold.gonzalez	23-11-2019 12:17:41 PM	Usuario accedió a página certificaciones
+521	renold.gonzalez	23-11-2019 12:17:43 PM	Usuario accedió a página principal
+522	renold.gonzalez	23-11-2019 12:18:58 PM	Usuario accedió a página principal
+523	renold.gonzalez	23-11-2019 12:19:55 PM	Usuario accedió a página certificaciones
+524	renold.gonzalez	23-11-2019 12:23:52 PM	Usuario accedió a página certificaciones
+525	renold.gonzalez	23-11-2019 12:24:10 PM	Usuario accedió a página certificaciones
+526	renold.gonzalez	23-11-2019 12:24:21 PM	Usuario accedió a página certificaciones
+527	renold.gonzalez	23-11-2019 12:25:15 PM	Usuario accedió a página principal
+528	renold.gonzalez	23-11-2019 12:41:44 PM	Usuario accedió a página principal
+529	renold.gonzalez	23-11-2019 01:25:42 PM	Usuario accedió a página principal
+530	renold.gonzalez	23-11-2019 01:25:55 PM	Inició sesión como administrador del sistema
+531	renold.gonzalez	23-11-2019 01:25:55 PM	Usuario accedió a página principal
+532	renold.gonzalez	23-11-2019 01:26:47 PM	Usuario accedió a página inscritos
+533	renold.gonzalez	23-11-2019 01:26:49 PM	Usuario accedió a página principal
+534	renold.gonzalez	23-11-2019 01:26:58 PM	Usuario accedió a página inscritos
+535	renold.gonzalez	23-11-2019 01:28:08 PM	Usuario accedió a página de administrtacion de datos
+536	renold.gonzalez	23-11-2019 01:28:32 PM	El sistema creó el archivo inscritos23_11_2019.txt y  exportó  registros de TB inscritos - Nombre de
+537	renold.gonzalez	23-11-2019 01:29:15 PM	Administrador exportó  datos de BD Resultados 
+538	renold.gonzalez	23-11-2019 01:29:57 PM	Usuario accedió a página inscritos
+539	renold.gonzalez	23-11-2019 01:31:04 PM	Usuario accedió a página de administrtacion de datos
+540	renold.gonzalez	23-11-2019 01:31:30 PM	Administrador exportó  datos de BD Resultados 
+541	renold.gonzalez	23-11-2019 01:34:21 PM	Usuario accedió a página inscritos
+542	renold.gonzalez	23-11-2019 01:47:21 PM	Usuario accedió a página certificaciones
+543	renold.gonzalez	23-11-2019 01:47:26 PM	Usuario accedió a página certificaciones
+544	renold.gonzalez	23-11-2019 02:06:06 PM	Usuario accedió a página certificaciones
+545	renold.gonzalez	23-11-2019 02:06:23 PM	Administrador exportó  datos de BD Resultados 
+546	renold.gonzalez	23-11-2019 02:07:07 PM	Usuario accedió a página certificaciones
+547	renold.gonzalez	23-11-2019 02:07:42 PM	Usuario accedió a página certificaciones
+548	renold.gonzalez	23-11-2019 02:08:00 PM	Administrador exportó  datos de BD Resultados 
+549	renold.gonzalez	23-11-2019 02:08:45 PM	Usuario accedió a página certificaciones
+550	renold.gonzalez	23-11-2019 02:09:41 PM	Inició sesión como administrador del sistema
+551	renold.gonzalez	23-11-2019 02:09:42 PM	Usuario accedió a página principal
+552	renold.gonzalez	23-11-2019 02:09:45 PM	Usuario accedió a página certificaciones
+553	renold.gonzalez	23-11-2019 02:10:10 PM	Administrador exportó  datos de BD Resultados 
+554	renold.gonzalez	23-11-2019 02:24:04 PM	Administrador exportó  datos de BD Resultados 
+555	renold.gonzalez	23-11-2019 02:25:30 PM	Administrador exportó  datos de BD Resultados 
+556	renold.gonzalez	23-11-2019 02:25:53 PM	Administrador exportó  datos de BD Resultados 
+557	renold.gonzalez	23-11-2019 02:29:36 PM	Administrador exportó  datos de BD Resultados 
+558	renold.gonzalez	23-11-2019 02:30:12 PM	Administrador exportó  datos de BD Resultados 
+559	renold.gonzalez	23-11-2019 02:30:49 PM	Inició sesión como administrador del sistema
+560	renold.gonzalez	23-11-2019 02:30:49 PM	Usuario accedió a página principal
+561	renold.gonzalez	23-11-2019 02:30:53 PM	Usuario accedió a página certificaciones
+562	renold.gonzalez	23-11-2019 02:31:08 PM	Administrador exportó  datos de BD Resultados 
+563	renold.gonzalez	23-11-2019 02:31:09 PM	Administrador exportó  datos de BD Resultados 
+564	renold.gonzalez	23-11-2019 02:31:11 PM	Administrador exportó  datos de BD Resultados 
+565	renold.gonzalez	23-11-2019 02:31:11 PM	Usuario accedió a página inscritos
+566	renold.gonzalez	23-11-2019 02:31:11 PM	Usuario accedió a página certificaciones
+567	renold.gonzalez	23-11-2019 02:31:11 PM	Usuario accedió a página certificaciones
+568	renold.gonzalez	23-11-2019 02:31:11 PM	Usuario accedió a página certificaciones
+569	renold.gonzalez	23-11-2019 02:31:11 PM	Inició sesión como administrador del sistema
+570	renold.gonzalez	23-11-2019 02:31:11 PM	Inició sesión como administrador del sistema
+571	renold.gonzalez	23-11-2019 02:31:20 PM	Administrador exportó  datos de BD Resultados 
+572	renold.gonzalez	23-11-2019 02:33:13 PM	Administrador exportó  datos de BD Resultados 
+573	renold.gonzalez	23-11-2019 02:33:31 PM	Administrador exportó  datos de BD Resultados 
+574	renold.gonzalez	23-11-2019 02:45:29 PM	Usuario accedió a página de administrtacion de datos
+575	renold.gonzalez	23-11-2019 02:56:11 PM	Usuario accedió a página certificaciones
+576	renold.gonzalez	23-11-2019 02:56:38 PM	Administrador exportó  datos de BD Resultados 
+577	renold.gonzalez	23-11-2019 02:58:58 PM	Administrador exportó  datos de BD Resultados 
+578	renold.gonzalez	23-11-2019 03:00:26 PM	Administrador exportó  datos de BD Resultados 
+579	renold.gonzalez	23-11-2019 03:04:20 PM	Administrador exportó  datos de BD Resultados 
+580	renold.gonzalez	23-11-2019 03:05:12 PM	Administrador exportó  datos de BD Resultados 
+581	renold.gonzalez	23-11-2019 03:06:57 PM	Administrador exportó  datos de BD Resultados 
+582	renold.gonzalez	23-11-2019 03:07:43 PM	Administrador exportó  datos de BD Resultados 
+583	renold.gonzalez	23-11-2019 03:08:02 PM	Administrador exportó  datos de BD Resultados 
+584	renold.gonzalez	23-11-2019 03:09:15 PM	Administrador exportó  datos de BD Resultados 
+585	renold.gonzalez	23-11-2019 03:22:05 PM	Administrador exportó  datos de BD Resultados 
+586	renold.gonzalez	23-11-2019 03:22:45 PM	Administrador exportó  datos de BD Resultados 
+587	renold.gonzalez	23-11-2019 03:23:21 PM	Administrador exportó  datos de BD Resultados 
+588	renold.gonzalez	23-11-2019 03:23:44 PM	Administrador exportó  datos de BD Resultados 
+589	renold.gonzalez	23-11-2019 03:25:13 PM	Administrador exportó  datos de BD Resultados 
+590	renold.gonzalez	23-11-2019 03:26:09 PM	Administrador exportó  datos de BD Resultados 
+591	renold.gonzalez	23-11-2019 03:29:08 PM	Administrador exportó  datos de BD Resultados 
+592	renold.gonzalez	23-11-2019 03:30:56 PM	Administrador exportó  datos de BD Resultados 
+593	renold.gonzalez	23-11-2019 03:32:35 PM	Administrador exportó  datos de BD Resultados 
+594	renold.gonzalez	23-11-2019 03:37:29 PM	Administrador exportó  datos de BD Resultados 
+595	renold.gonzalez	23-11-2019 03:50:22 PM	Administrador exportó  datos de BD Resultados 
+596	renold.gonzalez	23-11-2019 03:51:11 PM	Administrador exportó  datos de BD Resultados 
+597	renold.gonzalez	23-11-2019 03:52:18 PM	Administrador exportó  datos de BD Resultados 
+598	renold.gonzalez	23-11-2019 03:52:51 PM	Administrador exportó  datos de BD Resultados 
+599	renold.gonzalez	23-11-2019 03:53:17 PM	Administrador exportó  datos de BD Resultados 
+600	renold.gonzalez	23-11-2019 03:59:47 PM	Administrador exportó  datos de BD Resultados 
+601	renold.gonzalez	23-11-2019 04:08:40 PM	Administrador exportó  datos de BD Resultados 
+602	renold.gonzalez	23-11-2019 04:09:15 PM	Administrador exportó  datos de BD Resultados 
+603	renold.gonzalez	23-11-2019 04:10:04 PM	Administrador exportó  datos de BD Resultados 
+604	renold.gonzalez	23-11-2019 04:11:03 PM	Usuario accedió a página certificaciones
+605	renold.gonzalez	23-11-2019 04:11:10 PM	Inició sesión como administrador del sistema
+606	renold.gonzalez	23-11-2019 04:11:11 PM	Usuario accedió a página principal
+607	renold.gonzalez	23-11-2019 04:11:15 PM	Usuario accedió a página certificaciones
+608	renold.gonzalez	23-11-2019 04:12:05 PM	Administrador exportó  datos de BD Resultados 
+609	renold.gonzalez	23-11-2019 04:12:39 PM	Administrador exportó  datos de BD Resultados 
+610	renold.gonzalez	23-11-2019 04:13:05 PM	Administrador exportó  datos de BD Resultados 
+611	renold.gonzalez	23-11-2019 04:13:43 PM	Administrador exportó  datos de BD Resultados 
+612	renold.gonzalez	23-11-2019 04:15:19 PM	Administrador exportó  datos de BD Resultados 
+613	renold.gonzalez	23-11-2019 04:16:22 PM	Administrador exportó  datos de BD Resultados 
+614	renold.gonzalez	23-11-2019 04:17:53 PM	Usuario accedió a página certificaciones
+615	renold.gonzalez	23-11-2019 04:18:10 PM	Administrador exportó  datos de BD Resultados 
+616	renold.gonzalez	23-11-2019 04:19:07 PM	Administrador exportó  datos de BD Resultados 
+617	renold.gonzalez	23-11-2019 04:20:34 PM	Administrador exportó  datos de BD Resultados 
+618	renold.gonzalez	23-11-2019 04:21:14 PM	Administrador exportó  datos de BD Resultados 
+619	renold.gonzalez	23-11-2019 04:21:37 PM	Administrador exportó  datos de BD Resultados 
+620	renold.gonzalez	23-11-2019 04:25:35 PM	Administrador exportó  datos de BD Resultados 
+621	renold.gonzalez	23-11-2019 04:26:29 PM	Administrador exportó  datos de BD Resultados 
+622	renold.gonzalez	23-11-2019 04:27:38 PM	Administrador exportó  datos de BD Resultados 
+623	renold.gonzalez	23-11-2019 04:37:40 PM	Administrador exportó  datos de BD Resultados 
+624	renold.gonzalez	23-11-2019 04:38:22 PM	Administrador exportó  datos de BD Resultados 
+625	renold.gonzalez	23-11-2019 04:38:32 PM	Usuario accedió a página certificaciones
+626	renold.gonzalez	23-11-2019 04:38:55 PM	Administrador exportó  datos de BD Resultados 
+627	renold.gonzalez	23-11-2019 04:39:46 PM	Usuario accedió a página certificaciones
+628	renold.gonzalez	23-11-2019 04:40:20 PM	Inició sesión como administrador del sistema
+629	renold.gonzalez	23-11-2019 04:40:20 PM	Usuario accedió a página principal
+630	renold.gonzalez	23-11-2019 04:40:23 PM	Usuario accedió a página certificaciones
+631	renold.gonzalez	23-11-2019 04:40:47 PM	Administrador exportó  datos de BD Resultados 
+632	renold.gonzalez	23-11-2019 04:41:47 PM	Administrador exportó  datos de BD Resultados 
+633	renold.gonzalez	23-11-2019 04:43:26 PM	Administrador exportó  datos de BD Resultados 
+634	renold.gonzalez	23-11-2019 04:44:24 PM	Usuario gener? Certificacion
+635	renold.gonzalez	23-11-2019 04:44:42 PM	Administrador exportó  datos de BD Resultados 
+636	renold.gonzalez	23-11-2019 04:48:10 PM	Administrador exportó  datos de BD Resultados 
+637	renold.gonzalez	23-11-2019 04:48:25 PM	Administrador exportó  datos de BD Resultados 
+638	renold.gonzalez	23-11-2019 04:55:28 PM	Administrador exportó  datos de BD Resultados 
+639	renold.gonzalez	23-11-2019 04:55:49 PM	Administrador exportó  datos de BD Resultados 
+640	renold.gonzalez	23-11-2019 04:56:57 PM	Usuario accedió a página inscritos
+641	renold.gonzalez	23-11-2019 04:58:24 PM	Usuario accedió a página certificaciones
+642	renold.gonzalez	23-11-2019 04:58:45 PM	Administrador exportó  datos de BD Resultados 
+643	renold.gonzalez	23-11-2019 05:03:54 PM	Administrador exportó  datos de BD Resultados 
+644	renold.gonzalez	23-11-2019 05:04:03 PM	Usuario accedió a página certificaciones
+645	renold.gonzalez	23-11-2019 05:06:34 PM	Usuario accedió a página certificaciones
+646	renold.gonzalez	23-11-2019 05:08:13 PM	Usuario accedió a página certificaciones
+647	renold.gonzalez	23-11-2019 05:08:22 PM	Administrador exportó  datos de BD Resultados 
+648	renold.gonzalez	23-11-2019 05:08:50 PM	Usuario accedió a página certificaciones
+649	renold.gonzalez	23-11-2019 05:09:00 PM	Administrador exportó  datos de BD Resultados 
+650	renold.gonzalez	23-11-2019 05:09:44 PM	Usuario accedió a página certificaciones
+651	renold.gonzalez	23-11-2019 05:10:25 PM	Usuario accedió a página certificaciones
+652	renold.gonzalez	23-11-2019 05:11:44 PM	Usuario accedió a página inscritos
+653	renold.gonzalez	23-11-2019 05:15:51 PM	Usuario accedió a página certificaciones
+654	renold.gonzalez	23-11-2019 05:15:54 PM	Usuario accedió a página inscritos
+655	renold.gonzalez	23-11-2019 05:15:58 PM	Usuario accedió a página inscritos
+656	renold.gonzalez	23-11-2019 05:16:28 PM	Usuario accedió a página certificaciones
+657	renold.gonzalez	23-11-2019 05:17:04 PM	Usuario accedió a página certificaciones
+658	renold.gonzalez	23-11-2019 05:17:13 PM	Administrador exportó  datos de BD Resultados 
+659	renold.gonzalez	23-11-2019 05:17:28 PM	Administrador exportó  datos de BD Resultados 
+660	renold.gonzalez	23-11-2019 05:17:38 PM	Usuario gener? Certificacion
+661	renold.gonzalez	23-11-2019 05:17:49 PM	Usuario accedió a página inscritos
+662	renold.gonzalez	23-11-2019 05:19:26 PM	Usuario accedió a página reportes
+663	renold.gonzalez	23-11-2019 05:20:01 PM	Usuario accedió a página reportes
+664	renold.gonzalez	23-11-2019 05:20:04 PM	Usuario accedió a página inscritos
+665	renold.gonzalez	23-11-2019 05:23:59 PM	Usuario accedió a página inscritos
+666	renold.gonzalez	23-11-2019 05:24:18 PM	Administrador exportó  datos de BD Resultados 
+667	renold.gonzalez	23-11-2019 05:24:58 PM	Usuario accedió a página inscritos
+668	renold.gonzalez	23-11-2019 05:24:59 PM	Usuario accedió a página certificaciones
+669	renold.gonzalez	23-11-2019 05:25:08 PM	Administrador exportó  datos de BD Resultados 
+670	renold.gonzalez	23-11-2019 05:25:54 PM	Usuario accedió a página certificaciones
+671	renold.gonzalez	23-11-2019 05:26:33 PM	Usuario accedió a página certificaciones
+672	renold.gonzalez	23-11-2019 05:26:49 PM	Administrador exportó  datos de BD Resultados 
+673	renold.gonzalez	23-11-2019 05:27:05 PM	Administrador exportó  datos de BD Resultados 
+674	renold.gonzalez	23-11-2019 05:27:18 PM	Usuario accedió a página inscritos
+675	renold.gonzalez	23-11-2019 05:27:31 PM	Administrador exportó  datos de BD Resultados 
+676	renold.gonzalez	23-11-2019 05:27:58 PM	Usuario accedió a página inscritos
+677	renold.gonzalez	23-11-2019 05:32:19 PM	Usuario accedió a página inscritos
+678	renold.gonzalez	23-11-2019 05:34:20 PM	Usuario accedió a página inscritos
+679	renold.gonzalez	23-11-2019 05:34:49 PM	Usuario accedió a página inscritos
+680	renold.gonzalez	23-11-2019 05:38:31 PM	Usuario accedió a página inscritos
+681	renold.gonzalez	23-11-2019 05:38:53 PM	Administrador exportó  datos de BD Resultados 
+682	renold.gonzalez	23-11-2019 05:39:24 PM	Administrador exportó  datos de BD Resultados 
+683	renold.gonzalez	23-11-2019 05:39:53 PM	Usuario accedió a página inscritos
+684	renold.gonzalez	23-11-2019 05:40:06 PM	Usuario accedió a página certificaciones
+685	renold.gonzalez	23-11-2019 05:40:28 PM	Administrador exportó  datos de BD Resultados 
+686	renold.gonzalez	23-11-2019 05:40:49 PM	Usuario gener? Certificacion
+687	renold.gonzalez	23-11-2019 05:41:04 PM	Usuario gener? Certificacion
+688	renold.gonzalez	23-11-2019 05:42:08 PM	Administrador exportó  datos de BD Resultados 
+689	renold.gonzalez	23-11-2019 05:44:59 PM	Usuario accedió a página inscritos
+690	renold.gonzalez	23-11-2019 05:45:09 PM	Administrador exportó  datos de BD Resultados 
+691	renold.gonzalez	23-11-2019 05:46:02 PM	Usuario accedió a página certificaciones
+692	renold.gonzalez	23-11-2019 05:46:29 PM	Usuario accedió a página certificaciones
+693	renold.gonzalez	23-11-2019 05:46:34 PM	Usuario accedió a página certificaciones
+694	renold.gonzalez	23-11-2019 05:46:58 PM	Usuario accedió a página inscritos
+695	renold.gonzalez	23-11-2019 05:47:01 PM	Usuario accedió a página certificaciones
+696	renold.gonzalez	23-11-2019 05:47:03 PM	Usuario accedió a página validación
+697	renold.gonzalez	23-11-2019 05:47:05 PM	Usuario accedió a página reportes
+698	renold.gonzalez	23-11-2019 05:47:20 PM	Usuario gener? reporte academico reporteAcademico_23-11-2019_05_47_20_PM
+699	renold.gonzalez	23-11-2019 05:47:42 PM	Usuario gener? reporte academico reporteAcademico_23-11-2019_05_47_42_PM
+700	renold.gonzalez	23-11-2019 05:48:04 PM	Usuario gener? reporte academico reporteAcademico_23-11-2019_05_48_04_PM
+701	renold.gonzalez	23-11-2019 05:48:42 PM	Usuario gener? reporte academico reporteAcademico_23-11-2019_05_48_42_PM
+702	renold.gonzalez	23-11-2019 05:48:47 PM	Usuario accedió a página principal
+703	renold.gonzalez	23-11-2019 05:48:56 PM	Usuario accedió a página de usuarios
+704	renold.gonzalez	23-11-2019 05:49:14 PM	Usuario accedió a página certificaciones
+705	renold.gonzalez	23-11-2019 05:49:23 PM	Administrador exportó  datos de BD Resultados 
+706	renold.gonzalez	23-11-2019 05:59:49 PM	Usuario accedió a página inscritos
+707	renold.gonzalez	23-11-2019 05:59:56 PM	Usuario accedió a página principal
+708	renold.gonzalez	23-11-2019 06:00:24 PM	Usuario salió del sistema
+709	renold.gonzalez	23-11-2019 06:18:11 PM	Inició sesión como administrador del sistema
+710	renold.gonzalez	23-11-2019 06:18:11 PM	Usuario accedió a página principal
+711	renold.gonzalez	23-11-2019 06:18:14 PM	Usuario accedió a página inscritos
+712	renold.gonzalez	23-11-2019 06:18:34 PM	Administrador exportó  datos de BD Resultados 
+713	renold.gonzalez	23-11-2019 06:19:24 PM	Usuario accedió a página certificaciones
+714	renold.gonzalez	23-11-2019 06:19:25 PM	Usuario accedió a página inscritos
+715	renold.gonzalez	23-11-2019 06:19:41 PM	Administrador exportó  datos de BD Resultados 
+716	renold.gonzalez	23-11-2019 06:23:46 PM	Usuario accedió a página de usuarios
+717	renold.gonzalez	23-11-2019 06:25:07 PM	Administrador registro un usuario 
+718	renold.gonzalez	23-11-2019 06:25:07 PM	Administrador registró a SAMPLE SAMPLE como usuario especial
+719	renold.gonzalez	23-11-2019 06:25:07 PM	Usuario accedió a página de usuarios
+720	renold.gonzalez	23-11-2019 06:25:27 PM	Usuario accedió a página de usuarios
+721	renold.gonzalez	23-11-2019 06:27:11 PM	Administrador registro un usuario 
+722	renold.gonzalez	23-11-2019 06:27:11 PM	Administrador registró a fgvtdf gdfgdfgfd como Usuario común
+723	renold.gonzalez	23-11-2019 06:27:11 PM	Usuario accedió a página de usuarios
+724	renold.gonzalez	23-11-2019 06:29:23 PM	Usuario accedió a página de usuarios
+725	renold.gonzalez	23-11-2019 06:29:30 PM	Administrador eliminó a un usuario
+726	renold.gonzalez	23-11-2019 06:29:30 PM	Administrador eliminó a [test.test]
+727	renold.gonzalez	23-11-2019 06:29:37 PM	Administrador eliminó a un usuario
+728	renold.gonzalez	23-11-2019 06:29:37 PM	Administrador eliminó a [sample.sample]
+729	renold.gonzalez	23-11-2019 06:29:40 PM	Usuario accedió a página de usuarios
+730	renold.gonzalez	23-11-2019 06:29:59 PM	Administrador eliminó a un usuario
+731	renold.gonzalez	23-11-2019 06:29:59 PM	Administrador eliminó a [rodney.vega]
+732	renold.gonzalez	23-11-2019 06:30:01 PM	Usuario accedió a página de usuarios
+733	renold.gonzalez	23-11-2019 06:30:59 PM	Administrador registro un usuario 
+734	renold.gonzalez	23-11-2019 06:31:00 PM	Administrador registró a A A como usuario especial
+735	renold.gonzalez	23-11-2019 06:31:00 PM	Usuario accedió a página de usuarios
+736	renold.gonzalez	23-11-2019 06:31:33 PM	Usuario accedió a página de administrtacion de datos
+737	renold.gonzalez	23-11-2019 06:31:51 PM	Usuario accedió a página de usuarios
+738	renold.gonzalez	23-11-2019 06:31:53 PM	Usuario accedió a página reportes
+739	renold.gonzalez	23-11-2019 06:31:55 PM	Usuario accedió a página validación
+740	renold.gonzalez	23-11-2019 06:31:57 PM	Usuario accedió a página certificaciones
+741	renold.gonzalez	23-11-2019 06:31:59 PM	Usuario accedió a página inscritos
+742	renold.gonzalez	23-11-2019 06:32:01 PM	Usuario accedió a página certificaciones
+743	renold.gonzalez	23-11-2019 06:32:34 PM	Usuario gener? Certificacion
+744	renold.gonzalez	23-11-2019 06:32:43 PM	Usuario accedió a página inscritos
+745	renold.gonzalez	23-11-2019 06:32:59 PM	Usuario accedió a página certificaciones
+746	renold.gonzalez	23-11-2019 06:33:58 PM	Administrador exportó  datos de BD Resultados 
+747	renold.gonzalez	23-11-2019 06:34:28 PM	Usuario accedió a página certificaciones
+748	renold.gonzalez	23-11-2019 06:44:29 PM	Usuario accedió a página de administrtacion de datos
+749	renold.gonzalez	23-11-2019 06:48:55 PM	Usuario accedió a página certificaciones
+750	renold.gonzalez	23-11-2019 06:50:45 PM	Usuario accedió a página certificaciones
+751	renold.gonzalez	23-11-2019 06:51:59 PM	Usuario accedió a página certificaciones
+752	renold.gonzalez	23-11-2019 06:53:19 PM	Usuario accedió a página certificaciones
+753	renold.gonzalez	23-11-2019 06:54:37 PM	Usuario accedió a página certificaciones
+754	renold.gonzalez	23-11-2019 07:02:59 PM	Usuario accedió a página certificaciones
+755	renold.gonzalez	23-11-2019 07:04:52 PM	Usuario accedió a página certificaciones
+756	renold.gonzalez	23-11-2019 07:05:25 PM	Usuario accedió a página certificaciones
+757	renold.gonzalez	23-11-2019 07:06:37 PM	Usuario accedió a página certificaciones
+758	renold.gonzalez	23-11-2019 07:06:39 PM	Usuario accedió a página certificaciones
+759	renold.gonzalez	23-11-2019 07:06:55 PM	Usuario accedió a página certificaciones
+760	renold.gonzalez	23-11-2019 07:07:35 PM	Usuario accedió a página certificaciones
+761	renold.gonzalez	23-11-2019 07:08:44 PM	Usuario accedió a página certificaciones
+762	renold.gonzalez	23-11-2019 07:09:05 PM	Usuario accedió a página certificaciones
+763	renold.gonzalez	23-11-2019 07:09:54 PM	Usuario accedió a página certificaciones
+764	renold.gonzalez	23-11-2019 07:10:58 PM	Usuario accedió a página certificaciones
+765	renold.gonzalez	23-11-2019 07:11:16 PM	Usuario accedió a página certificaciones
+766	renold.gonzalez	23-11-2019 07:13:06 PM	Usuario accedió a página certificaciones
+767	renold.gonzalez	23-11-2019 07:13:41 PM	Usuario accedió a página certificaciones
+768	renold.gonzalez	23-11-2019 07:21:13 PM	Usuario accedió a página certificaciones
+769	renold.gonzalez	23-11-2019 07:33:39 PM	Usuario accedió a página certificaciones
+770	renold.gonzalez	23-11-2019 07:34:27 PM	Usuario accedió a página certificaciones
+771	renold.gonzalez	23-11-2019 07:37:28 PM	Administrador exportó  datos de BD Resultados 
+772	renold.gonzalez	23-11-2019 07:39:47 PM	Usuario accedió a página certificaciones
+773	renold.gonzalez	23-11-2019 07:40:33 PM	Usuario accedió a página certificaciones
+774	renold.gonzalez	23-11-2019 07:43:32 PM	Usuario accedió a página certificaciones
+775	renold.gonzalez	23-11-2019 07:53:44 PM	Usuario accedió a página certificaciones
+776	renold.gonzalez	23-11-2019 07:54:02 PM	Usuario accedió a página certificaciones
+777	renold.gonzalez	23-11-2019 07:54:09 PM	Usuario accedió a página certificaciones
+778	renold.gonzalez	23-11-2019 07:54:12 PM	Usuario accedió a página certificaciones
+779	renold.gonzalez	23-11-2019 07:54:16 PM	Usuario accedió a página certificaciones
+780	renold.gonzalez	23-11-2019 07:55:02 PM	Usuario accedió a página certificaciones
+781	renold.gonzalez	23-11-2019 07:55:25 PM	Usuario accedió a página certificaciones
+782	renold.gonzalez	23-11-2019 07:55:34 PM	Usuario accedió a página certificaciones
+783	renold.gonzalez	23-11-2019 07:55:44 PM	Usuario accedió a página certificaciones
+784	renold.gonzalez	23-11-2019 07:56:25 PM	Usuario accedió a página certificaciones
+785	renold.gonzalez	23-11-2019 07:57:14 PM	Usuario accedió a página certificaciones
+786	renold.gonzalez	23-11-2019 07:57:33 PM	Usuario accedió a página certificaciones
+787	renold.gonzalez	23-11-2019 07:57:42 PM	Usuario accedió a página certificaciones
+788	renold.gonzalez	23-11-2019 07:57:54 PM	Usuario accedió a página certificaciones
+789	renold.gonzalez	23-11-2019 07:58:07 PM	Usuario accedió a página certificaciones
+790	renold.gonzalez	23-11-2019 08:01:40 PM	Usuario accedió a página certificaciones
+791	renold.gonzalez	23-11-2019 08:01:53 PM	Inició sesión como administrador del sistema
+792	renold.gonzalez	23-11-2019 08:01:53 PM	Usuario accedió a página principal
+793	renold.gonzalez	23-11-2019 08:02:01 PM	Usuario accedió a página certificaciones
+794	renold.gonzalez	23-11-2019 08:02:09 PM	Usuario accedió a página certificaciones
+795	renold.gonzalez	23-11-2019 08:02:12 PM	Usuario accedió a página certificaciones
+796	renold.gonzalez	23-11-2019 08:02:17 PM	Usuario accedió a página certificaciones
+797	renold.gonzalez	23-11-2019 08:02:30 PM	Usuario accedió a página certificaciones
+798	renold.gonzalez	23-11-2019 08:02:38 PM	Usuario accedió a página certificaciones
+799	renold.gonzalez	23-11-2019 08:03:50 PM	Usuario accedió a página certificaciones
+800	renold.gonzalez	23-11-2019 08:03:59 PM	Usuario accedió a página certificaciones
+801	renold.gonzalez	23-11-2019 08:04:32 PM	Usuario accedió a página certificaciones
+802	renold.gonzalez	23-11-2019 08:06:24 PM	Usuario accedió a página certificaciones
+803	renold.gonzalez	23-11-2019 08:06:31 PM	Usuario accedió a página certificaciones
+804	renold.gonzalez	23-11-2019 08:08:49 PM	Usuario accedió a página certificaciones
+805	renold.gonzalez	23-11-2019 08:13:02 PM	Restauro su Contraseña
+806	renold.gonzalez	23-11-2019 08:13:08 PM	Restauro su Contraseña
+807	renold.gonzalez	23-11-2019 08:14:05 PM	Usuario accedió a página certificaciones
+808	renold.gonzalez	23-11-2019 08:14:10 PM	Usuario accedió a página certificaciones
+809	renold.gonzalez	23-11-2019 08:46:58 PM	Usuario accedió a página certificaciones
+810	renold.gonzalez	23-11-2019 08:47:09 PM	Usuario accedió a página certificaciones
+811	renold.gonzalez	23-11-2019 08:47:20 PM	Usuario accedió a página certificaciones
+812	renold.gonzalez	23-11-2019 08:47:41 PM	Usuario accedió a página certificaciones
+813	renold.gonzalez	23-11-2019 08:47:51 PM	Usuario accedió a página certificaciones
+814	renold.gonzalez	23-11-2019 08:51:45 PM	Usuario accedió a página certificaciones
+815	renold.gonzalez	23-11-2019 08:51:48 PM	Usuario accedió a página certificaciones
+816	renold.gonzalez	23-11-2019 08:52:08 PM	Usuario accedió a página certificaciones
+817	renold.gonzalez	23-11-2019 08:52:20 PM	Usuario accedió a página certificaciones
+818	renold.gonzalez	23-11-2019 08:52:49 PM	Usuario accedió a página certificaciones
+819	renold.gonzalez	23-11-2019 08:53:28 PM	Usuario accedió a página certificaciones
+820	renold.gonzalez	23-11-2019 08:53:35 PM	Usuario accedió a página certificaciones
+821	renold.gonzalez	23-11-2019 08:55:06 PM	Usuario accedió a página certificaciones
+822	renold.gonzalez	23-11-2019 08:56:18 PM	Usuario accedió a página certificaciones
+823	renold.gonzalez	23-11-2019 08:56:55 PM	Usuario accedió a página certificaciones
+824	renold.gonzalez	23-11-2019 08:57:48 PM	Usuario accedió a página certificaciones
+825	renold.gonzalez	23-11-2019 09:01:19 PM	Usuario accedió a página certificaciones
+826	renold.gonzalez	23-11-2019 09:01:32 PM	Usuario accedió a página certificaciones
+827	renold.gonzalez	23-11-2019 09:03:08 PM	Usuario accedió a página certificaciones
+828	renold.gonzalez	23-11-2019 09:03:16 PM	Usuario accedió a página certificaciones
+829	renold.gonzalez	23-11-2019 09:03:27 PM	Usuario accedió a página certificaciones
+830	renold.gonzalez	23-11-2019 09:03:34 PM	Usuario accedió a página certificaciones
+831	renold.gonzalez	23-11-2019 09:03:43 PM	Usuario accedió a página certificaciones
+832	renold.gonzalez	23-11-2019 09:03:47 PM	Usuario accedió a página certificaciones
+833	renold.gonzalez	23-11-2019 09:03:59 PM	Usuario accedió a página certificaciones
+834	renold.gonzalez	23-11-2019 09:04:04 PM	Usuario accedió a página certificaciones
+835	renold.gonzalez	23-11-2019 09:06:15 PM	Usuario accedió a página certificaciones
+836	renold.gonzalez	23-11-2019 09:06:19 PM	Usuario accedió a página certificaciones
+837	renold.gonzalez	23-11-2019 09:07:05 PM	Usuario accedió a página certificaciones
+838	renold.gonzalez	23-11-2019 09:07:20 PM	Usuario accedió a página certificaciones
+839	renold.gonzalez	23-11-2019 09:07:22 PM	Usuario accedió a página certificaciones
+840	renold.gonzalez	23-11-2019 09:07:44 PM	Usuario accedió a página certificaciones
+841	renold.gonzalez	23-11-2019 09:07:54 PM	Usuario accedió a página certificaciones
+842	renold.gonzalez	23-11-2019 09:08:17 PM	Usuario accedió a página validación
+843	renold.gonzalez	23-11-2019 09:08:24 PM	Usuario accedió a página inscritos
+844	renold.gonzalez	23-11-2019 09:08:26 PM	Usuario accedió a página certificaciones
+845	renold.gonzalez	23-11-2019 09:08:34 PM	Usuario accedió a página certificaciones
+846	renold.gonzalez	23-11-2019 09:08:38 PM	Usuario accedió a página certificaciones
+847	renold.gonzalez	23-11-2019 09:08:50 PM	Usuario accedió a página certificaciones
+848	renold.gonzalez	23-11-2019 09:10:26 PM	Usuario accedió a página validación
+849	renold.gonzalez	23-11-2019 09:10:58 PM	Usuario accedió a página certificaciones
+850	renold.gonzalez	23-11-2019 09:11:00 PM	Usuario accedió a página validación
+851	renold.gonzalez	23-11-2019 09:11:04 PM	Usuario accedió a página certificaciones
+852	renold.gonzalez	23-11-2019 09:11:11 PM	Usuario accedió a página certificaciones
+853	renold.gonzalez	23-11-2019 09:11:20 PM	Usuario accedió a página certificaciones
+854	renold.gonzalez	23-11-2019 09:11:30 PM	Usuario accedió a página inscritos
+855	renold.gonzalez	23-11-2019 09:12:44 PM	Usuario accedió a página certificaciones
+856	renold.gonzalez	23-11-2019 09:13:10 PM	Usuario accedió a página certificaciones
+857	renold.gonzalez	23-11-2019 09:13:18 PM	Usuario accedió a página certificaciones
+858	renold.gonzalez	23-11-2019 09:13:25 PM	Usuario accedió a página certificaciones
+859	renold.gonzalez	23-11-2019 09:14:04 PM	Usuario gener? Certificacion
+860	renold.gonzalez	23-11-2019 09:14:15 PM	Administrador exportó  datos de BD Resultados 
+861	renold.gonzalez	23-11-2019 09:14:36 PM	Usuario accedió a página certificaciones
+862	renold.gonzalez	23-11-2019 09:14:45 PM	Administrador eliminó el registro  017642
+863	renold.gonzalez	23-11-2019 09:14:50 PM	Administrador eliminó el registro  004998
+864	renold.gonzalez	23-11-2019 09:14:55 PM	Administrador eliminó el registro  004998
+865	renold.gonzalez	23-11-2019 09:14:59 PM	Administrador eliminó el registro  017296
+866	renold.gonzalez	23-11-2019 09:15:04 PM	Usuario accedió a página validación
+867	renold.gonzalez	23-11-2019 09:15:05 PM	Usuario accedió a página reportes
+868	renold.gonzalez	23-11-2019 09:15:08 PM	Usuario accedió a página inscritos
+869	renold.gonzalez	23-11-2019 09:16:20 PM	Usuario accedió a página certificaciones
+870	renold.gonzalez	23-11-2019 09:16:28 PM	Usuario accedió a página certificaciones
+871	renold.gonzalez	23-11-2019 09:16:32 PM	Usuario accedió a página certificaciones
+872	renold.gonzalez	23-11-2019 09:16:50 PM	Usuario accedió a página de usuarios
+873	renold.gonzalez	23-11-2019 09:17:06 PM	Usuario salió del sistema
+874	renold.gonzalez	24-11-2019 06:27:58 AM	Inició sesión como administrador del sistema
+875	renold.gonzalez	24-11-2019 06:27:58 AM	Usuario accedió a página principal
+876	renold.gonzalez	24-11-2019 06:28:03 AM	Usuario accedió a página inscritos
+877	renold.gonzalez	24-11-2019 06:28:12 AM	Administrador exportó  datos de BD Resultados 
+878	renold.gonzalez	24-11-2019 06:28:57 AM	Usuario accedió a página certificaciones
+879	renold.gonzalez	24-11-2019 06:29:21 AM	Administrador exportó  datos de BD Resultados 
+880	renold.gonzalez	24-11-2019 06:29:44 AM	Usuario gener? Certificacion
+881	renold.gonzalez	24-11-2019 06:29:55 AM	Usuario accedió a página principal
+882	renold.gonzalez	24-11-2019 06:30:26 AM	Usuario accedió a página de usuarios
+883	renold.gonzalez	24-11-2019 06:30:35 AM	Usuario accedió a página de administrtacion de datos
+884	renold.gonzalez	24-11-2019 06:30:38 AM	Usuario accedió a página reportes
+885	renold.gonzalez	24-11-2019 06:30:58 AM	Usuario gener? reporte academico reporteAcademico_24-11-2019_06_30_58_AM
+886	renold.gonzalez	24-11-2019 06:31:20 AM	Usuario accedió a página inscritos
+887	renold.gonzalez	24-11-2019 06:34:05 AM	Usuario accedió a página inscritos
+888	renold.gonzalez	24-11-2019 06:34:10 AM	Usuario accedió a página inscritos
+889	renold.gonzalez	24-11-2019 06:34:12 AM	Usuario accedió a página inscritos
+890	renold.gonzalez	24-11-2019 06:34:13 AM	Usuario accedió a página inscritos
+891	renold.gonzalez	24-11-2019 06:34:15 AM	Usuario accedió a página inscritos
+892	renold.gonzalez	24-11-2019 06:36:01 AM	Usuario accedió a página inscritos
+893	renold.gonzalez	24-11-2019 06:36:05 AM	Usuario accedió a página inscritos
+894	renold.gonzalez	24-11-2019 06:37:06 AM	Administrador exportó  datos de BD Resultados 
+895	renold.gonzalez	24-11-2019 06:38:29 AM	Administrador exportó  datos de BD Resultados 
+896	renold.gonzalez	24-11-2019 06:39:21 AM	Usuario accedió a página inscritos
+897	renold.gonzalez	24-11-2019 06:39:41 AM	Usuario accedió a página inscritos
+898	renold.gonzalez	24-11-2019 06:39:54 AM	Usuario accedió a página inscritos
+899	renold.gonzalez	24-11-2019 06:40:36 AM	Usuario accedió a página certificaciones
+900	renold.gonzalez	24-11-2019 06:40:55 AM	Usuario accedió a página certificaciones
+901	renold.gonzalez	24-11-2019 06:41:15 AM	Usuario accedió a página certificaciones
+902	renold.gonzalez	24-11-2019 06:42:05 AM	Usuario accedió a página certificaciones
+903	renold.gonzalez	24-11-2019 06:42:12 AM	Usuario accedió a página certificaciones
+904	renold.gonzalez	24-11-2019 06:42:43 AM	Usuario accedió a página certificaciones
+905	renold.gonzalez	24-11-2019 06:50:14 AM	Usuario accedió a página inscritos
+906	renold.gonzalez	24-11-2019 06:52:45 AM	Administrador exportó  datos de BD Resultados 
+907	renold.gonzalez	24-11-2019 06:58:35 AM	Usuario accedió a página inscritos
+908	renold.gonzalez	24-11-2019 06:58:50 AM	Usuario accedió a página inscritos
+909	renold.gonzalez	24-11-2019 06:59:05 AM	Usuario accedió a página inscritos
+910	renold.gonzalez	24-11-2019 07:00:15 AM	Usuario accedió a página inscritos
+911	renold.gonzalez	24-11-2019 07:00:42 AM	Usuario accedió a página inscritos
+912	renold.gonzalez	24-11-2019 07:01:28 AM	Usuario accedió a página inscritos
+913	renold.gonzalez	24-11-2019 07:01:38 AM	Usuario accedió a página inscritos
+914	renold.gonzalez	24-11-2019 07:02:32 AM	Usuario accedió a página inscritos
+915	renold.gonzalez	24-11-2019 07:02:38 AM	Usuario accedió a página inscritos
+916	renold.gonzalez	24-11-2019 07:02:42 AM	Usuario accedió a página inscritos
+917	renold.gonzalez	24-11-2019 07:03:31 AM	Usuario accedió a página inscritos
+918	renold.gonzalez	24-11-2019 07:04:08 AM	Usuario accedió a página inscritos
+919	renold.gonzalez	24-11-2019 07:05:12 AM	Usuario accedió a página inscritos
+920	renold.gonzalez	24-11-2019 07:06:37 AM	Usuario accedió a página inscritos
+921	renold.gonzalez	24-11-2019 07:11:37 AM	Usuario accedió a página inscritos
+922	renold.gonzalez	24-11-2019 07:13:54 AM	Usuario accedió a página inscritos
+923	renold.gonzalez	24-11-2019 07:15:10 AM	Usuario accedió a página inscritos
+924	renold.gonzalez	24-11-2019 07:15:51 AM	Usuario accedió a página inscritos
+925	renold.gonzalez	24-11-2019 07:19:17 AM	Usuario accedió a página inscritos
+926	renold.gonzalez	24-11-2019 07:21:54 AM	Usuario accedió a página inscritos
+927	renold.gonzalez	24-11-2019 07:23:32 AM	Usuario accedió a página inscritos
+928	renold.gonzalez	24-11-2019 07:24:48 AM	Usuario accedió a página inscritos
+929	renold.gonzalez	24-11-2019 07:26:24 AM	Usuario accedió a página inscritos
+930	renold.gonzalez	24-11-2019 07:26:52 AM	Usuario accedió a página inscritos
+931	renold.gonzalez	24-11-2019 07:29:40 AM	Usuario accedió a página inscritos
+932	renold.gonzalez	24-11-2019 07:34:05 AM	Usuario accedió a página inscritos
+933	renold.gonzalez	24-11-2019 07:34:39 AM	Usuario accedió a página inscritos
+934	renold.gonzalez	24-11-2019 07:35:06 AM	Usuario accedió a página inscritos
+935	renold.gonzalez	24-11-2019 07:35:47 AM	Usuario accedió a página inscritos
+936	renold.gonzalez	24-11-2019 07:38:19 AM	Usuario accedió a página inscritos
+937	renold.gonzalez	24-11-2019 07:39:11 AM	Usuario accedió a página inscritos
+938	renold.gonzalez	24-11-2019 07:41:49 AM	Usuario accedió a página inscritos
+939	renold.gonzalez	24-11-2019 07:47:24 AM	Usuario accedió a página inscritos
+940	renold.gonzalez	24-11-2019 07:47:49 AM	Usuario accedió a página inscritos
+941	renold.gonzalez	24-11-2019 07:48:22 AM	Usuario accedió a página inscritos
+942	renold.gonzalez	24-11-2019 07:50:24 AM	Usuario accedió a página inscritos
+943	renold.gonzalez	24-11-2019 07:50:56 AM	Usuario accedió a página inscritos
+944	renold.gonzalez	24-11-2019 08:16:46 AM	Usuario accedió a página inscritos
+945	renold.gonzalez	24-11-2019 08:16:54 AM	Inició sesión como administrador del sistema
+946	renold.gonzalez	24-11-2019 08:16:55 AM	Usuario accedió a página principal
+947	renold.gonzalez	24-11-2019 08:16:58 AM	Usuario accedió a página inscritos
+948	renold.gonzalez	24-11-2019 08:25:02 AM	Usuario accedió a página inscritos
+949	renold.gonzalez	24-11-2019 08:30:41 AM	Usuario accedió a página inscritos
+950	renold.gonzalez	24-11-2019 08:31:48 AM	Usuario accedió a página inscritos
+951	renold.gonzalez	24-11-2019 08:33:09 AM	Usuario accedió a página inscritos
+952	renold.gonzalez	24-11-2019 08:33:42 AM	Administrador eliminó el registro  
+953	renold.gonzalez	24-11-2019 08:37:13 AM	Usuario accedió a página inscritos
+954	renold.gonzalez	24-11-2019 08:41:20 AM	Usuario accedió a página inscritos
+955	renold.gonzalez	24-11-2019 08:47:59 AM	Usuario accedió a página principal
+956	renold.gonzalez	24-11-2019 08:48:00 AM	Usuario accedió a página inscritos
+957	renold.gonzalez	24-11-2019 08:50:34 AM	Usuario accedió a página inscritos
+958	renold.gonzalez	24-11-2019 08:50:37 AM	Usuario accedió a página inscritos
+959	renold.gonzalez	24-11-2019 08:56:31 AM	Usuario accedió a página certificaciones
+960	renold.gonzalez	24-11-2019 08:56:33 AM	Usuario accedió a página inscritos
+961	renold.gonzalez	24-11-2019 08:58:04 AM	Usuario accedió a página certificaciones
+962	renold.gonzalez	24-11-2019 09:00:40 AM	Usuario accedió a página inscritos
+963	renold.gonzalez	24-11-2019 09:01:15 AM	Usuario accedió a página inscritos
+964	renold.gonzalez	24-11-2019 09:01:18 AM	Usuario accedió a página inscritos
+965	renold.gonzalez	24-11-2019 09:01:20 AM	Usuario accedió a página inscritos
+966	renold.gonzalez	24-11-2019 09:05:09 AM	Usuario accedió a página inscritos
+967	renold.gonzalez	24-11-2019 09:06:16 AM	Usuario accedió a página certificaciones
+968	renold.gonzalez	24-11-2019 09:06:18 AM	Usuario accedió a página inscritos
+969	renold.gonzalez	24-11-2019 09:06:21 AM	Usuario accedió a página certificaciones
+970	renold.gonzalez	24-11-2019 09:06:23 AM	Usuario accedió a página inscritos
+971	renold.gonzalez	24-11-2019 09:06:24 AM	Usuario accedió a página certificaciones
+972	renold.gonzalez	24-11-2019 09:06:25 AM	Usuario accedió a página inscritos
+973	renold.gonzalez	24-11-2019 09:06:27 AM	Usuario accedió a página certificaciones
+974	renold.gonzalez	24-11-2019 09:06:29 AM	Usuario accedió a página inscritos
+975	renold.gonzalez	24-11-2019 09:07:32 AM	Usuario accedió a página principal
+976	renold.gonzalez	24-11-2019 09:07:35 AM	Usuario accedió a página certificaciones
+977	renold.gonzalez	24-11-2019 09:08:14 AM	Usuario accedió a página certificaciones
+978	renold.gonzalez	24-11-2019 09:08:15 AM	Usuario accedió a página inscritos
+979	renold.gonzalez	24-11-2019 09:10:04 AM	Usuario accedió a página inscritos
+980	renold.gonzalez	24-11-2019 09:11:27 AM	Usuario accedió a página inscritos
+981	renold.gonzalez	24-11-2019 09:11:29 AM	Usuario accedió a página inscritos
+982	renold.gonzalez	24-11-2019 09:11:34 AM	Usuario accedió a página inscritos
+983	renold.gonzalez	24-11-2019 09:27:10 AM	Usuario accedió a página inscritos
+984	renold.gonzalez	24-11-2019 09:29:33 AM	Usuario accedió a página inscritos
+985	renold.gonzalez	24-11-2019 09:33:28 AM	Usuario accedió a página inscritos
+986	renold.gonzalez	24-11-2019 09:38:14 AM	Usuario accedió a página inscritos
+987	renold.gonzalez	24-11-2019 09:38:35 AM	Usuario accedió a página certificaciones
+988	renold.gonzalez	24-11-2019 09:38:59 AM	Usuario accedió a página certificaciones
+989	renold.gonzalez	24-11-2019 09:39:21 AM	Usuario accedió a página certificaciones
+990	renold.gonzalez	24-11-2019 09:39:34 AM	Usuario accedió a página inscritos
+991	renold.gonzalez	24-11-2019 09:40:14 AM	Usuario accedió a página inscritos
+992	renold.gonzalez	24-11-2019 09:40:43 AM	Usuario accedió a página inscritos
+993	renold.gonzalez	24-11-2019 09:41:57 AM	Usuario accedió a página certificaciones
+994	renold.gonzalez	24-11-2019 09:42:09 AM	Usuario accedió a página certificaciones
+995	renold.gonzalez	24-11-2019 09:42:18 AM	Usuario accedió a página certificaciones
+996	renold.gonzalez	24-11-2019 09:43:10 AM	Usuario accedió a página inscritos
+997	renold.gonzalez	24-11-2019 09:43:12 AM	Usuario accedió a página certificaciones
+998	renold.gonzalez	24-11-2019 09:43:14 AM	Usuario accedió a página inscritos
+999	renold.gonzalez	24-11-2019 09:43:16 AM	Usuario accedió a página certificaciones
+1000	renold.gonzalez	24-11-2019 09:43:30 AM	Usuario accedió a página certificaciones
+1001	renold.gonzalez	24-11-2019 09:43:40 AM	Administrador eliminó el registro  V00001
+1002	renold.gonzalez	24-11-2019 10:22:20 AM	Usuario accedió a página certificaciones
+1003	renold.gonzalez	24-11-2019 10:22:27 AM	Inició sesión como administrador del sistema
+1004	renold.gonzalez	24-11-2019 10:22:27 AM	Usuario accedió a página principal
+1005	renold.gonzalez	24-11-2019 10:22:29 AM	Usuario accedió a página certificaciones
+1006	renold.gonzalez	24-11-2019 10:22:45 AM	Usuario accedió a página certificaciones
+1007	renold.gonzalez	24-11-2019 10:23:38 AM	Administrador eliminó el registro  V00001
+1008	renold.gonzalez	24-11-2019 10:24:25 AM	Administrador eliminó el registro  V00001
+1009	renold.gonzalez	24-11-2019 10:26:52 AM	Usuario accedió a página certificaciones
+1010	renold.gonzalez	24-11-2019 10:27:59 AM	Usuario accedió a página certificaciones
+1011	renold.gonzalez	24-11-2019 10:28:35 AM	Usuario accedió a página certificaciones
+1012	renold.gonzalez	24-11-2019 10:31:56 AM	Usuario accedió a página certificaciones
+1013	renold.gonzalez	24-11-2019 10:32:04 AM	Administrador eliminó el registro  012480
+1014	renold.gonzalez	24-11-2019 10:33:20 AM	Usuario accedió a página de usuarios
+1015	renold.gonzalez	24-11-2019 10:33:33 AM	Usuario accedió a página certificaciones
+1016	renold.gonzalez	24-11-2019 10:34:27 AM	Administrador eliminó el registro  002067
+1017	renold.gonzalez	24-11-2019 10:35:03 AM	Administrador eliminó el registro  000970
+1018	renold.gonzalez	24-11-2019 10:35:26 AM	Administrador eliminó el registro  002003
+1019	renold.gonzalez	24-11-2019 10:35:33 AM	Usuario accedió a página de usuarios
+1020	renold.gonzalez	24-11-2019 10:36:21 AM	Administrador eliminó a un usuario
+1021	renold.gonzalez	24-11-2019 10:36:21 AM	Administrador eliminó a [sample.sample]
+1022	renold.gonzalez	24-11-2019 10:36:25 AM	Usuario accedió a página de usuarios
+1023	renold.gonzalez	24-11-2019 10:36:28 AM	Usuario accedió a página inscritos
+1024	renold.gonzalez	24-11-2019 10:36:36 AM	Usuario accedió a página certificaciones
+1025	renold.gonzalez	24-11-2019 10:36:51 AM	Usuario accedió a página certificaciones
+1026	renold.gonzalez	24-11-2019 10:37:20 AM	Usuario accedió a página certificaciones
+1027	renold.gonzalez	24-11-2019 10:37:26 AM	Administrador exportó  datos de BD Resultados 
+1028	renold.gonzalez	24-11-2019 10:37:44 AM	Usuario accedió a página inscritos
+1029	renold.gonzalez	24-11-2019 10:39:12 AM	Usuario accedió a página certificaciones
+1030	renold.gonzalez	24-11-2019 10:39:25 AM	Usuario accedió a página certificaciones
+1031	renold.gonzalez	24-11-2019 10:39:32 AM	Usuario accedió a página certificaciones
+1032	renold.gonzalez	24-11-2019 10:39:39 AM	Usuario accedió a página certificaciones
+1033	renold.gonzalez	24-11-2019 10:40:18 AM	Usuario accedió a página certificaciones
+1034	renold.gonzalez	24-11-2019 10:40:29 AM	Usuario accedió a página certificaciones
+1035	renold.gonzalez	24-11-2019 10:41:02 AM	Usuario accedió a página certificaciones
+1036	renold.gonzalez	24-11-2019 10:41:15 AM	Usuario accedió a página certificaciones
+1037	renold.gonzalez	24-11-2019 10:41:58 AM	Usuario accedió a página certificaciones
+1038	renold.gonzalez	24-11-2019 10:42:05 AM	Usuario accedió a página certificaciones
+1039	renold.gonzalez	24-11-2019 10:42:14 AM	Usuario accedió a página certificaciones
+1040	renold.gonzalez	24-11-2019 10:42:27 AM	Usuario accedió a página certificaciones
+1041	renold.gonzalez	24-11-2019 10:42:38 AM	Usuario accedió a página certificaciones
+1042	renold.gonzalez	24-11-2019 10:42:45 AM	Usuario accedió a página certificaciones
+1043	renold.gonzalez	24-11-2019 10:42:57 AM	Usuario accedió a página certificaciones
+1044	renold.gonzalez	24-11-2019 10:43:09 AM	Usuario accedió a página certificaciones
+1045	renold.gonzalez	24-11-2019 10:43:13 AM	Usuario accedió a página certificaciones
+1046	renold.gonzalez	24-11-2019 10:43:21 AM	Usuario accedió a página certificaciones
+1047	renold.gonzalez	24-11-2019 10:43:33 AM	Usuario accedió a página certificaciones
+1048	renold.gonzalez	24-11-2019 10:43:41 AM	Usuario accedió a página certificaciones
+1049	renold.gonzalez	24-11-2019 10:43:56 AM	Usuario accedió a página certificaciones
+1050	renold.gonzalez	24-11-2019 10:44:00 AM	Usuario accedió a página certificaciones
+1051	renold.gonzalez	24-11-2019 10:44:13 AM	Usuario accedió a página certificaciones
+1052	renold.gonzalez	24-11-2019 10:44:21 AM	Usuario accedió a página certificaciones
+1053	renold.gonzalez	24-11-2019 10:44:38 AM	Administrador exportó  datos de BD Resultados 
+1054	renold.gonzalez	24-11-2019 10:45:04 AM	Usuario accedió a página certificaciones
+1055	renold.gonzalez	24-11-2019 10:45:11 AM	Usuario accedió a página certificaciones
+1056	renold.gonzalez	24-11-2019 10:45:24 AM	Usuario accedió a página certificaciones
+1057	renold.gonzalez	24-11-2019 10:45:37 AM	Usuario accedió a página certificaciones
+1058	renold.gonzalez	24-11-2019 10:45:46 AM	Usuario accedió a página certificaciones
+1059	renold.gonzalez	24-11-2019 10:46:06 AM	Usuario accedió a página certificaciones
+1060	renold.gonzalez	24-11-2019 10:46:16 AM	Usuario accedió a página certificaciones
+1061	renold.gonzalez	24-11-2019 10:46:27 AM	Usuario accedió a página certificaciones
+1062	renold.gonzalez	24-11-2019 10:51:08 AM	Usuario accedió a página certificaciones
+1063	renold.gonzalez	24-11-2019 10:51:15 AM	Usuario accedió a página certificaciones
+1064	renold.gonzalez	24-11-2019 10:51:33 AM	Usuario accedió a página certificaciones
+1065	renold.gonzalez	24-11-2019 10:52:25 AM	Usuario accedió a página certificaciones
+1066	renold.gonzalez	24-11-2019 10:52:59 AM	Usuario accedió a página certificaciones
+1067	renold.gonzalez	24-11-2019 10:53:28 AM	Usuario accedió a página certificaciones
+1068	renold.gonzalez	24-11-2019 10:54:37 AM	Usuario accedió a página certificaciones
+1069	renold.gonzalez	24-11-2019 10:55:28 AM	Usuario accedió a página certificaciones
+1070	renold.gonzalez	24-11-2019 10:55:53 AM	Usuario accedió a página certificaciones
+1071	renold.gonzalez	24-11-2019 10:56:28 AM	Usuario accedió a página certificaciones
+1072	renold.gonzalez	24-11-2019 10:56:32 AM	Usuario accedió a página certificaciones
+1073	renold.gonzalez	24-11-2019 10:57:10 AM	Usuario accedió a página certificaciones
+1074	renold.gonzalez	24-11-2019 10:57:32 AM	Usuario accedió a página certificaciones
+1075	renold.gonzalez	24-11-2019 10:59:37 AM	Usuario accedió a página certificaciones
+1076	renold.gonzalez	24-11-2019 10:59:50 AM	Usuario accedió a página certificaciones
+1077	renold.gonzalez	24-11-2019 11:03:18 AM	Usuario accedió a página certificaciones
+1078	renold.gonzalez	24-11-2019 11:04:21 AM	Usuario accedió a página certificaciones
+1079	renold.gonzalez	24-11-2019 11:04:27 AM	Usuario accedió a página certificaciones
+1080	renold.gonzalez	24-11-2019 11:06:45 AM	Usuario accedió a página certificaciones
+1081	renold.gonzalez	24-11-2019 11:06:51 AM	Usuario accedió a página certificaciones
+1082	renold.gonzalez	24-11-2019 11:07:09 AM	Usuario accedió a página certificaciones
+1083	renold.gonzalez	24-11-2019 11:10:38 AM	Usuario accedió a página certificaciones
+1084	renold.gonzalez	24-11-2019 11:10:50 AM	Usuario accedió a página certificaciones
+1085	renold.gonzalez	24-11-2019 11:12:16 AM	Usuario accedió a página certificaciones
+1086	renold.gonzalez	24-11-2019 11:15:39 AM	Usuario accedió a página certificaciones
+1087	renold.gonzalez	24-11-2019 11:15:57 AM	Usuario accedió a página certificaciones
+1088	renold.gonzalez	24-11-2019 11:16:04 AM	Usuario accedió a página certificaciones
+1089	renold.gonzalez	24-11-2019 11:16:12 AM	Usuario accedió a página certificaciones
+1090	renold.gonzalez	24-11-2019 11:16:23 AM	Usuario accedió a página certificaciones
+1091	renold.gonzalez	24-11-2019 11:16:32 AM	Usuario accedió a página certificaciones
+1092	renold.gonzalez	24-11-2019 11:20:44 AM	Usuario accedió a página certificaciones
+1093	renold.gonzalez	24-11-2019 11:21:16 AM	Usuario accedió a página certificaciones
+1094	renold.gonzalez	24-11-2019 11:21:19 AM	Usuario accedió a página certificaciones
+1095	renold.gonzalez	24-11-2019 11:23:53 AM	Usuario accedió a página certificaciones
+1096	renold.gonzalez	24-11-2019 11:24:09 AM	Usuario accedió a página certificaciones
+1097	renold.gonzalez	24-11-2019 11:24:13 AM	Usuario accedió a página certificaciones
+1098	renold.gonzalez	24-11-2019 11:24:17 AM	Usuario accedió a página certificaciones
+1099	renold.gonzalez	24-11-2019 11:26:07 AM	Usuario accedió a página certificaciones
+1100	renold.gonzalez	24-11-2019 11:26:14 AM	Usuario accedió a página certificaciones
+1101	renold.gonzalez	24-11-2019 11:27:10 AM	Usuario accedió a página certificaciones
+1102	renold.gonzalez	24-11-2019 11:30:54 AM	Usuario accedió a página certificaciones
+1103	renold.gonzalez	24-11-2019 11:31:18 AM	Usuario accedió a página certificaciones
+1104	renold.gonzalez	24-11-2019 11:31:47 AM	Usuario accedió a página certificaciones
+1105	renold.gonzalez	24-11-2019 11:31:50 AM	Usuario accedió a página certificaciones
+1106	renold.gonzalez	24-11-2019 11:31:59 AM	Usuario accedió a página certificaciones
+1107	renold.gonzalez	24-11-2019 11:32:08 AM	Usuario accedió a página certificaciones
+1108	renold.gonzalez	24-11-2019 11:32:10 AM	Usuario accedió a página certificaciones
+1109	renold.gonzalez	24-11-2019 11:32:15 AM	Usuario accedió a página certificaciones
+1110	renold.gonzalez	24-11-2019 11:32:20 AM	Usuario accedió a página certificaciones
+1111	renold.gonzalez	24-11-2019 11:33:03 AM	Usuario accedió a página certificaciones
+1112	renold.gonzalez	24-11-2019 11:33:07 AM	Usuario accedió a página certificaciones
+1113	renold.gonzalez	24-11-2019 11:33:08 AM	Usuario accedió a página certificaciones
+1114	renold.gonzalez	24-11-2019 11:33:09 AM	Usuario accedió a página certificaciones
+1115	renold.gonzalez	24-11-2019 11:33:10 AM	Usuario accedió a página certificaciones
+1116	renold.gonzalez	24-11-2019 11:33:43 AM	Usuario accedió a página certificaciones
+1117	renold.gonzalez	24-11-2019 11:33:55 AM	Usuario accedió a página certificaciones
+1118	renold.gonzalez	24-11-2019 11:37:32 AM	Usuario accedió a página certificaciones
+1119	renold.gonzalez	24-11-2019 11:37:53 AM	Usuario accedió a página certificaciones
+1120	renold.gonzalez	24-11-2019 11:38:59 AM	Usuario accedió a página certificaciones
+1121	renold.gonzalez	24-11-2019 11:39:04 AM	Usuario accedió a página certificaciones
+1122	renold.gonzalez	24-11-2019 11:40:16 AM	Usuario accedió a página certificaciones
+1123	renold.gonzalez	24-11-2019 11:40:27 AM	Usuario accedió a página certificaciones
+1124	renold.gonzalez	24-11-2019 11:44:22 AM	Usuario accedió a página certificaciones
+1125	renold.gonzalez	24-11-2019 11:44:55 AM	Usuario accedió a página certificaciones
+1126	renold.gonzalez	24-11-2019 11:44:58 AM	Usuario accedió a página certificaciones
+1127	renold.gonzalez	24-11-2019 11:45:01 AM	Usuario accedió a página certificaciones
+1128	renold.gonzalez	24-11-2019 11:45:18 AM	Usuario accedió a página certificaciones
+1129	renold.gonzalez	24-11-2019 11:46:21 AM	Usuario accedió a página inscritos
+1130	renold.gonzalez	24-11-2019 11:46:23 AM	Usuario accedió a página certificaciones
+1131	renold.gonzalez	24-11-2019 11:46:30 AM	Usuario accedió a página inscritos
+1132	renold.gonzalez	24-11-2019 11:46:32 AM	Usuario accedió a página certificaciones
+1133	renold.gonzalez	24-11-2019 11:46:34 AM	Usuario accedió a página inscritos
+1134	renold.gonzalez	24-11-2019 11:46:36 AM	Usuario accedió a página certificaciones
+1135	renold.gonzalez	24-11-2019 11:46:37 AM	Usuario accedió a página inscritos
+1136	renold.gonzalez	24-11-2019 11:46:39 AM	Usuario accedió a página certificaciones
+1137	renold.gonzalez	24-11-2019 11:46:41 AM	Usuario accedió a página inscritos
+1138	renold.gonzalez	24-11-2019 11:46:42 AM	Usuario accedió a página certificaciones
+1139	renold.gonzalez	24-11-2019 11:48:35 AM	Usuario accedió a página certificaciones
+1140	renold.gonzalez	24-11-2019 11:48:52 AM	Usuario accedió a página certificaciones
+1141	renold.gonzalez	24-11-2019 11:51:11 AM	Usuario accedió a página inscritos
+1142	renold.gonzalez	24-11-2019 11:51:13 AM	Usuario accedió a página certificaciones
+1143	renold.gonzalez	24-11-2019 11:51:14 AM	Usuario accedió a página inscritos
+1144	renold.gonzalez	24-11-2019 11:51:16 AM	Usuario accedió a página certificaciones
+1145	renold.gonzalez	24-11-2019 11:51:18 AM	Usuario accedió a página inscritos
+1146	renold.gonzalez	24-11-2019 11:51:19 AM	Usuario accedió a página certificaciones
+1147	renold.gonzalez	24-11-2019 11:51:29 AM	Usuario accedió a página inscritos
+1148	renold.gonzalez	24-11-2019 11:51:31 AM	Usuario accedió a página certificaciones
+1149	renold.gonzalez	24-11-2019 11:51:47 AM	Usuario gener? Certificacion
+1150	renold.gonzalez	24-11-2019 11:56:26 AM	Usuario accedió a página certificaciones
+1151	renold.gonzalez	24-11-2019 11:56:43 AM	Usuario accedió a página certificaciones
+1152	renold.gonzalez	24-11-2019 11:56:48 AM	Usuario accedió a página certificaciones
+1153	renold.gonzalez	24-11-2019 11:56:52 AM	Usuario accedió a página certificaciones
+1154	renold.gonzalez	24-11-2019 11:57:02 AM	Administrador eliminó el registro  V00001
+1155	renold.gonzalez	24-11-2019 11:57:43 AM	Usuario accedió a página validación
+1156	renold.gonzalez	24-11-2019 11:57:44 AM	Usuario accedió a página inscritos
+1157	renold.gonzalez	24-11-2019 11:57:45 AM	Usuario accedió a página certificaciones
+1158	renold.gonzalez	24-11-2019 11:57:48 AM	Usuario accedió a página inscritos
+1159	renold.gonzalez	24-11-2019 11:57:49 AM	Usuario accedió a página certificaciones
+1160	renold.gonzalez	24-11-2019 11:57:51 AM	Usuario accedió a página de administrtacion de datos
+1161	renold.gonzalez	24-11-2019 11:57:54 AM	Usuario accedió a página reportes
+1162	renold.gonzalez	24-11-2019 11:57:56 AM	Usuario accedió a página certificaciones
+1163	renold.gonzalez	24-11-2019 11:57:57 AM	Usuario accedió a página reportes
+1164	renold.gonzalez	24-11-2019 11:57:59 AM	Usuario accedió a página certificaciones
+1165	renold.gonzalez	24-11-2019 11:58:00 AM	Usuario accedió a página validación
+1166	renold.gonzalez	24-11-2019 11:58:01 AM	Usuario accedió a página reportes
+1167	renold.gonzalez	24-11-2019 11:58:24 AM	Usuario accedió a página validación
+1168	renold.gonzalez	24-11-2019 11:58:25 AM	Usuario accedió a página reportes
+1169	renold.gonzalez	24-11-2019 11:58:35 AM	Usuario accedió a página reportes
+1170	renold.gonzalez	24-11-2019 11:58:38 AM	Usuario accedió a página certificaciones
+1171	renold.gonzalez	24-11-2019 11:58:40 AM	Usuario accedió a página validación
+1172	renold.gonzalez	24-11-2019 11:58:42 AM	Usuario accedió a página reportes
+1173	renold.gonzalez	24-11-2019 11:58:44 AM	Usuario accedió a página certificaciones
+1174	renold.gonzalez	24-11-2019 11:58:46 AM	Usuario accedió a página reportes
+1175	renold.gonzalez	24-11-2019 11:58:48 AM	Usuario accedió a página certificaciones
+1176	renold.gonzalez	24-11-2019 11:58:50 AM	Usuario accedió a página reportes
+1177	renold.gonzalez	24-11-2019 12:05:44 PM	Usuario accedió a página inscritos
+1178	renold.gonzalez	24-11-2019 12:05:52 PM	Inició sesión como administrador del sistema
+1179	renold.gonzalez	24-11-2019 12:05:52 PM	Usuario accedió a página principal
+1180	renold.gonzalez	24-11-2019 12:05:56 PM	Usuario accedió a página certificaciones
+1181	renold.gonzalez	24-11-2019 12:06:15 PM	Administrador exportó  datos de BD Resultados 
+1182	renold.gonzalez	24-11-2019 12:16:00 PM	Usuario accedió a página certificaciones
+1183	renold.gonzalez	24-11-2019 12:19:26 PM	Usuario accedió a página certificaciones
+1184	renold.gonzalez	24-11-2019 12:21:48 PM	Usuario accedió a página inscritos
+1185	renold.gonzalez	24-11-2019 12:30:08 PM	Usuario accedió a página inscritos
+1186	renold.gonzalez	24-11-2019 12:30:14 PM	Usuario accedió a página certificaciones
+1187	renold.gonzalez	24-11-2019 12:30:28 PM	Usuario accedió a página certificaciones
+1188	renold.gonzalez	24-11-2019 12:30:31 PM	Usuario accedió a página certificaciones
+1189	renold.gonzalez	24-11-2019 12:39:06 PM	Usuario accedió a página certificaciones
+1190	renold.gonzalez	24-11-2019 12:49:54 PM	Usuario accedió a página inscritos
+1191	renold.gonzalez	24-11-2019 12:50:06 PM	Usuario accedió a página certificaciones
+1192	renold.gonzalez	24-11-2019 12:50:14 PM	Usuario accedió a página certificaciones
+1193	renold.gonzalez	24-11-2019 12:51:38 PM	Usuario accedió a página certificaciones
+1194	renold.gonzalez	24-11-2019 01:16:54 PM	Usuario accedió a página certificaciones
+1195	renold.gonzalez	24-11-2019 01:18:26 PM	Usuario accedió a página certificaciones
+1196	renold.gonzalez	24-11-2019 01:18:49 PM	Usuario accedió a página certificaciones
+1197	renold.gonzalez	24-11-2019 01:19:17 PM	Usuario accedió a página certificaciones
+1198	renold.gonzalez	24-11-2019 01:24:41 PM	Usuario accedió a página certificaciones
+1199	renold.gonzalez	24-11-2019 01:24:51 PM	Usuario accedió a página inscritos
+1200	renold.gonzalez	24-11-2019 01:26:28 PM	Usuario accedió a página certificaciones
+1201	renold.gonzalez	24-11-2019 01:27:39 PM	Usuario accedió a página certificaciones
+1202	renold.gonzalez	24-11-2019 01:27:46 PM	Usuario accedió a página certificaciones
+1203	renold.gonzalez	24-11-2019 01:28:17 PM	Usuario accedió a página certificaciones
+1204	renold.gonzalez	24-11-2019 01:28:19 PM	Usuario accedió a página certificaciones
+1205	renold.gonzalez	24-11-2019 01:28:22 PM	Usuario accedió a página certificaciones
+1206	renold.gonzalez	24-11-2019 01:28:25 PM	Usuario accedió a página certificaciones
+1207	renold.gonzalez	24-11-2019 01:29:23 PM	Usuario accedió a página certificaciones
+1208	renold.gonzalez	24-11-2019 01:29:26 PM	Usuario accedió a página certificaciones
+1209	renold.gonzalez	24-11-2019 01:30:57 PM	Usuario accedió a página certificaciones
+1210	renold.gonzalez	24-11-2019 01:31:03 PM	Usuario accedió a página certificaciones
+1211	renold.gonzalez	24-11-2019 01:31:21 PM	Usuario accedió a página inscritos
+1212	renold.gonzalez	24-11-2019 01:31:26 PM	Usuario accedió a página certificaciones
+1213	renold.gonzalez	24-11-2019 01:33:52 PM	Usuario accedió a página certificaciones
+1214	renold.gonzalez	24-11-2019 01:33:55 PM	Usuario accedió a página certificaciones
+1215	renold.gonzalez	24-11-2019 01:34:13 PM	Usuario accedió a página certificaciones
+1216	renold.gonzalez	24-11-2019 01:34:46 PM	Usuario accedió a página certificaciones
+1217	renold.gonzalez	24-11-2019 01:34:49 PM	Usuario accedió a página certificaciones
+1218	renold.gonzalez	24-11-2019 01:34:49 PM	Usuario accedió a página certificaciones
+1219	renold.gonzalez	24-11-2019 01:35:46 PM	Usuario accedió a página certificaciones
+1220	renold.gonzalez	24-11-2019 01:36:19 PM	Usuario accedió a página certificaciones
+1221	renold.gonzalez	24-11-2019 01:36:37 PM	Usuario accedió a página certificaciones
+1222	renold.gonzalez	24-11-2019 01:37:36 PM	Usuario accedió a página certificaciones
+1223	renold.gonzalez	24-11-2019 01:38:32 PM	Usuario accedió a página certificaciones
+1224	renold.gonzalez	24-11-2019 01:49:08 PM	Usuario accedió a página certificaciones
+1225	renold.gonzalez	24-11-2019 01:49:33 PM	Inició sesión como administrador del sistema
+1226	renold.gonzalez	24-11-2019 01:49:33 PM	Usuario accedió a página principal
+1227	renold.gonzalez	24-11-2019 01:49:36 PM	Usuario accedió a página inscritos
+1228	renold.gonzalez	24-11-2019 01:49:42 PM	Usuario accedió a página certificaciones
+1229	renold.gonzalez	24-11-2019 01:50:26 PM	Usuario accedió a página certificaciones
+1230	renold.gonzalez	24-11-2019 01:51:36 PM	Usuario accedió a página certificaciones
+1231	renold.gonzalez	24-11-2019 01:56:42 PM	Usuario accedió a página certificaciones
+1232	renold.gonzalez	24-11-2019 01:56:55 PM	Usuario accedió a página certificaciones
+1233	renold.gonzalez	24-11-2019 01:57:33 PM	Usuario accedió a página certificaciones
+1234	renold.gonzalez	24-11-2019 01:57:46 PM	Usuario accedió a página certificaciones
+1235	renold.gonzalez	24-11-2019 01:58:09 PM	Usuario accedió a página certificaciones
+1236	renold.gonzalez	24-11-2019 02:01:06 PM	Usuario accedió a página certificaciones
+1237	renold.gonzalez	24-11-2019 02:01:18 PM	Usuario accedió a página certificaciones
+1238	renold.gonzalez	24-11-2019 02:05:09 PM	Usuario accedió a página inscritos
+1239	renold.gonzalez	24-11-2019 02:05:17 PM	Usuario accedió a página inscritos
+1240	renold.gonzalez	24-11-2019 02:05:34 PM	Administrador eliminó el registro   - DB Resultados
+1241	renold.gonzalez	24-11-2019 02:06:11 PM	Usuario accedió a página inscritos
+1242	renold.gonzalez	24-11-2019 02:06:50 PM	Usuario accedió a página inscritos
+1243	renold.gonzalez	24-11-2019 02:08:13 PM	Usuario accedió a página inscritos
+1244	renold.gonzalez	24-11-2019 02:08:24 PM	Usuario accedió a página certificaciones
+1245	renold.gonzalez	24-11-2019 02:08:33 PM	Usuario accedió a página certificaciones
+1246	renold.gonzalez	24-11-2019 02:08:39 PM	Administrador eliminó el registro  000406 - DB Resultados
+1247	renold.gonzalez	24-11-2019 02:09:19 PM	Administrador eliminó el registro  000406 - DB Resultados
+1248	renold.gonzalez	24-11-2019 02:09:53 PM	Administrador eliminó el registro  000406 - DB Resultados
+1249	renold.gonzalez	24-11-2019 02:10:47 PM	Administrador eliminó el registro  000406 - DB Resultados
+1250	renold.gonzalez	24-11-2019 02:10:53 PM	Usuario accedió a página inscritos
+1251	renold.gonzalez	24-11-2019 02:11:21 PM	Administrador eliminó el registro  000406 - DB Resultados
+1252	renold.gonzalez	24-11-2019 02:11:51 PM	Administrador eliminó el registro  000231 - DB Resultados
+1253	renold.gonzalez	24-11-2019 02:14:34 PM	Usuario accedió a página inscritos
+1254	renold.gonzalez	24-11-2019 02:14:43 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1255	renold.gonzalez	24-11-2019 02:16:25 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1256	renold.gonzalez	24-11-2019 02:16:52 PM	Usuario accedió a página inscritos
+1257	renold.gonzalez	24-11-2019 02:16:56 PM	Usuario accedió a página inscritos
+1258	renold.gonzalez	24-11-2019 02:17:07 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1259	renold.gonzalez	24-11-2019 02:17:19 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1260	renold.gonzalez	24-11-2019 02:17:33 PM	Usuario accedió a página inscritos
+1261	renold.gonzalez	24-11-2019 02:17:41 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1262	renold.gonzalez	24-11-2019 02:18:02 PM	Usuario accedió a página de usuarios
+1263	renold.gonzalez	24-11-2019 02:18:12 PM	Usuario accedió a página inscritos
+1264	renold.gonzalez	24-11-2019 02:18:21 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1265	renold.gonzalez	24-11-2019 02:19:28 PM	Administrador eliminó el registro  000406 - DB Inscritos
+1266	renold.gonzalez	24-11-2019 02:19:48 PM	Usuario accedió a página inscritos
+1267	renold.gonzalez	24-11-2019 02:20:16 PM	Administrador eliminó el registro  000480 - DB Inscritos
+1268	renold.gonzalez	24-11-2019 02:21:24 PM	Administrador eliminó el registro  000752 - DB Inscritos
+1269	renold.gonzalez	24-11-2019 02:21:50 PM	Usuario accedió a página de usuarios
+1270	renold.gonzalez	24-11-2019 02:22:00 PM	Usuario accedió a página principal
+1271	renold.gonzalez	24-11-2019 02:22:50 PM	Usuario accedió a página certificaciones
+1272	renold.gonzalez	24-11-2019 02:22:55 PM	Usuario accedió a página certificaciones
+1273	renold.gonzalez	24-11-2019 02:23:26 PM	Usuario accedió a página certificaciones
+1274	renold.gonzalez	24-11-2019 02:24:07 PM	Usuario accedió a página inscritos
+1275	renold.gonzalez	24-11-2019 02:24:12 PM	Usuario accedió a página certificaciones
+1276	renold.gonzalez	24-11-2019 02:24:33 PM	Usuario accedió a página certificaciones
+1277	renold.gonzalez	24-11-2019 02:24:46 PM	Usuario accedió a página certificaciones
+1278	renold.gonzalez	24-11-2019 02:24:59 PM	Usuario accedió a página certificaciones
+1279	renold.gonzalez	24-11-2019 02:25:06 PM	Usuario accedió a página certificaciones
+1280	renold.gonzalez	24-11-2019 02:25:37 PM	Usuario accedió a página certificaciones
+1281	renold.gonzalez	24-11-2019 02:25:47 PM	Usuario accedió a página certificaciones
+1282	renold.gonzalez	24-11-2019 02:25:52 PM	Usuario accedió a página certificaciones
+1283	renold.gonzalez	24-11-2019 02:25:58 PM	Usuario accedió a página certificaciones
+1284	renold.gonzalez	24-11-2019 02:26:15 PM	Usuario accedió a página principal
+1285	renold.gonzalez	24-11-2019 02:26:18 PM	Usuario accedió a página inscritos
+1286	renold.gonzalez	24-11-2019 02:26:20 PM	Usuario accedió a página certificaciones
+1287	renold.gonzalez	24-11-2019 02:26:21 PM	Usuario accedió a página inscritos
+1288	renold.gonzalez	24-11-2019 02:26:22 PM	Usuario accedió a página de administrtacion de datos
+1289	renold.gonzalez	24-11-2019 02:26:25 PM	Usuario accedió a página certificaciones
+1290	renold.gonzalez	24-11-2019 02:26:26 PM	Usuario accedió a página inscritos
+1291	renold.gonzalez	24-11-2019 02:26:28 PM	Usuario accedió a página certificaciones
+1292	renold.gonzalez	24-11-2019 02:26:30 PM	Usuario salió del sistema
+1293	renold.gonzalez	24-11-2019 02:30:21 PM	Inició sesión como administrador del sistema
+1294	renold.gonzalez	24-11-2019 02:30:21 PM	Usuario accedió a página principal
+1295	renold.gonzalez	24-11-2019 02:30:23 PM	Usuario accedió a página certificaciones
+1296	renold.gonzalez	24-11-2019 02:30:37 PM	Usuario accedió a página certificaciones
+1297	renold.gonzalez	26-11-2019 06:44:57 AM	Inició sesión como administrador del sistema
+1298	renold.gonzalez	26-11-2019 06:44:57 AM	Usuario accedió a página principal
+1299	renold.gonzalez	26-11-2019 06:44:59 AM	Usuario accedió a página certificaciones
+1300	renold.gonzalez	26-11-2019 06:45:00 AM	Usuario accedió a página inscritos
+1301	renold.gonzalez	26-11-2019 06:45:08 AM	Usuario accedió a página certificaciones
+1302	renold.gonzalez	26-11-2019 06:45:23 AM	Administrador exportó  datos de BD Resultados 
+1303	renold.gonzalez	26-11-2019 06:45:39 AM	Usuario accedió a página certificaciones
+1304	renold.gonzalez	26-11-2019 06:45:48 AM	Administrador exportó  datos de BD Resultados 
+1305	renold.gonzalez	26-11-2019 06:47:25 AM	Usuario accedió a página inscritos
+1306	renold.gonzalez	26-11-2019 06:47:52 AM	Administrador exportó  datos de BD Resultados 
+1307	renold.gonzalez	26-11-2019 06:48:04 AM	Administrador exportó  datos de BD Resultados 
+1308	renold.gonzalez	26-11-2019 06:49:25 AM	Administrador exportó  datos de BD Resultados 
+1309	renold.gonzalez	26-11-2019 06:51:41 AM	Usuario accedió a página inscritos
+1310	renold.gonzalez	26-11-2019 06:51:53 AM	Administrador exportó  datos de BD Resultados 
+1311	renold.gonzalez	26-11-2019 06:53:29 AM	Administrador exportó  datos de BD Resultados 
+1312	renold.gonzalez	28-11-2019 07:38:49 AM	Usuario salió del sistema
+1313	renold.gonzalez	28-11-2019 07:39:01 AM	Inició sesión como administrador del sistema
+1314	renold.gonzalez	28-11-2019 07:39:01 AM	Usuario accedió a página principal
+1315	renold.gonzalez	28-11-2019 07:39:13 AM	Usuario accedió a página certificaciones
+1316	renold.gonzalez	28-11-2019 07:39:20 AM	Usuario accedió a página inscritos
+1317	renold.gonzalez	28-11-2019 07:39:23 AM	Usuario accedió a página certificaciones
+1318	renold.gonzalez	28-11-2019 07:39:24 AM	Usuario accedió a página inscritos
+1319	renold.gonzalez	28-11-2019 07:39:26 AM	Usuario accedió a página certificaciones
+1320	renold.gonzalez	28-11-2019 07:39:29 AM	Usuario accedió a página inscritos
+1321	renold.gonzalez	28-11-2019 07:39:31 AM	Usuario accedió a página certificaciones
+1322	renold.gonzalez	28-11-2019 07:39:32 AM	Usuario accedió a página principal
+1323	renold.gonzalez	28-11-2019 07:39:34 AM	Usuario accedió a página inscritos
+1324	renold.gonzalez	28-11-2019 07:39:36 AM	Usuario accedió a página certificaciones
+1325	renold.gonzalez	28-11-2019 07:39:50 AM	Administrador exportó  datos de BD Resultados 
+1326	renold.gonzalez	28-11-2019 07:40:03 AM	Administrador exportó  datos de BD Resultados 
+1327	renold.gonzalez	28-11-2019 07:40:14 AM	Usuario accedió a página inscritos
+1328	renold.gonzalez	28-11-2019 07:40:46 AM	Administrador exportó  datos de BD Resultados 
+1329	renold.gonzalez	28-11-2019 07:47:17 AM	Administrador exportó  datos de BD Resultados 
+1330	renold.gonzalez	28-11-2019 07:54:03 AM	Administrador exportó  datos de BD Resultados 
+1331	renold.gonzalez	28-11-2019 07:57:14 AM	Administrador exportó  datos de BD Resultados 
+1332	renold.gonzalez	28-11-2019 08:00:56 AM	Administrador exportó  datos de BD Resultados 
+1333	renold.gonzalez	28-11-2019 08:01:48 AM	Administrador exportó  datos de BD Resultados 
+1334	renold.gonzalez	28-11-2019 08:01:59 AM	Administrador exportó  datos de BD Resultados 
+1335	renold.gonzalez	28-11-2019 08:33:23 AM	Usuario accedió a página inscritos
+1336	renold.gonzalez	28-11-2019 08:37:25 AM	Usuario accedió a página inscritos
+1337	renold.gonzalez	28-11-2019 08:37:41 AM	Administrador exportó  datos de BD Resultados 
+1338	renold.gonzalez	28-11-2019 08:37:42 AM	Genero un archivo exportado de Inscritos
+1339	renold.gonzalez	28-11-2019 08:38:15 AM	Usuario accedió a página de usuarios
+1340	renold.gonzalez	28-11-2019 08:44:20 AM	Usuario accedió a página inscritos
+1341	renold.gonzalez	28-11-2019 08:47:01 AM	Administrador exportó  datos de BD Resultados 
+1342	renold.gonzalez	28-11-2019 08:47:01 AM	Verificación de duplicidad de archivos csv
+1343	renold.gonzalez	28-11-2019 08:47:01 AM	Se renombro el archivo csv a tmp
+1344	renold.gonzalez	28-11-2019 08:47:01 AM	Generó un archivo exportado de Inscritos
+1345	renold.gonzalez	28-11-2019 08:47:14 AM	Administrador exportó  datos de BD Resultados 
+1346	renold.gonzalez	28-11-2019 08:47:14 AM	Verificación de duplicidad de archivos csv
+1347	renold.gonzalez	28-11-2019 08:47:14 AM	Se renombro el archivo csv a tmp
+1348	renold.gonzalez	28-11-2019 08:47:15 AM	Generó un archivo exportado de Inscritos
+1349	renold.gonzalez	28-11-2019 08:47:35 AM	Usuario accedió a página de usuarios
+1350	renold.gonzalez	28-11-2019 08:50:08 AM	Usuario accedió a página inscritos
+1351	renold.gonzalez	28-11-2019 08:50:27 AM	Usuario accedió a página certificaciones
+1352	renold.gonzalez	28-11-2019 08:50:35 AM	Administrador exportó  datos de BD Resultados 
+1353	renold.gonzalez	28-11-2019 08:50:35 AM	Verificación de duplicidad de archivos csv
+1354	renold.gonzalez	28-11-2019 08:50:36 AM	No hay archivos duplicados para exportar
+1355	renold.gonzalez	28-11-2019 08:50:37 AM	Generó un archivo exportado de Resultados
+1356	renold.gonzalez	28-11-2019 08:51:42 AM	Administrador exportó  datos de BD Resultados 
+1357	renold.gonzalez	28-11-2019 08:51:42 AM	Verificación de duplicidad de archivos csv
+1358	renold.gonzalez	28-11-2019 08:51:42 AM	Se renombro el archivo csv a tmp
+1359	renold.gonzalez	28-11-2019 08:51:43 AM	Generó un archivo exportado de Resultados
+1360	renold.gonzalez	28-11-2019 08:51:53 AM	Administrador exportó  datos de BD Resultados 
+1361	renold.gonzalez	28-11-2019 08:51:53 AM	Verificación de duplicidad de archivos csv
+1362	renold.gonzalez	28-11-2019 08:51:53 AM	Se renombro el archivo csv a tmp
+1363	renold.gonzalez	28-11-2019 08:51:54 AM	Generó un archivo exportado de Resultados
+1364	renold.gonzalez	28-11-2019 08:54:51 AM	Usuario accedió a página certificaciones
+1365	renold.gonzalez	28-11-2019 08:57:01 AM	Administrador exportó  datos de BD Resultados 
+1366	renold.gonzalez	28-11-2019 08:57:01 AM	Verificación de duplicidad de archivos csv
+1367	renold.gonzalez	28-11-2019 08:57:01 AM	Se renombro el archivo csv a tmp
+1368	renold.gonzalez	28-11-2019 08:57:01 AM	Generó un archivo exportado de Resultados
+1369	renold.gonzalez	28-11-2019 08:57:10 AM	Usuario accedió a página inscritos
+1370	renold.gonzalez	28-11-2019 08:57:31 AM	Administrador exportó  datos de BD Resultados 
+1371	renold.gonzalez	28-11-2019 08:57:31 AM	Verificación de duplicidad de archivos csv
+1372	renold.gonzalez	28-11-2019 08:57:31 AM	Se renombro el archivo csv a tmp
+1373	renold.gonzalez	28-11-2019 08:57:32 AM	Generó un archivo exportado de Inscritos
+1374	renold.gonzalez	28-11-2019 08:57:47 AM	Usuario accedió a página de usuarios
+1375	renold.gonzalez	28-11-2019 08:58:43 AM	Usuario accedió a página de usuarios
+1376	renold.gonzalez	28-11-2019 08:58:48 AM	Usuario accedió a página inscritos
+1377	renold.gonzalez	28-11-2019 09:01:28 AM	Usuario accedió a página inscritos
+1378	renold.gonzalez	28-11-2019 09:01:42 AM	Administrador exportó  datos de BD Resultados 
+1379	renold.gonzalez	28-11-2019 09:01:42 AM	Verificación de duplicidad de archivos csv
+1380	renold.gonzalez	28-11-2019 09:01:42 AM	Se renombro el archivo csv a tmp
+1381	renold.gonzalez	28-11-2019 09:01:43 AM	Generó un archivo exportado de Inscritos
+1382	renold.gonzalez	28-11-2019 09:01:51 AM	Administrador exportó  datos de BD Resultados 
+1383	renold.gonzalez	28-11-2019 09:01:51 AM	Verificación de duplicidad de archivos csv
+1384	renold.gonzalez	28-11-2019 09:01:51 AM	Se renombro el archivo csv a tmp
+1385	renold.gonzalez	28-11-2019 09:01:51 AM	Generó un archivo exportado de Inscritos
+1386	renold.gonzalez	28-11-2019 09:03:58 AM	Administrador exportó  datos de BD Resultados 
+1387	renold.gonzalez	28-11-2019 09:03:58 AM	Verificación de duplicidad de archivos csv
+1388	renold.gonzalez	28-11-2019 09:03:58 AM	No hay archivos duplicados para exportar
+1389	renold.gonzalez	28-11-2019 09:03:58 AM	Generó un archivo exportado de Inscritos
+1390	renold.gonzalez	28-11-2019 09:04:02 AM	Administrador exportó  datos de BD Resultados 
+1391	renold.gonzalez	28-11-2019 09:04:02 AM	Verificación de duplicidad de archivos csv
+1392	renold.gonzalez	28-11-2019 09:04:02 AM	Se renombro el archivo csv a tmp
+1393	renold.gonzalez	28-11-2019 09:04:03 AM	Generó un archivo exportado de Inscritos
+1394	renold.gonzalez	28-11-2019 09:04:12 AM	Administrador exportó  datos de BD Resultados 
+1395	renold.gonzalez	28-11-2019 09:04:12 AM	Verificación de duplicidad de archivos csv
+1396	renold.gonzalez	28-11-2019 09:04:13 AM	Se renombro el archivo csv a tmp
+1397	renold.gonzalez	28-11-2019 09:04:13 AM	Generó un archivo exportado de Inscritos
+1398	renold.gonzalez	28-11-2019 09:04:29 AM	Usuario accedió a página certificaciones
+1399	renold.gonzalez	28-11-2019 09:04:40 AM	Administrador exportó  datos de BD Resultados 
+1400	renold.gonzalez	28-11-2019 09:04:40 AM	Verificación de duplicidad de archivos csv
+1401	renold.gonzalez	28-11-2019 09:04:40 AM	No hay archivos duplicados para exportar
+1402	renold.gonzalez	28-11-2019 09:04:42 AM	Generó un archivo exportado de Resultados
+1403	renold.gonzalez	28-11-2019 09:04:48 AM	Administrador exportó  datos de BD Resultados 
+1404	renold.gonzalez	28-11-2019 09:04:48 AM	Verificación de duplicidad de archivos csv
+1405	renold.gonzalez	28-11-2019 09:04:48 AM	Se renombro el archivo csv a tmp
+1406	renold.gonzalez	28-11-2019 09:04:50 AM	Generó un archivo exportado de Resultados
+1407	renold.gonzalez	28-11-2019 09:04:59 AM	Administrador exportó  datos de BD Resultados 
+1408	renold.gonzalez	28-11-2019 09:04:59 AM	Verificación de duplicidad de archivos csv
+1409	renold.gonzalez	28-11-2019 09:04:59 AM	Se renombro el archivo csv a tmp
+1410	renold.gonzalez	28-11-2019 09:05:01 AM	Generó un archivo exportado de Resultados
+1411	renold.gonzalez	28-11-2019 09:06:52 AM	Administrador exportó  datos de BD Resultados 
+1412	renold.gonzalez	28-11-2019 09:06:52 AM	Verificación de duplicidad de archivos csv
+1413	renold.gonzalez	28-11-2019 09:06:52 AM	Se renombro el archivo csv a tmp
+1414	renold.gonzalez	28-11-2019 09:06:53 AM	Generó un archivo exportado de Resultados
+1415	renold.gonzalez	28-11-2019 09:09:32 AM	Usuario accedió a página certificaciones
+1416	renold.gonzalez	28-11-2019 09:09:42 AM	Administrador exportó  datos de BD Resultados 
+1417	renold.gonzalez	28-11-2019 09:09:42 AM	Verificación de duplicidad de archivos csv
+1418	renold.gonzalez	28-11-2019 09:09:42 AM	Se renombro el archivo csv a tmp
+1419	renold.gonzalez	28-11-2019 09:09:42 AM	Generó un archivo exportado de Resultados
+1420	renold.gonzalez	28-11-2019 09:10:14 AM	Administrador exportó  datos de BD Resultados 
+1421	renold.gonzalez	28-11-2019 09:10:14 AM	Verificación de duplicidad de archivos csv
+1422	renold.gonzalez	28-11-2019 09:10:14 AM	No hay archivos duplicados para exportar
+1423	renold.gonzalez	28-11-2019 09:10:14 AM	Generó un archivo exportado de Resultados
+1424	renold.gonzalez	28-11-2019 09:10:20 AM	Administrador exportó  datos de BD Resultados 
+1425	renold.gonzalez	28-11-2019 09:10:21 AM	Verificación de duplicidad de archivos csv
+1426	renold.gonzalez	28-11-2019 09:10:21 AM	Se renombro el archivo csv a tmp
+1427	renold.gonzalez	28-11-2019 09:10:21 AM	Generó un archivo exportado de Resultados
+1428	renold.gonzalez	28-11-2019 09:10:25 AM	Administrador exportó  datos de BD Resultados 
+1429	renold.gonzalez	28-11-2019 09:10:25 AM	Verificación de duplicidad de archivos csv
+1430	renold.gonzalez	28-11-2019 09:10:25 AM	Se renombro el archivo csv a tmp
+1431	renold.gonzalez	28-11-2019 09:10:25 AM	Generó un archivo exportado de Resultados
+1432	renold.gonzalez	28-11-2019 09:10:30 AM	Administrador exportó  datos de BD Resultados 
+1433	renold.gonzalez	28-11-2019 09:10:30 AM	Verificación de duplicidad de archivos csv
+1434	renold.gonzalez	28-11-2019 09:10:30 AM	Se renombro el archivo csv a tmp
+1435	renold.gonzalez	28-11-2019 09:10:30 AM	Generó un archivo exportado de Resultados
+1436	renold.gonzalez	28-11-2019 09:10:33 AM	Usuario accedió a página inscritos
+1437	renold.gonzalez	28-11-2019 09:10:42 AM	Administrador exportó  datos de BD Resultados 
+1438	renold.gonzalez	28-11-2019 09:10:43 AM	Verificación de duplicidad de archivos csv
+1439	renold.gonzalez	28-11-2019 09:10:43 AM	No hay archivos duplicados para exportar
+1440	renold.gonzalez	28-11-2019 09:10:43 AM	Generó un archivo exportado de Inscritos
+1441	renold.gonzalez	28-11-2019 09:11:17 AM	Usuario accedió a página certificaciones
+1442	renold.gonzalez	28-11-2019 09:12:34 AM	Usuario accedió a página validación
+1443	renold.gonzalez	28-11-2019 09:12:36 AM	Usuario accedió a página certificaciones
+1444	renold.gonzalez	28-11-2019 09:12:37 AM	Usuario accedió a página inscritos
+1445	renold.gonzalez	28-11-2019 09:12:39 AM	Usuario accedió a página certificaciones
+1446	renold.gonzalez	28-11-2019 09:12:41 AM	Usuario accedió a página principal
+1447	renold.gonzalez	28-11-2019 09:13:33 AM	Usuario accedió a página inscritos
+1448	renold.gonzalez	28-11-2019 09:13:34 AM	Usuario accedió a página certificaciones
+1449	renold.gonzalez	28-11-2019 09:13:36 AM	Usuario accedió a página validación
+1450	renold.gonzalez	28-11-2019 09:13:37 AM	Usuario accedió a página reportes
+1451	renold.gonzalez	28-11-2019 09:13:47 AM	Usuario gener? reporte academico reporteAcademico_28-11-2019_09_13_47_AM
+1452	renold.gonzalez	28-11-2019 09:14:06 AM	Usuario accedió a página de administrtacion de datos
+1453	renold.gonzalez	28-11-2019 09:14:17 AM	Administrador exportó  datos de BD Resultados 
+1454	renold.gonzalez	28-11-2019 09:15:22 AM	El sistema creó el archivo inscritos28_11_2019.txt y  exportó  registros de TB inscritos - Nombre de
+1455	renold.gonzalez	28-11-2019 09:18:44 AM	Administrador exportó  datos de BD Resultados 
+1456	renold.gonzalez	28-11-2019 09:33:46 AM	El sistema borró el archivo anterior y creó el archivo inscritos28_11_2019.txt ,Usuario exportó  reg
+1457	renold.gonzalez	28-11-2019 09:39:17 AM	Usuario accedió a página de administrtacion de datos
+1458	renold.gonzalez	28-11-2019 09:39:23 AM	Inició sesión como administrador del sistema
+1459	renold.gonzalez	28-11-2019 09:39:23 AM	Usuario accedió a página principal
+1460	renold.gonzalez	28-11-2019 09:39:44 AM	Usuario accedió a página de administrtacion de datos
+1461	renold.gonzalez	28-11-2019 09:46:45 AM	El sistema creó el archivo indices28_11_2019.txt y  exportó  registros de TB resultados - Nombre del
+1462	renold.gonzalez	28-11-2019 09:51:59 AM	El sistema creó el archivo resultados28_11_2019.txt y  exportó  registros de TB resultados - Nombre 
+1463	renold.gonzalez	28-11-2019 09:53:33 AM	El sistema borró el archivo anterior y creó el archivo resultados28_11_2019.txt ,Usuario exportó  re
+1464	renold.gonzalez	28-11-2019 10:01:26 AM	El sistema borró el archivo anterior y creó el archivo indices28_11_2019.txt ,Usuario exportó  regis
+1465	renold.gonzalez	28-11-2019 10:01:26 AM	Usuario accedió a página inscritos
+1466	renold.gonzalez	28-11-2019 10:01:26 AM	Usuario accedió a página principal
+1467	renold.gonzalez	28-11-2019 10:01:26 AM	Usuario accedió a página inscritos
+1468	renold.gonzalez	28-11-2019 10:40:04 AM	Inició sesión como administrador del sistema
+1469	renold.gonzalez	28-11-2019 10:40:05 AM	Usuario accedió a página principal
+1470	renold.gonzalez	28-11-2019 11:21:42 AM	Usuario accedió a página inscritos
+1471	renold.gonzalez	28-11-2019 11:35:20 AM	Administrador exportó  datos de BD Resultados 
+1472	renold.gonzalez	28-11-2019 11:35:20 AM	Verificación de duplicidad de archivos csv
+1473	renold.gonzalez	28-11-2019 11:35:20 AM	No hay archivos duplicados para exportar
+1474	renold.gonzalez	28-11-2019 11:35:20 AM	Generó un archivo exportado de Inscritos
+1475	renold.gonzalez	28-11-2019 11:40:14 AM	Usuario accedió a página certificaciones
+1476	renold.gonzalez	28-11-2019 12:13:34 PM	Inició sesión como administrador del sistema
+1477	renold.gonzalez	28-11-2019 12:13:34 PM	Usuario accedió a página principal
+1478	renold.gonzalez	28-11-2019 12:27:09 PM	Usuario salió del sistema
+1479	renold.gonzalez	29-11-2019 11:06:09 AM	Inició sesión como administrador del sistema
+1480	renold.gonzalez	29-11-2019 11:06:09 AM	Usuario accedió a página principal
+1481	renold.gonzalez	29-11-2019 11:06:12 AM	Usuario accedió a página de usuarios
+1482	renold.gonzalez	29-11-2019 11:06:19 AM	Usuario accedió a página de administrtacion de datos
+1483	renold.gonzalez	29-11-2019 11:26:42 AM	El sistema creó el archivo inscritos29_11_2019.txt y  exportó  registros de TB inscritos - Nombre de
+1484	renold.gonzalez	29-11-2019 11:57:39 AM	Usuario accedió a página de usuarios
+1485	renold.gonzalez	29-11-2019 11:57:59 AM	Usuario salió del sistema
+1486	renold.gonzalez	29-11-2019 03:41:36 PM	Inició sesión como administrador del sistema
+1487	renold.gonzalez	29-11-2019 03:41:36 PM	Usuario accedió a página principal
+1488	renold.gonzalez	29-11-2019 03:41:38 PM	Usuario accedió a página de administrtacion de datos
+1489	renold.gonzalez	29-11-2019 03:59:30 PM	Usuario cargo al sistema (TB Resultados)  el archivo dataresultados17_full_4 - copia.csv
+1490	renold.gonzalez	29-11-2019 03:59:30 PM	Registros cargados al sistema (TB Resultados) : 5  DESDE-> dataresultados17_full_4 - copia.csv
+1491	renold.gonzalez	29-11-2019 04:01:37 PM	Usuario cargo al sistema (TB Inscritos) el archivo dataresultados17_full_4.csv
+1492	renold.gonzalez	29-11-2019 04:01:37 PM	CSV no cuenta con el Formato valido para la Tabla Inscritos -> dataresultados17_full_4.csv
+1493	renold.gonzalez	29-11-2019 04:08:45 PM	Usuario accedió a página de administrtacion de datos
+1494	renold.gonzalez	29-11-2019 04:35:23 PM	Administrador exportó  datos de BD Resultados 
+1495	renold.gonzalez	29-11-2019 04:35:58 PM	Administrador exportó  datos de BD Resultados 
+1496	renold.gonzalez	29-11-2019 04:36:20 PM	Usuario accedió a página de administrtacion de datos
+1497	renold.gonzalez	29-11-2019 04:37:02 PM	Usuario salió del sistema
+1498	renold.gonzalez	29-11-2019 04:37:06 PM	Inició sesión como administrador del sistema
+1499	renold.gonzalez	29-11-2019 04:37:07 PM	Usuario accedió a página principal
+1500	renold.gonzalez	29-11-2019 04:37:09 PM	Usuario accedió a página de administrtacion de datos
+1501	renold.gonzalez	29-11-2019 04:38:52 PM	Usuario accedió a página de usuarios
+1502	renold.gonzalez	29-11-2019 04:39:17 PM	Usuario accedió a página de administrtacion de datos
+1503	renold.gonzalez	29-11-2019 04:39:20 PM	Usuario salió del sistema
+1504	renold.gonzalez	29-11-2019 04:41:16 PM	Inició sesión como administrador del sistema
+1505	renold.gonzalez	29-11-2019 04:41:16 PM	Usuario accedió a página principal
+1506	renold.gonzalez	29-11-2019 04:41:18 PM	Usuario accedió a página de usuarios
+1507	renold.gonzalez	29-11-2019 04:50:12 PM	Administrador registro un usuario 
+1508	renold.gonzalez	29-11-2019 04:50:12 PM	Administrador registró a AVATAR AVATAR como  Administrador
+1509	renold.gonzalez	29-11-2019 04:50:12 PM	Usuario accedió a página de usuarios
+1510	renold.gonzalez	29-11-2019 04:50:20 PM	Usuario accedió a página de usuarios
+1511	renold.gonzalez	29-11-2019 04:50:45 PM	Usuario accedió a página de usuarios
+1512	renold.gonzalez	29-11-2019 04:55:10 PM	Usuario accedió a página de usuarios
+1513	renold.gonzalez	29-11-2019 04:55:14 PM	Usuario accedió a página de usuarios
+1514	renold.gonzalez	29-11-2019 04:55:36 PM	Usuario accedió a página de usuarios
+1515	renold.gonzalez	29-11-2019 04:58:33 PM	Usuario accedió a página de usuarios
+1516	renold.gonzalez	29-11-2019 05:00:17 PM	Administrador registro un usuario 
+1517	renold.gonzalez	29-11-2019 05:04:55 PM	Administrador registro un usuario 
+1518	renold.gonzalez	29-11-2019 05:10:48 PM	Usuario salió del sistema
+1519	marina.pilar	29-11-2019 05:25:47 PM	Inició sesión como administrador del sistema
+1520	marina.pilar	29-11-2019 05:25:48 PM	Usuario accedió a página principal
+1521	marina.pilar	29-11-2019 05:25:51 PM	Usuario accedió a página de usuarios
+1522	renold.gonzalez	29-11-2019 06:14:37 PM	Inició sesión como administrador del sistema
+1523	renold.gonzalez	29-11-2019 06:14:37 PM	Usuario accedió a página principal
+1524	renold.gonzalez	29-11-2019 06:14:39 PM	Usuario accedió a página de administrtacion de datos
+1525	renold.gonzalez	29-11-2019 06:15:56 PM	Usuario accedió a página de administrtacion de datos
+1526	renold.gonzalez	29-11-2019 06:17:15 PM	Usuario accedió a página de administrtacion de datos
+1527	renold.gonzalez	29-11-2019 06:17:50 PM	Usuario accedió a página de administrtacion de datos
+1528	renold.gonzalez	29-11-2019 06:18:07 PM	El sistema borró el archivo anterior y creó el archivo inscritos29_11_2019.txt ,Usuario exportó  reg
+1529	renold.gonzalez	29-11-2019 06:31:25 PM	Administrador exportó  datos de BD Resultados 
+1530	renold.gonzalez	29-11-2019 06:31:33 PM	Administrador exportó  datos de BD Resultados 
+1531	renold.gonzalez	29-11-2019 06:31:48 PM	Administrador exportó  datos de BD Resultados 
+1532	renold.gonzalez	29-11-2019 06:32:00 PM	Usuario accedió a página inscritos
+1533	renold.gonzalez	29-11-2019 06:32:11 PM	Administrador exportó  datos de BD Resultados 
+1534	renold.gonzalez	29-11-2019 06:32:11 PM	Verificación de duplicidad de archivos csv
+1535	renold.gonzalez	29-11-2019 06:32:11 PM	No hay archivos duplicados para exportar
+1536	renold.gonzalez	29-11-2019 06:32:11 PM	Generó un archivo exportado de Inscritos
+1537	renold.gonzalez	29-11-2019 06:32:23 PM	Usuario accedió a página reportes
+1538	renold.gonzalez	29-11-2019 06:32:25 PM	Usuario accedió a página de usuarios
+1539	renold.gonzalez	29-11-2019 06:32:32 PM	Usuario salió del sistema
+1540	renold.gonzalez	29-11-2019 06:34:52 PM	Inició sesión como administrador del sistema
+1541	renold.gonzalez	29-11-2019 06:34:52 PM	Usuario accedió a página principal
+1542	renold.gonzalez	29-11-2019 06:34:54 PM	Usuario accedió a página reportes
+1543	renold.gonzalez	29-11-2019 06:34:59 PM	Usuario accedió a página de administrtacion de datos
+1544	renold.gonzalez	29-11-2019 06:37:22 PM	Usuario accedió a página de administrtacion de datos
+1545	renold.gonzalez	29-11-2019 06:38:41 PM	Usuario accedió a página de administrtacion de datos
+1546	renold.gonzalez	29-11-2019 06:40:27 PM	Usuario accedió a página de administrtacion de datos
+1547	renold.gonzalez	29-11-2019 06:44:58 PM	Usuario accedió a página de administrtacion de datos
+1548	renold.gonzalez	29-11-2019 06:45:03 PM	Usuario accedió a página de administrtacion de datos
+1549	renold.gonzalez	29-11-2019 06:45:07 PM	Administrador exportó  datos de BD Resultados 
+1550	renold.gonzalez	29-11-2019 06:46:18 PM	Usuario accedió a página de administrtacion de datos
+1551	renold.gonzalez	29-11-2019 06:58:32 PM	Administrador exportó  datos de BD Resultados 
+1552	renold.gonzalez	29-11-2019 06:59:13 PM	Administrador exportó  datos de BD Resultados 
+1553	renold.gonzalez	29-11-2019 06:59:37 PM	Administrador exportó  datos de BD Resultados 
+1554	renold.gonzalez	29-11-2019 07:02:47 PM	Usuario accedió a página de administrtacion de datos
+1555	renold.gonzalez	29-11-2019 07:02:59 PM	Administrador exportó  datos de BD Resultados 
+1556	renold.gonzalez	29-11-2019 07:09:09 PM	Usuario accedió a página de administrtacion de datos
+1557	renold.gonzalez	29-11-2019 07:09:16 PM	Administrador exportó  datos de BD Resultados 
+1558	renold.gonzalez	29-11-2019 07:10:07 PM	Usuario accedió a página de administrtacion de datos
+1559	renold.gonzalez	29-11-2019 07:10:14 PM	Administrador exportó  datos de BD Resultados 
+1560	renold.gonzalez	29-11-2019 07:11:11 PM	Usuario accedió a página de administrtacion de datos
+1561	renold.gonzalez	29-11-2019 07:11:16 PM	Administrador exportó  datos de BD Resultados 
+1562	renold.gonzalez	29-11-2019 07:11:33 PM	Usuario accedió a página de administrtacion de datos
+1563	renold.gonzalez	29-11-2019 07:11:39 PM	Administrador exportó  datos de BD Resultados 
+1564	renold.gonzalez	29-11-2019 07:11:42 PM	Administrador exportó  datos de BD Resultados 
+1565	renold.gonzalez	29-11-2019 07:11:44 PM	Administrador exportó  datos de BD Resultados 
+1566	renold.gonzalez	29-11-2019 07:11:45 PM	Administrador exportó  datos de BD Resultados 
+1567	renold.gonzalez	29-11-2019 07:11:46 PM	Administrador exportó  datos de BD Resultados 
+1568	renold.gonzalez	29-11-2019 07:11:47 PM	Administrador exportó  datos de BD Resultados 
+1569	renold.gonzalez	29-11-2019 07:11:48 PM	Administrador exportó  datos de BD Resultados 
+1570	renold.gonzalez	29-11-2019 07:11:50 PM	Administrador exportó  datos de BD Resultados 
+1571	renold.gonzalez	29-11-2019 07:11:51 PM	Administrador exportó  datos de BD Resultados 
+1572	renold.gonzalez	29-11-2019 07:14:19 PM	Usuario accedió a página de administrtacion de datos
+1573	renold.gonzalez	29-11-2019 07:15:50 PM	Usuario accedió a página de administrtacion de datos
+1574	renold.gonzalez	29-11-2019 07:15:57 PM	Administrador exportó  datos de BD Resultados 
+1575	renold.gonzalez	29-11-2019 07:16:06 PM	Administrador exportó  datos de BD Resultados 
+1576	renold.gonzalez	29-11-2019 07:20:36 PM	Administrador exportó  datos de BD Resultados 
+1577	renold.gonzalez	29-11-2019 07:20:43 PM	Administrador exportó  datos de BD Resultados 
+1578	renold.gonzalez	29-11-2019 07:20:58 PM	Usuario accedió a página de administrtacion de datos
+1579	renold.gonzalez	29-11-2019 07:21:02 PM	Administrador exportó  datos de BD Resultados 
+1580	renold.gonzalez	29-11-2019 07:21:10 PM	Administrador exportó  datos de BD Resultados 
+1581	renold.gonzalez	29-11-2019 07:21:16 PM	Administrador exportó  datos de BD Resultados 
+1582	renold.gonzalez	29-11-2019 07:22:32 PM	Administrador exportó  datos de BD Resultados 
+1583	renold.gonzalez	29-11-2019 07:22:41 PM	Usuario accedió a página de administrtacion de datos
+1584	renold.gonzalez	29-11-2019 07:22:46 PM	Administrador exportó  datos de BD Resultados 
+1585	renold.gonzalez	29-11-2019 07:23:58 PM	Usuario accedió a página de administrtacion de datos
+1586	renold.gonzalez	29-11-2019 07:24:04 PM	Administrador exportó  datos de BD Resultados 
+1587	renold.gonzalez	29-11-2019 07:25:26 PM	Usuario accedió a página de administrtacion de datos
+1588	renold.gonzalez	29-11-2019 07:25:32 PM	Administrador exportó  datos de BD Resultados 
+1589	renold.gonzalez	29-11-2019 07:25:40 PM	Administrador exportó  datos de BD Resultados 
+1590	renold.gonzalez	29-11-2019 07:30:08 PM	Usuario accedió a página de administrtacion de datos
+1591	renold.gonzalez	29-11-2019 07:31:10 PM	Usuario accedió a página de administrtacion de datos
+1592	renold.gonzalez	29-11-2019 07:31:15 PM	Administrador exportó  datos de BD Resultados 
+1593	renold.gonzalez	29-11-2019 07:31:19 PM	Administrador exportó  datos de BD Resultados 
+1594	renold.gonzalez	29-11-2019 07:31:22 PM	Administrador exportó  datos de BD Resultados 
+1595	renold.gonzalez	29-11-2019 07:31:29 PM	Administrador exportó  datos de BD Resultados 
+1596	renold.gonzalez	29-11-2019 07:31:30 PM	Administrador exportó  datos de BD Resultados 
+1597	renold.gonzalez	29-11-2019 07:31:31 PM	Administrador exportó  datos de BD Resultados 
+1598	renold.gonzalez	29-11-2019 07:31:32 PM	Administrador exportó  datos de BD Resultados 
+1599	renold.gonzalez	29-11-2019 07:31:33 PM	Administrador exportó  datos de BD Resultados 
+1600	renold.gonzalez	29-11-2019 07:31:33 PM	Administrador exportó  datos de BD Resultados 
+1601	renold.gonzalez	29-11-2019 07:31:33 PM	Administrador exportó  datos de BD Resultados 
+1602	renold.gonzalez	29-11-2019 07:31:33 PM	Administrador exportó  datos de BD Resultados 
+1603	renold.gonzalez	29-11-2019 07:31:33 PM	Administrador exportó  datos de BD Resultados 
+1604	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1605	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1606	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1607	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1608	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1609	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1610	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1611	renold.gonzalez	29-11-2019 07:31:34 PM	Administrador exportó  datos de BD Resultados 
+1612	renold.gonzalez	29-11-2019 07:31:35 PM	Administrador exportó  datos de BD Resultados 
+1613	renold.gonzalez	29-11-2019 07:31:38 PM	Administrador exportó  datos de BD Resultados 
+1614	renold.gonzalez	29-11-2019 07:31:55 PM	Usuario accedió a página de administrtacion de datos
+1615	renold.gonzalez	29-11-2019 07:32:03 PM	Administrador exportó  datos de BD Resultados 
+1616	renold.gonzalez	29-11-2019 07:34:55 PM	Usuario accedió a página de usuarios
+1617	renold.gonzalez	30-11-2019 06:58:49 AM	Inició sesión como administrador del sistema
+1618	renold.gonzalez	30-11-2019 06:58:50 AM	Usuario accedió a página principal
+1619	renold.gonzalez	30-11-2019 06:59:15 AM	Usuario accedió a página inscritos
+1620	renold.gonzalez	30-11-2019 06:59:26 AM	Usuario accedió a página validación
+1621	renold.gonzalez	30-11-2019 06:59:34 AM	Usuario accedió a página de administrtacion de datos
+1622	renold.gonzalez	30-11-2019 06:59:39 AM	Usuario accedió a página certificaciones
+1623	renold.gonzalez	30-11-2019 06:59:55 AM	Usuario gener? Certificacion
+1624	renold.gonzalez	30-11-2019 07:22:29 AM	Usuario accedió a página certificaciones
+1625	renold.gonzalez	30-11-2019 07:22:46 AM	Administrador exportó  datos de BD Resultados 
+1626	renold.gonzalez	30-11-2019 07:22:46 AM	Verificación de duplicidad de archivos csv
+1627	renold.gonzalez	30-11-2019 07:22:46 AM	No hay archivos duplicados para exportar
+1628	renold.gonzalez	30-11-2019 07:22:47 AM	Generó un archivo exportado de Resultados
+1629	renold.gonzalez	30-11-2019 07:24:15 AM	Usuario accedió a página certificaciones
+1630	renold.gonzalez	30-11-2019 07:24:29 AM	Usuario gener? Certificacion
+1631	renold.gonzalez	30-11-2019 07:34:15 AM	Usuario accedió a página certificaciones
+1632	renold.gonzalez	30-11-2019 07:34:31 AM	Usuario gener? Certificacion
+1633	renold.gonzalez	30-11-2019 07:34:47 AM	Usuario gener? Certificacion
+1634	renold.gonzalez	30-11-2019 07:36:26 AM	Usuario accedió a página certificaciones
+1635	renold.gonzalez	30-11-2019 07:36:39 AM	Usuario accedió a página certificaciones
+1636	renold.gonzalez	30-11-2019 07:37:33 AM	Usuario accedió a página certificaciones
+1637	renold.gonzalez	30-11-2019 07:37:46 AM	Usuario gener? Certificacion
+1638	renold.gonzalez	30-11-2019 07:39:32 AM	Usuario gener? Certificacion
+1639	renold.gonzalez	30-11-2019 07:39:49 AM	Usuario gener? Certificacion
+1640	renold.gonzalez	30-11-2019 07:40:07 AM	Usuario gener? Certificacion
+1641	renold.gonzalez	30-11-2019 07:40:12 AM	Usuario accedió a página certificaciones
+1642	renold.gonzalez	30-11-2019 07:40:29 AM	Usuario gener? Certificacion
+1643	renold.gonzalez	30-11-2019 07:40:57 AM	Usuario accedió a página certificaciones
+1644	renold.gonzalez	30-11-2019 07:41:07 AM	Usuario gener? Certificacion
+1645	renold.gonzalez	30-11-2019 07:41:49 AM	Usuario gener? Certificacion
+1646	renold.gonzalez	30-11-2019 07:42:23 AM	Usuario gener? Certificacion
+1647	renold.gonzalez	30-11-2019 07:42:29 AM	Usuario accedió a página certificaciones
+1648	renold.gonzalez	30-11-2019 07:42:39 AM	Usuario gener? Certificacion
+1649	renold.gonzalez	30-11-2019 07:43:20 AM	Usuario gener? Certificacion
+1650	renold.gonzalez	30-11-2019 07:43:53 AM	Usuario gener? Certificacion
+1651	renold.gonzalez	30-11-2019 07:44:46 AM	Usuario gener? Certificacion
+1652	renold.gonzalez	30-11-2019 07:45:12 AM	Usuario gener? Certificacion
+1653	renold.gonzalez	30-11-2019 07:45:45 AM	Usuario gener? Certificacion
+1654	renold.gonzalez	30-11-2019 07:46:10 AM	Usuario gener? Certificacion
+1655	renold.gonzalez	30-11-2019 07:46:51 AM	Usuario gener? Certificacion
+1656	renold.gonzalez	30-11-2019 07:47:29 AM	Usuario gener? Certificacion
+1657	renold.gonzalez	30-11-2019 07:47:55 AM	Usuario gener? Certificacion
+1658	renold.gonzalez	30-11-2019 07:48:43 AM	Usuario gener? Certificacion
+1659	renold.gonzalez	30-11-2019 07:49:03 AM	Usuario gener? Certificacion
+1660	renold.gonzalez	30-11-2019 08:05:55 AM	Usuario gener? Certificacion
+1661	renold.gonzalez	30-11-2019 08:06:16 AM	Usuario gener? Certificacion
+1662	renold.gonzalez	30-11-2019 08:06:34 AM	Usuario gener? Certificacion
+1663	renold.gonzalez	30-11-2019 08:10:20 AM	Usuario accedió a página certificaciones
+1664	renold.gonzalez	30-11-2019 02:07:10 PM	Inició sesión como administrador del sistema
+1665	renold.gonzalez	30-11-2019 02:07:10 PM	Usuario accedió a página principal
+1666	renold.gonzalez	30-11-2019 02:07:45 PM	Usuario accedió a página inscritos
+1667	renold.gonzalez	30-11-2019 02:07:46 PM	Usuario accedió a página certificaciones
+1668	renold.gonzalez	30-11-2019 02:08:00 PM	Inició sesión como administrador del sistema
+1669	renold.gonzalez	30-11-2019 02:08:00 PM	Usuario accedió a página principal
+1670	renold.gonzalez	30-11-2019 02:09:10 PM	Usuario accedió a página certificaciones
+1671	renold.gonzalez	30-11-2019 02:09:16 PM	Administrador eliminó el registro  002671 - DB Resultados
+1672	renold.gonzalez	30-11-2019 02:09:27 PM	Administrador exportó  datos de BD Resultados 
+1673	renold.gonzalez	30-11-2019 02:09:28 PM	Verificación de duplicidad de archivos csv
+1674	renold.gonzalez	30-11-2019 02:09:28 PM	Se renombro el archivo csv a tmp
+1675	renold.gonzalez	30-11-2019 02:09:28 PM	Generó un archivo exportado de Resultados
+1676	renold.gonzalez	30-11-2019 02:12:55 PM	Administrador exportó  datos de BD Resultados 
+1677	renold.gonzalez	30-11-2019 02:12:55 PM	Verificación de duplicidad de archivos csv
+1678	renold.gonzalez	30-11-2019 02:12:55 PM	Se renombro el archivo csv a tmp
+1679	renold.gonzalez	30-11-2019 02:12:57 PM	Generó un archivo exportado de Resultados
+1680	renold.gonzalez	30-11-2019 02:13:17 PM	Administrador exportó  datos de BD Resultados 
+1681	renold.gonzalez	30-11-2019 02:13:17 PM	Verificación de duplicidad de archivos csv
+1682	renold.gonzalez	30-11-2019 02:13:17 PM	Se renombro el archivo csv a tmp
+1683	renold.gonzalez	30-11-2019 02:13:18 PM	Generó un archivo exportado de Resultados
+1684	renold.gonzalez	30-11-2019 02:13:24 PM	Usuario gener? Certificacion
+1685	renold.gonzalez	30-11-2019 02:13:45 PM	Usuario accedió a página inscritos
+1686	renold.gonzalez	30-11-2019 02:14:05 PM	Usuario accedió a página certificaciones
+1687	renold.gonzalez	30-11-2019 02:14:14 PM	Usuario accedió a página validación
+1688	renold.gonzalez	30-11-2019 02:14:16 PM	Usuario accedió a página reportes
+1689	renold.gonzalez	30-11-2019 02:14:17 PM	Usuario accedió a página de administrtacion de datos
+1690	renold.gonzalez	30-11-2019 02:14:23 PM	Usuario accedió a página de usuarios
+1691	renold.gonzalez	30-11-2019 02:14:44 PM	Usuario accedió a página inscritos
+1692	renold.gonzalez	30-11-2019 02:14:59 PM	Usuario accedió a página certificaciones
+1693	renold.gonzalez	30-11-2019 02:15:02 PM	Usuario accedió a página certificaciones
+1694	renold.gonzalez	30-11-2019 02:15:45 PM	Usuario accedió a página inscritos
+1695	renold.gonzalez	30-11-2019 02:15:58 PM	Administrador exportó  datos de BD Resultados 
+1696	renold.gonzalez	30-11-2019 02:15:58 PM	Verificación de duplicidad de archivos csv
+1697	renold.gonzalez	30-11-2019 02:15:58 PM	No hay archivos duplicados para exportar
+1698	renold.gonzalez	30-11-2019 02:15:58 PM	Generó un archivo exportado de Inscritos
+1699	renold.gonzalez	30-11-2019 02:16:02 PM	Usuario accedió a página certificaciones
+1700	renold.gonzalez	30-11-2019 02:16:18 PM	Usuario accedió a página certificaciones
+1701	renold.gonzalez	30-11-2019 02:16:19 PM	Usuario accedió a página inscritos
+1702	renold.gonzalez	30-11-2019 02:16:24 PM	Usuario accedió a página certificaciones
+1703	renold.gonzalez	30-11-2019 02:16:25 PM	Usuario accedió a página reportes
+1704	renold.gonzalez	30-11-2019 02:16:41 PM	Usuario gener? reporte academico reporteAcademico_30-11-2019_02_16_41_PM
+1705	renold.gonzalez	30-11-2019 02:17:20 PM	Usuario accedió a página reportes
+1706	renold.gonzalez	30-11-2019 02:17:30 PM	Usuario accedió a página reportes
+1707	renold.gonzalez	30-11-2019 02:17:32 PM	Usuario accedió a página reportes
+1708	renold.gonzalez	30-11-2019 02:17:34 PM	Usuario accedió a página reportes
+1709	renold.gonzalez	30-11-2019 02:17:35 PM	Usuario accedió a página reportes
+1710	renold.gonzalez	30-11-2019 02:17:37 PM	Usuario accedió a página reportes
+1711	renold.gonzalez	30-11-2019 02:17:39 PM	Usuario accedió a página reportes
+1712	renold.gonzalez	30-11-2019 02:17:40 PM	Usuario accedió a página reportes
+1713	renold.gonzalez	30-11-2019 02:17:42 PM	Usuario accedió a página reportes
+1714	renold.gonzalez	30-11-2019 02:17:43 PM	Usuario accedió a página reportes
+1715	renold.gonzalez	30-11-2019 02:17:45 PM	Usuario accedió a página reportes
+1716	renold.gonzalez	30-11-2019 02:17:47 PM	Usuario accedió a página reportes
+1717	renold.gonzalez	30-11-2019 02:17:49 PM	Usuario accedió a página reportes
+1718	renold.gonzalez	30-11-2019 02:17:51 PM	Usuario accedió a página reportes
+1719	renold.gonzalez	30-11-2019 02:17:53 PM	Usuario accedió a página reportes
+1720	renold.gonzalez	30-11-2019 02:17:58 PM	Usuario accedió a página reportes
+1721	renold.gonzalez	30-11-2019 02:18:02 PM	Usuario accedió a página reportes
+1722	renold.gonzalez	30-11-2019 02:18:10 PM	Usuario accedió a página reportes
+1723	renold.gonzalez	30-11-2019 02:18:16 PM	Usuario accedió a página reportes
+1724	renold.gonzalez	30-11-2019 02:18:21 PM	Usuario accedió a página reportes
+1725	renold.gonzalez	30-11-2019 02:18:24 PM	Usuario accedió a página reportes
+1726	renold.gonzalez	30-11-2019 02:18:27 PM	Usuario accedió a página reportes
+1727	renold.gonzalez	30-11-2019 02:23:20 PM	Usuario salió del sistema
+1728	renold.gonzalez	30-11-2019 02:25:53 PM	Inició sesión como administrador del sistema
+1729	renold.gonzalez	30-11-2019 02:25:53 PM	Usuario accedió a página principal
+1730	renold.gonzalez	30-11-2019 02:27:26 PM	Usuario accedió a página principal
+1731	renold.gonzalez	30-11-2019 02:27:29 PM	Usuario accedió a página principal
+1732	renold.gonzalez	30-11-2019 02:29:44 PM	Usuario accedió a página principal
+1733	renold.gonzalez	30-11-2019 02:31:40 PM	Usuario accedió a página principal
+1734	renold.gonzalez	30-11-2019 02:31:43 PM	Usuario accedió a página principal
+1735	renold.gonzalez	30-11-2019 02:32:50 PM	Usuario accedió a página inscritos
+1736	renold.gonzalez	30-11-2019 02:32:52 PM	Usuario accedió a página principal
+1737	renold.gonzalez	30-11-2019 02:33:56 PM	Usuario accedió a página principal
+1738	renold.gonzalez	30-11-2019 02:35:42 PM	Usuario accedió a página principal
+1739	renold.gonzalez	30-11-2019 02:36:35 PM	Usuario accedió a página inscritos
+1740	renold.gonzalez	30-11-2019 02:37:31 PM	Usuario accedió a página certificaciones
+1741	renold.gonzalez	30-11-2019 02:37:34 PM	Usuario accedió a página validación
+1742	renold.gonzalez	30-11-2019 02:37:35 PM	Usuario accedió a página reportes
+1743	renold.gonzalez	30-11-2019 02:37:37 PM	Usuario accedió a página de administrtacion de datos
+1744	renold.gonzalez	30-11-2019 02:37:40 PM	Usuario accedió a página de usuarios
+1745	renold.gonzalez	30-11-2019 02:37:45 PM	Usuario accedió a página principal
+1746	renold.gonzalez	30-11-2019 02:38:36 PM	Usuario accedió a página principal
+1747	renold.gonzalez	30-11-2019 02:39:49 PM	Usuario accedió a página principal
+1748	renold.gonzalez	30-11-2019 02:42:01 PM	Usuario accedió a página principal
+1749	renold.gonzalez	30-11-2019 02:42:06 PM	Usuario accedió a página inscritos
+1750	renold.gonzalez	30-11-2019 02:42:12 PM	Usuario accedió a página principal
+1751	renold.gonzalez	30-11-2019 02:43:26 PM	Usuario accedió a página principal
+1752	renold.gonzalez	30-11-2019 02:44:10 PM	Usuario accedió a página principal
+1753	renold.gonzalez	30-11-2019 02:44:32 PM	Usuario accedió a página principal
+1754	renold.gonzalez	30-11-2019 02:44:49 PM	Usuario accedió a página principal
+1755	renold.gonzalez	30-11-2019 02:44:53 PM	Usuario accedió a página principal
+1756	renold.gonzalez	30-11-2019 02:45:02 PM	Inició sesión como administrador del sistema
+1757	renold.gonzalez	30-11-2019 02:45:02 PM	Usuario accedió a página principal
+1758	renold.gonzalez	30-11-2019 02:46:46 PM	Usuario accedió a página principal
+1759	renold.gonzalez	30-11-2019 02:47:14 PM	Usuario accedió a página inscritos
+1760	renold.gonzalez	30-11-2019 02:47:46 PM	Usuario accedió a página inscritos
+1761	renold.gonzalez	30-11-2019 02:48:01 PM	Usuario accedió a página inscritos
+1762	renold.gonzalez	30-11-2019 02:49:25 PM	Usuario accedió a página inscritos
+1763	renold.gonzalez	30-11-2019 02:49:44 PM	Usuario accedió a página inscritos
+1764	renold.gonzalez	30-11-2019 02:50:25 PM	Usuario accedió a página inscritos
+1765	renold.gonzalez	30-11-2019 02:50:43 PM	Administrador exportó  datos de BD Resultados 
+1766	renold.gonzalez	30-11-2019 02:50:43 PM	Verificación de duplicidad de archivos csv
+1767	renold.gonzalez	30-11-2019 02:50:43 PM	Se renombro el archivo csv a tmp
+1768	renold.gonzalez	30-11-2019 02:50:44 PM	Generó un archivo exportado de Inscritos
+1769	renold.gonzalez	30-11-2019 02:51:16 PM	Usuario accedió a página certificaciones
+1770	renold.gonzalez	30-11-2019 02:51:27 PM	Usuario gener? Certificacion
+1771	renold.gonzalez	30-11-2019 02:51:54 PM	Usuario accedió a página de administrtacion de datos
+1772	renold.gonzalez	30-11-2019 02:51:59 PM	Usuario accedió a página certificaciones
+1773	renold.gonzalez	30-11-2019 02:52:00 PM	Usuario accedió a página inscritos
+1774	renold.gonzalez	30-11-2019 02:52:05 PM	Usuario accedió a página certificaciones
+1775	renold.gonzalez	30-11-2019 02:52:48 PM	Usuario accedió a página certificaciones
+1776	renold.gonzalez	30-11-2019 02:53:07 PM	Usuario accedió a página certificaciones
+1777	renold.gonzalez	30-11-2019 02:55:31 PM	Usuario accedió a página validación
+1778	renold.gonzalez	30-11-2019 02:55:56 PM	Usuario accedió a página validación
+1779	renold.gonzalez	30-11-2019 02:57:31 PM	Usuario accedió a página validación
+1780	renold.gonzalez	30-11-2019 02:57:49 PM	Usuario accedió a página validación
+1781	renold.gonzalez	30-11-2019 02:58:05 PM	Usuario accedió a página validación
+1782	renold.gonzalez	30-11-2019 02:58:20 PM	Usuario accedió a página validación
+1783	renold.gonzalez	30-11-2019 02:59:23 PM	Usuario accedió a página reportes
+1784	renold.gonzalez	30-11-2019 02:59:30 PM	Usuario accedió a página de administrtacion de datos
+1785	renold.gonzalez	30-11-2019 02:59:33 PM	Usuario accedió a página reportes
+1786	renold.gonzalez	30-11-2019 02:59:34 PM	Usuario accedió a página de administrtacion de datos
+1787	renold.gonzalez	30-11-2019 03:00:46 PM	Usuario accedió a página de administrtacion de datos
+1788	renold.gonzalez	30-11-2019 03:03:47 PM	Usuario accedió a página de administrtacion de datos
+1789	renold.gonzalez	30-11-2019 03:04:24 PM	Usuario accedió a página de administrtacion de datos
+1790	renold.gonzalez	30-11-2019 03:05:45 PM	Usuario accedió a página de administrtacion de datos
+1791	renold.gonzalez	30-11-2019 03:07:33 PM	Usuario accedió a página de administrtacion de datos
+1792	renold.gonzalez	30-11-2019 03:08:58 PM	Usuario accedió a página de administrtacion de datos
+1793	renold.gonzalez	30-11-2019 03:09:07 PM	Usuario accedió a página de administrtacion de datos
+1794	renold.gonzalez	30-11-2019 03:09:12 PM	Usuario accedió a página de usuarios
+1795	renold.gonzalez	30-11-2019 03:09:52 PM	Usuario accedió a página de usuarios
+1796	renold.gonzalez	30-11-2019 03:14:00 PM	Usuario accedió a página de usuarios
+1797	renold.gonzalez	30-11-2019 03:14:27 PM	Usuario accedió a página de usuarios
+1798	renold.gonzalez	30-11-2019 03:16:03 PM	Usuario accedió a página de usuarios
+1799	renold.gonzalez	30-11-2019 03:16:07 PM	Usuario accedió a página de usuarios
+1800	renold.gonzalez	30-11-2019 03:16:10 PM	Usuario accedió a página de usuarios
+1801	renold.gonzalez	30-11-2019 03:16:17 PM	Usuario accedió a página de usuarios
+1802	renold.gonzalez	30-11-2019 03:16:28 PM	Usuario accedió a página de usuarios
+1803	renold.gonzalez	30-11-2019 03:16:40 PM	Usuario accedió a página principal
+1804	renold.gonzalez	30-11-2019 03:16:42 PM	Usuario accedió a página inscritos
+1805	renold.gonzalez	30-11-2019 03:16:44 PM	Usuario accedió a página certificaciones
+1806	renold.gonzalez	30-11-2019 03:16:45 PM	Usuario accedió a página validación
+1807	renold.gonzalez	30-11-2019 03:16:46 PM	Usuario accedió a página reportes
+1808	renold.gonzalez	30-11-2019 03:16:47 PM	Usuario accedió a página de administrtacion de datos
+1809	renold.gonzalez	30-11-2019 03:16:51 PM	Usuario accedió a página de usuarios
+1810	renold.gonzalez	30-11-2019 03:16:55 PM	Usuario accedió a página principal
+1811	renold.gonzalez	30-11-2019 03:16:55 PM	Usuario accedió a página principal
+1812	renold.gonzalez	30-11-2019 03:16:55 PM	Usuario accedió a página principal
+1813	renold.gonzalez	30-11-2019 03:16:55 PM	Usuario accedió a página principal
+1814	renold.gonzalez	30-11-2019 03:16:55 PM	Usuario accedió a página principal
+1815	renold.gonzalez	30-11-2019 03:18:10 PM	Usuario accedió a página principal
+1816	renold.gonzalez	30-11-2019 03:18:13 PM	Usuario accedió a página inscritos
+1817	renold.gonzalez	30-11-2019 03:18:14 PM	Usuario accedió a página certificaciones
+1818	renold.gonzalez	30-11-2019 03:18:15 PM	Usuario accedió a página validación
+1819	renold.gonzalez	30-11-2019 03:18:16 PM	Usuario accedió a página reportes
+1820	renold.gonzalez	30-11-2019 03:18:17 PM	Usuario accedió a página de administrtacion de datos
+1821	renold.gonzalez	30-11-2019 03:18:20 PM	Usuario accedió a página de usuarios
+1822	renold.gonzalez	30-11-2019 03:18:21 PM	Usuario accedió a página principal
+1823	renold.gonzalez	30-11-2019 03:19:19 PM	Usuario accedió a página de administrtacion de datos
+1824	renold.gonzalez	30-11-2019 03:19:26 PM	Administrador exportó  datos de BD Resultados 
+1825	renold.gonzalez	30-11-2019 03:19:34 PM	Administrador exportó  datos de BD Resultados 
+1826	renold.gonzalez	30-11-2019 03:19:43 PM	Usuario accedió a página reportes
+1827	renold.gonzalez	30-11-2019 03:19:45 PM	Usuario salió del sistema
+1828	renold.gonzalez	30-11-2019 03:21:02 PM	Inició sesión como administrador del sistema
+1829	renold.gonzalez	30-11-2019 03:21:02 PM	Usuario accedió a página principal
+1830	renold.gonzalez	30-11-2019 03:21:14 PM	Usuario accedió a página principal
+1831	renold.gonzalez	30-11-2019 03:22:32 PM	Usuario accedió a página inscritos
+1832	renold.gonzalez	30-11-2019 03:22:33 PM	Usuario accedió a página certificaciones
+1833	renold.gonzalez	30-11-2019 03:22:34 PM	Usuario accedió a página validación
+1834	renold.gonzalez	30-11-2019 03:22:35 PM	Usuario accedió a página reportes
+1835	renold.gonzalez	30-11-2019 03:22:36 PM	Usuario accedió a página de administrtacion de datos
+1836	renold.gonzalez	30-11-2019 03:23:11 PM	Usuario accedió a página de usuarios
+1837	renold.gonzalez	30-11-2019 03:23:13 PM	Usuario accedió a página inscritos
+1838	renold.gonzalez	30-11-2019 03:23:15 PM	Usuario accedió a página de administrtacion de datos
+1839	renold.gonzalez	30-11-2019 03:23:18 PM	Usuario accedió a página inscritos
+1840	renold.gonzalez	30-11-2019 03:23:57 PM	Usuario accedió a página certificaciones
+1841	renold.gonzalez	30-11-2019 03:24:02 PM	Usuario accedió a página certificaciones
+1842	renold.gonzalez	30-11-2019 03:24:11 PM	Usuario accedió a página certificaciones
+1843	renold.gonzalez	30-11-2019 03:24:22 PM	Usuario gener? Certificacion
+1844	renold.gonzalez	30-11-2019 03:25:05 PM	Usuario accedió a página principal
+1845	renold.gonzalez	30-11-2019 03:25:49 PM	Usuario accedió a página principal
+1846	renold.gonzalez	30-11-2019 03:25:58 PM	Usuario accedió a página inscritos
+1847	renold.gonzalez	30-11-2019 03:26:39 PM	Usuario accedió a página reportes
+1848	renold.gonzalez	30-11-2019 03:26:51 PM	Usuario gener? reporte academico reporteAcademico_30-11-2019_03_26_51_PM
+1849	renold.gonzalez	30-11-2019 03:27:06 PM	Usuario accedió a página inscritos
+1850	renold.gonzalez	30-11-2019 03:27:08 PM	Usuario accedió a página certificaciones
+1851	renold.gonzalez	30-11-2019 03:27:09 PM	Usuario accedió a página de administrtacion de datos
+1852	renold.gonzalez	30-11-2019 03:27:10 PM	Usuario accedió a página reportes
+1853	renold.gonzalez	30-11-2019 03:48:37 PM	Inició sesión como administrador del sistema
+1854	renold.gonzalez	30-11-2019 03:48:37 PM	Usuario accedió a página principal
+1855	renold.gonzalez	30-11-2019 03:48:44 PM	Usuario accedió a página inscritos
+1856	renold.gonzalez	30-11-2019 03:48:47 PM	Usuario accedió a página certificaciones
+1857	renold.gonzalez	30-11-2019 03:48:48 PM	Usuario accedió a página validación
+1858	renold.gonzalez	30-11-2019 03:48:49 PM	Usuario accedió a página certificaciones
+1859	renold.gonzalez	30-11-2019 03:48:50 PM	Usuario accedió a página inscritos
+1860	renold.gonzalez	30-11-2019 03:48:52 PM	Usuario accedió a página reportes
+1861	renold.gonzalez	30-11-2019 03:48:54 PM	Usuario accedió a página de administrtacion de datos
+1862	renold.gonzalez	30-11-2019 03:48:56 PM	Usuario accedió a página de usuarios
+1863	renold.gonzalez	30-11-2019 03:49:01 PM	Usuario salió del sistema
+1864	renold.gonzalez	30-11-2019 03:50:28 PM	Inició sesión como administrador del sistema
+1865	renold.gonzalez	30-11-2019 03:50:28 PM	Usuario accedió a página principal
+1866	renold.gonzalez	30-11-2019 03:51:00 PM	Usuario accedió a página inscritos
+1867	renold.gonzalez	30-11-2019 03:51:01 PM	Usuario accedió a página certificaciones
+1868	renold.gonzalez	30-11-2019 03:51:02 PM	Usuario accedió a página validación
+1869	renold.gonzalez	30-11-2019 03:51:02 PM	Usuario accedió a página reportes
+1870	renold.gonzalez	30-11-2019 03:51:03 PM	Usuario accedió a página de administrtacion de datos
+1871	renold.gonzalez	30-11-2019 03:51:05 PM	Usuario accedió a página de usuarios
+1872	renold.gonzalez	30-11-2019 03:51:07 PM	Usuario salió del sistema
+1873	renold.gonzalez	30-11-2019 03:52:35 PM	Inició sesión como administrador del sistema
+1874	renold.gonzalez	30-11-2019 03:52:36 PM	Usuario accedió a página principal
+1875	renold.gonzalez	30-11-2019 03:52:41 PM	Usuario accedió a página principal
+1876	renold.gonzalez	30-11-2019 03:52:42 PM	Usuario accedió a página principal
+1877	renold.gonzalez	30-11-2019 03:52:51 PM	Usuario salió del sistema
+1878	renold.gonzalez	30-11-2019 03:54:37 PM	Inició sesión como administrador del sistema
+1879	renold.gonzalez	30-11-2019 03:54:37 PM	Usuario accedió a página principal
+1880	renold.gonzalez	30-11-2019 03:54:46 PM	Usuario accedió a página principal
+1881	renold.gonzalez	30-11-2019 03:54:48 PM	Usuario accedió a página principal
+1882	renold.gonzalez	30-11-2019 03:54:50 PM	Usuario salió del sistema
+1883	renold.gonzalez	30-11-2019 03:55:04 PM	Inició sesión como administrador del sistema
+1884	renold.gonzalez	30-11-2019 03:55:04 PM	Usuario accedió a página principal
+1885	renold.gonzalez	30-11-2019 03:55:07 PM	Usuario salió del sistema
+1886	renold.gonzalez	30-11-2019 04:12:26 PM	Inició sesión como administrador del sistema
+1887	renold.gonzalez	30-11-2019 04:12:26 PM	Usuario accedió a página principal
+1888	renold.gonzalez	30-11-2019 04:12:28 PM	Usuario salió del sistema
+1889	renold.gonzalez	30-11-2019 04:12:41 PM	Inició sesión como administrador del sistema
+1890	renold.gonzalez	30-11-2019 04:12:41 PM	Usuario accedió a página principal
+1891	renold.gonzalez	30-11-2019 04:12:46 PM	Usuario accedió a página inscritos
+1892	renold.gonzalez	30-11-2019 04:12:47 PM	Usuario accedió a página certificaciones
+1893	renold.gonzalez	30-11-2019 04:12:48 PM	Usuario accedió a página validación
+1894	renold.gonzalez	30-11-2019 04:12:50 PM	Usuario accedió a página reportes
+1895	renold.gonzalez	30-11-2019 04:12:51 PM	Usuario accedió a página de administrtacion de datos
+1896	renold.gonzalez	30-11-2019 04:12:56 PM	Usuario accedió a página de usuarios
+1897	renold.gonzalez	30-11-2019 04:13:00 PM	Usuario accedió a página de usuarios
+1898	renold.gonzalez	30-11-2019 04:13:07 PM	Usuario salió del sistema
+1899	renold.gonzalez	30-11-2019 04:21:41 PM	Inició sesión como administrador del sistema
+1900	renold.gonzalez	30-11-2019 04:21:41 PM	Usuario accedió a página principal
+1901	renold.gonzalez	30-11-2019 04:21:45 PM	Usuario accedió a página validación
+1902	renold.gonzalez	30-11-2019 04:22:07 PM	Usuario accedió a página principal
+1903	renold.gonzalez	01-12-2019 08:47:13 AM	Inició sesión como administrador del sistema
+1904	renold.gonzalez	01-12-2019 08:47:13 AM	Usuario accedió a página principal
+1905	renold.gonzalez	01-12-2019 08:47:16 AM	Usuario accedió a página validación
+1906	renold.gonzalez	01-12-2019 09:02:18 AM	Usuario accedió a página validación
+1907	renold.gonzalez	01-12-2019 09:16:48 AM	Usuario accedió a página validación
+1908	renold.gonzalez	01-12-2019 09:35:28 AM	Usuario salió del sistema
+1909	renold.gonzalez	01-12-2019 10:52:38 AM	Inició sesión como administrador del sistema
+1910	renold.gonzalez	01-12-2019 10:52:38 AM	Usuario accedió a página principal
+1911	renold.gonzalez	01-12-2019 10:54:50 AM	Usuario accedió a página inscritos
+1912	renold.gonzalez	01-12-2019 10:54:53 AM	Usuario accedió a página principal
+1913	renold.gonzalez	01-12-2019 10:57:01 AM	Usuario accedió a página validación
+1914	renold.gonzalez	01-12-2019 10:57:03 AM	Usuario accedió a página certificaciones
+1915	renold.gonzalez	01-12-2019 10:57:12 AM	Usuario accedió a página certificaciones
+1916	renold.gonzalez	01-12-2019 10:57:24 AM	Administrador exportó  datos de BD Resultados 
+1917	renold.gonzalez	01-12-2019 10:57:24 AM	Verificación de duplicidad de archivos csv
+1918	renold.gonzalez	01-12-2019 10:57:24 AM	No hay archivos duplicados para exportar
+1919	renold.gonzalez	01-12-2019 10:57:26 AM	Generó un archivo exportado de Resultados
+1920	renold.gonzalez	01-12-2019 10:57:32 AM	Usuario gener? Certificacion
+1921	renold.gonzalez	01-12-2019 10:57:42 AM	Usuario accedió a página inscritos
+1922	renold.gonzalez	01-12-2019 10:57:49 AM	Usuario accedió a página validación
+1923	renold.gonzalez	01-12-2019 10:57:51 AM	Usuario accedió a página reportes
+1924	renold.gonzalez	01-12-2019 10:57:57 AM	Usuario gener? reporte academico reporteAcademico_01-12-2019_10_57_57_AM
+1925	renold.gonzalez	01-12-2019 10:58:18 AM	Usuario accedió a página validación
+1926	renold.gonzalez	01-12-2019 11:45:23 AM	Usuario accedió a página inscritos
+1927	renold.gonzalez	04-12-2019 09:41:16 PM	Inició sesión como administrador del sistema
+1928	renold.gonzalez	04-12-2019 09:41:16 PM	Usuario accedió a página principal
+1929	renold.gonzalez	04-12-2019 09:42:08 PM	Usuario accedió a página validación
+1930	renold.gonzalez	04-12-2019 10:13:29 PM	Usuario accedió a página validación
+1931	renold.gonzalez	07-12-2019 11:42:34 AM	Inició sesión como administrador del sistema
+1932	renold.gonzalez	07-12-2019 11:42:34 AM	Usuario accedió a página principal
+1933	renold.gonzalez	07-12-2019 11:42:45 AM	Usuario accedió a página inscritos
+1934	renold.gonzalez	07-12-2019 11:42:49 AM	Usuario accedió a página certificaciones
+1935	renold.gonzalez	07-12-2019 11:42:50 AM	Usuario accedió a página validación
+1936	renold.gonzalez	07-12-2019 12:05:09 PM	Usuario accedió a página certificaciones
+1937	renold.gonzalez	07-12-2019 12:05:16 PM	Usuario accedió a página inscritos
+1938	renold.gonzalez	07-12-2019 12:05:22 PM	Usuario accedió a página certificaciones
+1939	renold.gonzalez	07-12-2019 12:24:44 PM	Usuario accedió a página inscritos
+1940	renold.gonzalez	07-12-2019 12:24:47 PM	Usuario accedió a página validación
+1941	renold.gonzalez	07-12-2019 12:25:18 PM	Usuario accedió a página validación
+1942	renold.gonzalez	07-12-2019 12:27:34 PM	Usuario accedió a página validación
+1943	renold.gonzalez	07-12-2019 12:29:39 PM	Usuario accedió a página validación
+1944	renold.gonzalez	07-12-2019 12:33:48 PM	Usuario accedió a página validación
+1945	renold.gonzalez	07-12-2019 12:35:12 PM	Usuario accedió a página validación
+1946	renold.gonzalez	07-12-2019 12:36:22 PM	Usuario accedió a página validación
+1947	renold.gonzalez	07-12-2019 12:37:02 PM	Usuario accedió a página validación
+1948	renold.gonzalez	07-12-2019 12:40:50 PM	Usuario accedió a página validación
+1949	renold.gonzalez	07-12-2019 12:43:00 PM	Usuario accedió a página validación
+1950	renold.gonzalez	07-12-2019 12:57:34 PM	Usuario accedió a página validación
+1951	renold.gonzalez	07-12-2019 12:57:58 PM	Usuario accedió a página validación
+1952	renold.gonzalez	07-12-2019 12:59:24 PM	Usuario accedió a página validación
+1953	renold.gonzalez	07-12-2019 01:01:55 PM	Usuario accedió a página validación
+1954	renold.gonzalez	07-12-2019 01:02:58 PM	Usuario accedió a página validación
+1955	renold.gonzalez	07-12-2019 01:28:54 PM	Usuario accedió a página validación
+1956	renold.gonzalez	07-12-2019 01:29:15 PM	Inició sesión como administrador del sistema
+1957	renold.gonzalez	07-12-2019 01:29:15 PM	Usuario accedió a página principal
+1958	renold.gonzalez	07-12-2019 01:29:17 PM	Usuario accedió a página validación
+1959	renold.gonzalez	07-12-2019 01:30:16 PM	Usuario accedió a página validación
+1960	renold.gonzalez	07-12-2019 01:30:23 PM	Usuario accedió a página validación
+1961	renold.gonzalez	07-12-2019 01:30:47 PM	Usuario accedió a página validación
+1962	renold.gonzalez	07-12-2019 01:32:07 PM	Usuario accedió a página validación
+1963	renold.gonzalez	07-12-2019 01:33:22 PM	Usuario accedió a página validación
+1964	renold.gonzalez	07-12-2019 01:38:48 PM	Usuario accedió a página validación
+1965	renold.gonzalez	07-12-2019 01:46:40 PM	Usuario accedió a página validación
+1966	renold.gonzalez	07-12-2019 01:48:17 PM	Usuario accedió a página validación
+1967	renold.gonzalez	07-12-2019 01:51:09 PM	Usuario accedió a página validación
+1968	renold.gonzalez	07-12-2019 03:07:22 PM	Usuario accedió a página reportes
+1969	renold.gonzalez	07-12-2019 03:07:23 PM	Usuario accedió a página validación
+1970	renold.gonzalez	07-12-2019 03:07:25 PM	Usuario salió del sistema
+1971	renold.gonzalez	07-12-2019 03:07:36 PM	Inició sesión como administrador del sistema
+1972	renold.gonzalez	07-12-2019 03:07:37 PM	Usuario accedió a página principal
+1973	renold.gonzalez	07-12-2019 03:07:38 PM	Usuario accedió a página de usuarios
+1974	renold.gonzalez	07-12-2019 03:07:40 PM	Usuario accedió a página de administrtacion de datos
+1975	renold.gonzalez	07-12-2019 03:07:55 PM	Usuario accedió a página de administrtacion de datos
+1976	renold.gonzalez	07-12-2019 03:08:35 PM	Usuario accedió a página de administrtacion de datos
+1977	renold.gonzalez	07-12-2019 03:08:39 PM	Usuario accedió a página reportes
+1978	renold.gonzalez	07-12-2019 03:08:40 PM	Usuario accedió a página de administrtacion de datos
+1979	renold.gonzalez	07-12-2019 03:08:44 PM	Usuario accedió a página validación
+1980	renold.gonzalez	07-12-2019 03:11:18 PM	Usuario accedió a página validación
+1981	renold.gonzalez	07-12-2019 03:22:25 PM	Usuario accedió a página validación
+1982	renold.gonzalez	07-12-2019 03:25:31 PM	Usuario accedió a página validación
+1983	renold.gonzalez	07-12-2019 03:27:20 PM	Usuario accedió a página validación
+1984	renold.gonzalez	07-12-2019 03:29:05 PM	Usuario accedió a página validación
+1985	renold.gonzalez	07-12-2019 04:12:58 PM	Usuario accedió a página validación
+1986	renold.gonzalez	07-12-2019 04:14:39 PM	Usuario accedió a página validación
+1987	renold.gonzalez	07-12-2019 04:16:52 PM	Usuario accedió a página validación
+1988	renold.gonzalez	07-12-2019 04:17:24 PM	Administrador validó a  en BD´s
+1989	renold.gonzalez	07-12-2019 04:17:24 PM	Procesando solicitud de validación...
+1990	renold.gonzalez	07-12-2019 04:19:46 PM	Usuario gener? Certificacion
+1991	renold.gonzalez	07-12-2019 04:20:09 PM	Usuario accedió a página de usuarios
+1992	renold.gonzalez	07-12-2019 04:21:41 PM	Usuario accedió a página validación
+1993	renold.gonzalez	07-12-2019 04:25:13 PM	Usuario accedió a página de usuarios
+1994	renold.gonzalez	07-12-2019 04:35:38 PM	Usuario accedió a página validación
+1995	renold.gonzalez	07-12-2019 04:37:52 PM	Usuario accedió a página validación
+1996	renold.gonzalez	07-12-2019 04:39:49 PM	Usuario accedió a página validación
+1997	renold.gonzalez	07-12-2019 04:40:12 PM	Ultimo código de validación V00016
+1998	renold.gonzalez	07-12-2019 04:40:12 PM	Administrador validó a 09-00-0754-01107 en las tablas de datos-> 
+1999	renold.gonzalez	07-12-2019 04:40:13 PM	Procesando solicitud de validación...
+2000	renold.gonzalez	07-12-2019 04:40:52 PM	Usuario accedió a página de usuarios
+2001	renold.gonzalez	07-12-2019 04:44:08 PM	Usuario accedió a página validación
+2002	renold.gonzalez	07-12-2019 04:44:16 PM	Usuario accedió a página de usuarios

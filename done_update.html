@@ -1,0 +1,67 @@
+<?php
+include_once './Scripts/classConexionDB.php';
+openConnection();
+include_once './Scripts/library_db_sql.php';
+session_start();
+
+date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+$YEAR  = date("Y");
+
+
+//save
+if (isset($_POST['inscritos']) && isset($_POST['resultados'])) {
+
+    //truncate and isnert new table
+    truncateTable("sgra_config_tb");
+    insertNewTable($_POST['inscritos'],$_POST['resultados']);
+
+    //create tables
+    create_Table_Inscritos($_POST['inscritos']);
+    createTable_Resultado($_POST['resultados']);
+    
+    //truncate tables
+    truncateTable("validaciones");
+    truncateTable("inscritostmp");
+    truncateTable("resultadostmp");
+
+     ////REFRESH
+    header("Refresh: 10; url=index.html");
+}else{
+   // echo "Ocurrio un error";
+}
+
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Listo!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Actualización completada con exito</h1>
+  
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <center>
+        <img src="./images/checked.png" width="100" height="100">
+        <h4>Redirigiendo en 10 segundos a la página de inicio de sesión</h4>
+      </center>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

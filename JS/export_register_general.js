@@ -61,7 +61,7 @@ function sendIdToGenerateExportFile(id,stateSent) {
         if (data != null) {
             window.open(data);
         }
-        console.log("DATA-> " + data);
+        console.log("DATA" + data);
     }).fail(function(jqXHR, textStatus, errorThrown) {
         console.log("La solicitud a fallado: " + textStatus);
     });

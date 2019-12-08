@@ -11,7 +11,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 $name            = strtoupper($_POST["idName"]);
 $lastName        = strtoupper($_POST["idLastName"]);
 $cedula          = $_POST["idCID"];
-$idSearch        = $_POST["idInscrito"];
+//$idSearch        = $_POST["idInscrito"];
 $tableInscritos  = $_POST["table1"];
 $tableResultados = $_POST["table2"];
 
@@ -23,34 +23,37 @@ if (compare_table($tableInscritos, $tableResultados)) {
         //BUSQUEDA DE RESULTADOS X CEDULA
         // validate_user_exist_CID($cedula);
         if (validate_user_exist_CID($cedula, $name, $lastName) == 0) {
-            // echo "EXISTE DATA PARA ESTEE USUARIO";
+            // echo "EL USUARIO YA FUE VALIDADO";
             echo 0;
-        } else if (validate_user_exist_CID($cedula, $name, $lastName) == 3) {
-            //echo "USUARIO IMCPMPLETO";
+        } else if (validate_user_exist_CID($cedula, $name, $lastName) == 1) {
+            //echo "USUARIO ENCONTRADO SIN VALDIACI+ÓN";
+            echo 1;
+
+        }else if (validate_user_exist_CID($cedula, $name, $lastName) == 3) {
+            //echo "USUARIO IMCOMPLETO";
             echo 3;
 
-        } else {
+        }else {
+            //el usuaio no existe
             echo 2;
         }
 
-    } else if (isset($idSearch)) {
+    /*} else if (isset($idSearch)) {
         //BUSQUEDA DE RESULTADOS X N_INSCRITOS
         if (validate_user_exist_Ninscrito($idSearch)) {
             echo 3;
         } else {
             //echo "NO existe usuario en las bases de datos";
             echo 3;
-        }
+        }*/
 
     } else {
         //echo "Hay campos sin especificar para la busqueda";
-        echo 2;
-    }
-} else {
-    //echo "Usuario no INDICO Las tablas correspondiente al año anterior";
-    echo 2;
+        echo 2;}
 
-}
+}else {
+    //echo "Usuario no indico Las tablas correspondiente al año anterior";
+    echo 2;}
 
 //////////////////////////////////////////////////////////////////
 //FUNCIONES
@@ -94,34 +97,42 @@ function compare_table($TABLA_A, $TABLA_B)
     return $result_Tabla;
 }
 
+
+
+
+//check isf existe register into validate tb 
 function validate_user_exist_CID($CID, $NAME, $LASTNAME)
 {
-
+   //1-EXPLODE CID 
+    $explodeCID = explode("-", $CID);
     $State_validation_byCID = "";
-    $CIDExiste              = validationCIDExist($cedula);
-    //SI SE ENCEUNTRAN DATOS  ENTONCES SI EXISTE UNA VALIADACION ANTERIOR
+
+    //2-CHECK IF EXISTE REGISTER INTO VALIDATE TB
+    $CIDExiste              = validationCIDExist($CID);
+
+    //3-IF EXIST DATA , THENS EXIST REGISTER INTO VALIDATE TB
     if (!is_null($CIDExiste)) {
-
-        echo "YA EXISTE UNA VALIDACION CON ESTA CEDULA";
+        //echo "YA EXISTE UNA VALIDACION CON ESTA CEDULA";
+        echo 0;
     } else {
-        //NO EXISTE UNA VALIDCION ANTERIOR, se PUEDE CONTINUAR
+        //NO EXISTE UNA VALIDACION ANTERIOR,ENTONCES se PUEDE CONTINUAR
         //VERIFICAR QUE EL USUARIO EXISTE EN LAS BASE DE DATOS
-        $SPLIT_ID         = explode("-", $CID);
-        $DataInscritosCID = getUserCIDFromInscritos($NAME, $LASTNAME);
+        $DataInscritosCID = getUserCIDFromInscritos($explodeCID[0],$explodeCID[1],$explodeCID[2],$explodeCID[3]);
+        $DataResultadosCID = getUserCIDFromResultados($explodeCID[0],$explodeCID[1],$explodeCID[2],$explodeCID[3]);
 
-        $DataResultadosCID = getUserCIDFromResultados($NAME, $LASTNAME);
+                if (is_object($DataInscritosCID) && is_object($DataResultadosCID)) {
+                    //El usuairo existe en las base de datos
+                    $State_validation_byCID = 1;
 
-        if (!is_null($DataInscritosCID) && !is_null($DataResultadosCID)) {
-            $State_validation_byCID = 0;
+                } else if (is_null($DataInscritosCID) && is_null($DataResultadosCID)) {
 
-        } else if (is_null($DataInscritosCID) || is_null($DataResultadosCID)) {
+                    // echo "El usuario no existe en las TB de datos ";
+                    $State_validation_byCID = 2;
 
-            // echo "El usuario existe en una de las dos TB de datos ";
-            $State_validation_byCID = 3;
-
-        } else {
-            $State_validation_byCID = 2;
-        }
+                } else {
+                    // echo "El usuario existe en una de las dos TB de datos ";
+                    $State_validation_byCID = 3;
+                }
 
     }
 
@@ -129,7 +140,7 @@ function validate_user_exist_CID($CID, $NAME, $LASTNAME)
 
 }
 
-function validate_user_exist_Ninscrito($N_INSCRITO, $NAME, $LASTNAME)
+/*function validate_user_exist_Ninscrito($N_INSCRITO, $NAME, $LASTNAME)
 {
     $State_validation_byNInscrito = "";
 
@@ -150,3 +161,4 @@ function validate_user_exist_Ninscrito($N_INSCRITO, $NAME, $LASTNAME)
     }
     return $State_validation_byNInscrito;
 }
+*/

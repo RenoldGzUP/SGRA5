@@ -1,7 +1,7 @@
 //STEP 1
-// CHECK USER EXIST
+// CHECK USER EXIST INTO VALIDATIONS
 function sendIDSearch() {
-    var idInscrito = $("#idSearch").val();
+   // var idInscrito = $("#idSearch").val();
     var idName = $("#idName").val();
     var idCID = $("#idCID").val();
     var idLastName = $("#idLastName").val();
@@ -9,13 +9,12 @@ function sendIDSearch() {
     var table2 = $("#tablaResultados").val();
     //////////////////////////////////////////////////////////////////////////////////
     if (table1 != 0 && table2 != 0) {
-        if (idName != '' && idLastName != '' && idInscrito != '' || idName != '' && idLastName != '' && idCID != '') {
+        if (idName != '' && idLastName != '' && idCID != '') {
             $.ajax({
                 data: {
                     "idName": idName,
                     "idLastName": idLastName,
                     "idCID": idCID,
-                    "idInscrito": idInscrito,
                     "table1": table1,
                     "table2": table2
                 },
@@ -24,21 +23,24 @@ function sendIDSearch() {
                 url: "../Scripts/validationRegisterExist.php",
             }).done(function(data, textStatus, jqXHR) {
                 console.log("data retornada:" + data);
-                if (data == 1) {
+                if (data == 0) {
                     $("#foundRegister").modal();
-                    console.log(data);
-                } else if (data == 2) {
+                } else if(data == 1){
+                    $("#dataRegister").modal();
+                     getTableDataInscritos(idCID);
+                     getTableDataResultados(idCID);
+                }else if (data == 2) {
                     $("#wrongRegister").modal();
                 } else if (data == 3) {
                     $("#withoutRegister").modal();
-                    getTableDataInscritos(idName, idLastName);
-                    getTableDataResultados(idName, idLastName);
+                    getTableDataInscritos(idCID);
+                     getTableDataResultados(idCID);
                 } else {
-                    getTableDataInscritos(idName, idLastName);
-                    $("#dataRegister").modal();
-                    $('#alertRecalcular').show();
+                    //    getTableDataInscritos(idName, idLastName);
+                   // $("#dataRegister").modal();
+                    //$('#alertRecalcular').show();
                     //document.getElementById("MeasuringBtt").disabled = false;
-                    getTableDataResultados(idName, idLastName);
+                    //    getTableDataResultados(idName, idLastName);
                     // document.getElementById("ValidateBtt").disabled = false;
                     //document.getElementById('taInscritosInscritos').innerHTML = data;
                     //document.getElementById('taInscritosResultado').innerHTML = data;
@@ -59,12 +61,13 @@ function sendIDSearch() {
 }
 //SECOND STEP
 //SAVE NEW DATA IN CASE THAT  FILLS IS NOT COMPLETE
-function measuringValidate(idInscrito) {
+function measuringValidate(idCID) {
     //$('#alertValidar').show();
+    console.log(idCID);
     document.getElementById("ValidateBtt").disabled = true;
     $.ajax({
         data: {
-            "idInscrito": idInscrito,
+            "idCID": idCID,
         },
         type: "POST",
         dataType: "text",
@@ -78,48 +81,59 @@ function measuringValidate(idInscrito) {
 }
 
 
-function updateRegisterData(){
 
-}
-
-
-function saveDataTest(idInscrito) {
+function saveDataTest(idCID) {
+    console.log(idCID);
     document.getElementById("ValidateBtt").disabled = false;
-    document.getElementById("ValidateBtt").value = idInscrito;
+    document.getElementById("ValidateBtt").value = idCID;
     document.getElementById("SearchBtt").disabled = true;
-    
-    /*  $.ajax({
+    //get data test Status
+    var indice_ps = $("#indice_ps").val();
+    var indice_pca = $("#indice_pca").val();
+    var indice_pcg = $("#indice_pcg").val();
+    var indice_gatb = $("#indice_gatb").val();
+
+    console.log("PS"+indice_ps + "  PCA " +indice_pca);
+
+     $.ajax({
           data: {
-              "idInscrito": idInscrito,
+               "idCID": idCID,
+              "indice_ps":indice_ps,
+              "indice_pca":indice_pca,
+              "indice_pcg":indice_pcg,
+              "indice_gatb":indice_gatb
           },
           type: "POST",
           dataType: "text",
           url: "../Scripts/saveMeasuringStudent.php",
       }).done(function(data, textStatus, jqXHR) {
-          $("#measuringModal").modal();
-          document.getElementById('measuringTableEdit').innerHTML = data;
+          document.getElementById('taInscritosResultado').innerHTML = "";
+          document.getElementById('taInscritosResultado').innerHTML = data;
+          console.log(data);
       }).fail(function(jqXHR, textStatus, errorThrown) {
           console.log("La solicitud a fallado: " + textStatus);
-      });*/
+      });
+
 }
+
 ////////////////////////////////////////////////////////////////////////
 //THIRD STEP
 //SAVE NEW DATA IN CASE THAT  FILLS IS NOT COMPLETE
 function sendIDValidate() {
     document.getElementById("SearchBtt").disabled = true;
-    var idInscrito = $("#ValidateBtt").val();
-    console.log(idInscrito);
+    var idCID = $("#ValidateBtt").val();
+    console.log("IS PARA VALIDAR->   "+idCID);
     var table1 = $("#tablaInscritos").val();
     var table2 = $("#tablaResultados").val();
-    if (idInscrito == '') {
+    if (idCID == '') {
         $("#wrongRegister").modal();
         // console.log("Wrong");
     } else {
         document.getElementById("ValidateBtt").disabled = true;
-        console.log("aceptado");
+        console.log("aceptado para validar");
         $.ajax({
             data: {
-                "idInscrito": idInscrito,
+                "idCID": idCID,
                 "table1": table1,
                 "table2": table2
             },
@@ -190,11 +204,10 @@ function generateValidation() {
 }
 /////////////////////////////////////////////////////
 //GET DATA
-function getTableDataInscritos(NAME, LASTNAME) {
+function getTableDataInscritos(idCID) {
     $.ajax({
         data: {
-            "idName": NAME,
-            "idLastName": LASTNAME,
+            "idCID":idCID,
             "idPost": 1
         },
         type: "POST",
@@ -208,11 +221,10 @@ function getTableDataInscritos(NAME, LASTNAME) {
     });
 }
 
-function getTableDataResultados(NAME, LASTNAME) {
+function getTableDataResultados(idCID) {
     $.ajax({
         data: {
-            "idName": NAME,
-            "idLastName": LASTNAME,
+            "idCID": idCID,
             "idPost": 2
         },
         type: "POST",

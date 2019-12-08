@@ -1,3 +1,4 @@
+
 function obtenerAreas(val) {
     $.ajax({
         type: "POST",
@@ -5,6 +6,7 @@ function obtenerAreas(val) {
         data: 'id_sedes=' + val,
         success: function(data) {
             $("#lista_areas").html(data);
+            document.getElementById("#lista_facultades").selectedIndex = "0";
         }
     });
 }
@@ -126,3 +128,9 @@ function accessCookie(cookieName) {
 }
 
 function sendSelectFiltes() {}
+
+
+function resetSelect(){
+    document.getElementById('lista_facultades').reset();
+
+}

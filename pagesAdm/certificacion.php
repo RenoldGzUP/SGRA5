@@ -43,15 +43,20 @@ if ($now > $_SESSION['expire']) {
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
+    <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+    <script  type="text/javascript" src="../JS/dataTables.fixedHeader.min.js"></script>
     <script type="text/javascript" src="../JS/bootstrap.js"></script>
     <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+    <link rel="stylesheet" media="all" href="../Style/fixedHeader.dataTables.min.css">
     <link rel="stylesheet" media="all" href="../Style/ResultadosStyle.css">
-    <script  type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+    
+    <link rel="stylesheet" media="all" href="../Style/jquery.dataTables.min.css">
+    
     <script src="../JS/Filtros.js"></script>
-    <script src="../JS/tableResultados.js"></script>
+    <script src="../JS/tableResultados_old.js"></script>
     <script src="../JS/getCheckedRow.js"></script>
     <script src="../JS/export_register_general.js"></script>
-    <script src="../JS/tableEdit.js"></script>
+    <!--<script src="../JS/tableEdit.js"></script>-->
 
 </head>
 
@@ -67,14 +72,14 @@ if ($now > $_SESSION['expire']) {
       <?php include '../modulos/panelFilter.php';?>
   <!---->
   <div class="col-lg-12 table-responsive">
-    <table id="tableresultados" class="table table-bordered table-hover display compact">
-     <thead style="font-size: 12px;text-align:center; color: #ffffff; background-color: #225ddb">
+    <table id="tableresultados" class="table table-bordered table-hover table-fixed select">
+      <thead style="font-size: 12px;text-align:center; color: #ffffff; background-color: #225ddb">
        <tr>
-        <th> <input type="checkbox"  id="checkall" ></th>
+        <th> <input type="checkbox"  id="resultados_checkall" ></th>
         <th>#</th>
         <th>Nombre</th>
         <th>Apellido</th>
-        <th> Cédula  </th>
+        <th>Cédula </th>
         <th>Inscripción</th>
         <th>Sede</th>
         <th>Fac1A</th>
@@ -85,8 +90,8 @@ if ($now > $_SESSION['expire']) {
         <th>PCG</th>
         <th>GATB</th>
         <th>A.Verbal</th>
-        <th>A.Numerica</th>
-        <th>Indice</th>
+        <th>A.Numérica</th>
+        <th>Índice</th>
         <th>Acciones</th>
       </tr>
     </thead>

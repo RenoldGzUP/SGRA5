@@ -4,24 +4,10 @@
   <select name="sedes"  id="lista_sedes" onChange='obtenerAreas(this.value)'>
    <option >Sede</option>
    <?php
-$listaSedes = getSedes();
-if (isset($_SESSION['sede'])) {
-
-    foreach ($listaSedes as $item) {
-
-        if ($_SESSION['sede'] == $item->codigo_sede) {
-            echo "<option value='$item->id_sede' selected>" . $item->codigo_sede . "-" . $item->nombre_sede . "</option> ";
-        } else {
-            echo "<option value='$item->id_sede'>" . $item->codigo_sede . "-" . $item->nombre_sede . "</option> ";
-        }
-
-    }
-
-} else {
-    foreach ($listaSedes as $item) {
+   $listaSedes = getSedes();
+   foreach ($listaSedes as $item) {
         echo "<option value='$item->id_sede'>" . $item->codigo_sede . "-" . $item->nombre_sede . "</option> ";
     }
-}
 
 ?>
 </select>

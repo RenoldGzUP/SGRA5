@@ -168,7 +168,9 @@
       <div class="modal-body">
         <div class="row">
           <center><img src='../images/found.png' width="150" height="150" /> </center>
-          <center><h4>Registros encontrados</h4></center>
+          <center><h4>Registro encontrado</h4></center>
+          <center><h5>El estudiante buscado , no ha sido validado.</h5></center>
+          <center><h5>A continuación , marque cual es el par del registro en ambas tablas para hacer la validación</h5></center>
         </div>
       </div>
       <div class="modal-footer">

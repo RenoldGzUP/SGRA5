@@ -263,7 +263,7 @@ function filtrarTabla() {
     //send data and return  full table 
 }
 
-function initialData() {
+/*function initialData() {
     var t = $('#tableInscritos').DataTable({
         "destroy": true,
         "ajax": {
@@ -351,7 +351,7 @@ function initialData() {
             }
         }
     });
-}
+}*/
 
 function getDataAJAX(issetData, filterState) {
     console.log("Start ajax function");
@@ -496,6 +496,8 @@ $('#userslist').DataTable({
         $("#reportDetails").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
     },
 });
+
+//edit
 var editar_row = function(tbody, table) {
     $(tbody).on("click", "button.editar", function() {
         var data = table.row($(this).parents("tr")).data();
@@ -510,6 +512,9 @@ var editar_row = function(tbody, table) {
         //modal_edit(data-);
     });
 }
+
+
+//delete
 var borrar_row = function(tbody, table) {
     $(tbody).on("click", "button.borrar", function() {
         var data = table.row($(this).parents("tr")).data();
@@ -528,12 +533,3 @@ var borrar_row = function(tbody, table) {
         //modal_edit(data-);
     });
 }
-/**function delete_row(id) {
-    // var resp = confirm("Confirme borrado de " + id + "  ?");
-    $("#deleteModal").modal();
-    document.getElementById("deleteTaskBtt").onclick = function() {
-        deleteTask(id);
-        table.row($(this).parents('tr')).remove().draw(false);
-    };
-}*/
-//////////////////////////////////////////////////////////////

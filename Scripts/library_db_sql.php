@@ -59,6 +59,13 @@ class Query
 
 }
 
+//DEFINE MAIN TABLES
+/*date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
+$YEAR  = date("Y");
+global $T_INSCRITOS = "inscritos".$YEAR;
+global $T_RESULTADOS = "resultados".$YEAR;
+*/
+
 function getUsers($userName)
 {
     global $mysqli;
@@ -540,7 +547,7 @@ function filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
 function filter_TR_By_S($SEDE)
 {
     global $mysqli;
-    $TR         = "resultados2017";
+    $TR         = "resultados2018";
     $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " . $TR . " where sede = ?");
     $parametros = array('i', &$SEDE);
     $data       = $query->getresults($parametros);
@@ -1318,15 +1325,11 @@ function getInscritos()
 
 //POR CID en RESULTADOS
 
-function showDataVAI($NAME, $LASTNAME)
+function showDataVAI($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
-    // $record_page = 10;
-
-    $NAMEA     = $NAME;
-    $LASTNAMEB = $LASTNAME;
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM inscritos2017 where nombre = ? AND apellido = ? ");
-    $parametros = array("ss", &$NAMEA, &$LASTNAMEB);
+    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM inscritos2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1337,13 +1340,11 @@ function showDataVAI($NAME, $LASTNAME)
 
 }
 
-function showDataVAR($NAME, $LASTNAME)
+function showDataVAR($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
-    $NAMEA     = $NAME;
-    $LASTNAMEB = $LASTNAME;
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM resultados2017 where nombre = ? AND apellido = ? ");
-    $parametros = array("ss", &$NAMEA, &$LASTNAMEB);
+    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM resultados2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1354,17 +1355,56 @@ function showDataVAR($NAME, $LASTNAME)
 
 }
 
-function getTestUSER($NUMINSCRITO)
+function getTestUSER($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT ps,pca,pcg,gatb FROM resultados2017 WHERE n_ins=?");
-    $parametros = array('s', &$NUMINSCRITO);
+    $Query      = new Query($mysqli, "SELECT ps,pca,pcg,gatb FROM resultados2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $Query->getresults($parametros);
 
     if (isset($data[0])) {
         return $data[0];} else {return null;}
 
 }
+
+function getUserAreaTest($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+{
+    global $mysqli;
+    $Query      = new Query($mysqli, "SELECT areap,ps,pca,pcg,gatb FROM resultados2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
+}
+
+function updateIndice($INDICE, $PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+{
+ global $mysqli;
+    $Query      = new Query($mysqli, "UPDATE resultados2017 SET indice = ? WHERE provincia =? and clave=? and tomo =? and  folio =?");
+    $parametros = array("sssss",&$INDICE, &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
+
+}
+
+
+function updateUserTest($PS,$PCA,$PCG,$GATB,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+{
+    global $mysqli;
+    $Query      = new Query($mysqli, "UPDATE resultados2017 SET ps =?,pca =?,pcg =?,gatb =? WHERE provincia =? and clave=? and tomo =? and  folio =?");
+    $parametros = array("ssssssss",&$PS,&$PCA,&$PCG,&$GATB,&$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
+}
+
 
 function validationCIDExist($CID)
 {
@@ -1380,12 +1420,12 @@ function validationCIDExist($CID)
 ///////////////////////
 //CID EXIST
 
-function getUserCIDFromInscritos()
+function getUserCIDFromInscritos($PROVINCIA,$CLAVE, $TOMO , $FOLIO)
 {
     global $mysqli;
     $TR         = "inscritos2017";
-    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE cedula=?");
-    $parametros = array('s', &$CID);
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $parametros = array('ssss', &$PROVINCIA, &$CLAVE , &$TOMO , &$FOLIO);
     $data       = $Query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1393,12 +1433,12 @@ function getUserCIDFromInscritos()
 
 }
 
-function getUserCIDFromResultados()
+function getUserCIDFromResultados($PROVINCIA, $CLAVE, $TOMO , $FOLIO)
 {
     global $mysqli;
     $TR         = "resultados2017";
-    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE cedula=?");
-    $parametros = array('s', &$CID);
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $parametros = array('ssss', &$PROVINCIA, &$CLAVE , &$TOMO , &$FOLIO);
     $data       = $Query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1431,7 +1471,8 @@ function checkRegisterExistResultados($NUMINSCRITO)
 function checkLastValidationCode()
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT n_ins FROM resultados2018 WHERE n_ins LIKE 'V%' ORDER BY n_ins DESC LIMIT 1");
+    //$Query      = new Query($mysqli, "SELECT n_ins FROM resultados2018 WHERE n_ins LIKE 'V%' ORDER BY n_ins DESC LIMIT 1");
+    $Query      = new Query($mysqli, "SELECT codigovalidacion FROM validaciones ORDER BY codigovalidacion DESC LIMIT 1");
     $parametros = array();
     $data       = $Query->getresults();
     if (isset($data[0])) {
@@ -1468,73 +1509,84 @@ function getAllDataValidationRes($NUMINSCRITO)
 
 //////////////////////////////////////////////////////////////////////////////////////
 //COPIADO DE LA BASE DE DATOS A LA BASA DE DE DATOS TEMPORAL
-function clonTable1toTable2Inscritos($NUMINSCRITO)
+function clonTable1toTable2Inscritos($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO inscritostmp SELECT * FROM inscritos2017 WHERE n_ins=?");
-    $parametros = array('s', &$NUMINSCRITO);
+    $query      = new Query($mysqli, "INSERT INTO inscritostmp SELECT * FROM inscritos2017 WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //COPIADO DE LA BASE DE DATOS A LA BASA DE DE DATOS TEMPORAL
-function clonTable1toTable2Resultados($NUMINSCRITO)
+function clonTable1toTable2Resultados($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO resultadostmp SELECT * FROM resultados2017 WHERE n_ins=?");
-    $parametros = array('s', &$NUMINSCRITO);
+    $query      = new Query($mysqli, "INSERT INTO resultadostmp SELECT * FROM resultados2017 WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS INSCRITOS
-function clonInscritos($NUMINSCRITO)
+function clonInscritos($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO inscritos2018 SELECT * FROM inscritostmp WHERE n_ins=?");
-    $parametros = array('s', &$NUMINSCRITO);
+    $query      = new Query($mysqli, "INSERT INTO inscritos2018 SELECT * FROM inscritostmp WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS RESULTADO
-function clonResultados($NUMINSCRITO)
-{
+function clonResultados($PROVINCIA, $CLAVE, $TOMO, $FOLIO){
+
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO resultados2018 SELECT * FROM resultadostmp WHERE n_ins=?");
-    $parametros = array('s', &$NUMINSCRITO);
+    $query      = new Query($mysqli, "INSERT INTO resultados2018 SELECT * FROM resultadostmp WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //ACTUALIZAR NUMERO DE INSCRITOS DE LA BASE DE DATOS INSCRITOS TMP
-function updateInscritosTMP($NEWCODE, $NUMINSCRITO)
+function updateInscritosTMP($NEWCODE,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "UPDATE inscritostmp SET n_ins =? WHERE n_ins=?");
-    $parametros = array('ss', &$NEWCODE, &$NUMINSCRITO);
+    $query      = new Query($mysqli, "UPDATE inscritostmp SET n_ins =? WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('sssss', &$NEWCODE, &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //ACTUALIZAR NUMERO DE INSCRITOS DE LA BASE DE DATOS RESULTADOS TMP
-function updateResultadosTMP($NEWCODE, $NUMINSCRITO)
+function updateResultadosTMP($NEWCODE,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "UPDATE resultadostmp SET n_ins =? WHERE n_ins=?");
-    $parametros = array('ss', &$NEWCODE, &$NUMINSCRITO);
+    $query      = new Query($mysqli, "UPDATE resultadostmp SET n_ins =? WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('sssss', &$NEWCODE,&$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //INSERTAR NUMERO DE VALIDACION ,ANTERIOR  Y NUEVO NUMERO DE VALIDACION
-function insertOldID($N_INS, $C_VALIDACION)
+function insertOldID($N_INS, $C_VALIDACION,$CEDULA)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO validaciones(inscritoanterior,codigovalidacion) VALUES (?,?)");
-    $parametros = array("ss", &$N_INS, &$C_VALIDACION);
+    $query      = new Query($mysqli, "INSERT INTO validaciones(inscritoanterior,codigovalidacion,cedula) VALUES (?,?,?)");
+    $parametros = array("sss", &$N_INS, &$C_VALIDACION,&$CEDULA);
     $data       = $query->getresults($parametros);
     return true;
+}
+
+function search_N_ins($PROVINCIA, $CLAVE, $TOMO, $FOLIO){
+
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT n_ins from resultados2017 WHERE provincia =? and clave = ? and tomo = ? and folio= ?");
+    $parametros = array("ssss", &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
+    $data       = $query->getresults($parametros);
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -1544,12 +1596,13 @@ function countRow()
     $query      = new Query($mysqli, "SELECT COUNT(*) AS countRow FROM logsystem");
     $parametros = array();
     $data       = $query->getresults();
+    $T_logs = "logsystem";
 
     if (isset($data[0])) {
         foreach ($data as $key) {
             if ($key->countRow > 2000) {
                 exportLogs();
-                truncateTable();
+                truncateTable($T_logs);
             }
         }
     } else {return null;}
@@ -1566,10 +1619,11 @@ function exportLogs()
     $data       = $query->getresults();
 }
 
-function truncateTable()
+
+function truncateTable($TABLE)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "TRUNCATE TABLE logsystem");
+    $query      = new Query($mysqli, "TRUNCATE TABLE ".$TABLE);
     $parametros = array();
     $data       = $query->getresults();
     return true;
@@ -1845,3 +1899,281 @@ function updateDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATX
     return null;
 
 }
+
+
+
+function insertNewTable($TABLE_UPDATE_INS,$TABLE_UPDATE_RES){
+
+    global $mysqli;
+    $query      = new Query($mysqli, "INSERT INTO sgra_config_tb (tb_inscritos_new_year,tb_resultados_new_year) VALUES (?,?)");
+    $parametros = array("ss", &$TABLE_UPDATE_INS, &$TABLE_UPDATE_RES);
+    $data       = $query->getresults($parametros);
+    return true;
+
+}
+
+/*function createTable_Resultado($TABLE_UPDATE_RES){
+    global $mysqli;
+    $query      = new Query($mysqli, "CREATE TABLE IF NOT EXISTS ".$TABLE_UPDATE_RES." (
+  `id_registroResultado` int(11) NOT NULL,
+  `red` varchar(255) DEFAULT NULL,
+  `red2` varchar(255) DEFAULT NULL,
+  `region` varchar(255) DEFAULT NULL,
+  `extranjero` varchar(255) DEFAULT NULL,
+  `sede` varchar(255) DEFAULT NULL,
+  `nsede` varchar(255) DEFAULT NULL,
+  `facultad` varchar(255) DEFAULT NULL,
+  `nfacultad` varchar(255) DEFAULT NULL,
+  `escuela` varchar(255) DEFAULT NULL,
+  `carrera` varchar(255) DEFAULT NULL,
+  `apellido` varchar(255) DEFAULT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  `cedula` varchar(255) DEFAULT NULL,
+  `cedulatxt` varchar(255) DEFAULT NULL,
+  `provincia` varchar(255) DEFAULT NULL,
+  `clave` varchar(255) DEFAULT NULL,
+  `tomo` varchar(255) DEFAULT NULL,
+  `folio` varchar(255) DEFAULT NULL,
+  `n_ins` varchar(255) DEFAULT NULL,
+  `areap` varchar(255) DEFAULT NULL,
+  `nota` int(25) DEFAULT NULL,
+  `ps` decimal(3,2) DEFAULT NULL COMMENT '99.999',
+  `gatb` decimal(6,3) DEFAULT NULL COMMENT '999.999',
+  `pca` int(3) DEFAULT NULL,
+  `pcg` int(3) DEFAULT NULL,
+  `ingles` int(5) DEFAULT NULL,
+  `indice` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicear` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indiceci` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indiceem` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicehu` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicein` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicepe` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicepo` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicede` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indicead` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `fecpca` varchar(25) DEFAULT NULL,
+  `cl_def` varchar(25) DEFAULT NULL,
+  `cl_propb` varchar(25) DEFAULT NULL,
+  `lect1` varchar(25) DEFAULT NULL,
+  `r_com_comp` varchar(25) DEFAULT NULL,
+  `rel_o` int(25) DEFAULT NULL,
+  `lect2` int(25) DEFAULT NULL,
+  `r_plan` int(25) DEFAULT NULL,
+  `verbal` int(25) DEFAULT NULL,
+  `oper1` int(25) DEFAULT NULL,
+  `oper2` int(25) DEFAULT NULL,
+  `razon1` int(25) DEFAULT NULL,
+  `razon2` int(25) DEFAULT NULL,
+  `numer` int(25) DEFAULT NULL,
+  `area1` int(25) DEFAULT NULL,
+  `area2` int(25) DEFAULT NULL,
+  `area3` int(25) DEFAULT NULL,
+  `area4` int(25) DEFAULT NULL,
+  `area5` int(25) DEFAULT NULL,
+  `area6` int(25) DEFAULT NULL,
+  `gram1` int(25) DEFAULT NULL,
+  `vocab` int(25) DEFAULT NULL,
+  `gram2` varchar(255) DEFAULT NULL,
+  `narchi` int(25) DEFAULT NULL,
+  `opc` int(25) DEFAULT NULL,
+  `npag` varchar(255) DEFAULT NULL,
+  `fecpcg` varchar(255) DEFAULT NULL,
+  `indice00` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indice25` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indice50` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `indice75` decimal(6,5) DEFAULT NULL COMMENT '9.99999',
+  `registro` int(25) DEFAULT NULL,
+  `car1` varchar(25) DEFAULT NULL,
+  `areap1` int(25) DEFAULT NULL,
+  `car2` varchar(25) DEFAULT NULL,
+  `areap2` int(25) DEFAULT NULL,
+  `car3` int(25) DEFAULT NULL,
+  `areap3` int(25) DEFAULT NULL,
+  `col_proc` varchar(255) DEFAULT NULL,
+  `cod_col` varchar(255) DEFAULT NULL,
+  `tipoc` int(25) DEFAULT NULL,
+  `ntipoc` varchar(25) DEFAULT NULL,
+  `bach` int(25) DEFAULT NULL,
+  `bachiller` int(25) DEFAULT NULL,
+  `nbachiller` varchar(255) DEFAULT NULL,
+  `sexo` varchar(20) DEFAULT NULL,
+  `nsexo` varchar(20) DEFAULT NULL,
+  `mes_n` varchar(20) DEFAULT NULL,
+  `dia_n` varchar(20) DEFAULT NULL,
+  `ao_n` varchar(20) DEFAULT NULL,
+  `fechanaci` varchar(20) DEFAULT NULL,
+  `edad` int(20) DEFAULT NULL,
+  `fac_ia` varchar(20) DEFAULT NULL,
+  `esc_ia` varchar(20) DEFAULT NULL,
+  `car_ia` varchar(20) DEFAULT NULL,
+  `fac_iia` varchar(20) DEFAULT NULL,
+  `esc_iia` varchar(20) DEFAULT NULL,
+  `car_iia` varchar(20) DEFAULT NULL,
+  `fac_iiia` varchar(20) DEFAULT NULL,
+  `esc_iiia` varchar(20) DEFAULT NULL,
+  `car_iiia` varchar(20) DEFAULT NULL,
+  `ao_grad` int(20) DEFAULT NULL,
+  `provi` varchar(255) DEFAULT NULL,
+  `distri` varchar(255) DEFAULT NULL,
+  `correg` varchar(255) DEFAULT NULL,
+  `telefono` varchar(255) DEFAULT NULL,
+  `tel_cel` varchar(255) DEFAULT NULL,
+  `tel_ofi` varchar(255) DEFAULT NULL,
+  `mail` varchar(255) DEFAULT NULL,
+  `sede_i` varchar(255) DEFAULT NULL,
+  `area_i` varchar(255) DEFAULT NULL,
+  `ao_lect` varchar(255) DEFAULT NULL,
+  `cod_prov` varchar(255) DEFAULT NULL,
+  `nprovincia` varchar(255) DEFAULT NULL,
+  `matricula` varchar(255) DEFAULT NULL,
+  `safaesca` varchar(255) DEFAULT NULL,
+  `nacionalid` varchar(255) DEFAULT NULL,
+  `trabaja` varchar(10) DEFAULT NULL,
+  `ocupacion` varchar(255) DEFAULT NULL,
+  `est_civil` varchar(255) DEFAULT NULL,
+  `ecrop` varchar(255) DEFAULT NULL,
+  `pviu` varchar(255) DEFAULT NULL,
+  `aopviu` int(10) DEFAULT NULL,
+  `ocup_p` varchar(255) DEFAULT NULL,
+  `ocup_m` varchar(255) DEFAULT NULL,
+  `grado_p` varchar(10) DEFAULT NULL,
+  `esc_p` varchar(255) DEFAULT NULL,
+  `grado_m` varchar(20) DEFAULT NULL,
+  `esc_m` varchar(20) DEFAULT NULL,
+  `cfe` varchar(20) DEFAULT NULL,
+  `ecps` varchar(20) DEFAULT NULL,
+  `imf` varchar(20) DEFAULT NULL,
+  `npers` varchar(20) DEFAULT NULL,
+  `mtrasp` varchar(20) DEFAULT NULL,
+  `thijos` varchar(20) DEFAULT NULL,
+  `chijos` varchar(20) DEFAULT NULL,
+  `discap` varchar(20) DEFAULT NULL,
+  `rpadre` varchar(20) DEFAULT NULL,
+  `rmadre` varchar(20) DEFAULT NULL,
+  `rhnos` varchar(20) DEFAULT NULL,
+  `pgind` varchar(20) DEFAULT NULL,
+  `rend_esc` varchar(20) DEFAULT NULL,
+  `tipo_est` varchar(20) DEFAULT NULL,
+  `arch_i` varchar(20) DEFAULT NULL,
+  `observacion` varchar(255) DEFAULT NULL,
+  `fn` varchar(25) DEFAULT NULL,
+  `ncarrera` varchar(255) DEFAULT NULL,
+  `d` varchar(255) DEFAULT NULL,
+  `no2` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8";
+    $parametros = array();
+    $data       = $query->getresults();
+    return true;
+
+}
+
+
+function create_Table_Inscritos($TABLE_UPDATE_INS){
+    global $mysqli;
+    $query      = new Query($mysqli, "CREATE TABLE IF NOT EXISTS ".$TABLE_UPDATE_INS." (
+  `id_registroInscrito` int(10) NOT NULL,
+  `red` varchar(20) NOT NULL,
+  `nota` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `cedula` varchar(100) NOT NULL,
+  `cedulatxt` varchar(100) NOT NULL,
+  `provincia` varchar(100) NOT NULL,
+  `clave` varchar(100) NOT NULL,
+  `tomo` varchar(100) NOT NULL,
+  `folio` varchar(100) NOT NULL,
+  `pasaporte` varchar(100) NOT NULL,
+  `nacionalidad` varchar(100) NOT NULL,
+  `trabaja` varchar(100) NOT NULL,
+  `ocupacion` varchar(100) NOT NULL,
+  `tipoc` varchar(100) NOT NULL,
+  `col_proc` varchar(100) NOT NULL,
+  `cod_col` varchar(100) NOT NULL,
+  `est_civil` varchar(100) NOT NULL,
+  `mes_n` varchar(100) NOT NULL,
+  `dia_n` varchar(100) NOT NULL,
+  `ao_n` varchar(100) NOT NULL,
+  `mes_i` varchar(100) NOT NULL,
+  `dia_i` varchar(100) NOT NULL,
+  `ao_i` varchar(100) NOT NULL,
+  `fac_ia` varchar(100) NOT NULL,
+  `esc_ia` varchar(100) NOT NULL,
+  `car_ia` varchar(100) NOT NULL,
+  `fac_iia` varchar(100) NOT NULL,
+  `esc_iia` varchar(100) NOT NULL,
+  `car_iia` varchar(100) NOT NULL,
+  `fac_iiia` varchar(100) NOT NULL,
+  `esc_iiia` varchar(100) NOT NULL,
+  `car_iiia` varchar(100) NOT NULL,
+  `n_ins` varchar(100) NOT NULL,
+  `bach` varchar(100) NOT NULL,
+  `nbachiller` varchar(100) NOT NULL,
+  `ao_grad` varchar(100) NOT NULL,
+  `ecrop` varchar(100) NOT NULL,
+  `sexo` varchar(100) NOT NULL,
+  `pviu` varchar(100) NOT NULL,
+  `aopviu` varchar(100) NOT NULL,
+  `sede` varchar(100) NOT NULL,
+  `provi` varchar(100) NOT NULL,
+  `distrito` varchar(100) NOT NULL,
+  `corregimiento` varchar(100) NOT NULL,
+  `ocup_p` varchar(100) NOT NULL,
+  `ocup_m` varchar(100) NOT NULL,
+  `grado_p` varchar(100) NOT NULL,
+  `esc_p` varchar(100) NOT NULL,
+  `grado_m` varchar(100) NOT NULL,
+  `esc_m` varchar(100) NOT NULL,
+  `cfe` varchar(100) NOT NULL,
+  `ecps` varchar(100) NOT NULL,
+  `imf` varchar(100) NOT NULL,
+  `npers` varchar(100) NOT NULL,
+  `mtrasp` varchar(100) NOT NULL,
+  `thijos` varchar(100) NOT NULL,
+  `chijos` varchar(100) NOT NULL,
+  `discap` varchar(100) NOT NULL,
+  `rpadre` varchar(100) NOT NULL,
+  `rmadre` varchar(100) NOT NULL,
+  `rhnos` varchar(100) NOT NULL,
+  `pgind` varchar(100) NOT NULL,
+  `rend_esc` varchar(100) NOT NULL,
+  `telefono` varchar(100) NOT NULL,
+  `tel_cel` varchar(100) NOT NULL,
+  `tel_ofic` varchar(100) NOT NULL,
+  `mail` varchar(300) NOT NULL,
+  `t_comp` varchar(100) NOT NULL,
+  `t_internet` varchar(100) NOT NULL,
+  `cod_promed` varchar(100) NOT NULL,
+  `cod_ext_le` varchar(100) NOT NULL,
+  `consu_dic` varchar(100) NOT NULL,
+  `pg_num` varchar(100) NOT NULL,
+  `area_i` varchar(100) NOT NULL,
+  `area_ii` varchar(100) NOT NULL,
+  `area_iii` varchar(100) NOT NULL,
+  `arch_i` varchar(100) NOT NULL,
+  `grupo` varchar(100) NOT NULL,
+  `edif` varchar(100) NOT NULL,
+  `aula` varchar(100) NOT NULL,
+  `hora_prueb` varchar(100) NOT NULL,
+  `ao_lect` varchar(100) NOT NULL,
+  `edad` varchar(100) NOT NULL,
+  `fecha_inscr` varchar(100) NOT NULL,
+  `fecha_nac` varchar(100) NOT NULL,
+  `otro_coleg` varchar(100) NOT NULL,
+  `nfac_ia` varchar(100) NOT NULL,
+  `d` varchar(100) NOT NULL,
+  `cod_prov` varchar(100) NOT NULL,
+  `nsede` varchar(100) NOT NULL,
+  `nfacultad` varchar(100) NOT NULL,
+  `ncarrera` varchar(100) NOT NULL,
+  `matricula` varchar(100) NOT NULL,
+  `sefaesca` varchar(100) NOT NULL,
+  `red2` varchar(100) NOT NULL,
+  `no1` varchar(100) NOT NULL,
+  `no2` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8");
+    $parametros = array();
+    $data       = $query->getresults();
+    return true;
+
+}*/
