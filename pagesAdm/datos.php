@@ -136,7 +136,7 @@ include '../modulos/userControl.php';
                       <tr>
                         <td class ="text-left">Tabla Destino : </td>
                         <td>
-                          <select name="listaBD">
+                          <select id="listaBD_inscritos" name="lista_inscritos">
                             <?php
 $listasDB = getTablesList();
 foreach ($listasDB as $item) {
@@ -200,7 +200,7 @@ foreach ($listasDB as $item) {
                         <tr>
                           <td class ="text-left">Tabla Destino : </td>
                           <td>
-                            <select name="listaBD">
+                            <select id="listaBD_resultados" name="listaBD_resultados">
                               <?php $listasDB = getTablesList(); ?>
                               <!--<div class  = "container col-lg-12" style= "margin-top: -10px;" >-->
                                 <?php
@@ -277,7 +277,7 @@ foreach ($listasDB as $item) {
                           <tr>
                             <td class ="text-left">Tabla Origen:</td>
                             <td>
-                              <select name="listaBD">
+                              <select id="lista_bd_export_inscritos" name="listaBD">
                                 <?php
 $listasDB = getTablesList();
 foreach ($listasDB as $item) {
@@ -354,7 +354,7 @@ foreach ($listasDB as $item) {
                           <tr>
                             <td class ="text-left">Tabla Origen:</td>
                             <td>
-                              <select name="listaBD">
+                              <select id="lista_bd_export_resultados" name="listaBD">
                                 <?php
 $listasDB = getTablesList();
 foreach ($listasDB as $item) {

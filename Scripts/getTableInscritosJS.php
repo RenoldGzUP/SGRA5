@@ -10,26 +10,34 @@ session_start();
 $form_filter = $_POST["idFilters"];
 $form_state  = $_POST["filter"];
 
+//GET TABLE NAME RESULTADOS
+$TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS = $key->tb_inscritos_new_year;
+        }
+//SAVE LOGS
+ saveLogs($_SESSION['name'], "Realizó busqueda en la base de datos ->".$T_INSCRITOS);
+
+ //CHECK STATE
 if ($form_state == 1) {
-    filterBySede($form_filter[0]);
+    filterBySede($form_filter[0],$T_INSCRITOS);
 } elseif ($form_state == 2) {
-    filterByArea($form_filter[0], $form_filter[1]);
+    filterByArea($form_filter[0], $form_filter[1],$T_INSCRITOS);
 } elseif ($form_state == 3) {
-    filterByFacultad($form_filter[0], $form_filter[1], $form_filter[2]);
+    filterByFacultad($form_filter[0], $form_filter[1], $form_filter[2],$T_INSCRITOS);
 } elseif ($form_state == 4) {
-    filterByEscuela($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3]);
+    filterByEscuela($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3],$T_INSCRITOS);
 } elseif ($form_state == 5) {
-    filterByCarrera($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4]);
+    filterByCarrera($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4],$T_INSCRITOS);
 } else {
     echo "Algo salio mal en el server";
 }
 
 ///////////////////////////////////////////////////
 
-function filterBySede($SEDE)
+function filterBySede($SEDE,$T_INSCRITOS)
 {
-    $estResultado = filterByS($SEDE);
-    
+    $estResultado = filterByS($SEDE,$T_INSCRITOS);
     if (is_null($estResultado)) {
       echo json_encode("error");
     }else{
@@ -37,9 +45,9 @@ function filterBySede($SEDE)
     }
 }
 
-function filterByArea($SEDE, $AREA)
+function filterByArea($SEDE, $AREA,$T_INSCRITOS)
 {
-    $estResultado = filterByS_A($SEDE, $AREA);
+    $estResultado = filterByS_A($SEDE, $AREA,$T_INSCRITOS);
    
     if (is_null($estResultado)) {
       echo json_encode("error");
@@ -47,9 +55,9 @@ function filterByArea($SEDE, $AREA)
       echo json_encode($estResultado);
     }
 }
-function filterByFacultad($SEDE, $AREA, $FACULTAD)
+function filterByFacultad($SEDE, $AREA, $FACULTAD,$T_INSCRITOS)
 {
-    $estResultado = filterByS_A_F($SEDE, $AREA, $FACULTAD);
+    $estResultado = filterByS_A_F($SEDE, $AREA, $FACULTAD,$T_INSCRITOS);
    
     if (is_null($estResultado)) {
       echo json_encode("error");
@@ -59,9 +67,9 @@ function filterByFacultad($SEDE, $AREA, $FACULTAD)
     
 }
 
-function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
+function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA,$T_INSCRITOS)
 {
-    $estResultado = filterBy_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA);
+    $estResultado = filterBy_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA,$T_INSCRITOS);
     
     if (is_null($estResultado)) {
       echo json_encode("error");
@@ -70,9 +78,9 @@ function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
     }
 }
 
-function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA,$T_INSCRITOS)
 {
-    $estResultado = filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
+    $estResultado = filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA,$T_INSCRITOS);
    
     if (is_null($estResultado)) {
       echo json_encode("error");

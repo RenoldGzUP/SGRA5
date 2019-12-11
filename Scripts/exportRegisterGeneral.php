@@ -14,19 +14,26 @@ $stateExport = $_POST["state"];
 //SPLIT OF REGISTER SENT
 $idExplode = explode(",", $idInscritoToExport);
 
+//GET TABLE NAME RESULTADOS
+$TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS = $key->tb_inscritos_new_year;
+          $T_RESULTADOS = $key->tb_resultados_new_year;
+        }
+
 //////////////////////////////////////////////////////
 
 if ($stateExport == 1) {
-	exportOneInscritos($idExplode);
+	exportOneInscritos($idExplode,$T_INSCRITOS);
 } elseif ($stateExport == 2) {
-	exportOneResultados($idExplode);
+	exportOneResultados($idExplode,$T_RESULTADOS);
 } else {
 	echo "Algo salio mal";
 }
 
 //////////////////////////////////////////////
 function checkFile($filePathSearch){
-	saveLogs($_SESSION['name'],"Verificación de duplicidad de archivos csv");
+	saveLogs($_SESSION['name'],"Verificando duplicidad de archivos csv");
 	if (file_exists($filePathSearch)) {
 		$fileState = "completed";
 		$tmpName = basename($filePathSearch,".csv");
@@ -51,25 +58,27 @@ function generateFile($filePath, $data){
 
 ////////////////////////////////////////////////////////////////////////////
 
-function exportOneInscritos($dataSearch){
+function exportOneInscritos($dataSearch,$TABLA_INSCRITOS){
 	$idExplode = $dataSearch;
 	$datetime = date("d_m_Y");
 	$fileName = $datetime;
-	$filePathB ="../Export/export_register_INSCRITOS_".$fileName.".csv";
+	$filePathA ="../Export/export_register_INSCRITOS_".$fileName.".csv";
 	
-	if (checkFile($filePathB)== "completed") {
+	if (checkFile($filePathA)== "completed") {
 		for ($i=0; $i <sizeof($idExplode) ; $i++) { 
-			$arreglo = exportDataOneInscritos($idExplode[$i]);
+			$id_CID_INS = explode("-",$idExplode[$i]);
+			$arreglo = exportDataOneInscritos($TABLA_INSCRITOS,$id_CID_INS[0],$id_CID_INS[1],$id_CID_INS[2],$id_CID_INS[3]);
+			updateRed($TABLA_INSCRITOS,"EXP00",$id_CID_INS[0],$id_CID_INS[1],$id_CID_INS[2],$id_CID_INS[3]);
 			$dataToSave = convert_object_to_array($arreglo);
-			generateFile($filePathB,$dataToSave);
+			generateFile($filePathA,$dataToSave);
 		}
-		echo $filePathB;
+		echo $filePathA;
 	}
 
 saveLogs($_SESSION['name'],"Generó un archivo exportado de Inscritos");
 }
 
-function exportOneResultados($dataSearch){
+function exportOneResultados($dataSearch,$TABLA_RESULTADOS){
 	$idExplode = $dataSearch;
 	$datetime = date("d_m_Y");
 	$fileName = $datetime;
@@ -77,7 +86,9 @@ function exportOneResultados($dataSearch){
 	
 	if (checkFile($filePathB)== "completed") {
 		for ($i=0; $i <sizeof($idExplode) ; $i++) { 
-			$arreglo = exportDataOneInscritos($idExplode[$i]);
+			$id_CID_RES = explode("-",$idExplode[$i]);
+			$arreglo = exportDataOneResultados($TABLA_RESULTADOS,$id_CID_RES[0],$id_CID_RES[1],$id_CID_RES[2],$id_CID_RES[3]);
+			updateRed($TABLA_RESULTADOS,"EXP01",$id_CID_RES[0],$id_CID_RES[1],$id_CID_RES[2],$id_CID_RES[3]);
 			$dataToSave = convert_object_to_array($arreglo);
 			generateFile($filePathB,$dataToSave);
 		}

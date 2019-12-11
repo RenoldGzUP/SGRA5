@@ -10,25 +10,37 @@ session_start();
 $form_filter = $_POST["idFilters"];
 $form_state  = $_POST["filter"];
 
+//GET TABLE NAME RESULTADOS
+$TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_RESULTADOS = $key->tb_resultados_new_year;
+        }
+
+
+//SAVE LOGS
+ saveLogs($_SESSION['name'], "Realizó busqueda en la base de datos ->".$T_RESULTADOS);
+
+ //CHECK STATE
+
 if ($form_state == 1) {
-    filterBySede($form_filter[0]);
+    filterBySede($form_filter[0],$T_RESULTADOS);
 } elseif ($form_state == 2) {
-    filterByArea($form_filter[0], $form_filter[1]);
+    filterByArea($form_filter[0], $form_filter[1],$T_RESULTADOS);
 } elseif ($form_state == 3) {
-    filterByFacultad($form_filter[0], $form_filter[1], $form_filter[2]);
+    filterByFacultad($form_filter[0], $form_filter[1], $form_filter[2],$T_RESULTADOS);
 } elseif ($form_state == 4) {
-    filterByEscuela($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3]);
+    filterByEscuela($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3],$T_RESULTADOS);
 } elseif ($form_state == 5) {
-    filterByCarrera($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4]);
+    filterByCarrera($form_filter[0], $form_filter[1], $form_filter[2], $form_filter[3], $form_filter[4],$T_RESULTADOS);
 } else {
     echo "Algo salio mal en el server";
 }
 
 ///////////////////////////////////////////////////
 
-function filterBySede($SEDE)
+function filterBySede($SEDE,$T_RESULTADOS)
 {
-    $estResultado = filter_TR_By_S($SEDE);
+    $estResultado = filter_TR_By_S($SEDE,$T_RESULTADOS);
     if (is_null($estResultado)) {
       echo json_encode("error");
     }else{
@@ -36,18 +48,18 @@ function filterBySede($SEDE)
     }
 }
 
-function filterByArea($SEDE, $AREA)
+function filterByArea($SEDE, $AREA,$T_RESULTADOS)
 {
-    $estResultado = filter_TR_By_S_A($SEDE, $AREA);
+    $estResultado = filter_TR_By_S_A($SEDE, $AREA,$T_RESULTADOS);
     if (is_null($estResultado)) {
       echo json_encode("error");
     }else{
       echo json_encode($estResultado);
     }
 }
-function filterByFacultad($SEDE, $AREA, $FACULTAD)
+function filterByFacultad($SEDE, $AREA, $FACULTAD,$T_RESULTADOS)
 {
-    $estResultado = filter_TR_By_S_A_F($SEDE, $AREA, $FACULTAD);
+    $estResultado = filter_TR_By_S_A_F($SEDE, $AREA, $FACULTAD,$T_RESULTADOS);
     if (is_null($estResultado)) {
       echo json_encode("error");
     }else{
@@ -55,9 +67,9 @@ function filterByFacultad($SEDE, $AREA, $FACULTAD)
     }
 }
 
-function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
+function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA,$T_RESULTADOS)
 {
-    $estResultado = filter_TR_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA);
+    $estResultado = filter_TR_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA,$T_RESULTADOS);
    if (is_null($estResultado)) {
       echo json_encode("error");
     }else{
@@ -66,9 +78,9 @@ function filterByEscuela($SEDE, $AREA, $FACULTAD, $ESCUELA)
 
 }
 
-function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+function filterByCarrera($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA,$T_RESULTADOS)
 {
-    $estResultado = filter_TR_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA);
+    $estResultado = filter_TR_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA,$T_RESULTADOS);
     if (is_null($estResultado)) {
       echo json_encode("error");
     }else{

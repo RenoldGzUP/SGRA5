@@ -9,7 +9,8 @@ $YEAR  = date("Y");
 
 //save
 $PWD_RESTORE = $_POST["password"];
-$INNER_PWD ="J{Uj2}F{ty";
+//$INNER_PWD ="J{Uj2}F{ty";
+$INNER_PWD ="123456";
 
 //CHECKL PWD
 if (strcmp($PWD_RESTORE, $INNER_PWD) == 0) {

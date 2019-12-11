@@ -6,29 +6,35 @@ include_once '../Scripts/library_db_sql.php';
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //GET DATA POST
 $id_CID_user =  explode("-",$_POST["idCID"]);
+$sede = $_POST["sede"];
+$facultad = $_POST["facultad"];
+$escuela = $_POST["escuela"];
+$area = $_POST["area"];
 $indice_ps = $_POST["indice_ps"];
 $indice_pca = $_POST["indice_pca"];
 $indice_pcg = $_POST["indice_pcg"];
 $indice_gatb = $_POST["indice_gatb"];
+$tableInscritos = $_POST["table1"];
+$tableResultados = $_POST["table2"];
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////SQL QUERY//////////////////////////////////////////////////////////////////////////////
+///////////////////SQL QUERYS//////////////////////////////////////////////////////////////////////////////
 
 //UPDATE TEST INTO TB RESULTADOS
-$testStudent = updateUserTest($indice_ps,$indice_pca,$indice_pcg,$indice_gatb,$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3],$indice_ps,$indice_pca,$indice_pcg,$indice_gatb);
+$testStudent = updateUserTest($tableResultados,$sede,$facultad,$escuela,$area,$indice_ps,$indice_pca,$indice_pcg,$indice_gatb,$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3],$indice_ps,$indice_pca,$indice_pcg,$indice_gatb);
 
 //GET NEW DATA TO MEASURING THE USER
-$testStudent = getUserAreaTest($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
+$testStudent = getUserAreaTest($tableResultados,$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
 
-//MEASURING THE USER
+//FUNCTION
+//MEASURING THE USER (PASS INSIDE CLAVE FUNCTION)
 $indice_to_update = evaluateStd($id_CID_user[1],$testStudent->areap,$testStudent->ps,$testStudent->pca,$testStudent->pcg,$testStudent->gatb);
 
 //UPDATE INDICE
-updateIndice($indice_to_update,$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
-
+updateIndice($tableResultados,$indice_to_update,$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
 
 //UPDATE TABLE DOM
-updateTableDOM($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
+updateTableDOM($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3],$tableResultados);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -129,9 +135,9 @@ return $indice_actualizado;
 }
 
 
-function updateTableDOM($PROVINCIA,$CLAVE,$TOMO,$FOLIO){
+function updateTableDOM($PROVINCIA,$CLAVE,$TOMO,$FOLIO,$T_RESULTADOS){
 
-  $DataResultadosCID = showDataVAR($PROVINCIA,$CLAVE,$TOMO,$FOLIO);
+  $DataResultadosCID = showDataVAR($PROVINCIA,$CLAVE,$TOMO,$FOLIO,$T_RESULTADOS);
 
         foreach ($DataResultadosCID as $itemR) {
             echo '<tr style="font-size: 11px;text-align:center">';

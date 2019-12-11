@@ -55,10 +55,12 @@
     function startAjax(FILE) {
         var idFile = FILE;
         console.log(idFile);
-        //console.log("Llamada al AJAX");
+        var tabla_inscrito = $("#listaBD_inscritos").val();
+        console.log(tabla_inscrito);
         $.ajax({
             data: {
-                "idFile": idFile
+                "idFile": idFile,
+                "tabla_inscrito": tabla_inscrito
             },
             type: "POST",
             url: "../temp/loadFileInscritos.php",
@@ -173,10 +175,12 @@
     function startAjaxImportRes(FILE) {
         var idFile = FILE;
         console.log(idFile);
-        //console.log("Llamada al AJAX");
+        var tabla_resultado = $("#listaBD_resultados").val();
+        console.log(tabla_resultado);
         $.ajax({
             data: {
-                "idFile": idFile
+                "idFile": idFile,
+                "tabla_resultado" : tabla_resultado
             },
             type: "POST",
             url: "../temp/loadFileResultados.php",
@@ -379,12 +383,14 @@
          $('#loadingInscritoE').show();
         var inputVal = document.getElementById("labelTBInscritosName").value;
         var downloadButton = document.getElementById("downloadFileExportInscrito");
+        var t_export_inscritos = document.getElementById("lista_bd_export_inscritos").value;
         console.log(inputVal);
         var stateExport = 1;
         $.ajax({
             data: {
                 "inputName": inputVal,
-                "idStateExport": stateExport
+                "idStateExport": stateExport,
+                "tabla" : t_export_inscritos
             },
             type: "POST",
             url: "../Scripts/exportDBResultados.php",
@@ -407,12 +413,14 @@
         var messagueResultado = ["downloadFileExportResultado", "loadingResultadoE", "doneResultadoE", "wrongResultadoE"];
         var inputVal = document.getElementById("labelTBResultadosName").value;
         var downloadButton = document.getElementById("downloadFileExportResultado");
-        console.log(inputVal);
+        var t_export_resultados = document.getElementById("lista_bd_export_resultados").value;
+        console.log(inputVal+" "+t_export_resultados);
         var stateExport = 2;
         $.ajax({
             data: {
                 "inputName": inputVal,
-                "idStateExport": stateExport
+                "idStateExport": stateExport,
+                "tabla" : t_export_resultados
             },
             type: "POST",
             url: "../Scripts/exportDBResultados.php",

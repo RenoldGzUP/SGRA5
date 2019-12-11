@@ -60,11 +60,29 @@ class Query
 }
 
 //DEFINE MAIN TABLES
-/*date_default_timezone_set("America/Panama"); //ZONA HORARIA PAN
-$YEAR  = date("Y");
-global $T_INSCRITOS = "inscritos".$YEAR;
-global $T_RESULTADOS = "resultados".$YEAR;
-*/
+$TABLES = get_Table_Name();
+//echo $TABLES->tb_resultados_new_year;
+
+foreach ($TABLES as $key) {
+   $T_INSCRITOS = $key->tb_inscritos_new_year;
+  $T_RESULTADOS = $key->tb_resultados_new_year;
+}
+
+//global $T_INSCRITOS = $TABLES->"tb_inscritos_new_year";
+//global $T_RESULTADOS = $TABLES->"tb_resultados_new_year";
+
+function get_Table_Name(){
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT tb_inscritos_new_year,tb_resultados_new_year FROM sgra_config_tb");
+    $parametros = array();
+    $data       = $query->getresults();
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
 
 function getUsers($userName)
 {
@@ -456,11 +474,12 @@ function showDataInscrito()
 //Tabla Inscritos con Filtros definidos
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //FILTER BY SEDE
-function filterByS($SEDE)
+function filterByS($SEDE,$TABLE_I)
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ?");
+    $TINS        = $TABLE_I;
+    $query = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM " .$TINS. " where sede = ?");
     $parametros = array('i', &$SEDE);
     $data       = $query->getresults($parametros);
 
@@ -473,11 +492,12 @@ function filterByS($SEDE)
 }
 
 //FILTER SEDE AREA
-function filterByS_A($SEDE, $AREA)
+function filterByS_A($SEDE, $AREA,$TABLE_I)
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ? AND area_i = ?");
+    $TINS        = $TABLE_I;
+    $query = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM " .$TINS. " where sede = ? AND area_i = ?");
     $parametros = array("ii", &$SEDE, &$AREA);
     $data       = $query->getresults($parametros);
 
@@ -490,11 +510,12 @@ function filterByS_A($SEDE, $AREA)
 }
 
 //FILTER SEDE AREA FACULTAD
-function filterByS_A_F($SEDE, $AREA, $FACULTAD)
+function filterByS_A_F($SEDE, $AREA, $FACULTAD,$TABLE_I)
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ?");
+    $TINS        = $TABLE_I;
+    $query = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM " .$TINS. " where sede = ? AND area_i = ? AND fac_ia = ?");
     $parametros = array("iii", &$SEDE, &$AREA, &$FACULTAD);
     $data       = $query->getresults($parametros);
 
@@ -507,11 +528,12 @@ function filterByS_A_F($SEDE, $AREA, $FACULTAD)
 }
 
 //FILTER SEDE AREA FACULTAD ESCUELA
-function filterBy_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA)
+function filterBy_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA,$TABLE_I)
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? ");
+    $TINS        = $TABLE_I;
+    $query = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM " .$TINS. " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? ");
     $parametros = array("iiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA);
     $data       = $query->getresults($parametros);
 
@@ -524,11 +546,12 @@ function filterBy_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA)
 }
 
 //FILTER SEDE AREA FACULTAD ESCUELA CARRERA
-function filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+function filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA,$TABLE_I)
 {
     global $mysqli;
-    $query = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
-     FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? ");
+    $TINS        = $TABLE_I;
+    $query = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia
+     FROM " .$TINS. " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? ");
     $parametros = array("iiiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
     $data       = $query->getresults($parametros);
 
@@ -544,11 +567,11 @@ function filterBy_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
 //TABLA RESULTADOS con Filtros definidos
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function filter_TR_By_S($SEDE)
+function filter_TR_By_S($SEDE,$TABLE_R)
 {
     global $mysqli;
-    $TR         = "resultados2018";
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " . $TR . " where sede = ?");
+    $TRES         = $TABLE_R;
+    $query      = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " .$TRES. " where sede = ?");
     $parametros = array('i', &$SEDE);
     $data       = $query->getresults($parametros);
 
@@ -561,10 +584,11 @@ function filter_TR_By_S($SEDE)
 }
 
 //FILTER SEDE AREA
-function filter_TR_By_S_A($SEDE, $AREA)
+function filter_TR_By_S_A($SEDE, $AREA,$TABLE_R)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM inscritos2017 where sede = ? AND area_i = ?");
+    $TRES         = $TABLE_R;
+    $query      = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " .$TRES. " where sede = ? AND area_i = ?");
     $parametros = array("ii", &$SEDE, &$AREA);
     $data       = $query->getresults($parametros);
 
@@ -577,10 +601,11 @@ function filter_TR_By_S_A($SEDE, $AREA)
 }
 
 //FILTER SEDE AREA FACULTAD
-function filter_TR_By_S_A_F($SEDE, $AREA, $FACULTAD)
+function filter_TR_By_S_A_F($SEDE, $AREA, $FACULTAD,$TABLE_R)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ?");
+    $TRES         = $TABLE_R;
+    $query      = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " .$TRES. " where sede = ? AND area_i = ? AND fac_ia = ?");
     $parametros = array("iii", &$SEDE, &$AREA, &$FACULTAD);
     $data       = $query->getresults($parametros);
 
@@ -593,10 +618,11 @@ function filter_TR_By_S_A_F($SEDE, $AREA, $FACULTAD)
 }
 
 //FILTER SEDE AREA FACULTAD ESCUELA
-function filter_TR_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA)
+function filter_TR_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA,$TABLE_R)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? ");
+    $TRES         = $TABLE_R;
+    $query      = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " .$TRES. " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? ");
     $parametros = array("iiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA);
     $data       = $query->getresults($parametros);
 
@@ -609,10 +635,11 @@ function filter_TR_By_S_A_F_E($SEDE, $AREA, $FACULTAD, $ESCUELA)
 }
 
 //FILTER SEDE AREA FACULTAD ESCUELA CARRERA
-function filter_TR_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA)
+function filter_TR_By_S_A_F_E_C($SEDE, $AREA, $FACULTAD, $ESCUELA, $CARRERA,$TABLE_R)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio))AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM inscritos2017 where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? ");
+    $TRES         = $TABLE_R;
+    $query      = new Query($mysqli, "SELECT red,nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio))AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM " .$TRES. " where sede = ? AND area_i = ? AND fac_ia = ? AND esc_ia = ? AND car_ia = ? ");
     $parametros = array("iiiii", &$SEDE, &$AREA, &$FACULTAD, &$ESCUELA, &$CARRERA);
     $data       = $query->getresults($parametros);
 
@@ -917,17 +944,18 @@ function getFacultadesComun($idAreas)
 
 }
 
-function getDataIndividual($numeroInscrito)
+function getDataIndividual($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
+    $TRES = $T_RESULTADOS;
     $query = new Query($mysqli, "SELECT
         SUM(cl_def+cl_propb) as valor_lexico,
         SUM(lect1+lect2) as valor_lectura,
         SUM(r_com_comp+rel_o+r_plan) as valor_redaccion,
         SUM(cl_def+cl_propb+r_com_comp+rel_o+r_plan+lect1+lect2) as subtotalverbal,
         SUM(oper1+oper2)as operatoria, SUM(razon1+razon2) as razonamiento ,
-        SUM(oper1+oper2+razon1+razon2) as subtotalnumerico,pca from resultados2017 where n_ins=?");
-    $parametros = array("s", &$numeroInscrito);
+        SUM(oper1+oper2+razon1+razon2) as subtotalnumerico,pca from ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+   $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -968,11 +996,11 @@ function updateRowDB($nombre, $apellido, $sede, $fac1a, $esc1a, $car1a, $fac2a, 
 
 }
 
-function deleteRowDBResultados($numInscrito)
+function deleteRowDBResultados($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, 'DELETE from resultados2017 WHERE n_ins=?');
-    $parametros = array("s", &$numInscrito);
+    $query      = new Query($mysqli, "DELETE from ".$T_RESULTADOS." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -983,11 +1011,11 @@ function deleteRowDBResultados($numInscrito)
 
 }
 
-function deleteRowDBInscritos($numInscrito)
+function deleteRowDBInscritos($T_INSCRITOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, 'DELETE from inscritos2017 WHERE n_ins=?');
-    $parametros = array("s", &$numInscrito);
+    $query      = new Query($mysqli, "DELETE from ".$T_INSCRITOS." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1204,7 +1232,7 @@ function getTablesList()
 
 //Cambiar ruta para exportar datos
 //EXPORTAR RESULTADOS DE TABLA RESULTADOS
-function exportDataResultados($FILENAME)
+function exportDataResultados($T_RESULTADOS,$FILENAME)
 {
     global $mysqli;
     $datetime    = date("d_m_Y_h_i_s_A");
@@ -1213,7 +1241,7 @@ function exportDataResultados($FILENAME)
     $pathDocument = "'C:/xampp/htdocs/SGRA/Export/" . $newFileName . ".csv'";
     $path         = "../Export/" . $newFileName . ".csv";
 
-    $Query      = new Query($mysqli, "SELECT * FROM resultados2017 INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
+    $Query      = new Query($mysqli, "SELECT * FROM ".$T_RESULTADOS." INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
     $parametros = array();
     $data       = $Query->getresults();
 
@@ -1223,17 +1251,16 @@ function exportDataResultados($FILENAME)
 
 //EXPORTAR RESULTADOS DE TABLA INSCRITOS
 //Cambiar ruta para exportar datos
-function exportDataInscritos($FILENAME)
+function exportDataInscritos($T_INSCRITOS,$FILENAME)
 {
     global $mysqli;
-    $TB          = "inscritos2017";
     $datetime    = date("d_m_Y_h_i_s_A");
     $newFileName = $FILENAME . "_" . $datetime;
     //$pathDocument = "../Export/" . $newFileName . ".csv";
     $pathDocument = "'C:/xampp/htdocs/SGRA/Export/" . $newFileName . ".csv'";
     $path         = "../Export/" . $newFileName . ".csv";
 
-    $Query      = new Query($mysqli, "SELECT * FROM " . $TB . " INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
+    $Query      = new Query($mysqli, "SELECT * FROM " . $T_INSCRITOS . " INTO OUTFILE " . $pathDocument . " FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'");
     $parametros = array();
     $data       = $Query->getresults();
 
@@ -1243,11 +1270,12 @@ function exportDataInscritos($FILENAME)
 ////////////////////////////////////////////
 
 //EXPORTAR RESULTADOS INDIVIDUALES DE LA TABLA RESULTADOS
-function exportDataOneResultados($ID_USER)
+function exportDataOneResultados($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT * FROM resultados2017 WHERE n_ins = ?");
-    $parametros = array("s", &$ID_USER);
+    $TRES = $T_RESULTADOS;
+    $Query      = new Query($mysqli, "SELECT * FROM ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $Query->getresults($parametros);
 
     // --- Guardamos el documento
@@ -1256,16 +1284,29 @@ function exportDataOneResultados($ID_USER)
 }
 
 //EXPORTAR RESULTADOS INDIVIDUALES DE LA TABLA INSCRITOS
-function exportDataOneInscritos($ID_USER)
+function exportDataOneInscritos($T_INSCRITOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT * FROM inscritos2017 WHERE n_ins = ?");
-    $parametros = array("s", &$ID_USER);
+    $TINS = $T_INSCRITOS;
+    $Query      = new Query($mysqli, "SELECT * FROM ".$TINS." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $Query->getresults($parametros);
 
     // --- Guardamos el documento
    if (isset($data[0])) {
         return $data[0];} else {return null;}
+}
+
+
+function updateRed($TABLA,$EXP,$PROVINCIA,$CLAVE,$TOMO,$FOLIO){
+     global $mysqli;
+    $Query      = new Query($mysqli, "UPDATE ".$TABLA." SET red= ? WHERE provincia =? and clave=? and tomo =? and  folio =?");
+    $parametros = array("sssss",&$EXP,&$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
+    $data       = $Query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];} else {return null;}
+
 }
 ////////////////////////////////////////////
 
@@ -1325,10 +1366,11 @@ function getInscritos()
 
 //POR CID en RESULTADOS
 
-function showDataVAI($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function showDataVAI($PROVINCIA, $CLAVE, $TOMO, $FOLIO,$T_INSCRITOS)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM inscritos2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $TINS = $T_INSCRITOS;
+    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,fac_iia,esc_iia,car_iia,fac_iiia,esc_iiia,car_iiia FROM  ".$TINS." WHERE provincia =? and clave=? and  tomo =? and  folio =?");
     $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
 
@@ -1340,10 +1382,11 @@ function showDataVAI($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 
 }
 
-function showDataVAR($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function showDataVAR($PROVINCIA, $CLAVE, $TOMO, $FOLIO,$T_RESULTADOS)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM resultados2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT nombre,apellido,CONCAT(provincia,'-',clave,'-',tomo,'-',folio)AS cedula,n_ins,sede,fac_ia,esc_ia,car_ia,ps,pca,pcg,gatb,verbal,numer,indice FROM ".$TRES." WHERE provincia =? and clave=? and  tomo =? and  folio =?");
     $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
 
@@ -1355,10 +1398,11 @@ function showDataVAR($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 
 }
 
-function getTestUSER($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function getTestUSER($PROVINCIA, $CLAVE, $TOMO, $FOLIO,$T_RESULTADOS)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT ps,pca,pcg,gatb FROM resultados2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $TRES = $T_RESULTADOS;
+    $Query      = new Query($mysqli, "SELECT sede,facultad,escuela,areap,ps,pca,pcg,gatb FROM ".$TRES." WHERE provincia =? and clave=? and  tomo =? and  folio =?");
     $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $Query->getresults($parametros);
 
@@ -1367,10 +1411,11 @@ function getTestUSER($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 
 }
 
-function getUserAreaTest($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function getUserAreaTest($T_RESULTADOS,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT areap,ps,pca,pcg,gatb FROM resultados2017 WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $TRES = $T_RESULTADOS;
+    $Query      = new Query($mysqli, "SELECT areap,ps,pca,pcg,gatb FROM ".$TRES." WHERE provincia =? and clave=? and  tomo =? and  folio =?");
     $parametros = array("ssss", &$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $Query->getresults($parametros);
 
@@ -1379,10 +1424,11 @@ function getUserAreaTest($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 
 }
 
-function updateIndice($INDICE, $PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function updateIndice($T_RESULTADOS,$INDICE, $PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
  global $mysqli;
-    $Query      = new Query($mysqli, "UPDATE resultados2017 SET indice = ? WHERE provincia =? and clave=? and tomo =? and  folio =?");
+ $TRES = $T_RESULTADOS;
+    $Query      = new Query($mysqli, "UPDATE ".$TRES." SET indice = ? WHERE provincia =? and clave=? and tomo =? and  folio =?");
     $parametros = array("sssss",&$INDICE, &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $Query->getresults($parametros);
 
@@ -1393,11 +1439,12 @@ function updateIndice($INDICE, $PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 }
 
 
-function updateUserTest($PS,$PCA,$PCG,$GATB,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function updateUserTest($T_RESULTADOS,$SEDE,$FACULTAD,$ESCUELA,$AREA,$PS,$PCA,$PCG,$GATB,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "UPDATE resultados2017 SET ps =?,pca =?,pcg =?,gatb =? WHERE provincia =? and clave=? and tomo =? and  folio =?");
-    $parametros = array("ssssssss",&$PS,&$PCA,&$PCG,&$GATB,&$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
+    $TRES = $T_RESULTADOS;
+    $Query      = new Query($mysqli, "UPDATE ".$TRES." SET sede =? ,facultad =?, escuela =?, areap =?, ps =?,pca =?,pcg =?,gatb =? WHERE provincia =? and clave=? and tomo =? and  folio =?");
+    $parametros = array("ssssssssssss",&$SEDE,&$FACULTAD,&$ESCUELA,&$AREA,&$PS,&$PCA,&$PCG,&$GATB,&$PROVINCIA, &$CLAVE,&$TOMO, &$FOLIO);
     $data       = $Query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1420,11 +1467,11 @@ function validationCIDExist($CID)
 ///////////////////////
 //CID EXIST
 
-function getUserCIDFromInscritos($PROVINCIA,$CLAVE, $TOMO , $FOLIO)
+function getUserCIDFromInscritos($PROVINCIA,$CLAVE, $TOMO , $FOLIO, $T_INSCRITOS)
 {
     global $mysqli;
-    $TR         = "inscritos2017";
-    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $TINS         = $T_INSCRITOS;
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TINS . " WHERE provincia =? and clave=? and  tomo =? and  folio =?");
     $parametros = array('ssss', &$PROVINCIA, &$CLAVE , &$TOMO , &$FOLIO);
     $data       = $Query->getresults($parametros);
 
@@ -1433,11 +1480,11 @@ function getUserCIDFromInscritos($PROVINCIA,$CLAVE, $TOMO , $FOLIO)
 
 }
 
-function getUserCIDFromResultados($PROVINCIA, $CLAVE, $TOMO , $FOLIO)
+function getUserCIDFromResultados($PROVINCIA, $CLAVE, $TOMO , $FOLIO, $T_RESULTADOS)
 {
     global $mysqli;
-    $TR         = "resultados2017";
-    $Query      = new Query($mysqli, "SELECT * FROM " . $TR . " WHERE provincia =? and clave=? and  tomo =? and  folio =?");
+    $TRES         = $T_RESULTADOS;
+    $Query      = new Query($mysqli, "SELECT * FROM " . $TRES . " WHERE provincia =? and clave=? and  tomo =? and  folio =?");
     $parametros = array('ssss', &$PROVINCIA, &$CLAVE , &$TOMO , &$FOLIO);
     $data       = $Query->getresults($parametros);
 
@@ -1446,10 +1493,10 @@ function getUserCIDFromResultados($PROVINCIA, $CLAVE, $TOMO , $FOLIO)
 
 }
 //////////////////
-function checkRegisterExistInscritos($NUMINSCRITO)
+function checkRegisterExistInscritos($T_INSCRITOS,$NUMINSCRITO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM inscritos2017 WHERE n_ins=?");
+    $query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM ".$T_INSCRITOS." WHERE n_ins=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data       = $query->getresults($parametros);
 
@@ -1457,10 +1504,10 @@ function checkRegisterExistInscritos($NUMINSCRITO)
         return $data[0];} else {return null;}
 }
 
-function checkRegisterExistResultados($NUMINSCRITO)
+function checkRegisterExistResultados($T_RESULTADOS,$NUMINSCRITO)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM resultados2017 WHERE n_ins=?");
+    $Query      = new Query($mysqli, "SELECT nombre,apellido,n_ins FROM ".$T_RESULTADOS." WHERE n_ins=?");
     $parametros = array('s', &$NUMINSCRITO);
     $data       = $Query->getresults($parametros);
 
@@ -1509,40 +1556,44 @@ function getAllDataValidationRes($NUMINSCRITO)
 
 //////////////////////////////////////////////////////////////////////////////////////
 //COPIADO DE LA BASE DE DATOS A LA BASA DE DE DATOS TEMPORAL
-function clonTable1toTable2Inscritos($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function clonTable1toTable2Inscritos($T_INSCRITOS,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO inscritostmp SELECT * FROM inscritos2017 WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $TINS = $T_INSCRITOS;
+    $query      = new Query($mysqli, "INSERT INTO inscritostmp SELECT * FROM ".$TINS." WHERE provincia=? and clave=? and tomo=? and folio=?");
     $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
 //COPIADO DE LA BASE DE DATOS A LA BASA DE DE DATOS TEMPORAL
-function clonTable1toTable2Resultados($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+function clonTable1toTable2Resultados($T_RESULTADOS,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO resultadostmp SELECT * FROM resultados2017 WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "INSERT INTO resultadostmp SELECT * FROM ".$TRES." WHERE provincia=? and clave=? and tomo=? and folio=?");
     $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
-//CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS INSCRITOS
-function clonInscritos($PROVINCIA, $CLAVE, $TOMO, $FOLIO)
+//CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS INSCRITOS ACTUALES
+function clonInscritos($T_INSCRITOS,$PROVINCIA, $CLAVE, $TOMO, $FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO inscritos2018 SELECT * FROM inscritostmp WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $TINS = $T_INSCRITOS;
+    $query      = new Query($mysqli, "INSERT INTO ".$TINS." SELECT * FROM inscritostmp WHERE provincia=? and clave=? and tomo=? and folio=?");
     $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
 }
 
-//CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS RESULTADO
-function clonResultados($PROVINCIA, $CLAVE, $TOMO, $FOLIO){
+//CLONADO DE LA INFORMACION DESDE LA BASE DE DATOS TEMPORAL A LA BASA DE DE DATOS RESULTADO ACTUALES
+function clonResultados($T_RESULTADOS,$PROVINCIA, $CLAVE, $TOMO, $FOLIO){
 
     global $mysqli;
-    $query      = new Query($mysqli, "INSERT INTO resultados2018 SELECT * FROM resultadostmp WHERE provincia=? and clave=? and tomo=? and folio=?");
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "INSERT INTO ".$TRES." SELECT * FROM resultadostmp WHERE provincia=? and clave=? and tomo=? and folio=?");
     $parametros = array('ssss', &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     return true;
@@ -1578,10 +1629,11 @@ function insertOldID($N_INS, $C_VALIDACION,$CEDULA)
     return true;
 }
 
-function search_N_ins($PROVINCIA, $CLAVE, $TOMO, $FOLIO){
+function search_N_ins($T_RESULTADOS,$PROVINCIA, $CLAVE, $TOMO, $FOLIO){
 
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT n_ins from resultados2017 WHERE provincia =? and clave = ? and tomo = ? and folio= ?");
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT n_ins from ".$TRES." WHERE provincia =? and clave = ? and tomo = ? and folio= ?");
     $parametros = array("ssss", &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO);
     $data       = $query->getresults($parametros);
     if (isset($data[0])) {
@@ -1695,7 +1747,7 @@ function exportData($DB, $NAMEFILE)
 }
 ///////////////////////////////
 
-function insertNewDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATXT, $PROVINCIA, $CLAVE, $TOMO, $FOLIO, $PASAPORTE, $NACIONALIDAD, $TRABAJA, $OCUPACION, $TIPOC, $COL_PROC, $COD_COL, $EST_CIVIL, $MES_N, $DIA_N, $AO_N, $MES_I, $DIA_I, $AO_I, $FAC_IA, $ESC_IA, $CAR_IA, $FAC_IIA,
+function insertNewDataInscritos($T_INSCRITOS,$RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATXT, $PROVINCIA, $CLAVE, $TOMO, $FOLIO, $PASAPORTE, $NACIONALIDAD, $TRABAJA, $OCUPACION, $TIPOC, $COL_PROC, $COD_COL, $EST_CIVIL, $MES_N, $DIA_N, $AO_N, $MES_I, $DIA_I, $AO_I, $FAC_IA, $ESC_IA, $CAR_IA, $FAC_IIA,
     $ESC_IIA, $CAR_IIA, $FAC_IIIA, $ESC_IIIA, $CAR_IIIA, $N_INS, $BACH, $NBACHILLER, $AO_GRAD, $ECROP, $SEXO, $PVIU, $AOPVIU, $SEDE,
     $PROVI, $DISTRITO, $CORREGIMIENTO, $OCUP_P, $OCUP_M, $GRADO_P, $ESC_P, $GRADO_M, $ESC_M, $CFE, $ECPS, $IMF,
     $NPERS, $MTRASP, $THIJOS, $CHIJOS, $DISCAP, $RPADRE, $RMADRE, $RHNOS, $PGIND, $REND_ESC, $TELEFONO, $TEL_CEL,
@@ -1704,7 +1756,7 @@ function insertNewDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDUL
     $MATRICULA, $SEFAESCA, $RED2, $NO1, $NO2) {
 
     global $mysqli;
-    $Query      = new Query($mysqli, "INSERT INTO inscritos2017(red, nota, apellido, nombre, cedula, cedulatxt, provincia, clave, tomo, folio, pasaporte, nacionalidad, trabaja, ocupacion, tipoc, col_proc, cod_col, est_civil, mes_n, dia_n, ao_n, mes_i, dia_i, ao_i, fac_ia, esc_ia, car_ia, fac_iia, esc_iia, car_iia, fac_iiia, esc_iiia, car_iiia, n_ins, bach, nbachiller, ao_grad, ecrop, sexo, pviu, aopviu, sede, provi, distri, corregi, ocup_p, ocup_m, grado_p, esc_p, grado_m, esc_m, cfe, ecps, imf, npers, mtrasp, thijos, chijos, discap, rpadre, rmadre, rhnos, pgind, rend_esc, telefono, tel_cel, tel_ofic, mail, t_comp, t_internet, cod_promed, cod_ext_le, consu_dic, pg_num, area_i, area_ii, area_iii, arch_i, grupo, edif, aula, hora_prueb, ao_lectivo, edad, fecha_inscr, fecha_nac, otro_coleg, nfac_ia, d, cod_prov, nsede, nfacultad, ncarrera, matricula, sefaesca, red2, no1, no2) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $Query      = new Query($mysqli, "INSERT INTO ".$T_INSCRITOS."(red, nota, apellido, nombre, cedula, cedulatxt, provincia, clave, tomo, folio, pasaporte, nacionalidad, trabaja, ocupacion, tipoc, col_proc, cod_col, est_civil, mes_n, dia_n, ao_n, mes_i, dia_i, ao_i, fac_ia, esc_ia, car_ia, fac_iia, esc_iia, car_iia, fac_iiia, esc_iiia, car_iiia, n_ins, bach, nbachiller, ao_grad, ecrop, sexo, pviu, aopviu, sede, provi, distri, corregi, ocup_p, ocup_m, grado_p, esc_p, grado_m, esc_m, cfe, ecps, imf, npers, mtrasp, thijos, chijos, discap, rpadre, rmadre, rhnos, pgind, rend_esc, telefono, tel_cel, tel_ofic, mail, t_comp, t_internet, cod_promed, cod_ext_le, consu_dic, pg_num, area_i, area_ii, area_iii, arch_i, grupo, edif, aula, hora_prueb, ao_lectivo, edad, fecha_inscr, fecha_nac, otro_coleg, nfac_ia, d, cod_prov, nsede, nfacultad, ncarrera, matricula, sefaesca, red2, no1, no2) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $parametros = array('ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss', &$RED, &$NOTA, &$APELLIDO, &$NOMBRE, &$CEDULA, &$CEDULATXT, &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO, &$PASAPORTE, &$NACIONALIDAD, &$TRABAJA, &$OCUPACION,
         &$TIPOC, &$COL_PROC, &$COD_COL, &$EST_CIVIL, &$MES_N, &$DIA_N, &$AO_N, &$MES_I, &$DIA_I, &$AO_I, &$FAC_IA, &$ESC_IA, &$CAR_IA, &$FAC_IIA,
         &$ESC_IIA, &$CAR_IIA, &$FAC_IIIA, &$ESC_IIIA, &$CAR_IIIA, &$N_INS, &$BACH, &$NBACHILLER, &$AO_GRAD, &$ECROP, &$SEXO, &$PVIU, &$AOPVIU, &$SEDE,
@@ -1716,10 +1768,10 @@ function insertNewDataInscritos($RED, $NOTA, $APELLIDO, $NOMBRE, $CEDULA, $CEDUL
     return true;
 }
 
-function insertNewDataResultados($RED, $RED2, $REGION, $EXTRANJERO, $SEDE, $NSEDE, $FACULTAD, $NFACULTAD, $ESCUELA, $CARRERA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATXT, $PROVINCIA, $CLAVE, $TOMO, $FOLIO, $N_INS, $AREAP, $NOTA, $PS, $GATB, $PCA, $PCG, $INGLES, $INDICE, $INDICEAR, $INDICECI, $INDICEEM, $INDICEHU, $INDICEIN, $INDICEPE, $INDICEPO, $INDICEDE, $INDICEAD, $FECPCA, $CL_DEF, $CL_PROPB, $LECT1, $R_COM_COMP, $REL_O, $LECT2, $R_PLAN, $VERBAL, $OPER1, $OPER2, $RAZON1, $RAZON2, $NUMER, $AREA1, $AREA2, $AREA3, $AREA4, $AREA5, $AREA6, $GRAM1, $VOCAB, $GRAM2, $NARCHI, $OPC, $NPAG, $FECPCG, $INDICE00, $INDICE25, $INDICE50, $INDICE75, $REGISTRO, $CAR1, $AREAP1, $CAR2, $AREAP2, $CAR3, $AREAP3, $COL_PROC, $COD_COL, $TIPOC, $NTIPOC, $BACH, $BACHILLER, $NBACHILLER, $SEXO, $NSEXO, $MES_N, $DIA_N, $AO_N, $FECHANACI, $EDAD, $FAC_IA, $ESC_IA, $CAR_IA, $FAC_IIA, $ESC_IIA, $CAR_IIA, $FAC_IIIA, $ESC_IIIA, $CAR_IIIA, $AO_GRAD, $PROVI, $DISTRI, $CORREG, $TELEFONO, $TEL_CEL, $TEL_OFI, $MAIL, $SEDE_I, $AREA_I, $AO_LECT, $COD_PROV, $NPROVINCIA, $MATRICULA, $SAFAESCA, $NACIONALID, $TRABAJA, $OCUPACION, $EST_CIVIL, $ECROP, $PVIU, $AOPVIU, $OCUP_P, $OCUP_M, $GRADO_P, $ESC_P, $GRADO_M, $ESC_M, $CFE, $ECPS, $IMF, $NPERS, $MTRASP, $THIJOS, $CHIJOS, $DISCAP, $RPADRE, $RMADRE, $RHNOS, $PGIND, $REND_ESC, $TIPO_EST, $ARCH_I, $OBSERVACION, $FN, $NCARRERA, $D, $NO2)
+function insertNewDataResultados($T_RESULTADOS,$RED, $RED2, $REGION, $EXTRANJERO, $SEDE, $NSEDE, $FACULTAD, $NFACULTAD, $ESCUELA, $CARRERA, $APELLIDO, $NOMBRE, $CEDULA, $CEDULATXT, $PROVINCIA, $CLAVE, $TOMO, $FOLIO, $N_INS, $AREAP, $NOTA, $PS, $GATB, $PCA, $PCG, $INGLES, $INDICE, $INDICEAR, $INDICECI, $INDICEEM, $INDICEHU, $INDICEIN, $INDICEPE, $INDICEPO, $INDICEDE, $INDICEAD, $FECPCA, $CL_DEF, $CL_PROPB, $LECT1, $R_COM_COMP, $REL_O, $LECT2, $R_PLAN, $VERBAL, $OPER1, $OPER2, $RAZON1, $RAZON2, $NUMER, $AREA1, $AREA2, $AREA3, $AREA4, $AREA5, $AREA6, $GRAM1, $VOCAB, $GRAM2, $NARCHI, $OPC, $NPAG, $FECPCG, $INDICE00, $INDICE25, $INDICE50, $INDICE75, $REGISTRO, $CAR1, $AREAP1, $CAR2, $AREAP2, $CAR3, $AREAP3, $COL_PROC, $COD_COL, $TIPOC, $NTIPOC, $BACH, $BACHILLER, $NBACHILLER, $SEXO, $NSEXO, $MES_N, $DIA_N, $AO_N, $FECHANACI, $EDAD, $FAC_IA, $ESC_IA, $CAR_IA, $FAC_IIA, $ESC_IIA, $CAR_IIA, $FAC_IIIA, $ESC_IIIA, $CAR_IIIA, $AO_GRAD, $PROVI, $DISTRI, $CORREG, $TELEFONO, $TEL_CEL, $TEL_OFI, $MAIL, $SEDE_I, $AREA_I, $AO_LECT, $COD_PROV, $NPROVINCIA, $MATRICULA, $SAFAESCA, $NACIONALID, $TRABAJA, $OCUPACION, $EST_CIVIL, $ECROP, $PVIU, $AOPVIU, $OCUP_P, $OCUP_M, $GRADO_P, $ESC_P, $GRADO_M, $ESC_M, $CFE, $ECPS, $IMF, $NPERS, $MTRASP, $THIJOS, $CHIJOS, $DISCAP, $RPADRE, $RMADRE, $RHNOS, $PGIND, $REND_ESC, $TIPO_EST, $ARCH_I, $OBSERVACION, $FN, $NCARRERA, $D, $NO2)
 {
     global $mysqli;
-    $Query      = new Query($mysqli, "INSERT INTO resultados2017(red, red2, region, extranjero, sede, nsede, facultad, nfacultad, escuela, carrera, apellido, nombre, cedula, cedulatxt, provincia, clave, tomo, folio, n_ins, areap, nota, ps, gatb, pca, pcg, ingles, indice, indicear, indiceci, indiceem, indicehu, indicein, indicepe, indicepo, indicede, indicead, fecpca, cl_def, cl_propb, lect1, r_com_comp, rel_o, lect2, r_plan, verbal, oper1, oper2, razon1, razon2, numer, area1, area2, area3, area4, area5, area6, gram1, vocab, gram2, narchi, opc, npag, fecpcg, indice00, indice25, indice50, indice75, registro, car1, areap1, car2, areap2, car3, areap3, col_proc, cod_col, tipoc, ntipoc, bach, bachiller, nbachiller, sexo, nsexo, mes_n, dia_n, ao_n, fechanaci, edad, fac_ia, esc_ia, car_ia, fac_iia, esc_iia, car_iia, fac_iiia, esc_iiia, car_iiia, ao_grad, provi, distri, correg, telefono, tel_cel, tel_ofi, mail, sede_i, area_i, ao_lect, cod_prov, nprovincia, matricula, safaesca, nacionalid, trabaja, ocupacion, est_civil, ecrop, pviu, aopviu, ocup_p, ocup_m, grado_p, esc_p, grado_m, esc_m, cfe, ecps, imf, npers, mtrasp, thijos, chijos, discap, rpadre, rmadre, rhnos, pgind, rend_esc, tipo_est, arch_i, observacion, fn, ncarrera, d, no2) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $Query      = new Query($mysqli, "INSERT INTO ".$T_RESULTADOS."(red, red2, region, extranjero, sede, nsede, facultad, nfacultad, escuela, carrera, apellido, nombre, cedula, cedulatxt, provincia, clave, tomo, folio, n_ins, areap, nota, ps, gatb, pca, pcg, ingles, indice, indicear, indiceci, indiceem, indicehu, indicein, indicepe, indicepo, indicede, indicead, fecpca, cl_def, cl_propb, lect1, r_com_comp, rel_o, lect2, r_plan, verbal, oper1, oper2, razon1, razon2, numer, area1, area2, area3, area4, area5, area6, gram1, vocab, gram2, narchi, opc, npag, fecpcg, indice00, indice25, indice50, indice75, registro, car1, areap1, car2, areap2, car3, areap3, col_proc, cod_col, tipoc, ntipoc, bach, bachiller, nbachiller, sexo, nsexo, mes_n, dia_n, ao_n, fechanaci, edad, fac_ia, esc_ia, car_ia, fac_iia, esc_iia, car_iia, fac_iiia, esc_iiia, car_iiia, ao_grad, provi, distri, correg, telefono, tel_cel, tel_ofi, mail, sede_i, area_i, ao_lect, cod_prov, nprovincia, matricula, safaesca, nacionalid, trabaja, ocupacion, est_civil, ecrop, pviu, aopviu, ocup_p, ocup_m, grado_p, esc_p, grado_m, esc_m, cfe, ecps, imf, npers, mtrasp, thijos, chijos, discap, rpadre, rmadre, rhnos, pgind, rend_esc, tipo_est, arch_i, observacion, fn, ncarrera, d, no2) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $parametros = array('sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss', &$RED, &$RED2, &$REGION, &$EXTRANJERO, &$SEDE, &$NSEDE, &$FACULTAD, &$NFACULTAD, &$ESCUELA, &$CARRERA, &$APELLIDO, &$NOMBRE, &$CEDULA, &$CEDULATXT, &$PROVINCIA, &$CLAVE, &$TOMO, &$FOLIO, &$N_INS, &$AREAP, &$NOTA, &$PS, &$GATB, &$PCA, &$PCG, &$INGLES, &$INDICE, &$INDICEAR, &$INDICECI, &$INDICEEM, &$INDICEHU, &$INDICEIN, &$INDICEPE, &$INDICEPO, &$INDICEDE, &$INDICEAD, &$FECPCA, &$CL_DEF, &$CL_PROPB, &$LECT1, &$R_COM_COMP, &$REL_O, &$LECT2, &$R_PLAN, &$VERBAL, &$OPER1, &$OPER2, &$RAZON1, &$RAZON2, &$NUMER, &$AREA1, &$AREA2, &$AREA3, &$AREA4, &$AREA5, &$AREA6, &$GRAM1, &$VOCAB, &$GRAM2, &$NARCHI, &$OPC, &$NPAG, &$FECPCG, &$INDICE00, &$INDICE25, &$INDICE50, &$INDICE75, &$REGISTRO, &$CAR1, &$AREAP1, &$CAR2, &$AREAP2, &$CAR3, &$AREAP3, &$COL_PROC, &$COD_COL, &$TIPOC, &$NTIPOC, &$BACH, &$BACHILLER, &$NBACHILLER, &$SEXO, &$NSEXO, &$MES_N, &$DIA_N, &$AO_N, &$FECHANACI, &$EDAD, &$FAC_IA, &$ESC_IA, &$CAR_IA, &$FAC_IIA, &$ESC_IIA, &$CAR_IIA, &$FAC_IIIA, &$ESC_IIIA, &$CAR_IIIA, &$AO_GRAD, &$PROVI, &$DISTRI, &$CORREG, &$TELEFONO, &$TEL_CEL, &$TEL_OFI, &$MAIL, &$SEDE_I, &$AREA_I, &$AO_LECT, &$COD_PROV, &$NPROVINCIA, &$MATRICULA, &$SAFAESCA, &$NACIONALID, &$TRABAJA, &$OCUPACION, &$EST_CIVIL, &$ECROP, &$PVIU, &$AOPVIU, &$OCUP_P, &$OCUP_M, &$GRADO_P, &$ESC_P, &$GRADO_M, &$ESC_M, &$CFE, &$ECPS, &$IMF, &$NPERS, &$MTRASP, &$THIJOS, &$CHIJOS, &$DISCAP, &$RPADRE, &$RMADRE, &$RHNOS, &$PGIND, &$REND_ESC, &$TIPO_EST, &$ARCH_I, &$OBSERVACION, &$FN, &$NCARRERA, &$D, &$NO2);
     $data       = $Query->getresults($parametros);
     return null;
@@ -1742,11 +1794,12 @@ function convert_object_to_array($data)
 
 //////////////////////////////////////////////////////
 //CERTIFICACIONES
-function GetPersonalData($ID_INSCRITO)
+function GetPersonalData($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT CONCAT(nombre,' ',apellido) as nombrecompleto ,sede,facultad,col_proc, CONCAT(provincia,'-',tomo,'-',folio)AS cedula, areap,carrera,nbachiller from resultados2017 WHERE n_ins = ? ");
-    $parametros = array("s", &$ID_INSCRITO);
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT CONCAT(nombre,' ',apellido) as nombrecompleto ,n_ins,sede,facultad,col_proc, CONCAT(provincia,'-',tomo,'-',folio)AS cedula, areap,carrera,nbachiller from ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1757,11 +1810,12 @@ function GetPersonalData($ID_INSCRITO)
 
 }
 
-function GetAverageData($ID_INSCRITO)
+function GetAverageData($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT indice,gatb,ps,pca,pcg from resultados2017 WHERE n_ins = ? ");
-    $parametros = array("s", &$ID_INSCRITO);
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT indice,gatb,ps,pca,pcg from ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1787,11 +1841,12 @@ function GetPCAData($ID_INSCRITO)
 
 }
 
-function GetAreaData($ID_INSCRITO)
+function GetAreaData($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-    $query      = new Query($mysqli, "SELECT areap from resultados2017 WHERE n_ins = ?");
-    $parametros = array('s', &$ID_INSCRITO);
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT areap from ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {
@@ -1848,12 +1903,12 @@ function GetFacultadLabels($FACULTAD)
 
 }
 /////////////////////////////////////////////////////////////////
-function GetPCGData($ID_INSCRITO)
+function GetPCGData($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
-
-    $query      = new Query($mysqli, "SELECT id_facultad, codigo_facultad, nombre_facultad from resultados2017 WHERE n_ins= ?");
-    $parametros = array("s", &$ID_INSCRITO);
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT area1,area2,area3,area4,SUM(area1+area2+area3+area4) as area5 from ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
     $data       = $query->getresults($parametros);
 
     if (isset($data[0])) {

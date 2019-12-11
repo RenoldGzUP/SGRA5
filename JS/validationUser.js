@@ -2,6 +2,7 @@
 // CHECK USER EXIST INTO VALIDATIONS
 function sendIDSearch() {
    // var idInscrito = $("#idSearch").val();
+   document.getElementById('taInscritosResultado').innerHTML = "";
     var idName = $("#idName").val();
     var idCID = $("#idCID").val();
     var idLastName = $("#idLastName").val();
@@ -65,9 +66,11 @@ function measuringValidate(idCID) {
     //$('#alertValidar').show();
     console.log(idCID);
     document.getElementById("ValidateBtt").disabled = true;
+    var table2 = $("#tablaResultados").val();
     $.ajax({
         data: {
             "idCID": idCID,
+            "table2": table2
         },
         type: "POST",
         dataType: "text",
@@ -88,20 +91,32 @@ function saveDataTest(idCID) {
     document.getElementById("ValidateBtt").value = idCID;
     document.getElementById("SearchBtt").disabled = true;
     //get data test Status
+    var sede = $("#sede").val();
+    var facultad = $("#facultad").val();
+    var escuela = $("#escuela").val();
+    var area = $("#area").val();
     var indice_ps = $("#indice_ps").val();
     var indice_pca = $("#indice_pca").val();
     var indice_pcg = $("#indice_pcg").val();
     var indice_gatb = $("#indice_gatb").val();
+    var table1 = $("#tablaInscritos").val();
+    var table2 = $("#tablaResultados").val();
 
     console.log("PS"+indice_ps + "  PCA " +indice_pca);
 
      $.ajax({
           data: {
                "idCID": idCID,
+               "sede":sede,
+               "facultad":facultad,
+               "escuela":escuela,
+               "area":area,
               "indice_ps":indice_ps,
               "indice_pca":indice_pca,
               "indice_pcg":indice_pcg,
-              "indice_gatb":indice_gatb
+              "indice_gatb":indice_gatb,
+              "table1": table1,
+              "table2": table2
           },
           type: "POST",
           dataType: "text",
@@ -205,10 +220,15 @@ function generateValidation() {
 /////////////////////////////////////////////////////
 //GET DATA
 function getTableDataInscritos(idCID) {
+    var table1 = $("#tablaInscritos").val();
+    var table2 = $("#tablaResultados").val();
+    console.log(table2);
     $.ajax({
         data: {
             "idCID":idCID,
-            "idPost": 1
+            "idPost": 1,
+            "table1": table1,
+            "table2": table2
         },
         type: "POST",
         dataType: "text",
@@ -222,10 +242,15 @@ function getTableDataInscritos(idCID) {
 }
 
 function getTableDataResultados(idCID) {
+    var table1 = $("#tablaInscritos").val();
+    var table2 = $("#tablaResultados").val();
+    console.log(table1);
     $.ajax({
         data: {
             "idCID": idCID,
-            "idPost": 2
+            "idPost": 2,
+            "table1": table1,
+            "table2": table2
         },
         type: "POST",
         dataType: "text",

@@ -20,14 +20,18 @@ $lastValidationCode = checkLastValidationCode();
 if (!is_null($lastValidationCode)) {
     //ENVIAMOS LA ULTIMA VALIDACION
     saveLogs($_SESSION['name'], "Ultimo código de validación ".$lastValidationCode->codigovalidacion);
+    //FUNCTION
     $newValidationCode = getNewValidationCode($lastValidationCode->codigovalidacion);
 
-//echo "Nueva Validación ...   ".$newValidationCode;
+        //echo "Nueva Validación ...   ".$newValidationCode;
     saveLogs($_SESSION['name'], "Administrador validó a " .$_POST["idCID"]. " en las tablas de datos");
   
-    if(validationProcess($newValidationCode,$_POST["idCID"],$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3])){
+    if(validationProcess($tableInscritos,$tableResultados,$newValidationCode,$_POST["idCID"],$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3])){
         echo 1;
-    };
+    }else{
+        echo "Ocurrió un error";
+    }
+
 
 } else {
     $validationCode = "V00001";
@@ -35,9 +39,11 @@ if (!is_null($lastValidationCode)) {
     $year = date("Y");
     saveLogs($_SESSION['name'], "Administrador inició proceso de Validacion " . $year);
 
-    if(validationProcess($validationCode,$_POST["idCID"],$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3])){
+    if(validationProcess($tableInscritos,$tableResultados,$validationCode,$_POST["idCID"],$id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3])){
         echo 1;
-    };
+    }else{
+        echo "Ocurrió un error";
+    }
 
 }
 
@@ -60,21 +66,21 @@ function getNewValidationCode($code)
 }
 
 
-function validationProcess($VALIDATIONCODE,$CID,$PROVINCIA,$CLAVE,$TOMO,$FOLIO){
+function validationProcess($T_INSCRITOS,$T_RESULTADOS,$VALIDATIONCODE,$CID,$PROVINCIA,$CLAVE,$TOMO,$FOLIO){
 
     saveLogs($_SESSION['name'], "Procesando solicitud de validación...");
     
 //PASO 1
     //TEMPORAL DB- pass register to tmp tb , save the data and update data
     saveLogs($_SESSION['name'], "Exportando los registros a las DB temporales");
-    clonTable1toTable2Inscritos($PROVINCIA,$CLAVE,$TOMO,$FOLIO);
-    clonTable1toTable2Resultados($PROVINCIA,$CLAVE,$TOMO,$FOLIO);
+    clonTable1toTable2Inscritos($T_INSCRITOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO);
+    clonTable1toTable2Resultados($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO);
 
 //PASO 2
     saveLogs($_SESSION['name'], "Regitrando nueva validación");
     //SAVE N_INSCRITO, #VALIDACION,CEDULA
     //get n_ins number
-    $N_INS = search_N_ins($PROVINCIA,$CLAVE,$TOMO,$FOLIO);
+    $N_INS = search_N_ins($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO);
     //insert into
     insertOldID($N_INS->n_ins, $VALIDATIONCODE,$CID);
 
@@ -87,9 +93,17 @@ function validationProcess($VALIDATIONCODE,$CID,$PROVINCIA,$CLAVE,$TOMO,$FOLIO){
 //PASO 4
     saveLogs($_SESSION['name'], "Clonando registros a las tablas oficiales");
     //CLONE FROM TMP TABLE(2) TO DATE TB (2)
-    clonInscritos($PROVINCIA,$CLAVE,$TOMO,$FOLIO);
+
+    //GET TABLE NEW NAMES
+        $TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS_ACT = $key->tb_inscritos_new_year;
+          $T_RESULTADOS_ACT = $key->tb_resultados_new_year;
+        }
+
+    clonInscritos($T_INSCRITOS_ACT,$PROVINCIA,$CLAVE,$TOMO,$FOLIO);
     //($newValidationCode);
-    clonResultados($PROVINCIA,$CLAVE,$TOMO,$FOLIO);
+    clonResultados($T_RESULTADOS_ACT,$PROVINCIA,$CLAVE,$TOMO,$FOLIO);
 
     return true;
 }

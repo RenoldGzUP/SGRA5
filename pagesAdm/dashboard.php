@@ -125,7 +125,7 @@ include '../modulos/sendMessage.php';
 
                 <ul style="list-style-type:none;">
                 <li>Sistema de Gestión de Resultados Academicos </li>
-                <li>Version 1.0.75 PROT</li>
+                <li>Version 1.0.72 PROT</li>
                 <li>Autor : Renold M . González</li>
                 <li>2019-2020</li>
 

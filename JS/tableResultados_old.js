@@ -110,7 +110,7 @@ function getDataAJAX(issetData, filterState) {
             'orderable': false,
             'className': 'dt-body-center',
             'render': function(data, type, full, meta) {
-                return '<input type="checkbox"  id="checkboxlist" name="n_ins" value="' + $('<div/>').text(data.n_ins).html() + '">';
+                return '<input type="checkbox"  id="checkboxlist" name="cedula" value="' + $('<div/>').text(data.cedula).html() + '">';
                 //return '<input type="checkbox"  id="checkboxlist" name="n_ins" value="' + $('<div/>').text(data.cedula).html() + '">';
             }
         }, {
@@ -123,10 +123,10 @@ function getDataAJAX(issetData, filterState) {
             "targets": [0, 17]
         }],
         'createdRow': function(row, data, index) {
-            if (data.n_ins != 0) {
-                // $('td', row).eq(5).addClass('row-style');
+            if (data.red != 0) {
+                //$('td', row).eq(5).addClass('row-style');
                 $(row).addClass('row-style');
-                // console.log("TRUE" + data.n_ins);
+                console.log("TRUE" + data.red);
             }
         },
         "order": [

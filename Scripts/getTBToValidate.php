@@ -4,13 +4,15 @@ openConnection();
 include_once '../Scripts/library_db_sql.php';
 session_start();
 
-
+//GET DATA FROM-END
 $id_CID_user = explode("-", $_POST["idCID"]);
 $typePost = $_POST["idPost"];
+$tableInscritos  = $_POST["table1"];
+$tableResultados = $_POST["table2"];
 
 //EXPLODE OF ID AND SEND DATA
-$DataInscritosCID  = showDataVAI($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
-$DataResultadosCID = showDataVAR($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3]);
+$DataInscritosCID  = showDataVAI($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3],$tableInscritos);
+$DataResultadosCID = showDataVAR($id_CID_user[0],$id_CID_user[1],$id_CID_user[2],$id_CID_user[3],$tableResultados);
 
 ////EMPTY ARRAY
 ////////////////////////////////////////////////////
@@ -34,7 +36,7 @@ function getARRAYS($DataInscritos, $DataResultados)
 //GET DATA INSCRITOS
 if ($typePost == 1) {
     if (is_null($DataInscritosCID)) {
-        echo '<tr><td colspan="18" style="text-align: center;" >No hay datos para mostrar de ' . $name . '</td></tr>';
+        echo '<tr><td colspan="18" style="text-align: center;" >No hay datos para mostrar de ' . $_POST["idCID"] . '</td></tr>';
     } else {
         foreach ($DataInscritosCID as $item) {
             echo '<tr style="font-size: 11px;text-align:center">';

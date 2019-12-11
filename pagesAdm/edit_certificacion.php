@@ -34,14 +34,10 @@ if ($now > $_SESSION['expire']) {
         </title>
         <meta charset="utf-8">
             <meta content="width=device-width, initial-scale=1" name="viewport">
-                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+                <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
                  <link rel="stylesheet" media="all" href="../Style/ResultadosStyle.css">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-                    </script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
-
-                    </script>
-                </link>
+                 <script type="text/javascript" src="../JS/jquery-3.3.1.min.js"></script>
+                 <script type="text/javascript" src="../JS/bootstrap.js"></script>
             </meta>
         </meta>
     </head>
@@ -55,7 +51,7 @@ if ($now > $_SESSION['expire']) {
              <div style="margin-top: 13px;margin-left: 85px">
               <p style="color: #ffffff;font-size: 18px;font-family: Calisto MT">UNIVERSIDAD DE</p>
                <p style="color: #ffffff;font-size:36px;margin: -3.2% 0;font-family: Calisto MT">PANAMÁ</p>
-               <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;margin-top: -69px">Vicerrectoría Academica</p>
+               <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;margin-top: -69px">Vicerrectoría Académica</p>
                <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;">Dirección General de Admisión</p>
                <p style="color: #ffffff;margin: 0.08% 0;margin-left: 190px;">Sistema de Gestión de Resultados Académicos</p>
              </div>

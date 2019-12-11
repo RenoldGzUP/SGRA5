@@ -38,9 +38,16 @@ class PDF extends FPDF
 //emcabezados
     public function PersonalData($ID_INSCRITO)
     {
+        //GET TABLE NEW NAMES
+        $TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS_ACT = $key->tb_inscritos_new_year;
+          $T_RESULTADOS_ACT = $key->tb_resultados_new_year;
+        }
+
         //DATA
-        $Inscrito     = $ID_INSCRITO;
-        $Data         = GetPersonalData($Inscrito);
+        $id_Exp_CID_PD     = explode("-",$ID_INSCRITO);
+        $Data         = GetPersonalData($T_RESULTADOS_ACT,$id_Exp_CID_PD[0],$id_Exp_CID_PD[1],$id_Exp_CID_PD[2],$id_Exp_CID_PD[3]);
         $DataPersonal = convert_object_to_array($Data);
 
         $area     = GetAreaLabels($DataPersonal[0]["areap"]);
@@ -67,7 +74,7 @@ class PDF extends FPDF
         $this->SetFont('Arial', '', 8);
         $this->Cell(40, 6, 'NÚMERO DE VALIDACIÓN:', 0, 0, 'L');
         $this->SetFont('Arial', 'B', 9);
-        $this->Cell(28, 6, $Inscrito, 0, 0, 'L');
+        $this->Cell(28, 6, $DataPersonal[0]["n_ins"], 0, 0, 'L');
 
 //TABLE A
         $this->Ln(1);
@@ -102,8 +109,18 @@ class PDF extends FPDF
 
     public function Averages($ID_INSCRITO,$AREA)
     {
+        //GET TABLE NEW NAMES
+        $TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS_ACT = $key->tb_inscritos_new_year;
+          $T_RESULTADOS_ACT = $key->tb_resultados_new_year;
+        }
+
         //DATA
-        $DataTest    = GetAverageData($ID_INSCRITO);
+        $id_Exp_CID_Averages    = explode("-",$ID_INSCRITO);
+
+        //DATA
+        $DataTest    = GetAverageData($T_RESULTADOS_ACT,$id_Exp_CID_Averages[0],$id_Exp_CID_Averages[1],$id_Exp_CID_Averages[2],$id_Exp_CID_Averages[3]);
         $averageData = convert_object_to_array($DataTest);
 
         //TABLA B
@@ -150,8 +167,19 @@ class PDF extends FPDF
 
     public function PrintPCA($ID_INSCRITO)
     {
+        //GET TABLE NEW NAMES
+        $TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS_ACT = $key->tb_inscritos_new_year;
+          $T_RESULTADOS_ACT = $key->tb_resultados_new_year;
+        }
+
         //DATA
-        $dataPCA  = getDataIndividual($ID_INSCRITO);
+        $id_Exp_CID_PCA   = explode("-",$ID_INSCRITO);
+
+
+        //DATA
+        $dataPCA  = getDataIndividual($T_RESULTADOS_ACT,$id_Exp_CID_PCA[0],$id_Exp_CID_PCA[1],$id_Exp_CID_PCA[2],$id_Exp_CID_PCA[3]);
         $pcaTable = convert_object_to_array($dataPCA);
         //$PCAData = GetPCAData();
 
@@ -299,7 +327,7 @@ class PDF extends FPDF
 
     }
 
-    public function MessaguePCG()
+    public function MessaguePCG($Area_String)
     {
         //DATA
         // $AreaData = GetAreaData();
@@ -307,14 +335,37 @@ class PDF extends FPDF
         $this->Ln(8);
         $this->setX(30);
         $this->SetFont('Arial', 'B', 7);
-        $this->Cell(150, 5, 'DESGLOSE  DE LOS RESULTADOS OBTENIDOS EN LA PRUEBA DE CONOCIMIENTOS GENERALES ÁREA $$', 0, 0, 'C');
+        $this->Cell(150, 5, 'DESGLOSE  DE LOS RESULTADOS OBTENIDOS EN LA PRUEBA DE CONOCIMIENTOS GENERALES ÁREA '.$Area_String, 0, 0, 'C');
 
     }
 
-    public function PrintPCG($ARRAYTAGS, $ID_INSCRITO, $MAXIMOS, $MINIMOS)
+    public function PrintPCG_O($ARRAYTAGS, $ID_INSCRITO, $MAXIMOS, $MINIMOS)
     {
+        
+       //GET TABLE NEW NAMES
+        $TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_RESULTADOS_ACT = $key->tb_resultados_new_year;
+        }
+
+        //EXPLODE
+        $id_Exp_CID_PCG = explode("-", $ID_INSCRITO);
         //DATA
-        //$PCGData = GetPCGData();
+
+        $dataPCG = GetPCGData($T_RESULTADOS_ACT,$id_Exp_CID_PCG[0],$id_Exp_CID_PCG[1],$id_Exp_CID_PCG[2],$id_Exp_CID_PCG[3]);
+        $STD_PCG = convert_object_to_array($dataPCG);
+       // var_dump($STD_PCG);
+
+//GET DATA AND PASS TO THE CLASS
+         $PCG_DATA = array();
+            $k =0;
+            while ($k <=5) {
+                if ($k != 0) {
+                   array_push($PCG_DATA, $STD_PCG[0]["area".$k]);
+                }
+                $k++;
+            }
+          //  var_dump($PCG_DATA);
 
         //TABLA
         $i            = 0;
@@ -359,10 +410,10 @@ class PDF extends FPDF
                 $this->SetFont('Arial', 'B', 8);
                 $this->Cell(4, 5, '', 'TB', 0, 'C', true);
                 $this->Cell(32, 5, $pcgTAGS[$i], 'TB', 0, 'L', true);
-                $this->Cell(30, 5, '', 'TB', 0, 'L', true);
-                $this->Cell(30, 5, '', 'TB', 0, 'L', true);
+                $this->Cell(30, 5, $MAXIMOS[$i], 'TB', 0, 'C', true);
+                $this->Cell(30, 5, $MINIMOS[$i], 'TB', 0, 'C', true);
                 $this->SetFont('Arial', 'B', 8);
-                $this->Cell(25, 5, '88', 'TB', 0, 'C', true);
+                $this->Cell(25, 5, $PCG_DATA[$i], 'TB', 0, 'C', true);
             } else if ($i % 2 == 0 && $pcgTAGS[$i] != "PCG TOTAL") {
                 $this->SetFillColor(228, 239, 165);
                 $this->Ln(5);
@@ -370,18 +421,18 @@ class PDF extends FPDF
                 $this->SetFont('Arial', '', 9);
                 $this->Cell(4, 5, '', 0, 0, 'C', true);
                 $this->Cell(32, 5, $pcgTAGS[$i], 0, 0, 'L', true);
-                $this->Cell(30, 5, '', 0, 0, 'L', true);
-                $this->Cell(30, 5, '', 0, 0, 'L', true);
-                $this->Cell(25, 5, '', 0, 0, 'L', true);
+                $this->Cell(30, 5, $MAXIMOS[$i], 0, 0, 'C', true);
+                $this->Cell(30, 5, $MINIMOS[$i], 0, 0, 'C', true);
+                $this->Cell(25, 5,$PCG_DATA[$i], 0, 0, 'C', true);
             } else {
                 $this->Ln(5);
                 $this->setX(33);
                 $this->SetFont('Arial', '', 9);
                 $this->Cell(4, 5, '', 0, 0, 'C');
                 $this->Cell(32, 5, $pcgTAGS[$i], 0, 0, 'L');
-                $this->Cell(30, 5, '', 0, 0, 'L');
-                $this->Cell(30, 5, '', 0, 0, 'L');
-                $this->Cell(25, 5, '', 0, 0, 'L');
+                $this->Cell(30, 5, $MAXIMOS[$i], 0, 0, 'C');
+                $this->Cell(30, 5, $MINIMOS[$i], 0, 0, 'C');
+                $this->Cell(25, 5,$PCG_DATA[$i], 0, 0, 'C');
             }
 
         }
@@ -476,7 +527,7 @@ $pdf = new PDF();
 $j   = 0;
 
 //////////////////////////////////////////////////////////////////////////
-//Get Data from JS
+//1-Get Data from JS
 //Convert the POST info to array using explode
 $numIns = $_POST["idInscrito"];
 $signature = $_POST["signature"];
@@ -489,18 +540,26 @@ $numInscrito    = explode(",", $_POST["idInscrito"]);
 //Files inside Array
 $countInscritos = count($numInscrito);
 
+//GET TABLE NEW NAMES
+        $TABLES = get_Table_Name();
+        foreach ($TABLES as $key) {
+          $T_INSCRITOS_ACT = $key->tb_inscritos_new_year;
+          $T_RESULTADOS_ACT = $key->tb_resultados_new_year;
+        }
 ///////////////////////////////////////////////////////////////////////
 //GENERATE PDF DOCUMENT
 while ($j < $countInscritos) {
 
     //Get area from resultados tb
-    $Area     = GetAreaData($numInscrito[$j]);
+    $id_Exp_CID = explode("-", $numInscrito[$j]);
+    //CON CID
+    $Area     = GetAreaData($T_RESULTADOS_ACT,$id_Exp_CID[0],$id_Exp_CID[1],$id_Exp_CID[2],$id_Exp_CID[3]);//CON CID
     $typeArea = convert_object_to_array($Area);
 
     $pdf->AddPage('', 'Letter');
-    $pdf->PersonalData($numInscrito[$j]);
+    $pdf->PersonalData($numInscrito[$j]);//CON CID
     $pdf->Averages($numInscrito[$j],$typeArea[0]["areap"]);
-    $pdf->PrintPCA($numInscrito[$j]);
+    $pdf->PrintPCA($numInscrito[$j]);//CON CID
     /////////////////////////////////////////////
     // validate_PCG($numInscrito[$j]);
     //$pdf->MessaguePCG($numInscrito);
@@ -508,15 +567,15 @@ while ($j < $countInscritos) {
     ////////////////////////////////////////////////////////////
 
     if ($typeArea[0]["areap"] == 4) {
-        $pdf->MessaguePCG();
-        $pdf->printPCG($pcgCientificaTAGS, $numInscrito[$j], $pcgMaxCientifica, $pcgMinixCientifica);
+        $pdf->MessaguePCG("CIENTIFICA");
+        $pdf->printPCG_O($pcgCientificaTAGS, $numInscrito[$j], $pcgMaxCientifica, $pcgMinixCientifica);
 
     } else if ($typeArea[0]["areap"] == 6) {
-        $pdf->MessaguePCG();
-        $pdf->printPCG($pcgAdmonPublicaTAGS, $numInscrito[$j], $pcgMaxAdmon, $pcgMinixAdmon);
+        $pdf->MessaguePCG("ADMON.PÚBLICA");
+        $pdf->printPCG_O($pcgAdmonPublicaTAGS, $numInscrito[$j], $pcgMaxAdmon, $pcgMinixAdmon);
     } else if ($typeArea[0]["areap"] == 7) {
-        $pdf->MessaguePCG();
-        $pdf->printPCG($pcgDerechoTAGS, $numInscrito[$j], $pcgMaxDerecho, $pcgMinixDerecho);
+        $pdf->MessaguePCG("DERECHO");
+        $pdf->printPCG_O($pcgDerechoTAGS, $numInscrito[$j], $pcgMaxDerecho, $pcgMinixDerecho);
     }
 ///////////////////////////////////////////////////////////
     $pdf->FooterDocs($signature);

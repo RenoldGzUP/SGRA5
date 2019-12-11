@@ -16,20 +16,19 @@ $tableInscritos  = $_POST["table1"];
 $tableResultados = $_POST["table2"];
 
 //VALIDATE DATA TO DO THE QUERY
-
 if (compare_table($tableInscritos, $tableResultados)) {
 ///SI LA CEDULA NO ESTA VACIA
     if (isset($cedula)) {
         //BUSQUEDA DE RESULTADOS X CEDULA
         // validate_user_exist_CID($cedula);
-        if (validate_user_exist_CID($cedula, $name, $lastName) == 0) {
+        if (validate_user_exist_CID($cedula, $name, $lastName,$tableInscritos,$tableResultados) == 0) {
             // echo "EL USUARIO YA FUE VALIDADO";
             echo 0;
-        } else if (validate_user_exist_CID($cedula, $name, $lastName) == 1) {
+        } else if (validate_user_exist_CID($cedula, $name, $lastName,$tableInscritos,$tableResultados) == 1) {
             //echo "USUARIO ENCONTRADO SIN VALDIACI+ÓN";
             echo 1;
 
-        }else if (validate_user_exist_CID($cedula, $name, $lastName) == 3) {
+        }else if (validate_user_exist_CID($cedula, $name, $lastName,$tableInscritos,$tableResultados) == 3) {
             //echo "USUARIO IMCOMPLETO";
             echo 3;
 
@@ -101,24 +100,26 @@ function compare_table($TABLA_A, $TABLA_B)
 
 
 //check isf existe register into validate tb 
-function validate_user_exist_CID($CID, $NAME, $LASTNAME)
+function validate_user_exist_CID($CID, $NAME, $LASTNAME,$T_INSCRITOS,$T_RESULTADOS)
 {
    //1-EXPLODE CID 
     $explodeCID = explode("-", $CID);
     $State_validation_byCID = "";
 
+
     //2-CHECK IF EXISTE REGISTER INTO VALIDATE TB
     $CIDExiste              = validationCIDExist($CID);
 
     //3-IF EXIST DATA , THENS EXIST REGISTER INTO VALIDATE TB
+
     if (!is_null($CIDExiste)) {
         //echo "YA EXISTE UNA VALIDACION CON ESTA CEDULA";
         echo 0;
     } else {
         //NO EXISTE UNA VALIDACION ANTERIOR,ENTONCES se PUEDE CONTINUAR
         //VERIFICAR QUE EL USUARIO EXISTE EN LAS BASE DE DATOS
-        $DataInscritosCID = getUserCIDFromInscritos($explodeCID[0],$explodeCID[1],$explodeCID[2],$explodeCID[3]);
-        $DataResultadosCID = getUserCIDFromResultados($explodeCID[0],$explodeCID[1],$explodeCID[2],$explodeCID[3]);
+        $DataInscritosCID = getUserCIDFromInscritos($explodeCID[0],$explodeCID[1],$explodeCID[2],$explodeCID[3],$T_INSCRITOS);
+        $DataResultadosCID = getUserCIDFromResultados($explodeCID[0],$explodeCID[1],$explodeCID[2],$explodeCID[3],$T_RESULTADOS);
 
                 if (is_object($DataInscritosCID) && is_object($DataResultadosCID)) {
                     //El usuairo existe en las base de datos

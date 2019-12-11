@@ -28,7 +28,7 @@
                             <h4>
                                 No fue posible autenticar la contraseña de respaldo 
                             </h4>
-							<h4>Verifique su información, a continuación, vuelva a ingresar al actualizador.</h4>
+							<h4>Verifique su información.</h4>
                         </center>
                         <div class="form-group" style="margin-top:20px">
                             <div align="center" class="col-sm-12 controls ">
