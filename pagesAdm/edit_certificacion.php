@@ -78,7 +78,7 @@ if ($now > $_SESSION['expire']) {
 //GET DATA FROM MAIN TABLE
 $cedula_edit = $_GET["cedula"];
 $state = $_GET["state"];
-echo "<h2>Editar Registro ".$cedula_edit ."</h2>";
+echo "<h2>Editar Registro de TB-Resultados  ".$cedula_edit ."</h2>";
 
 if ($state == 1) {
    echo "<div class='alert alert-success col-md-3' style='margin-left: 850px;margin-top: -50px' role='alert'>

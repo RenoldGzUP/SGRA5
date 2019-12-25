@@ -457,7 +457,7 @@ function getDataAJAX(issetData, filterState) {
             if (data.red != 0) {
                 //$('td', row).eq(5).addClass('row-style');
                 $(row).addClass('row-style');
-                console.log("TRUE" + data.red);
+                //console.log("TRUE" + data.red);
             }
         },
         "order": [
@@ -520,18 +520,18 @@ var editar_row = function(tbody, table) {
     });
 }
 
-
+ 
 //delete
 var borrar_row = function(tbody, table) {
     $(tbody).on("click", "button.borrar", function() {
         var data = table.row($(this).parents("tr")).data();
         if (data != null) {
-            console.log(data.n_ins);
-            var ins = data.n_ins;
+            console.log(data.cedula);
+            var ins = data.cedula;
             $("#deleteModal").modal();
             document.getElementById("deleteTaskBtt").onclick = function() {
                 console.log("DELETE ON");
-                deleteTaskInscrito(data.n_ins)
+                deleteTaskInscrito(data.cedula)
             };
         } else {
             console.log("Null exist");

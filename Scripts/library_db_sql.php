@@ -1066,6 +1066,20 @@ function saveLogs($USERNAME, $LOGREPORT)
     //return $result;
 }
 
+function selectUserExist($USERNAME)
+{
+    global $mysqli;
+    $query      = new Query($mysqli, "SELECT * FROM usuarios WHERE nombre_usuario = ?");
+    $parametros = array("s",&$USERNAME);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data[0];
+    } else {
+        return null;
+    }
+}
+
 function insertNewRegister($NAME, $LASTNAME, $USERNAME, $EMAIL, $ROL, $PASSWORD)
 {
     global $mysqli;
@@ -1903,7 +1917,7 @@ function GetFacultadLabels($FACULTAD)
 
 }
 /////////////////////////////////////////////////////////////////
-function GetPCGData($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
+function GetPCGData5($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
 {
     global $mysqli;
     $TRES = $T_RESULTADOS;
@@ -1918,6 +1932,23 @@ function GetPCGData($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
     }
 
 }
+
+function GetPCGData6($T_RESULTADOS,$PROVINCIA,$CLAVE,$TOMO,$FOLIO)
+{
+    global $mysqli;
+    $TRES = $T_RESULTADOS;
+    $query      = new Query($mysqli, "SELECT area1,area2,area3,area4,area5, SUM(area1+area2+area3+area4+area5) as area6 from ".$TRES." where provincia=? and clave=? and tomo=? and folio=?");
+    $parametros = array('ssss', &$PROVINCIA,&$CLAVE,&$TOMO,&$FOLIO);
+    $data       = $query->getresults($parametros);
+
+    if (isset($data[0])) {
+        return $data;
+    } else {
+        return null;
+    }
+
+}
+
 
 //////////////////////////////////////////////////////
 //UPDATE DATA

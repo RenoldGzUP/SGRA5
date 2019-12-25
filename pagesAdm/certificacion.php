@@ -32,7 +32,7 @@ if ($now > $_SESSION['expire']) {
     <meta name="description" content="">
     <meta name="Renold Gonzalez" content="">
 
-    <title>Sistema de gestión de resultados academicos</title>
+    <title>Sistema de Gestión de Resultados Académicos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,6 +56,7 @@ if ($now > $_SESSION['expire']) {
     <script src="../JS/tableResultados_old.js"></script>
     <script src="../JS/getCheckedRow.js"></script>
     <script src="../JS/export_register_general.js"></script>
+     <script src="../JS/tableEdit.js"></script>
     <!--<script src="../JS/tableEdit.js"></script>-->
 
 </head>
@@ -139,7 +140,7 @@ if ($now > $_SESSION['expire']) {
 
         <div id="certType" >
           <center>
-             <label  class="checkbox-inline"><input id="signature_type1" type="checkbox" value="1" onclick="checkBoxToSignature()" >Coordinador de Admisión </label>
+             <label  class="checkbox-inline"><input id="signature_type1" type="checkbox" value="1" onclick="checkBoxToSignature()">Coordinador de Admisión </label>
           <label  class="checkbox-inline"><input id="signature_type2" type="checkbox" value="2" onclick="checkBoxToSignature()"  >Director de Admisión</label>
           </center>
         </div>

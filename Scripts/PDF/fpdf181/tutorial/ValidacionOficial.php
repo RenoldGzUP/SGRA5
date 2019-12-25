@@ -28,6 +28,7 @@ class PDF extends FPDF
         $this->Cell(40, 15, 'DIRECCIÓN GENERAL DE ADMISIÓN', 0, 1, 'L');
         // Salto de línea
         //DATE
+        
         $dateYear = date("Y");
         $yearMin  = $dateYear - 1;
         $this->Cell(40);
@@ -82,11 +83,10 @@ class PDF extends FPDF
         $this->SetFont('Arial', '', 8);
 
         $headerA = array('NOMBRE:', 'SEDE:', 'FACULTAD:', 'COLEGIO DE PROCEDENCIA:');
-        $dataA   = array($DataPersonal[0]["nombrecompleto"], strtoupper($sedeFill[0]["nombre_sede"]), strtoupper($facultadFill[0]["nombre_facultad"]), $DataPersonal[0]["col_proc"]);
-        $dataB   = array($DataPersonal[0]["cedula"], strtoupper($areaFill[0]["nombre_area"]), $DataPersonal[0]["carrera"], $DataPersonal[0]["nbachiller"]);
+        $dataA   = array($DataPersonal[0]["nombrecompleto"], strtoupper(utf8_decode($sedeFill[0]["nombre_sede"])), strtoupper($facultadFill[0]["nombre_facultad"]), utf8_decode($DataPersonal[0]["col_proc"]));
+        $dataB   = array($DataPersonal[0]["cedula"], strtoupper(utf8_decode($areaFill[0]["nombre_area"])), $DataPersonal[0]["carrera"], utf8_decode($DataPersonal[0]["nbachiller"]));
         $headerB = array('CÉDULA:', 'ÁREA:', 'CARRERA:', 'BACHILLER:');
         $i       = 0;
-
         for ($i = 0; $i < 3; $i++) {
             $this->Ln(5);
             $this->setX(18);
@@ -130,10 +130,11 @@ class PDF extends FPDF
             'PROMEDIO DE SECUNDARIA', 'PRUEBA DE CAPACIDADES ACADÉMICAS (PCA):', 'PRUEBA DE CONOCIMIENTOS GENERALES (PCG):');
         $dataIndice = array($averageData[0]["indice"], $averageData[0]["gatb"], $averageData[0]["ps"], $averageData[0]["pca"], $averageData[0]["pcg"]);
 
-            
-        if($AREA == 4)
+            //PRINT PCG LABEL OR SPECIFIC AREA
+        if($AREA == 4 )
         {
             $long_array = 4;
+           
 
         }else{
             $long_array = 3;
@@ -148,13 +149,13 @@ class PDF extends FPDF
                 $this->SetFont('Arial', 'B', 9);
                 $this->Cell(80, 5, $averageLabels[$i], 0, 0, 'L');
                 $this->Cell(25, 5, $dataIndice[$i], 0, 0, 'R');
-            } else {
+            }
+            else {
                 $this->Ln(5);
                 $this->setX(18);
                 $this->SetFont('Arial', '', 9);
                 $this->Cell(80, 5, $averageLabels[$i], 0, 0, 'L');
                 $this->Cell(25, 5, $dataIndice[$i], 0, 0, 'R');}
-
         }
 
         /////////////MENSAJE
@@ -339,7 +340,7 @@ class PDF extends FPDF
 
     }
 
-    public function PrintPCG_O($ARRAYTAGS, $ID_INSCRITO, $MAXIMOS, $MINIMOS)
+    public function PrintPCG_O($ARRAYTAGS, $ID_INSCRITO, $MAXIMOS, $MINIMOS,$Array_SZ)
     {
         
        //GET TABLE NEW NAMES
@@ -352,14 +353,26 @@ class PDF extends FPDF
         $id_Exp_CID_PCG = explode("-", $ID_INSCRITO);
         //DATA
 
-        $dataPCG = GetPCGData($T_RESULTADOS_ACT,$id_Exp_CID_PCG[0],$id_Exp_CID_PCG[1],$id_Exp_CID_PCG[2],$id_Exp_CID_PCG[3]);
-        $STD_PCG = convert_object_to_array($dataPCG);
-       // var_dump($STD_PCG);
+    //CHECK DATA array SIZE
+        $long_print_test = 0;
+
+        if($Array_SZ == 5){
+                $dataPCG = GetPCGData5($T_RESULTADOS_ACT,$id_Exp_CID_PCG[0],$id_Exp_CID_PCG[1],$id_Exp_CID_PCG[2],$id_Exp_CID_PCG[3]);
+                $STD_PCG = convert_object_to_array($dataPCG);
+                $long_print_test = 5;
+
+        }else{
+             $dataPCG = GetPCGData6($T_RESULTADOS_ACT,$id_Exp_CID_PCG[0],$id_Exp_CID_PCG[1],$id_Exp_CID_PCG[2],$id_Exp_CID_PCG[3]);
+                $STD_PCG = convert_object_to_array($dataPCG);
+                $long_print_test = 6;
+
+        }
+
 
 //GET DATA AND PASS TO THE CLASS
          $PCG_DATA = array();
             $k =0;
-            while ($k <=5) {
+            while ($k <=$long_print_test) {
                 if ($k != 0) {
                    array_push($PCG_DATA, $STD_PCG[0]["area".$k]);
                 }
@@ -530,8 +543,7 @@ $j   = 0;
 //1-Get Data from JS
 //Convert the POST info to array using explode
 $numIns = $_POST["idInscrito"];
-//$signature = $_POST["signature"];
-$signature =1;
+$signature = $_POST["signature"];
 //Count Files inside Array
 
 $countInscritos = count($numIns);
@@ -569,14 +581,15 @@ while ($j < $countInscritos) {
 
     if ($typeArea[0]["areap"] == 4) {
         $pdf->MessaguePCG("CIENTIFICA");
-        $pdf->printPCG_O($pcgCientificaTAGS, $numInscrito[$j], $pcgMaxCientifica, $pcgMinixCientifica);
+        $pdf->printPCG_O($pcgCientificaTAGS, $numInscrito[$j], $pcgMaxCientifica, $pcgMinixCientifica,5);
 
     } else if ($typeArea[0]["areap"] == 6) {
+        //POLICIA
         $pdf->MessaguePCG("ADMON.PÚBLICA");
-        $pdf->printPCG_O($pcgAdmonPublicaTAGS, $numInscrito[$j], $pcgMaxAdmon, $pcgMinixAdmon);
+        $pdf->printPCG_O($pcgAdmonPublicaTAGS, $numInscrito[$j], $pcgMaxAdmon, $pcgMinixAdmon,6);
     } else if ($typeArea[0]["areap"] == 7) {
         $pdf->MessaguePCG("DERECHO");
-        $pdf->printPCG_O($pcgDerechoTAGS, $numInscrito[$j], $pcgMaxDerecho, $pcgMinixDerecho);
+        $pdf->printPCG_O($pcgDerechoTAGS, $numInscrito[$j], $pcgMaxDerecho, $pcgMinixDerecho,6);
     }
 ///////////////////////////////////////////////////////////
     $pdf->FooterDocs($signature);

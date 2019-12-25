@@ -30,7 +30,7 @@ if ($now > $_SESSION['expire']) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Sistema de gestión de resultados academicos</title>
+  <title>Sistema de Gestión de Resultados Académicos</title>
   <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- MetisMenu CSS -->
@@ -243,8 +243,8 @@ if ($logs) {
               </div>
               </div><!--MODAL ADD USER-->
 
-              <!-- MODAL EDIT PWD-->
-            <div class="modal fade" id="editPWD" role="dialog" data-keyboard="false" data-backdrop="static">
+            <!-- MODAL EDIT PWD-->
+           <!--    <div class="modal fade" id="editPWD" role="dialog" data-keyboard="false" data-backdrop="static">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -276,7 +276,7 @@ if ($logs) {
                 </div>
               </div>
               </div><!--MODAL ADD USER-->
-
+ -->
 
 
               <!---->

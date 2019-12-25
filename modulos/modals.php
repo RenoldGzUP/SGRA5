@@ -49,8 +49,8 @@
       <div class="modal-body">
         <div class="row">
           <center><img src='../images/checked.png' width="100" height="100" /> </center>
-          <center><h4>Certificaciones Generadas</h4></center>
-          <center><h5>El archivo se abrirá en otra ventana</h5></center>
+          <center><h4>Archivo Generado</h4></center>
+          <center><h5>El archivo se descargará o abrirá en otra ventana</h5></center>
         </div>
       </div>
       <div class="modal-footer">
@@ -186,7 +186,7 @@
       <div class="modal-body">
         <div class="row">
           <center><img src='../images/wrongFound.png' width="150" height="150" /> </center>
-          <center><h4>Se encontro un registro incompleto </h4></center>
+          <center><h4>Se encontró un registro incompleto </h4></center>
           <center><h5>sólo existe  data en una tabla de datos</h5></center>
         </div>
       </div>
@@ -256,7 +256,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="panel panel-primary">
-              <div class="panel-heading">Campo para Indexación </div>
+              <div class="panel-heading">Campo para Ordenar</div>
               <div class="panel-body">
                 <div id="certType" >
                   <center>
@@ -270,7 +270,7 @@
           </div>
           <div class="col-lg-6">
             <div class="panel panel-primary">
-              <div class="panel-heading">Tipo de Indexación </div>
+              <div class="panel-heading">Tipo de Orden </div>
               <div class="panel-body">
                 <div id="certType" >
                   <center>

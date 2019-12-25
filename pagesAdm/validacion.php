@@ -28,7 +28,7 @@ if ($now > $_SESSION['expire']) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Sistema de gestión de resultados academicos</title>
+  <title>Sistema de Gestión de Resultados Académicos</title>
   <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- MetisMenu CSS -->
@@ -126,7 +126,7 @@ foreach ($listasDB as $item) {
                 <button id="SearchBtt" type="button" onclick="sendIDSearch()"  class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
                 <!-- <button type="button"  id="MeasuringBtt" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#measuringModal"><span class="glyphicon glyphicon-plus"></span> Recalcular</button> -->
                 <button id="ValidateBtt" disabled type="button" value="" onclick="sendIDValidate()"  class="btn btn-success btn-sm" ><span class="glyphicon glyphicon-ok"></span> Validar</button>
-                <button id="TalliesBtt" onclick="generateValidation()"   disabled type="button" class="btn btn-info btn-sm " ><span class="glyphicon glyphicon-list-alt"></span> Generar Validación</button>
+                <button id="TalliesBtt" disabled type="button" class="btn btn-info btn-sm "data-toggle="modal" data-target="#tipoValidacion"><span class="glyphicon glyphicon-list-alt"></span> Generar Validación</button>
                 </center>
               </div>
             </div>
@@ -134,7 +134,7 @@ foreach ($listasDB as $item) {
         </div>
         <div class="panel panel-default">
           <div class="panel-body">
-            <h5><b>Tabla Inscritos 2018</b></h5>
+            <h5><b>Registro en la Tabla Inscritos</b></h5>
             <div class="container col-lg-12">
               <table class="table table-bordered" style="font-size: 11px;">
                 <thead style="text-align:center;width: : 10px;background: #225ddb" >
@@ -167,7 +167,7 @@ foreach ($listasDB as $item) {
         </div>
         <div class="panel panel-default">
           <div class="panel-body">
-            <h5><b>Tabla Resultados 2018</b></h5>
+            <h5><b>Registro en la  Tabla Resultados</b></h5>
             <div class="container col-lg-12">
               <table class="table table-bordered" style="font-size: 11px;">
                 <thead style="text-align:center;width: : 10px;background: #225ddb" >
@@ -230,6 +230,30 @@ foreach ($listasDB as $item) {
     </div>
   </div>
   </div><!--MODAL ADD USER-->
+
+   <!-- Modal -->
+  <div class="modal fade" id="tipoValidacion" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Tipo de Validación a generar : </h4>
+        </div>
+        <div class="modal-body">
+
+        <div id="certType" >
+          <center>
+             <label  class="checkbox-inline"><input id="signature_type1" type="checkbox" value="1" onclick="checkBoxToSignature()">Coordinador de Admisión </label>
+          <label  class="checkbox-inline"><input id="signature_type2" type="checkbox" value="2" onclick="checkBoxToSignature()"  >Director de Admisión</label>
+          </center>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button id="sendTypeReport" onclick="generateValidation()" type="button" class="btn btn-default" data-dismiss="modal">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>

@@ -76,7 +76,7 @@ elseif ($AREA == 4) {
   //CASO 4
   //si no es extranjero
   if ($CLAVE == "00") {
-    $indice_actualizado = (- 1.141022) + (0.417321 * $PS) + (0.008511 * $PCA)+ (0.006932 * PCG + 1);
+    $indice_actualizado = (- 1.141022) + (0.417321 * $PS) + (0.008511 * $PCA)+ (0.006932 * $PCG + 1);
   }else{
     $indice_actualizado = 0.275051 + 0.00732 * $PCA + 0.011536 * ($PCG + 1);
   }

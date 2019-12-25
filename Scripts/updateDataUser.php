@@ -21,47 +21,46 @@ $userID    = $_POST["id_user"];
 
 switch ($CHECKROL[0]) {
     case 1:
-        saveLogs($_SESSION['name'], "Administrador registró a " . $NAME . " " . $LASTNAME . " como Usuario común");
+        saveLogs($_SESSION['name'], "Administrador actualizó a " . $NAME . " " . $LASTNAME . " como Usuario común");
         updateUserData($NAME, $LASTNAME, $USERNAME, $EMAIL, '1', $userID);
         break;
     case 2:
-        saveLogs($_SESSION['name'], "Administrador registró a " . $NAME . " " . $LASTNAME . " como  Administrador");
+        saveLogs($_SESSION['name'], "Administrador actualizó  a " . $NAME . " " . $LASTNAME . " como  Administrador");
         updateUserData($NAME, $LASTNAME, $USERNAME, $EMAIL, '2', $userID);
 
         break;
     case 3:
         $DATARRAY = addExtraFill($CHECKPAGE);
         // var_dump($DATARRAY);
-        saveLogs($_SESSION['name'], "Administrador registró a " . $NAME . " " . $LASTNAME . " como usuario especial");
+        saveLogs($_SESSION['name'], "Administrador actualizó  a " . $NAME . " " . $LASTNAME . " como usuario especial");
         updateUserSpecialData($NAME, $LASTNAME, $USERNAME, $EMAIL, '3', $DATARRAY[0], $DATARRAY[1], $DATARRAY[2], $DATARRAY[3], $userID);
         break;
 
     default:
-        saveLogs($_SESSION['name'], "No hay campos seleccionados");
+        saveLogs($_SESSION['name'], "No hay campos seleccionados para actualizar");
         break;
 }
 
 //INSERT EXTRA ARRAY
+
 function addExtraFill($ARRAY)
 {
     $label = array('1', '2', '3', '4');
     $state = 0;
-
+    var_dump($label);
     if (is_array($ARRAY)) {
         $difference = array_diff($label, $ARRAY);
-
-        $position = key($difference);
-
-        foreach ($difference as $key) {
-            $valorFaltante = $key;
+        $j=0;
+        while ($j <= sizeof($label)) {
+            if($difference[$j] != 0){
+                //ARRAY + POSTION +NO ITIAL STATE + CONTENT
+                array_splice($ARRAY, $j, 0, "0");
+            }
+            $j++;
         }
-        //echo "-->" . $valorFaltante;
-
-        array_splice($ARRAY, $position, 0, "");
-
-        //print_r($CHECKPAGE);
-        $state = true;
-
+        //$position = key($difference);
+        //echo "Nuevo array";
+        //var_dump($ARRAY);
     } else {
         $state = false;
         // echo "NO";
@@ -69,6 +68,5 @@ function addExtraFill($ARRAY)
 
     return $ARRAY;
 }
-
 //REFRESH WHEN COMPLETE ALL
 header("Location:../pagesAdm/usuarios.php");

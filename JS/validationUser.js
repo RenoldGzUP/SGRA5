@@ -2,6 +2,7 @@
 // CHECK USER EXIST INTO VALIDATIONS
 function sendIDSearch() {
    // var idInscrito = $("#idSearch").val();
+   document.getElementById('taInscritosInscritos').innerHTML = "";
    document.getElementById('taInscritosResultado').innerHTML = "";
     var idName = $("#idName").val();
     var idCID = $("#idCID").val();
@@ -198,9 +199,12 @@ function exportDataR() {
 function generateValidation() {
     document.getElementById("SearchBtt").disabled = true;
     var idInscrito = $("#ValidateBtt").val();
+    var signature = checkBoxToSignature();
     $.ajax({
         data: {
             "idInscrito": idInscrito,
+            "signature":signature
+
         },
         type: "POST",
         dataType: "text",
@@ -217,6 +221,30 @@ function generateValidation() {
         console.log("La solicitud a fallado: " + textStatus);
     });
 }
+
+
+function checkBoxToSignature() {
+    var input = document.getElementById("signature_type1");
+    var input2 = document.getElementById("signature_type2");
+    var isChecked = input.checked;
+    var isChecked2 = input2.checked;
+    var data;
+    if (isChecked) {
+        data = input.value;
+        console.log(data);
+        input2.disabled = true;
+    } else if (isChecked2) {
+        data = input2.value;
+        console.log(data);
+        input.disabled = true;
+    } else {
+        input.disabled = false;
+        input2.disabled = false;
+        console.log("Ok");
+    }
+    return data;
+}
+
 /////////////////////////////////////////////////////
 //GET DATA
 function getTableDataInscritos(idCID) {

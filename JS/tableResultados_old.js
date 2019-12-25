@@ -58,11 +58,12 @@ function getDataAJAX(issetData, filterState) {
             "method": "POST",
             "url": "../Scripts/getTableResultadosJS.php",
             "dataSrc": function(data) {
-                 /*if (data == "error") {
+                
+                 if (data == "error") {
                      $("#loadingModal").modal("hide");
                      console.log("data error");
                      $('td:eq(1)', row).attr('colspan', 3);
-                }*/
+                }
                 $("#loadingModal").modal("hide");
                 return data;
             }
@@ -126,7 +127,7 @@ function getDataAJAX(issetData, filterState) {
             if (data.red != 0) {
                 //$('td', row).eq(5).addClass('row-style');
                 $(row).addClass('row-style');
-                console.log("TRUE" + data.red);
+                //console.log("TRUE" + data.red);
             }
         },
         "order": [
@@ -156,7 +157,7 @@ $('#userslist').DataTable({
 var editar_row = function(tbody, table) {
     $(tbody).on("click", "button.editar", function() {
         var data = table.row($(this).parents("tr")).data();
-        if (data != null) {
+        if (data.cedula != null) {
             console.log(data.cedula);
             window.open("http://localhost/SGRA/pagesAdm/edit_certificacion.php?cedula="+data.cedula+"&state=0");
            //modal_edit(data.n_ins);
@@ -170,15 +171,15 @@ var editar_row = function(tbody, table) {
 var borrar_row = function(tbody, table) {
     $(tbody).on("click", "button.borrar", function() {
         var data = table.row($(this).parents("tr")).data();
-        if (data != null) {
+        console.log(data.cedula);
+        if (data.cedula != null) {
             //console.log(data);
-            //delete_row(data.n_ins);
-            var ins = data.n_ins;
+            var ins = data.cedula;
             $("#deleteModal").modal();
 
             document.getElementById("deleteTaskBtt").onclick = function() {
                 console.log("DELETE ON");
-                deleteTask(data.n_ins);
+                deleteTask(data.cedula);
             };
 
         } else {

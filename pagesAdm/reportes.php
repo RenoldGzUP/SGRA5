@@ -32,7 +32,7 @@ if ($now > $_SESSION['expire']) {
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Sistema de gestión de resultados academicos</title>
+  <title>Sistema de Gestión de Resultados Académicos</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

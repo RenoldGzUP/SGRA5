@@ -184,7 +184,8 @@ $pdf->setSede($SedeArray[0]["nombre_sede"]);
 if (sizeof($form_filter) > 1) {
     if (isset($form_filter[1])) {
         $AreaArray = convert_object_to_array(GetAreaLabels($form_filter[1]));
-        $pdf->setArea($AreaArray[0]["nombre_area"]);
+       // echo $AreaArray[0]["nombre_area"] ;
+        $pdf->setArea(utf8_decode($AreaArray[0]["nombre_area"]));
     } else {
         $pdf->setArea("-----------");
     }

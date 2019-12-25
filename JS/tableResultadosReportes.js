@@ -50,7 +50,17 @@ function getDataAJAX(issetData, filterState) {
             },
             "method": "POST",
             "url": "../Scripts/getTableReportes.php",
-            "dataSrc": ""
+            "dataSrc":function(data) {
+
+                if (data == "error") {
+                     $("#loadingModal").modal("hide");
+                     console.log("data error");
+                     $('td:eq(1)', row).attr('colspan', 3);
+                }
+
+                $("#loadingModal").modal("hide");
+                return data;
+            }
         },
         "columns": [{
             "data": null,

@@ -83,7 +83,7 @@ function limpiar_caracteres_especiales($s)
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Sistema de gestión de resultados academicos</title>
+  <title>Sistema de Gestión de Resultados Académicos</title>
   <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
   <!-- MetisMenu CSS -->

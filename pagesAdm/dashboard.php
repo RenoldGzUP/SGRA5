@@ -29,7 +29,7 @@ if ($now > $_SESSION['expire']) {
     <meta name="description" content="">
     <meta name="author" content="Renold González">
 
-    <title>Sistema de gestión de resultados academicos</title>
+    <title>Sistema de Gestión de Resultados Académicos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -124,10 +124,10 @@ include '../modulos/sendMessage.php';
               <div class="panel-body">
 
                 <ul style="list-style-type:none;">
-                <li>Sistema de Gestión de Resultados Academicos </li>
-                <li>Version 1.0.72 PROT</li>
+                <li>Sistema de Gestión de Resultados Académicos </li>
+                <li>Versión 1.0.72 PROP</li>
                 <li>Autor : Renold M . González</li>
-                <li>2019-2020</li>
+                <li>Año de Administración: 2017-2018</li>
 
                 </ul>
 
